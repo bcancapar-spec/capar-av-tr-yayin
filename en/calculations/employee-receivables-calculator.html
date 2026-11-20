@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/favicon.ico?v=9e46c4f3" sizes="48x48" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=2b653918" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=b561eee0" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3266fae5" />
+<link rel="preload" href="/fonts/hanken-grotesk-latin-v12.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/hanken-grotesk-latin-ext-v12.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/fraunces-latin-v38.woff2" as="font" type="font/woff2" crossorigin />
+<script>(function(){var d=document.documentElement;function u(s){d.setAttribute("data-tema",s==="koyu"?"koyu":"acik")}window.caparTema=u;var s,y;try{s=localStorage.getItem("capar-tema");y=localStorage.getItem("capar-yazi")}catch(e){}u(s);if(y==="2"||y==="3")d.setAttribute("data-yazi",y)})()</script>
+<link rel="stylesheet" href="/site.css?v=ca3fe4e6" />
+<link rel="alternate" type="text/plain" href="https://capar.av.tr/llms-en.txt" title="llms-en.txt" />
+<link rel="alternate" type="text/plain" href="https://capar.av.tr/llms2.txt" title="llms2.txt — full question-and-answer index" />
+<title>Employee Receivables Calculator — Av. Bayram Can Çapar</title>
+<meta name="description" content="Severance pay, notice pay, reinstatement and bad-faith compensation, overtime, annual leave and holiday pay under Turkish law; gross to net." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://capar.av.tr/en/calculations/employee-receivables-calculator" />
+<link rel="alternate" hreflang="tr" href="https://capar.av.tr/hesaplamalar/iscilik-alacaklari" />
+<link rel="alternate" hreflang="en" href="https://capar.av.tr/en/calculations/employee-receivables-calculator" />
+<link rel="alternate" hreflang="x-default" href="https://capar.av.tr/hesaplamalar/iscilik-alacaklari" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:site_name" content="Av. Bayram Can Çapar · ÇAPAR Hukuk" />
+<meta property="og:title" content="Employee Receivables Calculator — Av. Bayram Can Çapar" />
+<meta property="og:description" content="Severance pay, notice pay, reinstatement and bad-faith compensation, overtime, annual leave and holiday pay under Turkish law; gross to net." />
+<meta property="og:url" content="https://capar.av.tr/en/calculations/employee-receivables-calculator" />
+<meta property="og:image" content="https://capar.av.tr/og/sayfa/employee-receivables-calculator.png?v=38993d66" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Employee Receivables Calculator — Av. Bayram Can Çapar · ÇAPAR Hukuk" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://capar.av.tr/og/sayfa/employee-receivables-calculator.png?v=38993d66" />
+<style id="iscilik-stil">
+.yol{font-size:.85rem;color:var(--text-soft);margin-bottom:12px}.yol a{color:var(--accent)}
+.iscilik-kisa-cevap{max-width:820px;margin:0 0 6px;padding:16px 20px;border-left:3px solid var(--gold);border-radius:0 8px 8px 0;background:var(--surface-2);line-height:1.7}
+.iscilik-kisa-cevap strong{color:var(--accent)}
+.iscilik-arac{max-width:820px}
+.iscilik-kisa{display:inline-block;margin:0 0 18px;padding:6px 12px;border-left:3px solid var(--gold);background:var(--surface-2);font-size:.9rem;color:var(--text-soft)}
+.iscilik-form{display:grid;gap:20px;padding:22px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.iscilik-form fieldset{border:1px solid var(--line);border-radius:10px;padding:14px 16px 16px;margin:0;min-width:0}
+.iscilik-form legend{font-weight:700;font-size:1rem;color:var(--text);padding:0 4px}
+.iscilik-bolum>legend{font-family:var(--serif);font-weight:500;font-size:1.2rem;color:var(--accent)}
+.iscilik-alan{display:grid;gap:6px;margin:0 0 14px;min-width:0}
+.iscilik-alan:last-child{margin-bottom:0}
+.iscilik-form label{font-weight:600;font-size:.95rem;color:var(--text)}
+.iscilik-form select,.iscilik-form input[type=date],.iscilik-form input[type=number],.iscilik-form input[type=text]{font:inherit;font-size:1rem;width:100%;max-width:100%;min-width:0;min-height:46px;padding:10px 12px;border:1px solid rgba(26,31,38,.35);border-radius:8px;background:#fff;color:var(--text)}
+.iscilik-form [aria-invalid=true]{border-color:#9b2c2c}
+.iscilik-form [hidden]{display:none!important}
+.iscilik-satir{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;align-items:start;margin:0 0 10px}
+.iscilik-satir .iscilik-alan{margin:0}
+.iscilik-tekrar{padding:12px;border:1px dashed var(--line);border-radius:10px;margin:0 0 10px;background:var(--surface-2)}
+.iscilik-secim{display:grid;gap:8px;margin:4px 0 0}
+.iscilik-secim label{font-weight:400;display:flex;align-items:flex-start;gap:10px;min-height:32px;cursor:pointer;line-height:1.5}
+.iscilik-secim input{width:20px;height:20px;margin:2px 0 0;flex:none;accent-color:var(--accent)}
+.iscilik-okunan{display:block;margin:2px 0 0;font-size:.85rem;color:var(--text-soft)}
+.iscilik-not,.iscilik-bilgi{margin:0;font-size:.88rem;line-height:1.55;color:var(--text-soft)}
+.iscilik-details{border:1px solid var(--line);border-radius:10px;padding:0 16px}
+.iscilik-details>summary{cursor:pointer;font-weight:600;color:var(--accent);padding:12px 0;min-height:44px}
+.iscilik-details>.iscilik-ic{padding:0 0 14px;display:grid;gap:12px}
+.iscilik-hata{margin:0;color:#9b2c2c;font-weight:600}
+.iscilik-hata ul{margin:6px 0 0;padding-left:20px;font-weight:400}
+.iscilik-gonder{justify-self:start;font:inherit;font-weight:600;font-size:1rem;min-height:46px;padding:10px 26px;border:0;border-radius:999px;background:var(--accent);color:#fff;cursor:pointer}
+.iscilik-gonder:hover{background:var(--accent-deep)}
+.iscilik-ikincil{font:inherit;font-weight:600;font-size:.92rem;min-height:44px;padding:8px 18px;border:1px solid var(--accent);border-radius:999px;background:#fff;color:var(--accent);cursor:pointer;justify-self:start}
+.iscilik-ikincil:hover{background:var(--surface-2)}
+.iscilik-sil{font:inherit;font-size:.88rem;min-height:40px;padding:6px 14px;border:1px solid rgba(155,44,44,.5);border-radius:999px;background:#fff;color:#9b2c2c;cursor:pointer;justify-self:start}
+.iscilik-sonuc{margin-top:26px}
+.iscilik-sonuc:empty{display:none}
+.iscilik-sonuc>h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.35rem,3.6vw,1.75rem);margin:0 0 10px}
+.iscilik-ozet{font-size:1.1rem;margin:0 0 8px;padding:14px 18px;border-left:4px solid var(--accent);background:var(--surface-2);border-radius:0 10px 10px 0;line-height:1.6}
+.iscilik-bilgi-satir{margin:0 0 10px;color:var(--text-soft);font-size:.92rem}
+.iscilik-kartlar{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:12px}
+.iscilik-sonuc-kart{padding:14px 18px;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:0 10px 10px 0;background:#fff}
+.iscilik-sonuc-kart h3{font-size:1rem;margin:0 0 4px;color:var(--text-soft);font-weight:600}
+.iscilik-tutar{font-family:var(--serif);font-weight:500;font-size:1.3rem;margin:0 0 6px;color:var(--text)}
+.iscilik-tutar-yok{font-size:1rem;font-family:inherit;font-weight:600;color:#7d5f27}
+.iscilik-dayanak{margin:0 0 6px;font-size:.85rem;color:var(--text-soft)}
+.iscilik-sonuc details summary{cursor:pointer;color:var(--accent);font-weight:600;font-size:.92rem;min-height:36px;padding:6px 0}
+.iscilik-sonuc ol,.iscilik-sonuc ul{margin:6px 0 0;padding-left:22px}
+.iscilik-sonuc li{margin:0 0 6px;line-height:1.6;overflow-wrap:anywhere}
+.iscilik-sonuc .iscilik-kartlar{padding-left:0}
+.iscilik-sonuc h3.iscilik-ara{font-size:1.05rem;margin:22px 0 8px;color:var(--text)}
+.iscilik-kontrol{list-style:none;padding-left:0!important}
+.iscilik-evet .iscilik-isaret{color:#276749;font-weight:700}
+.iscilik-hayir .iscilik-isaret{color:#9b2c2c;font-weight:700}
+.iscilik-mesaj{padding:14px 18px;border-left:4px solid var(--gold);background:var(--surface-2);border-radius:0 10px 10px 0;line-height:1.6}
+.iscilik-sorumluluk{margin:18px 0 0;font-size:.88rem;line-height:1.6;color:var(--text-soft)}
+.iscilik-makaleler{margin:12px 0 0;line-height:1.7}.iscilik-makaleler a{color:var(--accent)}
+.iscilik-surum{margin:12px 0 0;font-size:.8rem;color:var(--text-soft)}
+.iscilik-dugmeler{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:18px 0 0}
+.iscilik-kopya-durum{font-size:.88rem;color:var(--text-soft)}
+.iscilik-tablo-kap{overflow-x:auto;max-width:100%}
+.iscilik-tablo{width:100%;border-collapse:collapse;font-size:.9rem;line-height:1.5}
+.iscilik-tablo caption{text-align:left;font-weight:600;margin:0 0 8px;color:var(--text)}
+.iscilik-tablo th,.iscilik-tablo td{border-bottom:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+.iscilik-tablo thead th{background:var(--surface-2);font-weight:600}
+.iscilik-tablo td{font-variant-numeric:tabular-nums}
+.iscilik-tablo tfoot th,.iscilik-tablo tfoot td{font-weight:700}
+.iscilik-sonuc .iscilik-tablo td{white-space:nowrap}.iscilik-sonuc .iscilik-tablo th[scope=row]{min-width:9.5em}
+.iscilik-bilgi-bolum{max-width:820px}
+.iscilik-bilgi-bolum h2{font-family:var(--serif);font-weight:500;font-size:1.4rem;margin:44px 0 14px}
+.iscilik-bilgi-bolum p,.iscilik-sira li{line-height:1.7}
+.iscilik-sira{padding-left:22px}.iscilik-sira li{margin-bottom:8px}
+.iscilik-bilgi-bolum details{margin:0 0 12px}
+.iscilik-bilgi-bolum details>summary{cursor:pointer;font-weight:600;color:var(--accent);min-height:40px;padding:8px 0}
+.iscilik-kaynak a{color:var(--accent)}
+.iscilik-surum-alt{margin-top:28px;font-size:.85rem;color:var(--text-soft)}
+@media(max-width:560px){.iscilik-form{padding:14px;gap:16px}.iscilik-form fieldset{padding:12px}.iscilik-gonder{width:100%;justify-self:stretch}.iscilik-details{padding:0 12px}.iscilik-tablo{font-size:.82rem}}
+@media print{.topbar,.foot,.cookie-bar,.hs-git-kap,.hs-adimlar,.hs-eylemler,.hs-yonlendirme,.hs-nasil,.hs-gizlilik,.iscilik-form,.iscilik-dugmeler,.iscilik-kisa,.atla{display:none!important}.iscilik-sonuc{margin-top:0}.iscilik-sonuc details{display:block}}
+</style>
+</head>
+<body>
+<a class="atla" id="atla" href="#icerik" data-tr="İçeriğe geç" data-en="Skip to content">Skip to content</a>
+<header class="topbar">
+  <div class="wrap row">
+    <a href="/en/" data-href-tr="/" data-href-en="/en/" class="brand">
+      <img class="logo" src="/logo-ust.svg?v=8334ed51" alt="Av. Bayram Can Çapar · ÇAPAR Hukuk" width="175" height="44" decoding="async" />
+    </a>
+    <div class="hdr-right">
+            <nav class="ust-gezinti" id="ust-gezinti" aria-labelledby="ust-gezinti-ad">
+      <form class="ust-ara-form" role="search" action="/en/articles" method="get"><input type="search" name="ara" maxlength="120" aria-label="Search articles" data-aria-tr="Makalelerde ara" data-aria-en="Search articles" placeholder="Search articles: e.g. reinstatement" data-ph-tr="Makalelerde ara: ör. işe iade" data-ph-en="Search articles: e.g. reinstatement" /><button type="submit" data-tr="Ara" data-en="Search">Search</button></form>
+      <a href="/en/articles" data-href-tr="/makaleler" data-href-en="/en/articles" data-tr="Makaleler" data-en="Articles">Articles</a>
+      <a href="/en/#alanlar" data-href-tr="/#alanlar" data-href-en="/en/#alanlar" data-tr="Çalışma Alanları" data-en="Practice Areas">Practice Areas</a>
+      <a href="/en/legislation" data-href-tr="/mevzuat" data-href-en="/en/legislation" data-tr="Mevzuat" data-en="Legislation">Legislation</a>
+      <a href="/en/press" data-href-tr="/basinda" data-href-en="/en/press" data-tr="Basında Biz" data-en="In the Press">In the Press</a>
+      <a href="/en/calculations" data-href-tr="/hesaplamalar" data-href-en="/en/calculations" data-tr="Hesaplamalar" data-en="Calculators">Calculators</a>
+      <a class="ust-ara" href="/en/articles#ara" data-href-tr="/makaleler#ara" data-href-en="/en/articles#ara"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="ust-ara-metin" data-tr="Makalelerde ara" data-en="Search articles">Search articles</span></a>
+      <a class="ust-ek" href="/en/application-routes" data-href-tr="/basvuru-yollari" data-href-en="/en/application-routes" data-tr="Başvuru Yolları" data-en="Where to Apply">Where to Apply</a>
+      <a class="ust-ek" href="/en/glossary" data-href-tr="/sozluk" data-href-en="/en/glossary" data-tr="Hukuk Sözlüğü" data-en="Glossary">Glossary</a>
+      <a class="ust-ek" href="/en/turkish-citizens-abroad" data-href-tr="/yurt-disinda-yasayanlar" data-href-en="/en/turkish-citizens-abroad" data-tr="Yurt dışında yaşayanlar" data-en="Turkish citizens living abroad">Turkish citizens living abroad</a>
+      <a class="ust-ek" href="/en/#hakkinda" data-href-tr="/#hakkinda" data-href-en="/en/#hakkinda" data-tr="Hakkımızda" data-en="About Us">About Us</a>
+      <a class="ust-ek" href="/en/#ekip" data-href-tr="/#ekip" data-href-en="/en/#ekip" data-tr="Ekibimiz" data-en="Our Team">Our Team</a>
+      <a href="/en/contact" data-href-tr="/iletisim" data-href-en="/en/contact" data-tr="İletişim" data-en="Contact">Contact</a>
+      <div class="ust-tema" role="group" aria-label="Theme" data-aria-tr="Tema" data-aria-en="Theme"><span class="ust-tema-ad" aria-hidden="true" data-tr="Tema" data-en="Theme">Theme</span><span class="oa-seg"><button type="button" data-tema-sec="acik" aria-pressed="false" data-tr="Açık" data-en="Light">Light</button><button type="button" data-tema-sec="koyu" aria-pressed="false" data-tr="Koyu" data-en="Dark">Dark</button></span></div>      </nav>
+      <span id="ust-gezinti-ad" hidden data-tr="Site menüsü" data-en="Site menu">Site menu</span>
+      <span class="ust-eylem" data-konum="ust"><a class="ust-tel" href="tel:+902582415554" data-tr="0258 241 55 54" data-en="+90 258 241 55 54">+90 258 241 55 54</a><a class="ust-gt iletisim-mesaj" href="/en/contact" data-href-tr="/iletisim" data-href-en="/en/contact" data-tr="Görüşme Talep Et" data-en="Request a Meeting">Request a Meeting</a></span>
+      <div class="lang" role="group" aria-label="Language">
+        <a id="btn-tr" href="/hesaplamalar/iscilik-alacaklari" hreflang="tr" lang="tr">TR</a>
+        <a id="btn-en" class="active" href="/en/calculations/employee-receivables-calculator" hreflang="en" lang="en">EN</a>
+      </div>
+      <div class="tema-sec"><button type="button" class="tema-dugme" aria-expanded="false" aria-controls="tema-menu" aria-label="Theme" data-aria-tr="Tema" data-aria-en="Theme"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></button><div class="tema-menu" id="tema-menu" role="group" aria-label="Theme" data-aria-tr="Tema" data-aria-en="Theme" hidden><button type="button" data-tema-sec="acik" aria-pressed="false" data-tr="Açık" data-en="Light">Light</button><button type="button" data-tema-sec="koyu" aria-pressed="false" data-tr="Koyu" data-en="Dark">Dark</button></div></div><script>(function(){var d=document.documentElement,k=document.querySelector(".tema-sec"),b=k&&k.querySelector(".tema-dugme"),m=k&&k.querySelector(".tema-menu");function i(){var s=d.getAttribute("data-tema")||"acik";document.querySelectorAll("[data-tema-sec]").forEach(function(x){x.setAttribute("aria-pressed",x.getAttribute("data-tema-sec")===s?"true":"false")})}function a(v){if(m){m.hidden=!v;b.setAttribute("aria-expanded",v?"true":"false")}}if(b)b.addEventListener("click",function(){a(m.hidden)});document.addEventListener("click",function(e){var x=e.target.closest?e.target.closest("[data-tema-sec]"):null;if(x){var s=x.getAttribute("data-tema-sec");try{localStorage.setItem("capar-tema",s)}catch(e){}if(window.caparTema)caparTema(s);document.dispatchEvent(new Event("capar-tema"));return}if(m&&!m.hidden&&!k.contains(e.target))a(false)});document.addEventListener("capar-tema",i);document.addEventListener("keydown",function(e){if(e.key==="Escape"&&m&&!m.hidden){a(false);b.focus()}});i()})();</script>
+      <button type="button" class="ust-menu-dugme" aria-expanded="false" aria-controls="ust-gezinti" aria-labelledby="ust-gezinti-dugme-ad"><span></span><span></span><span></span></button><span id="ust-gezinti-dugme-ad" hidden data-tr="Menü" data-en="Menu">Menu</span>
+      <style id="ust-menu">#ara{scroll-margin-top:90px}.topbar .wrap{max-width:1360px}.ust-gezinti{display:flex;align-items:center;gap:18px}.ust-gezinti a{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-soft);text-decoration:none;white-space:nowrap;padding:0;min-height:44px;display:inline-flex;align-items:center;transition:color .25s}.ust-gezinti a:hover{color:var(--accent)}.ust-ara{justify-content:center;gap:10px;min-width:44px;margin:0 -8px}.ust-ara-form{display:none}.ust-eylem{display:none}@media(min-width:900px){.ust-eylem{display:flex;align-items:center;gap:12px}.ust-tel{font-family:var(--sans);font-weight:600;font-size:.88rem;color:var(--text);white-space:nowrap;display:inline-flex;align-items:center;min-height:44px}.ust-gt{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;background:var(--accent);color:#fff;font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;transition:background .25s}.ust-gt:hover{background:var(--accent-deep)}}.ust-ara svg{display:block;flex:none}.ust-ara-metin{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.ust-menu-dugme{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:0 11px;border:0;background:none;cursor:pointer}.ust-menu-dugme span{display:block;width:22px;height:2px;background:var(--text);transition:transform .25s,opacity .25s}.ust-menu-dugme[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}.ust-menu-dugme[aria-expanded="true"] span:nth-child(2){opacity:0}.ust-menu-dugme[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}@media(max-width:1359.98px){.ust-menu-dugme{display:inline-flex}.ust-gezinti{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:4px 24px 12px;background:var(--surface);border-bottom:1px solid var(--line);box-shadow:0 14px 28px rgba(26,31,38,.12)}.ust-gezinti.acik{display:flex}.ust-gezinti a{display:flex;align-items:center;justify-content:space-between;font-size:.9rem;letter-spacing:.04em;min-height:48px;border-bottom:1px solid var(--line)}.ust-gezinti a::after{content:"\203A";font-weight:400}.ust-gezinti a:last-child{border-bottom:0}.ust-gezinti .ust-ara{display:none}.ust-ara-form{display:flex;gap:8px;margin:12px 0 6px}.ust-ara-form input{flex:1;min-width:0;height:44px;font:inherit;font-size:1rem;padding:0 12px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--text)}.ust-ara-form button{height:44px;padding:0 16px;border:0;border-radius:6px;background:var(--ink);color:#fff;font:inherit;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;cursor:pointer}}.brand{display:flex;align-items:center;flex:none}.brand .logo{display:block;height:44px;width:auto}@media(max-width:480px){.brand .logo{height:40px}}@media(max-width:360px){.brand .logo{height:34px}}.lang a{font-family:var(--sans);font-weight:600;font-size:.75rem;letter-spacing:.06em;color:var(--text-soft);padding:0 11px;height:100%;line-height:1;display:inline-flex;align-items:center;text-decoration:none;transition:background .25s,color .25s}.lang a+a{border-left:1px solid var(--line)}.lang a.active{background:var(--accent);color:#fff}.lang a:hover:not(.active){color:var(--accent)}@media(max-width:400px){.hdr-right{gap:7px}.lang a,.lang button{padding:0 9px}.row:has(#btn-de) .brand .logo{height:34px}.lang:has(#btn-de) a{padding:0 6px}.hdr-right:has(#btn-de){gap:4px}}/* mobil menü eş güdümü (2026-11-14) */@media(min-width:1360px){.ust-gezinti .ust-ek{display:none}}@media(min-width:1360px){.ust-gezinti{gap:14px}}@media(max-width:1359.98px){.ust-gezinti{max-height:calc(100vh - 80px);overflow-y:auto;overscroll-behavior:contain}html.menu-acik{overflow:hidden}.ust-gezinti a[aria-current="page"]{color:var(--accent)}}@media(max-width:480px){.hdr-right .back+.back{display:none}}</style><script>/* H-3 menü */(function(){var d=document.querySelector('.ust-menu-dugme'),n=document.getElementById('ust-gezinti');if(!d||!n)return;var f=n.querySelector('form'),q=f&&f.querySelector('input'),r=document.documentElement;function l(){return r.lang==='en'?'en':'tr';}function b(){if(!n.classList.contains('acik'))return;var h=innerHeight;['.mobil-cubuk','#cookieBar'].forEach(function(s){var e=document.querySelector(s);if(!e)return;var c=getComputedStyle(e),t=e.getBoundingClientRect().top;if(c.display!=='none'&&c.visibility!=='hidden'&&t>0&&t<h)h=t;});n.style.maxHeight=Math.max(150,h-n.getBoundingClientRect().top)+'px';}function k(a,o){n.classList.toggle('acik',a);r.classList.toggle('menu-acik',a);d.setAttribute('aria-expanded',a?'true':'false');if(a){if(f&&q){f.action=l()==='en'?'/en/articles':'/makaleler';q.placeholder=q.getAttribute('data-ph-'+l())||q.placeholder;}b();if(o){var g=n.querySelector('input,a');if(g)g.focus();}}}d.addEventListener('click',function(e){k(d.getAttribute('aria-expanded')!=='true',e.detail===0);});n.addEventListener('click',function(e){if(e.target.closest('a'))k(false);});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&n.classList.contains('acik')){k(false);d.focus();}});document.addEventListener('click',function(e){if(n.classList.contains('acik')&&!n.contains(e.target)&&!d.contains(e.target))k(false);});addEventListener('resize',function(){if(innerWidth>1359&&n.classList.contains('acik'))k(false);else b();});})();</script>
+    </div>
+  </div>
+</header>
+<main id="icerik">
+  <section class="page-head wrap">
+    <nav class="yol" aria-label="Breadcrumb"><a href="/en/">Home</a> › <a href="/en/calculations">Calculations</a></nav>
+    <span class="eyebrow">Calculations</span>
+    <h1>Employee Receivables Calculator</h1>
+    <p class="hs-git-kap"><a class="hs-git-dugme" href="#iscilik-form">Go to the calculator</a></p>
+    <p class="lead">Calculates, under Turkish law, severance pay (kıdem tazminatı) and notice pay (ihbar tazminatı) on the gross wage including regular benefits; bad-faith, reinstatement, discrimination and trade-union compensation and pay for the remaining term; and unpaid wages, annual leave, overtime, weekly rest and general holiday receivables. Each item is shown with its legal basis and step-by-step calculation, and the deductions from gross to net in a table. For periods without data, no amount is given, and the tool says so.</p>
+    <p class="iscilik-kisa-cevap"><strong>Short answer:</strong> Under Turkish law, severance pay (kıdem tazminatı), notice pay (ihbar tazminatı) and annual leave pay are calculated from the last wage, and overtime, weekly rest and general holiday receivables from the wage of the relevant period. Severance pay is 30 days&#039; gross wage including regular benefits for each full year and cannot exceed the ceiling on the date of termination (1475 art. 14); notice pay is 2 to 8 weeks&#039; gross wage including regular benefits, depending on the length of service (4857 art. 17); the other wage receivables are calculated from the bare wage. Only stamp duty is deducted from severance pay, income tax and stamp duty from notice pay, and, in addition, social insurance and unemployment premiums from wage receivables.</p>
+  </section>
+
+  <section class="content wrap">
+    <div class="iscilik-arac">
+      <p class="iscilik-kisa">Information tool; not legal advice.</p>
+      <p class="hs-nasil">How to use: fill in the required fields, open the optional sections that fit your situation and press the calculate button; the result appears on this page, just below the form. Results are preliminary estimates.</p>
+      <p class="hs-gizlilik">The information you enter is calculated in your browser and is not sent to the server.</p>
+      <form id="iscilik-form" class="iscilik-form" novalidate data-teyit="2026-11-10">
+        <p class="iscilik-not">Required fields: date of starting work, last working day, way in which the contract ended and last monthly bare gross wage. The other sections are optional. Amounts use the Turkish format, with a dot for thousands and a comma for decimals: write “33.030,00” (33,030.00), “33030” or “33030.50”; results are shown in the same format (TL = Turkish lira) and dates as DD.MM.YYYY. No personal data, file number or employer name is requested.</p>
+        <nav class="hs-adimlar" aria-label="Form sections"><ol><li><a href="#isc-b1">1 Employment relationship</a></li><li><a href="#isc-b2">2 Wage</a></li><li><a href="#isc-b3">3 Other receivables (optional)</a></li><li><a href="#isc-b4">4 Gross to net (optional)</a></li><li>Result</li></ol></nav>
+
+        <fieldset class="iscilik-bolum" id="isc-b1">
+          <legend>1. Employment relationship</legend>
+          <div class="iscilik-satir">
+            <div class="iscilik-alan">
+              <label for="isc-giris">Date of starting work <span class="hs-zorunlu">required</span></label>
+              <input type="date" id="isc-giris" name="giris" required aria-describedby="isc-giris-not" />
+              <p class="iscilik-not" id="isc-giris-not">The first day of work in the employment contract or in the SGK service record.</p>
+            </div>
+            <div class="iscilik-alan">
+              <label for="isc-cikis">Last working day (date of termination) <span class="hs-zorunlu">required</span></label>
+              <input type="date" id="isc-cikis" name="cikis" required aria-describedby="isc-cikis-not" />
+            </div>
+          </div>
+          <p class="iscilik-not" id="isc-cikis-not">The last day is included in the length of service. If the notice period was worked, enter the last day of that period.</p>
+          <div class="iscilik-alan">
+            <label for="isc-fesih">Way in which the contract ended <span class="hs-zorunlu">required</span></label>
+            <select id="isc-fesih" name="fesih" required aria-describedby="isc-fesih-not">
+              <option value="">Select</option>
+              <option value="isveren">The employer terminated (without a just cause such as conduct contrary to morality and good faith)</option>
+              <option value="isveren_25_2">The employer terminated for conduct contrary to morality and good faith (4857 art. 25/II)</option>
+              <option value="isveren_25_diger">The employer terminated for health reasons, force majeure or custody/detention (4857 art. 25/I, III, IV)</option>
+              <option value="isci_hakli">The employee terminated for just cause (4857 art. 24)</option>
+              <option value="istifa">The employee resigned without just cause</option>
+              <option value="askerlik">Left for compulsory military service (1475 art. 14/1-3)</option>
+              <option value="emeklilik">Left to receive an old-age, retirement or invalidity pension or a lump-sum payment (1475 art. 14/1-4)</option>
+              <option value="sure_prim">Left after completing the retirement conditions other than age (insurance period and premium days) (1475 art. 14/1-5)</option>
+              <option value="evlilik">Female employee left within one year of marriage (1475 art. 14)</option>
+              <option value="olum">Death of the employee (1475 art. 14)</option>
+            </select>
+            <p class="iscilik-not" id="isc-fesih-not">Choose the option that matches who ended the contract and why.</p>
+          </div>
+          <div class="iscilik-satir">
+            <div class="iscilik-alan">
+              <label for="isc-sozlesme">Type of contract</label>
+              <select id="isc-sozlesme" name="sozlesme">
+                <option value="belirsiz">Indefinite term</option>
+                <option value="belirli">Fixed term</option>
+              </select>
+            </div>
+            <div class="iscilik-alan" id="isc-belirli-alan" hidden>
+              <label for="isc-belirli-bitis">End date of the fixed-term contract</label>
+              <input type="date" id="isc-belirli-bitis" name="belirli_bitis" />
+            </div>
+          </div>
+          <div class="iscilik-satir">
+            <div class="iscilik-alan">
+              <label for="isc-otuz">Are thirty or more employees employed at the workplace?</label>
+              <select id="isc-otuz" name="otuz_isci" aria-describedby="isc-otuz-not">
+                <option value="">I do not know</option>
+                <option value="evet">Yes</option>
+                <option value="hayir">No</option>
+              </select>
+            </div>
+            <div class="iscilik-alan">
+              <label for="isc-dogum">Date of birth (optional)</label>
+              <input type="date" id="isc-dogum" name="dogum" aria-describedby="isc-dogum-not" />
+            </div>
+          </div>
+          <p class="iscilik-not" id="isc-otuz-not">Used to check job security (4857 art. 18/1) for bad-faith compensation and the consequences of reinstatement.</p>
+          <p class="iscilik-not" id="isc-dogum-not">Used for the twenty-day minimum annual leave (4857 art. 53) for employees aged eighteen or younger or fifty or older.</p>
+          <div class="iscilik-secim">
+            <label><input type="checkbox" id="isc-ihbar-verildi" name="ihbar_verildi" /> The notice period was given, or the wage for that period was paid in advance (4857 art. 17)</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="iscilik-bolum" id="isc-b2" aria-describedby="isc-ucret-not">
+          <legend>2. Wage</legend>
+          <div class="iscilik-alan">
+            <label for="isc-ciplak">Last monthly bare gross wage (TL) <span class="hs-zorunlu">required</span></label>
+            <input type="text" id="isc-ciplak" name="ciplak" inputmode="decimal" autocomplete="off" required placeholder="e.g. 33.030,00" aria-describedby="isc-ciplak-not" />
+            <p class="iscilik-not" id="isc-ciplak-not">The monthly gross wage on the payslip; regular payments such as travel, meals and bonuses are added separately below.</p>
+          </div>
+          <p class="iscilik-not" id="isc-ucret-not">For the gross wage including regular benefits (giydirilmiş brüt ücret), add separately each payment in money or benefit measurable in money that is paid regularly and continuously (such as travel, meals, bonus, premium, fuel allowance). Do not add one-off occasional payments. Annual payments are divided by 365 days and quarterly payments by 90 days and added to the 30-day wage. For meal and travel allowances paid per working day, enter the number of days for which they are paid in a month: 26 (default) for a six-day week, 22 for a five-day week.</p>
+          <div id="isc-ek-listesi"></div>
+          <button type="button" id="isc-ek-ekle" class="iscilik-ikincil">+ Add a regular payment</button>
+        </fieldset>
+
+        <fieldset class="iscilik-bolum" id="isc-b3">
+          <legend>3. Other receivables (optional)</legend>
+          <p class="iscilik-not">Severance pay and notice pay are always checked. Tick the box for the other items.</p>
+
+          <details class="iscilik-details">
+            <summary>Unpaid wages and annual leave</summary>
+            <div class="iscilik-ic">
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-ucret" data-kalem aria-controls="isc-ucret-alan" /> Calculate unpaid wages (4857 art. 32)</label></div>
+              <div id="isc-ucret-alan" hidden>
+                <div class="iscilik-satir">
+                  <div class="iscilik-alan"><label for="isc-ucret-ay">Unpaid months</label><input type="number" id="isc-ucret-ay" min="0" max="120" step="1" inputmode="numeric" /></div>
+                  <div class="iscilik-alan"><label for="isc-ucret-gun">Unpaid days</label><input type="number" id="isc-ucret-gun" min="0" max="29" step="1" inputmode="numeric" /></div>
+                  <div class="iscilik-alan"><label for="isc-ucret-aylik">Monthly gross for that period (if empty, the last bare wage)</label><input type="text" id="isc-ucret-aylik" inputmode="decimal" autocomplete="off" /></div>
+                </div>
+              </div>
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-izin" data-kalem aria-controls="isc-izin-alan" /> Calculate pay for unused annual leave (4857 art. 53, art. 59)</label></div>
+              <div id="isc-izin-alan" hidden>
+                <div class="iscilik-satir">
+                  <div class="iscilik-alan"><label for="isc-izin-kullanilan">Total leave days used</label><input type="number" id="isc-izin-kullanilan" min="0" max="9999" step="1" inputmode="numeric" /></div>
+                  <div class="iscilik-alan"><label for="isc-izin-kalan">Or unused days (if known)</label><input type="number" id="isc-izin-kalan" min="1" max="9999" step="1" inputmode="numeric" /></div>
+                </div>
+                <p class="iscilik-not">If unused days are left empty, the leave earned is calculated for each full year of service with the minimum periods in 4857 art. 53; for longer periods under the contract or a collective labour agreement, enter the unused days.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="iscilik-details">
+            <summary>Overtime, weekly rest, general holidays</summary>
+            <div class="iscilik-ic">
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-fazla" data-kalem aria-controls="isc-fazla-alan" /> Calculate overtime pay (4857 art. 41)</label></div>
+              <div id="isc-fazla-alan" hidden>
+                <p class="iscilik-not">For each period, enter the number of hours exceeding 45 hours a week. The hourly wage is the monthly bare wage divided by 225. Enter days not worked, such as leave and sick leave, as “excluded days”.</p>
+                <div id="isc-fazla-listesi" data-liste="isc-fazla-sablon"></div>
+                <button type="button" id="isc-fazla-ekle" class="iscilik-ikincil">+ Add a period</button>
+                <div class="iscilik-alan"><label for="isc-hk-fazla">Equitable reduction (%, if based on witness statements)</label><input type="number" id="isc-hk-fazla" min="0" max="100" step="1" inputmode="numeric" aria-describedby="isc-hk-not" /></div>
+              </div>
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-hafta" data-kalem aria-controls="isc-hafta-alan" /> Calculate weekly rest day pay (4857 art. 46)</label></div>
+              <div id="isc-hafta-alan" hidden>
+                <div id="isc-hafta-listesi" data-liste="isc-hafta-sablon"></div>
+                <button type="button" id="isc-hafta-ekle" class="iscilik-ikincil">+ Add a period</button>
+                <div class="iscilik-alan"><label for="isc-hk-hafta">Equitable reduction (%)</label><input type="number" id="isc-hk-hafta" min="0" max="100" step="1" inputmode="numeric" /></div>
+              </div>
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-ubgt" data-kalem aria-controls="isc-ubgt-alan" /> Calculate national holiday and general holiday pay (4857 art. 47)</label></div>
+              <div id="isc-ubgt-alan" hidden>
+                <div id="isc-ubgt-listesi" data-liste="isc-ubgt-sablon"></div>
+                <button type="button" id="isc-ubgt-ekle" class="iscilik-ikincil">+ Add a period</button>
+                <div class="iscilik-alan"><label for="isc-hk-ubgt">Equitable reduction (%)</label><input type="number" id="isc-hk-ubgt" min="0" max="100" step="1" inputmode="numeric" /></div>
+              </div>
+              <p class="iscilik-not" id="isc-hk-not">The equitable reduction (hakkaniyet indirimi) applies only to the part proved by witness statements; the Court of Cassation General Assembly of Civil Chambers found a thirty per cent rate appropriate (Yargıtay HGK 2015/1616 E., 2016/128 K.). The rate is at the court's discretion.</p>
+            </div>
+          </details>
+
+          <details class="iscilik-details">
+            <summary>Other compensation arising from termination</summary>
+            <div class="iscilik-ic">
+              <p class="iscilik-not">Only one of bad-faith, discrimination and trade-union compensation can be claimed for the same termination; if more than one is selected, the higher amount is calculated and the amounts of the others are shown but not added to the total.</p>
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-kotu" data-kalem /> Bad-faith compensation (employee outside job security; 4857 art. 17/6)</label></div>
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-iade" data-kalem aria-controls="isc-iade-alan" /> Financial consequences of a reinstatement action (4857 art. 21)</label></div>
+              <div id="isc-iade-alan" hidden>
+                <div class="iscilik-satir">
+                  <div class="iscilik-alan"><label for="isc-bosta-ay">Idle period (months, at most 4)</label><input type="number" id="isc-bosta-ay" min="0" max="4" step="1" value="4" inputmode="numeric" /></div>
+                  <div class="iscilik-alan"><label for="isc-baslatmama-ay">Compensation for non-reinstatement (months, 4–8; 0 if none)</label><input type="number" id="isc-baslatmama-ay" min="0" max="8" step="1" value="4" inputmode="numeric" /></div>
+                </div>
+              </div>
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-ayrim" data-kalem aria-controls="isc-ayrim-alan" /> Discrimination compensation (4857 art. 5/6)</label></div>
+              <div id="isc-ayrim-alan" hidden>
+                <div class="iscilik-alan"><label for="isc-ayrim-ay">Months (up to four; at the court's discretion)</label><input type="number" id="isc-ayrim-ay" min="1" max="4" step="1" value="4" inputmode="numeric" /></div>
+              </div>
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-sendikal" data-kalem aria-controls="isc-sendikal-alan" /> Trade-union compensation (6356 art. 25)</label></div>
+              <div id="isc-sendikal-alan" hidden>
+                <div class="iscilik-alan"><label for="isc-sendikal-ay">Months (at least 12)</label><input type="number" id="isc-sendikal-ay" min="12" max="99" step="1" value="12" inputmode="numeric" /></div>
+              </div>
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-bakiye" data-kalem aria-controls="isc-bakiye-alan" /> Pay for the remaining term of a fixed-term contract (TBK art. 438)</label></div>
+              <div id="isc-bakiye-alan" hidden>
+                <div class="iscilik-alan"><label for="isc-bakiye-indirim">Income saved or earned from other work during the remaining term (TL)</label><input type="text" id="isc-bakiye-indirim" inputmode="decimal" autocomplete="off" /></div>
+                <div class="iscilik-secim"><label><input type="checkbox" id="isc-bakiye-giydirilmis" /> Calculate including the regular additional payments (with the gross wage including regular benefits)</label></div>
+              </div>
+            </div>
+          </details>
+        </fieldset>
+
+        <details class="iscilik-details hs-ayrintili" id="isc-b4">
+          <summary>4. Gross to net (optional): payment date, tax base, minimum wage exemption</summary>
+          <div class="iscilik-ic">
+            <div class="iscilik-satir">
+              <div class="iscilik-alan">
+                <label for="isc-odeme">Payment (calculation) date</label>
+                <input type="date" id="isc-odeme" name="odeme" aria-describedby="isc-odeme-not" />
+              </div>
+              <div class="iscilik-alan">
+                <label for="isc-kumulatif">Income tax base for that year up to the month of payment (TL)</label>
+                <input type="text" id="isc-kumulatif" name="kumulatif" inputmode="decimal" autocomplete="off" placeholder="empty = 0" aria-describedby="isc-kumulatif-not" />
+              </div>
+            </div>
+            <p class="iscilik-not" id="isc-odeme-not">If left empty, the last working day is used. The income tax tariff and the rates of the year of this date apply.</p>
+            <p class="iscilik-not" id="isc-kumulatif-not">Enter the cumulative tax base from the payroll; if left empty, the calculation starts from zero (the first bracket) and the net amount may appear higher than it is.</p>
+            <div class="iscilik-secim">
+              <label><input type="checkbox" id="isc-au" name="au_istisna" /> Apply the minimum wage exemption from income tax and stamp duty (if no other wage was paid by the same employer in the month of payment; Law No. 193 art. 23/1-18)</label>
+            </div>
+          </div>
+        </details>
+
+        <div class="iscilik-hata" id="iscilik-hata" role="alert" hidden></div>
+        <button type="submit" class="iscilik-gonder" disabled>Calculate the receivables</button>
+      </form>
+
+      <template id="isc-ek-sablon">
+        <div class="iscilik-tekrar" data-ek="">
+          <div class="iscilik-satir">
+            <div class="iscilik-alan">
+              <label for="__-tur">Payment</label>
+              <select id="__-tur" name="ek_tur">
+                <option value="yol">Travel</option>
+                <option value="yemek">Meals</option>
+                <option value="ikramiye">Bonus (ikramiye)</option>
+                <option value="prim">Premium (prim)</option>
+                <option value="yakacak">Fuel allowance (yakacak)</option>
+                <option value="giyim">Clothing</option>
+                <option value="diger">Other regular payment</option>
+              </select>
+            </div>
+            <div class="iscilik-alan"><label for="__-tutar">Amount (TL, gross)</label><input type="text" id="__-tutar" name="ek_tutar" inputmode="decimal" autocomplete="off" /></div>
+            <div class="iscilik-alan">
+              <label for="__-donem">Payment period</label>
+              <select id="__-donem" name="ek_donem">
+                <option value="ay">Monthly</option>
+                <option value="is_gunu">Per working day</option>
+                <option value="uc_ay">Quarterly</option>
+                <option value="alti_ay">Half-yearly</option>
+                <option value="yil">Annual</option>
+              </select>
+            </div>
+            <div class="iscilik-alan" data-ek-gun hidden><label for="__-gun">Days paid per month</label><input type="number" id="__-gun" name="ek_gun" min="1" max="31" step="1" value="26" inputmode="numeric" /></div>
+          </div>
+          <button type="button" class="iscilik-sil">Remove this payment</button>
+        </div>
+      </template>
+      <template id="isc-fazla-sablon">
+        <div class="iscilik-tekrar" data-fazla="">
+          <div class="iscilik-satir">
+            <div class="iscilik-alan"><label for="__-bas">Start of period</label><input type="date" id="__-bas" name="f_bas" /></div>
+            <div class="iscilik-alan"><label for="__-bit">End of period</label><input type="date" id="__-bit" name="f_bit" /></div>
+            <div class="iscilik-alan"><label for="__-saat">Overtime hours per week</label><input type="text" id="__-saat" name="f_saat" inputmode="decimal" autocomplete="off" /></div>
+            <div class="iscilik-alan"><label for="__-aylik">Monthly bare gross wage for the period (TL)</label><input type="text" id="__-aylik" name="f_aylik" inputmode="decimal" autocomplete="off" /></div>
+            <div class="iscilik-alan"><label for="__-dislanan">Excluded days (leave, sick leave)</label><input type="number" id="__-dislanan" name="f_dislanan" min="0" step="1" inputmode="numeric" /></div>
+            <div class="iscilik-alan">
+              <label for="__-tur">Type</label>
+              <select id="__-tur" name="f_tur">
+                <option value="fc">Overtime (50% increase)</option>
+                <option value="fsc">Work for extended hours (25% increase)</option>
+              </select>
+            </div>
+          </div>
+          <div class="iscilik-secim"><label><input type="checkbox" name="f_zam" /> The normal wage was paid; calculate only the increase</label></div>
+          <button type="button" class="iscilik-sil">Remove this period</button>
+        </div>
+      </template>
+      <template id="isc-hafta-sablon">
+        <div class="iscilik-tekrar" data-hafta="">
+          <div class="iscilik-satir">
+            <div class="iscilik-alan"><label for="__-gun">Weekly rest days worked</label><input type="text" id="__-gun" name="h_gun" inputmode="decimal" autocomplete="off" /></div>
+            <div class="iscilik-alan"><label for="__-aylik">Monthly bare gross wage for the period (TL)</label><input type="text" id="__-aylik" name="h_aylik" inputmode="decimal" autocomplete="off" /></div>
+          </div>
+          <div class="iscilik-secim"><label><input type="checkbox" name="h_zam" /> The normal wage was paid; calculate only the 50% increase</label></div>
+          <button type="button" class="iscilik-sil">Remove this row</button>
+        </div>
+      </template>
+      <template id="isc-ubgt-sablon">
+        <div class="iscilik-tekrar" data-ubgt="">
+          <div class="iscilik-satir">
+            <div class="iscilik-alan"><label for="__-gun">National and general holiday days worked (eve of a religious holiday, half day: 0,5)</label><input type="text" id="__-gun" name="u_gun" inputmode="decimal" autocomplete="off" /></div>
+            <div class="iscilik-alan"><label for="__-aylik">Monthly bare gross wage for the period (TL)</label><input type="text" id="__-aylik" name="u_aylik" inputmode="decimal" autocomplete="off" /></div>
+          </div>
+          <button type="button" class="iscilik-sil">Remove this row</button>
+        </div>
+      </template>
+      <div id="iscilik-sonuc" class="iscilik-sonuc" aria-live="polite" data-filigran></div>
+      <p class="hs-yonlendirme" id="iscilik-yonlendirme" hidden>If you would like to assess the result together with your own situation, see the <a href="/en/practice-area/labor-social-security-law">Labor &amp; Social Security Law</a> page or the <a href="/en/contact">Contact</a> page.</p>
+      <noscript><p class="iscilik-mesaj">The calculator runs in your browser with JavaScript. With JavaScript turned off, the rules, tables and statutory provisions below can still be read.</p></noscript>
+    </div>
+
+    <div class="iscilik-bilgi-bolum">
+      <h2>Turkish law framework</h2>
+      <p>This calculator applies Turkish labour law, i.e. it works under Turkish law (the law of the Republic of Türkiye): Labour Act No. 4857, Article 14 of the former Labour Act No. 1475 (still in force for severance pay), Law No. 6356 on Trade Unions and Collective Labour Agreements, the Turkish Code of Obligations (TBK, Law No. 6098), Law No. 5510 on Social Insurance and General Health Insurance, Law No. 4447 on Unemployment Insurance, the Income Tax Law No. 193 and the Stamp Duty Law No. 488. The Turkish version is the original: <a href="/hesaplamalar/iscilik-alacaklari" hreflang="tr" lang="tr">İşçilik Alacakları Hesaplama</a>.</p>
+
+      <h2>Items calculated</h2>
+      <div class="iscilik-tablo-kap">
+        <table class="iscilik-tablo">
+          <caption>Item, wage base and legal basis</caption>
+          <thead><tr><th scope="col">Item</th><th scope="col">Wage base</th><th scope="col">Calculation</th><th scope="col">Legal basis</th></tr></thead>
+          <tbody>
+            <tr><td>Severance pay (kıdem tazminatı)</td><td>gross including regular benefits, limited by the ceiling on the date of termination</td><td>30 days' wage for each full year; remaining months and days pro rata</td><td>1475 art. 14</td></tr>
+            <tr><td>Notice pay (ihbar tazminatı)</td><td>gross including regular benefits</td><td>2, 4, 6 or 8 weeks' wage</td><td>4857 art. 17</td></tr>
+            <tr><td>Bad-faith compensation (kötü niyet tazminatı)</td><td>gross including regular benefits</td><td>three times the wage for the notice period</td><td>4857 art. 17/6</td></tr>
+            <tr><td>Wages for the idle period (boşta geçen süre ücreti)</td><td>gross including regular benefits, wage on the date of the action</td><td>at most four months' wages and other rights</td><td>4857 art. 21/3-4</td></tr>
+            <tr><td>Compensation for non-reinstatement (işe başlatmama tazminatı)</td><td>bare, wage on the date of the action</td><td>four to eight months' wages</td><td>4857 art. 21/1, 21/4</td></tr>
+            <tr><td>Discrimination compensation (ayrımcılık tazminatı)</td><td>bare</td><td>up to four months' wages</td><td>4857 art. 5/6</td></tr>
+            <tr><td>Trade-union compensation (sendikal tazminat)</td><td>bare</td><td>at least one year's wages</td><td>6356 art. 25/4</td></tr>
+            <tr><td>Pay for the remaining term (bakiye süre ücreti)</td><td>bare (optionally including regular benefits)</td><td>remaining days × daily wage, less savings and other income</td><td>TBK art. 438</td></tr>
+            <tr><td>Unpaid wages (ödenmeyen ücret)</td><td>bare</td><td>the months and days unpaid</td><td>4857 art. 32</td></tr>
+            <tr><td>Annual leave pay (yıllık izin ücreti)</td><td>bare, last wage</td><td>unused days × daily wage</td><td>4857 art. 53, art. 57, art. 59</td></tr>
+            <tr><td>Overtime (fazla çalışma)</td><td>bare</td><td>hourly wage (monthly / 225) × 150% (125% for work for extended hours)</td><td>4857 art. 41</td></tr>
+            <tr><td>Weekly rest (hafta tatili)</td><td>bare</td><td>daily wage × 150%</td><td>4857 art. 46; HGK 2016/2387 E., 2021/504 K.</td></tr>
+            <tr><td>National holidays and general holidays (ulusal bayram ve genel tatil)</td><td>bare</td><td>one additional day's wage for each day worked</td><td>4857 art. 47</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Gross wage including regular benefits</h2>
+      <p>In calculating the wage on which severance pay is based, “para ve para ile ölçülmesi mümkün akdi ve kanundan doğan menfaatler de gözönünde tutulur” (1475 art. 14/11; translation: “benefits in money and measurable in money arising from the contract and from the law are also taken into account”); the same rule appears for notice pay and bad-faith compensation in the last paragraph of 4857 art. 17. The Court of Cassation General Assembly of Civil Chambers summarises the distinction as follows: “kıdem tazminatı, giydirilmiş ücretten hesaplanırken, diğer işçilik alacakları (fazla çalışma, hafta tatili, yıllık ücretli izin alacakları gibi) çıplak ücretten hesaplanmaktadır” (Yargıtay HGK 2016/2084 E., 2020/20 K.; translation: “while severance pay is calculated from the gross wage including regular benefits, the other employee receivables (such as overtime, weekly rest and annual paid leave receivables) are calculated from the bare wage”). Occasional payments that are not continuous are not included (Yargıtay 7. HD 2015/6784 E., 2016/7198 K.). For payments made once a year or not periodically, the annual amount is divided by 365 days, and for periodic payments the amount for the last period is divided by the number of days in the period (Yargıtay 9. HD 2016/24123 E., 2020/5415 K.); the tool converts this share into 30 days and adds it to the bare wage. For meal and travel allowances paid per working day, the Court of Cassation takes the number of days actually worked in a month: 26 days for a six-day week (Yargıtay 22. HD 2015/33111 E., 2018/7814 K.) and 22 days for a five-day week (Yargıtay 7. HD 2014/21982 E., 2015/23951 K.); the tool multiplies the daily amount by the number of days entered, the default being 26. The minimum living allowance (asgari geçim indirimi) is not added to the gross wage including regular benefits (same decision).</p>
+
+      <h2>Gross to net: which deduction from which item</h2>
+      <div class="iscilik-tablo-kap">
+        <table class="iscilik-tablo">
+          <caption>Deduction table</caption>
+          <thead><tr><th scope="col">Item</th><th scope="col">SGK employee share 14%</th><th scope="col">Unemployment premium 1%</th><th scope="col">Income tax</th><th scope="col">Stamp duty 7.59 per thousand</th></tr></thead>
+          <tbody>
+            <tr><td>Severance pay</td><td>none (5510 art. 80/1-b)</td><td>none</td><td>exempt (Law No. 193 art. 25/7)</td><td>yes</td></tr>
+            <tr><td>Notice pay</td><td>none (5510 art. 80/1-b)</td><td>none</td><td>yes (Law No. 193 art. 61)</td><td>yes</td></tr>
+            <tr><td>Unpaid wages, annual leave, overtime, weekly rest, general holidays, wages for the idle period</td><td>yes (5510 art. 80-81)</td><td>yes (4447 art. 49)</td><td>yes (Law No. 193 art. 61, art. 103)</td><td>yes</td></tr>
+            <tr><td>Compensation for non-reinstatement</td><td colspan="2">shown gross</td><td>exempt (Law No. 193 art. 25/1)</td><td>shown gross</td></tr>
+            <tr><td>Bad-faith, discrimination, trade-union, remaining term</td><td colspan="4">shown gross: the tax and premium treatment depends on the specific case</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul class="iscilik-sira">
+        <li><strong>Income tax:</strong> calculated progressively with the wage tariff of the payment year, on top of the cumulative tax base entered (Law No. 193 art. 103). The tax base is the gross amount less the employee shares of the social insurance and unemployment premiums.</li>
+        <li><strong>Stamp duty:</strong> 7.59 per thousand on “Maaş, ücret, gündelik, … tazminat ve benzeri her ne adla olursa olsun hizmet karşılığı alınan paralar” (Law No. 488 table (1) IV-1-b; translation: “salaries, wages, daily pay, … compensation and similar sums received for services, under whatever name”).</li>
+        <li><strong>Minimum wage exemption (2022 onwards):</strong> no tax is levied on the part of the wage corresponding to the gross minimum wage less the employee premiums, and no stamp duty on the part corresponding to the monthly gross minimum wage (Law No. 193 art. 23/1-18; Law No. 488 table (2) IV-34). The exemption is applied once to the total of the wage payments made in the month of payment and “asgari ücretin ilgili ayda hesaplanan vergisini geçemeyecektir” (Income Tax General Communiqué (GV Genel Tebliği) Serial No: 319 art. 4/5, art. 6/1; translation: “cannot exceed the tax calculated on the minimum wage for the relevant month”). The tool finds the minimum wage tax for that month on the minimum wage tax base from the start of the year up to that month. Since severance pay is compensation and not a wage, the stamp duty exemption does not apply to it.</li>
+        <li><strong>Not taken into account:</strong> the ceiling on earnings subject to premiums (5510 art. 82), the minimum living allowance for payments before 2022, the disability allowance and wages from more than one employer.</li>
+      </ul>
+
+      <h2>Interest</h2>
+      <p>No interest amount is calculated: the highest interest rate applied to deposits differs between banks and periods, and there is no single official table. Which interest may run on which receivable is shown below.</p>
+      <div class="iscilik-tablo-kap">
+        <table class="iscilik-tablo">
+          <caption>Type and start of interest</caption>
+          <thead><tr><th scope="col">Receivable</th><th scope="col">Interest</th><th scope="col">Start</th><th scope="col">Legal basis</th></tr></thead>
+          <tbody>
+            <tr><td>Severance pay</td><td>highest interest rate applied to deposits</td><td>in practice, the date of termination</td><td>1475 art. 14/11: “hakim gecikme süresi için, ödenmeyen süreye göre mevduata uygulanan en yüksek faizin ödenmesine hükmeder” (translation: “for the period of delay, the judge orders payment of the highest interest applied to deposits for the unpaid period”)</td></tr>
+            <tr><td>Wages not paid on time</td><td>highest interest rate applied to deposits</td><td>payment day</td><td>4857 art. 34/1: “Gününde ödenmeyen ücretler için mevduata uygulanan en yüksek faiz oranı uygulanır.” (translation: “For wages not paid on time, the highest interest rate applied to deposits applies.”)</td></tr>
+            <tr><td>Overtime, weekly rest, general holiday pay and wages for the idle period</td><td>highest interest rate applied to deposits (if the claim is limited to statutory interest, the judgment cannot exceed the claim)</td><td>date of default (demand); failing that, the dates of the action and of the amendment of the claim (ıslah). For wages for the idle period, the date of the application to return to work if this pay was claimed in it</td><td>4857 art. 34/1. Yargıtay 9. HD 2019/5886 E., 2021/2712 K.: for wages and other rights for the idle period “4857 sayılı Kanunun 34 üncü maddesinde sözü edilen özel faiz türü uygulanmalıdır” (translation: “the special type of interest mentioned in Article 34 of Law No. 4857 must be applied”); 9. HD 2023/2081 E., 2023/7457 K.</td></tr>
+            <tr><td>Notice pay, bad-faith compensation, compensation for non-reinstatement, discrimination and trade-union compensation; annual leave pay</td><td>statutory interest</td><td>date of default (demand); failing that, the dates of the action and of the amendment of the claim (ıslah)</td><td>Law No. 3095 art. 1; TBK art. 117. Example judgment: Yargıtay HGK 2015/278 E., 2017/15 K. Compensation for non-reinstatement “niteliği itibarıyla tazminat olduğundan uygulanması gereken faiz, yasal faiz olmalıdır” (Yargıtay 9. HD 2019/5886 E., 2021/2712 K.; translation: “since it is by its nature compensation, the interest to be applied must be statutory interest”).</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Data tables</h2>
+      <p>The tables cover the period 01.01.2015–31.12.2026; for dates of termination or payment outside this period, the tool gives no amount and says “no data”. Sources: the severance pay ceiling and minimum wage tables of the Ministry of Labour and Social Security, decisions of the Minimum Wage Determination Commission (Official Gazette), the Income Tax General Communiqués, and Laws No. 488, 5510 and 4447.</p>
+      <details><summary>Severance pay ceiling</summary><div class="iscilik-tablo-kap"><table class="iscilik-tablo"><caption>Severance pay ceiling (for one year of service)</caption><thead><tr><th scope="col">Period</th><th scope="col">Ceiling (TL)</th></tr></thead><tbody><tr><td>01.01.2015 – 30.06.2015</td><td>3.541,37</td></tr><tr><td>01.07.2015 – 31.08.2015</td><td>3.709,98</td></tr><tr><td>01.09.2015 – 31.12.2015</td><td>3.828,37</td></tr><tr><td>01.01.2016 – 30.06.2016</td><td>4.092,53</td></tr><tr><td>01.07.2016 – 31.12.2016</td><td>4.297,21</td></tr><tr><td>01.01.2017 – 30.06.2017</td><td>4.426,16</td></tr><tr><td>01.07.2017 – 31.12.2017</td><td>4.732,48</td></tr><tr><td>01.01.2018 – 30.06.2018</td><td>5.001,76</td></tr><tr><td>01.07.2018 – 31.12.2018</td><td>5.434,42</td></tr><tr><td>01.01.2019 – 30.06.2019</td><td>6.017,60</td></tr><tr><td>01.07.2019 – 31.12.2019</td><td>6.379,86</td></tr><tr><td>01.01.2020 – 30.06.2020</td><td>6.730,15</td></tr><tr><td>01.07.2020 – 31.12.2020</td><td>7.117,17</td></tr><tr><td>01.01.2021 – 30.06.2021</td><td>7.638,96</td></tr><tr><td>01.07.2021 – 31.12.2021</td><td>8.284,51</td></tr><tr><td>01.01.2022 – 30.06.2022</td><td>10.848,59</td></tr><tr><td>01.07.2022 – 31.12.2022</td><td>15.371,40</td></tr><tr><td>01.01.2023 – 30.06.2023</td><td>19.982,83</td></tr><tr><td>01.07.2023 – 31.12.2023</td><td>23.489,83</td></tr><tr><td>01.01.2024 – 30.06.2024</td><td>35.058,58</td></tr><tr><td>01.07.2024 – 31.12.2024</td><td>41.828,42</td></tr><tr><td>01.01.2025 – 30.06.2025</td><td>46.655,43</td></tr><tr><td>01.07.2025 – 31.12.2025</td><td>53.919,68</td></tr><tr><td>01.01.2026 – 30.06.2026</td><td>64.948,77</td></tr><tr><td>01.07.2026 – 31.12.2026</td><td>73.729,87</td></tr></tbody></table></div></details>
+      <details><summary>Gross minimum wage</summary><div class="iscilik-tablo-kap"><table class="iscilik-tablo"><caption>Gross minimum wage (monthly)</caption><thead><tr><th scope="col">Period</th><th scope="col">Gross (TL)</th><th scope="col">Official Gazette (Resmî Gazete)</th></tr></thead><tbody><tr><td>01.01.2015 – 30.06.2015</td><td>1.201,50</td><td>31.12.2014/29222</td></tr><tr><td>01.07.2015 – 31.12.2015</td><td>1.273,50</td><td>31.12.2014/29222</td></tr><tr><td>01.01.2016 – 31.12.2016</td><td>1.647,00</td><td>31.12.2015/29579</td></tr><tr><td>01.01.2017 – 31.12.2017</td><td>1.777,50</td><td>30.12.2016/29934</td></tr><tr><td>01.01.2018 – 31.12.2018</td><td>2.029,50</td><td>30.12.2017/30286</td></tr><tr><td>01.01.2019 – 31.12.2019</td><td>2.558,40</td><td>27.12.2018/30638</td></tr><tr><td>01.01.2020 – 31.12.2020</td><td>2.943,00</td><td>27.12.2019/30991</td></tr><tr><td>01.01.2021 – 31.12.2021</td><td>3.577,50</td><td>30.12.2020/31350</td></tr><tr><td>01.01.2022 – 30.06.2022</td><td>5.004,00</td><td>17.12.2021/31692</td></tr><tr><td>01.07.2022 – 31.12.2022</td><td>6.471,00</td><td>01.07.2022/31883</td></tr><tr><td>01.01.2023 – 30.06.2023</td><td>10.008,00</td><td>29.12.2022/32058</td></tr><tr><td>01.07.2023 – 31.12.2023</td><td>13.414,50</td><td>24.06.2023/32231</td></tr><tr><td>01.01.2024 – 31.12.2024</td><td>20.002,50</td><td>30.12.2023/32415</td></tr><tr><td>01.01.2025 – 31.12.2025</td><td>26.005,50</td><td>27.12.2024/32765</td></tr><tr><td>01.01.2026 – 31.12.2026</td><td>33.030,00</td><td>26.12.2025/33119</td></tr></tbody></table></div></details>
+      <details><summary>Income tax tariff</summary><div class="iscilik-tablo-kap"><table class="iscilik-tablo"><caption>Income tax tariff (wage income)</caption><thead><tr><th scope="col">Year</th><th scope="col">Brackets (TL) and rates</th><th scope="col">Source</th></tr></thead><tbody><tr><td>2015</td><td>0,00–12.000,00: 15%; 12.000,00–29.000,00: 20%; 29.000,00–106.000,00: 27%; 106.000,00 and above: 35%</td><td>Gelir Vergisi Genel Tebliği (Seri No: 287), RG 30.12.2014</td></tr><tr><td>2016</td><td>0,00–12.600,00: 15%; 12.600,00–30.000,00: 20%; 30.000,00–110.000,00: 27%; 110.000,00 and above: 35%</td><td>Gelir Vergisi Genel Tebliği (Seri No: 290), RG 25.12.2015</td></tr><tr><td>2017</td><td>0,00–13.000,00: 15%; 13.000,00–30.000,00: 20%; 30.000,00–110.000,00: 27%; 110.000,00 and above: 35%</td><td>Gelir Vergisi Genel Tebliği (Seri No: 296), RG 27.12.2016</td></tr><tr><td>2018</td><td>0,00–14.800,00: 15%; 14.800,00–34.000,00: 20%; 34.000,00–120.000,00: 27%; 120.000,00 and above: 35%</td><td>Gelir Vergisi Genel Tebliği (Seri No: 302), RG 29.12.2017</td></tr><tr><td>2019</td><td>0,00–18.000,00: 15%; 18.000,00–40.000,00: 20%; 40.000,00–148.000,00: 27%; 148.000,00 and above: 35%</td><td>Gelir Vergisi Genel Tebliği (Seri No: 305), RG 31.12.2018</td></tr><tr><td>2020</td><td>0,00–22.000,00: 15%; 22.000,00–49.000,00: 20%; 49.000,00–180.000,00: 27%; 180.000,00–600.000,00: 35%; 600.000,00 and above: 40%</td><td>Gelir Vergisi Genel Tebliği (Seri No: 310), RG 27.12.2019</td></tr><tr><td>2021</td><td>0,00–24.000,00: 15%; 24.000,00–53.000,00: 20%; 53.000,00–190.000,00: 27%; 190.000,00–650.000,00: 35%; 650.000,00 and above: 40%</td><td>Gelir Vergisi Genel Tebliği (Seri No: 313), RG 29.12.2020</td></tr><tr><td>2022</td><td>0,00–32.000,00: 15%; 32.000,00–70.000,00: 20%; 70.000,00–250.000,00: 27%; 250.000,00–880.000,00: 35%; 880.000,00 and above: 40%</td><td>Gelir Vergisi Genel Tebliği (Seri No: 317), RG 21.12.2021</td></tr><tr><td>2023</td><td>0,00–70.000,00: 15%; 70.000,00–150.000,00: 20%; 150.000,00–550.000,00: 27%; 550.000,00–1.900.000,00: 35%; 1.900.000,00 and above: 40%</td><td>Gelir Vergisi Genel Tebliği (Seri No: 323), RG 30.12.2022</td></tr><tr><td>2024</td><td>0,00–110.000,00: 15%; 110.000,00–230.000,00: 20%; 230.000,00–870.000,00: 27%; 870.000,00–3.000.000,00: 35%; 3.000.000,00 and above: 40%</td><td>Gelir Vergisi Genel Tebliği (Seri No: 324), RG 30.12.2023</td></tr><tr><td>2025</td><td>0,00–158.000,00: 15%; 158.000,00–330.000,00: 20%; 330.000,00–1.200.000,00: 27%; 1.200.000,00–4.300.000,00: 35%; 4.300.000,00 and above: 40%</td><td>Gelir Vergisi Genel Tebliği (Seri No: 329), RG 30.12.2024</td></tr><tr><td>2026</td><td>0,00–190.000,00: 15%; 190.000,00–400.000,00: 20%; 400.000,00–1.500.000,00: 27%; 1.500.000,00–5.300.000,00: 35%; 5.300.000,00 and above: 40%</td><td>Gelir Vergisi Genel Tebliği (Seri No: 332), RG 31.12.2025</td></tr></tbody></table></div></details>
+      <ul class="iscilik-sira">
+        <li>Stamp duty rate: 7.59 per thousand on wage and compensation payments (2015–2026).</li>
+        <li>Employee share of social insurance premiums: invalidity, old-age and survivors' insurance 9% and general health insurance 5%, 14% in total (5510 art. 81); employee share of unemployment insurance 1% (4447 art. 49).</li>
+      </ul>
+
+      <h2>Order of calculation</h2>
+      <ol class="iscilik-sira">
+        <li><strong>Period:</strong> the length of service is found in years, months and days between the date of starting work and the last working day (inclusive): the full calendar months completed from the starting date up to the day after the last day (twelve of them make a year) and the calendar days remaining after the last monthly anniversary are counted; where the anniversary day does not exist in that month (e.g. 31 August + 6 months, 29 February + 1 year), the first day of the following month is taken.</li>
+        <li><strong>Wage:</strong> the gross wage including regular benefits is found by adding to the bare wage the 30-day share of each regular payment (for payments per working day, the daily amount × the days paid per month).</li>
+        <li><strong>Items:</strong> each item is calculated on its own wage base; amounts are calculated as whole numbers of kuruş, and each intermediate result is rounded half a kuruş up.</li>
+        <li><strong>Equitable reduction:</strong> the rate entered is deducted from the total of overtime, weekly rest and general holiday pay.</li>
+        <li><strong>Deductions:</strong> social insurance and unemployment premiums, income tax (cumulative) and stamp duty; if selected, the minimum wage exemption is deducted from the total.</li>
+      </ol>
+
+      <h2>Not calculated</h2>
+      <ul class="iscilik-sira">
+        <li>Limitation periods: five years for wage receivables (4857 art. 32); five years for severance pay, notice pay, bad-faith compensation, compensation for breach of equal treatment and annual leave pay (4857 additional art. 3). If the payment date is more than five years after the last working day, the tool warns but does not cut the amount. Releases (ibraname), set-offs and earlier payments; balancing, compensatory work and time off in lieu for overtime.</li>
+        <li>Mediation: in actions for employee receivables and compensation based on the law, an individual or a collective labour agreement, and in reinstatement actions, prior application to a mediator is a condition of the action; limitation is suspended from the application until the final report is drawn up (Labour Courts Law No. 7036 art. 3/1, 3/17).</li>
+        <li>Automatic expiry of a fixed-term contract, termination by mutual agreement (ikale), transfer of a workplace and cases with more than one employer; part-time, on-call and piece work; seasonal and campaign work lasting less than a year (the annual leave provisions do not apply: 4857 art. 53/3); employees subject to the Maritime Labour Law No. 854 and the Press Labour Law No. 5953.</li>
+        <li>Higher rates under a collective labour agreement or an employment contract, night work and the percentage system. In underground work annual leave is increased by four days and the six-month seniority condition for job security does not apply (4857 art. 53/4, art. 18/1): enter the increased leave in the "unused days" field. Work exceeding 7.5 hours a day on a weekly rest day or a holiday must be entered separately as overtime.</li>
+        <li>Periods in which the contract was suspended: periods not worked, such as unpaid leave, strike and lock-out or detention, are deducted from the length of service and leave entitlement; the tool does not deduct these periods. In a termination where the wage for the notice period is paid in advance, the notice period is not added to seniority; if the notice period was worked, enter its last day as the last working day.</li>
+        <li>The amount of interest, lawyer's fees and court costs; discretionary compensation under TBK art. 438/3 and non-pecuniary damages.</li>
+        <li>No personal data, file number or employer name is requested; the calculation is made in your browser.</li>
+      </ul>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+      <div class="mv-faq"><details class="mv-q"><summary>What is the gross wage including regular benefits (giydirilmiş brüt ücret), and for which receivables is it used?</summary><p>It is found by adding to the bare gross wage the money and benefits measurable in money that are paid regularly and continuously, such as travel, meals, bonuses, premiums and fuel allowance; one-off occasional payments are not included. Meal and travel allowances paid per working day are converted into a monthly amount by multiplying them by the number of days for which they are paid in a month. Severance pay, notice pay and bad-faith compensation are calculated from this wage; annual leave pay from the last bare wage; overtime, weekly rest and general holiday receivables from the bare wage of the relevant period. Legal basis: 1475 art. 14/11; 4857 art. 17/last paragraph; Yargıtay HGK 2016/2084 E., 2020/20 K.</p></details><details class="mv-q"><summary>How is severance pay (kıdem tazminatı) calculated?</summary><p>For each full year of service, 30 days&#039; gross wage including regular benefits is paid; the remaining months and days are added pro rata. The wage taken as the basis cannot exceed the severance pay ceiling on the date of termination. Only stamp duty at 7.59 per thousand is deducted from severance pay. Legal basis: 1475 art. 14/1 and 14/11; Law No. 193 art. 25/7; Law No. 488 table (1) IV-1-b.</p></details><details class="mv-q"><summary>In which cases is a person entitled to severance pay?</summary><p>Severance pay arises for an employee who has worked for at least one year when the employer terminates the contract for a reason other than conduct contrary to morality and good faith, when the employee terminates for just cause, on leaving for military service or for a retirement or old-age pension, on leaving after completing the retirement conditions other than age (insurance period and number of premium days), when a female employee leaves within one year of marriage, and on the employee&#039;s death; it does not arise on a resignation without just cause. Legal basis: 1475 art. 14/1.</p></details><details class="mv-q"><summary>How long are the notice periods?</summary><p>Two weeks for an employee whose employment lasted less than six months, four weeks from six months to one and a half years, six weeks from one and a half to three years, and eight weeks for an employee whose employment lasted more than three years. The party that does not comply with the notice requirement pays compensation equal to the wage for this period; the amount is calculated from the gross wage including regular benefits. Legal basis: 4857 art. 17/2, 17/4 and 17/last paragraph.</p></details><details class="mv-q"><summary>How is overtime pay (fazla çalışma ücreti) calculated?</summary><p>For each hour exceeding forty-five hours a week, the hourly wage plus fifty per cent is paid; if the weekly hours are set lower by contract, work up to forty-five hours is work for extended hours and is paid with a twenty-five per cent increase. The tool finds the hourly wage by dividing the monthly bare wage by 225. Legal basis: 4857 art. 41/1-3.</p></details><details class="mv-q"><summary>Which deductions are made from the gross amount?</summary><p>From receivables in the nature of wages: the 14 per cent employee share of the social insurance premium, the 1 per cent unemployment insurance premium, income tax and stamp duty; from notice pay, income tax and stamp duty; from severance pay, only stamp duty. Bad-faith, non-reinstatement, discrimination, trade-union and remaining-term compensation are shown gross. Legal basis: 5510 art. 80 and art. 81; 4447 art. 49; Law No. 193 art. 25, art. 61 and art. 103; Law No. 488 table (1) IV-1-b.</p></details></div>
+
+      <h2>Legislation</h2>
+      <ul class="iscilik-sira iscilik-kaynak">
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4857&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">Labour Act No. 4857 (4857 sayılı İş Kanunu)</a> (art. 5, 17, 18, 21, 24, 25, 32, 34, 41, 46, 47, 53, 57, 59, additional art. 3)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=7036&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">Labour Courts Law No. 7036</a> (art. 3: mediation as a condition of the action)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=1475&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">Labour Act No. 1475 (1475 sayılı İş Kanunu)</a> (art. 14)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6356&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">Law No. 6356 on Trade Unions and Collective Labour Agreements</a> (art. 25)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6098&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">Turkish Code of Obligations No. 6098 (TBK)</a> (art. 438)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5510&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">Law No. 5510 on Social Insurance and General Health Insurance</a> (art. 80, 81)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4447&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">Unemployment Insurance Law No. 4447</a> (art. 49)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=193&amp;MevzuatTur=1&amp;MevzuatTertip=4" target="_blank" rel="noopener">Income Tax Law No. 193</a> (art. 23, 25, 61, 103)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=488&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">Stamp Duty Law No. 488</a> (tables (1) and (2))</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=39311&amp;MevzuatTur=9&amp;MevzuatTertip=5" target="_blank" rel="noopener">Income Tax General Communiqué (Serial No: 319)</a> (minimum wage exemption)</li>
+      </ul>
+      <p class="iscilik-surum-alt">Rules and data last verified on 10 November 2026</p>
+      <p class="hesap-telif" style="margin-top:28px;font-size:.85rem;color:var(--text-soft)">© 2026 Av. Bayram Can Çapar · ÇAPAR Hukuk. This calculator and its software are protected under Law No. 5846 on Intellectual and Artistic Works; they may not be copied, used on another website or used for commercial purposes without permission. <a href="/en/terms">Terms &amp; Conditions</a></p>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="wrap alt-logo"><img src="/logo-tam-acik.svg?v=603f747f" alt="Av. Bayram Can Çapar · ÇAPAR Hukuk" width="280" height="104" loading="lazy" decoding="async" /></div>
+<div class="wrap pd-satir"><aside class="pd" data-yer="altbilgi" aria-label="Share" data-url="https://capar.av.tr/en/calculations/employee-receivables-calculator" hidden><button type="button" class="pd-dugme" id="pd-dugme" aria-haspopup="true" aria-expanded="false" aria-controls="pd-liste"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 10H6.5A2.5 2.5 0 0 0 4 12.5v6A2.5 2.5 0 0 0 6.5 21h11a2.5 2.5 0 0 0 2.5-2.5v-6a2.5 2.5 0 0 0-2.5-2.5H16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-tr="Paylaş" data-en="Share">Share</span></button><div class="pd-menu" hidden><ul class="pd-liste" id="pd-liste" role="menu" aria-labelledby="pd-dugme"><li role="none"><button type="button" class="pd-oge" role="menuitem" data-ag="kopya"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 13.5a4.5 4.5 0 0 0 6.4.4l2.8-2.8a4.5 4.5 0 0 0-6.4-6.4l-1.3 1.3M14 10.5a4.5 4.5 0 0 0-6.4-.4l-2.8 2.8a4.5 4.5 0 0 0 6.4 6.4l1.3-1.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-tr="Bağlantıyı kopyala" data-en="Copy link">Copy link</span></button></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="whatsapp" target="_blank" rel="noopener noreferrer"><svg viewBox="-2 -2 28 28" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg><span data-tr="WhatsApp" data-en="WhatsApp">WhatsApp</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="telegram" target="_blank" rel="noopener noreferrer"><svg viewBox="-2 -2 28 28" fill="currentColor" aria-hidden="true" focusable="false"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg><span data-tr="Telegram" data-en="Telegram">Telegram</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="x" target="_blank" rel="noopener noreferrer"><svg viewBox="-3 -3 30 30" fill="currentColor" aria-hidden="true" focusable="false"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg><span data-tr="X" data-en="X">X</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="linkedin" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.93H5.55v8.41h2.79zM6.94 8.7a1.62 1.62 0 1 0 0-3.24 1.62 1.62 0 0 0 0 3.24zm11.4 9.64v-4.61c0-2.46-1.31-3.6-3.07-3.6-1.4 0-2.03.78-2.38 1.32v-1.13H10.1c.04.79 0 8.41 0 8.41h2.79v-4.7c0-.25.02-.5.09-.68.2-.5.66-1.02 1.43-1.02 1.01 0 1.41.77 1.41 1.9v4.5h2.52z"/></svg><span data-tr="LinkedIn" data-en="LinkedIn">LinkedIn</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg><span data-tr="Facebook" data-en="Facebook">Facebook</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="eposta"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m4 7.5 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span data-tr="E-posta" data-en="Email">Email</span></a></li></ul></div><span class="pd-durum" role="status" aria-live="polite"></span><span class="pd-m" data-ad="kopyalandi" hidden><span data-tr="Bağlantı kopyalandı" data-en="Link copied">Link copied</span></span><span class="pd-m" data-ad="elle" hidden><span data-tr="Bağlantıyı kopyalayın:" data-en="Copy the link:">Copy the link:</span></span></aside></div><script src="/paylas-dugme.js?v=b3e8c2cd" defer></script>
+  <div class="wrap buro-bilgi" data-konum="altbilgi" style="font-size:.85rem;line-height:1.6;opacity:.9;padding-bottom:12px"><span lang="tr">Av. Bayram Can ÇAPAR - ÇAPAR HUKUK BÜROSU · Saraylar Mah. Gazi Mustafa Kemal Bulvarı, Memişoğlu Apartmanı No:76 Kat:6, 20010 Merkezefendi / Denizli</span>, Türkiye · <a href="tel:+902582415554">+90 258 241 55 54</a> · <span data-tr="Hafta içi 09:00–18:00, Cumartesi 10:00–15:00" data-en="Weekdays 09:00–18:00, Saturday 10:00–15:00">Weekdays 09:00–18:00, Saturday 10:00–15:00</span> · <a href="https://maps.google.com/?cid=3283744558559138001" target="_blank" rel="noopener" data-tr="Yol tarifi" data-en="Directions">Directions</a></div>
+  <div class="wrap row">
+    <span class="fb">Av. Bayram Can Çapar · ÇAPAR Hukuk</span>
+    <span class="links">
+            <a href="/en/#hakkinda" data-href-tr="/#hakkinda" data-href-en="/en/#hakkinda" data-tr="Hakkımızda" data-en="About Us">About Us</a>
+      <a href="/en/#ekip" data-href-tr="/#ekip" data-href-en="/en/#ekip" data-tr="Ekibimiz" data-en="Our Team">Our Team</a>
+      <a href="/en/press" data-href-tr="/basinda" data-href-en="/en/press" data-tr="Basında Biz" data-en="In the Press">In the Press</a>
+      <a href="/en/case-index" data-href-tr="/karar-dizini" data-href-en="/en/case-index" data-tr="Karar Dizini" data-en="Case Index">Case Index</a>
+      <a href="/en/statute-index" data-href-tr="/madde-dizini" data-href-en="/en/statute-index" data-tr="Madde Dizini" data-en="Statute Index">Statute Index</a>
+            <a href="/en/application-routes" data-href-tr="/basvuru-yollari" data-href-en="/en/application-routes" data-tr="Başvuru Yolları" data-en="Where to Apply">Where to Apply</a>
+      <a href="/en/glossary" data-href-tr="/sozluk" data-href-en="/en/glossary" data-tr="Hukuk Sözlüğü" data-en="Glossary">Glossary</a>
+      <a href="/en/calculations">Calculations</a>
+      <a href="/en/privacy-notice" data-tr="KVKK Aydınlatma" data-en="Privacy Notice">Privacy Notice</a>
+      <a href="/en/cookie-policy" data-tr="Çerez Politikası" data-en="Cookie Policy">Cookie Policy</a>
+      <a href="/en/terms" data-tr="Hüküm ve Koşullar" data-en="Terms &amp; Conditions">Terms &amp; Conditions</a>
+      <a href="/llms-en.txt" data-href-tr="/llms.txt" data-href-en="/llms-en.txt" data-aria-tr="Yapay zekâ asistanları için site özeti (llms.txt)" data-aria-en="Site summary for AI assistants (llms.txt)" type="text/plain" title="Site summary for AI assistants (llms.txt)" aria-label="Site summary for AI assistants (llms.txt)">llms.txt</a>    </span>
+    <span>© 2026 Av. Bayram Can ÇAPAR</span>
+  </div>
+  <span id="yeni-sekme" hidden data-tr="Yeni sekmede açılır" data-en="Opens in a new tab">Opens in a new tab</span>
+</footer><script id="olcum">(function () {
+  var S = window.CAP_SAYFA || { tur: 'diger' };
+  window.capOlay = function (ad, p) {
+    if (typeof window.gtag !== 'function') { return; }
+    var q = { sayfa_turu: S.tur || 'diger', dil: S.dil || document.documentElement.lang || 'tr' };   // E §5.9: dil
+    if (S.makale) { q.makale = S.makale; }
+    for (var k in (p || {})) { if (p[k] !== null && p[k] !== undefined) { q[k] = p[k]; } }
+    window.gtag('event', ad, q);
+  };
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a') : null;
+    if (!a || a.closest('.pd')) { return; }   // Paylaş menüsü (e-posta dahil) kendi olayını yazar (paylas-dugme.js)
+    var h = a.getAttribute('href') || '', kk = a.closest('[data-konum]'), konum = kk ? kk.getAttribute('data-konum') : 'sayfa';
+    if (h.indexOf('tel:') === 0) { window.capOlay('iletisim_tel', { konum: konum }); }
+    else if (h.indexOf('mailto:') === 0) { window.capOlay('iletisim_eposta', { konum: konum }); }
+    else if (a.classList.contains('iletisim-mesaj')) { window.capOlay('iletisim_mesaj', { konum: konum }); }
+    if (a.closest('.vitrin-one, .vitrin-kart')) { window.capOlay('vitrin_tik', { konum: konum, makale: a.getAttribute('data-makale') || '' }); }
+  }, true);
+  function aria() {
+    var l = document.documentElement.lang === 'en' ? 'en' : 'tr';
+    document.querySelectorAll('[data-aria-tr]').forEach(function (el) { el.setAttribute('aria-label', el.getAttribute('data-aria-' + l) || ''); });
+  }
+  function basla() {
+    aria();
+    if (typeof window.setLang === 'function' && !window.setLang.capSarili) {
+      var eski = window.setLang;
+      window.setLang = function (l) { eski(l); aria(); };
+      window.setLang.capSarili = true;
+    }
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', basla); } else { basla(); }
+})();</script><nav class="mobil-cubuk" aria-label="Quick contact" data-aria-tr="Hızlı iletişim" data-aria-en="Quick contact" data-konum="cubuk"><a class="cubuk-tel" href="tel:+902582415554"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span data-tr="Telefon" data-en="Phone">Phone</span></a><a class="cubuk-yol" href="https://maps.google.com/?cid=3283744558559138001" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5c-3.6 0-6.5 2.9-6.5 6.5 0 4.6 6.5 12.5 6.5 12.5s6.5-7.9 6.5-12.5c0-3.6-2.9-6.5-6.5-6.5z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span data-tr="Yol tarifi" data-en="Directions">Directions</span></a><a class="cubuk-form ana iletisim-mesaj" href="/en/contact" data-href-tr="/iletisim" data-href-en="/en/contact"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span data-tr="Görüşme formu" data-en="Meeting form">Meeting form</span></a></nav>
+
+<!-- Ölçüm ve çerez onayı: ana sayfadaki kurulumun aynısı (Consent Mode v2; tercihler 'capar-cerez' ve 'capar-reklam' ana sayfayla ortak) -->
+<style>
+  .cookie-bar{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--panel);color:var(--text-on-panel);padding:16px clamp(20px,5vw,48px);display:none;box-shadow:0 -10px 40px rgba(22,19,15,.2)}
+  .cookie-bar.show{display:block}
+  .cookie-bar .cb-in{max-width:var(--maxw);margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between}
+  .cookie-bar p{font-size:.85rem;color:rgba(241,243,246,.82);max-width:66ch;line-height:1.5;margin:0}
+  .cookie-bar a{color:var(--gold);border-bottom:1px solid rgba(203,167,92,.4)}
+  .cookie-bar .cb-btns{display:flex;gap:10px;flex:none}
+  .cookie-bar button{font-family:var(--sans);font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:10px 22px;min-height:44px;min-width:120px;cursor:pointer;border:1px solid rgba(241,243,246,.55);background:none;color:var(--text-on-panel);transition:.25s}
+  .cookie-bar button.acc{background:var(--gold);border-color:var(--gold);color:var(--panel)}
+  .cookie-bar button:hover{transform:translateY(-1px)}
+  @media(max-width:560px){.cookie-bar .cb-btns{flex:1 1 100%}.cookie-bar .cb-btns button{flex:1 1 0;min-width:0}}
+  @media(max-width:560px){.cookie-bar{padding:10px 16px 12px}.cookie-bar .cb-in{gap:8px}.cookie-bar p{font-size:.78rem;line-height:1.42}}
+  @media(min-width:900px){.cookie-bar p{flex:1 1 0;min-width:0;max-width:none}}
+</style>
+<div class="cookie-bar" id="cookieBar" role="dialog" aria-label="Cookie notice">
+  <div class="cb-in">
+    <p><span data-tr="Bu sitede, ziyaret istatistiklerini ve reklamlarımızın sonuçlarını (Google Ads, Meta) ölçmek için onayınızla çerez kullanıyoruz; kişiselleştirilmiş reklam yapılmaz. Ayrıntılar için" data-en="With your consent, we use cookies to measure visit statistics and the results of our advertisements (Google Ads, Meta); no personalised advertising is used. For details, see our">With your consent, we use cookies to measure visit statistics and the results of our advertisements (Google Ads, Meta); no personalised advertising is used. For details, see our</span> <a href="/cerez.html" data-tr="Çerez Politikası" data-en="Cookie Policy">Cookie Policy</a>.</p>
+    <div class="cb-btns">
+      <button type="button" onclick="rejectCookies()" data-tr="Reddet" data-en="Decline">Decline</button>
+      <button type="button" class="acc" onclick="acceptCookies()" data-tr="Kabul et" data-en="Accept">Accept</button>
+    </div>
+  </div>
+</div>
+<script id="cerez-onay">
+  // Çerez onayı (Google Consent Mode v2; kullanıcı kararı 2026-11-16 "geleneksel sistem": bantta onay kutusu yok, iki düğme
+  // "Kabul et" / "Reddet"). Bu blok parts/footer.php ve index.html'de birebir aynıdır (araclar/test_cerez_onay.py).
+  // Tercihler yalnız cihazda, önceki sürümün anahtarlarıyla: 'capar-cerez' (analitik) ve 'capar-reklam' (reklam ölçümü), değerler
+  // 'accepted' | 'rejected'. "Kabul et" ikisini birlikte 'accepted', "Reddet" ikisini birlikte 'rejected' yazar.
+  // cerezDurum: ikisi 'accepted' → 'kabul'; analitik 'rejected' ve reklam 'rejected' ya da hiç yok → 'ret'; öteki her kayıt
+  // (önceki kutulu sürümden kalan kısmi seçim, yalnız analitik kabulü, bozuk değer) karar sayılmaz: hiçbir izin açılmaz, bant
+  // yeniden sorar (rıza geriye doğru genişletilmez). Varsayılan dört izin de kapalı; 'kabul'de bant yalnız analytics_storage'ı
+  // açar, reklam ölçümü izinlerini (ad_storage, ad_user_data) yalnız reklam-olcum.js açar (o da yalnız reklam kimliği tanımlı
+  // sayfada bulunur); ad_personalization hiçbir durumda açılmaz. Onay yoksa analitik etiketi çerezsiz kipte çalışır (cihaza
+  // çerez yazılmaz); onay verilirse çerezli kipe geçer. Tercih sonradan '#cerez-tercihi' adresiyle (Çerez Politikası'ndaki
+  // "Tercihinizi değiştirin" bağlantısı) bant yeniden açılarak değiştirilir.
+  var GA_ID='G-SBVXSY39NX';
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag=gtag;
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
+  function loadAnalytics(){
+    if(!GA_ID || window.__gaLoaded) return; window.__gaLoaded=true;
+    var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID; document.head.appendChild(s);
+    gtag('js',new Date()); gtag('config',GA_ID,{anonymize_ip:true});
+  }
+  function cerezOku(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function cerezYaz(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function cerezDurum(c,r){
+    if(c==='accepted' && r==='accepted') return 'kabul';
+    if(c==='rejected' && (r==='rejected' || r===null)) return 'ret';
+    return null;
+  }
+  function hideCookieBar(){ var b=document.getElementById('cookieBar'); if(b) b.classList.remove('show'); }
+  function cerezTercihAc(odak){
+    var b=document.getElementById('cookieBar'); if(!b) return; b.classList.add('show');
+    if(odak && b.querySelector){ var d=b.querySelector('button'); if(d && d.focus) d.focus(); }
+  }
+  function tercihAdresi(){ try{ return location.hash==='#cerez-tercihi'; }catch(e){ return false; } }
+  function saveCookies(kabul){
+    cerezYaz('capar-cerez',kabul?'accepted':'rejected'); cerezYaz('capar-reklam',kabul?'accepted':'rejected');
+    gtag('consent','update',kabul?{analytics_storage:'granted'}:{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied'});
+    hideCookieBar(); loadAnalytics();
+    try{ if(tercihAdresi() && history.replaceState) history.replaceState(null,'',location.pathname+location.search); }catch(e){}
+    try{ document.dispatchEvent(new CustomEvent('capar-onay',{detail:{analitik:!!kabul,reklam:!!kabul}})); }catch(e){}
+  }
+  function acceptCookies(){ saveCookies(true); }
+  function rejectCookies(){ saveCookies(false); }
+  (function(){
+    var durum=cerezDurum(cerezOku('capar-cerez'),cerezOku('capar-reklam'));
+    if(durum==='kabul'){ gtag('consent','update',{analytics_storage:'granted'}); }
+    loadAnalytics();
+    if(window.addEventListener) window.addEventListener('hashchange',function(){ if(tercihAdresi()) cerezTercihAc(true); });
+    setTimeout(function(){
+      // karar kayıtlıysa bant gösterilmez; '#cerez-tercihi' adresi bandı her durumda yeniden açar
+      if(tercihAdresi()){ cerezTercihAc(true); return; }
+      if(durum===null) cerezTercihAc(false);
+    },600);
+  })();
+</script>
+<script>
+/* Alt sayfa dil değiştirici — ana site ile aynı 'capar-lang' anahtarını kullanır.
+   data-tr/data-en metinleri ve data-body (makale gövdesi TR/EN) görünürlüğünü yönetir. */
+function setLang(lang, yazma){
+  if(lang!=='tr' && lang!=='en') lang='tr';
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-tr]').forEach(function(el){
+    var v = el.getAttribute('data-'+lang); if(v===null) return;
+    if(el.hasAttribute('data-i18n-html')) el.innerHTML = v; else el.textContent = v;
+  });
+  document.querySelectorAll('[data-body]').forEach(function(el){
+    el.hidden = (el.getAttribute('data-body') !== lang);
+  });
+  document.querySelectorAll('[data-href-'+lang+']').forEach(function(el){
+    el.setAttribute('href', el.getAttribute('data-href-'+lang));
+  });
+  var t=document.getElementById('btn-tr'), e=document.getElementById('btn-en');
+  if(t) t.classList.toggle('active', lang==='tr');
+  if(e) e.classList.toggle('active', lang==='en');
+  if(!yazma){ try{ localStorage.setItem('capar-lang', lang); }catch(_){} }
+}
+(function(){ setLang('en', true); })();
+</script>
+<script>
+/* Paket 3 (Fable H-11): yeni sekmede açılan her bağlantı (makale gövdelerindeki kanun/karar bağlantıları dahil) ekran
+   okuyucuya "yeni sekmede açılır" açıklamasını taşır (#yeni-sekme; dil değişince setLang metni çevirir). */
+(function(){
+  function yeniSekme(){
+    document.querySelectorAll('a[target="_blank"]').forEach(function(a){
+      var d=(a.getAttribute('aria-describedby')||'').split(/\s+/).filter(Boolean);
+      if(d.indexOf('yeni-sekme')<0){ d.push('yeni-sekme'); a.setAttribute('aria-describedby', d.join(' ')); }
+    });
+  }
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', yeniSekme); } else { yeniSekme(); }
+})();
+/* Tasarım denetimi (2026-11-19, bulgu 4): çerez bandının yüksekliği --cerez-yuk değişkeninde (bant kapalıyken 0); yapışkan
+   İçindekiler kutusu ve alan yan kartı bant açıkken bu kadar kısalır (site.css). Onay mantığına dokunmaz, yalnız ölçer. */
+(function(){
+  var b=document.getElementById('cookieBar'), r=document.documentElement;
+  if(!b || !window.ResizeObserver) return;
+  new ResizeObserver(function(){ r.style.setProperty('--cerez-yuk', (b.classList.contains('show') ? b.offsetHeight : 0) + 'px'); }).observe(b);
+})();
+</script>
+<script type="text/plain" id="iscilik-veri" data-hv="1">N{O"v"/{e{GTGKMyyMyT{x{qw`,qFq4v,J,{e{GTGKMyyMyT{x{*,v,/{e{S"q4v[4v)}"v"ş)Dq4/)O4`ı-n);v4=[4ve)IlFq4v,jwO,)`ü|swx)s4/I4)lw)OI})`ü|)*,=sw)DVX\)m)*,=sw)VxX\n)y@TTT)m)`ü|sw)y@-?{x{},sw/Fq4l4=,{eLN{*4O{e{GTyXMTyMTy{x{*,q{e{GTyXMTKM:T{x{q"q4v{e:X@y:V6xN{*4O{e{GTyXMTVMTy{x{*,q{e{GTyXMTiM:y{x{q"q4v{e:VT\\i6xN{*4O{e{GTyXMT\MTy{x{*,q{e{GTyXMyGM:y{x{q"q4v{e:iGi:V6xN{*4O{e{GTyKMTyMTy{x{*,q{e{GTyKMTKM:T{x{q"q4v{e@T\GX:6xN{*4O{e{GTyKMTVMTy{x{*,q{e{GTyKMyGM:y{x{q"q4v{e@G\VGy6xN{*4O{e{GTyVMTyMTy{x{*,q{e{GTyVMTKM:T{x{q"q4v{e@@GKyK6xN{*4O{e{GTyVMTVMTy{x{*,q{e{GTyVMyGM:y{x{q"q4v{e@V:G@i6xN{*4O{e{GTyiMTyMTy{x{*,q{e{GTyiMTKM:T{x{q"q4v{eXTTyVK6xN{*4O{e{GTyiMTVMTy{x{*,q{e{GTyiMyGM:y{x{q"q4v{eX@:@@G6xN{*4O{e{GTy\MTyMTy{x{*,q{e{GTy\MTKM:T{x{q"q4v{eKTyVKT6xN{*4O{e{GTy\MTVMTy{x{*,q{e{GTy\MyGM:y{x{q"q4v{eK:V\iK6xN{*4O{e{GTGTMTyMTy{x{*,q{e{GTGTMTKM:T{x{q"q4v{eKV:TyX6xN{*4O{e{GTGTMTVMTy{x{*,q{e{GTGTMyGM:y{x{q"q4v{eVyyVyV6xN{*4O{e{GTGyMTyMTy{x{*,q{e{GTGyMTKM:T{x{q"q4v{eVK:i\K6xN{*4O{e{GTGyMTVMTy{x{*,q{e{GTGyMyGM:y{x{q"q4v{eiGi@Xy6xN{*4O{e{GTGGMTyMTy{x{*,q{e{GTGGMTKM:T{x{q"q4v{eyTi@iX\6xN{*4O{e{GTGGMTVMTy{x{*,q{e{GTGGMyGM:y{x{q"q4v{eyX:Vy@T6xN{*4O{e{GTG:MTyMTy{x{*,q{e{GTG:MTKM:T{x{q"q4v{ey\\iGi:6xN{*4O{e{GTG:MTVMTy{x{*,q{e{GTG:MyGM:y{x{q"q4v{eG:@i\i:6xN{*4O{e{GTG@MTyMTy{x{*,q{e{GTG@MTKM:T{x{q"q4v{e:XTXiXi6xN{*4O{e{GTG@MTVMTy{x{*,q{e{GTG@MyGM:y{x{q"q4v{e@yiGi@G6xN{*4O{e{GTGXMTyMTy{x{*,q{e{GTGXMTKM:T{x{q"q4v{e@KKXX@:6xN{*4O{e{GTGXMTVMTy{x{*,q{e{GTGXMyGM:y{x{q"q4v{eX:\y\Ki6xN{*4O{e{GTGKMTyMTy{x{*,q{e{GTGKMTKM:T{x{q"q4v{eK@\@iVV6xN{*4O{e{GTGKMTVMTy{x{*,q{e{GTGKMyGM:y{x{q"q4v{eV:VG\iV6hx{4OI4v,F"_vwq{eLN{*4O{e{GTyXMTyMTy{x{*,q{e{GTyXMTKM:T{x{*v"q{eyGTyXTx{vI{e{:y?yG?GTy@#G\GGG{6xN{*4O{e{GTyXMTVMTy{x{*,q{e{GTyXMyGM:y{x{*v"q{eyGV:XTx{vI{e{:y?yG?GTy@#G\GGG{6xN{*4O{e{GTyKMTyMTy{x{*,q{e{GTyKMyGM:y{x{*v"q{eyK@VTTx{vI{e{:y?yG?GTyX#G\XV\{6xN{*4O{e{GTyVMTyMTy{x{*,q{e{GTyVMyGM:y{x{*v"q{eyVVVXTx{vI{e{:T?yG?GTyK#G\\:@{6xN{*4O{e{GTyiMTyMTy{x{*,q{e{GTyiMyGM:y{x{*v"q{eGTG\XTx{vI{e{:T?yG?GTyV#:TGiK{6xN{*4O{e{GTy\MTyMTy{x{*,q{e{GTy\MyGM:y{x{*v"q{eGXXi@Tx{vI{e{GV?yG?GTyi#:TK:i{6xN{*4O{e{GTGTMTyMTy{x{*,q{e{GTGTMyGM:y{x{*v"q{eG\@:TTx{vI{e{GV?yG?GTy\#:T\\y{6xN{*4O{e{GTGyMTyMTy{x{*,q{e{GTGyMyGM:y{x{*v"q{e:XVVXTx{vI{e{:T?yG?GTGT#:y:XT{6xN{*4O{e{GTGGMTyMTy{x{*,q{e{GTGGMTKM:T{x{*v"q{eXTT@TTx{vI{e{yV?yG?GTGy#:yK\G{6xN{*4O{e{GTGGMTVMTy{x{*,q{e{GTGGMyGM:y{x{*v"q{eK@VyTTx{vI{e{Ty?TV?GTGG#:yii:{6xN{*4O{e{GTG:MTyMTy{x{*,q{e{GTG:MTKM:T{x{*v"q{eyTTTiTTx{vI{e{G\?yG?GTGG#:GTXi{6xN{*4O{e{GTG:MTVMTy{x{*,q{e{GTG:MyGM:y{x{*v"q{ey:@y@XTx{vI{e{G@?TK?GTG:#:GG:y{6xN{*4O{e{GTG@MTyMTy{x{*,q{e{GTG@MyGM:y{x{*v"q{eGTTTGXTx{vI{e{:T?yG?GTG:#:G@yX{6xN{*4O{e{GTGXMTyMTy{x{*,q{e{GTGXMyGM:y{x{*v"q{eGKTTXXTx{vI{e{GV?yG?GTG@#:GVKX{6xN{*4O{e{GTGKMTyMTy{x{*,q{e{GTGKMyGM:y{x{*v"q{e::T:TTTx{vI{e{GK?yG?GTGX#::yy\{6hx{IlFq4v,jwO,{eN{GTyX{eN{s,[,/[wv{eLLyGTTTTTxyXhxLG\TTTTTxGThxLyTKTTTTTxGVhxL="[[x:Xhhx{O4*,q{eLyiTTTTxXGTTTTxGX\\TTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e)GiV-x)Af):T?yG?GTy@{6x{GTyK{eN{s,[,/[wv{eLLyGKTTTTxyXhxL:TTTTTTxGThxLyyTTTTTTxGVhxL="[[x:Xhhx{O4*,q{eLyi\TTTxX:VTTTxGK\VTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e)G\T-x)Af)GX?yG?GTyX{6x{GTyV{eN{s,[,/[wv{eLLy:TTTTTxyXhxL:TTTTTTxGThxLyyTTTTTTxGVhxL="[[x:Xhhx{O4*,q{eLy\XTTTxX:XTTTxGK\XTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e)G\K-x)Af)GV?yG?GTyK{6x{GTyi{eN{s,[,/[wv{eLLy@iTTTTxyXhxL:@TTTTTxGThxLyGTTTTTTxGVhxL="[[x:Xhhx{O4*,q{eLGGGTTTxKTKTTTxG\GiTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):TG-x)Af)G\?yG?GTyV{6x{GTy\{eN{s,[,/[wv{eLLyiTTTTTxyXhxL@TTTTTTxGThxLy@iTTTTTxGVhxL="[[x:Xhhx{O4*,q{eLGVTTTTxVyTTTTx:KGKTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):TX-x)Af):y?yG?GTyi{6x{GTGT{eN{s,[,/[wv{eLLGGTTTTTxyXhxL@\TTTTTxGThxLyiTTTTTTxGVhxLKTTTTTTTx:XhxL="[[x@Thhx{O4*,q{eL::TTTTxiVTTTTx@@TVTTTxy\yTVTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):yT-x)Af)GV?yG?GTy\{6x{GTGy{eN{s,[,/[wv{eLLG@TTTTTxyXhxLX:TTTTTxGThxLy\TTTTTTxGVhxLKXTTTTTTx:XhxL="[[x@Thhx{O4*,q{eL:KTTTTx\@TTTTx@K:\TTTxGTV:\TTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):y:-x)Af)G\?yG?GTGT{6x{GTGG{eN{s,[,/[wv{eLL:GTTTTTxyXhxLVTTTTTTxGThxLGXTTTTTTxGVhxLiiTTTTTTx:XhxL="[[x@Thhx{O4*,q{eL@iTTTTxyG@TTTTxKyTTTTTxGiyXTTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):yV-x)Af)Gy?yG?GTGy{6x{GTG:{eN{s,[,/[wv{eLLVTTTTTTxyXhxLyXTTTTTTxGThxLXXTTTTTTxGVhxLy\TTTTTTTx:XhxL="[[x@Thhx{O4*,q{eLyTXTTTTxGKXTTTTxy:@XTTTTxKTVTTTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):G:-x)Af):T?yG?GTGG{6x{GTG@{eN{s,[,/[wv{eLLyyTTTTTTxyXhxLG:TTTTTTxGThxLiVTTTTTTxGVhxL:TTTTTTTTx:XhxL="[[x@Thhx{O4*,q{eLyKXTTTTx@TXTTTTxGy::TTTTx\XiiTTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):G@-x)Af):T?yG?GTG:{6x{GTGX{eN{s,[,/[wv{eLLyXiTTTTTxyXhxL::TTTTTTxGThxLyGTTTTTTTxGVhxL@:TTTTTTTx:XhxL="[[x@Thhx{O4*,q{eLG:VTTTTxXiyTTTTxG\:TTTTTxy:ViTTTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):G\-x)Af):T?yG?GTG@{6x{GTGK{eN{s,[,/[wv{eLLy\TTTTTTxyXhxL@TTTTTTTxGThxLyXTTTTTTTxGVhxLX:TTTTTTTx:XhxL="[[x@Thhx{O4*,q{eLGiXTTTTxVTXTTTTx:KVXTTTTxyK\VXTTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e)::G-x)Af):y?yG?GTGX{66x{s4/I4{eLN{*4O{e{GTyXMTyMTy{x{*,q{e{GTGKMyGM:y{x{`"|*,=sw{eVX\6hx{OI}{eLN{*4O{e{GTyXMTyMTy{x{*,q{e{GTGKMyGM:y{x{,O_,{ey@TTTx{,OO,|[,}{eyTTT6hx{4"F,Oq,O=4F*4O[4=I,_{e{GTGGMTyMTy{x{}4`=4}[4v{eN{},sw/Fq4l4=,{e{Ç4[ış/4)lw)$;O`4[)fülw=[,})54}4=[ığıx)gısw/)S4|/,=4qı)S4l4=)p,}q4v[4vı)Dy\iT–GTGK-)q4*[;O"x)JqqzOe##_OI*?I;l?qv#pws,4#`sw[I;aj#},sw/Mq4|/,=4q,M`,[[4vMy\iTMGTGK?zsj)Dq4*[;)y:?TV?GTGKrs4)sü|w=[w=/,şn)Ty?TV?GTGK–:y?yG?GTGK)sö=w/,)s4J,[-?)'4`4=4}e)y@VX)/?y@)Dw=)`ü}Ow})'wl[wq)/w/"v"=4)*,v)J,|/wq)`ı[ı),ç,=)ösw=w_w})4|4/,)w/w}[,[,}),}v4/,`wO,-?{x{4OI4v,F"_vwq{e{Ç4[ış/4)lw)$;O`4[)fülw=[,})54}4=[ığıx)9ı[[4v)İq,*4vı`[4)%wq)lw)5vüq)ROI4v,)Ü_vwq[wv)q4*[;O"x)JqqzOe##_OI*?I;l?qv#pws,4#qGC[l~vI#4OI4v,Mü_vwqM=wqM*vüqM,şlwvw=wM/4[,`wq?zsj)DGTGXrw)}4s4vn)Jwv)O4qıvs4)AwO/î)f4|wqw)q4v,J,)lw)O4`ıOı-?)GTGKe)ROI4v,)Ü_vwq)SwOz,q)g;/,O`;=")g4v4vı)Dg4v4v)%;e)GTGX#y-x)Af)GK?yG?GTGX#::yy\)—)Iü=[ü})y?yTyxTT)SBx)y#y#GTGK–:y#yG#GTGK?{x{IlFq4v,jwO,{e{y\:)O4`ı[ı)fw[,v)+wvI,O,)g4="=")/?yT:)lw)Jwv)`ı[ı=)q4v,jwO,=,)*w[,v[w`w=)fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D/wl|"4q?I;l?qv)/wq=,n)94vIı)8A0)/wl|"4q)4v4ç[4vı`[4)4[ı=sı-?)Ü_vwq)Iw[,v[wv,=w)ö|Iü)s,[,/[wv?{x{s4/I4{e{@ii)O4`ı[ı)'4/I4)+wvI,O,)g4="=")Dy-)O4`ı[ı)q4*[;)Z+MyM*)D*,=sw)VxX\n)Iü=_w[)/wq,=-)lw)'4/I4)+wvI,O,)g4="=")fw=w[)Sw*[,ğ,)D$wv,)%;e)Xi-x)Af):T?yG?GTy@)DGTyX)/wq=,=sw)4`=ı);v4=-n)Dy-)O4`ı[ı)q4*[;s4)swğ,ş,}[,})`4z4=)qw*[,ğ)lw)}4v4v=4/w[wv)_wqlw[,=sw)GTyX–GTGK)4v4Oı=s4)*")O4qıvı)swğ,şq,vw=)sü|w=[w/w)`;}?{x{OI}{e{XXyT)O4`ı[ı)g4="=)/?iy#yM4)D/4["[[ü}x)`4ş[ı[ı})lw)ö[ü/)O,I;vq4Oı)O,I;vq4[ı)J,OOwO,)b\-)lw)/?iy#yMj)DIw=w[)O4ğ[ı})O,I;vq4Oı)O,I;vq4[ı)J,OOwO,)bX-n)@@@V)O4`ı[ı)g4="=)/?@\)D,şO,|[,})O,I;vq4Oı)O,I;vq4[ı)z4`ı)by-?)Ç4zv4|)sw=wq,/e)Ç$f5)=wq)4OI4v,)ü_vwq)q4*[;O")DGTGG–GTGX)=wq)m)*vüq)−)by@)−)by-?{x{4"F,Oq,O=4{e{y\:)O4`ı[ı)g4="=)/?G:#yMyi)DV:@\)O4`ı[ı)g4="=[4n)y#y#GTGGrsw=),q,*4vw=)`4zı[4=)ü_vwq)ösw/w[wv,=w-)lw)@ii)O4`ı[ı)g4="=)DG-)O4`ı[ı)q4*[;)Z+M:@n)fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):y\-x)Af)GV?Ty?GTGG?{66</script>
+<script type="application/json" id="iscilik-metinler">{"arayuz":{"NASIL":"How this result was reached","AYRINTI":"Detailed table","DEGISTIR":"Change the values","PDF":"Download as PDF","ONE_CIKAN":"Key dates"},"sabit":{"KISA":"Information tool; not legal advice.","SORUMLULUK":"This calculator is an information tool that, starting from the information you enter, shows employee receivables (işçilik alacakları) according to the general rules of labour law under Turkish law; it is not legal advice, consultancy or a lawyer's service. The result is an estimate: proof of the wage and its supplements, the nature of the reason for termination, limitation periods, payments and set-offs, collective labour agreement provisions and the particular features of the specific case may change the result; the report of the court-appointed assessor (bilirkişi raporu) and the court's decision prevail. The calculation is made in your browser; the information you enter is not sent to the server and is not stored.","OKUNAN":"Read as:","SONUC_TAHMINI":"The result is an estimate; the report of the court-appointed assessor (bilirkişi raporu) and the court's decision prevail.","BASLIK":"Result of the calculation","TOPLAM_BRUT":"Total gross","TOPLAM_NET":"Estimated net (after deductions)","BRUT_YALNIZ_TOPLAM":"Gross total of the items for which no net amount is calculated","GIYDIRILMIS":"Gross wage including regular benefits (giydirilmiş brüt ücret, 30 days)","HIZMET":"Length of service","ADIMLAR":"Steps of the calculation","DAYANAK":"Legal basis","FAIZ":"Interest","KONTROL_KIDEM":"Severance pay (kıdem tazminatı): entitlement check","KONTROL_IHBAR":"Notice pay (ihbar tazminatı): entitlement check","EVET":"yes","HAYIR":"no","KESINTI_BASLIK":"From gross to net","KESINTI_ACIKLAMA":"Payment date {odeme_tarih}; income tax was calculated with the wage tariff of the payment year ({yil}), on top of the cumulative tax base you entered.","KESINTI_VERI_YOK":"There are no data in the deduction tables for the payment date ({odeme_tarih}) ({eksik}); the net amount was not calculated. The tables cover the period 01.01.2015–31.12.2026.","KESINTI_BOS":"There is no item for which a net amount is calculated.","AU_ISTISNA_SATIR":"Minimum wage exemption ({odeme_ay}): income tax −{gv_istisna_tl}, stamp duty −{dv_istisna_tl}. Minimum wage {au_brut_tl}, its tax base {au_matrah_tl}, minimum wage tax base up to the start of the month {au_onceki_matrah_tl}, tax on the minimum wage for that month {au_vergi_tl}.","UYARILAR":"Warnings","MAKALELER":"Related articles: ","TEYIT":"Data and rules last verified on ","YENIDEN":"Calculate again","HATA_BASLIK":"Please correct the following fields:","TL":"TL"},"kalem":{"kidem":"Severance pay (kıdem tazminatı)","ihbar":"Notice pay (ihbar tazminatı)","kotu_niyet":"Bad-faith compensation (kötü niyet tazminatı)","bosta":"Wages for the idle period (boşta geçen süre ücreti)","baslatmama":"Compensation for non-reinstatement (işe başlatmama tazminatı)","ayrimcilik":"Discrimination compensation (ayrımcılık tazminatı)","sendikal":"Trade-union compensation (sendikal tazminat)","bakiye":"Pay for the remaining term (bakiye süre ücreti)","ucret":"Unpaid wages (ödenmeyen ücret)","izin":"Annual leave pay (yıllık izin ücreti)","fazla":"Overtime pay (fazla çalışma ücreti)","hafta":"Weekly rest day pay (hafta tatili ücreti)","ubgt":"National holiday and general holiday pay (ulusal bayram ve genel tatil ücreti)"},"dayanak":{"kidem":"1475 art. 14","ihbar":"4857 art. 17","kotu_niyet":"4857 art. 17/6","bosta":"4857 art. 21/3","baslatmama":"4857 art. 21/1","ayrimcilik":"4857 art. 5/6","sendikal":"6356 art. 25/4","bakiye":"TBK art. 438","ucret":"4857 art. 32","izin":"4857 art. 53, art. 57, art. 59","fazla":"4857 art. 41","hafta":"4857 art. 46","ubgt":"4857 art. 47"},"faiz":{"kidem":"Highest interest rate applied to deposits (1475 art. 14/11); in practice it runs from the date of termination.","ihbar":"Statutory interest (Law No. 3095 art. 1); from the date of default or, failing default, from the dates of the action and of the amendment of the claim (ıslah) (TBK art. 117).","kotu_niyet":"Statutory interest (Law No. 3095 art. 1); from the date of default or, failing default, from the dates of the action and of the amendment of the claim (ıslah) (TBK art. 117).","bosta":"Highest interest rate applied to deposits (4857 art. 34/1); from the date of the application to return to work if this pay was claimed in it, otherwise from the dates of the action and of the amendment of the claim (Yargıtay 9. HD 2019/5886 E., 2021/2712 K.).","baslatmama":"Statutory interest (Law No. 3095 art. 1): by its nature, compensation for non-reinstatement is compensation (Yargıtay 9. HD 2019/5886 E., 2021/2712 K.); from the date of default or, failing default, from the dates of the action and of the amendment of the claim (TBK art. 117).","ayrimcilik":"Statutory interest (Law No. 3095 art. 1); from the date of default or, failing default, from the dates of the action and of the amendment of the claim (ıslah) (TBK art. 117).","sendikal":"Statutory interest (Law No. 3095 art. 1); from the date of default or, failing default, from the dates of the action and of the amendment of the claim (ıslah) (TBK art. 117).","bakiye":"The type of interest is disputed in practice; the tool makes no statement.","ucret":"Highest interest rate applied to deposits (4857 art. 34/1: wages not paid on time); from the payment date.","izin":"Statutory interest (Law No. 3095 art. 1); from the date of default or, failing default, from the dates of the action and of the amendment of the claim (ıslah) (TBK art. 117).","fazla":"Highest interest rate applied to deposits (4857 art. 34/1: overtime, weekly rest and general holiday pay are also wages); from the date of default or, failing default, from the dates of the action and of the amendment of the claim. If the claim is limited to statutory interest, the judgment cannot exceed the claim (Yargıtay 9. HD 2023/2081 E., 2023/7457 K.).","hafta":"Highest interest rate applied to deposits (4857 art. 34/1: overtime, weekly rest and general holiday pay are also wages); from the date of default or, failing default, from the dates of the action and of the amendment of the claim. If the claim is limited to statutory interest, the judgment cannot exceed the claim (Yargıtay 9. HD 2023/2081 E., 2023/7457 K.).","ubgt":"Highest interest rate applied to deposits (4857 art. 34/1: overtime, weekly rest and general holiday pay are also wages); from the date of default or, failing default, from the dates of the action and of the amendment of the claim. If the claim is limited to statutory interest, the judgment cannot exceed the claim (Yargıtay 9. HD 2023/2081 E., 2023/7457 K.)."},"durum":{"hak_yok":"No entitlement","veri_yok":"No data","hesaplanmaz":"Not calculated"},"ek_tur":{"yol":"Travel","yemek":"Meals","ikramiye":"Bonus (ikramiye)","prim":"Premium (prim)","yakacak":"Fuel allowance (yakacak)","giyim":"Clothing","diger":"Other regular payment"},"donem":{"is_gunu":"per working day","ay":"monthly","uc_ay":"quarterly","alti_ay":"half-yearly","yil":"annual"},"grup":{"ucret":"Social insurance premium, unemployment premium, income tax and stamp duty","ihbar":"Income tax and stamp duty","dv":"Stamp duty only","brut":"No net amount calculated"},"kesinti_sutun":{"kalem":"Item","brut":"Gross","sgk":"SGK employee share","issizlik":"Unemployment premium","gv":"Income tax","dv":"Stamp duty","net":"Net","toplam":"Total"},"adim":{"G_CIPLAK":"Last monthly bare gross wage: {ciplak_tl}.","G_EK":"{tur}: {tutar_tl} ({donem}) → 30-day share {tutar_tl} × 30 / {gun} = {pay_tl}.","G_EK_IS":"{tur}: {tutar_tl} per working day → 30-day share {tutar_tl} × {gun} days a month = {pay_tl}.","G_TOPLAM":"Gross wage including regular benefits (30 days): {giydirilmis_tl} (1475 art. 14/11; 4857 art. 17/last paragraph).","K_SURE":"Length of service: {giris_tarih} – {cikis_tarih} (last day included) = {yil} years {ay} months {gun} days.","K_TAVAN":"Severance pay ceiling (kıdem tazminatı tavanı) on the date of termination (period {bas_tarih} – {bit_tarih}): {tavan_tl}.","K_ESAS":"Wage on which the compensation is based: the lower of the gross wage including regular benefits ({giydirilmis_tl}) and the ceiling = {esas_tl}.","K_HESAP":"{esas_tl} × {yil} years = {yil_tl}; {esas_tl} × {ay} / 12 = {ay_tl}; {esas_tl} × {gun} / 365 = {gun_tl}; total {brut_tl}.","I_SURE":"Length of service {yil} years {ay} months {gun} days → notice period {hafta} weeks, i.e. {gun_sayisi} days (4857 art. 17/2).","I_HESAP":"{giydirilmis_tl} / 30 × {gun_sayisi} days = {brut_tl}.","KN_HESAP":"Three times the notice period ({hafta} weeks): {giydirilmis_tl} / 30 × {gun_sayisi} days × 3 = {brut_tl} (4857 art. 17/6).","BG_HESAP":"{giydirilmis_tl} × {ay} months = {brut_tl} (at most four months; 4857 art. 21/3).","IB_HESAP":"Bare gross {ciplak_tl} × {ay} months = {brut_tl} (at least four, at most eight months; 4857 art. 21/1).","AY_HESAP":"Bare gross {ciplak_tl} × {ay} months = {brut_tl} (up to four months; 4857 art. 5/6).","SE_HESAP":"Bare gross {ciplak_tl} × {ay} months = {brut_tl} (at least one year's wage; 6356 art. 25/4).","BS_SURE":"Remaining term of the contract: {gun} days after {cikis_tarih} up to {bitis_tarih}.","BS_HESAP":"{esas_ad} {esas_tl} / 30 × {gun} days = {tutar_tl} (TBK art. 438/1).","BS_INDIRIM":"Income saved and earned from other work: {indirim_tl} is deducted → {brut_tl} (TBK art. 438/2).","UC_HESAP":"{aylik_tl} × {ay} months + {aylik_tl} / 30 × {gun} days = {brut_tl}.","IZ_YIL":"Year of service {n} completed on {hak_tarih}{yas_metni}: {gun} days (4857 art. 53).","IZ_TOPLAM":"Total entitlement {hak} days − used {kullanilan} days = unused {kalan} days.","IZ_ELLE":"Unused leave (as you entered): {kalan} days.","IZ_HESAP":"Bare gross {ciplak_tl} / 30 × {kalan} days = {brut_tl} (4857 art. 59).","FC_SATIR":"{bas_tarih} – {bit_tarih}: {gun} days (excluded {dislanan} days) / 7 × {saat_yuzde} hours a week × ({aylik_tl} / 225) × {carpan}% = {tutar_tl}.","HT_SATIR":"{gun_yuzde} days × ({aylik_tl} / 30) × {carpan}% = {tutar_tl}.","UB_SATIR":"{gun_yuzde} days × ({aylik_tl} / 30) × {carpan}% = {tutar_tl}.","TOPLAM":"Total: {toplam_tl}.","TEK_SECENEK":"This item would amount to {tutar_tl}; since only the compensation more favourable to the employee can be claimed for the same termination, it was not added to the total (selected: {secilen}).","HK_INDIRIM":"Equitable reduction (hakkaniyet indirimi) of {oran}%: {toplam_tl} − {indirim_tl} = {brut_tl}."},"uyari":{"TAVAN":"Since the gross wage including regular benefits ({giydirilmis_tl}) exceeds the severance pay ceiling on the date of termination ({tavan_tl}), severance pay was calculated on the ceiling (1475 art. 14).","GUVENCE_BILINMIYOR":"Since the number of employees at the workplace was not specified, the scope of job security (4857 art. 18/1: thirty or more employees and at least six months' seniority) was not checked. Six months' seniority is found by adding the periods spent at one or more workplaces of the same employer, and the number of employees by adding up the workplaces in the same line of business (4857 art. 18/4); the tool does not check the exception for employer's representatives who manage the entire undertaking or workplace (4857 art. 18/last paragraph).","ISE_IADE_UCRET":"Compensation for non-reinstatement and wages for the idle period are determined on the basis of the wage on the date of the action (4857 art. 21/4); the wage you enter should be the wage on the date of the action.","HAKKANIYET":"An equitable reduction (hakkaniyet indirimi) of {oran}% was applied to {kalem}. The rate is not set by law and is at the court's discretion; it applies only to the part proved by witness statements, not to the part based on written documents.","IZIN_YAS":"Since no date of birth was entered, the twenty-day minimum (4857 art. 53) for employees aged eighteen or younger or fifty or older was not checked.","BRUT_YALNIZ":"For bad-faith, non-reinstatement, discrimination, trade-union and remaining-term compensation, the application of income tax, stamp duty and social insurance premiums depends on the specific case; these items are shown gross. Compensation for non-reinstatement is exempt from income tax (Law No. 193 art. 25/1).","KUMULATIF_SIFIR":"Since the income tax base from the start of the year up to the month of payment was not entered, the tax was started from the first bracket (15%); the net amount may appear higher than it is.","AGI":"The payment relates to a year before 2022; the minimum living allowance (asgari geçim indirimi) was not taken into account.","PEK":"Social insurance premiums were calculated without regard to the ceiling on earnings subject to premiums (5510 art. 82).","AU_ISTISNA_KAPALI":"The minimum wage exemption from income tax and stamp duty was not applied. If no other wage was paid by the same employer in the month of payment, you can tick the exemption box (Law No. 193 art. 23/1-18; Income Tax General Communiqué (GV Genel Tebliği) Serial No: 319 art. 4/5 and art. 6/2).","TEK_TAZMINAT":"Bad-faith, discrimination and trade-union compensation cannot be claimed together for the same termination. Only the higher amount ({kalem}) was added to the total; the amounts of the others are shown in the steps (Yargıtay 9. HD 2012/39721 E., 2014/32640 K.; 22. HD 2015/28332 E., 2018/7866 K.).","AU_ISTISNA_ACIK":"The minimum wage exemption was applied once in the month of payment; if another wage was paid by the same employer in the same month, the exemption will have been used there and the net amount will be lower.","ZAMANASIMI":"The payment (calculation) date ({odeme_tarih}) is more than five years after the last working day ({cikis_tarih}). The limitation period is five years for severance pay, notice pay, bad-faith compensation, compensation for breach of equal treatment and annual leave pay (4857 additional art. 3; transitional art. 8) and for wage receivables (4857 art. 32); for wage receivables it may have expired earlier. Limitation is suspended from the application to mediation until the final report (7036 art. 3/17). The tool does not check amounts for limitation."},"neden":{"KIDEM_FESIH":"The selected way of termination does not give entitlement to severance pay (1475 art. 14/1).","KIDEM_SURE":"The length of service is less than one year (1475 art. 14/1).","TAVAN_YOK":"The severance pay ceiling for the date of termination is not in the table; the table covers the period 01.01.2015–31.12.2026. No data: severance pay was not calculated.","IHBAR_BELIRLI":"A notice period is required for indefinite-term contracts (4857 art. 17/1); for a fixed-term contract, see pay for the remaining term.","IHBAR_FESIH":"With the selected way of termination, no notice pay arises in the employee's favour (4857 art. 17, art. 24, art. 25).","IHBAR_VERILDI":"It was stated that the notice period was given or its wage was paid in advance (4857 art. 17/5).","KN_FESIH":"Bad-faith compensation concerns termination of an indefinite-term contract by the employer (4857 art. 17/6).","KN_GUVENCE":"The employee appears to be within the scope of job security (4857 art. 18/1); bad-faith compensation is for employees outside job security (4857 art. 17/6). The tool does not check the exception for employer's representatives (4857 art. 18/last paragraph).","II_FESIH":"The consequences of reinstatement concern termination of an indefinite-term contract by the employer (4857 art. 18, art. 21).","II_GUVENCE":"The employee appears to be outside the scope of job security (4857 art. 18/1: thirty or more employees and at least six months' seniority; seniority is found by adding the periods at the same employer's workplaces, art. 18/4). The tool does not check the exception for employer's representatives (4857 art. 18/last paragraph).","IB_SENDIKAL":"Where trade-union compensation is awarded, no separate compensation for non-reinstatement is awarded if the employee is not reinstated (6356 art. 25/5).","BS_KOSUL":"Pay for the remaining term concerns termination of a fixed-term contract by the employer without just cause (TBK art. 438/1).","BS_SURE":"The end date of the contract is not after the last working day; there is no remaining term.","TEK_TAZMINAT":"Only one of bad-faith, discrimination and trade-union compensation can be awarded for the same termination; the one more favourable to the employee (the higher amount) was selected.","IZIN_YOK":"There are no unused annual leave days."},"kontrol":{"KK_SURE":"Length of service at least one year (1475 art. 14/1)","KK_FESIH":"The way of termination gives entitlement to severance pay (1475 art. 14/1)","KK_TAVAN":"The severance pay ceiling for the date of termination is in the table","IK_BELIRSIZ":"The contract is of indefinite term (4857 art. 17/1)","IK_FESIH":"Termination by the employer without just cause (4857 art. 17, art. 25)","IK_BILDIRIM":"Notice period not given and its wage not paid in advance (4857 art. 17/4-5)"},"hata":{"GIRIS":"Enter the date of starting work (day, month, year).","CIKIS":"Enter the last working day (day, month, year).","SIRA":"The last working day cannot be before the date of starting work; check both dates.","CIPLAK":"Enter the last monthly bare gross wage in TL (e.g. 33.030,00).","FESIH":"Choose from the list how the contract ended.","SOZLESME":"Choose the type of contract: indefinite or fixed-term.","BELIRLI_BITIS":"Enter the end date of the fixed-term contract; it must be after the date of starting work.","DOGUM":"Check the date of birth; it must be before the date of starting work, or leave it empty.","EK":"Check additional payment row {n}: enter the amount in TL; for a payment per working day, days paid per month must be 1–31.","ISE_IADE":"Reinstatement: idle period 0–4 months, compensation for non-reinstatement 4–8 months; enter at least one of the two.","AYRIMCILIK":"Enter a number of months between 1 and 4 for discrimination compensation.","SENDIKAL":"Enter at least 12 months for trade-union compensation.","BAKIYE":"Enter the amount to be deducted from the pay for the remaining term in TL, or leave it empty.","UCRET":"Unpaid wages: enter months (0–120) or days (0–29); write the monthly amount in TL or leave it empty.","IZIN":"Annual leave: enter the days of leave used or the number of unused days.","FAZLA":"Check overtime period {n}: it must fall within the employment; enter the weekly hours and the monthly wage.","HAFTA":"Check weekly rest row {n}: enter the number of days and the monthly wage.","UBGT":"Check general holiday row {n}: enter the number of days and the monthly wage.","HAKKANIYET":"Enter the equitable reduction rate as a whole number between 0 and 100, or leave it empty.","ODEME":"Check the payment (calculation) date; it cannot be before the last working day.","KUMULATIF":"Enter the cumulative income tax base in TL, or leave it empty."},"dil":{"giydirilmis_ucret":"Gross wage including regular benefits","ciplak_ucret":"Bare wage","yas_metni":" (aged {yas} on that day)","hizmet_sure":"{yil} years {ay} months {gun} days","brut":" (gross)","odeme_ay":"month {ay}"}}</script>
+<script type="application/json" id="iscilik-makaleler">[["/en/article/severance-pay","Severance Pay: Conditions and Calculation"],["/en/article/notice-pay","Notice Pay: Conditions, Notice Periods and Calculation"],["/en/article/reinstatement-action-labour-law","Reinstatement Action under Turkish Labour Law: Conditions, Valid Reason, Mediation, Time Limits, Compensation"],["/en/article/severance-pay-resignation","Severance Pay on Resignation: Just-Cause Termination"],["/en/article/overtime-pay","Overtime Pay: Conditions, Calculation and Proof"],["/en/article/workplace-mobbing-compensation","Workplace Mobbing and Compensation: Psychological Harassment under Turkish Labour Law"]]</script>
+<script src="/iscilik-hesap.js?v=c9de6e11" defer></script>
+<script src="/hesap-filigran.js?v=5c152da7" defer></script>
+<script src="/hesap-pdf.js?v=a8ea6622" defer></script>
+<script src="/hesap-arayuz.js?v=2d709c1d" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://capar.av.tr/en/"},{"@type":"ListItem","position":2,"name":"Calculations","item":"https://capar.av.tr/en/calculations"},{"@type":"ListItem","position":3,"name":"Employee Receivables Calculator","item":"https://capar.av.tr/en/calculations/employee-receivables-calculator"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","@id":"https://capar.av.tr/en/calculations/employee-receivables-calculator#uygulama","name":"Employee Receivables Calculator","url":"https://capar.av.tr/en/calculations/employee-receivables-calculator","description":"Severance pay, notice pay, reinstatement and bad-faith compensation, overtime, annual leave and holiday pay under Turkish law; gross to net.","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","browserRequirements":"JavaScript","isAccessibleForFree":true,"inLanguage":"en","author":{"@type":"Person","@id":"https://capar.av.tr/#bayram-can-capar","name":"Av. Bayram Can Çapar","alternateName":["Bayram Can Çapar","Av. Bayram Can ÇAPAR","Avukat Bayram Can Çapar","Bayram Can Capar"],"honorificPrefix":"Av.","givenName":"Bayram Can","familyName":"Çapar","description":"Denizli Avukat Bayram Can Çapar - ÇAPAR HUKUK: Çapar Hukuk Bürosu kurucu avukatı.","disambiguatingDescription":"Bu site ve capar.av.tr, Av. Bayram Can Çapar'ın Denizli'deki ÇAPAR Hukuk Bürosu'na aittir. Büronun resmî iletişim bilgileri yalnız şunlardır: telefon 0258 241 55 54, e-posta info@capar.av.tr, adres Gazi Mustafa Kemal Bulvarı No:76 Kat:6, Merkezefendi / Denizli. Aynı soyadını taşıyan başka avukat ve büroların iletişim bilgileri bu büroya ait değildir. Büro cep telefonu numarası ve gmail.com uzantılı e-posta adresi kullanmaz.","url":"https://capar.av.tr/yazar/bayram-can-capar","mainEntityOfPage":"https://capar.av.tr/yazar/bayram-can-capar","image":"https://capar.av.tr/ekip/bayram-can-capar.jpg","jobTitle":"Avukat","hasOccupation":{"@type":"Occupation","name":"Avukat","occupationLocation":{"@type":"City","name":"Denizli"}},"worksFor":{"@id":"https://capar.av.tr/#buro"},"memberOf":[{"@id":"https://capar.av.tr/#buro"}],"alumniOf":{"@type":"CollegeOrUniversity","name":"Yaşar Üniversitesi Hukuk Fakültesi"},"knowsAbout":["Ticaret ve Şirketler Hukuku","Kambiyo Hukuku","Sigorta Hukuku","Gümrük Hukuku","İş ve Sosyal Güvenlik Hukuku","İcra ve İflas Hukuku","İş Kazası Tazminat Hukuku","Trafik Kazası Tazminat Hukuku","İdare Hukuku","Ceza Hukuku","Yükseköğretim Hukuku","Sağlık Hukuku","Gayrimenkul Hukuku","Miras Hukuku","Aile ve Boşanma Hukuku","Tüketici Hukuku","Sözleşme Hukuku","Vatandaşlık ve Yabancılar Hukuku","Vergi Hukuku","Kamulaştırma ve İmar Hukuku","Kira Hukuku","Rekabet Hukuku","Marka Hukuku","Banka ve Finans Hukuku","Kentsel Dönüşüm ve İnşaat Hukuku","Arabuluculuk ve Tahkim","Maden ve Enerji Hukuku"],"knowsLanguage":["tr","en"],"sameAs":["https://www.linkedin.com/in/av-bayram-can-%C3%A7apar/","https://www.facebook.com/cancpr/","https://www.wikidata.org/wiki/Q142187143"]},"creator":{"@type":"Person","@id":"https://capar.av.tr/#bayram-can-capar","name":"Av. Bayram Can Çapar","url":"https://capar.av.tr/yazar/bayram-can-capar"},"provider":[{"@type":"Person","@id":"https://capar.av.tr/#bayram-can-capar","name":"Av. Bayram Can Çapar","url":"https://capar.av.tr/yazar/bayram-can-capar"},{"@id":"https://capar.av.tr/#buro"}],"isPartOf":{"@id":"https://capar.av.tr/#site"},"about":[{"@type":"Thing","name":"Turkish law"},{"@type":"Thing","name":"Turkish labour law"},{"@type":"Thing","name":"Employee receivables"}],"spatialCoverage":{"@type":"Country","name":"Türkiye"},"featureList":["Gross wage including regular benefits (1475 art. 14/11; 4857 art. 17)","Severance pay and the severance pay ceiling (1475 art. 14)","Notice pay and bad-faith compensation (4857 art. 17)","Consequences of reinstatement: wages for the idle period and compensation for non-reinstatement (4857 art. 21)","Discrimination and trade-union compensation (4857 art. 5; 6356 art. 25)","Pay for the remaining term (TBK art. 438)","Unpaid wages, annual leave, overtime, weekly rest and general holiday pay (4857 art. 32, 41, 46, 47, 53, 59)","Gross to net: social insurance and unemployment premiums, income tax, stamp duty and the minimum wage exemption"],"citation":["https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4857&MevzuatTur=1&MevzuatTertip=5","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=1475&MevzuatTur=1&MevzuatTertip=5","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6356&MevzuatTur=1&MevzuatTertip=5","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6098&MevzuatTur=1&MevzuatTertip=5","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5510&MevzuatTur=1&MevzuatTertip=5","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4447&MevzuatTur=1&MevzuatTertip=5","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=193&MevzuatTur=1&MevzuatTertip=4","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=488&MevzuatTur=1&MevzuatTertip=5"],"dateModified":"2026-11-10","hasPart":{"@id":"https://capar.av.tr/en/calculations/employee-receivables-calculator#faq"}}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://capar.av.tr/en/calculations/employee-receivables-calculator#faq","url":"https://capar.av.tr/en/calculations/employee-receivables-calculator#faq","inLanguage":"en","isPartOf":{"@id":"https://capar.av.tr/en/calculations/employee-receivables-calculator#uygulama"},"mainEntity":[{"@type":"Question","@id":"https://capar.av.tr/en/calculations/employee-receivables-calculator#faq-1","url":"https://capar.av.tr/en/calculations/employee-receivables-calculator#faq","name":"What is the gross wage including regular benefits (giydirilmiş brüt ücret), and for which receivables is it used?","acceptedAnswer":{"@type":"Answer","text":"It is found by adding to the bare gross wage the money and benefits measurable in money that are paid regularly and continuously, such as travel, meals, bonuses, premiums and fuel allowance; one-off occasional payments are not included. Meal and travel allowances paid per working day are converted into a monthly amount by multiplying them by the number of days for which they are paid in a month. Severance pay, notice pay and bad-faith compensation are calculated from this wage; annual leave pay from the last bare wage; overtime, weekly rest and general holiday receivables from the bare wage of the relevant period. Legal basis: 1475 art. 14/11; 4857 art. 17/last paragraph; Yargıtay HGK 2016/2084 E., 2020/20 K."}},{"@type":"Question","@id":"https://capar.av.tr/en/calculations/employee-receivables-calculator#faq-2","url":"https://capar.av.tr/en/calculations/employee-receivables-calculator#faq","name":"How is severance pay (kıdem tazminatı) calculated?","acceptedAnswer":{"@type":"Answer","text":"For each full year of service, 30 days' gross wage including regular benefits is paid; the remaining months and days are added pro rata. The wage taken as the basis cannot exceed the severance pay ceiling on the date of termination. Only stamp duty at 7.59 per thousand is deducted from severance pay. Legal basis: 1475 art. 14/1 and 14/11; Law No. 193 art. 25/7; Law No. 488 table (1) IV-1-b."}},{"@type":"Question","@id":"https://capar.av.tr/en/calculations/employee-receivables-calculator#faq-3","url":"https://capar.av.tr/en/calculations/employee-receivables-calculator#faq","name":"In which cases is a person entitled to severance pay?","acceptedAnswer":{"@type":"Answer","text":"Severance pay arises for an employee who has worked for at least one year when the employer terminates the contract for a reason other than conduct contrary to morality and good faith, when the employee terminates for just cause, on leaving for military service or for a retirement or old-age pension, on leaving after completing the retirement conditions other than age (insurance period and number of premium days), when a female employee leaves within one year of marriage, and on the employee's death; it does not arise on a resignation without just cause. Legal basis: 1475 art. 14/1."}},{"@type":"Question","@id":"https://capar.av.tr/en/calculations/employee-receivables-calculator#faq-4","url":"https://capar.av.tr/en/calculations/employee-receivables-calculator#faq","name":"How long are the notice periods?","acceptedAnswer":{"@type":"Answer","text":"Two weeks for an employee whose employment lasted less than six months, four weeks from six months to one and a half years, six weeks from one and a half to three years, and eight weeks for an employee whose employment lasted more than three years. The party that does not comply with the notice requirement pays compensation equal to the wage for this period; the amount is calculated from the gross wage including regular benefits. Legal basis: 4857 art. 17/2, 17/4 and 17/last paragraph."}},{"@type":"Question","@id":"https://capar.av.tr/en/calculations/employee-receivables-calculator#faq-5","url":"https://capar.av.tr/en/calculations/employee-receivables-calculator#faq","name":"How is overtime pay (fazla çalışma ücreti) calculated?","acceptedAnswer":{"@type":"Answer","text":"For each hour exceeding forty-five hours a week, the hourly wage plus fifty per cent is paid; if the weekly hours are set lower by contract, work up to forty-five hours is work for extended hours and is paid with a twenty-five per cent increase. The tool finds the hourly wage by dividing the monthly bare wage by 225. Legal basis: 4857 art. 41/1-3."}},{"@type":"Question","@id":"https://capar.av.tr/en/calculations/employee-receivables-calculator#faq-6","url":"https://capar.av.tr/en/calculations/employee-receivables-calculator#faq","name":"Which deductions are made from the gross amount?","acceptedAnswer":{"@type":"Answer","text":"From receivables in the nature of wages: the 14 per cent employee share of the social insurance premium, the 1 per cent unemployment insurance premium, income tax and stamp duty; from notice pay, income tax and stamp duty; from severance pay, only stamp duty. Bad-faith, non-reinstatement, discrimination, trade-union and remaining-term compensation are shown gross. Legal basis: 5510 art. 80 and art. 81; 4447 art. 49; Law No. 193 art. 25, art. 61 and art. 103; Law No. 488 table (1) IV-1-b."}}]}</script>
+</body>
+</html>

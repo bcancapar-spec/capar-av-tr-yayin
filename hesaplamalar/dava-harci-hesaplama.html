@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/favicon.ico?v=9e46c4f3" sizes="48x48" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=2b653918" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=b561eee0" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3266fae5" />
+<link rel="preload" href="/fonts/hanken-grotesk-latin-v12.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/hanken-grotesk-latin-ext-v12.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/fraunces-latin-v38.woff2" as="font" type="font/woff2" crossorigin />
+<script>(function(){var d=document.documentElement;function u(s){d.setAttribute("data-tema",s==="koyu"?"koyu":"acik")}window.caparTema=u;var s,y;try{s=localStorage.getItem("capar-tema");y=localStorage.getItem("capar-yazi")}catch(e){}u(s);if(y==="2"||y==="3")d.setAttribute("data-yazi",y)})()</script>
+<link rel="stylesheet" href="/site.css?v=ca3fe4e6" />
+<link rel="alternate" type="text/plain" href="https://capar.av.tr/llms.txt" title="llms.txt" />
+<link rel="alternate" type="text/plain" href="https://capar.av.tr/llms2.txt" title="llms2.txt — tam soru-cevap dizini" />
+<title>Dava Harcı Hesaplama — Av. Bayram Can Çapar · ÇAPAR Hukuk</title>
+<meta name="description" content="Dava harcı hesabı 2026: başvurma harcı, peşin harç (dörtte bir, cismani zararda yirmide bir), ıslah harcı, istinaf ve temyiz harcı — Av. Bayram Can Çapar · ÇAPAR Hukuk" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://capar.av.tr/hesaplamalar/dava-harci-hesaplama" />
+<link rel="alternate" hreflang="tr" href="https://capar.av.tr/hesaplamalar/dava-harci-hesaplama" />
+<link rel="alternate" hreflang="en" href="https://capar.av.tr/en/calculations/court-fee-calculator" />
+<link rel="alternate" hreflang="x-default" href="https://capar.av.tr/hesaplamalar/dava-harci-hesaplama" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="tr_TR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:site_name" content="Av. Bayram Can Çapar · ÇAPAR Hukuk" />
+<meta property="og:title" content="Dava Harcı Hesaplama — Av. Bayram Can Çapar · ÇAPAR Hukuk" />
+<meta property="og:description" content="Dava harcı hesabı 2026: başvurma harcı, peşin harç (dörtte bir, cismani zararda yirmide bir), ıslah harcı, istinaf ve temyiz harcı — Av. Bayram Can Çapar · ÇAPAR Hukuk" />
+<meta property="og:url" content="https://capar.av.tr/hesaplamalar/dava-harci-hesaplama" />
+<meta property="og:image" content="https://capar.av.tr/og/sayfa/dava-harci-hesaplama.png?v=f7a57368" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Dava Harcı Hesaplama — Av. Bayram Can Çapar · ÇAPAR Hukuk" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://capar.av.tr/og/sayfa/dava-harci-hesaplama.png?v=f7a57368" />
+<style id="davaharc-stil">
+.yol{font-size:.85rem;color:var(--text-soft);margin-bottom:12px}.yol a{color:var(--accent)}
+.davaharc-kisa-cevap{max-width:820px;margin:0 0 6px;padding:16px 20px;border-left:3px solid var(--gold);border-radius:0 8px 8px 0;background:var(--surface-2);line-height:1.7}
+.davaharc-kisa-cevap strong{color:var(--accent)}
+.davaharc-arac{max-width:820px}
+.davaharc-kisa{display:inline-block;margin:0 0 18px;padding:6px 12px;border-left:3px solid var(--gold);background:var(--surface-2);font-size:.9rem;color:var(--text-soft)}
+.davaharc-form{display:grid;gap:20px;padding:22px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.davaharc-form fieldset{border:1px solid var(--line);border-radius:10px;padding:14px 16px 16px;margin:0;min-width:0}
+.davaharc-form legend{font-weight:700;font-size:1rem;color:var(--text);padding:0 4px}
+.davaharc-bolum>legend{font-family:var(--serif);font-weight:500;font-size:1.2rem;color:var(--accent)}
+.davaharc-izgara{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:14px;align-items:start;margin:0 0 12px}
+.davaharc-alan{display:grid;gap:6px;align-content:start;min-width:0}
+.davaharc-form [hidden]{display:none!important}
+.davaharc-form label{font-weight:600;font-size:.95rem;color:var(--text)}
+.davaharc-form input[type=date],.davaharc-form input[type=text],.davaharc-form select{font:inherit;font-size:1rem;width:100%;max-width:100%;min-height:46px;padding:10px 12px;border:1px solid rgba(26,31,38,.35);border-radius:8px;background:#fff;color:var(--text)}
+.davaharc-form [aria-invalid=true]{border-color:#9b2c2c}
+.davaharc-secim{display:grid;gap:4px;margin:4px 0 0}
+.davaharc-secim label{font-weight:400;display:flex;align-items:center;gap:10px;min-height:44px;cursor:pointer}
+.davaharc-secim input{width:20px;height:20px;margin:0;flex:none;accent-color:var(--accent)}
+.davaharc-not,.davaharc-dipnot{margin:0;font-size:.88rem;line-height:1.55;color:var(--text-soft)}
+.davaharc-dipnot{margin:8px 0 0}
+.davaharc-liste-kap{display:grid;gap:12px}
+.davaharc-liste{display:grid;gap:12px}
+.davaharc-kisi{display:grid;gap:10px}
+.davaharc-kisi>legend{font-family:var(--serif);font-weight:500;font-size:1.05rem;color:var(--accent)}
+.davaharc-kisi-alt{border-style:dashed!important}
+.davaharc-alt-bolum{display:grid;gap:12px}
+.davaharc-details{border:1px solid var(--line);border-radius:10px;padding:0 16px}
+.davaharc-details>summary{cursor:pointer;font-family:var(--serif);font-weight:500;font-size:1.15rem;color:var(--accent);padding:12px 0;min-height:44px}
+.davaharc-details>.davaharc-ic{padding:0 0 16px;display:grid;gap:14px}
+.davaharc-hata{margin:0;color:#9b2c2c;font-weight:600}
+.davaharc-hata ul{margin:6px 0 0;padding-left:20px;font-weight:400}
+.davaharc-gonder{justify-self:start;font:inherit;font-weight:600;font-size:1rem;min-height:46px;padding:10px 26px;border:0;border-radius:999px;background:var(--accent);color:#fff;cursor:pointer}
+.davaharc-gonder:hover{background:var(--accent-deep)}
+.davaharc-ikincil{font:inherit;font-weight:600;font-size:.92rem;min-height:44px;padding:8px 18px;border:1px solid var(--accent);border-radius:999px;background:#fff;color:var(--accent);cursor:pointer}
+.davaharc-sonuc{margin-top:26px}
+.davaharc-sonuc:empty{display:none}
+.davaharc-sonuc h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.3rem,3.4vw,1.6rem);margin:0 0 10px}
+.davaharc-sonuc h3{font-size:1.05rem;margin:24px 0 8px}
+.davaharc-buyuk{font-family:var(--serif);font-weight:500;font-size:clamp(1.25rem,4.4vw,1.7rem);line-height:1.3;margin:0 0 8px;padding:14px 20px;border-left:4px solid var(--accent);background:var(--surface-2);border-radius:0 10px 10px 0;overflow-wrap:anywhere}
+.davaharc-alt{margin:0 0 8px;font-weight:600;color:#7d5f27}
+.davaharc-sonuc .davaharc-liste{display:block;margin:6px 0 0;padding-left:22px}.davaharc-sonuc .davaharc-liste li{margin:0 0 8px;line-height:1.6}
+.davaharc-dayanak{display:block;font-size:.83rem;color:var(--text-soft)}
+.davaharc-dayanaklar{margin:8px 0 0}
+.davaharc-mesaj{padding:14px 18px;border-left:4px solid var(--gold);background:var(--surface-2);border-radius:0 10px 10px 0;line-height:1.6}
+.davaharc-sorumluluk{margin:18px 0 0;font-size:.88rem;line-height:1.6;color:var(--text-soft)}
+.davaharc-surum{margin:12px 0 0;font-size:.8rem;color:var(--text-soft)}
+.davaharc-dugmeler{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0}
+.davaharc-tablo-kap{overflow-x:auto;max-width:100%;margin:10px 0 0}
+.davaharc-tablo{width:100%;border-collapse:collapse;font-size:.9rem;line-height:1.5}
+.davaharc-tablo caption{text-align:left;font-weight:600;margin:0 0 8px;color:var(--text)}
+.davaharc-tablo th,.davaharc-tablo td{border-bottom:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+.davaharc-tablo td{font-variant-numeric:tabular-nums;white-space:nowrap}
+.davaharc-tablo thead th{background:var(--surface-2);font-weight:600}
+.davaharc-tablo tbody th{font-weight:400;min-width:160px}
+.davaharc-tablo tr.davaharc-ara th,.davaharc-tablo tr.davaharc-ara td{font-weight:700}
+.davaharc-ozet td{text-align:right}
+.davaharc-bilgi-bolum{max-width:820px}
+.davaharc-bilgi-bolum h2{font-family:var(--serif);font-weight:500;font-size:1.4rem;margin:44px 0 14px}
+.davaharc-bilgi-bolum p,.davaharc-sira li{line-height:1.7}
+.davaharc-sira{padding-left:22px}.davaharc-sira li{margin-bottom:8px}
+.davaharc-kaynak a{color:var(--accent)}
+.davaharc-surum-alt{margin-top:28px;font-size:.85rem;color:var(--text-soft)}
+@media(max-width:560px){.davaharc-form{padding:14px;gap:16px}.davaharc-form fieldset{padding:12px}.davaharc-gonder{width:100%;justify-self:stretch}.davaharc-details{padding:0 12px}}
+@media screen{html[data-tema="koyu"] .davaharc-form,html[data-tema="koyu"] .davaharc-ikincil{background:var(--surface-2)}html[data-tema="koyu"] .davaharc-form input,html[data-tema="koyu"] .davaharc-form select{border-color:rgba(241,243,246,.35)}html[data-tema="koyu"] .davaharc-form [aria-invalid=true]{border-color:var(--hata-koyu)}html[data-tema="koyu"] .davaharc-hata{color:var(--hata-koyu)}html[data-tema="koyu"] .davaharc-gonder{color:var(--panel)}html[data-tema="koyu"] .davaharc-alt{color:var(--gold)}}
+@media print{.topbar,.foot,.cookie-bar,.hs-git-kap,.hs-adimlar,.hs-eylemler,.hs-yonlendirme,.hs-nasil,.hs-gizlilik,.davaharc-form,.davaharc-kisa,.atla{display:none!important}.davaharc-sonuc{margin-top:0}}
+.davaharc-tablo td:last-child{white-space:normal;min-width:180px;font-size:.84rem;color:var(--text-soft)}
+.davaharc-tablo td:nth-child(2){text-align:right}
+</style>
+</head>
+<body>
+<a class="atla" id="atla" href="#icerik" data-tr="İçeriğe geç" data-en="Skip to content">İçeriğe geç</a>
+<header class="topbar">
+  <div class="wrap row">
+    <a href="/" data-href-tr="/" data-href-en="/en/" class="brand">
+      <img class="logo" src="/logo-ust.svg?v=8334ed51" alt="Av. Bayram Can Çapar · ÇAPAR Hukuk" width="175" height="44" decoding="async" />
+    </a>
+    <div class="hdr-right">
+            <nav class="ust-gezinti" id="ust-gezinti" aria-labelledby="ust-gezinti-ad">
+      <form class="ust-ara-form" role="search" action="/makaleler" method="get"><input type="search" name="ara" maxlength="120" aria-label="Makalelerde ara" data-aria-tr="Makalelerde ara" data-aria-en="Search articles" placeholder="Makalelerde ara: ör. işe iade" data-ph-tr="Makalelerde ara: ör. işe iade" data-ph-en="Search articles: e.g. reinstatement" /><button type="submit" data-tr="Ara" data-en="Search">Ara</button></form>
+      <a href="/makaleler" data-href-tr="/makaleler" data-href-en="/en/articles" data-tr="Makaleler" data-en="Articles">Makaleler</a>
+      <a href="/#alanlar" data-href-tr="/#alanlar" data-href-en="/en/#alanlar" data-tr="Çalışma Alanları" data-en="Practice Areas">Çalışma Alanları</a>
+      <a href="/mevzuat" data-href-tr="/mevzuat" data-href-en="/en/legislation" data-tr="Mevzuat" data-en="Legislation">Mevzuat</a>
+      <a href="/basinda" data-href-tr="/basinda" data-href-en="/en/press" data-tr="Basında Biz" data-en="In the Press">Basında Biz</a>
+      <a href="/hesaplamalar" data-href-tr="/hesaplamalar" data-href-en="/en/calculations" data-tr="Hesaplamalar" data-en="Calculators">Hesaplamalar</a>
+      <a class="ust-ara" href="/makaleler#ara" data-href-tr="/makaleler#ara" data-href-en="/en/articles#ara"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="ust-ara-metin" data-tr="Makalelerde ara" data-en="Search articles">Makalelerde ara</span></a>
+      <a class="ust-ek" href="/basvuru-yollari" data-href-tr="/basvuru-yollari" data-href-en="/en/application-routes" data-tr="Başvuru Yolları" data-en="Where to Apply">Başvuru Yolları</a>
+      <a class="ust-ek" href="/sozluk" data-href-tr="/sozluk" data-href-en="/en/glossary" data-tr="Hukuk Sözlüğü" data-en="Glossary">Hukuk Sözlüğü</a>
+      <a class="ust-ek" href="/yurt-disinda-yasayanlar" data-href-tr="/yurt-disinda-yasayanlar" data-href-en="/en/turkish-citizens-abroad" data-tr="Yurt dışında yaşayanlar" data-en="Turkish citizens living abroad">Yurt dışında yaşayanlar</a>
+      <a class="ust-ek" href="/#hakkinda" data-href-tr="/#hakkinda" data-href-en="/en/#hakkinda" data-tr="Hakkımızda" data-en="About Us">Hakkımızda</a>
+      <a class="ust-ek" href="/#ekip" data-href-tr="/#ekip" data-href-en="/en/#ekip" data-tr="Ekibimiz" data-en="Our Team">Ekibimiz</a>
+      <a href="/iletisim" data-href-tr="/iletisim" data-href-en="/en/contact" data-tr="İletişim" data-en="Contact">İletişim</a>
+      <div class="ust-tema" role="group" aria-label="Tema" data-aria-tr="Tema" data-aria-en="Theme"><span class="ust-tema-ad" aria-hidden="true" data-tr="Tema" data-en="Theme">Tema</span><span class="oa-seg"><button type="button" data-tema-sec="acik" aria-pressed="false" data-tr="Açık" data-en="Light">Açık</button><button type="button" data-tema-sec="koyu" aria-pressed="false" data-tr="Koyu" data-en="Dark">Koyu</button></span></div>      </nav>
+      <span id="ust-gezinti-ad" hidden data-tr="Site menüsü" data-en="Site menu">Site menüsü</span>
+      <span class="ust-eylem" data-konum="ust"><a class="ust-tel" href="tel:+902582415554" data-tr="0258 241 55 54" data-en="+90 258 241 55 54">0258 241 55 54</a><a class="ust-gt iletisim-mesaj" href="/iletisim" data-href-tr="/iletisim" data-href-en="/en/contact" data-tr="Görüşme Talep Et" data-en="Request a Meeting">Görüşme Talep Et</a></span>
+      <div class="lang" role="group" aria-label="Dil / Language">
+        <a id="btn-tr" class="active" href="/hesaplamalar/dava-harci-hesaplama" hreflang="tr" lang="tr">TR</a>
+        <a id="btn-en" href="/en/calculations/court-fee-calculator" hreflang="en" lang="en">EN</a>
+      </div>
+      <div class="tema-sec"><button type="button" class="tema-dugme" aria-expanded="false" aria-controls="tema-menu" aria-label="Tema" data-aria-tr="Tema" data-aria-en="Theme"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></button><div class="tema-menu" id="tema-menu" role="group" aria-label="Tema" data-aria-tr="Tema" data-aria-en="Theme" hidden><button type="button" data-tema-sec="acik" aria-pressed="false" data-tr="Açık" data-en="Light">Açık</button><button type="button" data-tema-sec="koyu" aria-pressed="false" data-tr="Koyu" data-en="Dark">Koyu</button></div></div><script>(function(){var d=document.documentElement,k=document.querySelector(".tema-sec"),b=k&&k.querySelector(".tema-dugme"),m=k&&k.querySelector(".tema-menu");function i(){var s=d.getAttribute("data-tema")||"acik";document.querySelectorAll("[data-tema-sec]").forEach(function(x){x.setAttribute("aria-pressed",x.getAttribute("data-tema-sec")===s?"true":"false")})}function a(v){if(m){m.hidden=!v;b.setAttribute("aria-expanded",v?"true":"false")}}if(b)b.addEventListener("click",function(){a(m.hidden)});document.addEventListener("click",function(e){var x=e.target.closest?e.target.closest("[data-tema-sec]"):null;if(x){var s=x.getAttribute("data-tema-sec");try{localStorage.setItem("capar-tema",s)}catch(e){}if(window.caparTema)caparTema(s);document.dispatchEvent(new Event("capar-tema"));return}if(m&&!m.hidden&&!k.contains(e.target))a(false)});document.addEventListener("capar-tema",i);document.addEventListener("keydown",function(e){if(e.key==="Escape"&&m&&!m.hidden){a(false);b.focus()}});i()})();</script>
+      <button type="button" class="ust-menu-dugme" aria-expanded="false" aria-controls="ust-gezinti" aria-labelledby="ust-gezinti-dugme-ad"><span></span><span></span><span></span></button><span id="ust-gezinti-dugme-ad" hidden data-tr="Menü" data-en="Menu">Menü</span>
+      <style id="ust-menu">#ara{scroll-margin-top:90px}.topbar .wrap{max-width:1360px}.ust-gezinti{display:flex;align-items:center;gap:18px}.ust-gezinti a{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-soft);text-decoration:none;white-space:nowrap;padding:0;min-height:44px;display:inline-flex;align-items:center;transition:color .25s}.ust-gezinti a:hover{color:var(--accent)}.ust-ara{justify-content:center;gap:10px;min-width:44px;margin:0 -8px}.ust-ara-form{display:none}.ust-eylem{display:none}@media(min-width:900px){.ust-eylem{display:flex;align-items:center;gap:12px}.ust-tel{font-family:var(--sans);font-weight:600;font-size:.88rem;color:var(--text);white-space:nowrap;display:inline-flex;align-items:center;min-height:44px}.ust-gt{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;background:var(--accent);color:#fff;font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;transition:background .25s}.ust-gt:hover{background:var(--accent-deep)}}.ust-ara svg{display:block;flex:none}.ust-ara-metin{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.ust-menu-dugme{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:0 11px;border:0;background:none;cursor:pointer}.ust-menu-dugme span{display:block;width:22px;height:2px;background:var(--text);transition:transform .25s,opacity .25s}.ust-menu-dugme[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}.ust-menu-dugme[aria-expanded="true"] span:nth-child(2){opacity:0}.ust-menu-dugme[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}@media(max-width:1359.98px){.ust-menu-dugme{display:inline-flex}.ust-gezinti{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:4px 24px 12px;background:var(--surface);border-bottom:1px solid var(--line);box-shadow:0 14px 28px rgba(26,31,38,.12)}.ust-gezinti.acik{display:flex}.ust-gezinti a{display:flex;align-items:center;justify-content:space-between;font-size:.9rem;letter-spacing:.04em;min-height:48px;border-bottom:1px solid var(--line)}.ust-gezinti a::after{content:"\203A";font-weight:400}.ust-gezinti a:last-child{border-bottom:0}.ust-gezinti .ust-ara{display:none}.ust-ara-form{display:flex;gap:8px;margin:12px 0 6px}.ust-ara-form input{flex:1;min-width:0;height:44px;font:inherit;font-size:1rem;padding:0 12px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--text)}.ust-ara-form button{height:44px;padding:0 16px;border:0;border-radius:6px;background:var(--ink);color:#fff;font:inherit;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;cursor:pointer}}.brand{display:flex;align-items:center;flex:none}.brand .logo{display:block;height:44px;width:auto}@media(max-width:480px){.brand .logo{height:40px}}@media(max-width:360px){.brand .logo{height:34px}}.lang a{font-family:var(--sans);font-weight:600;font-size:.75rem;letter-spacing:.06em;color:var(--text-soft);padding:0 11px;height:100%;line-height:1;display:inline-flex;align-items:center;text-decoration:none;transition:background .25s,color .25s}.lang a+a{border-left:1px solid var(--line)}.lang a.active{background:var(--accent);color:#fff}.lang a:hover:not(.active){color:var(--accent)}@media(max-width:400px){.hdr-right{gap:7px}.lang a,.lang button{padding:0 9px}.row:has(#btn-de) .brand .logo{height:34px}.lang:has(#btn-de) a{padding:0 6px}.hdr-right:has(#btn-de){gap:4px}}/* mobil menü eş güdümü (2026-11-14) */@media(min-width:1360px){.ust-gezinti .ust-ek{display:none}}@media(min-width:1360px){.ust-gezinti{gap:14px}}@media(max-width:1359.98px){.ust-gezinti{max-height:calc(100vh - 80px);overflow-y:auto;overscroll-behavior:contain}html.menu-acik{overflow:hidden}.ust-gezinti a[aria-current="page"]{color:var(--accent)}}@media(max-width:480px){.hdr-right .back+.back{display:none}}</style><script>/* H-3 menü */(function(){var d=document.querySelector('.ust-menu-dugme'),n=document.getElementById('ust-gezinti');if(!d||!n)return;var f=n.querySelector('form'),q=f&&f.querySelector('input'),r=document.documentElement;function l(){return r.lang==='en'?'en':'tr';}function b(){if(!n.classList.contains('acik'))return;var h=innerHeight;['.mobil-cubuk','#cookieBar'].forEach(function(s){var e=document.querySelector(s);if(!e)return;var c=getComputedStyle(e),t=e.getBoundingClientRect().top;if(c.display!=='none'&&c.visibility!=='hidden'&&t>0&&t<h)h=t;});n.style.maxHeight=Math.max(150,h-n.getBoundingClientRect().top)+'px';}function k(a,o){n.classList.toggle('acik',a);r.classList.toggle('menu-acik',a);d.setAttribute('aria-expanded',a?'true':'false');if(a){if(f&&q){f.action=l()==='en'?'/en/articles':'/makaleler';q.placeholder=q.getAttribute('data-ph-'+l())||q.placeholder;}b();if(o){var g=n.querySelector('input,a');if(g)g.focus();}}}d.addEventListener('click',function(e){k(d.getAttribute('aria-expanded')!=='true',e.detail===0);});n.addEventListener('click',function(e){if(e.target.closest('a'))k(false);});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&n.classList.contains('acik')){k(false);d.focus();}});document.addEventListener('click',function(e){if(n.classList.contains('acik')&&!n.contains(e.target)&&!d.contains(e.target))k(false);});addEventListener('resize',function(){if(innerWidth>1359&&n.classList.contains('acik'))k(false);else b();});})();</script>
+    </div>
+  </div>
+</header>
+<main id="icerik">
+  <section class="page-head wrap">
+    <nav class="yol" aria-label="Konum"><a href="/">Ana Sayfa</a> › <a href="/hesaplamalar">Hesaplamalar</a></nav>
+    <span class="eyebrow">Hesaplamalar</span>
+    <h1>Dava Harcı Hesaplama 2026: Başvurma Harcı, Peşin Harç, Islah Harcı, İstinaf ve Temyiz Harcı</h1>
+    <p class="hs-git-kap"><a class="hs-git-dugme" href="#davaharc-form">Hesaplamaya geç</a></p>
+    <p class="lead">Dava açarken mahkeme veznesine ödenecek harçları 492 sayılı Harçlar Kanunu'na bağlı (1) sayılı Tarife ve 2026 yılı maktu tutarlarını belirleyen Harçlar Kanunu Genel Tebliği (Seri No: 98) ile kalem kalem hesaplar: başvurma harcı, nispi davada peşin karar ve ilam harcı (dörtte bir; ölüm ve cismani zarar tazminat davalarında yirmide bir), maktu karar harcı, vekâlet harcı ve gider avansı; kararın tebliğinden sonra ödenecek bakiye karar harcını ayrıca gösterir. Islah ve talep artırımında artırılan değerin peşin harcını, istinaf ve temyizde kanun yolu harcını verir. Her satırda dayanak tarife pozisyonu yazılıdır.</p>
+    <p class="davaharc-kisa-cevap"><strong>Kısa cevap:</strong> Konusu parayla ölçülebilen davada karar ve ilam harcı dava değerinin binde 68,31&#039;idir; dava açılırken bunun dörtte biri (ölüm ve cismani zarar tazminat davalarında yirmide biri) peşin harç olarak, başvurma harcıyla birlikte ödenir; kalanı kararın tebliğinden itibaren bir ay içinde ödenir (492 sayılı Harçlar Kanunu m.28/a, (1) sayılı Tarife A-III-1-a). 2026&#039;da asliye mahkemesinde başvurma harcı ve maktu karar harcı 732 TL&#039;dir (Harçlar Kanunu Genel Tebliği Seri No: 98).</p>
+  </section>
+
+  <section class="content wrap">
+    <div class="davaharc-arac">
+      <p class="davaharc-kisa">Bilgi aracıdır; hukuki görüş değildir. Tarife yılı: 2026 (Harçlar Kanunu Genel Tebliği (Seri No: 98), Resmî Gazete 31 Aralık 2025, sayı 33124 (5. Mükerrer)).</p>
+      <p class="hs-nasil">Nasıl kullanılır: hesap türünü seçin (dava açılışı, ıslah ya da talep artırımı, istinaf ya da temyiz, Anayasa Mahkemesi bireysel başvuru, davadan önce ihtiyati tedbir ya da ihtiyati haciz talebi), tarihi ve mahkemeyi girin; nispi davada dava değerini yazın ve hesapla düğmesine basın. Sonuç bu sayfada, formun hemen altında görünür. Sonuçlar ön hesaptır; mahkeme veznesinin hesabı esastır.</p>
+      <p class="hs-gizlilik">Girdiğiniz bilgiler tarayıcınızda hesaplanır, sunucuya gönderilmez.</p>
+      <form id="davaharc-form" class="davaharc-form" novalidate>
+        <p class="davaharc-not">Zorunlu alanlar: hesap türü ve tarih; dava açılışında mahkeme ve dava türü, nispi davada dava değeri; ıslahta en az bir artırımın tarihi ve tutarı. Tutarları 1.234.567,89 biçiminde yazın. Ad, kimlik numarası ya da dosya numarası istenmez.</p>
+        <nav class="hs-adimlar" aria-label="Formun bölümleri"><ol><li><a href="#davaharc-b1">1 Hesap türü</a></li><li><a href="#davaharc-b2">2 Dava bilgileri</a></li><li><a href="#davaharc-b3">3 Islah</a></li><li><a href="#davaharc-b4">4 Vekil ve giderler</a></li><li>Sonuç</li></ol></nav>
+
+        <fieldset class="davaharc-bolum" id="davaharc-b1">
+          <legend>1. Hesap türü ve tarih</legend>
+          <fieldset id="davaharc-islem">
+            <legend>Ne hesaplanacak? <span class="hs-zorunlu">zorunlu</span></legend>
+            <div class="davaharc-secim">
+              <label><input type="radio" name="islem" id="davaharc-islem-acilis" value="acilis" checked /> Dava açılışı (ilk derece mahkemesi)</label>
+              <label><input type="radio" name="islem" value="islah" /> Islah ya da talep artırımı</label>
+              <label><input type="radio" name="islem" value="kanun_yolu" /> İstinaf ya da temyiz başvurusu</label>
+              <label><input type="radio" name="islem" value="aym" /> Anayasa Mahkemesi bireysel başvuru</label>
+              <label><input type="radio" name="islem" value="ihtiyati" /> Davadan önce ihtiyati tedbir, ihtiyati haciz ya da delil tespiti talebi</label>
+            </div>
+          </fieldset>
+          <div class="davaharc-izgara" data-islem="acilis kanun_yolu aym ihtiyati">
+            <div class="davaharc-alan">
+              <label for="davaharc-tarih">Dava ya da başvuru tarihi <span class="hs-zorunlu">zorunlu</span></label>
+              <input type="date" id="davaharc-tarih" name="tarih" aria-describedby="davaharc-tarih-not" />
+              <p class="davaharc-not" id="davaharc-tarih-not">Harç, işlem tarihindeki tarifeye göre alınır. Yalnız 2026 tarifesi yüklüdür; başka yıllarda tutar verilmez.</p>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="davaharc-bolum" id="davaharc-b2" data-islem="acilis kanun_yolu ihtiyati">
+          <legend>2. Dava bilgileri</legend>
+          <div class="davaharc-izgara" data-islem="acilis ihtiyati">
+            <div class="davaharc-alan">
+              <label for="davaharc-yol">Mahkeme</label>
+              <select id="davaharc-yol" name="yol" aria-describedby="davaharc-yol-not">
+                <option value="">Seçin</option>
+                <option value="sulh">Sulh hukuk ya da icra hukuk mahkemesi</option>
+                <option value="asliye">Asliye hukuk, ticaret, iş, aile, tüketici, fikri ve sınai haklar mahkemesi</option>
+                <option value="idare">İdare mahkemesi</option>
+                <option value="vergi">Vergi mahkemesi</option>
+              </select>
+              <p class="davaharc-not" id="davaharc-yol-not">Tarifede asliye mahkemelerinin hepsi ve idare mahkemesi için aynı başvurma harcı vardır ((1) sayılı Tarife A-I-2). Vergi mahkemesinde (3) sayılı Tarife uygulanır: açılışta yalnız başvurma harcı ödenir.</p>
+            </div>
+          </div>
+          <fieldset id="davaharc-tur" data-islem="acilis">
+            <legend>Dava türü</legend>
+            <div class="davaharc-secim">
+              <label><input type="radio" name="tur" id="davaharc-tur-nispi" value="nispi" /> Konusu parayla ölçülebilir (nispi harç)</label>
+              <label><input type="radio" name="tur" value="maktu" /> Konusu parayla ölçülemez (maktu harç: ör. boşanma, tespit, iptal davası)</label>
+            </div>
+          </fieldset>
+          <div class="davaharc-izgara" id="davaharc-nispi-kap">
+            <div class="davaharc-alan">
+              <label for="davaharc-deger">Dava değeri, TL</label>
+              <input type="text" id="davaharc-deger" name="deger" inputmode="decimal" autocomplete="off" placeholder="ör. 250.000" aria-describedby="davaharc-deger-not" />
+              <p class="davaharc-not" id="davaharc-deger-not">Dava dilekçesinde gösterilen değer (Harçlar Kanunu m.16). Taşınmazın aynına ilişkin davada taşınmazın değeri.</p>
+            </div>
+            <div class="davaharc-alan">
+              <div class="davaharc-secim">
+                <label><input type="checkbox" id="davaharc-cismani" name="cismani" /> Ölüm ya da cismani zarar (bedensel zarar) nedeniyle maddi veya manevi tazminat davası</label>
+              </div>
+              <p class="davaharc-not">Seçilirse peşin harç yirmide birdir (Harçlar Kanunu m.28/a).</p>
+            </div>
+          </div>
+          <div class="davaharc-izgara" data-islem="acilis">
+            <div class="davaharc-alan">
+              <div class="davaharc-secim">
+                <label><input type="checkbox" id="davaharc-ihtiyati" name="ihtiyati" /> Dava ile birlikte ihtiyati tedbir ya da ihtiyati haciz talebi (idare mahkemesinde yürütmenin durdurulması)</label>
+              </div>
+            </div>
+            <div class="davaharc-alan" id="davaharc-tuketici-kap">
+              <div class="davaharc-secim">
+                <label><input type="checkbox" id="davaharc-tuketici" name="tuketici" /> Tüketici mahkemesinde tüketicinin açtığı dava</label>
+              </div>
+              <p class="davaharc-not">Seçilirse harç alınmaz (6502 sayılı Kanun m.73/2); gider avansı yine hesaplanır.</p>
+            </div>
+            <div class="davaharc-alan">
+              <label for="davaharc-kesif">Keşif sayısı</label>
+              <input type="text" id="davaharc-kesif" name="kesif" inputmode="numeric" autocomplete="off" placeholder="0" />
+            </div>
+          </div>
+          <div class="davaharc-izgara" data-islem="kanun_yolu">
+            <div class="davaharc-alan">
+              <label for="davaharc-kanun-yolu">Kanun yolu</label>
+              <select id="davaharc-kanun-yolu" name="kanun_yolu">
+                <option value="">Seçin</option>
+                <option value="istinaf_bam">İstinaf: bölge adliye mahkemesi</option>
+                <option value="istinaf_bim">İstinaf: bölge idare mahkemesi (vergi davaları hariç)</option>
+                <option value="temyiz_yargitay">Temyiz: Yargıtay</option>
+                <option value="temyiz_danistay">Temyiz: Danıştay (vergi davaları hariç)</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="davaharc-bolum" id="davaharc-b3" data-islem="islah">
+          <legend>3. Islah ya da talep artırımı</legend>
+          <p class="davaharc-not">Artırılan tutarı ve artırımın yapıldığı tarihi girin; harç artırım tarihinin yılındaki tarifeyle hesaplanır. Aynı davada en çok üç artırım girilebilir (ör. talep artırımı ve sonra ıslah).</p>
+          <div class="davaharc-izgara">
+            <div class="davaharc-alan">
+              <label for="davaharc-a1-tarih">1. artırım tarihi</label>
+              <input type="date" id="davaharc-a1-tarih" name="a1_tarih" />
+            </div>
+            <div class="davaharc-alan">
+              <label for="davaharc-a1-tutar">1. artırılan tutar, TL</label>
+              <input type="text" id="davaharc-a1-tutar" name="a1_tutar" inputmode="decimal" autocomplete="off" aria-describedby="davaharc-a1-not" />
+              <p class="davaharc-not" id="davaharc-a1-not">Yeni toplam değil, artış tutarı.</p>
+            </div>
+            <div class="davaharc-alan">
+              <label for="davaharc-a2-tarih">2. artırım tarihi</label>
+              <input type="date" id="davaharc-a2-tarih" name="a2_tarih" />
+            </div>
+            <div class="davaharc-alan">
+              <label for="davaharc-a2-tutar">2. artırılan tutar, TL</label>
+              <input type="text" id="davaharc-a2-tutar" name="a2_tutar" inputmode="decimal" autocomplete="off" />
+            </div>
+            <div class="davaharc-alan">
+              <label for="davaharc-a3-tarih">3. artırım tarihi</label>
+              <input type="date" id="davaharc-a3-tarih" name="a3_tarih" />
+            </div>
+            <div class="davaharc-alan">
+              <label for="davaharc-a3-tutar">3. artırılan tutar, TL</label>
+              <input type="text" id="davaharc-a3-tutar" name="a3_tutar" inputmode="decimal" autocomplete="off" />
+            </div>
+            <div class="davaharc-alan">
+              <label for="davaharc-mevcut">Dava açılırken gösterilen değer, TL</label>
+              <input type="text" id="davaharc-mevcut" name="mevcut" inputmode="decimal" autocomplete="off" aria-describedby="davaharc-mevcut-not" />
+              <p class="davaharc-not" id="davaharc-mevcut-not">İsteğe bağlı: girilirse yeni toplam değer ve bakiye karar harcı gösterilir.</p>
+            </div>
+            <div class="davaharc-alan">
+              <label for="davaharc-odenen">Daha önce ödenen peşin harç, TL</label>
+              <input type="text" id="davaharc-odenen" name="odenen" inputmode="decimal" autocomplete="off" />
+            </div>
+          </div>
+          <div class="davaharc-secim">
+            <label><input type="checkbox" id="davaharc-islah-cismani" name="islah_cismani" /> Ölüm ya da cismani zarar nedeniyle tazminat davası (peşin harç yirmide bir)</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="davaharc-bolum" id="davaharc-b4" data-islem="acilis kanun_yolu aym ihtiyati">
+          <legend>4. Vekil ve giderler</legend>
+          <div class="davaharc-izgara">
+            <div class="davaharc-alan">
+              <div class="davaharc-secim">
+                <label><input type="checkbox" id="davaharc-vekil" name="vekil" /> Dava avukatla açılıyor (vekâlet harcı)</label>
+              </div>
+            </div>
+            <div class="davaharc-alan">
+              <label for="davaharc-pul">Vekâlet pulu, TL</label>
+              <input type="text" id="davaharc-pul" name="pul" inputmode="decimal" autocomplete="off" aria-describedby="davaharc-pul-not" />
+              <p class="davaharc-not" id="davaharc-pul-not">Vekâlet pulu Harçlar Kanunu'nda değil, Avukatlık Kanunu m.27'dedir; güncel tutarı biliyorsanız girin.</p>
+            </div>
+          </div>
+          <div class="davaharc-izgara" id="davaharc-gider-kap">
+            <div class="davaharc-alan">
+              <label for="davaharc-taraf">Taraf sayısı (gider avansı)</label>
+              <input type="text" id="davaharc-taraf" name="taraf" inputmode="numeric" autocomplete="off" placeholder="2" />
+            </div>
+            <div class="davaharc-alan">
+              <label for="davaharc-tebligat">Bir tebligatın ücreti, TL</label>
+              <input type="text" id="davaharc-tebligat" name="tebligat" inputmode="decimal" autocomplete="off" aria-describedby="davaharc-tebligat-not" />
+              <p class="davaharc-not" id="davaharc-tebligat-not">Gider avansı, taraf sayısının beş katı tebligat ücreti ile 530 TL'dir (HMK Gider Avansı Tarifesi m.4). Tebligat ücreti tarifede yazılı değildir; güncel tutarı girin.</p>
+            </div>
+          </div>
+        </fieldset>
+
+<div class="davaharc-hata" id="davaharc-hata" role="alert" tabindex="-1" hidden></div>
+        <button type="submit" class="davaharc-gonder" disabled>Harcı hesapla</button>
+      </form>
+      <div id="davaharc-sonuc" class="davaharc-sonuc" aria-live="polite" data-filigran></div>
+      <p class="hs-yonlendirme" id="davaharc-yonlendirme" hidden>Sonucu kendi dosyanızla birlikte değerlendirmek isterseniz <a href="/alan/trafik-kazasi-tazminat">Trafik Kazası Tazminatı</a> ve <a href="/alan/icra-iflas">İcra ve İflas Hukuku</a> sayfalarına bakabilir ya da <a href="/iletisim">İletişim</a> sayfasından ulaşabilirsiniz.</p>
+      <noscript><p class="davaharc-mesaj">Hesaplayıcı tarayıcınızda JavaScript ile çalışır. JavaScript kapalıyken aşağıdaki kurallar ve dayanaklar okunabilir.</p></noscript>
+    </div>
+
+    <div class="davaharc-bilgi-bolum">
+      <h2>Hesap nasıl yapılır</h2>
+      <ol class="davaharc-sira">
+        <li><strong>Başvurma harcı:</strong> dava açarken mahkemenin derecesine göre maktu olarak alınır; 2026'da sulh mahkemesinde 335,20 TL, asliye mahkemelerinde ve idare mahkemesinde 732 TL, bölge adliye, bölge idare, Yargıtay ve Danıştay'da 1.124,50 TL, Anayasa Mahkemesinde 6.024,10 TL ((1) sayılı Tarife A-I; Seri No: 98 Tebliğ). Yetkisizlik ya da görevsizlik kararı üzerine yetkili veya görevli mahkemeye yeniden başvuruda alınmaz.</li>
+        <li><strong>Nispi karar ve ilam harcı:</strong> konusu belli bir değerle ilgili davada hüküm altına alınan değerin binde 68,31'idir; nispi harç 732 TL'den az olamaz ((1) sayılı Tarife A-III-1). Değer ölçüsüne göre harca tabi işlemlerde dava dilekçesinde değer gösterilmesi zorunludur (Harçlar Kanunu m.16).</li>
+        <li><strong>Peşin harç ve bakiye:</strong> karar ve ilam harcının dörtte biri dava açılırken peşin, kalanı kararın tebliğinden itibaren bir ay içinde ödenir; ölüm ve cismani zarar sebebiyle açılan maddi ve manevi tazminat davalarında peşin alınan harcın oranı yirmide birdir (Harçlar Kanunu m.28/a). Bakiye harcın ödenmemiş olması hükmün tebliğine, takibe konulmasına ve kanun yollarına başvurmaya engel değildir.</li>
+        <li><strong>Maktu karar harcı:</strong> nispi harca tabi olmayan davalarda ve davanın reddinde 2026 için 732 TL; maktu harçlar işlemden önce peşin ödenir ((1) sayılı Tarife A-III-2-a; Harçlar Kanunu m.27). İhtiyati tedbir ve ihtiyati haciz kararlarında 1.206 TL (A-III-2-d), keşifte 5.188 TL (A-V).</li>
+        <li><strong>Islah ve talep artırımı:</strong> artırılan değer üzerinden peşin harç ödenir; harç ödenmedikçe sonraki işlem yapılmaz (Harçlar Kanunu m.30, m.32). Islah tahkikatın sonuna kadar ve aynı davada bir kez yapılabilir (HMK m.176, m.177); kısmi davada talep, iddianın genişletilmesi yasağına tabi olmaksızın bir kez artırılabilir (HMK m.109/4). Belirsiz alacak davasını düzenleyen HMK m.107, 7589 sayılı Kanunla yürürlükten kaldırılmıştır. Harcı yatırılmayan ıslaha değer verilemez; mahkemenin verdiği süre içinde harç tamamlanmazsa dava dilekçesindeki miktar üzerinden hüküm kurulur (Yargıtay 20. Hukuk Dairesi, 01.12.2016, 2015/6619 E., 2016/11583 K.).</li>
+        <li><strong>İstinaf ve temyiz:</strong> bölge adliye ve bölge idare mahkemesine istinaf başvurusunda 2.002 TL, Yargıtay ve Danıştay'a temyiz başvurusunda 3.608,50 TL kanun yolu harcı ((1) sayılı Tarife A-IV); başvurma harcı A-I-3'tedir.</li>
+        <li><strong>Vekâlet harcı ve gider avansı:</strong> avukatın onayladığı vekâletname sureti için 104 TL ((1) sayılı Tarife D-I-c). Gider avansı, taraf sayısının beş katı tebligat ücreti ile 530 TL'dir (HMK m.120; HMK Gider Avansı Tarifesi m.4, Resmî Gazete 28.10.2025, sayı 33061). Vekâlet pulu Avukatlık Kanunu m.27'ye dayanır; tutarı elle girilir.</li>
+        <li><strong>Yuvarlama:</strong> Harçlar Kanunu'nda ve tebliğde nispi harcın kuruşa yuvarlanmasına ilişkin bir kural bulunamadı; her kalem kuruşa yuvarlanır (yarım kuruş yukarı). Mahkeme veznesinin hesabı esastır.</li>
+      </ol>
+
+      <h2>Hesaba dahil olmayanlar</h2>
+      <ul class="davaharc-sira">
+        <li>Tebligat, bilirkişi ve tanık ücretleri; gider avansında yalnız tarifedeki formül kullanılır, tebligat ücreti sizin girdiğiniz tutardır.</li>
+        <li>İstinaf ve temyizde nispi karar harcı, celse harcı, ceza mahkemesi harçları ve ihtiyati haciz için istenen teminat.</li>
+        <li>Harçtan muafiyet ve istisnaların uygulanması (Harçlar Kanunu m.13; özel kanunlar) ve adli yardım (HMK m.334–336): hesaplayıcı bunları yalnız not olarak gösterir.</li>
+        <li>2026 dışındaki yıllar: tarifesi yüklü olmayan yıl için tutar verilmez.</li>
+        <li>Kişisel veri istenmez; hesap tarayıcınızda yapılır.</li>
+      </ul>
+
+      <h2 id="sss">Sık Sorulan Sorular</h2>
+      <div class="mv-faq"><details class="mv-q"><summary>Peşin harç nedir, nasıl hesaplanır?</summary><p>Konusu parayla ölçülebilen davada mahkeme, karar verdiğinde hüküm altına aldığı değer üzerinden binde 68,31 oranında karar ve ilam harcı alır ((1) sayılı Tarife A-III-1-a). Bu harcın dörtte biri dava açılırken peşin ödenir (Harçlar Kanunu m.28/a). Örneğin 100.000 TL&#039;lik davada nispi harç 6.831 TL, peşin harç 1.707,75 TL&#039;dir. Nispi harç 732 TL&#039;den az olamaz.</p></details><details class="mv-q"><summary>Nispi harç ile maktu harç arasındaki fark nedir?</summary><p>Nispi harç, işin değerine oranla alınır; maktu harç ise işin türüne göre sabit bir tutardır (Harçlar Kanunu m.15). Konusu belli bir değerle ilgili davalarda nispi karar harcı, bunun dışındaki davalarda (ör. boşanma, tespit, davanın reddi) 2026 için 732 TL maktu karar harcı alınır ((1) sayılı Tarife A-III-2-a). Değer ölçüsüne göre harca tabi işlemlerde dava dilekçesinde değer gösterilmesi zorunludur (m.16).</p></details><details class="mv-q"><summary>Cismani zarar davasında peşin harç neden yirmide birdir?</summary><p>Harçlar Kanunu m.28/a&#039;ya göre ölüm ve cismani zarar sebebiyle açılan maddi ve manevi tazminat davalarında peşin alınan harcın oranı dörtte bir değil yirmide birdir. Örneğin 10.000.000 TL&#039;lik bir iş kazası tazminat davasında nispi harç 683.100 TL, peşin harç 34.155 TL&#039;dir; kalan 648.945 TL karardan sonra hüküm altına alınan değere göre ödenir.</p></details><details class="mv-q"><summary>Bakiye karar ve ilam harcı ne zaman ödenir?</summary><p>Peşin ödenen kısım dışındaki karar ve ilam harcı, kararın tebliğinden itibaren bir ay içinde ödenir (Harçlar Kanunu m.28/a). Bakiye harcın ödenmemiş olması hükmün tebliğe çıkarılmasına, takibe konulmasına ve kanun yollarına başvurulmasına engel değildir (aynı madde). Peşin alınan harç işin sonunda ödenmesi gerekenden fazlaysa fazlası istek üzerine geri verilir (m.31).</p></details><details class="mv-q"><summary>Islah ya da talep artırımında hangi harç ödenir?</summary><p>Dava değeri artırıldığında artırılan kısım üzerinden peşin karar ve ilam harcı (binde 68,31&#039;in dörtte biri; cismani zarar davasında yirmide biri) ödenir; harç ödenmedikçe sonraki işlem yapılmaz (Harçlar Kanunu m.28/a, m.30, m.32). Yargıtay 20. Hukuk Dairesi&#039;nin 01.12.2016 tarihli, 2015/6619 E., 2016/11583 K. sayılı kararına göre harcı yatırılmayan ıslaha değer verilemez; mahkeme süre verir, harç tamamlanmazsa dava dilekçesindeki miktar üzerinden hüküm kurulur. Islah tahkikat sona erinceye kadar ve aynı davada bir kez yapılabilir (HMK m.176, m.177); kısmi davada talep bir kez artırılabilir (HMK m.109/4).</p></details><details class="mv-q"><summary>Kimler harçtan muaftır, adli yardım neyi kapsar?</summary><p>Değeri 50 TL&#039;yi geçmeyen dava ve takipler (ticari senet takipleri hariç), vasi tayini ve azli ile kamu adına Cumhuriyet savcılarının açtığı davalar harçtan müstesnadır; genel bütçeli idarelerin (1) ve (3) sayılı tarifelere giren işlemleri de harçtan müstesnadır (Harçlar Kanunu m.13). Tüketici mahkemesinde tüketicinin açtığı dava da harçtan muaftır (6502 sayılı Kanun m.73/2). Adli yardım kararı yargılama ve takip giderlerinden geçici muafiyet sağlar ve hükmün kesinleşmesine kadar sürer (HMK m.335).</p></details></div>
+
+      <h2>İlgili makaleler</h2>
+      <ul class="davaharc-sira davaharc-kaynak"><li><a href="/makale/ayrilma-akcesinde-bozmadan-sonra-bedel-artirimi-ikinci-islahtir">Yargıtay: Kısmi Açılan Çıkma Davasında Bozmadan Önce Islah Yapılmışsa Sonraki Bedel Artırımı İkinci Islahtır</a></li><li><a href="/makale/itirazin-iptali-davasi">İtirazın İptali Davası (İİK m.67)</a></li><li><a href="/makale/menfi-tespit-ve-istirdat-davasi">Menfi Tespit ve İstirdat Davası: Borçlu Olmadığının Tespiti ve Ödenen Paranın Geri Alınması</a></li><li><a href="/makale/denizli-bolge-adliye-mahkemesi-yargi-cevresi-istinaf">Denizli Bölge Adliye Mahkemesi: Yargı Çevresi, İstinaf Yolu ve Süreler (Muğla ve Uşak Dosyaları Dâhil)</a></li></ul>
+      <p>Bu davalara ilişkin genel bilgi için <a class="davaharc-kaynak" href="/alan/icra-iflas">İcra ve İflas Hukuku</a> ve <a class="davaharc-kaynak" href="/alan/trafik-kazasi-tazminat">Trafik Kazası Tazminatı</a> sayfalarına bakabilirsiniz. Bedensel zarar tazminatını önce <a class="davaharc-kaynak" href="/hesaplamalar/bedensel-zarar-tazminati">Bedensel Zarar Tazminatı Hesaplama</a> aracıyla bulabilirsiniz.</p>
+
+      <h2>Mevzuat</h2>
+      <ul class="davaharc-sira davaharc-kaynak">
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=492&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">492 sayılı Harçlar Kanunu</a> (m.13, 15, 16, 27, 28, 30–32) ve (1) sayılı Tarife (A- Mahkeme harçları, D- Diğer yargı harçları)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=42887&amp;MevzuatTur=9&amp;MevzuatTertip=5" target="_blank" rel="noopener">Harçlar Kanunu Genel Tebliği (Seri No: 98)</a> (Resmî Gazete 31.12.2025, sayı 33124, 5. Mükerrer; 2026 maktu harç tutarları)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6100&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">6100 sayılı Hukuk Muhakemeleri Kanunu</a> (m.109, 120, 176, 177, 335)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=42679&amp;MevzuatTur=9&amp;MevzuatTertip=5" target="_blank" rel="noopener">Hukuk Muhakemeleri Kanunu Gider Avansı Tarifesi</a> (Resmî Gazete 28.10.2025, sayı 33061; m.4)</li>
+      </ul>
+      <p class="davaharc-surum-alt">Tarife verisinin son teyit tarihi 19 Kasım 2026</p>
+      <p class="hesap-telif" style="margin-top:28px;font-size:.85rem;color:var(--text-soft)">© 2026 Av. Bayram Can Çapar · ÇAPAR Hukuk. Bu hesaplama aracı ve yazılımı 5846 sayılı Fikir ve Sanat Eserleri Kanunu kapsamında korunur; izinsiz kopyalanamaz, başka sitede ya da ticari amaçla kullanılamaz. <a href="/hukum-kosullar.html">Hüküm ve Koşullar</a></p>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="wrap alt-logo"><img src="/logo-tam-acik.svg?v=603f747f" alt="Av. Bayram Can Çapar · ÇAPAR Hukuk" width="280" height="104" loading="lazy" decoding="async" /></div>
+<div class="wrap pd-satir"><aside class="pd" data-yer="altbilgi" aria-label="Paylaş" data-url="https://capar.av.tr/hesaplamalar/dava-harci-hesaplama" hidden><button type="button" class="pd-dugme" id="pd-dugme" aria-haspopup="true" aria-expanded="false" aria-controls="pd-liste"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 10H6.5A2.5 2.5 0 0 0 4 12.5v6A2.5 2.5 0 0 0 6.5 21h11a2.5 2.5 0 0 0 2.5-2.5v-6a2.5 2.5 0 0 0-2.5-2.5H16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-tr="Paylaş" data-en="Share">Paylaş</span></button><div class="pd-menu" hidden><ul class="pd-liste" id="pd-liste" role="menu" aria-labelledby="pd-dugme"><li role="none"><button type="button" class="pd-oge" role="menuitem" data-ag="kopya"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 13.5a4.5 4.5 0 0 0 6.4.4l2.8-2.8a4.5 4.5 0 0 0-6.4-6.4l-1.3 1.3M14 10.5a4.5 4.5 0 0 0-6.4-.4l-2.8 2.8a4.5 4.5 0 0 0 6.4 6.4l1.3-1.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-tr="Bağlantıyı kopyala" data-en="Copy link">Bağlantıyı kopyala</span></button></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="whatsapp" target="_blank" rel="noopener noreferrer"><svg viewBox="-2 -2 28 28" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg><span data-tr="WhatsApp" data-en="WhatsApp">WhatsApp</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="telegram" target="_blank" rel="noopener noreferrer"><svg viewBox="-2 -2 28 28" fill="currentColor" aria-hidden="true" focusable="false"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg><span data-tr="Telegram" data-en="Telegram">Telegram</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="x" target="_blank" rel="noopener noreferrer"><svg viewBox="-3 -3 30 30" fill="currentColor" aria-hidden="true" focusable="false"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg><span data-tr="X" data-en="X">X</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="linkedin" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.93H5.55v8.41h2.79zM6.94 8.7a1.62 1.62 0 1 0 0-3.24 1.62 1.62 0 0 0 0 3.24zm11.4 9.64v-4.61c0-2.46-1.31-3.6-3.07-3.6-1.4 0-2.03.78-2.38 1.32v-1.13H10.1c.04.79 0 8.41 0 8.41h2.79v-4.7c0-.25.02-.5.09-.68.2-.5.66-1.02 1.43-1.02 1.01 0 1.41.77 1.41 1.9v4.5h2.52z"/></svg><span data-tr="LinkedIn" data-en="LinkedIn">LinkedIn</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg><span data-tr="Facebook" data-en="Facebook">Facebook</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="eposta"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m4 7.5 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span data-tr="E-posta" data-en="Email">E-posta</span></a></li></ul></div><span class="pd-durum" role="status" aria-live="polite"></span><span class="pd-m" data-ad="kopyalandi" hidden><span data-tr="Bağlantı kopyalandı" data-en="Link copied">Bağlantı kopyalandı</span></span><span class="pd-m" data-ad="elle" hidden><span data-tr="Bağlantıyı kopyalayın:" data-en="Copy the link:">Bağlantıyı kopyalayın:</span></span></aside></div><script src="/paylas-dugme.js?v=b3e8c2cd" defer></script>
+  <div class="wrap buro-bilgi" data-konum="altbilgi" style="font-size:.85rem;line-height:1.6;opacity:.9;padding-bottom:12px">Av. Bayram Can ÇAPAR - ÇAPAR HUKUK BÜROSU · Saraylar Mah. Gazi Mustafa Kemal Bulvarı, Memişoğlu Apartmanı No:76 Kat:6, 20010 Merkezefendi / Denizli · <a href="tel:+902582415554">0258 241 55 54</a> · <span data-tr="Hafta içi 09:00–18:00, Cumartesi 10:00–15:00" data-en="Weekdays 09:00–18:00, Saturday 10:00–15:00">Hafta içi 09:00–18:00, Cumartesi 10:00–15:00</span> · <a href="https://maps.google.com/?cid=3283744558559138001" target="_blank" rel="noopener" data-tr="Yol tarifi" data-en="Directions">Yol tarifi</a></div>
+  <div class="wrap row">
+    <span class="fb">Av. Bayram Can Çapar · ÇAPAR Hukuk</span>
+    <span class="links">
+            <a href="/#hakkinda" data-href-tr="/#hakkinda" data-href-en="/en/#hakkinda" data-tr="Hakkımızda" data-en="About Us">Hakkımızda</a>
+      <a href="/#ekip" data-href-tr="/#ekip" data-href-en="/en/#ekip" data-tr="Ekibimiz" data-en="Our Team">Ekibimiz</a>
+      <a href="/basinda" data-href-tr="/basinda" data-href-en="/en/press" data-tr="Basında Biz" data-en="In the Press">Basında Biz</a>
+      <a href="/karar-dizini" data-href-tr="/karar-dizini" data-href-en="/en/case-index" data-tr="Karar Dizini" data-en="Case Index">Karar Dizini</a>
+      <a href="/madde-dizini" data-href-tr="/madde-dizini" data-href-en="/en/statute-index" data-tr="Madde Dizini" data-en="Statute Index">Madde Dizini</a>
+            <a href="/basvuru-yollari" data-href-tr="/basvuru-yollari" data-href-en="/en/application-routes" data-tr="Başvuru Yolları" data-en="Where to Apply">Başvuru Yolları</a>
+      <a href="/sozluk" data-href-tr="/sozluk" data-href-en="/en/glossary" data-tr="Hukuk Sözlüğü" data-en="Glossary">Hukuk Sözlüğü</a>
+      <a href="/gizlilik.html" data-tr="KVKK Aydınlatma" data-en="Privacy Notice">KVKK Aydınlatma</a>
+      <a href="/cerez.html" data-tr="Çerez Politikası" data-en="Cookie Policy">Çerez Politikası</a>
+      <a href="/hukum-kosullar.html" data-tr="Hüküm ve Koşullar" data-en="Terms &amp; Conditions">Hüküm ve Koşullar</a>
+      <a href="/llms.txt" data-href-tr="/llms.txt" data-href-en="/llms-en.txt" data-aria-tr="Yapay zekâ asistanları için site özeti (llms.txt)" data-aria-en="Site summary for AI assistants (llms.txt)" type="text/plain" title="Yapay zekâ asistanları için site özeti (llms.txt)" aria-label="Yapay zekâ asistanları için site özeti (llms.txt)">llms.txt</a>    </span>
+    <span>© 2026 Av. Bayram Can ÇAPAR</span>
+  </div>
+  <span id="yeni-sekme" hidden data-tr="Yeni sekmede açılır" data-en="Opens in a new tab">Yeni sekmede açılır</span>
+</footer><script id="olcum">(function () {
+  var S = window.CAP_SAYFA || { tur: 'diger' };
+  window.capOlay = function (ad, p) {
+    if (typeof window.gtag !== 'function') { return; }
+    var q = { sayfa_turu: S.tur || 'diger', dil: S.dil || document.documentElement.lang || 'tr' };   // E §5.9: dil
+    if (S.makale) { q.makale = S.makale; }
+    for (var k in (p || {})) { if (p[k] !== null && p[k] !== undefined) { q[k] = p[k]; } }
+    window.gtag('event', ad, q);
+  };
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a') : null;
+    if (!a || a.closest('.pd')) { return; }   // Paylaş menüsü (e-posta dahil) kendi olayını yazar (paylas-dugme.js)
+    var h = a.getAttribute('href') || '', kk = a.closest('[data-konum]'), konum = kk ? kk.getAttribute('data-konum') : 'sayfa';
+    if (h.indexOf('tel:') === 0) { window.capOlay('iletisim_tel', { konum: konum }); }
+    else if (h.indexOf('mailto:') === 0) { window.capOlay('iletisim_eposta', { konum: konum }); }
+    else if (a.classList.contains('iletisim-mesaj')) { window.capOlay('iletisim_mesaj', { konum: konum }); }
+    if (a.closest('.vitrin-one, .vitrin-kart')) { window.capOlay('vitrin_tik', { konum: konum, makale: a.getAttribute('data-makale') || '' }); }
+  }, true);
+  function aria() {
+    var l = document.documentElement.lang === 'en' ? 'en' : 'tr';
+    document.querySelectorAll('[data-aria-tr]').forEach(function (el) { el.setAttribute('aria-label', el.getAttribute('data-aria-' + l) || ''); });
+  }
+  function basla() {
+    aria();
+    if (typeof window.setLang === 'function' && !window.setLang.capSarili) {
+      var eski = window.setLang;
+      window.setLang = function (l) { eski(l); aria(); };
+      window.setLang.capSarili = true;
+    }
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', basla); } else { basla(); }
+})();</script><nav class="mobil-cubuk" aria-label="Hızlı iletişim" data-aria-tr="Hızlı iletişim" data-aria-en="Quick contact" data-konum="cubuk"><a class="cubuk-tel" href="tel:+902582415554"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span data-tr="Telefon" data-en="Phone">Telefon</span></a><a class="cubuk-yol" href="https://maps.google.com/?cid=3283744558559138001" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5c-3.6 0-6.5 2.9-6.5 6.5 0 4.6 6.5 12.5 6.5 12.5s6.5-7.9 6.5-12.5c0-3.6-2.9-6.5-6.5-6.5z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span data-tr="Yol tarifi" data-en="Directions">Yol tarifi</span></a><a class="cubuk-form ana iletisim-mesaj" href="/iletisim" data-href-tr="/iletisim" data-href-en="/en/contact"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span data-tr="Görüşme formu" data-en="Meeting form">Görüşme formu</span></a></nav>
+
+<!-- Ölçüm ve çerez onayı: ana sayfadaki kurulumun aynısı (Consent Mode v2; tercihler 'capar-cerez' ve 'capar-reklam' ana sayfayla ortak) -->
+<style>
+  .cookie-bar{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--panel);color:var(--text-on-panel);padding:16px clamp(20px,5vw,48px);display:none;box-shadow:0 -10px 40px rgba(22,19,15,.2)}
+  .cookie-bar.show{display:block}
+  .cookie-bar .cb-in{max-width:var(--maxw);margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between}
+  .cookie-bar p{font-size:.85rem;color:rgba(241,243,246,.82);max-width:66ch;line-height:1.5;margin:0}
+  .cookie-bar a{color:var(--gold);border-bottom:1px solid rgba(203,167,92,.4)}
+  .cookie-bar .cb-btns{display:flex;gap:10px;flex:none}
+  .cookie-bar button{font-family:var(--sans);font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:10px 22px;min-height:44px;min-width:120px;cursor:pointer;border:1px solid rgba(241,243,246,.55);background:none;color:var(--text-on-panel);transition:.25s}
+  .cookie-bar button.acc{background:var(--gold);border-color:var(--gold);color:var(--panel)}
+  .cookie-bar button:hover{transform:translateY(-1px)}
+  @media(max-width:560px){.cookie-bar .cb-btns{flex:1 1 100%}.cookie-bar .cb-btns button{flex:1 1 0;min-width:0}}
+  @media(max-width:560px){.cookie-bar{padding:10px 16px 12px}.cookie-bar .cb-in{gap:8px}.cookie-bar p{font-size:.78rem;line-height:1.42}}
+  @media(min-width:900px){.cookie-bar p{flex:1 1 0;min-width:0;max-width:none}}
+</style>
+<div class="cookie-bar" id="cookieBar" role="dialog" aria-label="Çerez bilgilendirmesi">
+  <div class="cb-in">
+    <p><span data-tr="Bu sitede, ziyaret istatistiklerini ve reklamlarımızın sonuçlarını (Google Ads, Meta) ölçmek için onayınızla çerez kullanıyoruz; kişiselleştirilmiş reklam yapılmaz. Ayrıntılar için" data-en="With your consent, we use cookies to measure visit statistics and the results of our advertisements (Google Ads, Meta); no personalised advertising is used. For details, see our">Bu sitede, ziyaret istatistiklerini ve reklamlarımızın sonuçlarını (Google Ads, Meta) ölçmek için onayınızla çerez kullanıyoruz; kişiselleştirilmiş reklam yapılmaz. Ayrıntılar için</span> <a href="/cerez.html" data-tr="Çerez Politikası" data-en="Cookie Policy">Çerez Politikası</a>.</p>
+    <div class="cb-btns">
+      <button type="button" onclick="rejectCookies()" data-tr="Reddet" data-en="Decline">Reddet</button>
+      <button type="button" class="acc" onclick="acceptCookies()" data-tr="Kabul et" data-en="Accept">Kabul et</button>
+    </div>
+  </div>
+</div>
+<script id="cerez-onay">
+  // Çerez onayı (Google Consent Mode v2; kullanıcı kararı 2026-11-16 "geleneksel sistem": bantta onay kutusu yok, iki düğme
+  // "Kabul et" / "Reddet"). Bu blok parts/footer.php ve index.html'de birebir aynıdır (araclar/test_cerez_onay.py).
+  // Tercihler yalnız cihazda, önceki sürümün anahtarlarıyla: 'capar-cerez' (analitik) ve 'capar-reklam' (reklam ölçümü), değerler
+  // 'accepted' | 'rejected'. "Kabul et" ikisini birlikte 'accepted', "Reddet" ikisini birlikte 'rejected' yazar.
+  // cerezDurum: ikisi 'accepted' → 'kabul'; analitik 'rejected' ve reklam 'rejected' ya da hiç yok → 'ret'; öteki her kayıt
+  // (önceki kutulu sürümden kalan kısmi seçim, yalnız analitik kabulü, bozuk değer) karar sayılmaz: hiçbir izin açılmaz, bant
+  // yeniden sorar (rıza geriye doğru genişletilmez). Varsayılan dört izin de kapalı; 'kabul'de bant yalnız analytics_storage'ı
+  // açar, reklam ölçümü izinlerini (ad_storage, ad_user_data) yalnız reklam-olcum.js açar (o da yalnız reklam kimliği tanımlı
+  // sayfada bulunur); ad_personalization hiçbir durumda açılmaz. Onay yoksa analitik etiketi çerezsiz kipte çalışır (cihaza
+  // çerez yazılmaz); onay verilirse çerezli kipe geçer. Tercih sonradan '#cerez-tercihi' adresiyle (Çerez Politikası'ndaki
+  // "Tercihinizi değiştirin" bağlantısı) bant yeniden açılarak değiştirilir.
+  var GA_ID='G-SBVXSY39NX';
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag=gtag;
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
+  function loadAnalytics(){
+    if(!GA_ID || window.__gaLoaded) return; window.__gaLoaded=true;
+    var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID; document.head.appendChild(s);
+    gtag('js',new Date()); gtag('config',GA_ID,{anonymize_ip:true});
+  }
+  function cerezOku(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function cerezYaz(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function cerezDurum(c,r){
+    if(c==='accepted' && r==='accepted') return 'kabul';
+    if(c==='rejected' && (r==='rejected' || r===null)) return 'ret';
+    return null;
+  }
+  function hideCookieBar(){ var b=document.getElementById('cookieBar'); if(b) b.classList.remove('show'); }
+  function cerezTercihAc(odak){
+    var b=document.getElementById('cookieBar'); if(!b) return; b.classList.add('show');
+    if(odak && b.querySelector){ var d=b.querySelector('button'); if(d && d.focus) d.focus(); }
+  }
+  function tercihAdresi(){ try{ return location.hash==='#cerez-tercihi'; }catch(e){ return false; } }
+  function saveCookies(kabul){
+    cerezYaz('capar-cerez',kabul?'accepted':'rejected'); cerezYaz('capar-reklam',kabul?'accepted':'rejected');
+    gtag('consent','update',kabul?{analytics_storage:'granted'}:{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied'});
+    hideCookieBar(); loadAnalytics();
+    try{ if(tercihAdresi() && history.replaceState) history.replaceState(null,'',location.pathname+location.search); }catch(e){}
+    try{ document.dispatchEvent(new CustomEvent('capar-onay',{detail:{analitik:!!kabul,reklam:!!kabul}})); }catch(e){}
+  }
+  function acceptCookies(){ saveCookies(true); }
+  function rejectCookies(){ saveCookies(false); }
+  (function(){
+    var durum=cerezDurum(cerezOku('capar-cerez'),cerezOku('capar-reklam'));
+    if(durum==='kabul'){ gtag('consent','update',{analytics_storage:'granted'}); }
+    loadAnalytics();
+    if(window.addEventListener) window.addEventListener('hashchange',function(){ if(tercihAdresi()) cerezTercihAc(true); });
+    setTimeout(function(){
+      // karar kayıtlıysa bant gösterilmez; '#cerez-tercihi' adresi bandı her durumda yeniden açar
+      if(tercihAdresi()){ cerezTercihAc(true); return; }
+      if(durum===null) cerezTercihAc(false);
+    },600);
+  })();
+</script>
+<script>
+/* Alt sayfa dil değiştirici — ana site ile aynı 'capar-lang' anahtarını kullanır.
+   data-tr/data-en metinleri ve data-body (makale gövdesi TR/EN) görünürlüğünü yönetir. */
+function setLang(lang, yazma){
+  if(lang!=='tr' && lang!=='en') lang='tr';
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-tr]').forEach(function(el){
+    var v = el.getAttribute('data-'+lang); if(v===null) return;
+    if(el.hasAttribute('data-i18n-html')) el.innerHTML = v; else el.textContent = v;
+  });
+  document.querySelectorAll('[data-body]').forEach(function(el){
+    el.hidden = (el.getAttribute('data-body') !== lang);
+  });
+  document.querySelectorAll('[data-href-'+lang+']').forEach(function(el){
+    el.setAttribute('href', el.getAttribute('data-href-'+lang));
+  });
+  var t=document.getElementById('btn-tr'), e=document.getElementById('btn-en');
+  if(t) t.classList.toggle('active', lang==='tr');
+  if(e) e.classList.toggle('active', lang==='en');
+  if(!yazma){ try{ localStorage.setItem('capar-lang', lang); }catch(_){} }
+}
+(function(){ setLang('tr', true); })();
+</script>
+<script>
+/* Paket 3 (Fable H-11): yeni sekmede açılan her bağlantı (makale gövdelerindeki kanun/karar bağlantıları dahil) ekran
+   okuyucuya "yeni sekmede açılır" açıklamasını taşır (#yeni-sekme; dil değişince setLang metni çevirir). */
+(function(){
+  function yeniSekme(){
+    document.querySelectorAll('a[target="_blank"]').forEach(function(a){
+      var d=(a.getAttribute('aria-describedby')||'').split(/\s+/).filter(Boolean);
+      if(d.indexOf('yeni-sekme')<0){ d.push('yeni-sekme'); a.setAttribute('aria-describedby', d.join(' ')); }
+    });
+  }
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', yeniSekme); } else { yeniSekme(); }
+})();
+/* Tasarım denetimi (2026-11-19, bulgu 4): çerez bandının yüksekliği --cerez-yuk değişkeninde (bant kapalıyken 0); yapışkan
+   İçindekiler kutusu ve alan yan kartı bant açıkken bu kadar kısalır (site.css). Onay mantığına dokunmaz, yalnız ölçer. */
+(function(){
+  var b=document.getElementById('cookieBar'), r=document.documentElement;
+  if(!b || !window.ResizeObserver) return;
+  new ResizeObserver(function(){ r.style.setProperty('--cerez-yuk', (b.classList.contains('show') ? b.offsetHeight : 0) + 'px'); }).observe(b);
+})();
+</script>
+<script type="application/json" id="davaharc-metinler">{"teyit":"19.11.2026","arayuz":{"NASIL":"Bu sonuç nasıl bulundu","AYRINTI":"Ayrıntı tablosu","DEGISTIR":"Değerleri değiştir","PDF":"PDF olarak indir","ONE_CIKAN":"Öne çıkan sonuçlar"},"hata":{"ISLEM_SEC":"Hesap türünü seçin.","TARIH_BOS":"Tarihi girin.","TARIH_GECERSIZ":"Tarihi takvimde var olan bir gün olarak girin.","YOL_SEC":"Mahkemeyi ya da kanun yolunu seçin.","YOL_IHTIYATI":"İhtiyati tedbir, ihtiyati haciz ya da delil tespiti talebi için sulh hukuk ya da asliye mahkemesini seçin.","TUR_SEC":"Davanın nispi mi maktu mu olduğunu seçin.","TUTAR_BOS":"Tutarı girin.","TUTAR_GECERSIZ":"Tutar 0'dan büyük ve 10 trilyon TL'den küçük olmalı.","TUTAR_BICIM":"Tutarı 1.234.567,89 biçiminde girin.","SAYI_GECERSIZ":"Sayıyı 0 ile 20 arasında girin.","TARAF_GECERSIZ":"Taraf sayısını 2 ile 99 arasında girin.","TARAF_GEREK":"Gider avansı için taraf sayısını da girin.","ARTIRIM_BOS":"En az bir artırımın tarihini ve tutarını girin.","ARTIRIM_COK":"En çok üç artırım girilebilir; satırları kontrol edin."},"neden":{"TARIFE_YOK":"Seçilen tarihin yılı için tarife yüklü değil. Hesaplayıcıda yalnız 2026 tarifesi (Harçlar Kanunu Genel Tebliği Seri No: 98) bulunur; başka yıllar için tutar verilmez.","VERI_HESAP":"Girdiler işlenemedi; sayfayı yenileyip yeniden deneyin."},"kalem":{"basvurma_sulh":"Başvurma harcı (sulh mahkemesi)","basvurma_asliye":"Başvurma harcı (asliye / idare mahkemesi)","basvurma_vergi":"Başvurma harcı (vergi mahkemesi)","yd_karar":"Yürütmenin durdurulması kararı harcı","basvurma_ust":"Başvurma harcı (bölge adliye / bölge idare, Yargıtay, Danıştay)","basvurma_aym":"Anayasa Mahkemesi bireysel başvuru harcı","pesin_nispi":"Peşin karar ve ilam harcı (dörtte bir)","pesin_nispi_cismani":"Peşin karar ve ilam harcı (yirmide bir: ölüm ve cismani zarar)","pesin_maktu":"Maktu karar ve ilam harcı (peşin)","ihtiyati_karar":"İhtiyati tedbir / ihtiyati haciz kararı harcı","gider_avansi":"Gider avansı (taraf × 5 tebligat + 530 TL)","vekalet_suret":"Vekâlet (vekâletname suret) harcı","vekalet_pulu":"Vekâlet pulu (girdiğiniz tutar)","kesif":"Keşif harcı","istinaf_bam":"İstinaf yoluna başvuru harcı (bölge adliye)","istinaf_bim":"İstinaf yoluna başvuru harcı (bölge idare)","temyiz_yargitay":"Temyiz yoluna başvuru harcı (Yargıtay)","temyiz_danistay":"Temyiz yoluna başvuru harcı (Danıştay)","islah_pesin":"Islah / talep artırımı peşin harcı"},"not":{"CISMANI":"Ölüm ve cismani zarar sebebiyle açılan maddi ve manevi tazminat davalarında peşin harç yirmide birdir (Harçlar Kanunu m.28/a).","ASGARI":"Değer üzerinden bulunan nispi harç 732 TL'den az olduğu için tam harç asgari tutar olan 732 TL alındı ((1) sayılı Tarife A-III-1); peşin harç bunun dörtte biri (yirmide biri) olarak gösterildi. Veznenin uygulamasını teyit edin.","M13_ISTISNA":"Değeri 50 TL'yi geçmeyen dava harçtan müstesna olduğundan (Harçlar Kanunu m.13/a) başvurma, karar ve ilam, ihtiyati tedbir, keşif ve vekâlet suret harcı hesaplanmadı. Gider avansı ve vekâlet pulu harç olmadığından istisnaya girmez.","VERGI":"Vergi mahkemesinde (3) sayılı Tarife uygulanır: dava açılırken yalnız başvurma harcı ödenir (Harçlar Kanunu m.55). Karar harcı (nispi binde 4,55, en az 732 TL; ya da maktu 732 TL) karardan sonra ihbarnameyle istenir. Vergi davalarında istinaf harcı 2.121,70 TL, Danıştay'a temyiz harcı 3.189,50 TL'dir; bu tutarlar (1) sayılı Tarife'den farklı olduğundan istinaf ve temyiz hesabı bu tutarlarla ayrıca yapılmalıdır.","TUKETICI":"Tüketici mahkemesinde tüketicinin açtığı dava 492 sayılı Harçlar Kanunu'ndaki harçlardan muaf olduğundan (6502 sayılı Tüketicinin Korunması Hakkında Kanun m.73/2) başvurma, karar ve ilam, ihtiyati tedbir, keşif ve vekâlet suret harcı hesaplanmadı. Gider avansı harç olmadığından muafiyete girmez.","YD":"İdari yargıda ihtiyati tedbir yerine yürütmenin durdurulması istenir; idare mahkemesinin bu kararı için (1) sayılı Tarife A-III-2-c'deki maktu harç gösterildi.","IHTIYATI":"İhtiyati tedbir ve ihtiyati haciz kararlarında maktu karar harcı alınır ((1) sayılı Tarife A-III-2-d); başvurma harcı listesinde bu talepler de sayılır (A-I).","GIDER_AVANSI_YOK":"Gider avansı hesaplanmadı: taraf sayısını ve tebligat ücretini girerseniz Gider Avansı Tarifesi m.4'e göre (taraf sayısının beş katı tebligat ücreti + 530 TL) hesaplanır.","IDARI_GIDER":"İdari yargıda posta ve tebligat giderleri ayrıca alınır; bu tutar için idare mahkemesi veznesine sorun. Hukuk Muhakemeleri Kanunu Gider Avansı Tarifesi idari yargıya uygulanmadığından hesaplanmadı.","PUL_ELLE":"Vekâlet pulu Harçlar Kanunu'nda değil, Avukatlık Kanunu m.27'dedir: pulun değeri vekâletname suret harcının yüzde elli fazlası ve buna yüzde beş ilavedir (2026 için 104 × 1,5 × 1,05 = 163,80 TL). Pulu Türkiye Barolar Birliği bastırır; satıştaki tutarı girerseniz toplama eklenir.","IHTIYATI_AYRI":"Davadan önce ya da dava dışında yapılan ihtiyati tedbir, ihtiyati haciz ve delil tespiti talebinde başvurma harcı ((1) sayılı Tarife A-I) ile maktu karar harcı (A-III-2-d) peşin alınır (Harçlar Kanunu m.27). Gider avansı ve teminat ayrıca istenebilir; bu tutarlar hesaba dahil değildir.","KANUN_YOLU":"İstinaf ve temyizde (1) sayılı Tarife A-I-3'teki başvurma harcı ile A-IV'teki kanun yolu harcı gösterildi; ayrıca gider avansı ve tebligat giderleri istenir. İstinaf veya temyiz edenin karar ve ilam harcından ödemesi gereken bakiye varsa bu tabloda yoktur.","AYM":"Bireysel başvuru harcı (1) sayılı Tarife A-I-4'tedir; adli yardım talebi ayrıca incelenir.","ISLAH":"Islah ve talep artırımında artırılan kısım üzerinden peşin harç ödenir; harç ödenmedikçe sonraki işlem yapılmaz (Harçlar Kanunu m.30, m.32). Harcı yatırılmayan ıslaha değer verilmez; mahkemenin verdiği süre içinde harç tamamlanmazsa dava dilekçesindeki miktar üzerinden hüküm kurulur (Yargıtay 20. HD, 01.12.2016, 2015/6619 E., 2016/11583 K.).","ISLAH_TARIFE":"Her artırımın harcı artırım tarihinin yılındaki tarifeyle hesaplandı (Yargıtay 20. HD 2015/6619 E., 2016/11583 K.: \"yürürlükteki Harçlar Tarifesi uyarınca\"). Nispi oran (binde 68,31) yıllar içinde değişmediğinden sonuç çoğu durumda aynıdır; mahkeme veznesinin hesabı esastır."},"sabit":{"SORUMLULUK":"Bu sonuç, girdiğiniz bilgilere ve 2026 tarifesine göre yapılmış bir ön hesaptır; hukuki görüş değildir. Kesin tutar mahkeme veznesinin (UYAP) hesabıdır; dosyanın özelliğine göre ek kalem ya da istisna doğabilir.","VEZNE":"Mahkeme veznesinin hesabı esastır. Tutarlar kuruşa yuvarlandı (yarım kuruş yukarı); Harçlar Kanunu'nda nispi harcın kuruş yuvarlamasına ilişkin bir kural bulunamadı.","MUAFIYET":"Harçtan müstesna işlemler Harçlar Kanunu m.13'te sayılmıştır (ör. değeri 50 TL'yi geçmeyen dava ve takipler, vasi tayini, Cumhuriyet savcılarının kamu adına açtığı davalar, genel bütçeli idarelerin işlemleri); özel kanunlardaki muafiyetler ayrıca incelenmelidir.","ADLI_YARDIM":"Adli yardım kararı yargılama ve takip giderlerinden geçici muafiyet sağlar ve hükmün kesinleşmesine kadar sürer (HMK m.335).","KAPSAM":"Hesaba dahil değil: tebligat ve bilirkişi ücretleri (gider avansında yalnız tarife formülü), tanık ücreti, celse harcı, ihtiyati haczin teminatı, ceza mahkemesi harçları, istinaf ve temyizde nispi karar harcı, davadan feragat, davayı kabul ve sulh hâlinde alınacak karar harcı (Harçlar Kanunu m.22: ilk celsede karar ve ilam harcının üçte biri, daha sonra üçte ikisi)."},"ekran":{"sonuc_baslik":"Harç hesabı","hesaplanmaz_baslik":"Bu girdilerle tutar verilemiyor","hata_baslik":"Lütfen şunları kontrol edin:","buyuk":"Dava açılırken ödenecek toplam: {tutar}","buyuk_basvuru":"Başvuru sırasında ödenecek toplam: {tutar}","buyuk_islah":"Artırım için ödenecek peşin harç: {tutar}","alt_bakiye":"Talep tamamen kabul edilirse kararın tebliğinden sonra ödenecek bakiye karar harcı {bakiye} (tam harç {tam}).","tarife_satiri":"Tarife yılı: {yil} · Dayanak: {ad}, Resmî Gazete {rg_tarih}, sayı {rg_sayi}.","acilis_baslik":"Ödenecek kalemler","karar_baslik":"Karar ve ilam harcı","sonra_baslik":"Yargılama sırasında ödenecekler","islah_baslik":"Artırımlar ve peşin harç","islah_ozet":"Toplam değer ve bakiye","s_kalem":"Kalem","s_tutar":"Tutar","s_dayanak":"Dayanak","s_tarih":"Tarih","s_artirilan":"Artırılan tutar","s_nispi":"Nispi harç (binde 68,31)","s_pay":"Peşin oranı","s_pesin":"Peşin harç","toplam":"Toplam","elle":"Girdiğiniz tutar","t_deger":"Dava değeri","t_tam":"Tam karar ve ilam harcı (binde 68,31)","t_tam_asgari":"Tam karar ve ilam harcı (asgari tutar)","t_pesin":"Peşin ödenen ({pay})","t_bakiye_karar":"Bakiye (talep tamamen kabul edilirse)","t_maktu":"Maktu karar ve ilam harcı","t_toplam_deger":"Artırımlardan sonra dava değeri","t_karar_tam":"Bu değer üzerinden tam karar ve ilam harcı","t_odenen":"Daha önce ödenen peşin harç","t_toplam_odenen":"Toplam ödenen peşin harç","t_bakiye":"Bakiye (talep tamamen kabul edilirse)","h3_not":"Notlar ve dayanaklar","surum":"Tarife verisinin son teyit tarihi: {teyit}."}}</script>
+<script type="text/plain" id="harc-tarife" data-hv="1">A7Ki^5]K'K7;7~KpK+WKZiı+pe+^iZK+WKZiı+We1Kf]K8ıiı]KZıEıE+gKZ^ne+peZ^1^+hIwI}*jj*j}u_+-e5+5K8EK5;+\KpKWKZi*We1Kf_R14+^iZKWKZi*We1Kf_R1+h1K8nK8K+9WKZi*gKZ^ne+3]KZK5+mö'ü]üZu+pe+U8gW3E+^5^!^+KZKi]KZsWKZi@5BZK]_f8+VB+\318K8ı+35BZz+ZK5K'+53\K+mö'ü]'e!_+-BgKZ]KZ+-)4+E35gK+3E\K]ı5+K8ıZıiı]ı+'eg^E+hQJJ2_IwQuz+3ZKE]KZ+A3ZKE4+V^Z^'S+hV^Z^';+V^E\e+$+8B!\e+$+5e1^Zu_+NeZ+5K]e'\e+\K8KEK5+pe+Ze1'î+'egE^E+^]m^]^+1KgıZı+pKZ\ıZ_+?eE^+8ı]ıE+NKZç]KZ+oKEBEB+|eEe]+-eV]^ğ^+çı5ıEiK+8K]Eı!+Q8^]]KZQ+K]gıEK+8eE^+8ı]+e5]eE^Z;+KZKi]KZsWKZi@gKZ^ne@5BZK]_f8+h|c{la))ata@{Y-cu+pe+KZKi]KZsge1g@WKZi@gKZ^ne_f8+\eEeg]eZ_+-KZ^ne1^+8ü5]ü+3]'K8KE+8ı]\K+We1Kf]K8ıiı]KZ+gBgKZ+peZ'e!_747ge8^g@gKZ^W^7;7IwI}*jj*j=7478^]]KZ7;A7IwI}7;A7VK1]KEm^i7;7IwI}*wj*wj747V^g^17;7IwI}*jI*Jj747geV]^m7;A7K\7;7NKZç]KZ+oKEBEB+|eEe]+-eV]^ğ^+hDeZ^+{3;+=/u747Zm@gKZ^W7;7IwI2*jI*Jj747Zm@1K8^7;7JJjI,+h2_+tü5eZZeZu7478BZBZ]B57;7IwI}*wj*wj7475K8EK57;7Wggf1;ss%%%_'ep!BKg_m3p_gZs'ep!BKgvtep!BKg{3C,I//[yBwwI}tep!BKg-BZC=yBwwI}tep!BKg-eZg^fC27S475K]e']eZ7;A7VK1pBZ'K@1B]W7;A7gBgKZ7;7JJ2_Iw747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+q*.*jz+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7j_DB]W+'KW5e'e]eZ^E\e4+^iZK+geg5^5+'eZi^]eZ^E\e+JJ24Iw7S47VK1pBZ'K@K1]^8e7;A7gBgKZ7;7[JI_ww747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+q*.*Iz+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7I_q1]^8e+'KW5e'e]eZ^E\e4+^\KZe+'KW5e'e]eZ^E\e+[JI4ww7S47VK1pBZ'K@B1g7;A7gBgKZ7;7jjI,_2w747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+q*.*Jz+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7J_+"ö]me+q\]^8e+tKW5e'e]eZ^4+"ö]me+İ\KZe+tKW5e'e]eZ^4+?KZmıgK84+~KEışgK8+pe+q15eZ^+?ü51e5+İ\KZe+tKW5e'e1^E\e+j_jI,42w7S47VK1pBZ'K@K8'7;A7gBgKZ7;7}wI,_jw747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+q*.*,z+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7,_+qEK8K1K+tKW5e'e1^E\e+}_wI,4jw7S475KZKZ@E^1f^7;A73ZKE7;7}/_Jj747V^Z^'7;7V^E\e747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+q*...*j*K747'eg^E7;7Kuo3EB1B+Ve]]^+V^Z+\eğeZ]e+^]m^]^+VB]BEKE+\KpK]KZ\K+e1K1+WK55ıE\K+5KZKZ+peZ^]'e1^+WK]^E\e+Wü5ü'+K]gıEK+K]ıEKE+KE]Kş'K!]ı5+53EB1B+\eğeZ+ü!eZ^E\eE+h"^E\e+}/4Jju7S475KZKZ@E^1f^@K1mKZ^7;A7gBgKZ7;7[JI_ww747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+q*...*j+13E+iü']ez+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7{^1f^+WKZç]KZ+h[JI+-)uQ\eE+KşKğı+3]K'K!_7S475KZKZ@'K5gB7;A7gBgKZ7;7[JI_ww747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+q*...*I*Kz+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7Ku+j+^Ei^+nı5ZK+\ışıE\K+5K]KE+\KpK]KZ]K4+gKZKn+geş5^]^Ee+^'5KE+VB]BE'K8KE+\KpK]KZ\K+peZ^]eE+e1K1+WK55ıE\K5^+5KZKZ]KZ]K4+\KpKEıE+Ze\\^+5KZKZı+pe+^iZK+geg5^5+'eZi^]eZ^E^E+j+^Ei^+nı5ZK+\ışıE\K+5K]KE+5KZKZ]KZıE\K+[JI4ww7S478\@5KZKZ7;A7gBgKZ7;7jIw}_ww747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+q*...*I*iz+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7iu+"ö]me+q\]^8e+tKW5e'e]eZ^4+İ\KZe+tKW5e'e]eZ^4+"ö]me+İ\KZe+tKW5e'e]eZ^4+?KZmıgK84+~KEışgK8+pe+q15eZ^+?ü51e5+İ\KZe+tKW5e'e1^E^E+^iZKEıE+geW^Z^+5KZKZ]KZıE\K+j_Iw}4ww7S47VK1pBZ'K@peZm^7;A7gBgKZ7;7[JI_ww747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hJu+1K8ı]ı+-KZ^ne+.*K+pe+'_22z+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7Ku+(eZm^+tKW5e'e]eZ^+^]e+"ö]me+İ\KZe+tKW5e'e]eZ^Ee+VKşpBZ'K+[JI4ww7S47^Wg^8Kg^@5KZKZ7;A7gBgKZ7;7jIw}_ww747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+q*...*I*\z+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7\u-e1f^g^+\e]K^]4+^Wg^8Kg^+WKi^!+pe+^Wg^8Kg^+ge\V^Z+5KZKZ]KZıE\K+j_Iw}4ww7S47ge'8^!@8KZm^gK87;A7gBgKZ7;7J}w/_2w747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+q*.(*Kz+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7Ku?KZmıgK8+WB5B5+\K^Ze]eZ^Ee+8Kfı]KiK5+ge'8^!+VKşpBZB]KZıE\K+J_}w/42w7S47ge'8^!@\KE^1gK87;A7gBgKZ7;7J}w/_2w747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+q*.(*iz+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7iu~KEışgK8K+8Kfı]KiK5+ge'8^!+VKşpBZB]KZıE\K+J_}w/42w7S47^1g^EKn@V^'7;A7gBgKZ7;7IwwI_ww747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+q*.(*\z+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7\u?üZüg'eE^E+\BZ\BZB]'K1ıEK+^]^ş5^E+^g^ZK!]KZ+\KW^]+3]'K5+ü!eZe+Vö]me+^\KZe+'KW5e'e]eZ^Ee+8Kfı]KiK5+^1g^EKn+83]B+VKşpBZB]KZıE\K+I_wwI4ww7S47^1g^EKn@VK'7;A7gBgKZ7;7IwwI_ww747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+q*.(*ez+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7eu"ö]me+K\]^8e+'KW5e'e]eZ^+WB5B5+\K^Ze]eZ^Ee+8Kfı]KiK5+^1g^EKn+83]B+VKşpBZB]KZıE\K+I_wwI4ww7S475e1^n7;A7gBgKZ7;72j//_ww747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+q*(z+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7(*+oeş^n+NKZiı;+htKW5e'e]eZie+ZeQ1eE+pe8K+^1ge'+ü!eZ^Ee+peZ^]eE+5eş^n+8K+\K+ge1f^g+5KZKZ]KZıEı+8eZ^Ee+meg^Z'e5+^ç^Eu+2_j//4ww7S47pe5K]eg@1BZeg7;A7gBgKZ7;7jw,_ww747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+~*.*iz+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7iuqpB5Kg]KZıE+gK1\^5+egg^ğ^+pe5K]egEK'e+1BZeg]eZ^E\eE+h-K1\^5]^+n3g353f^]eZ+\KW^]u+jw,4ww7S47^iZK@VK1pBZ'K7;A7gBgKZ7;7[JI_ww747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+"*.*jz+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7j_İiZK8K+VKşpBZ'K+WKZiı+[JI4ww7S47^iZK@8eZ^Ee@meg^Z'e7;A7gBgKZ7;7[JI_ww747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+"*.*Iz+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7I_~eğeZ^+Ve]]^+3]'K8KE+^iZK+gK5^f]eZ^E\e4+^iZKEıE+8eZ^Ee+meg^Z^]'e1^+WKZiı+[JI4ww7S47gKW1^]@WKi^!@3Eie7;A73ZKE7;7,_22747V^Z^'7;78B!\e747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+"*.*J*K747'eg^E7;7KuÖ\e'e+pe8K+^iZK+e'Z^E^E+geV]^ğ^+ü!eZ^Ee+WKi^!\eE+eppe]+ö\eEeE+fKZK]KZ\KE+h?ü!\e+,422u7S47gKW1^]@WKi^!@13EZK7;A73ZKE7;7=_jw747V^Z^'7;78B!\e747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+"*.*J*V747'eg^E7;7VuNKi^!\eE+13EZK+pe+1KgışgKE+öEie+ö\eEeE+fKZK]KZ\KE+h?ü!\e+=4jwu7S47gKW1^]@1Kg^17;A73ZKE7;7jj_J/747V^Z^'7;78B!\e747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+"*.*J*i747'eg^E7;7iuNKi!e\^]eE+pe8K+ZeW^E]^+'K]]KZıE+1Kgı]ıf+fKZK8K+çepZ^]'e1^+1BZeg^8]e+gKW1^]+3]BEKE+fKZK]KZ\KE+h?ü!\e+jj4J/u7S47gKW1^]@'KK17;A73ZKE7;7,_22747V^Z^'7;78B!\e747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+"*.*J*\747'eg^E7;7\ure1'^+pe+ö!e]+'üe11e1e]eZ+'e'BZ+pe+W^!'eg]^]eZ^E^E+'KKş4+üiZeg4+müE\e]^5+pe+1K^Z+W^!'eg+me]^Z]eZ^E^E+WKi!^+1BZeg^8]e+gKW1^]+3]BEKE+fKZK]KZ\KE+h?ü!\e+,422u7S47gKW1^]@53EBg@5Kg7;A73ZKE7;7js,747V^Z^'7;75e1^Z747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+"*.*J*W747'eg^E7;7Wu+I,==+1K8ı]ı+DeZ'K8e+U^8K1K1ı+oKEBEBEBE+J/sq+'K\\e1^E^E+V^Z^Ei^+nı5ZK1ıE\K+gKEı']KEKE+53EBg+n^EKE1'KEıE\KE+5K8EK5]KEKE+K]KiK5]KZ+^]e+-3f]B+o3EBg+İ\KZe1^+"Kş5KE]ığıEıE+ZeW^E]e+ge'^E+e\^]'^ş+K]KiK5]KZıEıE+gK5^V^E\e4+VB+VeEgge+Ve]^Zg^]eE+gKW1^]+WKZç]KZı+\öZgge+V^Z^+3ZKEıE\K+B8mB]KEıZ_7S47gKW]^8e@geV]^m7;A73ZKE7;7I_I[747V^Z^'7;78B!\e747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+"*.*J*n*KKz+oKEBE+'_j/747'eg^E7;7nu|K8Z^'eE5B]]eZ^E+pe+me'^]eZ^E+gKW]^8e+pe+ge1]^'^E\e;+KKuİiZK+e'Z^E^E+geV]^ğ^+ü!eZ^Ee+gKW]^8e+3]BE\BğB+gK5\^Z\e+h?ü!\e+I4I[u7S47gKW]^8e@^iZK7;A73ZKE7;7,_22747V^Z^'7;78B!\e747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+"*.*J*n*VVz+oKEBE+'_j/747'eg^E7;7VVu-KW]^8e+pe+ge1]^'+^iZK+'KZ^neg^8]e+3]\BğB+gK5\^Z\e+h?ü!\e+,422u7S47'eE5B]@geV]^m7;A73ZKE7;7I_I[747V^Z^'7;78B!\e747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+"*.*J*m*KKz+oKEBE+'_j=747'eg^E7;7muteE5B]+ge1]^'^E\ez+KKuİiZK+e'Z^E^E+geV]^ğ^+ü!eZ^Ee+ge1]^'+WK]^E\e+h?ü!\e+I4I[u7S47'eE5B]@^iZK7;A73ZKE7;7,_22747V^Z^'7;78B!\e747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+"*.*J*m*VVz+oKEBE+'_j=747'eg^E7;7VVuİiZK+'KZ^neg^8]e+ge1]^'+WK]^E\e+h?ü!\e+,422u7S47WKi^!@ge1]^'@1Kg^17;A7gBgKZ7;7j[j/_/w747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+hju+1K8ı]ı+-KZ^ne+"*...z+DeZ^+{3;+=/+-eV]^ğ747'eg^E7;7..._+NKi^!4+ge1]^'+pe+1Kgış+WKZiı+h?B5KZı\K5^+h.u+pe+h..u+EB'KZK]ı+nı5ZK]KZ\K+8eZ+K]KE+^iZK+pe+^n]K1+^ş]e']eZ^E^E+\K^Ze+\ışıE\K+'e'BZ+e]^8]e+8eZ^Ee+meg^Z^]\^ğ^+WeZ+V^Z+^ş]e'+^ç^Eu+j_[j/4/w7S47fe1^E@^]K'1^!7;A73ZKE7;72747V^Z^'7;7V^E\e747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+'_I=747'eg^E7;7İ]K'K+\K8KE'ı8KE+gK5^f+^1ge5]eZ^E\eE+K]KiK5+'^5gKZıEıE+V^E\e+Veş^+feş^E+K]ıEıZ_+Ueş^E+WKZi]KZ+gK5^f+13EBE\K+K]ıEKiK5+K1ı]+WKZiK+'KW1Bf+3]BEBZ_7S47ie!Kep^7;A73ZKE7;7I747V^Z^'7;78B!\e747\K8KEK57;7I2,/+1_+oKEBE+'_j747'eg^E7;7İiZK+\K^Ze]eZ^Eie+'^5gKZ+pe+5ı8'eg^+'BK88eE+3]KE+^]K']ı+pe+^]K'1ı!+K]KiK5]KZ\KE+gKW1^]+3]BEKE+fKZKEıE+L+I+1^+pe+5ı8'eg^+'BK88eE+3]'ı8KE+^]K']KZıE+^iZK1ıE\KE+gKW1^]+WKZiıEıE+8KZı1ı+E^1Veg^E\e+WKZç+K]ıEıZ_+tK5gB+WKZç]KZ+^]K'ıE+^iZK8K+53EB]\BğB+!K'KE+feş^E+3]KZK5+K]ıEıZ_+"B+WKZç]KZ+V3Zç]B8K+8ü5]eg^]e'e!+pe+'KW5û'BEV^W+'eV]Kğ+V^Z'^]83E+]^ZK\KE+KşKğı+3]BZ1K+VBE\KE+WKZç+K]ıE'K!_7S47fe1^E@fK87;A73ZKE7;7js,747V^Z^'7;75e1^Z747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+'_I/sK747'eg^E7;7oKZKZ+pe+^]K'+WKZç]KZıEıE+\öZgge+V^Z^+feş^E4+meZ^+5K]KEı+5KZKZıE+geV]^ğ^E\eE+^g^VKZeE+V^Z+K8+^ç^E\e+ö\eE^Z_7S47fe1^E@fK8@i^1'KE^7;A73ZKE7;7jsIw747V^Z^'7;75e1^Z747\K8KEK57;7,=I+1_+NKZç]KZ+oKEBEB+'_I/sK747'eg^E7;7ŞB+5K\KZ+5^4+ö]ü'+pe+i^1'KE^+!KZKZ+1eVeV^8]e+Kçı]KE+'K\\^+pe+'KEep^+gK!'^EKg+\KpK]KZıE\K+feş^E+K]ıEKE+WKZiıE+3ZKEı+8^Z'^\e+V^Z+3]KZK5+B8mB]KEıZ_7S47m^\eZ@KpKE1^@1KV^g7;A7gBgKZ7;72Jw_ww747\K8KEK57;7Nto+'_jIwsjz+NB5B5+tBWK5e'e]eZ^+oKEBEB+|^\eZ+qpKE1ı+-KZ^ne1^+'_,+hr|+I/_jw_IwI24+1K8ı+JJw}ju747'eg^E7;7~KpKiı4+gKZKn+1K8ı1ıEıE+Veş+5Kgı+gBgKZıE\K+geV]^mKg+üiZeg^+^]e+\^ğeZ+^ş+pe+^ş]e']eZ+^ç^E+2Jw+-)+g3f]K'ıEı+KpKE1+3]KZK5+ö\eZ_7S47m^\eZ@KpKE1^@geV]^mKg@5Kg7;A71K8^7;247\K8KEK57;7NB5B5+tBWK5e'e]eZ^+oKEBEB+|^\eZ+qpKE1ı+-KZ^ne1^+'_,+hr|+I/_jw_IwI24+1K8ı+JJw}ju747'eg^E7;7gKZKn+1K8ı1ıEıE+Veş+5Kgı+gBgKZıE\K+geV]^mKg+üiZeg^7SSSSS</script>
+<script src="/davaharc-hesap.js?v=2a053e23" defer></script>
+<script src="/hesap-filigran.js?v=5c152da7" defer></script>
+<script src="/hesap-pdf.js?v=a8ea6622" defer></script>
+<script src="/hesap-arayuz.js?v=2d709c1d" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana Sayfa","item":"https://capar.av.tr/"},{"@type":"ListItem","position":2,"name":"Hesaplamalar","item":"https://capar.av.tr/hesaplamalar"},{"@type":"ListItem","position":3,"name":"Dava Harcı Hesaplama","item":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","@id":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#uygulama","name":"Dava Harcı Hesaplama","alternateName":["Dava harcı hesaplama","Peşin harç hesaplama","Islah harcı hesaplama","Harç hesaplama 2026"],"url":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama","description":"Dava harcı hesabı 2026: başvurma harcı, peşin harç (dörtte bir, cismani zararda yirmide bir), ıslah harcı, istinaf ve temyiz harcı — Av. Bayram Can Çapar · ÇAPAR Hukuk","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","browserRequirements":"JavaScript","isAccessibleForFree":true,"inLanguage":"tr-TR","author":{"@type":"Person","@id":"https://capar.av.tr/#bayram-can-capar","name":"Av. Bayram Can Çapar","alternateName":["Bayram Can Çapar","Av. Bayram Can ÇAPAR","Avukat Bayram Can Çapar","Bayram Can Capar"],"honorificPrefix":"Av.","givenName":"Bayram Can","familyName":"Çapar","description":"Denizli Avukat Bayram Can Çapar - ÇAPAR HUKUK: Çapar Hukuk Bürosu kurucu avukatı.","disambiguatingDescription":"Bu site ve capar.av.tr, Av. Bayram Can Çapar'ın Denizli'deki ÇAPAR Hukuk Bürosu'na aittir. Büronun resmî iletişim bilgileri yalnız şunlardır: telefon 0258 241 55 54, e-posta info@capar.av.tr, adres Gazi Mustafa Kemal Bulvarı No:76 Kat:6, Merkezefendi / Denizli. Aynı soyadını taşıyan başka avukat ve büroların iletişim bilgileri bu büroya ait değildir. Büro cep telefonu numarası ve gmail.com uzantılı e-posta adresi kullanmaz.","url":"https://capar.av.tr/yazar/bayram-can-capar","mainEntityOfPage":"https://capar.av.tr/yazar/bayram-can-capar","image":"https://capar.av.tr/ekip/bayram-can-capar.jpg","jobTitle":"Avukat","hasOccupation":{"@type":"Occupation","name":"Avukat","occupationLocation":{"@type":"City","name":"Denizli"}},"worksFor":{"@id":"https://capar.av.tr/#buro"},"memberOf":[{"@id":"https://capar.av.tr/#buro"}],"alumniOf":{"@type":"CollegeOrUniversity","name":"Yaşar Üniversitesi Hukuk Fakültesi"},"knowsAbout":["Ticaret ve Şirketler Hukuku","Kambiyo Hukuku","Sigorta Hukuku","Gümrük Hukuku","İş ve Sosyal Güvenlik Hukuku","İcra ve İflas Hukuku","İş Kazası Tazminat Hukuku","Trafik Kazası Tazminat Hukuku","İdare Hukuku","Ceza Hukuku","Yükseköğretim Hukuku","Sağlık Hukuku","Gayrimenkul Hukuku","Miras Hukuku","Aile ve Boşanma Hukuku","Tüketici Hukuku","Sözleşme Hukuku","Vatandaşlık ve Yabancılar Hukuku","Vergi Hukuku","Kamulaştırma ve İmar Hukuku","Kira Hukuku","Rekabet Hukuku","Marka Hukuku","Banka ve Finans Hukuku","Kentsel Dönüşüm ve İnşaat Hukuku","Arabuluculuk ve Tahkim","Maden ve Enerji Hukuku"],"knowsLanguage":["tr","en"],"sameAs":["https://www.linkedin.com/in/av-bayram-can-%C3%A7apar/","https://www.facebook.com/cancpr/","https://www.wikidata.org/wiki/Q142187143"]},"creator":{"@type":"Person","@id":"https://capar.av.tr/#bayram-can-capar","name":"Av. Bayram Can Çapar","url":"https://capar.av.tr/yazar/bayram-can-capar"},"provider":{"@id":"https://capar.av.tr/#buro"},"isPartOf":{"@id":"https://capar.av.tr/#site"},"about":[{"@type":"Thing","name":"Türk hukuku"},{"@type":"Thing","name":"Yargı harçları"},{"@type":"Thing","name":"Dava harcı"},{"@type":"Thing","name":"Islah"}],"spatialCoverage":{"@type":"Country","name":"Türkiye"},"featureList":["Başvurma harcı: sulh, asliye, idare ve vergi mahkemesi, bölge adliye ve bölge idare, Yargıtay, Danıştay, Anayasa Mahkemesi ((1) sayılı Tarife A-I)","Nispi karar ve ilam harcı binde 68,31; peşin dörtte bir, ölüm ve cismani zarar tazminat davalarında yirmide bir (Harçlar Kanunu m.28/a)","Maktu karar harcı, asgari nispi harç, bakiye karar harcı","Islah ve talep artırımı harcı: artırım tarihinin tarifesiyle, en çok üç artırım (HMK m.176–177, m.109/4; Harçlar Kanunu m.30, m.32)","İstinaf ve temyiz başvuru harcı, ihtiyati tedbir ve ihtiyati haciz karar harcı, keşif harcı, vekâlet harcı","Gider avansı: taraf sayısının beş katı tebligat ücreti ve 530 TL (HMK Gider Avansı Tarifesi m.4)","Tarife yılı ve Resmî Gazete dayanağı her sonuçta; tarifesi yüklü olmayan yılda tutar verilmez"],"citation":["https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=492&MevzuatTur=1&MevzuatTertip=5","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=42887&MevzuatTur=9&MevzuatTertip=5","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6100&MevzuatTur=1&MevzuatTertip=5"],"dateModified":"2026-11-19","hasPart":{"@id":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#sss"}}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#sss","url":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#sss","inLanguage":"tr","isPartOf":{"@id":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#uygulama"},"mainEntity":[{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#sss-1","url":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#sss","name":"Peşin harç nedir, nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Konusu parayla ölçülebilen davada mahkeme, karar verdiğinde hüküm altına aldığı değer üzerinden binde 68,31 oranında karar ve ilam harcı alır ((1) sayılı Tarife A-III-1-a). Bu harcın dörtte biri dava açılırken peşin ödenir (Harçlar Kanunu m.28/a). Örneğin 100.000 TL'lik davada nispi harç 6.831 TL, peşin harç 1.707,75 TL'dir. Nispi harç 732 TL'den az olamaz."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#sss-2","url":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#sss","name":"Nispi harç ile maktu harç arasındaki fark nedir?","acceptedAnswer":{"@type":"Answer","text":"Nispi harç, işin değerine oranla alınır; maktu harç ise işin türüne göre sabit bir tutardır (Harçlar Kanunu m.15). Konusu belli bir değerle ilgili davalarda nispi karar harcı, bunun dışındaki davalarda (ör. boşanma, tespit, davanın reddi) 2026 için 732 TL maktu karar harcı alınır ((1) sayılı Tarife A-III-2-a). Değer ölçüsüne göre harca tabi işlemlerde dava dilekçesinde değer gösterilmesi zorunludur (m.16)."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#sss-3","url":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#sss","name":"Cismani zarar davasında peşin harç neden yirmide birdir?","acceptedAnswer":{"@type":"Answer","text":"Harçlar Kanunu m.28/a'ya göre ölüm ve cismani zarar sebebiyle açılan maddi ve manevi tazminat davalarında peşin alınan harcın oranı dörtte bir değil yirmide birdir. Örneğin 10.000.000 TL'lik bir iş kazası tazminat davasında nispi harç 683.100 TL, peşin harç 34.155 TL'dir; kalan 648.945 TL karardan sonra hüküm altına alınan değere göre ödenir."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#sss-4","url":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#sss","name":"Bakiye karar ve ilam harcı ne zaman ödenir?","acceptedAnswer":{"@type":"Answer","text":"Peşin ödenen kısım dışındaki karar ve ilam harcı, kararın tebliğinden itibaren bir ay içinde ödenir (Harçlar Kanunu m.28/a). Bakiye harcın ödenmemiş olması hükmün tebliğe çıkarılmasına, takibe konulmasına ve kanun yollarına başvurulmasına engel değildir (aynı madde). Peşin alınan harç işin sonunda ödenmesi gerekenden fazlaysa fazlası istek üzerine geri verilir (m.31)."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#sss-5","url":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#sss","name":"Islah ya da talep artırımında hangi harç ödenir?","acceptedAnswer":{"@type":"Answer","text":"Dava değeri artırıldığında artırılan kısım üzerinden peşin karar ve ilam harcı (binde 68,31'in dörtte biri; cismani zarar davasında yirmide biri) ödenir; harç ödenmedikçe sonraki işlem yapılmaz (Harçlar Kanunu m.28/a, m.30, m.32). Yargıtay 20. Hukuk Dairesi'nin 01.12.2016 tarihli, 2015/6619 E., 2016/11583 K. sayılı kararına göre harcı yatırılmayan ıslaha değer verilemez; mahkeme süre verir, harç tamamlanmazsa dava dilekçesindeki miktar üzerinden hüküm kurulur. Islah tahkikat sona erinceye kadar ve aynı davada bir kez yapılabilir (HMK m.176, m.177); kısmi davada talep bir kez artırılabilir (HMK m.109/4)."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#sss-6","url":"https://capar.av.tr/hesaplamalar/dava-harci-hesaplama#sss","name":"Kimler harçtan muaftır, adli yardım neyi kapsar?","acceptedAnswer":{"@type":"Answer","text":"Değeri 50 TL'yi geçmeyen dava ve takipler (ticari senet takipleri hariç), vasi tayini ve azli ile kamu adına Cumhuriyet savcılarının açtığı davalar harçtan müstesnadır; genel bütçeli idarelerin (1) ve (3) sayılı tarifelere giren işlemleri de harçtan müstesnadır (Harçlar Kanunu m.13). Tüketici mahkemesinde tüketicinin açtığı dava da harçtan muaftır (6502 sayılı Kanun m.73/2). Adli yardım kararı yargılama ve takip giderlerinden geçici muafiyet sağlar ve hükmün kesinleşmesine kadar sürer (HMK m.335)."}}]}</script>
+</body>
+</html>

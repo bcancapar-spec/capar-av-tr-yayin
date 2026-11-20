@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/favicon.ico?v=9e46c4f3" sizes="48x48" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=2b653918" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=b561eee0" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3266fae5" />
+<link rel="preload" href="/fonts/hanken-grotesk-latin-v12.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/hanken-grotesk-latin-ext-v12.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/fraunces-latin-v38.woff2" as="font" type="font/woff2" crossorigin />
+<script>(function(){var d=document.documentElement;function u(s){d.setAttribute("data-tema",s==="koyu"?"koyu":"acik")}window.caparTema=u;var s,y;try{s=localStorage.getItem("capar-tema");y=localStorage.getItem("capar-yazi")}catch(e){}u(s);if(y==="2"||y==="3")d.setAttribute("data-yazi",y)})()</script>
+<link rel="stylesheet" href="/site.css?v=ca3fe4e6" />
+<link rel="alternate" type="text/plain" href="https://capar.av.tr/llms.txt" title="llms.txt" />
+<link rel="alternate" type="text/plain" href="https://capar.av.tr/llms2.txt" title="llms2.txt — tam soru-cevap dizini" />
+<title>Miras Payı ve Saklı Pay Hesaplama — Av. Bayram Can Çapar</title>
+<meta name="description" content="Yasal miras payı ve saklı pay hesabı (TMK m.495–506): eş, çocuk, torun, ana-baba, kardeş; tasarruf edilebilir kısım — Av. Bayram Can Çapar · ÇAPAR Hukuk" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://capar.av.tr/hesaplamalar/miras-payi-hesaplama" />
+<link rel="alternate" hreflang="tr" href="https://capar.av.tr/hesaplamalar/miras-payi-hesaplama" />
+<link rel="alternate" hreflang="en" href="https://capar.av.tr/en/calculations/inheritance-share-calculator" />
+<link rel="alternate" hreflang="x-default" href="https://capar.av.tr/hesaplamalar/miras-payi-hesaplama" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="tr_TR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:site_name" content="Av. Bayram Can Çapar · ÇAPAR Hukuk" />
+<meta property="og:title" content="Miras Payı ve Saklı Pay Hesaplama — Av. Bayram Can Çapar" />
+<meta property="og:description" content="Yasal miras payı ve saklı pay hesabı (TMK m.495–506): eş, çocuk, torun, ana-baba, kardeş; tasarruf edilebilir kısım — Av. Bayram Can Çapar · ÇAPAR Hukuk" />
+<meta property="og:url" content="https://capar.av.tr/hesaplamalar/miras-payi-hesaplama" />
+<meta property="og:image" content="https://capar.av.tr/og/sayfa/miras-payi-hesaplama.png?v=16ebf891" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Miras Payı ve Saklı Pay Hesaplama — Av. Bayram Can Çapar · ÇAPAR Hukuk" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://capar.av.tr/og/sayfa/miras-payi-hesaplama.png?v=16ebf891" />
+<style id="miras-stil">
+.yol{font-size:.85rem;color:var(--text-soft);margin-bottom:12px}.yol a{color:var(--accent)}
+.miras-kisa-cevap{max-width:820px;margin:0 0 6px;padding:16px 20px;border-left:3px solid var(--gold);border-radius:0 8px 8px 0;background:var(--surface-2);line-height:1.7}
+.miras-kisa-cevap strong{color:var(--accent)}
+.miras-arac{max-width:820px}
+.miras-kisa{display:inline-block;margin:0 0 18px;padding:6px 12px;border-left:3px solid var(--gold);background:var(--surface-2);font-size:.9rem;color:var(--text-soft)}
+.miras-form{display:grid;gap:20px;padding:22px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.miras-form fieldset{border:1px solid var(--line);border-radius:10px;padding:14px 16px 16px;margin:0;min-width:0}
+.miras-form legend{font-weight:700;font-size:1rem;color:var(--text);padding:0 4px}
+.miras-bolum>legend{font-family:var(--serif);font-weight:500;font-size:1.2rem;color:var(--accent)}
+.miras-izgara{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:14px;align-items:start;margin:0 0 12px}
+.miras-alan{display:grid;gap:6px;align-content:start;min-width:0}
+.miras-form [hidden]{display:none!important}
+.miras-form label{font-weight:600;font-size:.95rem;color:var(--text)}
+.miras-form input[type=date],.miras-form input[type=text],.miras-form select{font:inherit;font-size:1rem;width:100%;max-width:100%;min-height:46px;padding:10px 12px;border:1px solid rgba(26,31,38,.35);border-radius:8px;background:#fff;color:var(--text)}
+.miras-form [aria-invalid=true]{border-color:#9b2c2c}
+.miras-secim,.miras-cipler{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 0}
+.miras-cip,.miras-secim label{font-weight:400!important;display:inline-flex;align-items:center;gap:8px;min-height:44px;max-width:100%;box-sizing:border-box;padding:6px 14px;border:1px solid rgba(26,31,38,.35);border-radius:22px;background:#fff;cursor:pointer;line-height:1.35}
+.miras-secim input,.miras-cip input{width:18px;height:18px;margin:0;flex:none;accent-color:var(--accent)}
+.miras-secim label:has(input:checked),.miras-cip:has(input:checked){border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);background:var(--surface-2);font-weight:600!important}
+.miras-secim label:focus-within,.miras-cip:focus-within{outline:3px solid var(--accent);outline-offset:2px}
+.miras-form .miras-cip-grup{border:0;border-radius:0;padding:0;margin:0;min-width:0}
+.miras-form .miras-cip-grup>legend{font-weight:600;font-size:.95rem;padding:0;margin:0 0 4px}
+.miras-kip-alan{display:grid;gap:10px;padding:0 0 16px;border-bottom:1px solid var(--line)}
+.miras-kip-baslik{margin:0;font-weight:700;color:var(--text)}
+.miras-kip-grup,.miras-hazir-grup{display:flex;flex-wrap:wrap;gap:8px}
+.miras-kip-dugme,.miras-hazir-dugme{font:inherit;font-weight:600;font-size:.92rem;min-height:44px;max-width:100%;padding:8px 16px;border:1px solid var(--accent);border-radius:22px;background:#fff;color:var(--accent);cursor:pointer;text-align:left;line-height:1.3}
+.miras-kip-dugme[aria-pressed=true]{background:var(--accent);color:#fff}
+.miras-hazir-dugme{font-weight:500;font-size:.88rem;border-color:rgba(26,31,38,.35);color:var(--text)}
+.miras-kip-dugme:focus-visible,.miras-hazir-dugme:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.miras-kip-aciklama{padding:10px 14px;border-left:3px solid var(--gold);border-radius:0 8px 8px 0;background:var(--surface-2);font-size:.92rem;line-height:1.6}
+.miras-kip-aciklama p{margin:0 0 6px}.miras-kip-aciklama p:last-child{margin:0}
+.miras-kip-satir{margin:0 0 8px;font-size:.9rem;color:var(--text-soft)}
+.miras-gizli{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.miras-not,.miras-dipnot{margin:0;font-size:.88rem;line-height:1.55;color:var(--text-soft)}
+.miras-dipnot{margin:8px 0 0}
+.miras-liste-kap{display:grid;gap:12px}
+.miras-liste{display:grid;gap:12px}
+.miras-kisi{display:grid;gap:10px}
+.miras-kisi>legend{font-family:var(--serif);font-weight:500;font-size:1.05rem;color:var(--accent)}
+.miras-kisi-alt{border-style:dashed!important}
+.miras-alt-bolum{display:grid;gap:12px}
+.miras-details{border:1px solid var(--line);border-radius:10px;padding:0 16px}
+.miras-details>summary{cursor:pointer;font-family:var(--serif);font-weight:500;font-size:1.15rem;color:var(--accent);padding:12px 0;min-height:44px}
+.miras-details>.miras-ic{padding:0 0 16px;display:grid;gap:14px}
+.miras-hata{margin:0;color:#9b2c2c;font-weight:600}
+.miras-hata ul{margin:6px 0 0;padding-left:20px;font-weight:400}
+.miras-gonder{justify-self:start;font:inherit;font-weight:600;font-size:1rem;min-height:46px;padding:10px 26px;border:0;border-radius:999px;background:var(--accent);color:#fff;cursor:pointer}
+.miras-gonder:hover{background:var(--accent-deep)}
+.miras-ikincil{font:inherit;font-weight:600;font-size:.92rem;min-height:44px;padding:8px 18px;border:1px solid var(--accent);border-radius:999px;background:#fff;color:var(--accent);cursor:pointer}
+.miras-sonuc{margin-top:26px}
+.miras-sonuc:empty{display:none}
+.miras-sonuc h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.3rem,3.4vw,1.6rem);margin:0 0 10px}
+.miras-sonuc h3{font-size:1.05rem;margin:24px 0 8px}
+.miras-buyuk{font-family:var(--serif);font-weight:500;font-size:clamp(1.25rem,4.4vw,1.7rem);line-height:1.3;margin:0 0 8px;padding:14px 20px;border-left:4px solid var(--accent);background:var(--surface-2);border-radius:0 10px 10px 0;overflow-wrap:anywhere}
+.miras-alt{margin:0 0 8px;font-weight:600;color:#7d5f27}
+.miras-sonuc .miras-liste{display:block;margin:6px 0 0;padding-left:22px}.miras-sonuc .miras-liste li{margin:0 0 8px;line-height:1.6}
+.miras-dayanak{display:block;font-size:.83rem;color:var(--text-soft)}
+.miras-dayanaklar{margin:8px 0 0}
+.miras-mesaj{padding:14px 18px;border-left:4px solid var(--gold);background:var(--surface-2);border-radius:0 10px 10px 0;line-height:1.6}
+.miras-sorumluluk{margin:18px 0 0;font-size:.88rem;line-height:1.6;color:var(--text-soft)}
+.miras-surum{margin:12px 0 0;font-size:.8rem;color:var(--text-soft)}
+.miras-dugmeler{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0}
+.miras-tablo-kap{overflow-x:auto;max-width:100%;margin:10px 0 0}
+.miras-tablo{width:100%;border-collapse:collapse;font-size:.9rem;line-height:1.5}
+.miras-tablo caption{text-align:left;font-weight:600;margin:0 0 8px;color:var(--text)}
+.miras-tablo th,.miras-tablo td{border-bottom:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+.miras-tablo td{font-variant-numeric:tabular-nums;white-space:nowrap}
+.miras-tablo thead th{background:var(--surface-2);font-weight:600}
+.miras-tablo tbody th{font-weight:400;min-width:160px}
+.miras-tablo tr.miras-ara th,.miras-tablo tr.miras-ara td{font-weight:700}
+.miras-ozet td{text-align:right}
+.miras-bilgi-bolum{max-width:820px}
+.miras-bilgi-bolum h2{font-family:var(--serif);font-weight:500;font-size:1.4rem;margin:44px 0 14px}
+.miras-bilgi-bolum p,.miras-sira li{line-height:1.7}
+.miras-sira{padding-left:22px}.miras-sira li{margin-bottom:8px}
+.miras-kaynak a{color:var(--accent)}
+.miras-surum-alt{margin-top:28px;font-size:.85rem;color:var(--text-soft)}
+@media(max-width:560px){.miras-form{padding:14px;gap:16px}.miras-form fieldset{padding:12px}.miras-gonder{width:100%;justify-self:stretch}.miras-details{padding:0 12px}}
+@media screen{html[data-tema="koyu"] .miras-form,html[data-tema="koyu"] .miras-ikincil{background:var(--surface-2)}html[data-tema="koyu"] .miras-form input,html[data-tema="koyu"] .miras-form select{border-color:rgba(241,243,246,.35)}html[data-tema="koyu"] .miras-form [aria-invalid=true]{border-color:var(--hata-koyu)}html[data-tema="koyu"] .miras-hata{color:var(--hata-koyu)}html[data-tema="koyu"] .miras-gonder{color:var(--panel)}html[data-tema="koyu"] .miras-alt{color:var(--gold)}html[data-tema="koyu"] .miras-secim label,html[data-tema="koyu"] .miras-cip,html[data-tema="koyu"] .miras-kip-dugme,html[data-tema="koyu"] .miras-hazir-dugme{background:var(--surface-2);border-color:rgba(241,243,246,.35);color:var(--text)}html[data-tema="koyu"] .miras-kip-dugme[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:var(--panel)}html[data-tema="koyu"] .miras-secim label:has(input:checked),html[data-tema="koyu"] .miras-cip:has(input:checked){border-color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}}
+@media print{.topbar,.foot,.cookie-bar,.hs-git-kap,.hs-adimlar,.hs-eylemler,.hs-yonlendirme,.hs-nasil,.hs-gizlilik,.miras-form,.miras-kisa,.atla{display:none!important}.miras-sonuc{margin-top:0}.wrap{max-width:none!important;padding-left:0!important;padding-right:0!important}.miras-tablo-kap{overflow:visible!important;max-width:none}.miras-tablo{width:100%;font-size:9pt;line-height:1.35}.miras-tablo th,.miras-tablo td{padding:4px 6px}.miras-tablo td{white-space:normal;overflow-wrap:anywhere}.miras-tablo tbody th{min-width:0}.miras-tablo thead{display:table-header-group}.miras-tablo tr{break-inside:avoid;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+<a class="atla" id="atla" href="#icerik" data-tr="İçeriğe geç" data-en="Skip to content">İçeriğe geç</a>
+<header class="topbar">
+  <div class="wrap row">
+    <a href="/" data-href-tr="/" data-href-en="/en/" class="brand">
+      <img class="logo" src="/logo-ust.svg?v=8334ed51" alt="Av. Bayram Can Çapar · ÇAPAR Hukuk" width="175" height="44" decoding="async" />
+    </a>
+    <div class="hdr-right">
+            <nav class="ust-gezinti" id="ust-gezinti" aria-labelledby="ust-gezinti-ad">
+      <form class="ust-ara-form" role="search" action="/makaleler" method="get"><input type="search" name="ara" maxlength="120" aria-label="Makalelerde ara" data-aria-tr="Makalelerde ara" data-aria-en="Search articles" placeholder="Makalelerde ara: ör. işe iade" data-ph-tr="Makalelerde ara: ör. işe iade" data-ph-en="Search articles: e.g. reinstatement" /><button type="submit" data-tr="Ara" data-en="Search">Ara</button></form>
+      <a href="/makaleler" data-href-tr="/makaleler" data-href-en="/en/articles" data-tr="Makaleler" data-en="Articles">Makaleler</a>
+      <a href="/#alanlar" data-href-tr="/#alanlar" data-href-en="/en/#alanlar" data-tr="Çalışma Alanları" data-en="Practice Areas">Çalışma Alanları</a>
+      <a href="/mevzuat" data-href-tr="/mevzuat" data-href-en="/en/legislation" data-tr="Mevzuat" data-en="Legislation">Mevzuat</a>
+      <a href="/basinda" data-href-tr="/basinda" data-href-en="/en/press" data-tr="Basında Biz" data-en="In the Press">Basında Biz</a>
+      <a href="/hesaplamalar" data-href-tr="/hesaplamalar" data-href-en="/en/calculations" data-tr="Hesaplamalar" data-en="Calculators">Hesaplamalar</a>
+      <a class="ust-ara" href="/makaleler#ara" data-href-tr="/makaleler#ara" data-href-en="/en/articles#ara"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="ust-ara-metin" data-tr="Makalelerde ara" data-en="Search articles">Makalelerde ara</span></a>
+      <a class="ust-ek" href="/basvuru-yollari" data-href-tr="/basvuru-yollari" data-href-en="/en/application-routes" data-tr="Başvuru Yolları" data-en="Where to Apply">Başvuru Yolları</a>
+      <a class="ust-ek" href="/sozluk" data-href-tr="/sozluk" data-href-en="/en/glossary" data-tr="Hukuk Sözlüğü" data-en="Glossary">Hukuk Sözlüğü</a>
+      <a class="ust-ek" href="/yurt-disinda-yasayanlar" data-href-tr="/yurt-disinda-yasayanlar" data-href-en="/en/turkish-citizens-abroad" data-tr="Yurt dışında yaşayanlar" data-en="Turkish citizens living abroad">Yurt dışında yaşayanlar</a>
+      <a class="ust-ek" href="/#hakkinda" data-href-tr="/#hakkinda" data-href-en="/en/#hakkinda" data-tr="Hakkımızda" data-en="About Us">Hakkımızda</a>
+      <a class="ust-ek" href="/#ekip" data-href-tr="/#ekip" data-href-en="/en/#ekip" data-tr="Ekibimiz" data-en="Our Team">Ekibimiz</a>
+      <a href="/iletisim" data-href-tr="/iletisim" data-href-en="/en/contact" data-tr="İletişim" data-en="Contact">İletişim</a>
+      <div class="ust-tema" role="group" aria-label="Tema" data-aria-tr="Tema" data-aria-en="Theme"><span class="ust-tema-ad" aria-hidden="true" data-tr="Tema" data-en="Theme">Tema</span><span class="oa-seg"><button type="button" data-tema-sec="acik" aria-pressed="false" data-tr="Açık" data-en="Light">Açık</button><button type="button" data-tema-sec="koyu" aria-pressed="false" data-tr="Koyu" data-en="Dark">Koyu</button></span></div>      </nav>
+      <span id="ust-gezinti-ad" hidden data-tr="Site menüsü" data-en="Site menu">Site menüsü</span>
+      <span class="ust-eylem" data-konum="ust"><a class="ust-tel" href="tel:+902582415554" data-tr="0258 241 55 54" data-en="+90 258 241 55 54">0258 241 55 54</a><a class="ust-gt iletisim-mesaj" href="/iletisim" data-href-tr="/iletisim" data-href-en="/en/contact" data-tr="Görüşme Talep Et" data-en="Request a Meeting">Görüşme Talep Et</a></span>
+      <div class="lang" role="group" aria-label="Dil / Language">
+        <a id="btn-tr" class="active" href="/hesaplamalar/miras-payi-hesaplama" hreflang="tr" lang="tr">TR</a>
+        <a id="btn-en" href="/en/calculations/inheritance-share-calculator" hreflang="en" lang="en">EN</a>
+      </div>
+      <div class="tema-sec"><button type="button" class="tema-dugme" aria-expanded="false" aria-controls="tema-menu" aria-label="Tema" data-aria-tr="Tema" data-aria-en="Theme"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></button><div class="tema-menu" id="tema-menu" role="group" aria-label="Tema" data-aria-tr="Tema" data-aria-en="Theme" hidden><button type="button" data-tema-sec="acik" aria-pressed="false" data-tr="Açık" data-en="Light">Açık</button><button type="button" data-tema-sec="koyu" aria-pressed="false" data-tr="Koyu" data-en="Dark">Koyu</button></div></div><script>(function(){var d=document.documentElement,k=document.querySelector(".tema-sec"),b=k&&k.querySelector(".tema-dugme"),m=k&&k.querySelector(".tema-menu");function i(){var s=d.getAttribute("data-tema")||"acik";document.querySelectorAll("[data-tema-sec]").forEach(function(x){x.setAttribute("aria-pressed",x.getAttribute("data-tema-sec")===s?"true":"false")})}function a(v){if(m){m.hidden=!v;b.setAttribute("aria-expanded",v?"true":"false")}}if(b)b.addEventListener("click",function(){a(m.hidden)});document.addEventListener("click",function(e){var x=e.target.closest?e.target.closest("[data-tema-sec]"):null;if(x){var s=x.getAttribute("data-tema-sec");try{localStorage.setItem("capar-tema",s)}catch(e){}if(window.caparTema)caparTema(s);document.dispatchEvent(new Event("capar-tema"));return}if(m&&!m.hidden&&!k.contains(e.target))a(false)});document.addEventListener("capar-tema",i);document.addEventListener("keydown",function(e){if(e.key==="Escape"&&m&&!m.hidden){a(false);b.focus()}});i()})();</script>
+      <button type="button" class="ust-menu-dugme" aria-expanded="false" aria-controls="ust-gezinti" aria-labelledby="ust-gezinti-dugme-ad"><span></span><span></span><span></span></button><span id="ust-gezinti-dugme-ad" hidden data-tr="Menü" data-en="Menu">Menü</span>
+      <style id="ust-menu">#ara{scroll-margin-top:90px}.topbar .wrap{max-width:1360px}.ust-gezinti{display:flex;align-items:center;gap:18px}.ust-gezinti a{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-soft);text-decoration:none;white-space:nowrap;padding:0;min-height:44px;display:inline-flex;align-items:center;transition:color .25s}.ust-gezinti a:hover{color:var(--accent)}.ust-ara{justify-content:center;gap:10px;min-width:44px;margin:0 -8px}.ust-ara-form{display:none}.ust-eylem{display:none}@media(min-width:900px){.ust-eylem{display:flex;align-items:center;gap:12px}.ust-tel{font-family:var(--sans);font-weight:600;font-size:.88rem;color:var(--text);white-space:nowrap;display:inline-flex;align-items:center;min-height:44px}.ust-gt{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;background:var(--accent);color:#fff;font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;transition:background .25s}.ust-gt:hover{background:var(--accent-deep)}}.ust-ara svg{display:block;flex:none}.ust-ara-metin{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.ust-menu-dugme{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:0 11px;border:0;background:none;cursor:pointer}.ust-menu-dugme span{display:block;width:22px;height:2px;background:var(--text);transition:transform .25s,opacity .25s}.ust-menu-dugme[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}.ust-menu-dugme[aria-expanded="true"] span:nth-child(2){opacity:0}.ust-menu-dugme[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}@media(max-width:1359.98px){.ust-menu-dugme{display:inline-flex}.ust-gezinti{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:4px 24px 12px;background:var(--surface);border-bottom:1px solid var(--line);box-shadow:0 14px 28px rgba(26,31,38,.12)}.ust-gezinti.acik{display:flex}.ust-gezinti a{display:flex;align-items:center;justify-content:space-between;font-size:.9rem;letter-spacing:.04em;min-height:48px;border-bottom:1px solid var(--line)}.ust-gezinti a::after{content:"\203A";font-weight:400}.ust-gezinti a:last-child{border-bottom:0}.ust-gezinti .ust-ara{display:none}.ust-ara-form{display:flex;gap:8px;margin:12px 0 6px}.ust-ara-form input{flex:1;min-width:0;height:44px;font:inherit;font-size:1rem;padding:0 12px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--text)}.ust-ara-form button{height:44px;padding:0 16px;border:0;border-radius:6px;background:var(--ink);color:#fff;font:inherit;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;cursor:pointer}}.brand{display:flex;align-items:center;flex:none}.brand .logo{display:block;height:44px;width:auto}@media(max-width:480px){.brand .logo{height:40px}}@media(max-width:360px){.brand .logo{height:34px}}.lang a{font-family:var(--sans);font-weight:600;font-size:.75rem;letter-spacing:.06em;color:var(--text-soft);padding:0 11px;height:100%;line-height:1;display:inline-flex;align-items:center;text-decoration:none;transition:background .25s,color .25s}.lang a+a{border-left:1px solid var(--line)}.lang a.active{background:var(--accent);color:#fff}.lang a:hover:not(.active){color:var(--accent)}@media(max-width:400px){.hdr-right{gap:7px}.lang a,.lang button{padding:0 9px}.row:has(#btn-de) .brand .logo{height:34px}.lang:has(#btn-de) a{padding:0 6px}.hdr-right:has(#btn-de){gap:4px}}/* mobil menü eş güdümü (2026-11-14) */@media(min-width:1360px){.ust-gezinti .ust-ek{display:none}}@media(min-width:1360px){.ust-gezinti{gap:14px}}@media(max-width:1359.98px){.ust-gezinti{max-height:calc(100vh - 80px);overflow-y:auto;overscroll-behavior:contain}html.menu-acik{overflow:hidden}.ust-gezinti a[aria-current="page"]{color:var(--accent)}}@media(max-width:480px){.hdr-right .back+.back{display:none}}</style><script>/* H-3 menü */(function(){var d=document.querySelector('.ust-menu-dugme'),n=document.getElementById('ust-gezinti');if(!d||!n)return;var f=n.querySelector('form'),q=f&&f.querySelector('input'),r=document.documentElement;function l(){return r.lang==='en'?'en':'tr';}function b(){if(!n.classList.contains('acik'))return;var h=innerHeight;['.mobil-cubuk','#cookieBar'].forEach(function(s){var e=document.querySelector(s);if(!e)return;var c=getComputedStyle(e),t=e.getBoundingClientRect().top;if(c.display!=='none'&&c.visibility!=='hidden'&&t>0&&t<h)h=t;});n.style.maxHeight=Math.max(150,h-n.getBoundingClientRect().top)+'px';}function k(a,o){n.classList.toggle('acik',a);r.classList.toggle('menu-acik',a);d.setAttribute('aria-expanded',a?'true':'false');if(a){if(f&&q){f.action=l()==='en'?'/en/articles':'/makaleler';q.placeholder=q.getAttribute('data-ph-'+l())||q.placeholder;}b();if(o){var g=n.querySelector('input,a');if(g)g.focus();}}}d.addEventListener('click',function(e){k(d.getAttribute('aria-expanded')!=='true',e.detail===0);});n.addEventListener('click',function(e){if(e.target.closest('a'))k(false);});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&n.classList.contains('acik')){k(false);d.focus();}});document.addEventListener('click',function(e){if(n.classList.contains('acik')&&!n.contains(e.target)&&!d.contains(e.target))k(false);});addEventListener('resize',function(){if(innerWidth>1359&&n.classList.contains('acik'))k(false);else b();});})();</script>
+    </div>
+  </div>
+</header>
+<main id="icerik">
+  <section class="page-head wrap">
+    <nav class="yol" aria-label="Konum"><a href="/">Ana Sayfa</a> › <a href="/hesaplamalar">Hesaplamalar</a></nav>
+    <span class="eyebrow">Hesaplamalar</span>
+    <h1>Miras Payı ve Saklı Pay Hesaplama: Eşin, Çocukların, Ana-Babanın ve Kardeşlerin Payı</h1>
+    <p class="hs-git-kap"><a class="hs-git-dugme" href="#miras-form">Hesaplamaya geç</a></p>
+    <p class="lead">Türk Medeni Kanunu'nun yasal mirasçılık kurallarına göre kimin mirasçı olduğunu ve her mirasçının yasal miras payını tam kesir ve yüzde olarak gösterir: zümre sistemi, her derecede halefiyet, ana-baba bir ve yarım kan kardeş ayrımı, sağ kalan eşin zümreye göre payı, mirası reddeden, mirasçılıktan çıkarılan ve mirastan yoksun olan mirasçının payının kime geçtiği. Her mirasçının saklı payını ve tasarruf edilebilir kısmı hesaplar; tutar girerseniz hesap terekesini ve vasiyet gibi tasarrufların tasarruf edilebilir kısmı aşıp aşmadığını gösterir. Her adım madde numarasıyla açıklanır.</p>
+    <p class="miras-kisa-cevap"><strong>Kısa cevap:</strong> Türk Medeni Kanunu&#039;na göre önce altsoy (çocuklar; önce ölen çocuğun yerine kendi çocukları) mirasçı olur; altsoy yoksa ana ve baba ile onların altsoyu (kardeşler, yeğenler), onlar da yoksa büyük ana ve büyük babalar ile onların altsoyu. Sağ kalan eş altsoyla birlikte mirasın 1/4&#039;ünü, ana-baba zümresiyle 1/2&#039;sini, büyük ana-büyük babalar ve onların çocuklarıyla 3/4&#039;ünü, bunlar da yoksa tamamını alır. Saklı pay altsoy için yasal payın yarısı, ana ve babadan her biri için dörtte biri, eş için altsoy ya da ana-baba zümresiyle birlikteyse tamamı, diğer hâllerde dörtte üçüdür; kardeşlerin saklı payı yoktur (TMK m.495–499, m.506).</p>
+  </section>
+
+  <section class="content wrap">
+    <div class="miras-arac">
+      <p class="miras-kisa">Bilgi aracıdır; hukuki görüş değildir.</p>
+      <p class="hs-nasil">Nasıl kullanılır: ölüm tarihini ve sağ kalan eşin durumunu girin, çocukları sayısıyla ekleyin; çocuk yoksa ana-baba ve kardeşler, onlar da yoksa büyük ana ve büyük babalar bölümünü doldurun ve hesapla düğmesine basın; hazır aile yapılarından biriyle de başlayabilirsiniz. Mirasın reddinin, mirasçılıktan çıkarmanın ve mirastan yoksunluğun paylara etkisini görmek için formun başındaki hesap türü düğmelerinden ilgili olanı seçin. Sonuç bu sayfada, formun hemen altında görünür. Sonuçlar ön hesaptır.</p>
+      <p class="hs-gizlilik">Girdiğiniz bilgiler tarayıcınızda hesaplanır, sunucuya gönderilmez.</p>
+      <form id="miras-form" class="miras-form" novalidate>
+        <div class="miras-kip-alan" id="miras-kip" hidden></div>
+        <p class="miras-not">Zorunlu alanlar: ölüm tarihi ve sağ kalan eşin durumu; altsoydan mirasçı kalmıyorsa ana ve babanın, onlardan ve kardeşlerden de mirasçı kalmıyorsa dört büyük ana ve büyük babanın durumu. Boş bırakılan sayı 0 sayılır. Ad, kimlik numarası ya da dosya numarası istenmez.</p>
+        <nav class="hs-adimlar" aria-label="Formun bölümleri"><ol><li><a href="#miras-b1">1 Ölüm tarihi ve eş</a></li><li><a href="#miras-b2">2 Çocuklar ve torunlar</a></li><li><a href="#miras-b3">3 Ana-baba ve kardeşler</a></li><li><a href="#miras-b4">4 Büyük ana ve büyük babalar</a></li><li><a href="#miras-b5">5 Tutarlar</a></li><li>Sonuç</li></ol></nav>
+
+        <fieldset class="miras-bolum" id="miras-b1">
+          <legend>1. Ölüm tarihi ve sağ kalan eş</legend>
+          <div class="miras-izgara">
+            <div class="miras-alan">
+              <label for="miras-olum">Ölüm tarihi <span class="hs-zorunlu">zorunlu</span></label>
+              <input type="date" id="miras-olum" name="olum" aria-describedby="miras-olum-not" />
+              <p class="miras-not" id="miras-olum-not">Mirasçılık ölüm tarihindeki hükümlere göre belirlenir. 01.01.2002'den önceki ölümlerde hesap yapılmaz.</p>
+            </div>
+          </div>
+          <fieldset id="miras-es" aria-describedby="miras-es-not">
+            <legend>Sağ kalan eş <span class="hs-zorunlu">zorunlu</span></legend>
+            <div class="miras-secim">
+              <label><input type="radio" name="es" value="yok" /> Yok (evli değildi, eşi önce öldü ya da boşanmışlardı)</label>
+              <label><input type="radio" name="es" value="sag" /> Var</label>
+              <label data-kip="ret" hidden><input type="radio" name="es" value="ret" /> Var, mirası reddetti</label>
+              <label data-kip="cikarma" hidden><input type="radio" name="es" value="cikarma" /> Var, mirasçılıktan çıkarıldı</label>
+              <label data-kip="cikarma" hidden><input type="radio" name="es" value="yoksun" /> Var, mirastan yoksun</label>
+            </div>
+            <p class="miras-not" id="miras-es-not">Boşanmış eş mirasçı değildir. Boşanma davası sürerken ölümde mirasçılardan biri davaya devam eder ve sağ kalan eşin kusuru ispatlanırsa eş mirasçı olamaz (TMK m.181); bu durumda Yok'u seçin.</p>
+          </fieldset>
+        </fieldset>
+
+        <fieldset class="miras-bolum" id="miras-b2">
+          <legend>2. Çocuklar ve torunlar (altsoy)</legend>
+          <div class="miras-izgara">
+            <div class="miras-alan">
+              <label for="miras-cocuk-sayi">Çocuk sayısı</label>
+              <input type="text" id="miras-cocuk-sayi" name="cocuk_sayi" inputmode="numeric" autocomplete="off" placeholder="0" aria-describedby="miras-cocuk-sayi-not" />
+              <p class="miras-not" id="miras-cocuk-sayi-not">Evlatlık ve soybağı kurulmuş evlilik dışı çocuklar dahil; mirasbırakandan önce ölen çocuklar da sayılır. Sayıyı girince her çocuk için bir satır açılır.</p>
+            </div>
+          </div>
+          <div class="miras-liste" id="miras-cocuklar"></div>
+        </fieldset>
+
+        <details class="miras-details" id="miras-b3">
+          <summary>3. Ana-baba ve kardeşler (altsoy yoksa)</summary>
+          <div class="miras-ic">
+            <p class="miras-not">Yalnız altsoydan mirasçı kalmıyorsa hesaba girer. Ölmüş ana ya da babanın payı onun altsoyuna (mirasbırakanın kardeşlerine, onlar da ölmüşse yeğenlere) geçer; yalnız ana bir ya da yalnız baba bir kardeş yalnız ortak ebeveynin payından alır.</p>
+            <div class="miras-izgara">
+              <fieldset class="miras-cip-grup" id="miras-ana" aria-describedby="miras-ana-not">
+                <legend>Ana</legend>
+                <div class="miras-cipler">
+                  <label class="miras-cip"><input type="radio" name="ana" value="sag" /> Sağ</label>
+                  <label class="miras-cip"><input type="radio" name="ana" value="once_oldu" /> Mirasbırakandan önce ölmüş</label>
+                  <label class="miras-cip" data-kip="ret" hidden><input type="radio" name="ana" value="ret" /> Mirası reddetti</label>
+                  <label class="miras-cip" data-kip="cikarma" hidden><input type="radio" name="ana" value="cikarma" /> Mirasçılıktan çıkarıldı</label>
+                  <label class="miras-cip" data-kip="cikarma" hidden><input type="radio" name="ana" value="yoksun" /> Mirastan yoksun</label>
+                </div>
+                <p class="miras-not" id="miras-ana-not">Ana ve baba eşit pay alır (TMK m.496).</p>
+              </fieldset>
+              <fieldset class="miras-cip-grup" id="miras-baba" aria-describedby="miras-baba-not">
+                <legend>Baba</legend>
+                <div class="miras-cipler">
+                  <label class="miras-cip"><input type="radio" name="baba" value="sag" /> Sağ</label>
+                  <label class="miras-cip"><input type="radio" name="baba" value="once_oldu" /> Mirasbırakandan önce ölmüş</label>
+                  <label class="miras-cip" data-kip="ret" hidden><input type="radio" name="baba" value="ret" /> Mirası reddetti</label>
+                  <label class="miras-cip" data-kip="cikarma" hidden><input type="radio" name="baba" value="cikarma" /> Mirasçılıktan çıkarıldı</label>
+                  <label class="miras-cip" data-kip="cikarma" hidden><input type="radio" name="baba" value="yoksun" /> Mirastan yoksun</label>
+                </div>
+                <p class="miras-not" id="miras-baba-not">Bir tarafta hiç mirasçı yoksa bütün pay diğer tarafa geçer.</p>
+              </fieldset>
+              <div class="miras-alan">
+                <label for="miras-kardes-sayi">Kardeş sayısı</label>
+                <input type="text" id="miras-kardes-sayi" name="kardes_sayi" inputmode="numeric" autocomplete="off" placeholder="0" aria-describedby="miras-kardes-sayi-not" />
+                <p class="miras-not" id="miras-kardes-sayi-not">Önce ölen kardeşler de sayılır. Kardeşlerin saklı payı yoktur.</p>
+              </div>
+            </div>
+            <div class="miras-liste" id="miras-kardesler"></div>
+          </div>
+        </details>
+
+        <details class="miras-details" id="miras-b4">
+          <summary>4. Büyük ana ve büyük babalar (ana-baba zümresi de yoksa)</summary>
+          <div class="miras-ic">
+            <p class="miras-not">Yalnız altsoydan ve ana-baba zümresinden mirasçı kalmıyorsa hesaba girer. Ölmüş büyük ana ya da büyük babanın payı çocuklarına (amca, hala, dayı, teyze), onlar da ölmüşse onların çocuklarına geçer; sağ kalan eş varsa yalnız büyük ana-büyük babalar ve onların çocukları mirasçı olur (TMK m.497, m.499/3).</p>
+            <fieldset id="miras-at">
+              <legend>Ana tarafı</legend>
+              <div class="miras-izgara">
+                <fieldset class="miras-cip-grup" id="miras-at-ana">
+                  <legend>Büyük ana (annenin annesi)</legend>
+                  <div class="miras-cipler">
+                    <label class="miras-cip"><input type="radio" name="at_ana" value="sag" /> Sağ</label>
+                    <label class="miras-cip"><input type="radio" name="at_ana" value="once_oldu" /> Mirasbırakandan önce ölmüş</label>
+                    <label class="miras-cip" data-kip="ret" hidden><input type="radio" name="at_ana" value="ret" /> Mirası reddetti</label>
+                    <label class="miras-cip" data-kip="cikarma" hidden><input type="radio" name="at_ana" value="yoksun" /> Mirastan yoksun</label>
+                  </div>
+                </fieldset>
+                <fieldset class="miras-cip-grup" id="miras-at-baba">
+                  <legend>Büyük baba (annenin babası)</legend>
+                  <div class="miras-cipler">
+                    <label class="miras-cip"><input type="radio" name="at_baba" value="sag" /> Sağ</label>
+                    <label class="miras-cip"><input type="radio" name="at_baba" value="once_oldu" /> Mirasbırakandan önce ölmüş</label>
+                    <label class="miras-cip" data-kip="ret" hidden><input type="radio" name="at_baba" value="ret" /> Mirası reddetti</label>
+                    <label class="miras-cip" data-kip="cikarma" hidden><input type="radio" name="at_baba" value="yoksun" /> Mirastan yoksun</label>
+                  </div>
+                </fieldset>
+                <div class="miras-alan">
+                  <label for="miras-at-sayi">Dayı ve teyze sayısı</label>
+                  <input type="text" id="miras-at-sayi" name="at_sayi" inputmode="numeric" autocomplete="off" placeholder="0" />
+                </div>
+              </div>
+              <div class="miras-liste" id="miras-at-liste"></div>
+            </fieldset>
+            <fieldset id="miras-bt">
+              <legend>Baba tarafı</legend>
+              <div class="miras-izgara">
+                <fieldset class="miras-cip-grup" id="miras-bt-ana">
+                  <legend>Büyük ana (babanın annesi)</legend>
+                  <div class="miras-cipler">
+                    <label class="miras-cip"><input type="radio" name="bt_ana" value="sag" /> Sağ</label>
+                    <label class="miras-cip"><input type="radio" name="bt_ana" value="once_oldu" /> Mirasbırakandan önce ölmüş</label>
+                    <label class="miras-cip" data-kip="ret" hidden><input type="radio" name="bt_ana" value="ret" /> Mirası reddetti</label>
+                    <label class="miras-cip" data-kip="cikarma" hidden><input type="radio" name="bt_ana" value="yoksun" /> Mirastan yoksun</label>
+                  </div>
+                </fieldset>
+                <fieldset class="miras-cip-grup" id="miras-bt-baba">
+                  <legend>Büyük baba (babanın babası)</legend>
+                  <div class="miras-cipler">
+                    <label class="miras-cip"><input type="radio" name="bt_baba" value="sag" /> Sağ</label>
+                    <label class="miras-cip"><input type="radio" name="bt_baba" value="once_oldu" /> Mirasbırakandan önce ölmüş</label>
+                    <label class="miras-cip" data-kip="ret" hidden><input type="radio" name="bt_baba" value="ret" /> Mirası reddetti</label>
+                    <label class="miras-cip" data-kip="cikarma" hidden><input type="radio" name="bt_baba" value="yoksun" /> Mirastan yoksun</label>
+                  </div>
+                </fieldset>
+                <div class="miras-alan">
+                  <label for="miras-bt-sayi">Amca ve hala sayısı</label>
+                  <input type="text" id="miras-bt-sayi" name="bt_sayi" inputmode="numeric" autocomplete="off" placeholder="0" />
+                </div>
+              </div>
+              <div class="miras-liste" id="miras-bt-liste"></div>
+            </fieldset>
+          </div>
+        </details>
+
+        <details class="miras-details" id="miras-b5">
+          <summary>5. Tutarlar (isteğe bağlı)</summary>
+          <div class="miras-ic">
+            <p class="miras-not">Tutar girilmezse yalnız kesirler gösterilir. Mal rejimi tasfiyesinden sonra mirasbırakana kalan değeri girin: eşin mal rejiminden doğan alacağı terekeden önce ayrılır.</p>
+            <div class="miras-izgara">
+              <div class="miras-alan">
+                <label for="miras-aktif">Terekenin aktifi (ölüm günündeki değer), TL</label>
+                <input type="text" id="miras-aktif" name="aktif" inputmode="decimal" autocomplete="off" placeholder="ör. 1.200.000" aria-describedby="miras-aktif-not" />
+                <p class="miras-not" id="miras-aktif-not">Taşınmazlar, araçlar, hesaplar ve alacaklar dahil.</p>
+              </div>
+              <div class="miras-alan">
+                <label for="miras-borc">Borçlar ve giderler, TL</label>
+                <input type="text" id="miras-borc" name="borc" inputmode="decimal" autocomplete="off" aria-describedby="miras-borc-not" />
+                <p class="miras-not" id="miras-borc-not">Mirasbırakanın borçları, cenaze giderleri, terekenin mühürlenmesi ve yazımı giderleri, birlikte yaşayıp bakılanların üç aylık geçim giderleri (TMK m.507).</p>
+              </div>
+              <div class="miras-alan">
+                <label for="miras-eklenecek">Eklenecek sağlararası kazandırmalar, TL</label>
+                <input type="text" id="miras-eklenecek" name="eklenecek" inputmode="decimal" autocomplete="off" aria-describedby="miras-eklenecek-not" />
+                <p class="miras-not" id="miras-eklenecek-not">Tenkise tabi bağışlama ve kazandırmalar; tasarruf edilebilir kısmın hesabında terekeye eklenir (TMK m.508, m.565).</p>
+              </div>
+              <div class="miras-alan">
+                <label for="miras-tasarruf">Ölüme bağlı tasarruflar toplamı, TL</label>
+                <input type="text" id="miras-tasarruf" name="tasarruf" inputmode="decimal" autocomplete="off" aria-describedby="miras-tasarruf-not" />
+                <p class="miras-not" id="miras-tasarruf-not">Vasiyet ya da miras sözleşmesiyle bırakılanların toplam değeri.</p>
+              </div>
+            </div>
+          </div>
+        </details>
+
+<div class="miras-hata" id="miras-hata" role="alert" tabindex="-1" hidden></div>
+        <button type="submit" class="miras-gonder" disabled>Miras paylarını hesapla</button>
+      </form>
+      <div id="miras-sonuc" class="miras-sonuc" aria-live="polite" data-filigran></div>
+      <p class="hs-yonlendirme" id="miras-yonlendirme" hidden>Sonucu kendi durumunuzla birlikte değerlendirmek isterseniz <a href="/alan/miras">Miras Hukuku</a> sayfasına bakabilir ya da <a href="/iletisim">İletişim</a> sayfasından ulaşabilirsiniz.</p>
+      <noscript><p class="miras-mesaj">Hesaplayıcı tarayıcınızda JavaScript ile çalışır. JavaScript kapalıyken aşağıdaki kurallar ve dayanaklar okunabilir.</p></noscript>
+    </div>
+
+    <div class="miras-bilgi-bolum">
+      <h2>Hesap nasıl yapılır</h2>
+      <ol class="miras-sira">
+        <li><strong>Birinci zümre, altsoy:</strong> çocuklar eşit pay alır; mirasbırakandan önce ölen çocuğun yerini her derecede kendi altsoyu alır (TMK m.495). Evlatlık ve altsoyu evlat edinene kan hısımı gibi mirasçıdır (TMK m.500); soybağı kurulmuş evlilik dışı çocuk baba yönünden evlilik içi çocuk gibi mirasçıdır (TMK m.498).</li>
+        <li><strong>İkinci zümre, ana ve baba:</strong> altsoy yoksa ana ve baba eşit pay alır; önce ölenin yerini kendi altsoyu (mirasbırakanın kardeşleri, yeğenleri) alır; bir tarafta hiç mirasçı yoksa bütün miras diğer taraftakilere kalır (TMK m.496). Yalnız ana bir ya da yalnız baba bir kardeş yalnız ortak ebeveynin payından alır.</li>
+        <li><strong>Üçüncü zümre, büyük ana ve büyük babalar:</strong> ikinci zümre de yoksa dört büyük ana-büyük baba eşit pay alır; önce ölenin yerini kendi altsoyu alır; altsoysuz ölenin payı aynı taraftakilere, bir taraf tümüyle boşsa diğer tarafa geçer (TMK m.497).</li>
+        <li><strong>Sağ kalan eş:</strong> altsoyla birlikte mirasın dörtte biri, ana-baba zümresiyle yarısı, büyük ana-büyük babalar ve onların çocuklarıyla dörtte üçü; bunlar da yoksa tamamı (TMK m.499). Eşle birlikte üçüncü zümrede yalnız büyük ana-büyük babalar ve onların çocukları mirasçı olur (TMK m.497/5). Hiç mirasçı yoksa miras Devlete geçer (TMK m.501).</li>
+        <li><strong>Ret, çıkarma, yoksunluk:</strong> mirası reddedenin payı, kendisi sağ değilmiş gibi hak sahiplerine geçer (TMK m.611/1); altsoyun tamamı reddederse payları sağ kalan eşe geçer (TMK m.613); en yakın yasal mirasçıların tamamı reddederse miras tasfiye edilir ve hesaplayıcı pay vermez (TMK m.612). Mirasçılıktan çıkarılanın ve mirastan yoksunun payı, önce ölmüş gibi altsoyuna geçer (TMK m.511/2, m.579/2).</li>
+        <li><strong>Saklı pay:</strong> altsoy için yasal payın yarısı, ana ve babadan her biri için dörtte biri; sağ kalan eş için altsoy ya da ana-baba zümresiyle birlikteyse yasal payın tamamı, diğer hâllerde dörtte üçü (TMK m.506). Kardeşlerin saklı payı 5650 sayılı Kanunla kaldırıldı (RG 10.05.2007). Saklı paylar dışındaki kısım tasarruf edilebilir kısımdır; saklı paylı mirasçı yoksa mirasbırakan mirasının tamamında tasarruf edebilir (TMK m.505).</li>
+        <li><strong>Tutarlar:</strong> tasarruf edilebilir kısım ölüm günündeki terekeye göre hesaplanır; borçlar, cenaze giderleri, mühürleme ve yazım giderleri ile birlikte yaşayıp bakılanların üç aylık geçim giderleri indirilir (TMK m.507); tenkise tabi sağlararası karşılıksız kazandırmalar eklenir (TMK m.508, m.565). Yasal pay tutarı net tereke, saklı pay tutarı hesap terekesi üzerinden bulunur. Her tutar kuruşa aşağı yuvarlanır; artan kuruşlar ayrıca gösterilir.</li>
+      </ol>
+
+      <h2>Hesaba dahil olmayanlar</h2>
+      <ul class="miras-sira">
+        <li>Mal rejiminin tasfiyesi: mal rejimi ölümle sona erer (TMK m.225) ve eşin mal rejiminden doğan alacağı (ör. artık değere katılma, TMK m.236) terekeden önce ayrılır. Tereke tutarına tasfiye sonrası değeri girin.</li>
+        <li>01.01.2002'den önceki ölümler: mirasçılık ölüm tarihindeki hükümlere, yani 743 sayılı Kanuna göre belirlenir (4722 sayılı Kanun m.17); hesaplayıcı sonuç vermez. 10.05.2007'den önceki ölümlerde kardeşler mirasçıysa saklı paylar gösterilmez.</li>
+        <li>Denkleştirme (TMK m.669 vd.), vasiyetnamenin ve miras sözleşmesinin geçerliliği ve yorumu, tenkis sırası (TMK m.570).</li>
+        <li>Aile konutu ve ev eşyasının sağ kalan eşe özgülenmesi (TMK m.652), art mirasçılık, gaiplik ve yabancılık unsuru taşıyan durumlar.</li>
+        <li>Ret, çıkarma ve yoksunluğun koşulları, süreleri ve geçerliliği: hesaplayıcı yalnız etkisini gösterir.</li>
+        <li>Kişisel veri istenmez; hesap tarayıcınızda yapılır.</li>
+      </ul>
+
+      <h2 id="sss">Sık Sorulan Sorular</h2>
+      <div class="mv-faq"><details class="mv-q"><summary>Sağ kalan eşin miras payı ne kadardır?</summary><p>Eşin payı birlikte mirasçı olduğu zümreye göre değişir: altsoyla (çocuklar, torunlar) birlikte mirasın dörtte biri, ana-baba zümresiyle (ana, baba, kardeşler ve onların çocukları) yarısı, büyük ana-büyük babalar ve onların çocuklarıyla dörtte üçü; bunlar da yoksa mirasın tamamı. Eşle birlikte büyük ana-büyük babaların torunları (kuzenler) mirasçı olmaz. Dayanak: TMK m.499, m.497/5.</p></details><details class="mv-q"><summary>Saklı pay nedir, kimlerin saklı payı vardır?</summary><p>Saklı pay, mirasbırakanın vasiyet ya da miras sözleşmesi gibi ölüme bağlı tasarruflarla dokunamayacağı kısımdır. Altsoy için yasal miras payının yarısı, ana ve babadan her biri için dörtte biri; sağ kalan eş için altsoy ya da ana-baba zümresiyle birlikte mirasçıysa yasal payın tamamı, diğer hâllerde dörtte üçüdür. Saklı paylar dışında kalan kısım tasarruf edilebilir kısımdır. Dayanak: TMK m.505, m.506.</p></details><details class="mv-q"><summary>Kardeşlerin saklı payı var mı?</summary><p>Hayır. Kardeşlere saklı pay tanıyan TMK m.506&#039;nın 3. bendi 5650 sayılı Kanunla madde metninden çıkarıldı; Kanun 10.05.2007&#039;de Resmî Gazete&#039;de yayımlanarak yürürlüğe girdi. Bu tarihten sonraki ölümlerde kardeşler yasal mirasçı olabilir ama saklı payları yoktur. Dayanak: TMK m.506; 5650 sayılı Kanun m.2, m.3.</p></details><details class="mv-q"><summary>Evlatlık mirasçı olur mu?</summary><p>Evet. Evlatlık ve altsoyu, evlat edinene kan hısımı gibi mirasçı olur ve evlatlığın kendi ailesindeki mirasçılığı da sürer; hesapta evlatlık çocuk olarak girilir. Evlat edinen ve hısımları ise evlatlığa mirasçı olmaz. Soybağı tanıma ya da hâkim hükmüyle kurulmuş evlilik dışı çocuk da baba yönünden evlilik içi çocuk gibi mirasçıdır. Dayanak: TMK m.500, m.498.</p></details><details class="mv-q"><summary>Mirası reddeden mirasçının payı kime geçer?</summary><p>Yasal mirasçılardan biri mirası reddederse payı, miras açıldığında kendisi sağ değilmiş gibi hak sahiplerine geçer; reddeden çocuğun payı bu nedenle kendi altsoyuna, altsoyu yoksa öteki mirasçılara kalır. Altsoyun tamamı reddederse payları sağ kalan eşe geçer; en yakın yasal mirasçıların tamamı reddederse miras sulh mahkemesince iflas hükümlerine göre tasfiye edilir. Dayanak: TMK m.611, m.612, m.613.</p></details><details class="mv-q"><summary>Mal rejimi tasfiyesi miras payını nasıl etkiler?</summary><p>Mal rejimi eşlerden birinin ölümüyle sona erer ve önce mal rejimi tasfiye edilir: yasal mal rejiminde her eş ya da mirasçıları, diğer eşe ait artık değerin yarısı üzerinde hak sahibidir. Sağ kalan eş bu alacağını mirastan önce alır; terekeye yalnız mirasbırakana kalan değer girer ve eş ayrıca miras payını alır. Hesaplayıcı mal rejimini tasfiye etmez; tutar girerken tasfiye sonrası değeri yazın. Dayanak: TMK m.225, m.236.</p></details></div>
+
+      <h2>İlgili makaleler</h2>
+      <ul class="miras-sira miras-kaynak"><li><a href="/makale/turk-miras-hukuku-sistemi">Türk Miras Hukuku Sistemi Nasıl İşler? Yasal Mirasçılar ve Zümreler, Eşin Payı, Saklı Pay, Vasiyet, Paylaşım</a></li><li><a href="/makale/tenkis-davasi">Tenkis Davası: Saklı Pay, Hesap Yöntemi ve Yargıtay 7. Hukuk Dairesi Kararları</a></li><li><a href="/makale/mirascilik-belgesi-ve-mirasin-reddi">Mirasçılık Belgesi (Veraset İlamı) ve Mirasın Reddi: Noter mi Sulh Hukuk mu, 3 Aylık Süre, Hükmen Ret, Borçlar</a></li><li><a href="/makale/muris-muvazaasi-mirastan-mal-kacirma">Muris Muvazaası (Mirastan Mal Kaçırma): Yargıtay 1. Hukuk Dairesi Kararlarıyla Tapu İptali ve Tescil Davası</a></li><li><a href="/makale/vasiyetnamenin-iptali">Vasiyetnamenin İptali Davası: Şartları, Şekil Kuralları ve Yargıtay 7. Hukuk Dairesi Kararları</a></li></ul>
+      <p>Miras uyuşmazlıklarına ilişkin genel bilgi için <a class="miras-kaynak" href="/alan/miras">Miras Hukuku</a> sayfasına bakabilirsiniz.</p>
+
+      <h2>Mevzuat</h2>
+      <ul class="miras-sira miras-kaynak">
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4721&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">4721 sayılı Türk Medeni Kanunu</a> (m.181, 225, 236, 495–501, 505–508, 510–511, 565, 570, 578–579, 599, 605–606, 609–614, 652, 669)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4722&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">4722 sayılı Türk Medeni Kanununun Yürürlüğü ve Uygulama Şekli Hakkında Kanun</a> (m.17)</li>
+        <li>5650 sayılı Türk Medenî Kanununda Değişiklik Yapılmasına Dair Kanun (kabul 04.05.2007; Resmî Gazete 10.05.2007, sayı 26518; m.1–3)</li>
+      </ul>
+      <p class="miras-surum-alt">Kuralların son teyit tarihi 16 Kasım 2026</p>
+      <p class="hesap-telif" style="margin-top:28px;font-size:.85rem;color:var(--text-soft)">© 2026 Av. Bayram Can Çapar · ÇAPAR Hukuk. Bu hesaplama aracı ve yazılımı 5846 sayılı Fikir ve Sanat Eserleri Kanunu kapsamında korunur; izinsiz kopyalanamaz, başka sitede ya da ticari amaçla kullanılamaz. <a href="/hukum-kosullar.html">Hüküm ve Koşullar</a></p>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="wrap alt-logo"><img src="/logo-tam-acik.svg?v=603f747f" alt="Av. Bayram Can Çapar · ÇAPAR Hukuk" width="280" height="104" loading="lazy" decoding="async" /></div>
+<div class="wrap pd-satir"><aside class="pd" data-yer="altbilgi" aria-label="Paylaş" data-url="https://capar.av.tr/hesaplamalar/miras-payi-hesaplama" hidden><button type="button" class="pd-dugme" id="pd-dugme" aria-haspopup="true" aria-expanded="false" aria-controls="pd-liste"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 10H6.5A2.5 2.5 0 0 0 4 12.5v6A2.5 2.5 0 0 0 6.5 21h11a2.5 2.5 0 0 0 2.5-2.5v-6a2.5 2.5 0 0 0-2.5-2.5H16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-tr="Paylaş" data-en="Share">Paylaş</span></button><div class="pd-menu" hidden><ul class="pd-liste" id="pd-liste" role="menu" aria-labelledby="pd-dugme"><li role="none"><button type="button" class="pd-oge" role="menuitem" data-ag="kopya"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 13.5a4.5 4.5 0 0 0 6.4.4l2.8-2.8a4.5 4.5 0 0 0-6.4-6.4l-1.3 1.3M14 10.5a4.5 4.5 0 0 0-6.4-.4l-2.8 2.8a4.5 4.5 0 0 0 6.4 6.4l1.3-1.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-tr="Bağlantıyı kopyala" data-en="Copy link">Bağlantıyı kopyala</span></button></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="whatsapp" target="_blank" rel="noopener noreferrer"><svg viewBox="-2 -2 28 28" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg><span data-tr="WhatsApp" data-en="WhatsApp">WhatsApp</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="telegram" target="_blank" rel="noopener noreferrer"><svg viewBox="-2 -2 28 28" fill="currentColor" aria-hidden="true" focusable="false"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg><span data-tr="Telegram" data-en="Telegram">Telegram</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="x" target="_blank" rel="noopener noreferrer"><svg viewBox="-3 -3 30 30" fill="currentColor" aria-hidden="true" focusable="false"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg><span data-tr="X" data-en="X">X</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="linkedin" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.93H5.55v8.41h2.79zM6.94 8.7a1.62 1.62 0 1 0 0-3.24 1.62 1.62 0 0 0 0 3.24zm11.4 9.64v-4.61c0-2.46-1.31-3.6-3.07-3.6-1.4 0-2.03.78-2.38 1.32v-1.13H10.1c.04.79 0 8.41 0 8.41h2.79v-4.7c0-.25.02-.5.09-.68.2-.5.66-1.02 1.43-1.02 1.01 0 1.41.77 1.41 1.9v4.5h2.52z"/></svg><span data-tr="LinkedIn" data-en="LinkedIn">LinkedIn</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg><span data-tr="Facebook" data-en="Facebook">Facebook</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="eposta"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m4 7.5 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span data-tr="E-posta" data-en="Email">E-posta</span></a></li></ul></div><span class="pd-durum" role="status" aria-live="polite"></span><span class="pd-m" data-ad="kopyalandi" hidden><span data-tr="Bağlantı kopyalandı" data-en="Link copied">Bağlantı kopyalandı</span></span><span class="pd-m" data-ad="elle" hidden><span data-tr="Bağlantıyı kopyalayın:" data-en="Copy the link:">Bağlantıyı kopyalayın:</span></span></aside></div><script src="/paylas-dugme.js?v=b3e8c2cd" defer></script>
+  <div class="wrap buro-bilgi" data-konum="altbilgi" style="font-size:.85rem;line-height:1.6;opacity:.9;padding-bottom:12px">Av. Bayram Can ÇAPAR - ÇAPAR HUKUK BÜROSU · Saraylar Mah. Gazi Mustafa Kemal Bulvarı, Memişoğlu Apartmanı No:76 Kat:6, 20010 Merkezefendi / Denizli · <a href="tel:+902582415554">0258 241 55 54</a> · <span data-tr="Hafta içi 09:00–18:00, Cumartesi 10:00–15:00" data-en="Weekdays 09:00–18:00, Saturday 10:00–15:00">Hafta içi 09:00–18:00, Cumartesi 10:00–15:00</span> · <a href="https://maps.google.com/?cid=3283744558559138001" target="_blank" rel="noopener" data-tr="Yol tarifi" data-en="Directions">Yol tarifi</a></div>
+  <div class="wrap row">
+    <span class="fb">Av. Bayram Can Çapar · ÇAPAR Hukuk</span>
+    <span class="links">
+            <a href="/#hakkinda" data-href-tr="/#hakkinda" data-href-en="/en/#hakkinda" data-tr="Hakkımızda" data-en="About Us">Hakkımızda</a>
+      <a href="/#ekip" data-href-tr="/#ekip" data-href-en="/en/#ekip" data-tr="Ekibimiz" data-en="Our Team">Ekibimiz</a>
+      <a href="/basinda" data-href-tr="/basinda" data-href-en="/en/press" data-tr="Basında Biz" data-en="In the Press">Basında Biz</a>
+      <a href="/karar-dizini" data-href-tr="/karar-dizini" data-href-en="/en/case-index" data-tr="Karar Dizini" data-en="Case Index">Karar Dizini</a>
+      <a href="/madde-dizini" data-href-tr="/madde-dizini" data-href-en="/en/statute-index" data-tr="Madde Dizini" data-en="Statute Index">Madde Dizini</a>
+            <a href="/basvuru-yollari" data-href-tr="/basvuru-yollari" data-href-en="/en/application-routes" data-tr="Başvuru Yolları" data-en="Where to Apply">Başvuru Yolları</a>
+      <a href="/sozluk" data-href-tr="/sozluk" data-href-en="/en/glossary" data-tr="Hukuk Sözlüğü" data-en="Glossary">Hukuk Sözlüğü</a>
+      <a href="/gizlilik.html" data-tr="KVKK Aydınlatma" data-en="Privacy Notice">KVKK Aydınlatma</a>
+      <a href="/cerez.html" data-tr="Çerez Politikası" data-en="Cookie Policy">Çerez Politikası</a>
+      <a href="/hukum-kosullar.html" data-tr="Hüküm ve Koşullar" data-en="Terms &amp; Conditions">Hüküm ve Koşullar</a>
+      <a href="/llms.txt" data-href-tr="/llms.txt" data-href-en="/llms-en.txt" data-aria-tr="Yapay zekâ asistanları için site özeti (llms.txt)" data-aria-en="Site summary for AI assistants (llms.txt)" type="text/plain" title="Yapay zekâ asistanları için site özeti (llms.txt)" aria-label="Yapay zekâ asistanları için site özeti (llms.txt)">llms.txt</a>    </span>
+    <span>© 2026 Av. Bayram Can ÇAPAR</span>
+  </div>
+  <span id="yeni-sekme" hidden data-tr="Yeni sekmede açılır" data-en="Opens in a new tab">Yeni sekmede açılır</span>
+</footer><script id="olcum">(function () {
+  var S = window.CAP_SAYFA || { tur: 'diger' };
+  window.capOlay = function (ad, p) {
+    if (typeof window.gtag !== 'function') { return; }
+    var q = { sayfa_turu: S.tur || 'diger', dil: S.dil || document.documentElement.lang || 'tr' };   // E §5.9: dil
+    if (S.makale) { q.makale = S.makale; }
+    for (var k in (p || {})) { if (p[k] !== null && p[k] !== undefined) { q[k] = p[k]; } }
+    window.gtag('event', ad, q);
+  };
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a') : null;
+    if (!a || a.closest('.pd')) { return; }   // Paylaş menüsü (e-posta dahil) kendi olayını yazar (paylas-dugme.js)
+    var h = a.getAttribute('href') || '', kk = a.closest('[data-konum]'), konum = kk ? kk.getAttribute('data-konum') : 'sayfa';
+    if (h.indexOf('tel:') === 0) { window.capOlay('iletisim_tel', { konum: konum }); }
+    else if (h.indexOf('mailto:') === 0) { window.capOlay('iletisim_eposta', { konum: konum }); }
+    else if (a.classList.contains('iletisim-mesaj')) { window.capOlay('iletisim_mesaj', { konum: konum }); }
+    if (a.closest('.vitrin-one, .vitrin-kart')) { window.capOlay('vitrin_tik', { konum: konum, makale: a.getAttribute('data-makale') || '' }); }
+  }, true);
+  function aria() {
+    var l = document.documentElement.lang === 'en' ? 'en' : 'tr';
+    document.querySelectorAll('[data-aria-tr]').forEach(function (el) { el.setAttribute('aria-label', el.getAttribute('data-aria-' + l) || ''); });
+  }
+  function basla() {
+    aria();
+    if (typeof window.setLang === 'function' && !window.setLang.capSarili) {
+      var eski = window.setLang;
+      window.setLang = function (l) { eski(l); aria(); };
+      window.setLang.capSarili = true;
+    }
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', basla); } else { basla(); }
+})();</script><nav class="mobil-cubuk" aria-label="Hızlı iletişim" data-aria-tr="Hızlı iletişim" data-aria-en="Quick contact" data-konum="cubuk"><a class="cubuk-tel" href="tel:+902582415554"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span data-tr="Telefon" data-en="Phone">Telefon</span></a><a class="cubuk-yol" href="https://maps.google.com/?cid=3283744558559138001" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5c-3.6 0-6.5 2.9-6.5 6.5 0 4.6 6.5 12.5 6.5 12.5s6.5-7.9 6.5-12.5c0-3.6-2.9-6.5-6.5-6.5z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span data-tr="Yol tarifi" data-en="Directions">Yol tarifi</span></a><a class="cubuk-form ana iletisim-mesaj" href="/iletisim" data-href-tr="/iletisim" data-href-en="/en/contact"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span data-tr="Görüşme formu" data-en="Meeting form">Görüşme formu</span></a></nav>
+
+<!-- Ölçüm ve çerez onayı: ana sayfadaki kurulumun aynısı (Consent Mode v2; tercihler 'capar-cerez' ve 'capar-reklam' ana sayfayla ortak) -->
+<style>
+  .cookie-bar{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--panel);color:var(--text-on-panel);padding:16px clamp(20px,5vw,48px);display:none;box-shadow:0 -10px 40px rgba(22,19,15,.2)}
+  .cookie-bar.show{display:block}
+  .cookie-bar .cb-in{max-width:var(--maxw);margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between}
+  .cookie-bar p{font-size:.85rem;color:rgba(241,243,246,.82);max-width:66ch;line-height:1.5;margin:0}
+  .cookie-bar a{color:var(--gold);border-bottom:1px solid rgba(203,167,92,.4)}
+  .cookie-bar .cb-btns{display:flex;gap:10px;flex:none}
+  .cookie-bar button{font-family:var(--sans);font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:10px 22px;min-height:44px;min-width:120px;cursor:pointer;border:1px solid rgba(241,243,246,.55);background:none;color:var(--text-on-panel);transition:.25s}
+  .cookie-bar button.acc{background:var(--gold);border-color:var(--gold);color:var(--panel)}
+  .cookie-bar button:hover{transform:translateY(-1px)}
+  @media(max-width:560px){.cookie-bar .cb-btns{flex:1 1 100%}.cookie-bar .cb-btns button{flex:1 1 0;min-width:0}}
+  @media(max-width:560px){.cookie-bar{padding:10px 16px 12px}.cookie-bar .cb-in{gap:8px}.cookie-bar p{font-size:.78rem;line-height:1.42}}
+  @media(min-width:900px){.cookie-bar p{flex:1 1 0;min-width:0;max-width:none}}
+</style>
+<div class="cookie-bar" id="cookieBar" role="dialog" aria-label="Çerez bilgilendirmesi">
+  <div class="cb-in">
+    <p><span data-tr="Bu sitede, ziyaret istatistiklerini ve reklamlarımızın sonuçlarını (Google Ads, Meta) ölçmek için onayınızla çerez kullanıyoruz; kişiselleştirilmiş reklam yapılmaz. Ayrıntılar için" data-en="With your consent, we use cookies to measure visit statistics and the results of our advertisements (Google Ads, Meta); no personalised advertising is used. For details, see our">Bu sitede, ziyaret istatistiklerini ve reklamlarımızın sonuçlarını (Google Ads, Meta) ölçmek için onayınızla çerez kullanıyoruz; kişiselleştirilmiş reklam yapılmaz. Ayrıntılar için</span> <a href="/cerez.html" data-tr="Çerez Politikası" data-en="Cookie Policy">Çerez Politikası</a>.</p>
+    <div class="cb-btns">
+      <button type="button" onclick="rejectCookies()" data-tr="Reddet" data-en="Decline">Reddet</button>
+      <button type="button" class="acc" onclick="acceptCookies()" data-tr="Kabul et" data-en="Accept">Kabul et</button>
+    </div>
+  </div>
+</div>
+<script id="cerez-onay">
+  // Çerez onayı (Google Consent Mode v2; kullanıcı kararı 2026-11-16 "geleneksel sistem": bantta onay kutusu yok, iki düğme
+  // "Kabul et" / "Reddet"). Bu blok parts/footer.php ve index.html'de birebir aynıdır (araclar/test_cerez_onay.py).
+  // Tercihler yalnız cihazda, önceki sürümün anahtarlarıyla: 'capar-cerez' (analitik) ve 'capar-reklam' (reklam ölçümü), değerler
+  // 'accepted' | 'rejected'. "Kabul et" ikisini birlikte 'accepted', "Reddet" ikisini birlikte 'rejected' yazar.
+  // cerezDurum: ikisi 'accepted' → 'kabul'; analitik 'rejected' ve reklam 'rejected' ya da hiç yok → 'ret'; öteki her kayıt
+  // (önceki kutulu sürümden kalan kısmi seçim, yalnız analitik kabulü, bozuk değer) karar sayılmaz: hiçbir izin açılmaz, bant
+  // yeniden sorar (rıza geriye doğru genişletilmez). Varsayılan dört izin de kapalı; 'kabul'de bant yalnız analytics_storage'ı
+  // açar, reklam ölçümü izinlerini (ad_storage, ad_user_data) yalnız reklam-olcum.js açar (o da yalnız reklam kimliği tanımlı
+  // sayfada bulunur); ad_personalization hiçbir durumda açılmaz. Onay yoksa analitik etiketi çerezsiz kipte çalışır (cihaza
+  // çerez yazılmaz); onay verilirse çerezli kipe geçer. Tercih sonradan '#cerez-tercihi' adresiyle (Çerez Politikası'ndaki
+  // "Tercihinizi değiştirin" bağlantısı) bant yeniden açılarak değiştirilir.
+  var GA_ID='G-SBVXSY39NX';
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag=gtag;
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
+  function loadAnalytics(){
+    if(!GA_ID || window.__gaLoaded) return; window.__gaLoaded=true;
+    var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID; document.head.appendChild(s);
+    gtag('js',new Date()); gtag('config',GA_ID,{anonymize_ip:true});
+  }
+  function cerezOku(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function cerezYaz(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function cerezDurum(c,r){
+    if(c==='accepted' && r==='accepted') return 'kabul';
+    if(c==='rejected' && (r==='rejected' || r===null)) return 'ret';
+    return null;
+  }
+  function hideCookieBar(){ var b=document.getElementById('cookieBar'); if(b) b.classList.remove('show'); }
+  function cerezTercihAc(odak){
+    var b=document.getElementById('cookieBar'); if(!b) return; b.classList.add('show');
+    if(odak && b.querySelector){ var d=b.querySelector('button'); if(d && d.focus) d.focus(); }
+  }
+  function tercihAdresi(){ try{ return location.hash==='#cerez-tercihi'; }catch(e){ return false; } }
+  function saveCookies(kabul){
+    cerezYaz('capar-cerez',kabul?'accepted':'rejected'); cerezYaz('capar-reklam',kabul?'accepted':'rejected');
+    gtag('consent','update',kabul?{analytics_storage:'granted'}:{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied'});
+    hideCookieBar(); loadAnalytics();
+    try{ if(tercihAdresi() && history.replaceState) history.replaceState(null,'',location.pathname+location.search); }catch(e){}
+    try{ document.dispatchEvent(new CustomEvent('capar-onay',{detail:{analitik:!!kabul,reklam:!!kabul}})); }catch(e){}
+  }
+  function acceptCookies(){ saveCookies(true); }
+  function rejectCookies(){ saveCookies(false); }
+  (function(){
+    var durum=cerezDurum(cerezOku('capar-cerez'),cerezOku('capar-reklam'));
+    if(durum==='kabul'){ gtag('consent','update',{analytics_storage:'granted'}); }
+    loadAnalytics();
+    if(window.addEventListener) window.addEventListener('hashchange',function(){ if(tercihAdresi()) cerezTercihAc(true); });
+    setTimeout(function(){
+      // karar kayıtlıysa bant gösterilmez; '#cerez-tercihi' adresi bandı her durumda yeniden açar
+      if(tercihAdresi()){ cerezTercihAc(true); return; }
+      if(durum===null) cerezTercihAc(false);
+    },600);
+  })();
+</script>
+<script>
+/* Alt sayfa dil değiştirici — ana site ile aynı 'capar-lang' anahtarını kullanır.
+   data-tr/data-en metinleri ve data-body (makale gövdesi TR/EN) görünürlüğünü yönetir. */
+function setLang(lang, yazma){
+  if(lang!=='tr' && lang!=='en') lang='tr';
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-tr]').forEach(function(el){
+    var v = el.getAttribute('data-'+lang); if(v===null) return;
+    if(el.hasAttribute('data-i18n-html')) el.innerHTML = v; else el.textContent = v;
+  });
+  document.querySelectorAll('[data-body]').forEach(function(el){
+    el.hidden = (el.getAttribute('data-body') !== lang);
+  });
+  document.querySelectorAll('[data-href-'+lang+']').forEach(function(el){
+    el.setAttribute('href', el.getAttribute('data-href-'+lang));
+  });
+  var t=document.getElementById('btn-tr'), e=document.getElementById('btn-en');
+  if(t) t.classList.toggle('active', lang==='tr');
+  if(e) e.classList.toggle('active', lang==='en');
+  if(!yazma){ try{ localStorage.setItem('capar-lang', lang); }catch(_){} }
+}
+(function(){ setLang('tr', true); })();
+</script>
+<script>
+/* Paket 3 (Fable H-11): yeni sekmede açılan her bağlantı (makale gövdelerindeki kanun/karar bağlantıları dahil) ekran
+   okuyucuya "yeni sekmede açılır" açıklamasını taşır (#yeni-sekme; dil değişince setLang metni çevirir). */
+(function(){
+  function yeniSekme(){
+    document.querySelectorAll('a[target="_blank"]').forEach(function(a){
+      var d=(a.getAttribute('aria-describedby')||'').split(/\s+/).filter(Boolean);
+      if(d.indexOf('yeni-sekme')<0){ d.push('yeni-sekme'); a.setAttribute('aria-describedby', d.join(' ')); }
+    });
+  }
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', yeniSekme); } else { yeniSekme(); }
+})();
+/* Tasarım denetimi (2026-11-19, bulgu 4): çerez bandının yüksekliği --cerez-yuk değişkeninde (bant kapalıyken 0); yapışkan
+   İçindekiler kutusu ve alan yan kartı bant açıkken bu kadar kısalır (site.css). Onay mantığına dokunmaz, yalnız ölçer. */
+(function(){
+  var b=document.getElementById('cookieBar'), r=document.documentElement;
+  if(!b || !window.ResizeObserver) return;
+  new ResizeObserver(function(){ r.style.setProperty('--cerez-yuk', (b.classList.contains('show') ? b.offsetHeight : 0) + 'px'); }).observe(b);
+})();
+</script>
+<script type="application/json" id="miras-metinler">{"teyit":"16.11.2026","arayuz":{"NASIL":"Bu sonuç nasıl bulundu","AYRINTI":"Ayrıntı tablosu","DEGISTIR":"Değerleri değiştir","PDF":"PDF olarak indir","ONE_CIKAN":"Öne çıkan sonuçlar"},"hata":{"OLUM_BOS":"Ölüm tarihini girin.","OLUM_GECERSIZ":"Ölüm tarihini takvimde var olan bir gün olarak girin.","ES_SEC":"Sağ kalan eşin durumunu seçin.","KISI_SEC":"{kim} için durum seçin: daha yakın zümrede mirasçı olmadığından bu kişi hesaba girer.","DURUM_GECERSIZ":"{kim} için geçerli bir durum seçin.","TUR_GECERSIZ":"{kim} için kardeşlik ya da yakınlık türünü seçin.","LISTE_UZUN":"Bir düzeyde en çok 20 kişi girilebilir; sayıyı kontrol edin.","LISTE_GECERSIZ":"Kişi listesi okunamadı; sayfayı yenileyip yeniden girin.","DERINLIK":"Bu araçta en çok altı kuşak girilebilir; girdileri kontrol edin.","SAYI_GECERSIZ":"Kişi sayısını 0 ile 20 arasında bir tam sayı olarak girin.","TUTAR_GECERSIZ":"Tutarı 1.250.000,50 biçiminde ve eksi işareti olmadan girin.","AKTIF_GEREK":"Tutar hesabı için terekenin aktifini de girin."},"neden":{"ESKI_KANUN":"Ölüm 01.01.2002'den önce: mirasçılık ve mirasın geçişi ölüm tarihinde yürürlükte olan hükümlere, yani 743 sayılı Türk Kanunu Medenisine göre belirlenir (4722 sayılı Kanun m.17; TMK m.1029). Hesaplayıcı yalnız 4721 sayılı TMK'ya göre hesaplar.","TUMU_RET":"En yakın yasal mirasçıların tamamı mirası reddetmiş görünüyor. Bu durumda miras sonraki zümreye geçmez; sulh mahkemesince iflas hükümlerine göre tasfiye edilir ve tasfiye sonunda arta kalan değerler, mirası reddetmemişler gibi hak sahiplerine verilir (TMK m.612). Hesaplayıcı pay hesaplamaz.","RET_ZUMRE_ES":"Ana-baba ya da büyük ana-büyük baba zümresindeki mirasçıların tamamı mirası reddetmiş, sağ kalan eş ise mirası reddetmemiş görünüyor. Kanun bu durumda reddedilen payın eşe mi sonraki zümreye mi geçeceğini açıkça düzenlemiyor (TMK m.611–613); hesaplayıcı pay hesaplamaz.","VERI_HESAP":"Hesap yapılamadı; girdileri kontrol edip yeniden deneyin."},"uyari":{"RET_613":"Altsoyun tamamı mirası reddettiğinden payları sağ kalan eşe geçmiştir (TMK m.613). Eşin saklı payı metindeki 'diğer hâller' oranıyla (dörtte üç) gösterilmiştir; bu sonuç ayrıca değerlendirilmelidir.","ES_Z3_YORUM":"TMK m.497/5'in son cümlesine göre bir taraftaki büyük ana ve büyük babanın ikisi de ölmüşse payları diğer tarafa geçer. Hesaplayıcı, ölen büyük ana ya da büyük babanın payını önce kendi çocuğuna veren ilk cümleyi esas almıştır; son cümle farklı okunabildiğinden bu sonuç ayrıca değerlendirilmelidir.","KUZEN_ES":"Sağ kalan eşle birlikte 3. zümrede yalnız büyük ana ve büyük babalar ile onların çocukları mirasçı olur; amca, hala, dayı ve teyzelerin çocukları (kuzenler) hesaba katılmamıştır (TMK m.499/3, m.497/5).","CIKARMA":"Mirasçılıktan çıkarılan kişi mirastan pay alamaz ve tenkis davası açamaz; payı, mirasbırakan başka türlü tasarrufta bulunmamışsa, önce ölmüş gibi altsoyuna, altsoyu yoksa öteki yasal mirasçılara kalır; altsoyu saklı payını isteyebilir (TMK m.511). Çıkarmanın sebebi ve şekli (TMK m.510) ayrıca değerlendirilmelidir.","RET_SAKLI":"Mirası reddeden kişi miras açıldığında sağ değilmiş gibi hesaba katılmıştır (TMK m.611/1). Reddin süresi ve geçerliliği ile saklı pay ve tenkis bakımından etkisi ayrıca değerlendirilmelidir.","BORCA_BATIK":"Girilen borçlar terekenin aktifini aşıyor; mirasçılara kalacak net tereke yoktur. Ölüm tarihinde mirasbırakanın ödemeden aczi açıkça belli veya resmen tespit edilmişse miras reddedilmiş sayılır (TMK m.605/2); mirasın reddi ve süreleri ayrıca değerlendirilmelidir.","HESAP_SIFIR":"Hesap terekesi (TMK m.507, m.508) sıfır ya da eksi olduğundan saklı pay ve tasarruf edilebilir kısım tutarları gösterilmez.","KARDES_ESKI":"Ölüm 10.05.2007'den önce: o tarihte yürürlükte olan TMK m.506'nın 5650 sayılı Kanunla kaldırılan 3. bendi kardeşlere de saklı pay tanıyordu. Kardeşler mirasçı olduğundan hesaplayıcı saklı payları ve tasarruf edilebilir kısmı göstermez; yasal paylar aynıdır."},"adim":{"ES_Z1":"Sağ kalan eşin payı: {pay} (altsoyla birlikte; TMK m.499/1).","ES_Z2":"Sağ kalan eşin payı: {pay} (ana-baba zümresiyle birlikte; TMK m.499/2).","ES_Z3":"Sağ kalan eşin payı: {pay} (büyük ana-büyük babalar ve onların çocuklarıyla birlikte; TMK m.499/3).","ES_TEK":"Üç zümrede de mirasçı bulunmadığından mirasın tamamı ({pay}) sağ kalan eşe kalır (TMK m.499/3).","ES_613":"Altsoyun tamamı mirası reddettiğinden payları sağ kalan eşe geçer; eşin payı: {pay} (TMK m.613).","ES_RET":"Sağ kalan eş mirası reddettiğinden miras açıldığında sağ değilmiş gibi hesaba katılmaz (TMK m.611/1).","ES_CIKARMA":"Sağ kalan eş mirasçılıktan çıkarıldığından mirastan pay alamaz (TMK m.511/1).","ES_YOKSUN":"Sağ kalan eş mirastan yoksun olduğundan mirasçı olamaz (TMK m.578).","ZUMRE1":"Mirasbırakanın altsoyu bulunduğundan birinci zümre mirasçıdır; altsoyun payı: {pay}. Çocuklar eşit pay alır (TMK m.495/1–2).","ZUMRE1_YOK":"Girilen çocukların hiçbirinden mirasçı kalmadığından ana-baba zümresine geçilir (TMK m.496/1).","ZUMRE2":"Altsoy bulunmadığından ana ve baba zümresi mirasçıdır; zümrenin payı: {pay}. Ana ve baba eşit pay alır (TMK m.496/1).","ZUMRE2_YOK":"Ana-baba zümresinde de mirasçı bulunmadığından büyük ana ve büyük babalar zümresine geçilir (TMK m.497/1).","ZUMRE3":"Büyük ana ve büyük babalar zümresi mirasçıdır; zümrenin payı: {pay} (TMK m.497/1).","DEVLET":"Hiçbir zümrede mirasçı ve sağ kalan eş bulunmadığından miras ({pay}) Devlete geçer (TMK m.501).","BOLUM":"{kim}: {pay}, {n} kola eşit bölünür; her kol {her}.","HALEF_ONCE_OLDU":"{kim} mirasbırakandan önce öldüğünden payı ({pay}) kendi altsoyuna geçer (halefiyet; TMK m.495/3, m.496/2, m.497/2).","HALEF_RET":"{kim} mirası reddettiğinden payı ({pay}) sağ değilmiş gibi kendi altsoyuna geçer (TMK m.611/1).","HALEF_CIKARMA":"{kim} mirasçılıktan çıkarıldığından payı ({pay}) önce ölmüş gibi kendi altsoyuna geçer (TMK m.511/2).","HALEF_YOKSUN":"{kim} mirastan yoksun olduğundan payı ({pay}) önce ölmüş gibi kendi altsoyuna geçer (TMK m.579/2).","DUSER_ONCE_OLDU":"{kim} mirasbırakandan önce ölmüş ve mirasçı olacak altsoyu yok; bu kol için pay ayrılmaz.","DUSER_RET":"{kim} mirası reddetmiş ve mirasçı olacak altsoyu yok; payı öteki hak sahiplerine kalır (TMK m.611/1).","DUSER_CIKARMA":"{kim} mirasçılıktan çıkarılmış ve altsoyu yok; payı öteki yasal mirasçılara kalır (TMK m.511/2).","DUSER_YOKSUN":"{kim} mirastan yoksun ve mirasçı olacak altsoyu yok; bu kol için pay ayrılmaz (TMK m.578, m.579).","CIZGI_BOS":"{kim} ve altsoyu arasında mirasçı yok; bu pay aynı zümredeki diğer çizgiye geçer (TMK m.496/3, m.497/3).","TARAF":"{kim}: {pay} (TMK m.497/1).","TARAF_BOS":"{kim}: hiç mirasçı yok; bütün pay diğer tarafa geçer (TMK m.497/4)."},"sabit":{"SORUMLULUK":"Bu hesaplayıcı, girdiğiniz bilgilerden yola çıkarak 4721 sayılı Türk Medeni Kanunu'nun yasal mirasçılık ve saklı pay kurallarına göre miras paylarını gösteren bir bilgi aracıdır; hukuki görüş, danışmanlık veya avukatlık hizmeti değildir. Sonuç tahminidir: mirasçılık belgesi, mal rejiminin tasfiyesi, ölüme bağlı tasarrufların geçerliliği ve yorumu, denkleştirme ve somut dosyanın özellikleri sonucu değiştirebilir; mahkeme kararı esastır. Hesaplama tarayıcınızda yapılır; girdiğiniz bilgiler sunucuya gönderilmez ve saklanmaz.","TAHMIN":"Kesirler tamdır; yüzdeler iki ondalığa yuvarlanmıştır.","KAPSAM":"Hesaplanmayanlar: mal rejiminin tasfiyesi, denkleştirme (TMK m.669 vd.), vasiyetnamenin geçerliliği ve yorumu, tenkis sırası (TMK m.570), aile konutu ve ev eşyasının eşe özgülenmesi (TMK m.652), art mirasçılık, gaiplik ve yabancılık unsuru.","MAL_REJIMI":"Mal rejimi ölümle sona erer (TMK m.225); sağ kalan eşin mal rejiminden doğan alacağı (ör. artık değere katılma, TMK m.236) mirastan önce ayrılır. Tutar girdiyseniz terekenin aktifine mal rejimi tasfiyesinden sonra mirasbırakana kalan değeri yazın.","BOSANMA":"Boşanmış eş yasal mirasçı değildir; boşanma davası sürerken ölümde mirasçılardan biri davaya devam eder ve sağ kalan eşin kusuru ispatlanırsa eş yine mirasçı olamaz (TMK m.181). Bu durumda eşi 'Yok' olarak işaretleyin.","EVLATLIK":"Evlatlık ve altsoyu, evlat edinene kan hısımı gibi mirasçıdır; evlatlığı çocuk olarak girin (TMK m.500). Soybağı tanıma ya da hâkim hükmüyle kurulmuş evlilik dışı çocuk da baba yönünden evlilik içi çocuk gibi mirasçıdır (TMK m.498).","YUVARLAMA":"Tutarlar kuruşa aşağı yuvarlanır; payların toplamı hiçbir zaman girilen tutarı aşmaz, artan kuruşlar ayrı satırda gösterilir.","TENKIS":"Bu tablo oransal bir tahmindir: ölüme bağlı tasarruflardan sonra mirasçılara kalan tereke yasal paylar oranında bölünmüş ve her saklı paylı mirasçının saklı payından eksik kalan tutar gösterilmiştir. Tenkis, saklı pay tamamlanıncaya kadar önce ölüme bağlı tasarruflardan, sonra en yeniden eskiye doğru sağlararası kazandırmalardan yapılır (TMK m.570); kimin ne kadar tenkise uğrayacağı dava sonunda belirlenir."},"dayanak":{"YASAL":"TMK m.495–501 (yasal mirasçılar ve sağ kalan eşin payı).","SAKLI":"TMK m.505, m.506 (saklı pay ve tasarruf edilebilir kısım); 5650 sayılı Kanun.","HESAP":"TMK m.507, m.508, m.565 (hesap terekesi ve eklenecek kazandırmalar)."},"ekran":{"sonuc_baslik":"Miras payları ve saklı paylar","hesaplanmaz_baslik":"Bu girdilerle sonuç verilmiyor","kontrol":"Lütfen şu alanları kontrol edin:","buyuk":"{zumre} · {n} pay sahibi","zumre_0":"Yalnız sağ kalan eş mirasçı","zumre_1":"1. zümre: altsoy","zumre_2":"2. zümre: ana-baba ve onların altsoyu","zumre_3":"3. zümre: büyük ana-büyük babalar ve onların altsoyu","zumre_devlet":"Mirasçı yok: Devlet","alt_sakli":"Saklı paylar toplamı {sakli}; tasarruf edilebilir kısım {tek} ({tek_yuzde}).","alt_asildi":"Ölüme bağlı tasarruflar ve eklenecek kazandırmalar tasarruf edilebilir kısmı ({tek}) {asan} aşıyor: tenkise konu olabilecek tutar.","alt_asilmadi":"Girilen tasarruflar tasarruf edilebilir kısmı ({tek}) aşmıyor.","tablo_baslik":"Yasal miras payları ve saklı paylar","s_mirasci":"Mirasçı","s_pay":"Yasal pay","s_yuzde":"Yüzde","s_sakli_oran":"Saklı pay oranı","s_sakli":"Saklı pay","s_sakli_yuzde":"Saklı yüzde","s_pay_tl":"Miras payı (TL)","s_sakli_tl":"Saklı pay (TL)","sakli_yok_hucre":"yok","toplam":"Toplam","li_sakli":"Saklı paylar toplamı: {sakli} ({yuzde}); mirasbırakan bu kısma ölüme bağlı tasarrufla dokunamaz.","li_tek":"Tasarruf edilebilir kısım: {tek} ({yuzde}); vasiyet ya da miras sözleşmesiyle serbestçe bırakılabilir (TMK m.505).","tutar_baslik":"Tereke ve tasarruf edilebilir kısım","s_kalem":"Kalem","s_tutar":"Tutar","t_aktif":"Terekenin aktifi","t_borc":"Borçlar ve giderler (TMK m.507)","t_net":"Net tereke (ölüm günü)","t_eklenecek":"Eklenecek sağlararası kazandırmalar (TMK m.508)","t_hesap":"Hesap terekesi","t_sakli":"Saklı paylar toplamı","t_tek":"Tasarruf edilebilir kısım","t_yuvarlama":"Yuvarlamadan artan (saklı pay)","t_tasarruflar":"Ölüme bağlı tasarruflar ve eklenecek kazandırmalar","t_asan":"Tasarruf edilebilir kısmı aşan tutar (tenkise konu olabilecek)","t_yuvarlama_pay":"Yuvarlamadan artan (miras payı)","eksik_baslik":"Saklı payın karşılanmayan kısmı (oransal tahmin)","s_alacak":"Kalan terekeden payı","s_eksik":"Eksik kalan","h3_adim":"Adım adım hesap","h3_uyari":"Uyarılar ve notlar","dayanak_on":"Dayanak: ","surum":"Kurallar: 4721 sayılı TMK'nın güncel metni (son teyit {teyit})."},"kip":{"etiket":"Hesap türü","ad":{"yasal":"Yasal miras payı","ret":"Mirasın reddi hâlinde","cikarma":"Çıkarma ve yoksunluk hâlinde","sakli":"Saklı pay ve tasarruf edilebilir kısım"},"uzun":{"yasal":"Yasal miras payı","ret":"Mirasın reddi hâlinde paylar","cikarma":"Mirasçılıktan çıkarma ve mirastan yoksunluk hâlinde paylar","ret_cikarma":"Ret, mirasçılıktan çıkarma ve mirastan yoksunluk hâlinde paylar","sakli":"Saklı pay ve tasarruf edilebilir kısım"},"birlikte":"Ret ile çıkarma ya da yoksunluk aynı ailede birlikte varsa iki düğmeyi birlikte seçin.","aciklama":{"yasal":["Miras, mirasbırakanın ölümüyle mirasçılara kendiliğinden geçer; bu hesapta her kişi yalnız sağ ya da mirasbırakandan önce ölmüş olarak girilir. Ret, çıkarma ve yoksunluğun paylara etkisi ayrı hesap türlerindedir."],"ret":["Mirasçılar, mirasbırakanın ölümü ile mirası bir bütün olarak, kanun gereğince kazanır; mirasçı olmak için ayrıca kabul beyanı gerekmez (TMK m.599/1).","Yasal mirasçı mirası, kural olarak mirasbırakanın ölümünü öğrendiği tarihten başlayarak üç ay içinde sulh mahkemesine sözlü ya da yazılı beyanla, kayıtsız ve şartsız olarak reddedebilir (TMK m.605/1, m.606, m.609); süresi içinde reddetmeyen mirasçı mirası kayıtsız şartsız kazanmış olur (TMK m.610/1).","Ölüm tarihinde mirasbırakanın ödemeden aczi açıkça belli veya resmen tespit edilmişse miras reddedilmiş sayılır (hükmen ret, TMK m.605/2).","Bu hesap yalnız reddin paylara etkisini gösterir: reddedenin payı, kendisi sağ değilmiş gibi hak sahiplerine geçer (TMK m.611/1); reddin süresi ve geçerliliği değerlendirilmez. Reddeden kişiler için \"Mirası reddetti\" seçeneğini işaretleyin."],"cikarma":["Mirasçılıktan çıkarılan ve mirastan yoksun olan kişinin payı, önce ölmüş gibi kendi altsoyuna geçer (TMK m.511/2, m.579/2). Bu hesap yalnız paylara etkisini gösterir; çıkarmanın ve yoksunluğun sebebi, şekli ve geçerliliği değerlendirilmez. İlgili kişiler için \"Mirasçılıktan çıkarıldı\" ya da \"Mirastan yoksun\" seçeneğini işaretleyin."],"ret_cikarma":["Ret, mirasçılıktan çıkarma ve mirastan yoksunluk aynı hesapta birlikte gösterilir: reddedenin payı sağ değilmiş gibi hak sahiplerine (TMK m.611/1), çıkarılanın ve yoksunun payı önce ölmüş gibi altsoyuna geçer (TMK m.511/2, m.579/2). Hesap yalnız paylara etkisini gösterir; geçerlilikleri değerlendirilmez."],"sakli":["Saklı pay, mirasbırakanın ölüme bağlı tasarruflarla dokunamayacağı kısımdır: altsoy için yasal payın yarısı, ana ve babadan her biri için dörtte biri, sağ kalan eş için altsoy ya da ana-baba zümresiyle birlikteyse yasal payın tamamı, diğer hâllerde dörtte üçü (TMK m.506). Saklı paylar dışındaki kısım tasarruf edilebilir kısımdır (TMK m.505)."]},"baslik":{"yasal":"Yasal miras payları ve saklı paylar","ret":"Mirasın reddi hâlinde miras payları","cikarma":"Çıkarma ve yoksunluk hâlinde miras payları","ret_cikarma":"Ret, çıkarma ve yoksunluk hâlinde miras payları","sakli":"Saklı paylar ve tasarruf edilebilir kısım"},"satir":"Hesap türü: {kip}","duyuru":"Hesap türü: {kip}.","sutun":{"ret":["Ret olmasaydı","Ret sonrası"],"cikarma":["Çıkarma ve yoksunluk olmasaydı","Çıkarma ve yoksunlukla"],"ret_cikarma":["Bu durumlar olmasaydı","Bu durumlarla"]},"s_fark":"Fark","s_tl":"{s} (TL)","karsi_baslik":"Karşılaştırma: yasal paylar","karsi_not":"Aynı aile iki kez hesaplandı: önce seçilen durumlar hiç olmasaydı, sonra bu durumlarla. Saklı paylar, tasarruf edilebilir kısım ve tutarlar ikinci hesaba göredir.","karsi_ayni":"Bu hesap türünün durumlarından hiçbiri seçilmedi; iki hesap aynıdır. Kişilerin durumunu formdan değiştirebilirsiniz.","karsi_hesaplanmaz":"Seçilen durumlarla pay hesaplanmıyor; aşağıdaki tablo bu durumlar olmasaydı yasal payları gösterir.","buyuk_sonra":"{on}: {zumre} · {n} pay sahibi","tablo_sonra":"{s}: yasal paylar ve saklı paylar","fark_artis":"+{f} artış","fark_azalis":"−{f} azalış","fark_ayni":"değişmedi","fark_yeni":"+{f}: bu durumla pay alıyor","fark_ret":"mirası reddetti: pay almıyor","fark_cikarma":"mirasçılıktan çıkarıldı: pay almıyor","fark_yoksun":"mirastan yoksun: pay almıyor","fark_yok":"pay almıyor","fark_hesaplanmaz":"hesaplanmıyor","sakli_buyuk":"Tasarruf edilebilir kısım {tek} ({yuzde})","sakli_alt":"Saklı paylar toplamı {sakli} ({yuzde}); {zumre}.","hazir_etiket":"Hızlı başlangıç: hazır aile yapıları","hazir_not":"Seçtiğiniz yapı formu doldurur; ölüm tarihini girin, sayıları ve durumları sonra değiştirebilirsiniz.","hazir":{"es_cocuk":"Eş ve çocuklar","cocuklar":"Yalnız çocuklar","torunlar":"Önce ölen çocuğun torunları","es_ana_baba":"Eş, çocuk yok: ana-baba sağ","es_kardes":"Eş ve kardeşler","ana_baba_kardes":"Eş yok: ana-baba ve kardeşler","buyuk":"Büyük ana-büyük baba ve altsoyu"},"hazir_duyuru":"{ad} yapısı forma yerleştirildi; ölüm tarihini girin, gerekirse sayıları değiştirin."},"form":{"durum_etiket":"Durumu","durum_sag":"Sağ","durum_once_oldu":"Mirasbırakandan önce ölmüş","durum_ret":"Mirası reddetti","durum_cikarma":"Mirasçılıktan çıkarıldı","durum_yoksun":"Mirastan yoksun","tur_etiket_kardes":"Kardeşlik","tur_tam":"Ana-baba bir","tur_ana":"Yalnız ana bir","tur_baba":"Yalnız baba bir","tur_etiket_amca":"Kimin çocuğu","tur_ortak":"Büyük ana ve büyük babanın ortak çocuğu","tur_buyuk_ana":"Yalnız büyük ananın çocuğu","tur_buyuk_baba":"Yalnız büyük babanın çocuğu","cocuk_baslik":"{n}. çocuk","cocuk_alt_sayi":"Bu çocuğun çocuk sayısı (torun)","cocuk_alt_not":"Önce ölen çocuğun payı kendi çocuklarına geçer; ret, çıkarma ve yoksunluk hesaplarında reddeden, mirasçılıktan çıkarılan ya da mirastan yoksun çocuğun payı da.","torun_baslik":"{ust}. çocuğun {n}. çocuğu (torun)","torun_alt_sayi":"Bu torunun çocuk sayısı","torun_alt_not":"Torunun çocuklarının hepsi sağ sayılır; daha alt kuşak ayrıca girilmez.","k_baslik":"{n}. kardeş","k_alt_sayi":"Bu kardeşin çocuk sayısı (yeğen)","k_alt_not":"Yeğenlerin hepsi sağ sayılır.","at_baslik":"{n}. dayı / teyze","at_alt_sayi":"Bu dayı ya da teyzenin çocuk sayısı (kuzen)","at_alt_not":"Kuzenlerin hepsi sağ sayılır; sağ kalan eş varsa kuzenler mirasçı olmaz (TMK m.499/3).","bt_baslik":"{n}. amca / hala","bt_alt_sayi":"Bu amca ya da halanın çocuk sayısı (kuzen)","bt_alt_not":"Kuzenlerin hepsi sağ sayılır; sağ kalan eş varsa kuzenler mirasçı olmaz (TMK m.499/3).","sabit_ad":{"es":"Sağ kalan eş","ana":"Ana","baba":"Baba","at-ana":"Ana tarafı büyük ana","at-baba":"Ana tarafı büyük baba","bt-ana":"Baba tarafı büyük ana","bt-baba":"Baba tarafı büyük baba","devlet":"Devlet","altsoy":"Altsoy","at":"Ana tarafı","bt":"Baba tarafı","olum":"Ölüm tarihi","aktif":"Terekenin aktifi","borc":"Borçlar","eklenecek":"Eklenecek kazandırmalar","tasarruf":"Ölüme bağlı tasarruflar"},"c_ad":"{n}. çocuk","k_ad":"{n}. kardeş","at_ad":"Ana tarafı {n}. dayı / teyze","bt_ad":"Baba tarafı {n}. amca / hala","alt_ad":" › {n}. çocuğu","yakin_c":["","torun","torunun çocuğu","torunun torunu","alt kuşak","alt kuşak"],"yakin_k":["kardeş","yeğen","yeğenin çocuğu","alt kuşak","alt kuşak","alt kuşak"],"yakin_at":["","kuzen","kuzenin çocuğu","alt kuşak","alt kuşak","alt kuşak"],"yakin_bt":["","kuzen","kuzenin çocuğu","alt kuşak","alt kuşak","alt kuşak"],"kardes_tur_tam":"ana-baba bir kardeş","kardes_tur_ana":"yalnız ana bir kardeş","kardes_tur_baba":"yalnız baba bir kardeş"}}</script>
+<script src="/miras-hesap.js?v=b7256414" defer></script>
+<script src="/hesap-filigran.js?v=5c152da7" defer></script>
+<script src="/hesap-pdf.js?v=a8ea6622" defer></script>
+<script src="/hesap-arayuz.js?v=2d709c1d" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana Sayfa","item":"https://capar.av.tr/"},{"@type":"ListItem","position":2,"name":"Hesaplamalar","item":"https://capar.av.tr/hesaplamalar"},{"@type":"ListItem","position":3,"name":"Miras Payı ve Saklı Pay Hesaplama","item":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","@id":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#uygulama","name":"Miras Payı ve Saklı Pay Hesaplama","alternateName":["Miras payı hesaplama","Saklı pay hesaplama","Mirasçılık payı hesaplama","Tasarruf edilebilir kısım hesaplama"],"url":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama","description":"Yasal miras payı ve saklı pay hesabı (TMK m.495–506): eş, çocuk, torun, ana-baba, kardeş; tasarruf edilebilir kısım — Av. Bayram Can Çapar · ÇAPAR Hukuk","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","browserRequirements":"JavaScript","isAccessibleForFree":true,"inLanguage":"tr-TR","author":{"@type":"Person","@id":"https://capar.av.tr/#bayram-can-capar","name":"Av. Bayram Can Çapar","alternateName":["Bayram Can Çapar","Av. Bayram Can ÇAPAR","Avukat Bayram Can Çapar","Bayram Can Capar"],"honorificPrefix":"Av.","givenName":"Bayram Can","familyName":"Çapar","description":"Denizli Avukat Bayram Can Çapar - ÇAPAR HUKUK: Çapar Hukuk Bürosu kurucu avukatı.","disambiguatingDescription":"Bu site ve capar.av.tr, Av. Bayram Can Çapar'ın Denizli'deki ÇAPAR Hukuk Bürosu'na aittir. Büronun resmî iletişim bilgileri yalnız şunlardır: telefon 0258 241 55 54, e-posta info@capar.av.tr, adres Gazi Mustafa Kemal Bulvarı No:76 Kat:6, Merkezefendi / Denizli. Aynı soyadını taşıyan başka avukat ve büroların iletişim bilgileri bu büroya ait değildir. Büro cep telefonu numarası ve gmail.com uzantılı e-posta adresi kullanmaz.","url":"https://capar.av.tr/yazar/bayram-can-capar","mainEntityOfPage":"https://capar.av.tr/yazar/bayram-can-capar","image":"https://capar.av.tr/ekip/bayram-can-capar.jpg","jobTitle":"Avukat","hasOccupation":{"@type":"Occupation","name":"Avukat","occupationLocation":{"@type":"City","name":"Denizli"}},"worksFor":{"@id":"https://capar.av.tr/#buro"},"memberOf":[{"@id":"https://capar.av.tr/#buro"}],"alumniOf":{"@type":"CollegeOrUniversity","name":"Yaşar Üniversitesi Hukuk Fakültesi"},"knowsAbout":["Ticaret ve Şirketler Hukuku","Kambiyo Hukuku","Sigorta Hukuku","Gümrük Hukuku","İş ve Sosyal Güvenlik Hukuku","İcra ve İflas Hukuku","İş Kazası Tazminat Hukuku","Trafik Kazası Tazminat Hukuku","İdare Hukuku","Ceza Hukuku","Yükseköğretim Hukuku","Sağlık Hukuku","Gayrimenkul Hukuku","Miras Hukuku","Aile ve Boşanma Hukuku","Tüketici Hukuku","Sözleşme Hukuku","Vatandaşlık ve Yabancılar Hukuku","Vergi Hukuku","Kamulaştırma ve İmar Hukuku","Kira Hukuku","Rekabet Hukuku","Marka Hukuku","Banka ve Finans Hukuku","Kentsel Dönüşüm ve İnşaat Hukuku","Arabuluculuk ve Tahkim","Maden ve Enerji Hukuku"],"knowsLanguage":["tr","en"],"sameAs":["https://www.linkedin.com/in/av-bayram-can-%C3%A7apar/","https://www.facebook.com/cancpr/","https://www.wikidata.org/wiki/Q142187143"]},"creator":{"@type":"Person","@id":"https://capar.av.tr/#bayram-can-capar","name":"Av. Bayram Can Çapar","url":"https://capar.av.tr/yazar/bayram-can-capar"},"provider":{"@id":"https://capar.av.tr/#buro"},"isPartOf":{"@id":"https://capar.av.tr/#site"},"about":[{"@type":"Thing","name":"Türk hukuku"},{"@type":"Thing","name":"Miras hukuku"},{"@type":"Thing","name":"Yasal miras payı"},{"@type":"Thing","name":"Saklı pay"}],"spatialCoverage":{"@type":"Country","name":"Türkiye"},"featureList":["Zümre sistemi: altsoy, ana-baba ve onların altsoyu, büyük ana-büyük babalar ve onların altsoyu (TMK m.495–497)","Her derecede halefiyet; ana-baba bir ve yarım kan kardeş ayrımı","Sağ kalan eşin payı zümreye göre: 1/4, 1/2, 3/4 ya da tamamı (TMK m.499)","Ayrı hesap türleri: yasal miras payı; mirasın reddi hâlinde paylar; mirasçılıktan çıkarma ve mirastan yoksunluk hâlinde paylar; saklı pay ve tasarruf edilebilir kısım","Ret, çıkarma ve yoksunluk hâlinde paylar, bu durumlar olmasaydı paylarla karşılaştırmalı (TMK m.511, m.579, m.611–613)","Saklı pay ve tasarruf edilebilir kısım (TMK m.505, m.506)","Hesap terekesi, tasarrufların tasarruf edilebilir kısmı aşıp aşmadığı (TMK m.507, m.508)","Tam kesir aritmetiği; tutarlar kuruşa aşağı yuvarlanır"],"citation":["https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4721&MevzuatTur=1&MevzuatTertip=5","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4722&MevzuatTur=1&MevzuatTertip=5"],"dateModified":"2026-11-16","hasPart":{"@id":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#sss"}}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#sss","url":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#sss","inLanguage":"tr","isPartOf":{"@id":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#uygulama"},"mainEntity":[{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#sss-1","url":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#sss","name":"Sağ kalan eşin miras payı ne kadardır?","acceptedAnswer":{"@type":"Answer","text":"Eşin payı birlikte mirasçı olduğu zümreye göre değişir: altsoyla (çocuklar, torunlar) birlikte mirasın dörtte biri, ana-baba zümresiyle (ana, baba, kardeşler ve onların çocukları) yarısı, büyük ana-büyük babalar ve onların çocuklarıyla dörtte üçü; bunlar da yoksa mirasın tamamı. Eşle birlikte büyük ana-büyük babaların torunları (kuzenler) mirasçı olmaz. Dayanak: TMK m.499, m.497/5."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#sss-2","url":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#sss","name":"Saklı pay nedir, kimlerin saklı payı vardır?","acceptedAnswer":{"@type":"Answer","text":"Saklı pay, mirasbırakanın vasiyet ya da miras sözleşmesi gibi ölüme bağlı tasarruflarla dokunamayacağı kısımdır. Altsoy için yasal miras payının yarısı, ana ve babadan her biri için dörtte biri; sağ kalan eş için altsoy ya da ana-baba zümresiyle birlikte mirasçıysa yasal payın tamamı, diğer hâllerde dörtte üçüdür. Saklı paylar dışında kalan kısım tasarruf edilebilir kısımdır. Dayanak: TMK m.505, m.506."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#sss-3","url":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#sss","name":"Kardeşlerin saklı payı var mı?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Kardeşlere saklı pay tanıyan TMK m.506'nın 3. bendi 5650 sayılı Kanunla madde metninden çıkarıldı; Kanun 10.05.2007'de Resmî Gazete'de yayımlanarak yürürlüğe girdi. Bu tarihten sonraki ölümlerde kardeşler yasal mirasçı olabilir ama saklı payları yoktur. Dayanak: TMK m.506; 5650 sayılı Kanun m.2, m.3."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#sss-4","url":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#sss","name":"Evlatlık mirasçı olur mu?","acceptedAnswer":{"@type":"Answer","text":"Evet. Evlatlık ve altsoyu, evlat edinene kan hısımı gibi mirasçı olur ve evlatlığın kendi ailesindeki mirasçılığı da sürer; hesapta evlatlık çocuk olarak girilir. Evlat edinen ve hısımları ise evlatlığa mirasçı olmaz. Soybağı tanıma ya da hâkim hükmüyle kurulmuş evlilik dışı çocuk da baba yönünden evlilik içi çocuk gibi mirasçıdır. Dayanak: TMK m.500, m.498."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#sss-5","url":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#sss","name":"Mirası reddeden mirasçının payı kime geçer?","acceptedAnswer":{"@type":"Answer","text":"Yasal mirasçılardan biri mirası reddederse payı, miras açıldığında kendisi sağ değilmiş gibi hak sahiplerine geçer; reddeden çocuğun payı bu nedenle kendi altsoyuna, altsoyu yoksa öteki mirasçılara kalır. Altsoyun tamamı reddederse payları sağ kalan eşe geçer; en yakın yasal mirasçıların tamamı reddederse miras sulh mahkemesince iflas hükümlerine göre tasfiye edilir. Dayanak: TMK m.611, m.612, m.613."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#sss-6","url":"https://capar.av.tr/hesaplamalar/miras-payi-hesaplama#sss","name":"Mal rejimi tasfiyesi miras payını nasıl etkiler?","acceptedAnswer":{"@type":"Answer","text":"Mal rejimi eşlerden birinin ölümüyle sona erer ve önce mal rejimi tasfiye edilir: yasal mal rejiminde her eş ya da mirasçıları, diğer eşe ait artık değerin yarısı üzerinde hak sahibidir. Sağ kalan eş bu alacağını mirastan önce alır; terekeye yalnız mirasbırakana kalan değer girer ve eş ayrıca miras payını alır. Hesaplayıcı mal rejimini tasfiye etmez; tutar girerken tasfiye sonrası değeri yazın. Dayanak: TMK m.225, m.236."}}]}</script>
+</body>
+</html>

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/favicon.ico?v=9e46c4f3" sizes="48x48" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=2b653918" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=b561eee0" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3266fae5" />
+<link rel="preload" href="/fonts/hanken-grotesk-latin-v12.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/hanken-grotesk-latin-ext-v12.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/fraunces-latin-v38.woff2" as="font" type="font/woff2" crossorigin />
+<script>(function(){var d=document.documentElement;function u(s){d.setAttribute("data-tema",s==="koyu"?"koyu":"acik")}window.caparTema=u;var s,y;try{s=localStorage.getItem("capar-tema");y=localStorage.getItem("capar-yazi")}catch(e){}u(s);if(y==="2"||y==="3")d.setAttribute("data-yazi",y)})()</script>
+<link rel="stylesheet" href="/site.css?v=ca3fe4e6" />
+<link rel="alternate" type="text/plain" href="https://capar.av.tr/llms-en.txt" title="llms-en.txt" />
+<link rel="alternate" type="text/plain" href="https://capar.av.tr/llms2.txt" title="llms2.txt — full question-and-answer index" />
+<title>Contact — Av. Bayram Can Çapar · ÇAPAR Hukuk</title>
+<meta name="description" content="Contact Av. Bayram Can Çapar · ÇAPAR Hukuk: Gazi Mustafa Kemal Bulvarı No:76 Kat:6, Merkezefendi / Denizli, Türkiye · +90 258 241 55 54 · meeting request form." />
+<link rel="canonical" href="https://capar.av.tr/en/contact" />
+<link rel="alternate" hreflang="tr" href="https://capar.av.tr/iletisim" />
+<link rel="alternate" hreflang="en" href="https://capar.av.tr/en/contact" />
+<link rel="alternate" hreflang="x-default" href="https://capar.av.tr/iletisim" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Av. Bayram Can Çapar · ÇAPAR Hukuk" />
+<meta property="og:title" content="Contact — Av. Bayram Can Çapar · ÇAPAR Hukuk" />
+<meta property="og:description" content="Contact Av. Bayram Can Çapar · ÇAPAR Hukuk: Gazi Mustafa Kemal Bulvarı No:76 Kat:6, Merkezefendi / Denizli, Türkiye · +90 258 241 55 54 · meeting request form." />
+<meta property="og:url" content="https://capar.av.tr/en/contact" />
+<meta property="og:image" content="https://capar.av.tr/og-image.png?v=2" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<style>
+#iletisim-form .cta{display:inline-flex;align-items:center;gap:12px;background:var(--ink);color:var(--ivory);padding:15px 28px;border-radius:999px;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;transition:transform .3s,background .3s;white-space:nowrap;border:none;cursor:pointer;font-family:var(--sans)}
+#iletisim-form .cta:hover{background:var(--oxblood);transform:translateY(-2px)}
+#iletisim-form .cta.ghost{background:none;color:var(--ink);border:1px solid var(--line)}
+#iletisim-form .cta.ghost:hover{background:none;border-color:var(--accent);color:var(--accent)}
+#iletisim-form .cta svg{transition:transform .3s}
+#iletisim-form .cta:hover svg{transform:translateX(4px)}
+#iletisim-form .arac .git{margin-top:auto;padding-top:6px;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);font-weight:600}
+#iletisim-form /* MODAL — görüşme / randevu formu */
+  .modal-overlay{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(22,19,15,.5);backdrop-filter:blur(4px)}
+#iletisim-form .modal-overlay.open{display:flex}
+#iletisim-form .modal{background:var(--surface);color:var(--text);width:100%;max-width:520px;border-radius:10px;padding:clamp(24px,4vw,40px);position:relative;max-height:92vh;overflow-y:auto;box-shadow:0 30px 80px rgba(22,19,15,.32)}
+#iletisim-form .modal h3, #iletisim-form .modal h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.5rem,3vw,2rem);margin-bottom:6px}
+#iletisim-form .modal .m-sub{color:var(--ink-soft);font-size:.95rem;margin-bottom:22px;line-height:1.5}
+#iletisim-form .modal-close{position:absolute;top:14px;right:14px;width:36px;height:36px;border:1px solid var(--line);border-radius:50%;background:none;cursor:pointer;color:var(--ink);font-size:1rem;display:flex;align-items:center;justify-content:center;transition:.25s}
+#iletisim-form .modal-close:hover{background:var(--ink);color:var(--ivory)}
+#iletisim-form .field{margin-bottom:15px;transition:opacity .25s}
+#iletisim-form .field label{display:block;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:7px}
+#iletisim-form .field input, #iletisim-form .field textarea{width:100%;font-family:var(--sans);font-size:.95rem;color:var(--text);background:var(--surface-2);border:1px solid var(--line);border-radius:7px;padding:12px 14px;transition:border-color .25s}
+#iletisim-form .field input:focus, #iletisim-form .field textarea:focus{border-color:var(--accent)}
+#iletisim-form .field textarea{resize:vertical;min-height:104px}
+#iletisim-form .field-ipucu{display:block;margin-top:6px;font-size:.78rem;line-height:1.45;color:var(--ink-soft)}
+#iletisim-form .consent{display:flex;gap:10px;align-items:flex-start;font-size:.82rem;color:var(--ink-soft);margin:0 0 14px;line-height:1.5;cursor:pointer}
+#iletisim-form .consent input{margin-top:3px;flex:none;width:16px;height:16px;accent-color:var(--accent)}
+#iletisim-form .hp{position:absolute;left:-9999px;width:1px;height:1px}
+#iletisim-form .modal .cta{width:100%;justify-content:center;margin-top:4px}
+#iletisim-form .modal-note{font-size:.82rem;line-height:1.5;color:var(--text);background:rgba(203,167,92,.13);border-left:3px solid var(--gold);border-radius:0 6px 6px 0;padding:11px 14px;margin:0 0 20px}
+#iletisim-form .form-msg{font-size:.88rem;margin-top:12px;display:none}
+#iletisim-form .form-msg.err{display:block;color:#b0322c}
+#iletisim-form .form-done{display:none;text-align:center;padding:14px 0}
+#iletisim-form .form-done h3, #iletisim-form .form-done h2{margin-bottom:8px}
+#iletisim-form .adimlar{display:flex;list-style:none;gap:6px;margin:0 0 16px;padding:0;counter-reset:a}
+#iletisim-form .adimlar li{flex:1;display:flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;color:var(--ink-soft);padding:8px 0;border-top:3px solid var(--surface-2)}
+#iletisim-form .adimlar li::before{counter-increment:a;content:counter(a);display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:var(--surface-2);font-size:.75rem;flex:none}
+#iletisim-form .adimlar li.su, #iletisim-form .adimlar li.bit{border-top-color:var(--accent)}
+#iletisim-form .adimlar li.su{color:var(--accent)}
+#iletisim-form .adimlar li.su::before, #iletisim-form .adimlar li.bit::before{background:var(--accent);color:#fff}
+#iletisim-form .talep-turu{border:0;margin:0 0 14px;padding:0;min-width:0}
+#iletisim-form .talep-turu legend{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:700;margin:0 0 8px;padding:0}
+#iletisim-form .secim{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+#iletisim-form .secim label{position:relative;display:flex;align-items:center;justify-content:center;min-height:46px;font-size:.86rem;font-weight:600;cursor:pointer;color:var(--ink-soft);padding:0 8px;text-align:center}
+#iletisim-form .secim label+label{border-left:1px solid var(--line)}
+#iletisim-form .secim input{position:absolute;opacity:0;width:1px;height:1px}
+#iletisim-form .secim label.on{background:var(--accent);color:#fff}
+#iletisim-form .secim label:focus-within{outline:2px solid var(--accent);outline-offset:-4px}
+#iletisim-form .secim label.on:focus-within{outline-color:var(--gold)}
+#iletisim-form .ts-not{font-size:.8rem;color:var(--ink-soft);margin:0 0 12px}
+#iletisim-form .onay{display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:20px;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;background:#fff;text-align:left}
+#iletisim-form .onay svg{width:40px;height:40px;color:var(--accent)}
+#iletisim-form .onay-ozet{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:.9rem;margin:10px 0;width:100%}
+#iletisim-form .onay-ozet dt{color:var(--ink-soft)}
+#iletisim-form .onay-ozet dd{margin:0;overflow-wrap:anywhere}
+#iletisim-form .onay .sonra{font-size:.9rem;color:var(--ink-soft);margin-bottom:10px}
+#iletisim-form .onay .sonra a{color:var(--accent);font-weight:600}
+#iletisim-form .onay a.git{display:inline-flex;align-items:center;min-height:44px;color:var(--accent);font-weight:600}
+#iletisim-form .kvkk-link{background:none;border:none;padding:0;margin:0;font:inherit;color:var(--accent);text-decoration:underline;cursor:pointer}
+#iletisim-form .kvkk-row.done{background:rgba(28,58,94,.06);border-color:var(--accent)}
+#iletisim-form .kvkk-modal .modal{max-width:660px}
+#iletisim-form .kvkk-text{max-height:44vh;overflow-y:auto;border:1px solid var(--line);border-radius:8px;padding:16px 20px;margin:6px 0 4px;font-size:.88rem;line-height:1.62}
+#iletisim-form .kvkk-text h4{font-family:var(--serif);font-weight:500;font-size:1rem;color:var(--text);margin:16px 0 6px}
+#iletisim-form .kvkk-text h4:first-child{margin-top:0}
+#iletisim-form .kvkk-text p{margin:0 0 10px;color:var(--ink-soft)}
+#iletisim-form .kvkk-hint{font-size:.78rem;color:var(--ink-soft);margin:10px 0 14px}
+#iletisim-form .kvkk-hint.read{color:#1d7a4d}
+#iletisim-form .code-timer{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;font-family:var(--sans);font-weight:700;font-size:.95rem;letter-spacing:.02em;padding:9px 18px;border-radius:9px;margin:4px 0 18px;box-shadow:0 6px 18px rgba(28,58,94,.28)}
+#iletisim-form .code-timer #codeTimer{font-variant-numeric:tabular-nums;font-size:1.25rem;font-weight:800;color:var(--gold)}
+#iletisim-form #kvkkAccept:disabled{opacity:.4;cursor:not-allowed}
+/* sayfa içinde sabit form (ana sayfadaki pencere biçiminin yerine) */
+#iletisim-form #meetingModal.modal-overlay{position:static;inset:auto;display:block;opacity:1;visibility:visible;background:none;padding:0;backdrop-filter:none;z-index:auto;overflow:visible}
+#iletisim-form #meetingModal .modal{max-width:none;width:auto;margin:0;transform:none;box-shadow:none;max-height:none;overflow:visible}
+#iletisim-form #meetingModal .modal-close{display:none}
+.iletisim-buro{margin:0 0 28px;padding:20px 22px;background:var(--surface-2);border-radius:10px;line-height:1.8}
+.iletisim-buro a{color:var(--accent);font-weight:600}
+.iletisim-harita{position:relative;height:200px;border-radius:10px;overflow:hidden;margin:0 0 28px;background:linear-gradient(90deg,transparent 47%,rgba(255,255,255,.9) 47% 49%,transparent 49%),linear-gradient(0deg,transparent 58%,rgba(255,255,255,.9) 58% 61%,transparent 61%),linear-gradient(28deg,transparent 30%,rgba(255,255,255,.75) 30% 31.5%,transparent 31.5%),var(--surface-2)}
+.iletisim-harita .harita-igne{position:absolute;left:48%;top:42%;transform:translate(-50%,-100%);color:var(--accent)}
+.iletisim-harita .harita-igne svg{width:34px;height:34px}
+.iletisim-harita .harita-ortu{position:absolute;inset:auto 12px 12px 12px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:space-between;background:rgba(241,243,246,.95);border-radius:8px;padding:10px 12px;font-size:.8rem;color:var(--text-soft)}
+.iletisim-harita button{min-height:44px;padding:0 18px;border:0;border-radius:999px;background:var(--accent);color:#fff;font:inherit;font-size:.78rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;cursor:pointer}
+.iletisim-harita button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.iletisim-harita iframe{display:block;width:100%;height:100%;border:0}
+.iletisim-harita.acik{height:320px}
+/* gizli kartvizit (araclar/kartvizit.py) */
+.kv-sahne{width:min(510px,92vw);aspect-ratio:17/11;container-type:inline-size;perspective:1600px}.kv-kart{position:relative;width:100%;height:100%;cursor:pointer;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.2,.7,.2,1)}.kv-kart.cevrik{transform:rotateY(180deg)}.kv-yuz{position:absolute;inset:0;overflow:hidden;background:#F2F4F8;color:#1C3A5E;font-family:var(--sans,"Hanken Grotesk",system-ui,sans-serif);line-height:1.2;-webkit-backface-visibility:hidden;backface-visibility:hidden;box-shadow:0 18px 50px rgba(0,0,0,.35)}.kv-yuz::before{content:"";position:absolute;inset:2.75cqw;border:1.5px solid #C9A35B;pointer-events:none}.kv-yuz a{color:inherit;text-decoration:none}.kv-yuz a:focus-visible{outline:2px solid #C9A35B;outline-offset:2px}.kv-on{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.kv-logo{display:block;width:56cqw;height:auto}.kv-cizgi{display:block;width:14cqw;height:1.5px;background:#1C3A5E;margin:5.5cqw 0 3.6cqw}.kv-ad{display:block;font-size:max(2.6cqw,10px);font-weight:500;letter-spacing:.24em;margin-right:-.24em;white-space:nowrap}.kv-on .kv-web{display:block;font-size:max(2.6cqw,10px);letter-spacing:.14em;color:#886A2B;margin-top:2.6cqw}.kv-arka{transform:rotateY(180deg);display:flex;flex-direction:column;justify-content:center;padding:0 9cqw;text-align:left}.kv-kisi{display:block;font-size:3.7cqw;font-weight:600;letter-spacing:.14em}.kv-buro{display:block;font-size:max(2.2cqw,8.5px);letter-spacing:.32em;color:#886A2B;margin-top:1.2cqw}.kv-arka .kv-cizgi{width:10cqw;margin:4cqw 0}.kv-adres,.kv-iletisim{display:block;font-size:3cqw;line-height:1.5}.kv-iletisim{margin-top:2.6cqw;line-height:1.6}.kv-iletisim b{display:inline-block;width:3.6cqw;color:#886A2B;font-weight:600}.kv-arka .kv-web{position:absolute;right:9cqw;bottom:7.5cqw;font-size:max(2.5cqw,9.5px);letter-spacing:.14em;color:#886A2B}#kartvizitTetik{touch-action:manipulation;-webkit-tap-highlight-color:transparent}.kv-katman{position:fixed;inset:0;z-index:10000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:16px;background:rgba(12,24,40,.8)}.kv-kapat{position:absolute;top:12px;right:12px;width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;font:400 28px/1 system-ui,sans-serif;cursor:pointer}.kv-araclar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 14px;max-width:92vw;color:#E8ECF2;font-size:.85rem}.kv-araclar button{min-height:44px;padding:0 20px;border:1px solid #C9A35B;border-radius:999px;background:transparent;color:#fff;font:inherit;font-weight:600;letter-spacing:.04em;cursor:pointer}.kv-kaydet{display:flex;flex-wrap:wrap;justify-content:center;gap:0 14px}.kv-kaydet>span{padding:10px 0}.kv-araclar a{display:inline-block;padding:10px 2px;color:#E2C68C}.kv-katman button:focus-visible,.kv-araclar a:focus-visible{outline:2px solid #fff;outline-offset:2px}@media (prefers-reduced-motion:reduce){.kv-kart{transition:none}}
+</style>
+<style id="gecici-form-stil">#iletisim-form>*:not(.gecici-form-not){display:none!important}.gecici-form-not{border:1px solid currentColor;border-radius:10px;padding:18px 20px;margin:8px 0 24px;line-height:1.6}.gecici-form-not a{font-weight:600}</style></head>
+<body>
+<a class="atla" id="atla" href="#icerik" data-tr="İçeriğe geç" data-en="Skip to content">Skip to content</a>
+<header class="topbar">
+  <div class="wrap row">
+    <a href="/en/" data-href-tr="/" data-href-en="/en/" class="brand">
+      <img class="logo" src="/logo-ust.svg?v=8334ed51" alt="Av. Bayram Can Çapar · ÇAPAR Hukuk" width="175" height="44" decoding="async" />
+    </a>
+    <div class="hdr-right">
+            <nav class="ust-gezinti" id="ust-gezinti" aria-labelledby="ust-gezinti-ad">
+      <form class="ust-ara-form" role="search" action="/en/articles" method="get"><input type="search" name="ara" maxlength="120" aria-label="Search articles" data-aria-tr="Makalelerde ara" data-aria-en="Search articles" placeholder="Search articles: e.g. reinstatement" data-ph-tr="Makalelerde ara: ör. işe iade" data-ph-en="Search articles: e.g. reinstatement" /><button type="submit" data-tr="Ara" data-en="Search">Search</button></form>
+      <a href="/en/articles" data-href-tr="/makaleler" data-href-en="/en/articles" data-tr="Makaleler" data-en="Articles">Articles</a>
+      <a href="/en/#alanlar" data-href-tr="/#alanlar" data-href-en="/en/#alanlar" data-tr="Çalışma Alanları" data-en="Practice Areas">Practice Areas</a>
+      <a href="/en/legislation" data-href-tr="/mevzuat" data-href-en="/en/legislation" data-tr="Mevzuat" data-en="Legislation">Legislation</a>
+      <a href="/en/press" data-href-tr="/basinda" data-href-en="/en/press" data-tr="Basında Biz" data-en="In the Press">In the Press</a>
+      <a href="/en/calculations" data-href-tr="/hesaplamalar" data-href-en="/en/calculations" data-tr="Hesaplamalar" data-en="Calculators">Calculators</a>
+      <a class="ust-ara" href="/en/articles#ara" data-href-tr="/makaleler#ara" data-href-en="/en/articles#ara"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="ust-ara-metin" data-tr="Makalelerde ara" data-en="Search articles">Search articles</span></a>
+      <a class="ust-ek" href="/en/application-routes" data-href-tr="/basvuru-yollari" data-href-en="/en/application-routes" data-tr="Başvuru Yolları" data-en="Where to Apply">Where to Apply</a>
+      <a class="ust-ek" href="/en/glossary" data-href-tr="/sozluk" data-href-en="/en/glossary" data-tr="Hukuk Sözlüğü" data-en="Glossary">Glossary</a>
+      <a class="ust-ek" href="/en/turkish-citizens-abroad" data-href-tr="/yurt-disinda-yasayanlar" data-href-en="/en/turkish-citizens-abroad" data-tr="Yurt dışında yaşayanlar" data-en="Turkish citizens living abroad">Turkish citizens living abroad</a>
+      <a class="ust-ek" href="/en/#hakkinda" data-href-tr="/#hakkinda" data-href-en="/en/#hakkinda" data-tr="Hakkımızda" data-en="About Us">About Us</a>
+      <a class="ust-ek" href="/en/#ekip" data-href-tr="/#ekip" data-href-en="/en/#ekip" data-tr="Ekibimiz" data-en="Our Team">Our Team</a>
+      <a href="/en/contact" data-href-tr="/iletisim" data-href-en="/en/contact" data-tr="İletişim" data-en="Contact" aria-current="page">Contact</a>
+      <div class="ust-tema" role="group" aria-label="Theme" data-aria-tr="Tema" data-aria-en="Theme"><span class="ust-tema-ad" aria-hidden="true" data-tr="Tema" data-en="Theme">Theme</span><span class="oa-seg"><button type="button" data-tema-sec="acik" aria-pressed="false" data-tr="Açık" data-en="Light">Light</button><button type="button" data-tema-sec="koyu" aria-pressed="false" data-tr="Koyu" data-en="Dark">Dark</button></span></div>      </nav>
+      <span id="ust-gezinti-ad" hidden data-tr="Site menüsü" data-en="Site menu">Site menu</span>
+      <span class="ust-eylem" data-konum="ust"><a class="ust-tel" href="tel:+902582415554" data-tr="0258 241 55 54" data-en="+90 258 241 55 54">+90 258 241 55 54</a><a class="ust-gt iletisim-mesaj" href="/en/contact" data-href-tr="/iletisim" data-href-en="/en/contact" data-tr="Görüşme Talep Et" data-en="Request a Meeting">Request a Meeting</a></span>
+      <div class="lang" role="group" aria-label="Language">
+        <a id="btn-tr" href="/iletisim" hreflang="tr" lang="tr">TR</a>
+        <a id="btn-en" class="active" href="/en/contact" hreflang="en" lang="en">EN</a>
+      </div>
+      <div class="tema-sec"><button type="button" class="tema-dugme" aria-expanded="false" aria-controls="tema-menu" aria-label="Theme" data-aria-tr="Tema" data-aria-en="Theme"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></button><div class="tema-menu" id="tema-menu" role="group" aria-label="Theme" data-aria-tr="Tema" data-aria-en="Theme" hidden><button type="button" data-tema-sec="acik" aria-pressed="false" data-tr="Açık" data-en="Light">Light</button><button type="button" data-tema-sec="koyu" aria-pressed="false" data-tr="Koyu" data-en="Dark">Dark</button></div></div><script>(function(){var d=document.documentElement,k=document.querySelector(".tema-sec"),b=k&&k.querySelector(".tema-dugme"),m=k&&k.querySelector(".tema-menu");function i(){var s=d.getAttribute("data-tema")||"acik";document.querySelectorAll("[data-tema-sec]").forEach(function(x){x.setAttribute("aria-pressed",x.getAttribute("data-tema-sec")===s?"true":"false")})}function a(v){if(m){m.hidden=!v;b.setAttribute("aria-expanded",v?"true":"false")}}if(b)b.addEventListener("click",function(){a(m.hidden)});document.addEventListener("click",function(e){var x=e.target.closest?e.target.closest("[data-tema-sec]"):null;if(x){var s=x.getAttribute("data-tema-sec");try{localStorage.setItem("capar-tema",s)}catch(e){}if(window.caparTema)caparTema(s);document.dispatchEvent(new Event("capar-tema"));return}if(m&&!m.hidden&&!k.contains(e.target))a(false)});document.addEventListener("capar-tema",i);document.addEventListener("keydown",function(e){if(e.key==="Escape"&&m&&!m.hidden){a(false);b.focus()}});i()})();</script>
+      <button type="button" class="ust-menu-dugme" aria-expanded="false" aria-controls="ust-gezinti" aria-labelledby="ust-gezinti-dugme-ad"><span></span><span></span><span></span></button><span id="ust-gezinti-dugme-ad" hidden data-tr="Menü" data-en="Menu">Menu</span>
+      <style id="ust-menu">#ara{scroll-margin-top:90px}.topbar .wrap{max-width:1360px}.ust-gezinti{display:flex;align-items:center;gap:18px}.ust-gezinti a{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-soft);text-decoration:none;white-space:nowrap;padding:0;min-height:44px;display:inline-flex;align-items:center;transition:color .25s}.ust-gezinti a:hover{color:var(--accent)}.ust-ara{justify-content:center;gap:10px;min-width:44px;margin:0 -8px}.ust-ara-form{display:none}.ust-eylem{display:none}@media(min-width:900px){.ust-eylem{display:flex;align-items:center;gap:12px}.ust-tel{font-family:var(--sans);font-weight:600;font-size:.88rem;color:var(--text);white-space:nowrap;display:inline-flex;align-items:center;min-height:44px}.ust-gt{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;background:var(--accent);color:#fff;font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;transition:background .25s}.ust-gt:hover{background:var(--accent-deep)}}.ust-ara svg{display:block;flex:none}.ust-ara-metin{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.ust-menu-dugme{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:0 11px;border:0;background:none;cursor:pointer}.ust-menu-dugme span{display:block;width:22px;height:2px;background:var(--text);transition:transform .25s,opacity .25s}.ust-menu-dugme[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}.ust-menu-dugme[aria-expanded="true"] span:nth-child(2){opacity:0}.ust-menu-dugme[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}@media(max-width:1359.98px){.ust-menu-dugme{display:inline-flex}.ust-gezinti{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:4px 24px 12px;background:var(--surface);border-bottom:1px solid var(--line);box-shadow:0 14px 28px rgba(26,31,38,.12)}.ust-gezinti.acik{display:flex}.ust-gezinti a{display:flex;align-items:center;justify-content:space-between;font-size:.9rem;letter-spacing:.04em;min-height:48px;border-bottom:1px solid var(--line)}.ust-gezinti a::after{content:"\203A";font-weight:400}.ust-gezinti a:last-child{border-bottom:0}.ust-gezinti .ust-ara{display:none}.ust-ara-form{display:flex;gap:8px;margin:12px 0 6px}.ust-ara-form input{flex:1;min-width:0;height:44px;font:inherit;font-size:1rem;padding:0 12px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--text)}.ust-ara-form button{height:44px;padding:0 16px;border:0;border-radius:6px;background:var(--ink);color:#fff;font:inherit;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;cursor:pointer}}.brand{display:flex;align-items:center;flex:none}.brand .logo{display:block;height:44px;width:auto}@media(max-width:480px){.brand .logo{height:40px}}@media(max-width:360px){.brand .logo{height:34px}}.lang a{font-family:var(--sans);font-weight:600;font-size:.75rem;letter-spacing:.06em;color:var(--text-soft);padding:0 11px;height:100%;line-height:1;display:inline-flex;align-items:center;text-decoration:none;transition:background .25s,color .25s}.lang a+a{border-left:1px solid var(--line)}.lang a.active{background:var(--accent);color:#fff}.lang a:hover:not(.active){color:var(--accent)}@media(max-width:400px){.hdr-right{gap:7px}.lang a,.lang button{padding:0 9px}.row:has(#btn-de) .brand .logo{height:34px}.lang:has(#btn-de) a{padding:0 6px}.hdr-right:has(#btn-de){gap:4px}}/* mobil menü eş güdümü (2026-11-14) */@media(min-width:1360px){.ust-gezinti .ust-ek{display:none}}@media(min-width:1360px){.ust-gezinti{gap:14px}}@media(max-width:1359.98px){.ust-gezinti{max-height:calc(100vh - 80px);overflow-y:auto;overscroll-behavior:contain}html.menu-acik{overflow:hidden}.ust-gezinti a[aria-current="page"]{color:var(--accent)}}@media(max-width:480px){.hdr-right .back+.back{display:none}}</style><script>/* H-3 menü */(function(){var d=document.querySelector('.ust-menu-dugme'),n=document.getElementById('ust-gezinti');if(!d||!n)return;var f=n.querySelector('form'),q=f&&f.querySelector('input'),r=document.documentElement;function l(){return r.lang==='en'?'en':'tr';}function b(){if(!n.classList.contains('acik'))return;var h=innerHeight;['.mobil-cubuk','#cookieBar'].forEach(function(s){var e=document.querySelector(s);if(!e)return;var c=getComputedStyle(e),t=e.getBoundingClientRect().top;if(c.display!=='none'&&c.visibility!=='hidden'&&t>0&&t<h)h=t;});n.style.maxHeight=Math.max(150,h-n.getBoundingClientRect().top)+'px';}function k(a,o){n.classList.toggle('acik',a);r.classList.toggle('menu-acik',a);d.setAttribute('aria-expanded',a?'true':'false');if(a){if(f&&q){f.action=l()==='en'?'/en/articles':'/makaleler';q.placeholder=q.getAttribute('data-ph-'+l())||q.placeholder;}b();if(o){var g=n.querySelector('input,a');if(g)g.focus();}}}d.addEventListener('click',function(e){k(d.getAttribute('aria-expanded')!=='true',e.detail===0);});n.addEventListener('click',function(e){if(e.target.closest('a'))k(false);});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&n.classList.contains('acik')){k(false);d.focus();}});document.addEventListener('click',function(e){if(n.classList.contains('acik')&&!n.contains(e.target)&&!d.contains(e.target))k(false);});addEventListener('resize',function(){if(innerWidth>1359&&n.classList.contains('acik'))k(false);else b();});})();</script>
+    </div>
+  </div>
+</header>
+<main id="icerik">
+  <section class="page-head wrap">
+    <h1 data-tr="İletişim" data-en="Contact">Contact</h1>
+    <p class="lead" data-tr="Görüşme talebiniz için formu doldurabilir ya da telefon ve e-postayla ulaşabilirsiniz." data-en="To request a meeting, fill in the form or reach us by phone or email.">To request a meeting, fill in the form or reach us by phone or email.</p>
+  </section>
+  <section class="content wrap">
+    <div class="article">
+      <div class="iletisim-buro" data-konum="sayfa">
+        <strong id="kartvizitTetik" tabindex="0" lang="tr">Av. Bayram Can ÇAPAR - ÇAPAR HUKUK BÜROSU</strong><br>
+        <span lang="tr">Saraylar Mah. Gazi Mustafa Kemal Bulvarı, Memişoğlu Apartmanı No:76 Kat:6, 20010 Merkezefendi / Denizli</span>, Türkiye<br>
+        <a href="tel:+902582415554">+90 258 241 55 54</a> · <a href="mailto:info@capar.av.tr">info@capar.av.tr</a><br>
+        <span data-tr="Hafta içi 09:00–18:00, Cumartesi 10:00–15:00" data-en="Weekdays 09:00–18:00, Saturday 10:00–15:00">Weekdays 09:00–18:00, Saturday 10:00–15:00</span> · <a href="https://maps.google.com/?cid=3283744558559138001" target="_blank" rel="noopener" data-tr="Haritada görüntüle" data-en="View on map">View on map</a>
+        <br><small class="ayirt-not" data-tr="Bu site ve capar.av.tr, Av. Bayram Can Çapar&#039;ın Denizli&#039;deki ÇAPAR Hukuk Bürosu&#039;na aittir. Büronun resmî iletişim bilgileri yalnız şunlardır: telefon 0258 241 55 54, e-posta info@capar.av.tr, adres Gazi Mustafa Kemal Bulvarı No:76 Kat:6, Merkezefendi / Denizli. Büro cep telefonu numarası ve gmail.com uzantılı e-posta adresi kullanmaz." data-en="This website (capar.av.tr) belongs to ÇAPAR Hukuk, the law office of Av. Bayram Can Çapar in Denizli, Türkiye. The office&#039;s only official contact details are: phone +90 258 241 55 54, email info@capar.av.tr, address Gazi Mustafa Kemal Bulvarı No:76 Kat:6, Merkezefendi / Denizli. The office does not use a mobile phone number or a gmail.com email address.">This website (capar.av.tr) belongs to ÇAPAR Hukuk, the law office of Av. Bayram Can Çapar in Denizli, Türkiye. The office&#039;s only official contact details are: phone +90 258 241 55 54, email info@capar.av.tr, address Gazi Mustafa Kemal Bulvarı No:76 Kat:6, Merkezefendi / Denizli. The office does not use a mobile phone number or a gmail.com email address.</small>
+      </div>
+      <div class="iletisim-harita" id="iletisimHarita" data-harita="https://www.google.com/maps?q=37.7811021,29.0841854&amp;z=17&amp;output=embed">
+        <span class="harita-igne" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 2.5c-3.6 0-6.5 2.9-6.5 6.5 0 4.6 6.5 12.5 6.5 12.5s6.5-7.9 6.5-12.5c0-3.6-2.9-6.5-6.5-6.5z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+        <div class="harita-ortu"><span data-tr="Harita, siz istemeden yüklenmez (dış istek yok)." data-en="The map does not load unless you ask for it (no external request).">The map does not load unless you ask for it (no external request).</span><button type="button" id="haritaDugme" data-tr="Haritayı göster" data-en="Show the map">Show the map</button></div>
+      </div>
+      <div id="iletisim-form"><div class="gecici-form-not" role="note"><p data-tr="İletişim formu geçici olarak kapalıdır. Bize telefonla ya da e-postayla ulaşabilirsiniz." data-en="The contact form is temporarily unavailable. Please reach us by phone or e-mail.">The contact form is temporarily unavailable. Please reach us by phone or e-mail.</p><p><a href="tel:+902582415554">+90 258 241 55 54</a> · <a href="mailto:info@capar.av.tr">info@capar.av.tr</a></p></div>
+<noscript><p class="iletisim-js-yok">The form requires JavaScript; please call or email us.</p></noscript>
+<div class="modal-overlay" id="meetingModal">
+  <div class="modal">
+    <button class="modal-close" type="button" onclick="closeMeeting()" aria-label="Close">✕</button>
+    <div id="meetingFormWrap">
+      <h2 id="mTitle" data-tr="Görüşme Talep Et" data-en="Request a Meeting">Request a Meeting</h2>
+      <ol class="adimlar" aria-label="Form steps"><li class="su" aria-current="step" data-tr="Bilgiler" data-en="Details">Details</li><li data-tr="E-posta kodu" data-en="Email code">Email code</li><li data-tr="Onay" data-en="Confirmation">Confirmation</li></ol>
+      <p class="m-sub" data-tr="Bilgilerinizi ve ulaşmak istediğiniz konuyu bırakın; en kısa sürede size dönüş yapalım." data-en="Leave your details and the subject of your request; we will get back to you shortly.">Leave your details and the subject of your request; we will get back to you shortly.</p>
+      <p class="modal-note" data-tr="Hukuki danışmanlık, ilgili yıla ait Avukatlık Asgari Ücret Tarifesi (AAÜT) uyarınca ücrete tabidir. Bu form üzerinden hukuki görüş verilmez; talebiniz yalnızca görüşme/randevu oluşturmak için alınır." data-en="Legal counsel is subject to a fee in accordance with that year's Minimum Attorney Fee Tariff (AAÜT). No legal opinion is provided through this form; your request is received solely to arrange a meeting/appointment.">Legal counsel is subject to a fee in accordance with that year's Minimum Attorney Fee Tariff (AAÜT). No legal opinion is provided through this form; your request is received solely to arrange a meeting/appointment.</p>
+      <form id="meetingForm" method="post" onsubmit="return submitMeeting(event)" novalidate>
+        <fieldset class="talep-turu">
+          <legend data-tr="Talep türü" data-en="Request type">Request type</legend>
+          <div class="secim">
+            <label class="on" id="talepKonuEt"><input type="radio" name="talepTuru" form="talepTuruFormsuz" id="talepKonu" value="konu" checked onchange="talepTuruSec()" /><span data-tr="Konuyu yazarak" data-en="With a subject">With a subject</span></label>
+            <label id="talepRandevuEt"><input type="radio" name="talepTuru" form="talepTuruFormsuz" id="talepRandevu" value="randevu" onchange="talepTuruSec()" /><span data-tr="Yalnız randevu" data-en="Appointment only">Appointment only</span></label>
+          </div>
+          <input type="checkbox" name="randevu" id="randevuOnly" aria-labelledby="talepRandevuEt" hidden />
+        </fieldset>
+        <div class="field">
+          <label for="mAd" data-tr="Ad Soyad" data-en="Full Name">Full Name</label>
+          <input type="text" name="ad" id="mAd" required maxlength="100" autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="mEposta" data-tr="E-posta" data-en="Email">Email</label>
+          <input type="email" name="eposta" id="mEposta" required maxlength="120" autocomplete="email" />
+        </div>
+        <div class="field">
+          <label for="mTelefon" data-tr="Telefon" data-en="Phone">Phone</label>
+          <input type="tel" name="telefon" id="mTelefon" required minlength="9" maxlength="20" inputmode="tel" pattern="\+?[0-9 \(\)\-]{8,19}" autocomplete="tel" aria-describedby="mTelefonIpucu" oninput="this.value=this.value.replace(/[^0-9+ ()\-]/g,'')" />
+          <small class="field-ipucu" id="mTelefonIpucu" data-tr="Türkiye cep numarası (05XX XXX XX XX) ya da ülke kodlu yurt dışı numarası (+XX XXX XXX XXXX)" data-en="Turkish mobile number (05XX XXX XX XX) or an international number with country code (+XX XXX XXX XXXX)">Turkish mobile number (05XX XXX XX XX) or an international number with country code (+XX XXX XXX XXXX)</small>
+        </div>
+        <div class="field" id="mesajFieldWrap">
+          <label for="mesajField" data-tr="Görüşmek istediğiniz konu" data-en="Subject you wish to discuss">Subject you wish to discuss</label>
+          <textarea name="mesaj" id="mesajField" required maxlength="3000"></textarea>
+        </div>
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <input type="hidden" name="ts" id="formTs" />
+        <div class="consent kvkk-row" id="kvkkRow">
+          <input type="checkbox" name="kvkk" id="kvkkChk" required aria-labelledby="kvkkChkMetin" onclick="event.preventDefault();openKvkk();" />
+          <span>
+            <span id="kvkkChkMetin" data-tr="KVKK kapsamında kişisel verilerimin işlenmesini ve saklanmasını kabul ediyorum." data-en="I accept the processing and storage of my personal data under the KVKK.">I accept the processing and storage of my personal data under the KVKK.</span>
+            <button type="button" class="kvkk-link" onclick="openKvkk()" data-tr="Aydınlatma ve açık rıza metnini oku" data-en="Read the notice &amp; consent text">Read the notice &amp; consent text</button>
+          </span>
+        </div>
+        <div class="consent kvkk-row" id="ucretRow">
+          <input type="checkbox" name="ucret" id="ucretChk" required aria-labelledby="ucretChkMetin" onclick="event.preventDefault();openUcret();" />
+          <span>
+            <span id="ucretChkMetin" data-tr="Danışma/görüşme hizmetinin Avukatlık Asgari Ücret Tarifesi uyarınca ücrete tabi olduğunu ve bu ücreti ödemeyi kabul ediyorum." data-en="I accept that the consultation/meeting service is subject to a fee under the Minimum Attorney Fee Tariff, and I agree to pay this fee.">I accept that the consultation/meeting service is subject to a fee under the Minimum Attorney Fee Tariff, and I agree to pay this fee.</span>
+            <button type="button" class="kvkk-link" onclick="openUcret()" data-tr="Ücret bilgilendirme metnini oku" data-en="Read the fee information text">Read the fee information text</button>
+          </span>
+        </div>
+        <p class="ts-not" id="tsNot" data-tr="Güvenlik doğrulaması forma dokunduğunuzda yüklenir." data-en="The security check loads when you touch the form.">The security check loads when you touch the form.</p>
+        <div id="turnstileBox" style="margin:0 0 14px"></div>
+        <button type="submit" class="cta"><span id="submitLabel" data-tr="Devam: e-posta kodu" data-en="Next: email code">Next: email code</span></button>
+        <p class="form-msg" id="formMsg"></p>
+      </form>
+    </div>
+    <div id="meetingCode" style="display:none">
+      <h2 data-tr="E-posta doğrulama" data-en="Email verification">Email verification</h2>
+      <ol class="adimlar" aria-label="Form steps"><li class="bit" data-tr="Bilgiler" data-en="Details">Details</li><li class="su" aria-current="step" data-tr="E-posta kodu" data-en="Email code">Email code</li><li data-tr="Onay" data-en="Confirmation">Confirmation</li></ol>
+      <p class="m-sub" data-tr="E-posta adresinize 6 haneli bir doğrulama kodu gönderdik. Talebinizi tamamlamak için kodu girin." data-en="We sent a 6-digit verification code to your email. Enter it to complete your request.">We sent a 6-digit verification code to your email. Enter it to complete your request.</p>
+      <p class="code-timer" id="codeTimerWrap"><span data-tr="Kalan süre" data-en="Time left">Time left</span>: <span id="codeTimer">4:00</span></p>
+      <div class="field">
+        <label for="codeInput" data-tr="Doğrulama kodu" data-en="Verification code">Verification code</label>
+        <input type="text" id="codeInput" inputmode="numeric" maxlength="6" pattern="[0-9]*" autocomplete="one-time-code" oninput="this.value=this.value.replace(/[^0-9]/g,'')" />
+        <small class="field-ipucu" id="codeSpamIpucu" data-tr="Kod birkaç dakika içinde gelmezse spam ya da gereksiz klasörünü kontrol edin." data-en="If the code does not arrive within a few minutes, please check your spam or junk folder.">If the code does not arrive within a few minutes, please check your spam or junk folder.</small>
+      </div>
+      <button type="button" class="cta" id="codeVerifyBtn" onclick="verifyCode()"><span data-tr="Doğrula ve gönder" data-en="Verify &amp; send">Verify &amp; send</span></button>
+      <p class="form-msg" id="codeMsg"></p>
+      <button type="button" class="kvkk-link" style="margin-top:12px" onclick="resendCode()" data-tr="Kodu tekrar gönder" data-en="Resend code">Resend code</button>
+    </div>
+    <div class="form-done" id="meetingDone">
+      <ol class="adimlar" aria-label="Form steps"><li class="bit" data-tr="Bilgiler" data-en="Details">Details</li><li class="bit" data-tr="E-posta kodu" data-en="Email code">Email code</li><li class="su" aria-current="step" data-tr="Onay" data-en="Confirmation">Confirmation</li></ol>
+      <div class="onay" role="status">
+        <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 20.5l5.5 5.5L28.5 14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h2 data-tr="Talebiniz alındı" data-en="Your request has been received">Your request has been received</h2>
+        <p class="sonra" data-tr="Size en yakın iş gününde dönüş sağlanacaktır." data-en="We will respond on the next business day.">We will respond on the next business day.</p>
+        <dl class="onay-ozet">
+          <dt data-tr="Ad Soyad" data-en="Full Name">Full Name</dt><dd id="doneAd"></dd>
+          <dt data-tr="Telefon" data-en="Phone">Phone</dt><dd id="doneTel"></dd>
+          <dt data-tr="E-posta" data-en="Email">Email</dt><dd id="doneEposta"></dd>
+          <dt data-tr="Talep türü" data-en="Request type">Request type</dt><dd id="doneTur"></dd>
+        </dl>
+        <p class="sonra"><span data-tr="Bilgilerinizi düzeltmek isterseniz:" data-en="To correct your details:">To correct your details:</span> <a href="tel:+902582415554">0258 241 55 54</a> · <a href="mailto:info@capar.av.tr">info@capar.av.tr</a></p>
+        <a class="git" href="/en/articles" data-href-tr="/makaleler" data-href-en="/en/articles" data-tr="Makalelere dön →" data-en="Back to articles →">Back to articles →</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-overlay kvkk-modal" id="kvkkModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="kvkkTitle">
+    <button class="modal-close" type="button" onclick="closeKvkk()" aria-label="Close">✕</button>
+    <h3 id="kvkkTitle" data-tr="KVKK Aydınlatma ve Açık Rıza Metni" data-en="Data Protection (KVKK) Notice &amp; Explicit Consent">Data Protection (KVKK) Notice &amp; Explicit Consent</h3>
+    <p class="m-sub" data-tr="Lütfen metnin tamamını okuyun. Onay düğmesi, metni sonuna kadar okuduğunuzda etkinleşir." data-en="Please read the entire text. The accept button activates once you scroll to the end.">Please read the entire text. The accept button activates once you scroll to the end.</p>
+    <div class="kvkk-text" id="kvkkText" onscroll="kvkkScroll()">
+      <div id="kvkkTextTr" lang="tr">
+        <h4>1. Veri Sorumlusu</h4>
+        <p>Bu internet sitesindeki görüşme/randevu formu aracılığıyla ilettiğiniz kişisel veriler, veri sorumlusu sıfatıyla Av. Bayram Can ÇAPAR - ÇAPAR HUKUK BÜROSU tarafından 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) ve ilgili mevzuat kapsamında işlenir.</p>
+        <h4>2. İşlenen Kişisel Veriler</h4>
+        <p>Form aracılığıyla; ad-soyad, e-posta adresi, telefon numarası ve ilettiğiniz konu/mesaj içeriği ile bağlantıya ilişkin teknik veriler (IP adresi ve talep tarihi) işlenmektedir.</p>
+        <h4>3. İşleme Amaçları</h4>
+        <p>Kişisel verileriniz yalnızca; talebinizin alınması ve değerlendirilmesi, sizinle iletişime geçilmesi, görüşme veya randevu sürecinin yürütülmesi ve gerektiğinde hukuki danışmanlık ilişkisinin kurulması amaçlarıyla işlenir. Veriler pazarlama veya reklam amacıyla kullanılmaz.</p>
+        <h4>4. Hukuki Sebep</h4>
+        <p>Verileriniz; talebinizin yerine getirilebilmesi için işlenmesinin gerekli olması ve işbu metinle vereceğiniz açık rıza hukuki sebeplerine dayanılarak işlenir.</p>
+        <h4>5. Aktarım</h4>
+        <p>Kişisel verileriniz, kanunen yetkili kamu kurum ve kuruluşları saklı kalmak kaydıyla üçüncü kişilerle paylaşılmaz. Avukat-müvekkil ilişkisi kapsamına giren bilgileriniz ayrıca 1136 sayılı Avukatlık Kanunu m.36 uyarınca meslek sırrı kapsamında korunur.</p>
+        <h4>6. Saklama Süresi</h4>
+        <p>Bu form aracılığıyla ilettiğiniz mesajlar, alındıkları günün sonunda (en geç 1 gün içinde) tamamen silinir veya kişisel veri içermeyecek şekilde geri döndürülemez biçimde anonim hâle getirilir. Anonimleştirilen veriler, hiçbir gerçek kişiyle ilişkilendirilemeyecek biçimde yalnızca istatistik ve hizmet geliştirme amaçlarıyla (ör. yapay zekâ / makine öğrenmesi çalışmaları) kullanılabilir. Yasal saklama yükümlülüğü doğuran hâller saklıdır.</p>
+        <h4>7. İlgili Kişinin Hakları (KVKK m.11)</h4>
+        <p>Kişisel verilerinizin işlenip işlenmediğini öğrenme; işlenmişse buna ilişkin bilgi talep etme; işlenme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme; eksik veya yanlış işlenmişse düzeltilmesini; KVKK’da öngörülen şartlarla silinmesini veya yok edilmesini isteme; işlemenin hukuka aykırılığı nedeniyle doğan zararın giderilmesini talep etme haklarına sahipsiniz. Taleplerinizi büroya yazılı olarak veya iletişim kanallarımız üzerinden iletebilirsiniz.</p>
+        <h4>8. Açık Rıza Beyanı</h4>
+        <p>İşbu Aydınlatma Metni’ni okudum ve anladım. Yukarıda belirtilen kişisel verilerimin, açıklanan amaçlarla ve KVKK çerçevesinde işlenmesine ve saklanmasına özgür irademle açık rıza veriyorum.</p>
+      </div>
+      <div id="kvkkTextEn" style="display:none">
+        <h4>1. Data Controller</h4>
+        <p>The personal data you submit through the meeting/appointment form on this website is processed by Av. Bayram Can ÇAPAR - ÇAPAR HUKUK BÜROSU as data controller, under Law No. 6698 on the Protection of Personal Data (“KVKK”) and related legislation.</p>
+        <h4>2. Personal Data Processed</h4>
+        <p>Through the form, the following are processed: full name, e-mail address, telephone number, the subject/message you submit, and technical connection data (IP address and request date).</p>
+        <h4>3. Purposes of Processing</h4>
+        <p>Your data is processed solely to receive and evaluate your request, to contact you, to carry out the meeting or appointment process and, where applicable, to establish a legal advisory relationship. The data is not used for marketing or advertising.</p>
+        <h4>4. Legal Basis</h4>
+        <p>Your data is processed on the grounds that processing is necessary to fulfil your request and on the basis of the explicit consent you provide through this text.</p>
+        <h4>5. Transfer</h4>
+        <p>Your personal data is not shared with third parties, except for legally authorised public authorities. Information within the scope of the attorney-client relationship is further protected as a professional secret under Article 36 of the Attorneyship Law No. 1136.</p>
+        <h4>6. Retention Period</h4>
+        <p>Messages submitted through this form are completely deleted or irreversibly anonymised at the end of the day they are received (within 1 day at the latest). Anonymised data, which cannot be linked to any individual, may be used solely for statistics and service-improvement purposes (e.g. artificial-intelligence / machine-learning work). Statutory retention obligations are reserved.</p>
+        <h4>7. Rights of the Data Subject (KVKK Art. 11)</h4>
+        <p>You have the right to learn whether your personal data is processed; to request information if it is; to learn the purpose of processing and whether it is used accordingly; to request correction if incomplete or inaccurate; to request erasure or destruction under the conditions set out in the KVKK; and to claim compensation for damage arising from unlawful processing. You may submit your requests to the office in writing or through our contact channels.</p>
+        <h4>8. Declaration of Explicit Consent</h4>
+        <p>I have read and understood this Notice. I give my explicit consent, of my own free will, to the processing and storage of my personal data set out above for the stated purposes and within the framework of the KVKK.</p>
+      </div>
+    </div>
+    <p class="kvkk-hint" id="kvkkHint" data-tr="Devam etmek için metni sonuna kadar kaydırın." data-en="Scroll to the end of the text to continue.">Scroll to the end of the text to continue.</p>
+    <button class="cta" type="button" id="kvkkAccept" disabled onclick="acceptKvkk()"><span data-tr="Okudum, kabul ediyorum" data-en="I have read and accept">I have read and accept</span></button>
+  </div>
+</div>
+<div class="modal-overlay kvkk-modal" id="ucretModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="ucretTitle">
+    <button class="modal-close" type="button" onclick="closeUcret()" aria-label="Close">✕</button>
+    <h3 id="ucretTitle" data-tr="Ücret Bilgilendirme ve Onayı" data-en="Fee Information &amp; Consent">Fee Information &amp; Consent</h3>
+    <div class="kvkk-text" id="ucretText" onscroll="ucretScroll()">
+      <div id="ucretTextTr" lang="tr">
+        <h4>1. Avukatlık Asgari Ücret Tarifesi (AAÜT)</h4>
+        <p>Avukatlık hizmetlerinin ücreti, her yıl Türkiye Barolar Birliği tarafından belirlenip Resmî Gazete'de yayımlanan ve <strong>her yıl güncellenen Avukatlık Asgari Ücret Tarifesi (AAÜT)</strong> ile düzenlenir. Sözlü veya yazılı danışma ile görüşme hizmeti, hizmetin verildiği yıla ait AAÜT'de öngörülen danışma ücretine tabidir.</p>
+        <h4>2. Bu Form ve Ücret</h4>
+        <p>Bu form üzerinden hukuki görüş verilmez; talebiniz yalnızca görüşme/randevu oluşturmak içindir. Görüşme veya danışma fiilen gerçekleştiğinde, o tarihte yürürlükte olan AAÜT'deki danışma tarifesi uyarınca ücret tahakkuk eder. Ücret, hizmetin niteliği ve süresine göre belirlenir ve AAÜT'de öngörülen asgari tutarın altında olamaz.</p>
+        <h4>3. Onay</h4>
+        <p>Bu bilgilendirmeyi okuyup onaylayarak; danışma/görüşme hizmetinin yürürlükteki AAÜT uyarınca <strong>ücrete tabi olduğunu</strong> bildiğinizi ve gerçekleşen danışma/görüşme için ilgili tarife uyarınca <strong>danışma ücretini ödemeyi kabul ettiğinizi</strong> beyan etmiş olursunuz. Bu onay, KVKK açık rıza onayından ayrı ve bağımsızdır.</p>
+      </div>
+      <div id="ucretTextEn" style="display:none">
+        <h4>1. Minimum Attorney Fee Tariff (AAÜT)</h4>
+        <p>Attorney fees are governed by the Minimum Attorney Fee Tariff (AAÜT), set annually by the Union of Turkish Bar Associations, published in the Official Gazette and updated every year. Oral or written consultation and meeting services are subject to the consultation fee stipulated in the AAÜT for the year in which the service is provided.</p>
+        <h4>2. This Form and the Fee</h4>
+        <p>No legal opinion is provided through this form; your request is solely to arrange a meeting/appointment. When the meeting or consultation actually takes place, a fee accrues in accordance with the consultation tariff in the AAÜT in force on that date. The fee is determined by the nature and duration of the service and cannot be below the minimum amount stipulated in the AAÜT.</p>
+        <h4>3. Consent</h4>
+        <p>By reading and approving this notice, you declare that you are aware that the consultation/meeting service is subject to a fee under the applicable AAÜT, and that you agree to pay the consultation fee for the consultation/meeting that takes place, in accordance with the relevant tariff. This consent is separate from and independent of the KVKK explicit-consent approval.</p>
+      </div>
+    </div>
+    <p class="kvkk-hint" id="ucretHint" data-tr="Devam etmek için metni sonuna kadar kaydırın." data-en="Scroll to the end of the text to continue.">Scroll to the end of the text to continue.</p>
+    <button class="cta" type="button" id="ucretAccept" disabled onclick="acceptUcret()"><span data-tr="Okudum, kabul ediyorum" data-en="I have read and accept">I have read and accept</span></button>
+  </div>
+</div>
+      </div>
+    </div>
+  </section>
+</main>
+<script>window.CAP_SAYFA={tur:'iletisim',dil:'en'};window.CAP_KONU=null;</script>
+<script id="iletisim-form-betik">
+// ---- görüşme / randevu modal ----
+  var TURNSTILE_SITEKEY='0x4AAAAAADkJ_nmFuRCxs2l5'; // Cloudflare Turnstile SİTE anahtarı
+  var turnstileWidgetId=null, currentToken=null;
+  function renderTurnstile(){
+    if(!TURNSTILE_SITEKEY) return;
+    var tn=document.getElementById('tsNot'); if(tn) tn.style.display='none';
+    if(!document.getElementById('turnstileBox')) return;
+    if(window.turnstile){
+      if(turnstileWidgetId===null){ turnstileWidgetId=turnstile.render('#turnstileBox',{sitekey:TURNSTILE_SITEKEY}); }
+      else { turnstile.reset(turnstileWidgetId); }
+    } else { turnstileYukle(); setTimeout(renderTurnstile,300); }
+  }
+  // Paket 1 / Fable H-5 (2026-11-09): Turnstile betiği yalnız form açılınca bir kez yüklenir; sayfada zaten varsa eklenmez
+  function turnstileYukle(){
+    if(document.querySelector('script[src*="challenges.cloudflare.com/turnstile"]')) return;
+    var s=document.createElement('script'); s.src='https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit'; s.async=true;
+    document.head.appendChild(s);
+  }
+  function resetTurnstile(){ if(TURNSTILE_SITEKEY && window.turnstile && turnstileWidgetId!==null) turnstile.reset(turnstileWidgetId); }
+  var codeTimerInt=null;
+  function fmtTime(s){ var m=Math.floor(s/60), ss=s%60; return m+':'+(ss<10?'0':'')+ss; }
+  function startCodeTimer(){
+    stopCodeTimer();
+    var remaining=240;
+    var el=document.getElementById('codeTimer');
+    var vb=document.getElementById('codeVerifyBtn');
+    if(vb) vb.disabled=false;
+    if(el) el.textContent=fmtTime(remaining);
+    codeTimerInt=setInterval(function(){
+      remaining--;
+      if(el) el.textContent=fmtTime(remaining>0?remaining:0);
+      if(remaining<=0){
+        stopCodeTimer();
+        if(vb) vb.disabled=true;
+        var lang=document.documentElement.lang||'tr';
+        var msg=document.getElementById('codeMsg');
+        if(msg){ msg.textContent = lang==='tr' ? 'Kodun süresi doldu. "Kodu tekrar gönder" ile yeni kod alın.' : 'The code has expired. Use “Resend code” to get a new one.'; msg.className='form-msg err'; }
+      }
+    },1000);
+  }
+  function stopCodeTimer(){ if(codeTimerInt){ clearInterval(codeTimerInt); codeTimerInt=null; } }
+  function openMeeting(){
+    var m=document.getElementById('meetingModal');
+    m.classList.add('open'); m.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+    document.getElementById('meetingFormWrap').style.display='';
+    document.getElementById('meetingCode').style.display='none';
+    document.getElementById('meetingDone').style.display='none';
+    stopCodeTimer();
+    var ts=document.getElementById('formTs'); if(ts) ts.value=Date.now();
+    renderTurnstile();
+    var first=m.querySelector('input[name=ad]'); if(first) setTimeout(function(){first.focus();},80);
+  }
+  function closeMeeting(){
+    var m=document.getElementById('meetingModal');
+    m.classList.remove('open'); m.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+    stopCodeTimer();
+    document.getElementById('meetingFormWrap').style.display='';
+    document.getElementById('meetingCode').style.display='none';
+    document.getElementById('meetingDone').style.display='none';
+  }
+  (function(){
+    var m=document.getElementById('meetingModal');
+    if(m){ m.addEventListener('click',function(e){ if(e.target===m) closeMeeting(); }); }
+    document.addEventListener('keydown',function(e){
+      if(e.key!=='Escape') return;
+      var k=document.getElementById('kvkkModal');
+      if(k && k.classList.contains('open')){ closeKvkk(); }
+      else if(m.classList.contains('open')){ closeMeeting(); }
+    });
+  })();
+  function toggleRandevu(){
+    var only=document.getElementById('randevuOnly').checked;
+    var m=document.getElementById('mesajField');
+    var wrap=document.getElementById('mesajFieldWrap');
+    m.required=!only; wrap.style.opacity=only?'.45':'1';
+    // Talep türü kümesi (U5): gönderilen alan name="randevu" gizli onay kutusudur; iki seçenek onunla eşlenir (form.reset() sonrası da)
+    var k=document.getElementById('talepKonu'), r=document.getElementById('talepRandevu');
+    if(k && r){ k.checked=!only; r.checked=only; document.getElementById('talepKonuEt').classList.toggle('on',!only); document.getElementById('talepRandevuEt').classList.toggle('on',only); }
+  }
+  function talepTuruSec(){
+    document.getElementById('randevuOnly').checked=document.getElementById('talepRandevu').checked;
+    toggleRandevu();
+  }
+  // Telefon (2026-11-10, kullanıcı kararı): Türkiye cep numarası (önceki kural: rakam dışı silinir, baştaki 0090/90 ve 0
+  // soyulur, 5 ile başlayan 10 hane, tekrarlı/uydurma değil) ya da + ile başlayan ülke kodlu E.164 numara (toplam 8–15 rakam).
+  // Boşluk, tire ve parantez temizlenir; geçerliyse {deger: temizlenmiş numara}, değilse {hata: 'gecersiz' | 'tekrar'}.
+  function telefonDenetle(tel){
+    var t=String(tel||'').replace(/[\s\-()]/g,'');
+    if(/^\+[1-9]\d{7,14}$/.test(t)) return {deger:t};
+    var n=t.replace(/\D/g,'').replace(/^(0090|90)/,'').replace(/^0/,'');
+    if(!/^5\d{9}$/.test(n)) return {hata:'gecersiz'};
+    if(/^(\d{1,5})\1+$/.test(n) || n.split('').filter(function(d,i,a){return a.indexOf(d)===i;}).length<3) return {hata:'tekrar'};
+    return {deger:t};
+  }
+  function submitMeeting(e){
+    e.preventDefault();
+    var form=e.target, msg=document.getElementById('formMsg');
+    var lang=document.documentElement.lang||'tr';
+    msg.className='form-msg';
+    if(form.website.value) return false; // honeypot
+    var ad=form.ad.value.trim(), eposta=form.eposta.value.trim(), tel=form.telefon.value.trim();
+    var randevu=form.randevu.checked, mesaj=form.mesaj.value.trim();
+    function fail(tr,en){ msg.textContent=lang==='tr'?tr:en; msg.className='form-msg err'; }
+    if(!ad){ return fail('Lütfen ad soyad girin.','Please enter your full name.'),false; }
+    if(!/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(eposta) || /(.)\1{5,}/.test(eposta.split('@')[0])){ return fail('Lütfen geçerli bir e-posta adresi girin.','Please enter a valid email address.'),false; }
+    if(!tel){ return fail('Lütfen telefon numaranızı girin.','Please enter your phone number.'),false; }
+    var tD=telefonDenetle(tel);
+    if(tD.hata==='gecersiz'){ return fail('Lütfen geçerli bir telefon numarası girin: Türkiye cep numarası (örn. 05XX XXX XX XX) ya da ülke koduyla yurt dışı numarası (örn. +XX XXX XXX XXXX).','Please enter a valid phone number: a Turkish mobile number (e.g. 05XX XXX XX XX) or an international number with country code (e.g. +XX XXX XXX XXXX).'),false; }
+    if(tD.hata==='tekrar'){ return fail('Lütfen gerçek bir cep numarası girin (uydurma/tekrarlı numara kabul edilmez).','Please enter a real mobile number.'),false; }
+    form.telefon.value=tD.deger;
+    if(!randevu && !mesaj){ return fail('Lütfen ulaşmak istediğiniz konuyu yazın.','Please describe the subject of your request.'),false; }
+    if(!form.kvkk.checked){ return fail('Devam etmek için KVKK onayını işaretlemelisiniz.','You must accept the KVKK consent to continue.'),false; }
+    if(!form.ucret || !form.ucret.checked){ return fail('Devam etmek için ücret bilgilendirme onayını işaretlemelisiniz.','You must accept the fee information to continue.'),false; }
+    var fd=new FormData(form); fd.append('action','start'); fd.append('dil',document.documentElement.lang==='en'?'en':'tr');
+    if(TURNSTILE_SITEKEY){
+      var ttok=(window.turnstile && turnstileWidgetId!==null) ? turnstile.getResponse(turnstileWidgetId) : '';
+      if(!ttok){ return fail('Lütfen güvenlik doğrulamasını tamamlayın.','Please complete the security check.'),false; }
+      fd.append('turnstile', ttok);
+    }
+    var btn=form.querySelector('button[type=submit]'); btn.disabled=true;
+    fetch('/gonder.php',{method:'POST',body:fd})
+      .then(function(r){return r.json();})
+      .then(function(res){
+        if(res && res.ok && res.step==='code'){
+          currentToken=res.token;
+          document.getElementById('meetingFormWrap').style.display='none';
+          document.getElementById('meetingCode').style.display='block';
+          var ci=document.getElementById('codeInput'); if(ci){ ci.value=''; setTimeout(function(){ci.focus();},80); }
+          startCodeTimer();
+          return;
+        }
+        var code=res&&res.error;
+        if(code==='turnstile'){ fail('Güvenlik doğrulaması başarısız. Lütfen tekrar deneyin.','Security check failed. Please try again.'); }
+        else if(code==='rate_limited'){ fail('Çok fazla talep gönderildi. Lütfen bir süre sonra tekrar deneyin.','Too many requests. Please try again later.'); }
+        else if(code==='too_fast'){ fail('Form çok hızlı gönderildi. Lütfen tekrar deneyin.','Form submitted too quickly. Please try again.'); }
+        else { fail('Talep gönderilemedi. Lütfen bilgileri kontrol edip tekrar deneyin.','Could not send. Please check your details and try again.'); }
+        resetTurnstile();
+      })
+      .catch(function(){ fail('Bağlantı hatası. Lütfen daha sonra tekrar deneyin.','Connection error. Please try again later.'); resetTurnstile(); })
+      .finally(function(){ btn.disabled=false; });
+    return false;
+  }
+  function verifyCode(){
+    var msg=document.getElementById('codeMsg'); var lang=document.documentElement.lang||'tr';
+    msg.className='form-msg';
+    function cf(tr,en){ msg.textContent=lang==='tr'?tr:en; msg.className='form-msg err'; }
+    var code=document.getElementById('codeInput').value.trim();
+    if(code.length!==6){ return cf('Lütfen 6 haneli kodu girin.','Please enter the 6-digit code.'); }
+    var b=document.getElementById('codeVerifyBtn'); b.disabled=true;
+    var fd=new FormData(); fd.append('action','verify'); fd.append('token',currentToken||''); fd.append('code',code); fd.append('dil',document.documentElement.lang==='en'?'en':'tr');
+    fetch('/gonder.php',{method:'POST',body:fd})
+      .then(function(r){return r.json();})
+      .then(function(res){
+        if(res && res.ok && res.done){
+          stopCodeTimer();
+          if(window.capOlay){ window.capOlay('iletisim_form',{konu:window.CAP_KONU||null}); }
+          var form=document.getElementById('meetingForm');
+          // Onay ekranı (U5): gönderilen bilgilerin özeti yalnız bu ekranda, form değerlerinden (sunucudan gelmez); textContent ile yazılır
+          var dl=document.documentElement.lang==='en'?'en':'tr', rd=form.randevu.checked;
+          document.getElementById('doneAd').textContent=form.ad.value.trim();
+          document.getElementById('doneTel').textContent=form.telefon.value.trim();
+          document.getElementById('doneEposta').textContent=form.eposta.value.trim();
+          document.getElementById('doneTur').textContent=rd?(dl==='tr'?'Yalnız randevu':'Appointment only'):(dl==='tr'?'Konuyu yazarak':'With a subject');
+          document.getElementById('meetingCode').style.display='none';
+          document.getElementById('meetingDone').style.display='block';
+          form.reset(); toggleRandevu();
+          var kr=document.getElementById('kvkkRow'); if(kr) kr.classList.remove('done');
+          return;
+        }
+        var e=res&&res.error;
+        if(e==='bad_code'){ cf('Kod hatalı. Lütfen tekrar deneyin.','Incorrect code. Please try again.'); }
+        else if(e==='expired'){ cf('Kodun süresi doldu. Lütfen formu yeniden gönderin.','The code expired. Please submit the form again.'); }
+        else if(e==='too_many'){ cf('Çok fazla hatalı deneme. Lütfen formu yeniden gönderin.','Too many attempts. Please submit again.'); }
+        else { cf('Doğrulanamadı. Lütfen tekrar deneyin.','Could not verify. Please try again.'); }
+      })
+      .catch(function(){ cf('Bağlantı hatası. Lütfen tekrar deneyin.','Connection error. Please try again.'); })
+      .finally(function(){ b.disabled=false; });
+  }
+  function resendCode(){
+    var msg=document.getElementById('codeMsg'); var lang=document.documentElement.lang||'tr';
+    var form=document.getElementById('meetingForm');
+    if(TURNSTILE_SITEKEY){
+      stopCodeTimer();
+      document.getElementById('meetingCode').style.display='none';
+      document.getElementById('meetingFormWrap').style.display='';
+      resetTurnstile();
+      var fm=document.getElementById('formMsg'); fm.textContent=lang==='tr'?'Yeni kod için doğrulamayı tekrarlayıp formu yeniden gönderin.':'Please verify again and resubmit the form for a new code.'; fm.className='form-msg err';
+      return;
+    }
+    var fd=new FormData(form); fd.append('action','start'); fd.append('dil',document.documentElement.lang==='en'?'en':'tr');
+    fetch('/gonder.php',{method:'POST',body:fd}).then(function(r){return r.json();}).then(function(res){
+      if(res && res.ok && res.step==='code'){ currentToken=res.token; startCodeTimer(); msg.textContent=lang==='tr'?'Yeni kod gönderildi.':'A new code has been sent.'; msg.className='form-msg'; }
+      else { msg.textContent=lang==='tr'?'Kod gönderilemedi.':'Could not send code.'; msg.className='form-msg err'; }
+    }).catch(function(){ msg.textContent=lang==='tr'?'Bağlantı hatası.':'Connection error.'; msg.className='form-msg err'; });
+  }
+
+  // ---- KVKK aydınlatma & açık rıza ----
+  function showKvkkLang(){
+    var tr=document.getElementById('kvkkTextTr'), en=document.getElementById('kvkkTextEn');
+    if(!tr||!en) return;
+    var lang=document.documentElement.lang||'tr';
+    tr.style.display = lang==='en'?'none':'block';
+    en.style.display = lang==='en'?'block':'none';
+  }
+  function openKvkk(){
+    var m=document.getElementById('kvkkModal');
+    showKvkkLang();
+    m.classList.add('open'); m.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+    var t=document.getElementById('kvkkText'); t.scrollTop=0;
+    document.getElementById('kvkkAccept').disabled=true;
+    document.getElementById('kvkkHint').className='kvkk-hint';
+    setTimeout(kvkkScroll,80);
+  }
+  function closeKvkk(){
+    var m=document.getElementById('kvkkModal');
+    m.classList.remove('open'); m.setAttribute('aria-hidden','true');
+    if(!document.getElementById('meetingModal').classList.contains('open')) document.body.style.overflow='';
+  }
+  function kvkkScroll(){
+    var t=document.getElementById('kvkkText');
+    if(t.scrollTop + t.clientHeight >= t.scrollHeight - 8){
+      document.getElementById('kvkkAccept').disabled=false;
+      var h=document.getElementById('kvkkHint'); h.className='kvkk-hint read';
+      var lang=document.documentElement.lang||'tr';
+      h.textContent = lang==='tr' ? 'Metni sonuna kadar okudunuz; onaylayabilirsiniz.' : 'You have read the full text; you may accept.';
+    }
+  }
+  function acceptKvkk(){
+    var chk=document.getElementById('kvkkChk'); if(chk) chk.checked=true;
+    var kr=document.getElementById('kvkkRow'); if(kr) kr.classList.add('done');
+    closeKvkk();
+  }
+  (function(){
+    var k=document.getElementById('kvkkModal');
+    if(k){ k.addEventListener('click',function(e){ if(e.target===k) closeKvkk(); }); }
+  })();
+  // ---- Ücret (AAÜT) bilgilendirme & onay ----
+  function showUcretLang(){ var en=(document.documentElement.lang==='en'); var tr=document.getElementById('ucretTextTr'), et=document.getElementById('ucretTextEn'); if(tr&&et){ tr.style.display=en?'none':''; et.style.display=en?'':'none'; } }
+  function openUcret(){ var m=document.getElementById('ucretModal'); if(!m) return; showUcretLang(); m.classList.add('open'); m.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; var t=document.getElementById('ucretText'); if(t) t.scrollTop=0; document.getElementById('ucretAccept').disabled=true; document.getElementById('ucretHint').className='kvkk-hint'; setTimeout(ucretScroll,80); }
+  function closeUcret(){ var m=document.getElementById('ucretModal'); if(!m) return; m.classList.remove('open'); m.setAttribute('aria-hidden','true'); if(!document.getElementById('meetingModal').classList.contains('open')) document.body.style.overflow=''; }
+  function ucretScroll(){ var t=document.getElementById('ucretText'); if(!t) return; if(t.scrollTop + t.clientHeight >= t.scrollHeight - 8){ document.getElementById('ucretAccept').disabled=false; var h=document.getElementById('ucretHint'); h.className='kvkk-hint read'; var lang=document.documentElement.lang||'tr'; h.textContent = lang==='tr' ? 'Metni sonuna kadar okudunuz; onaylayabilirsiniz.' : 'You have read the full text; you may accept.'; } }
+  function acceptUcret(){ var chk=document.getElementById('ucretChk'); if(chk) chk.checked=true; var r=document.getElementById('ucretRow'); if(r) r.classList.add('done'); closeUcret(); }
+  (function(){ var u=document.getElementById('ucretModal'); if(u){ u.addEventListener('click',function(e){ if(e.target===u) closeUcret(); }); document.addEventListener('keydown',function(e){ if(e.key==='Escape' && u.classList.contains('open')) closeUcret(); }); } })();
+
+  
+(function(){
+  var m=document.getElementById('meetingModal');
+  m.classList.add('open');
+  var ts=document.getElementById('formTs'); if(ts) ts.value=Date.now();
+  window.closeMeeting=function(){};   // sayfa içindeki form kapatılamaz (pencere dışı tıklama ve Esc etkisiz)
+  // KVKK/ücret pencereleri, #meetingModal .open olduğu için sayfa kaydırmasını açık bırakmıyordu; kapanınca serbest bırak
+  ['closeKvkk','closeUcret'].forEach(function(n){ var f=window[n]; if(typeof f==='function'){ window[n]=function(){ f.apply(this,arguments); document.body.style.overflow=''; }; } });
+  // U5: Turnstile sayfa açılırken değil forma ilk dokunuşta (odak, işaretçi, dokunma ya da tuş) yüklenir; ilkinden sonra dinleyici kalkar
+  var ilkOlaylar=['focusin','pointerdown','touchstart','keydown'], ilkKap=document.getElementById('iletisim-form');
+  var ilkDokunus=function(){ ilkOlaylar.forEach(function(o){ ilkKap.removeEventListener(o,ilkDokunus,true); }); renderTurnstile(); };
+  ilkOlaylar.forEach(function(o){ ilkKap.addEventListener(o,ilkDokunus,true); });
+})();
+</script>
+<script id="iletisim-harita-betik">
+// U5: Google Haritalar çerçevesi yalnız "Haritayı göster" tıklanınca kurulur (sayfa açılırken dış istek yok); adres data-harita'dan gelir
+(function(){
+  var k=document.getElementById('iletisimHarita'), d=document.getElementById('haritaDugme');
+  if(!k || !d) return;
+  d.addEventListener('click',function(){
+    var f=document.createElement('iframe');
+    f.src=k.getAttribute('data-harita');
+    f.title=document.documentElement.lang==='en' ? 'Office location — Google Maps' : 'Büro konumu — Google Haritalar';
+    f.loading='lazy'; f.referrerPolicy='no-referrer';
+    f.setAttribute('sandbox','allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox');
+    k.textContent=''; k.classList.add('acik'); k.appendChild(f); f.focus();
+  });
+})();
+</script>
+<script id="yurtdisi-on-satir">
+// Yurt dışında yaşayanlar sayfasından (yurtdisi.js) gelen ön satır: /iletisim#yd=[...] çapası mesaj kutusunun başına eklenir;
+// çapa sunucuya gitmez, eklendikten sonra adresten silinir. Biçimsiz satır yok sayılır. gonder.php değişmez (mesaj alanı).
+(function(){
+  var h=location.hash||''; if(h.indexOf('#yd=')!==0) return;
+  var s=''; try{ s=decodeURIComponent(h.slice(4)); }catch(_){ return; }
+  s=s.replace(/\s+/g,' ').trim();
+  if(s.length>300 || !/^\[[^\[\]<>]+\]$/.test(s)) return;
+  var m=document.getElementById('mesajField'); if(m && m.value.indexOf(s)!==0){ m.value=s+'\n'+m.value; }
+  if(typeof history!=='undefined' && history.replaceState){ history.replaceState(null,'',location.pathname+location.search); }
+})();
+</script>
+<template id="kartvizitSablon"><div class="kv-katman" role="dialog" aria-modal="true" aria-label="Business card"><button type="button" class="kv-kapat" aria-label="Close"><span aria-hidden="true">×</span></button><div class="kv-sahne"><div class="kv-kart"><div class="kv-yuz kv-on"><img class="kv-logo" src="/logo-tam-giris.svg?v=003fb665" alt="" width="2176" height="806" decoding="async"><span class="kv-cizgi"></span><span class="kv-ad" lang="tr">AV. BAYRAM CAN ÇAPAR · ÇAPAR HUKUK</span><span class="kv-web">capar.av.tr</span></div><div class="kv-yuz kv-arka" inert aria-hidden="true"><span class="kv-kisi" lang="tr">AV. BAYRAM CAN ÇAPAR</span><span class="kv-buro" lang="tr">ÇAPAR HUKUK BÜROSU</span><span class="kv-cizgi"></span><span class="kv-adres" lang="tr">Saraylar Mah. Gazi Mustafa Kemal Bulvarı<br>Memişoğlu Apartmanı No:76 Kat:6<br>20010 Merkezefendi / Denizli, Türkiye</span><span class="kv-iletisim"><b>T</b> <a href="tel:+902582415554">+90 258 241 55 54</a><br><b>E</b> <a href="mailto:info@capar.av.tr">info@capar.av.tr</a></span><a class="kv-web" href="https://capar.av.tr/en/">capar.av.tr</a></div></div></div><div class="kv-araclar"><button type="button" class="kv-cevir" data-tr="Kartı çevir" data-en="Flip the card">Flip the card</button><span class="kv-kaydet"><span data-tr="Kaydet:" data-en="Save:">Save:</span><a href="/kartvizit-on.png" download="capar-kartvizit-on.png" data-tr="Ön yüz (PNG)" data-en="Front (PNG)">Front (PNG)</a><a href="/kartvizit-arka-en.png" download="capar-kartvizit-arka.png" data-tr="Arka yüz (PNG)" data-en="Back (PNG)">Back (PNG)</a><a href="/kartvizit.vcf" download="capar-hukuk.vcf" data-tr="Kişi kartı (vCard)" data-en="Contact card (vCard)">Contact card (vCard)</a></span></div></div></template>
+<script id="kartvizit-betik">
+// Gizli kartvizit (2026-11-14): büro adına kısa sürede art arda 5 tıklama / dokunuş ya da odakta 5 kez Enter (araclar/kartvizit.py)
+(function(){
+  var t=document.getElementById('kartvizitTetik'), s=document.getElementById('kartvizitSablon');
+  if(!t || !s || !('content' in s)) return;
+  var c=0, z0=0, k=null, kart=null, onceki=null, tasma='';
+  function say(){ var z=Date.now(); c=z-z0<800?c+1:1; z0=z; if(c>=5){ c=0; ac(); } }
+  t.addEventListener('click',say);
+  t.addEventListener('keydown',function(e){ if(e.key==='Enter' && !e.repeat){ e.preventDefault(); say(); } });
+  t.addEventListener('mousedown',function(e){ if(e.detail>1){ e.preventDefault(); } });   // art arda tıklama metni seçmesin
+  function yuz(el,acik){ if(acik){ el.removeAttribute('inert'); el.removeAttribute('aria-hidden'); } else { el.setAttribute('inert',''); el.setAttribute('aria-hidden','true'); } }
+  function cevir(){ var ters=kart.classList.toggle('cevrik'); yuz(kart.querySelector('.kv-on'),!ters); yuz(kart.querySelector('.kv-arka'),ters); }
+  function odaklar(){ return [].filter.call(k.querySelectorAll('a[href],button'),function(x){ return !x.closest('[inert]'); }); }
+  function kapat(){
+    if(!k) return;
+    document.removeEventListener('keydown',tus,true);
+    k.parentNode.removeChild(k); k=null; kart=null;
+    document.body.style.overflow=tasma;
+    if(onceki && onceki.focus) onceki.focus();
+  }
+  function tus(e){
+    if(e.key==='Escape'){ e.preventDefault(); e.stopPropagation(); kapat(); return; }
+    if(e.key!=='Tab') return;
+    var o=odaklar(), i=o.indexOf(document.activeElement);
+    if(e.shiftKey ? i<=0 : (i<0 || i===o.length-1)){ e.preventDefault(); o[e.shiftKey ? o.length-1 : 0].focus(); }
+  }
+  function ac(){
+    if(k) return;
+    onceki=document.activeElement;
+    k=document.importNode(s.content,true).firstElementChild;
+    document.body.appendChild(k);
+    kart=k.querySelector('.kv-kart');
+    tasma=document.body.style.overflow; document.body.style.overflow='hidden';
+    k.addEventListener('click',function(e){
+      var h=e.target;
+      if(h===k || h.closest('.kv-kapat')){ kapat(); return; }
+      if(h.closest('.kv-cevir') || (h.closest('.kv-kart') && !h.closest('a'))){ cevir(); }
+    });
+    document.addEventListener('keydown',tus,true);
+    k.querySelector('.kv-cevir').focus();
+  }
+})();
+</script>
+<footer class="foot">
+  <div class="wrap alt-logo"><img src="/logo-tam-acik.svg?v=603f747f" alt="Av. Bayram Can Çapar · ÇAPAR Hukuk" width="280" height="104" loading="lazy" decoding="async" /></div>
+<div class="wrap pd-satir"><aside class="pd" data-yer="altbilgi" aria-label="Share" data-url="https://capar.av.tr/en/contact" hidden><button type="button" class="pd-dugme" id="pd-dugme" aria-haspopup="true" aria-expanded="false" aria-controls="pd-liste"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 10H6.5A2.5 2.5 0 0 0 4 12.5v6A2.5 2.5 0 0 0 6.5 21h11a2.5 2.5 0 0 0 2.5-2.5v-6a2.5 2.5 0 0 0-2.5-2.5H16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-tr="Paylaş" data-en="Share">Share</span></button><div class="pd-menu" hidden><ul class="pd-liste" id="pd-liste" role="menu" aria-labelledby="pd-dugme"><li role="none"><button type="button" class="pd-oge" role="menuitem" data-ag="kopya"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 13.5a4.5 4.5 0 0 0 6.4.4l2.8-2.8a4.5 4.5 0 0 0-6.4-6.4l-1.3 1.3M14 10.5a4.5 4.5 0 0 0-6.4-.4l-2.8 2.8a4.5 4.5 0 0 0 6.4 6.4l1.3-1.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-tr="Bağlantıyı kopyala" data-en="Copy link">Copy link</span></button></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="whatsapp" target="_blank" rel="noopener noreferrer"><svg viewBox="-2 -2 28 28" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg><span data-tr="WhatsApp" data-en="WhatsApp">WhatsApp</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="telegram" target="_blank" rel="noopener noreferrer"><svg viewBox="-2 -2 28 28" fill="currentColor" aria-hidden="true" focusable="false"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg><span data-tr="Telegram" data-en="Telegram">Telegram</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="x" target="_blank" rel="noopener noreferrer"><svg viewBox="-3 -3 30 30" fill="currentColor" aria-hidden="true" focusable="false"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg><span data-tr="X" data-en="X">X</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="linkedin" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.93H5.55v8.41h2.79zM6.94 8.7a1.62 1.62 0 1 0 0-3.24 1.62 1.62 0 0 0 0 3.24zm11.4 9.64v-4.61c0-2.46-1.31-3.6-3.07-3.6-1.4 0-2.03.78-2.38 1.32v-1.13H10.1c.04.79 0 8.41 0 8.41h2.79v-4.7c0-.25.02-.5.09-.68.2-.5.66-1.02 1.43-1.02 1.01 0 1.41.77 1.41 1.9v4.5h2.52z"/></svg><span data-tr="LinkedIn" data-en="LinkedIn">LinkedIn</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg><span data-tr="Facebook" data-en="Facebook">Facebook</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="eposta"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m4 7.5 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span data-tr="E-posta" data-en="Email">Email</span></a></li></ul></div><span class="pd-durum" role="status" aria-live="polite"></span><span class="pd-m" data-ad="kopyalandi" hidden><span data-tr="Bağlantı kopyalandı" data-en="Link copied">Link copied</span></span><span class="pd-m" data-ad="elle" hidden><span data-tr="Bağlantıyı kopyalayın:" data-en="Copy the link:">Copy the link:</span></span></aside></div><script src="/paylas-dugme.js?v=b3e8c2cd" defer></script>
+  <div class="wrap buro-bilgi" data-konum="altbilgi" style="font-size:.85rem;line-height:1.6;opacity:.9;padding-bottom:12px"><span lang="tr">Av. Bayram Can ÇAPAR - ÇAPAR HUKUK BÜROSU · Saraylar Mah. Gazi Mustafa Kemal Bulvarı, Memişoğlu Apartmanı No:76 Kat:6, 20010 Merkezefendi / Denizli</span>, Türkiye · <a href="tel:+902582415554">+90 258 241 55 54</a> · <span data-tr="Hafta içi 09:00–18:00, Cumartesi 10:00–15:00" data-en="Weekdays 09:00–18:00, Saturday 10:00–15:00">Weekdays 09:00–18:00, Saturday 10:00–15:00</span> · <a href="https://maps.google.com/?cid=3283744558559138001" target="_blank" rel="noopener" data-tr="Yol tarifi" data-en="Directions">Directions</a></div>
+  <div class="wrap row">
+    <span class="fb">Av. Bayram Can Çapar · ÇAPAR Hukuk</span>
+    <span class="links">
+            <a href="/en/#hakkinda" data-href-tr="/#hakkinda" data-href-en="/en/#hakkinda" data-tr="Hakkımızda" data-en="About Us">About Us</a>
+      <a href="/en/#ekip" data-href-tr="/#ekip" data-href-en="/en/#ekip" data-tr="Ekibimiz" data-en="Our Team">Our Team</a>
+      <a href="/en/press" data-href-tr="/basinda" data-href-en="/en/press" data-tr="Basında Biz" data-en="In the Press">In the Press</a>
+      <a href="/en/case-index" data-href-tr="/karar-dizini" data-href-en="/en/case-index" data-tr="Karar Dizini" data-en="Case Index">Case Index</a>
+      <a href="/en/statute-index" data-href-tr="/madde-dizini" data-href-en="/en/statute-index" data-tr="Madde Dizini" data-en="Statute Index">Statute Index</a>
+            <a href="/en/application-routes" data-href-tr="/basvuru-yollari" data-href-en="/en/application-routes" data-tr="Başvuru Yolları" data-en="Where to Apply">Where to Apply</a>
+      <a href="/en/glossary" data-href-tr="/sozluk" data-href-en="/en/glossary" data-tr="Hukuk Sözlüğü" data-en="Glossary">Glossary</a>
+      <a href="/en/calculations">Calculations</a>
+      <a href="/en/privacy-notice" data-tr="KVKK Aydınlatma" data-en="Privacy Notice">Privacy Notice</a>
+      <a href="/en/cookie-policy" data-tr="Çerez Politikası" data-en="Cookie Policy">Cookie Policy</a>
+      <a href="/en/terms" data-tr="Hüküm ve Koşullar" data-en="Terms &amp; Conditions">Terms &amp; Conditions</a>
+      <a href="/llms-en.txt" data-href-tr="/llms.txt" data-href-en="/llms-en.txt" data-aria-tr="Yapay zekâ asistanları için site özeti (llms.txt)" data-aria-en="Site summary for AI assistants (llms.txt)" type="text/plain" title="Site summary for AI assistants (llms.txt)" aria-label="Site summary for AI assistants (llms.txt)">llms.txt</a>    </span>
+    <span>© 2026 Av. Bayram Can ÇAPAR</span>
+  </div>
+  <span id="yeni-sekme" hidden data-tr="Yeni sekmede açılır" data-en="Opens in a new tab">Opens in a new tab</span>
+</footer><script id="olcum">(function () {
+  var S = window.CAP_SAYFA || { tur: 'diger' };
+  window.capOlay = function (ad, p) {
+    if (typeof window.gtag !== 'function') { return; }
+    var q = { sayfa_turu: S.tur || 'diger', dil: S.dil || document.documentElement.lang || 'tr' };   // E §5.9: dil
+    if (S.makale) { q.makale = S.makale; }
+    for (var k in (p || {})) { if (p[k] !== null && p[k] !== undefined) { q[k] = p[k]; } }
+    window.gtag('event', ad, q);
+  };
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a') : null;
+    if (!a || a.closest('.pd')) { return; }   // Paylaş menüsü (e-posta dahil) kendi olayını yazar (paylas-dugme.js)
+    var h = a.getAttribute('href') || '', kk = a.closest('[data-konum]'), konum = kk ? kk.getAttribute('data-konum') : 'sayfa';
+    if (h.indexOf('tel:') === 0) { window.capOlay('iletisim_tel', { konum: konum }); }
+    else if (h.indexOf('mailto:') === 0) { window.capOlay('iletisim_eposta', { konum: konum }); }
+    else if (a.classList.contains('iletisim-mesaj')) { window.capOlay('iletisim_mesaj', { konum: konum }); }
+    if (a.closest('.vitrin-one, .vitrin-kart')) { window.capOlay('vitrin_tik', { konum: konum, makale: a.getAttribute('data-makale') || '' }); }
+  }, true);
+  function aria() {
+    var l = document.documentElement.lang === 'en' ? 'en' : 'tr';
+    document.querySelectorAll('[data-aria-tr]').forEach(function (el) { el.setAttribute('aria-label', el.getAttribute('data-aria-' + l) || ''); });
+  }
+  function basla() {
+    aria();
+    if (typeof window.setLang === 'function' && !window.setLang.capSarili) {
+      var eski = window.setLang;
+      window.setLang = function (l) { eski(l); aria(); };
+      window.setLang.capSarili = true;
+    }
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', basla); } else { basla(); }
+})();</script><nav class="mobil-cubuk" aria-label="Quick contact" data-aria-tr="Hızlı iletişim" data-aria-en="Quick contact" data-konum="cubuk"><a class="cubuk-tel" href="tel:+902582415554"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span data-tr="Telefon" data-en="Phone">Phone</span></a><a class="cubuk-yol" href="https://maps.google.com/?cid=3283744558559138001" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5c-3.6 0-6.5 2.9-6.5 6.5 0 4.6 6.5 12.5 6.5 12.5s6.5-7.9 6.5-12.5c0-3.6-2.9-6.5-6.5-6.5z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span data-tr="Yol tarifi" data-en="Directions">Directions</span></a></nav>
+
+<!-- Ölçüm ve çerez onayı: ana sayfadaki kurulumun aynısı (Consent Mode v2; tercihler 'capar-cerez' ve 'capar-reklam' ana sayfayla ortak) -->
+<style>
+  .cookie-bar{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--panel);color:var(--text-on-panel);padding:16px clamp(20px,5vw,48px);display:none;box-shadow:0 -10px 40px rgba(22,19,15,.2)}
+  .cookie-bar.show{display:block}
+  .cookie-bar .cb-in{max-width:var(--maxw);margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between}
+  .cookie-bar p{font-size:.85rem;color:rgba(241,243,246,.82);max-width:66ch;line-height:1.5;margin:0}
+  .cookie-bar a{color:var(--gold);border-bottom:1px solid rgba(203,167,92,.4)}
+  .cookie-bar .cb-btns{display:flex;gap:10px;flex:none}
+  .cookie-bar button{font-family:var(--sans);font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:10px 22px;min-height:44px;min-width:120px;cursor:pointer;border:1px solid rgba(241,243,246,.55);background:none;color:var(--text-on-panel);transition:.25s}
+  .cookie-bar button.acc{background:var(--gold);border-color:var(--gold);color:var(--panel)}
+  .cookie-bar button:hover{transform:translateY(-1px)}
+  @media(max-width:560px){.cookie-bar .cb-btns{flex:1 1 100%}.cookie-bar .cb-btns button{flex:1 1 0;min-width:0}}
+  @media(max-width:560px){.cookie-bar{padding:10px 16px 12px}.cookie-bar .cb-in{gap:8px}.cookie-bar p{font-size:.78rem;line-height:1.42}}
+  @media(min-width:900px){.cookie-bar p{flex:1 1 0;min-width:0;max-width:none}}
+</style>
+<div class="cookie-bar" id="cookieBar" role="dialog" aria-label="Cookie notice">
+  <div class="cb-in">
+    <p><span data-tr="Bu sitede, ziyaret istatistiklerini ve reklamlarımızın sonuçlarını (Google Ads, Meta) ölçmek için onayınızla çerez kullanıyoruz; kişiselleştirilmiş reklam yapılmaz. Ayrıntılar için" data-en="With your consent, we use cookies to measure visit statistics and the results of our advertisements (Google Ads, Meta); no personalised advertising is used. For details, see our">With your consent, we use cookies to measure visit statistics and the results of our advertisements (Google Ads, Meta); no personalised advertising is used. For details, see our</span> <a href="/cerez.html" data-tr="Çerez Politikası" data-en="Cookie Policy">Cookie Policy</a>.</p>
+    <div class="cb-btns">
+      <button type="button" onclick="rejectCookies()" data-tr="Reddet" data-en="Decline">Decline</button>
+      <button type="button" class="acc" onclick="acceptCookies()" data-tr="Kabul et" data-en="Accept">Accept</button>
+    </div>
+  </div>
+</div>
+<script id="cerez-onay">
+  // Çerez onayı (Google Consent Mode v2; kullanıcı kararı 2026-11-16 "geleneksel sistem": bantta onay kutusu yok, iki düğme
+  // "Kabul et" / "Reddet"). Bu blok parts/footer.php ve index.html'de birebir aynıdır (araclar/test_cerez_onay.py).
+  // Tercihler yalnız cihazda, önceki sürümün anahtarlarıyla: 'capar-cerez' (analitik) ve 'capar-reklam' (reklam ölçümü), değerler
+  // 'accepted' | 'rejected'. "Kabul et" ikisini birlikte 'accepted', "Reddet" ikisini birlikte 'rejected' yazar.
+  // cerezDurum: ikisi 'accepted' → 'kabul'; analitik 'rejected' ve reklam 'rejected' ya da hiç yok → 'ret'; öteki her kayıt
+  // (önceki kutulu sürümden kalan kısmi seçim, yalnız analitik kabulü, bozuk değer) karar sayılmaz: hiçbir izin açılmaz, bant
+  // yeniden sorar (rıza geriye doğru genişletilmez). Varsayılan dört izin de kapalı; 'kabul'de bant yalnız analytics_storage'ı
+  // açar, reklam ölçümü izinlerini (ad_storage, ad_user_data) yalnız reklam-olcum.js açar (o da yalnız reklam kimliği tanımlı
+  // sayfada bulunur); ad_personalization hiçbir durumda açılmaz. Onay yoksa analitik etiketi çerezsiz kipte çalışır (cihaza
+  // çerez yazılmaz); onay verilirse çerezli kipe geçer. Tercih sonradan '#cerez-tercihi' adresiyle (Çerez Politikası'ndaki
+  // "Tercihinizi değiştirin" bağlantısı) bant yeniden açılarak değiştirilir.
+  var GA_ID='G-SBVXSY39NX';
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag=gtag;
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
+  function loadAnalytics(){
+    if(!GA_ID || window.__gaLoaded) return; window.__gaLoaded=true;
+    var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID; document.head.appendChild(s);
+    gtag('js',new Date()); gtag('config',GA_ID,{anonymize_ip:true});
+  }
+  function cerezOku(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function cerezYaz(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function cerezDurum(c,r){
+    if(c==='accepted' && r==='accepted') return 'kabul';
+    if(c==='rejected' && (r==='rejected' || r===null)) return 'ret';
+    return null;
+  }
+  function hideCookieBar(){ var b=document.getElementById('cookieBar'); if(b) b.classList.remove('show'); }
+  function cerezTercihAc(odak){
+    var b=document.getElementById('cookieBar'); if(!b) return; b.classList.add('show');
+    if(odak && b.querySelector){ var d=b.querySelector('button'); if(d && d.focus) d.focus(); }
+  }
+  function tercihAdresi(){ try{ return location.hash==='#cerez-tercihi'; }catch(e){ return false; } }
+  function saveCookies(kabul){
+    cerezYaz('capar-cerez',kabul?'accepted':'rejected'); cerezYaz('capar-reklam',kabul?'accepted':'rejected');
+    gtag('consent','update',kabul?{analytics_storage:'granted'}:{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied'});
+    hideCookieBar(); loadAnalytics();
+    try{ if(tercihAdresi() && history.replaceState) history.replaceState(null,'',location.pathname+location.search); }catch(e){}
+    try{ document.dispatchEvent(new CustomEvent('capar-onay',{detail:{analitik:!!kabul,reklam:!!kabul}})); }catch(e){}
+  }
+  function acceptCookies(){ saveCookies(true); }
+  function rejectCookies(){ saveCookies(false); }
+  (function(){
+    var durum=cerezDurum(cerezOku('capar-cerez'),cerezOku('capar-reklam'));
+    if(durum==='kabul'){ gtag('consent','update',{analytics_storage:'granted'}); }
+    loadAnalytics();
+    if(window.addEventListener) window.addEventListener('hashchange',function(){ if(tercihAdresi()) cerezTercihAc(true); });
+    setTimeout(function(){
+      // karar kayıtlıysa bant gösterilmez; '#cerez-tercihi' adresi bandı her durumda yeniden açar
+      if(tercihAdresi()){ cerezTercihAc(true); return; }
+      if(durum===null) cerezTercihAc(false);
+    },600);
+  })();
+</script>
+<script>
+/* Alt sayfa dil değiştirici — ana site ile aynı 'capar-lang' anahtarını kullanır.
+   data-tr/data-en metinleri ve data-body (makale gövdesi TR/EN) görünürlüğünü yönetir. */
+function setLang(lang, yazma){
+  if(lang!=='tr' && lang!=='en') lang='tr';
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-tr]').forEach(function(el){
+    var v = el.getAttribute('data-'+lang); if(v===null) return;
+    if(el.hasAttribute('data-i18n-html')) el.innerHTML = v; else el.textContent = v;
+  });
+  document.querySelectorAll('[data-body]').forEach(function(el){
+    el.hidden = (el.getAttribute('data-body') !== lang);
+  });
+  document.querySelectorAll('[data-href-'+lang+']').forEach(function(el){
+    el.setAttribute('href', el.getAttribute('data-href-'+lang));
+  });
+  var t=document.getElementById('btn-tr'), e=document.getElementById('btn-en');
+  if(t) t.classList.toggle('active', lang==='tr');
+  if(e) e.classList.toggle('active', lang==='en');
+  if(!yazma){ try{ localStorage.setItem('capar-lang', lang); }catch(_){} }
+}
+(function(){ setLang('en', true); })();
+</script>
+<script>
+/* Paket 3 (Fable H-11): yeni sekmede açılan her bağlantı (makale gövdelerindeki kanun/karar bağlantıları dahil) ekran
+   okuyucuya "yeni sekmede açılır" açıklamasını taşır (#yeni-sekme; dil değişince setLang metni çevirir). */
+(function(){
+  function yeniSekme(){
+    document.querySelectorAll('a[target="_blank"]').forEach(function(a){
+      var d=(a.getAttribute('aria-describedby')||'').split(/\s+/).filter(Boolean);
+      if(d.indexOf('yeni-sekme')<0){ d.push('yeni-sekme'); a.setAttribute('aria-describedby', d.join(' ')); }
+    });
+  }
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', yeniSekme); } else { yeniSekme(); }
+})();
+/* Tasarım denetimi (2026-11-19, bulgu 4): çerez bandının yüksekliği --cerez-yuk değişkeninde (bant kapalıyken 0); yapışkan
+   İçindekiler kutusu ve alan yan kartı bant açıkken bu kadar kısalır (site.css). Onay mantığına dokunmaz, yalnız ölçer. */
+(function(){
+  var b=document.getElementById('cookieBar'), r=document.documentElement;
+  if(!b || !window.ResizeObserver) return;
+  new ResizeObserver(function(){ r.style.setProperty('--cerez-yuk', (b.classList.contains('show') ? b.offsetHeight : 0) + 'px'); }).observe(b);
+})();
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","url":"https://capar.av.tr/en/contact","name":"Contact","inLanguage":"en","about":{"@type":"LegalService","@id":"https://capar.av.tr/#buro","name":"Av. Bayram Can ÇAPAR - ÇAPAR HUKUK BÜROSU","legalName":"Av. Bayram Can ÇAPAR - ÇAPAR HUKUK BÜROSU","alternateName":["Av. Bayram Can Çapar - Çapar Hukuk Bürosu","Av.Bayram Can ÇAPAR - Çapar Hukuk","Av.Bayram Can ÇAPAR - ÇAPAR Hukuk Bürosu","Çapar Hukuk Bürosu - Av.Bayram Can ÇAPAR","ÇAPAR Hukuk","Çapar Hukuk Bürosu","Çapar Hukuk","Capar Hukuk","Av. Bayram Can Çapar"],"disambiguatingDescription":"Bu site ve capar.av.tr, Av. Bayram Can Çapar'ın Denizli'deki ÇAPAR Hukuk Bürosu'na aittir. Büronun resmî iletişim bilgileri yalnız şunlardır: telefon 0258 241 55 54, e-posta info@capar.av.tr, adres Gazi Mustafa Kemal Bulvarı No:76 Kat:6, Merkezefendi / Denizli. Aynı soyadını taşıyan başka avukat ve büroların iletişim bilgileri bu büroya ait değildir. Büro cep telefonu numarası ve gmail.com uzantılı e-posta adresi kullanmaz.","employee":{"@type":"Person","@id":"https://capar.av.tr/#bayram-can-capar","name":"Av. Bayram Can Çapar","alternateName":["Bayram Can Çapar","Av. Bayram Can ÇAPAR","Avukat Bayram Can Çapar","Bayram Can Capar"],"honorificPrefix":"Av.","givenName":"Bayram Can","familyName":"Çapar","description":"Denizli Avukat Bayram Can Çapar - ÇAPAR HUKUK: Çapar Hukuk Bürosu kurucu avukatı.","disambiguatingDescription":"Bu site ve capar.av.tr, Av. Bayram Can Çapar'ın Denizli'deki ÇAPAR Hukuk Bürosu'na aittir. Büronun resmî iletişim bilgileri yalnız şunlardır: telefon 0258 241 55 54, e-posta info@capar.av.tr, adres Gazi Mustafa Kemal Bulvarı No:76 Kat:6, Merkezefendi / Denizli. Aynı soyadını taşıyan başka avukat ve büroların iletişim bilgileri bu büroya ait değildir. Büro cep telefonu numarası ve gmail.com uzantılı e-posta adresi kullanmaz.","url":"https://capar.av.tr/yazar/bayram-can-capar","mainEntityOfPage":"https://capar.av.tr/yazar/bayram-can-capar","image":"https://capar.av.tr/ekip/bayram-can-capar.jpg","jobTitle":"Avukat","hasOccupation":{"@type":"Occupation","name":"Avukat","occupationLocation":{"@type":"City","name":"Denizli"}},"worksFor":{"@id":"https://capar.av.tr/#buro"},"memberOf":[{"@id":"https://capar.av.tr/#buro"}],"alumniOf":{"@type":"CollegeOrUniversity","name":"Yaşar Üniversitesi Hukuk Fakültesi"},"knowsAbout":["Ticaret ve Şirketler Hukuku","Kambiyo Hukuku","Sigorta Hukuku","Gümrük Hukuku","İş ve Sosyal Güvenlik Hukuku","İcra ve İflas Hukuku","İş Kazası Tazminat Hukuku","Trafik Kazası Tazminat Hukuku","İdare Hukuku","Ceza Hukuku","Yükseköğretim Hukuku","Sağlık Hukuku","Gayrimenkul Hukuku","Miras Hukuku","Aile ve Boşanma Hukuku","Tüketici Hukuku","Sözleşme Hukuku","Vatandaşlık ve Yabancılar Hukuku","Vergi Hukuku","Kamulaştırma ve İmar Hukuku","Kira Hukuku","Rekabet Hukuku","Marka Hukuku","Banka ve Finans Hukuku","Kentsel Dönüşüm ve İnşaat Hukuku","Arabuluculuk ve Tahkim","Maden ve Enerji Hukuku"],"knowsLanguage":["tr","en"],"sameAs":["https://www.linkedin.com/in/av-bayram-can-%C3%A7apar/","https://www.facebook.com/cancpr/","https://www.wikidata.org/wiki/Q142187143"]},"member":{"@type":"Person","@id":"https://capar.av.tr/#bayram-can-capar","name":"Av. Bayram Can Çapar","url":"https://capar.av.tr/yazar/bayram-can-capar"},"url":"https://capar.av.tr/","logo":"https://capar.av.tr/logo.png","areaServed":[{"@type":"City","name":"Denizli"},{"@type":"AdministrativeArea","name":"İzmir"},{"@type":"AdministrativeArea","name":"Aydın"},{"@type":"AdministrativeArea","name":"Muğla"},{"@type":"AdministrativeArea","name":"Manisa"},{"@type":"AdministrativeArea","name":"Uşak"},{"@type":"AdministrativeArea","name":"Afyonkarahisar"},{"@type":"AdministrativeArea","name":"Kütahya"},{"@type":"AdministrativeArea","name":"İstanbul"},{"@type":"AdministrativeArea","name":"Ankara"}],"telephone":"+90 258 241 55 54","email":"info@capar.av.tr","address":{"@type":"PostalAddress","streetAddress":"Saraylar Mah. Gazi Mustafa Kemal Bulvarı, Memişoğlu Apartmanı No:76 Kat:6","postalCode":"20010","addressLocality":"Merkezefendi","addressRegion":"Denizli","addressCountry":"TR"},"geo":{"@type":"GeoCoordinates","latitude":37.7811021,"longitude":29.0841854},"hasMap":"https://maps.google.com/?cid=3283744558559138001","sameAs":["https://www.linkedin.com/in/av-bayram-can-%C3%A7apar/","https://www.facebook.com/cancpr/","https://www.facebook.com/profile.php?id=61596456279437","https://maps.google.com/?cid=3283744558559138001"],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"10:00","closes":"15:00"}]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://capar.av.tr/en/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://capar.av.tr/en/contact"}]}</script>
+</body>
+</html>

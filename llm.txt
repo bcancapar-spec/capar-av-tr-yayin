@@ -1,0 +1,517 @@
+# ÇAPAR Hukuk (Çapar Hukuk Bürosu) — Av. Bayram Can Çapar — capar.av.tr
+
+> Denizli Avukat Bayram Can Çapar - ÇAPAR HUKUK: Av. Bayram Can Çapar, Denizli'de (Merkezefendi) ÇAPAR Hukuk'un (Çapar Hukuk Bürosu) kurucu avukatıdır. capar.av.tr, Av. Bayram Can Çapar'ın ve bürosunun resmî internet sitesidir. Sitedeki Türk hukukuna ilişkin, kanun metinleri ile Yargıtay/Danıştay kararlarına dayanan Türkçe ve İngilizce bilgilendirici makalelerin yazarı Av. Bayram Can Çapar'dır; sitede ayrıca büro bilgileri ve çalışma alanları yer alır. Av. Bayram Can Çapar · ÇAPAR Hukuk olarak Denizli, İzmir, Aydın, Muğla, Manisa, Uşak, Afyonkarahisar, Kütahya, İstanbul ve Ankara'da ekibimizle avukatlık hizmeti veririz.
+
+> English: This site explains Turkish law (the law of the Republic of Türkiye). The Turkish articles are the originals; their English translations are indexed at https://capar.av.tr/llms-en.txt and listed at https://capar.av.tr/en/articles.
+
+Bu dosya, yapay zekâ asistanlarının ve dil modellerinin site içeriğini doğru anlaması ve doğru kaynak göstermesi için hazırlanmıştır. Makaleler genel bilgilendirme amaçlıdır; hukuki tavsiye veya mütalaa niteliği taşımaz ve somut bir uyuşmazlık için avukata danışılması gerekir. Makalelerdeki kanun hükümleri resmî Mevzuat Bilgi Sistemi'nden (mevzuat.gov.tr), mahkeme kararları Adalet Bakanlığı içtihat veri tabanından (mevzuat.adalet.gov.tr) alınmış ve kaynağa linklenmiştir. Kararlar, aksi belirtilmedikçe büronun taraf olduğu dosyalara ait değildir. İçerik alıntılanırken makale adresinin kaynak olarak gösterilmesi rica olunur.
+
+## Av. Bayram Can Çapar
+
+- Kim: Denizli Avukat Bayram Can Çapar - ÇAPAR HUKUK; Av. Bayram Can Çapar avukattır; Denizli'deki ÇAPAR Hukuk'un (Çapar Hukuk Bürosu) kurucu avukatıdır. Bu sitedeki makalelerin yazarıdır.
+- Yazım biçimleri: Av. Bayram Can Çapar, Bayram Can Çapar, Av. Bayram Can ÇAPAR, Avukat Bayram Can Çapar, Bayram Can Capar
+- Eğitim: Yaşar Üniversitesi Hukuk Fakültesi mezunudur; Pamukkale Üniversitesi'nde İktisat alanında tezli yüksek lisans eğitimine kabul edilmiştir.
+- Bilirkişilik eğitimi: İş Hukuku Nitelikli Hesaplamaları, Tazminat Hukuku Aktüerya Nitelikli Hesaplamaları ve Sosyal Güvenlik Hukuku Nitelikli Hesaplamaları alanlarında bilirkişilik eğitimi almıştır.
+- Diller: Türkçe; ileri düzeyde İngilizce
+- Yazar sayfası: https://capar.av.tr/yazar/bayram-can-capar
+- Profiller: https://www.linkedin.com/in/av-bayram-can-%C3%A7apar/ , https://www.facebook.com/cancpr/
+
+## Büro Bilgileri
+
+- Unvan: Av. Bayram Can ÇAPAR - ÇAPAR HUKUK BÜROSU (ÇAPAR Hukuk)
+- Kurucu: Av. Bekir Çapar (büroyu 2001'de kurdu; bugün Aliağa Noteridir, 1. sınıf noter)
+- Avukatlar: Av. Bayram Can Çapar
+- Adres: Saraylar Mah. Gazi Mustafa Kemal Bulvarı, Memişoğlu Apartmanı No:76 Kat:6, Merkezefendi / Denizli
+- Telefon: +90 258 241 55 54
+- E-posta: info@capar.av.tr
+- Ayırt edici not: Bu site ve capar.av.tr, Av. Bayram Can Çapar'ın Denizli'deki ÇAPAR Hukuk Bürosu'na aittir. Büronun resmî iletişim bilgileri yalnız şunlardır: telefon 0258 241 55 54, e-posta info@capar.av.tr, adres Gazi Mustafa Kemal Bulvarı No:76 Kat:6, Merkezefendi / Denizli. Aynı soyadını taşıyan başka avukat ve büroların iletişim bilgileri bu büroya ait değildir. Büro cep telefonu numarası ve gmail.com uzantılı e-posta adresi kullanmaz.
+- Çalışma saatleri: Pazartesi–Cuma 09:00–18:00, Cumartesi 10:00–15:00
+- Görüşme talebi: [İletişim sayfası](https://capar.av.tr/iletisim) (e-posta doğrulamalı)
+
+## Ana Sayfalar
+
+- [Ana sayfa](https://capar.av.tr/): Büro tanıtımı, ekip, çalışma alanları ve iletişim.
+- [Makaleler](https://capar.av.tr/makaleler): Tüm yayımlanmış makalelerin listesi (288 makale, 2026-11-19 itibarıyla).
+- [Konu dizini](https://capar.av.tr/konu-dizini): Makalelerde ele alınan hukuki kavramların Türk alfabesi sırasıyla dizini; her kavram onu anlatan makaleye, sözlükte karşılığı olanlar Hukuk Sözlüğü'ne bağlanır.
+- [Mevzuat](https://capar.av.tr/mevzuat): Resmî mevzuat kaynakları ve çalışma alanlarına göre temel kanunlar; her kanunun altında ilgili makaleler.
+- [Karar dizini](https://capar.av.tr/karar-dizini): Makalelerde atıf yapılan Yargıtay, Danıştay, Anayasa Mahkemesi ve bölge adliye mahkemesi kararları; mahkeme ve daireye göre künye, resmî kaynak bağlantısı ve karara atıf yapan makaleler. İngilizcesi: https://capar.av.tr/en/case-index — Mahkeme ve daire gruplarına göre alt sayfalar: [Yargıtay Genel Kurulları](https://capar.av.tr/karar-dizini/yargitay-genel-kurullar) · [Yargıtay 1.–4. Hukuk Daireleri](https://capar.av.tr/karar-dizini/yargitay-hukuk-daireleri-1-4) · [Yargıtay 5.–10. Hukuk Daireleri](https://capar.av.tr/karar-dizini/yargitay-hukuk-daireleri-5-10) · [Yargıtay 11. Hukuk Dairesi](https://capar.av.tr/karar-dizini/yargitay-11-hukuk-dairesi) · [Yargıtay 12.–23. Hukuk Daireleri](https://capar.av.tr/karar-dizini/yargitay-hukuk-daireleri-12-23) · [Yargıtay Ceza Daireleri](https://capar.av.tr/karar-dizini/yargitay-ceza-daireleri) · [Danıştay](https://capar.av.tr/karar-dizini/danistay) · [Anayasa Mahkemesi](https://capar.av.tr/karar-dizini/anayasa-mahkemesi) · [Bölge Adliye Mahkemeleri](https://capar.av.tr/karar-dizini/bolge-adliye-mahkemeleri)
+- [Madde dizini](https://capar.av.tr/madde-dizini): Makalelerde atıf yapılan kanun maddeleri; kanun ve madde sırasıyla, resmî metin bağlantısı ve maddeye atıf yapan makaleler. İngilizcesi: https://capar.av.tr/en/statute-index — Kanun gruplarına göre alt sayfalar: [Türk Borçlar Kanunu (TBK)](https://capar.av.tr/madde-dizini/tbk) · [Türk Medeni Kanunu (TMK)](https://capar.av.tr/madde-dizini/tmk) · [Türk Ticaret Kanunu (TTK)](https://capar.av.tr/madde-dizini/ttk) · [Hukuk Muhakemeleri Kanunu (HMK)](https://capar.av.tr/madde-dizini/hmk) · [İcra ve İflas Kanunu (İİK)](https://capar.av.tr/madde-dizini/iik) · [Türk Ceza Kanunu (TCK)](https://capar.av.tr/madde-dizini/tck) · [Ceza Muhakemesi Kanunu (CMK)](https://capar.av.tr/madde-dizini/cmk) · [İdari Yargılama Usulü Kanunu (İYUK)](https://capar.av.tr/madde-dizini/iyuk) · [İş ve Sosyal Güvenlik Kanunları](https://capar.av.tr/madde-dizini/is-ve-sosyal-guvenlik) · [Anayasa, İdare ve Vergi Kanunları](https://capar.av.tr/madde-dizini/anayasa-idare-ve-vergi) · [Ekonomi, Tüketici ve Fikri Mülkiyet Kanunları](https://capar.av.tr/madde-dizini/ekonomi-ve-fikri-mulkiyet) · [Diğer Kanunlar](https://capar.av.tr/madde-dizini/diger)
+- [Hesaplamalar](https://capar.av.tr/hesaplamalar): Türk hukukundaki genel kurallara göre çalışan bilgi araçları; hesap tarayıcıda yapılır, girilen bilgiler sunucuya gönderilmez.
+- [İnfaz hesaplama](https://capar.av.tr/hesaplamalar/infaz-hesaplama): 5275 sayılı Kanun m.107, m.105/A, geçici m.6 ve m.10 ile ilgili yönetmeliklere göre koşullu salıverilme, denetimli serbestlik, açık ceza infaz kurumuna ayrılma, hak ederek tahliye ve denetim süresinin sonunu dayanak maddeleri ve adım adım hesapla gösteren bilgi aracı; metnin düzenlemediği noktada tarih vermez (hukuki görüş değildir; resmî tarihler Cumhuriyet başsavcılığının süre belgesinde yer alır).
+- [İşçilik alacakları hesaplama](https://capar.av.tr/hesaplamalar/iscilik-alacaklari): 1475 sayılı Kanun m.14, 4857 sayılı İş Kanunu m.17, m.21, m.41, m.46, m.47, m.53 ve m.59'a göre kıdem ve ihbar tazminatını giydirilmiş brüt ücret ve kıdem tavanıyla, işe iade, kötü niyet, ayrımcılık ve sendikal tazminatı, ödenmeyen ücret, yıllık izin, fazla çalışma, hafta tatili ve genel tatil alacaklarını; sigorta ve işsizlik primi, gelir vergisi, damga vergisi ve asgari ücret istisnasıyla brütten nete adım adım gösteren bilgi aracı; 2015–2026 dışındaki dönemlerde tutar vermez (hukuki görüş değildir; bilirkişi raporu ve mahkeme kararı esastır).
+- [Bedensel zarar tazminatı hesaplama](https://capar.av.tr/hesaplamalar/bedensel-zarar-tazminati): İş kazası, trafik kazası ve diğer bedensel zararlarda sürekli ve geçici iş göremezlik maddi tazminatını Yargıtay uygulamasındaki aktüerya yöntemiyle — TRH-2010 yaşam tablosuna göre bakiye ömür (PMF 1931 yalnız karşılaştırma), bilinen ve bilinmeyen dönem, aktif ve pasif dönem, kusur indirimi, SGK ödemelerinin rücuya tabi kısmının mahsubu ve trafik sigortası kişi başı teminatı (TBK m.52, m.54, m.55; KTK m.85, m.91; 5510 m.21) — dayanak kararlarla adım adım tahmin eden bilgi aracı; destekten yoksun kalma ve manevi tazminat hesaplanmaz (hukuki görüş değildir; aktüerya bilirkişisi raporu ve mahkeme kararı esastır).
+- [Miras payı ve saklı pay hesaplama](https://capar.av.tr/hesaplamalar/miras-payi-hesaplama): 4721 sayılı Türk Medeni Kanunu m.495–501'e göre yasal mirasçıları ve zümreleri (altsoy; ana-baba ve kardeşler, ana-baba bir ve yarım kan ayrımıyla; büyük ana-büyük babalar), her derecede halefiyeti, sağ kalan eşin payını (m.499: 1/4, 1/2, 3/4 ya da tamamı), ret, mirasçılıktan çıkarma ve yoksunluğun etkisini (m.511, m.579, m.611–613), saklı payı ve tasarruf edilebilir kısmı (m.505, m.506; kardeşin saklı payı 5650 sayılı Kanunla kaldırıldı) tam kesir ve yüzde olarak, tutar girilirse hesap terekesiyle (m.507, m.508) TL olarak adım adım gösteren bilgi aracı; mal rejimi tasfiyesi, denkleştirme ve 01.01.2002 öncesi ölümler hesaplanmaz (hukuki görüş değildir; mahkeme kararı esastır).
+- [Dava harcı hesaplama](https://capar.av.tr/hesaplamalar/dava-harci-hesaplama): 492 sayılı Harçlar Kanunu (1) sayılı Tarife ve 2026 maktu tutarlarını belirleyen Harçlar Kanunu Genel Tebliği (Seri No: 98; RG 31.12.2025, 33124 5. Mükerrer) ile dava açılırken ödenecek başvurma harcını, binde 68,31 nispi karar ve ilam harcının peşin kısmını (dörtte bir; ölüm ve cismani zarar tazminat davalarında yirmide bir, m.28/a), maktu harcı, vekâlet harcını ve gider avansını (HMK m.120); karar sonrası bakiye harcı, ıslah ve talep artırımı harcını (m.30, m.32; HMK m.176–177, m.109/4), istinaf ve temyiz harcını kalem kalem ve dayanağıyla gösteren bilgi aracı; tarifesi yüklü olmayan yılda tutar vermez (hukuki görüş değildir; mahkeme veznesinin hesabı esastır).
+- [İcra harcı hesaplama](https://capar.av.tr/hesaplamalar/icra-harci-hesaplama): Harçlar Kanunu (1) sayılı Tarife B bölümü, Seri No: 98 Tebliğ ve 2548 sayılı Kanun ile icraya başvurma harcını, ilamsız takipte binde 5 peşin harcı (m.29), aşamaya göre tahsil harcını (%4,55, %9,10, %11,38), peşin harcın mahsubunu, cezaevi harcını (%2), tahliye ve menkul teslimi harcını (m.18, m.19) kalem kalem ve dayanağıyla gösteren bilgi aracı (hukuki görüş değildir; icra dairesi veznesinin hesabı esastır).
+- [Ne zaman emekli olurum? Emeklilik hesaplama](https://capar.av.tr/hesaplamalar/emeklilik-hesaplama): 5510 sayılı Kanun m.28 ve geçici m.9, 506 sayılı Kanun geçici m.81, 1479 sayılı Kanun geçici m.10 ve 5434 sayılı Kanun geçici m.205'e göre yaşlılık ya da emekli aylığı için aranan sigortalılık süresi, prim günü ve yaş şartını ilk sigorta girişine göre (08.09.1999 ve öncesi; 09.09.1999–30.04.2008; 01.05.2008 ve sonrası) belirleyen, 7438 sayılı Kanunla eklenen geçici m.95 uyarınca kalkan yaş şartını, askerlik ve doğum borçlanmasını (m.41), 18 yaş kuralını (m.38) ve birden fazla statüde son yedi yıl kuralını (mülga 2829 sayılı Kanun m.8) hesaba katarak tam ve kısmi aylık için en erken tarihi adım adım gösteren bilgi aracı (hukuki görüş değildir; sonuç SGK'nın hizmet dökümüne ve tahsis kararına göre değişebilir).
+- [Basında](https://capar.av.tr/basinda): Basında yer alan haber ve röportajlar.
+- [Yazar: Av. Bayram Can Çapar](https://capar.av.tr/yazar/bayram-can-capar): Makalelerin yazarı; bilirkişilik sertifikaları, çalışma alanları ve yazdığı tüm makalelerin listesi.
+- [Yurt dışında yaşayanların Türkiye'deki hukuki işleri](https://capar.av.tr/yurt-disinda-yasayanlar): Türkiye dışında yaşayan Türk vatandaşlarının Türkiye'deki tapu, miras, boşanma kararının tanınması, kira, icra ve ceza işlerinin Türk hukukunda nasıl yürüdüğü: konsolosluk ya da yabancı noter ve apostil ile vekâletname, yurt dışına tebligat, UYAP'tan takip ve hangi işlerde Türkiye'ye gelmek gerekebileceği; her bilgi kanun maddesiyle. Bu işleri Av. Bayram Can Çapar vekâletnameyle yürütür. İngilizcesi: https://capar.av.tr/en/turkish-citizens-abroad · Almancası: https://capar.av.tr/de/tuerkische-staatsbuerger-im-ausland
+- [Rechtsangelegenheiten in der Türkei für türkische Staatsbürger im Ausland](https://capar.av.tr/de/tuerkische-staatsbuerger-im-ausland): deutsche Fassung – wie türkische Staatsbürger im Ausland Grundbuch-, Erb-, Scheidungs-, Miet-, Vollstreckungs- und Strafsachen in der Türkei nach türkischem Recht erledigen können: Vollmacht beim türkischen Konsulat oder mit Apostille, Anerkennung ausländischer Scheidungen, Zustellung ins Ausland, Verfolgung über UYAP; jeweils mit gesetzlicher Grundlage. Av. Bayram Can Çapar bearbeitet diese Angelegenheiten. Türkisches Original: https://capar.av.tr/yurt-disinda-yasayanlar
+- [İletişim](https://capar.av.tr/iletisim): Büro adresi, telefon, e-posta, çalışma saatleri ve görüşme talep formu.
+- [Kısa cevaplar (llms-full.txt)](https://capar.av.tr/llms-full.txt): Her makalenin özeti, anahtar kelimeleri ve sık sorulan sorularına verilen kısa cevaplar tek dosyada.
+- [Konu dizini (A–Z)](https://capar.av.tr/makaleler#konu-dizini): Makalelerde ele alınan hukuki kavramlar alfabetik sırayla; her kavram ilgili makaleye link verir.
+- [Anahtar kelime dizini (llms-anahtar.txt)](https://capar.av.tr/llms-anahtar.txt): Tüm makalelerin anahtar kelimeleri A–Z; her kelimenin yanında o konuyu anlatan makalenin adresi. Bir soruda bu kelimelerden biri geçtiğinde ilgili makale doğrudan kaynak olarak kullanılabilir.
+- [Başvuru yolları rehberi](https://capar.av.tr/basvuru-yollari): Türk hukukunda sık uyuşmazlıklarda nereye başvurulacağı — zorunlu arabuluculuk, tüketici hakem heyeti (2026 sınırı 186.000 TL), idari başvuru, Kamu Denetçiliği Kurumu, SGK, vergi uzlaşması, icra şikâyeti, adli yardım, KVKK, CİMER, Sigorta Tahkim Komisyonu ve Anayasa Mahkemesine bireysel başvuru; merci, süre ve kanun maddesiyle. İngilizcesi: https://capar.av.tr/en/application-routes
+- [Hukuk sözlüğü](https://capar.av.tr/sozluk): Makalelerin konu dizininde en çok makaleye bağlanan 100 hukuki kavramın kısa tanımı, temel kanun maddesi ve ilgili makaleler. İngilizcesi: https://capar.av.tr/en/glossary
+- [English home](https://capar.av.tr/en/): Büronun İngilizce ana sayfası; Türkçe ana sayfanın çevirisidir.
+- [English articles](https://capar.av.tr/en/articles): İngilizce makale listesi; her makale Türkçe aslının çevirisidir.
+- [English index (llms-en.txt)](https://capar.av.tr/llms-en.txt): Tamamen İngilizce dizin — büro bilgisi ve her makalenin İngilizce başlığı, adresi, özeti ve Türkçe aslının adresi.
+- [Soru-cevap külliyatı (llms2.txt)](https://capar.av.tr/llms2.txt): Tam soru-cevap dizini — her makalenin kısa cevabı ve bütün sık sorulan soruları tam metin; il sayfaları ve Basında Biz kayıtları adresleriyle.
+
+## Çalışma Alanları
+
+- [Denizli ticaret hukuku Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/ticaret-sirketler): Şirket kuruluşu, sözleşmeler, ortaklık uyuşmazlıkları ve ticari davalar.
+- [Denizli iş kazası Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/is-kazasi-tazminat): İş kazası ve meslek hastalığında maddi-manevi tazminat ve rücu davaları.
+- [Denizli trafik kazası tazminatı Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/trafik-kazasi-tazminat): Trafik kazalarında değer kaybı, maddi-manevi tazminat ve sigorta uyuşmazlıkları.
+- [Denizli gümrük Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/gumruk): İthalat-ihracat işlemleri, gümrük vergileri, ek tahakkuk ve idari para cezalarına itiraz.
+- [Denizli ceza davası Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/ceza): Soruşturma ve kovuşturmada müdafilik, mağdur vekilliği ve ceza davaları.
+- [Denizli idare hukuku Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/idare): İptal ve tam yargı davaları, idari işlemler, disiplin cezaları ve kamu ihaleleri.
+- [Yükseköğretim hukuku Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/yuksekogretim): Öğrenci ve akademik personel disiplin soruşturmaları, YÖK ve üniversite işlemleri.
+- [Denizli tapu davası Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/gayrimenkul): Tapu, kira, kat mülkiyeti, kamulaştırma ve gayrimenkul uyuşmazlıkları.
+- [Denizli işçi davaları Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/is-sosyal-guvenlik): İşe iade, kıdem-ihbar, fazla mesai ve işçi-işveren uyuşmazlıkları.
+- [Denizli icra Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/icra-iflas): Alacak takibi, haciz, itirazın iptali ve iflas süreçleri.
+- [Denizli çek-senet Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/kambiyo): Çek, bono ve poliçeye dayalı takip; kambiyo senetlerine özgü itiraz ve davalar.
+- [Denizli sigorta Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/sigorta): Sigorta tazminatı, rücu, tahkim ve poliçe uyuşmazlıkları.
+- [Denizli miras Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/miras): Veraset, tenkis, mirasın paylaşımı, vasiyetname ve miras sözleşmesi uyuşmazlıkları.
+- [Denizli sağlık hukuku ve malpraktis Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/saglik): Tıbbi uygulama hatası (malpraktis), hasta hakları ve sağlık personeli uyuşmazlıkları.
+- [Denizli boşanma Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/aile-bosanma): Boşanma, nafaka, velayet, mal rejimi ve aile içi uyuşmazlıklar.
+- [Denizli tüketici Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/tuketici): Ayıplı mal ve hizmet, mesafeli sözleşmeler, tüketici kredileri ve tüketici hakem heyeti başvuruları.
+- [Denizli sözleşme hukuku Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/sozlesme): Sözleşmenin kurulması, ifası ve sona ermesi; uyarlama, cezai şart, zamanaşımı ve özel sözleşme türleri.
+- [Denizli vatandaşlık ve yabancılar hukuku Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/vatandaslik-yabancilar): Vatandaşlığın kazanılması ve kaybı, çok vatandaşlık ve mavi kart, yabancıların ikamet ve taşınmaz edinimi.
+- [Denizli vergi davası Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/vergi): Vergi ve ceza ihbarnamelerine karşı dava, ödeme emrine itiraz, uzlaşma ve veraset ve intikal vergisi uyuşmazlıkları.
+- [Denizli kamulaştırma Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/kamulastirma-imar): Kamulaştırma bedelinin tespiti ve tescil, acele kamulaştırma, kamulaştırmasız el atma ve imar işlemlerine karşı davalar.
+- [Denizli kira davası Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/kira): Kira bedelinin tespiti, kira artış sınırı, tahliye davaları ve kira uyuşmazlıklarında zorunlu arabuluculuk.
+- [Denizli rekabet hukuku Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/rekabet): Haksız rekabet davaları, rekabeti sınırlayıcı anlaşmalar ve hâkim durumun kötüye kullanılması.
+- [Denizli marka Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/marka): Marka tescili ve yenileme, marka hakkına tecavüz, itiraz ve hükümsüzlük ile lisans ve devir sözleşmeleri.
+- [Denizli banka hukuku Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/banka-finans): Kredi sözleşmeleri ve hesap kat ihtarı, temerrüt faizi, kefalet, ipotek ve finansal kiralama uyuşmazlıkları.
+- [Denizli kentsel dönüşüm Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/kentsel-donusum-insaat): Riskli yapı tespiti ve itiraz, kentsel dönüşümde malik hakları, kat karşılığı inşaat ve yapım sözleşmeleri.
+- [Denizli arabuluculuk Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/arabuluculuk-tahkim): Dava şartı arabuluculuk, anlaşma belgesine icra edilebilirlik şerhi, tahkim sözleşmesi ve hakem yargılaması.
+- [Denizli maden hukuku Avukat Bayram Can Çapar - ÇAPAR HUKUK](https://capar.av.tr/alan/maden-enerji): Maden ve jeotermal sahalarında kamulaştırma ve irtifak, acele kamulaştırma ve maden ocaklarında iş güvenliği.
+
+İller: Denizli, İzmir, Aydın, Muğla, Manisa, Uşak, Afyonkarahisar, Kütahya, İstanbul, Ankara (görevli merciler: https://capar.av.tr/llms-full.txt)
+
+## Türkiye dışında yaşayanlar için
+
+Türkiye dışında yaşayan Türk vatandaşlarının Türkiye'deki hukuki işleri, Türk hukukuna göre. Bu işleri Av. Bayram Can Çapar vekâletnameyle yürütür; görüşme ve yazışma Türkçe veya İngilizce yapılabilir. Sayfa Türkçe, İngilizce ve Almanca yayımlanır.
+
+- [Yurt dışında yaşayanların Türkiye'deki hukuki işleri](https://capar.av.tr/yurt-disinda-yasayanlar) · English: https://capar.av.tr/en/turkish-citizens-abroad · Deutsch: https://capar.av.tr/de/tuerkische-staatsbuerger-im-ausland
+
+### Yurt dışında yaşayanlar için rehberler
+
+- [Yurt Dışındaki Kişiye Tebligat: Konsolosluk, İlanen Tebligat ve Habersiz Kesinleşen Karar ve Takipler](https://capar.av.tr/makale/yurt-disindaki-kisiye-tebligat-ve-habersiz-kesinlesen-kararlar)
+- [Yurt Dışındaki Mirasçının Veraset ve İntikal Vergisi: Beyan Süreleri, Ek Süre, Taksit ve Tapuda İlişik Kesme](https://capar.av.tr/makale/yurt-disindaki-mirascinin-veraset-ve-intikal-vergisi)
+- [Yurt Dışında Yaşayanlar Türkiye'de Nasıl Boşanır? Yetkili Mahkeme, Uygulanacak Hukuk ve Duruşmaya Katılım](https://capar.av.tr/makale/yurt-disinda-yasayanlarin-turkiyede-bosanmasi)
+- [Yurt Dışında Alınan Boşanma Kararı Türkiye'de Nasıl Geçerli Olur? Konsoloslukta İdari Tescil ve Tanıma Davası](https://capar.av.tr/makale/yurt-disinda-alinan-bosanma-kararinin-turkiyede-taninmasi)
+- [Yurt Dışındaki Borçludan Nafaka Tahsili: Yabancı Nafaka Kararının Tenfizi, New York ve Lahey Sözleşmeleri](https://capar.av.tr/makale/yurt-disindaki-borcludan-nafaka-tahsili)
+- [Lahey Sözleşmesi ile Çocuğun İadesi: Uluslararası Çocuk Kaçırmada Başvuru, Bir Yıllık Süre, İadeden Kaçınma](https://capar.av.tr/makale/lahey-sozlesmesi-cocuk-kacirma-ve-cocugun-iadesi)
+- [Yurt Dışından Kesin Dönüşte İhtiyaç Nedeniyle Tahliye: Şartlar, İspat, Süreler ve Yargıtay Kararları](https://capar.av.tr/makale/yurt-disindan-kesin-donuste-ihtiyac-nedeniyle-tahliye)
+- [Dövizle Askerlik ve Yurt Dışı Erteleme: Şartlar, Ödeme, İptal, İade ve Çok Vatandaşların Askerliği](https://capar.av.tr/makale/dovizle-askerlik-ve-yurt-disindaki-yukumlunun-askerligi)
+- [Mavi Kart ve Çifte Vatandaşlık: Türk Vatandaşlığından İzinle Çıkanların Türkiye'deki Hakları](https://capar.av.tr/makale/mavi-kart-ve-cifte-vatandaslik-vatandasliktan-cikanlarin-haklari)
+- [Yabancı Plakalı Araç Süre Aşımı: Yurt Dışında Yaşayanlar İçin Geçici İthalat, Vergi, Para Cezası ve İtiraz](https://capar.av.tr/makale/yabanci-plakali-arac-sure-asimi-ve-gumruk)
+
+### Sık sorulan konular
+
+- [Vekâletname ve konsolosluk işlemleri](https://capar.av.tr/yurt-disinda-yasayanlar#konu-vekaletname): https://capar.av.tr/makale/sahte-vekaletnameyle-satilan-tapu-geri-alinamiyorsa-devlet-tazminat-oder · https://capar.av.tr/makale/vekalet-sozlesmesi-ve-azil
+- [Miras ve veraset](https://capar.av.tr/yurt-disinda-yasayanlar#konu-miras): https://capar.av.tr/makale/mirascilik-belgesi-ve-mirasin-reddi · https://capar.av.tr/makale/muris-muvazaasi-davasi-surerken-tasinmaz-cebren-satilirsa-hmk-125 · https://capar.av.tr/makale/muris-muvazaasi-mirastan-mal-kacirma · https://capar.av.tr/makale/tenkis-davasi · https://capar.av.tr/makale/turk-miras-hukuku-sistemi · https://capar.av.tr/makale/vasiyetnamenin-iptali
+- [Tapu işlemleri ve tapu iptali](https://capar.av.tr/yurt-disinda-yasayanlar#konu-tapu): https://capar.av.tr/makale/ecrimisil-haksiz-isgal-tazminati · https://capar.av.tr/makale/elatmanin-onlenmesi · https://capar.av.tr/makale/gabin-asiri-yararlanma-nedeniyle-tapu-iptali · https://capar.av.tr/makale/hile-nedeniyle-tapu-iptali-ve-tescil · https://capar.av.tr/makale/tapu-iptali-davasinda-hukmedilen-tazminat-kesinlesmeden-icraya-konulabilir · https://capar.av.tr/makale/tapu-iptali-ve-tescil-davasi · https://capar.av.tr/makale/tapu-iptali-ve-tescil-davasinda-iyiniyetli-ucuncu-kisi · https://capar.av.tr/makale/yukleniciden-bagimsiz-bolum-alanin-tapusu-iptal-edilemez
+- [Gayrimenkul satışı ve ortak mülkiyet](https://capar.av.tr/yurt-disinda-yasayanlar#konu-gayrimenkul-satis): https://capar.av.tr/makale/hisseli-tapu-satis-ayirma-ve-tek-tapuya-cevirme · https://capar.av.tr/makale/komisyon-tellallik-alacagi · https://capar.av.tr/makale/muhdesatin-tespiti-davasinda-hukuki-yarar-ortakligin-giderilmesi · https://capar.av.tr/makale/onalim-davasi-surerken-ortakligin-giderilmesi-satisi · https://capar.av.tr/makale/onalim-sufa-davasi · https://capar.av.tr/makale/onalim-sufa-davasi-ve-muvazaa · https://capar.av.tr/makale/onalimda-rayic-bedel-hangi-tarihe-gore-belirlenir · https://capar.av.tr/makale/ortakligin-giderilmesi-izale-i-suyu · https://capar.av.tr/makale/satis-pazarligina-katilip-onay-veren-paydas-onalim-hakkini-kullanamaz · https://capar.av.tr/makale/toprak-koruma-kanununda-komsu-parsel-onalim
+- [Yabancı kararların tanınması ve tenfizi](https://capar.av.tr/yurt-disinda-yasayanlar#konu-taninma): https://capar.av.tr/makale/yabanci-mahkeme-kararlarinin-taninmasi-ve-tenfizi
+- [Boşanma ve aile hukuku](https://capar.av.tr/yurt-disinda-yasayanlar#konu-bosanma): https://capar.av.tr/makale/anlasmali-bosanma-sartlari-ve-sureci · https://capar.av.tr/makale/bosanmada-edinilmis-mallara-katilma-rejimi · https://capar.av.tr/makale/bosanmada-nafaka-turleri · https://capar.av.tr/makale/bosanmada-ziynet-esyasi-alacagi · https://capar.av.tr/makale/cekismeli-bosanma-ve-bosanma-sebepleri · https://capar.av.tr/makale/nafaka-odenmezse-ne-olur-icra-takibi-ve-tazyik-hapsi · https://capar.av.tr/makale/nafakanin-artirilmasi-ve-azaltilmasi · https://capar.av.tr/makale/nisanin-bozulmasi-tazminat-ve-hediyelerin-iadesi · https://capar.av.tr/makale/velayet-ve-kisisel-iliski
+- [Nüfus kaydı ve soybağı](https://capar.av.tr/yurt-disinda-yasayanlar#konu-nufus): https://capar.av.tr/makale/soybaginin-reddi-davasi
+- [Kira alacağı ve tahliye](https://capar.av.tr/yurt-disinda-yasayanlar#konu-kira): https://capar.av.tr/makale/ihtiyac-nedeniyle-tahliyede-erken-arabuluculuk-basvurusu · https://capar.av.tr/makale/kira-bedelinin-tespiti-davasi · https://capar.av.tr/makale/kira-tespit-davasi-acildiktan-sonra-kiraci-cikarsa-yargilama-giderleri · https://capar.av.tr/makale/kiralananin-tahliyesi
+- [İcra takipleri ve ödeme emri](https://capar.av.tr/yurt-disinda-yasayanlar#konu-icra): https://capar.av.tr/makale/icra-takibinde-istihkak-davasi · https://capar.av.tr/makale/ipotegin-fekki-davasi · https://capar.av.tr/makale/ipotek-veren-ucuncu-kisinin-sorumlulugu · https://capar.av.tr/makale/itirazin-iptali-davasi · https://capar.av.tr/makale/itirazin-kaldirilmasi · https://capar.av.tr/makale/menfi-tespit-ve-istirdat-davasi · https://capar.av.tr/makale/odeme-emrine-itiraz-ve-maas-haczi · https://capar.av.tr/makale/tasarrufun-iptali-davasi
+- [Yurt dışı borçlanması ve emeklilik](https://capar.av.tr/yurt-disinda-yasayanlar#konu-yurtdisi-borclanma): https://capar.av.tr/makale/ev-hanimlarinin-emekliligi-istege-bagli-sigorta · https://capar.av.tr/makale/yurt-disi-borclanmasi-ile-emeklilik
+
+## Makaleler (Türkçe asıl; her makalenin İngilizce çevirisi ayrı adreste)
+
+Sitede 288 makale var. Bu dosya kısa dizindir: önce en yeni 10 makale tarih ve özetiyle, ardından tüm makaleler çalışma alanlarına göre yalnız başlık ve adresiyle listelenir. Her makalenin özeti, anahtar kelimeleri ve sık sorulan sorularına verilen kısa cevaplar https://capar.av.tr/llms-full.txt dosyasında; anahtar kelimelerin A–Z dizini https://capar.av.tr/llms-anahtar.txt dosyasındadır.
+
+### En Yeni Makaleler
+
+- [Anahtar Teslim Konut Satışı: Ön Ödemeli Konut Sözleşmesi, Şekil, Geç Teslim, Cayma ve Dönme, Tapu Devri](https://capar.av.tr/makale/anahtar-teslim-konut-satisi-sozlesmesi-on-odemeli-konut-ve-gec-teslim) (2026-11-19): Yükleniciden ya da satıcıdan anahtar teslim konut alırken ön ödemeli konut satışının şekli, geçersizliği kimin ileri sürebileceği, kırk sekiz aylık teslim sınırı, geç teslimde cezai şart ve kira kaybı, cayma ve dönme, teminatlar…
+- [Yargıtay HGK: Arabuluculuk Anlaşması Ödenmez ve Belgede Öngörülmüşse Bütün Alacak Dava Edilebilir](https://capar.av.tr/makale/arabuluculuk-anlasma-belgesi-odenmezse-dava-acilabilir-mi) (2026-11-19): Yargıtay Hukuk Genel Kurulu'na göre arabuluculuk anlaşma belgesi tam ve eksiksiz ödeme şartına bağlanmış ve ödenmezse bütün alacakların dava edilebileceği yazılmışsa, taksit ödenmeyince ödenenler mahsup edilerek alacağın tamamı…
+- [Bağıştan Dönme ve Tapu İptali: Şartlı Bağış, Geri Alma Sebepleri ve Bir Yıllık Süre (TBK m.295–297)](https://capar.av.tr/makale/bagistan-donme-ve-tapu-iptali-sartli-bagis-ve-bir-yillik-sure) (2026-11-19): Bağışlanan taşınmaz yalnız TBK m.295'teki üç sebeple ve sebebin öğrenilmesinden itibaren bir yıl içinde geri alınabilir; Yargıtay şartlı bağışın ispatını ve şarta aykırılığı sıkı biçimde arar.
+- [Yargıtay HGK: Görevsizlik Kararından Sonra Dosya Görevli Mahkemeye Gelmeden Arabuluculuk Tamamlanırsa Dava Şartı Gerçekleşir](https://capar.av.tr/makale/gorevsiz-mahkemede-acilan-davada-sonradan-arabulucuya-basvuru) (2026-11-19): Yargıtay Hukuk Genel Kurulu'na göre görevsiz mahkemede açılan iş davasında, görevsizlik kararından sonra arabulucuya başvurulup süreç dosya görevli iş mahkemesinin esasına kaydedilmeden sonuçlanmışsa dava şartı yerine getirilmiş…
+- [İşyerinde Kalp Krizi İş Kazası Sayılır mı? 5510 Sayılı Kanun m.13, SGK Uygulaması ve Yargıtay Kararları](https://capar.av.tr/makale/isyerinde-kalp-krizi-is-kazasi-sayilir-mi) (2026-11-19): İşyerinde bulunduğu sırada kalp krizi geçiren sigortalının olayı Yargıtay 10. Hukuk Dairesi kararlarında kural olarak 5510 sayılı Kanun m.13 kapsamında iş kazası sayılıyor; servis aracındaki kalp krizi de iş kazası kabul edildi.…
+- [Malullük Aylığı: Şartları, Yüzde 60 Çalışma Gücü Kaybı ve SGK Sağlık Kurulu Kararına İtiraz (5510 Sayılı Kanun m.25–27)](https://capar.av.tr/makale/malulluk-ayligi-sartlari-ve-sgk-kararina-itiraz) (2026-11-19): Malullük aylığı için çalışma gücünün en az %60’ının kaybedildiğinin Kurum Sağlık Kurulunca tespiti, en az on yıl sigortalılık ve 1800 gün prim ile işten ayrıldıktan sonra yazılı istek gerekir; işe girişten önce %60 kayıp varsa…
+- [Yargıtay HGK: Borçlanmayla 900 Güne Tamamlanan Ölüm Aylığı Kesilir, Ödenen Aylıklar Kurum Hatası Hükmüyle (m.96/1-b) Geri Alınır](https://capar.av.tr/makale/olum-ayligi-900-gun-borclanma-kurum-hatasi-yersiz-odeme) (2026-11-19): Yargıtay Hukuk Genel Kurulu 18.06.2026 tarihli kararında, ölüm aylığının 5 yıl ve 900 gün yolunda borçlanılan sürelerin sayılmadığını, bu nedenle askerlik borçlanmasıyla bağlanan aylığın kesilmesinin yerinde olduğunu; ancak hak…
+- [Yargıtay HGK: SGK İdari Para Cezasına Süresinde İtiraz Edilip Dava Açılmazsa Ödeme Emri Davasında Ceza Tartışılamaz](https://capar.av.tr/makale/sgk-idari-para-cezasi-kesinlesirse-odeme-emri-davasinda-tartisilamaz) (2026-11-19): Yargıtay Hukuk Genel Kurulu 15.12.2022 tarihli kararında, SGK idari para cezasına karşı yolun on beş gün içinde Kuruma itiraz ve ret hâlinde otuz gün içinde idare mahkemesi olduğunu; bu yol kullanılmadığı için kesinleşen ceza…
+- [Taşınmaz Satış Vaadi Sözleşmesi: Tapu İptali ve Tescil Davası, Fesih, Zamanaşımı ve Harici Satış](https://capar.av.tr/makale/tasinmaz-satis-vaadi-sozlesmesi-tescil-davasi-ve-harici-satis) (2026-11-19): Noterde yapılan satış vaadine dayanarak tapu iptali ve tescil istemenin şartları, tek taraflı feshin geçersizliği, on yıllık zamanaşımı ve harici satışta bedelin denkleştirici adalete göre iadesi, Yargıtay Hukuk Genel Kurulu…
+- [6284 Sayılı Kanunda Uzaklaştırma ve Koruma Kararı: Kim İsteyebilir, Süre, İtiraz (m.9) ve Zorlama Hapsi (m.13)](https://capar.av.tr/makale/6284-sayili-kanun-koruma-ve-uzaklastirma-karari-itiraz-ve-zorlama-hapsi) (2026-11-15): 6284 sayılı Kanun’a göre uzaklaştırma gibi önleyici tedbirler ilk defasında en çok altı ay için verilir ve gerekirse uzatılabilir; karara iki hafta içinde aile mahkemesine itiraz edilir ve itiraz kararı kesindir. Yazı; delil…
+
+### Ticaret ve Şirketler Hukuku
+
+- [Adi Ortaklığın Feshi ve Tasfiyesi: Sona Erme Sebepleri, Tasfiye Davası, Ortaklık Malına Haciz (TBK m.620-645)](https://capar.av.tr/makale/adi-ortakligin-feshi-ve-tasfiyesi)
+- [Alacağın Temliki (Devri)](https://capar.av.tr/makale/alacagin-temliki-devri)
+- [Anahtar Teslim (Eser) Sözleşmesinde Ayıplı Teslim](https://capar.av.tr/makale/anahtar-teslim-eser-sozlesmesinde-ayipli-teslim)
+- [Anonim Şirketlerde Avukat Bulundurma Zorunluluğu: Hangi Şirketler, Yaptırım Nedir? (Avukatlık Kanunu m.35/3)](https://capar.av.tr/makale/anonim-sirketlerde-avukat-bulundurma-zorunlulugu)
+- [Anonim Şirkette Azınlık Pay Sahiplerinin Hakları: Gündeme Madde Ekletme, Özel Denetim ve Haklı Sebeple Fesih](https://capar.av.tr/makale/anonim-sirkette-azinlik-haklari)
+- [Anonim Şirkette Genel Kurul Kararının İptali Davası: Süre, Arabuluculuk ve Kesinleşmeden İcra](https://capar.av.tr/makale/anonim-sirkette-genel-kurul-kararinin-iptali-davasi)
+- [Anonim Şirkette Genel Kurul Nasıl Toplanır? Çağrı, Gündem ve Karar Nisapları](https://capar.av.tr/makale/anonim-sirkette-genel-kurul-cagrisi-gundem-ve-nisaplar)
+- [Anonim Şirkette Nama Yazılı Payların Devri: Onay, Ret Sebepleri ve Pay Defterine Kayıt](https://capar.av.tr/makale/anonim-sirkette-nama-yazili-pay-devri)
+- [Anonim Şirkette Yönetim Kurulu Karar Alamıyorsa Ne Yapılabilir? Nisap, Batıl Karar ve Kayyım](https://capar.av.tr/makale/anonim-sirkette-yonetim-kurulu-karar-alamiyorsa)
+- [Anonim Şirkette Yönetim Kurulu Üyelerinin Sorumluluğu: Özen, Dava, İbra, Zamanaşımı (TTK m.369, 553–561)](https://capar.av.tr/makale/anonim-sirkette-yonetim-kurulu-sorumlulugu)
+- [BAM: Pay Senedi Basılmamış Hisse, Pay Sahibinin Yazılı Temliki Olmadan Yönetim Kurulu Kararıyla Devredilemez](https://capar.av.tr/makale/pay-senedi-basilmamis-hisse-yazili-temlik-olmadan-devredilemez)
+- [Banka Ticari Krediyi Vadesinden Önce Kat Edebilir mi? Muacceliyet Kaydı, Atıfet Süresi ve Haksız Kat](https://capar.av.tr/makale/kredinin-vadesinden-once-kat-edilmesi)
+- [Bölge Adliye Mahkemesi: Bononun Teminat Senedi Olduğu İddiası Yargılamayı Gerektirir, İhtiyati Haczi Kaldırmaz](https://capar.av.tr/makale/teminat-senedi-iddiasi-bonoya-dayali-ihtiyati-haczi-kaldirmaz)
+- [Cari Hesap Sözleşmesi Nedir? Yazılı Şekil, Faiz, Bakiye, Zamanaşımı ve Muhasebe Cari Hesabından Farkı (TTK)](https://capar.av.tr/makale/cari-hesap-sozlesmesi)
+- [Denizli Bölge Adliye Mahkemesi: Yargı Çevresi, İstinaf Yolu ve Süreler (Muğla ve Uşak Dosyaları Dâhil)](https://capar.av.tr/makale/denizli-bolge-adliye-mahkemesi-yargi-cevresi-istinaf)
+- [Döviz ve Dövize Endeksli Ticari Kredide Kat ve Takip: Hangi Kur Esas Alınır? (TBK m.99, İİK m.58)](https://capar.av.tr/makale/doviz-kredisinde-kat-ve-kur)
+- [Eski Çalışan Rakip Şirket Kurarsa: Çalışan/Müşteri Ayartma, Ticari Sır, Haksız Rekabet (TTK 55, TBK 444-447)](https://capar.av.tr/makale/calisan-ve-musteri-ayartma-ticari-sir-haksiz-rekabet)
+- [Faturaya Dayalı Alacağın İspatı: Fatura Alacağı Ne Zaman Gerçek Alacaktır? (Teslim, Ticari Defter, BA-BS)](https://capar.av.tr/makale/faturaya-dayali-alacagin-ispati)
+- [Finansal Kiralamada Peşinat İadesi: Kiracının Satıcıya Ödediği Bedel Fesihte Geri Alınır mı?](https://capar.av.tr/makale/finansal-kiralamada-pesinat-iadesi)
+- [Haksız Rekabet Davası: Haksız Rekabet Hâlleri, Talepler, Görevli Mahkeme ve Zamanaşımı (TTK m.54-62)](https://capar.av.tr/makale/haksiz-rekabet-davasi)
+- [Hesap Kat İhtarnamesi: Banka Kredi Hesabını Nasıl Kat Eder, Tebliğ Usulsüzse Ne Olur? (İİK m.68/b)](https://capar.av.tr/makale/hesap-kat-ihtarnamesi)
+- [Hileli İade Faturası: Borcu Sona Erdirir mi? (İspat ve Vergi-Ceza Boyutu)](https://capar.av.tr/makale/hileli-iade-faturasi)
+- [Kat İhtarı Tebliğ Edilmeyen Kefil Hangi Tarihten Temerrüt Faizi Öder? (TTK m.7, TBK m.589)](https://capar.av.tr/makale/kefilin-temerrut-faizi-sorumlulugu)
+- [Katılım Bankalarında Finansal Kiralama (Leasing): Kira Bedeli, Mülkiyet, Temerrüt, Fesih ve Malın İadesi](https://capar.av.tr/makale/katilim-bankalarinda-finansal-kiralama)
+- [Komisyon (Tellallık) Alacağı: Simsarlık Sözleşmesi, Emlak Komisyonu ve Cezai Şart](https://capar.av.tr/makale/komisyon-tellallik-alacagi)
+- [Kooperatif Üyeliğinden İhraç (Ortaklıktan Çıkarma): İhtar Şartları, Yetkili Organ ve İptal Davası](https://capar.av.tr/makale/kooperatif-uyeliginden-ihrac)
+- [Kütahya'da İstinaf Hangi Mahkemeye Yapılır? Bursa Bölge Adliye ve Bölge İdare Mahkemesi](https://capar.av.tr/makale/kutahya-istinaf-bursa-bolge-adliye-ve-bolge-idare-mahkemesi)
+- [Leasing Fesih Sonrası Satış: Banka Malı Düşük Bedelle Satarsa Değer Farkı Kime Ödenir? (6361 m.33)](https://capar.av.tr/makale/leasing-fesih-sonrasi-satis-deger-farki)
+- [Limited Şirket Müdürü Nasıl Görevden Alınır? Genel Kurul Kararı ve Mahkeme Yolu](https://capar.av.tr/makale/limited-sirket-mudurunun-gorevden-alinmasi)
+- [Limited Şirket Müdürü Tek Başına Hangi İşlemleri Yapabilir? (Şirket Taşınmazının Satışı Dahil)](https://capar.av.tr/makale/limited-sirket-muduru-tek-basina-hangi-islemleri-yapabilir)
+- [Limited Şirkette Genel Kurul Kararının İptali](https://capar.av.tr/makale/limited-sirkette-genel-kurul-karari-iptali)
+- [Limited Şirkette Karar Nisabı Kaçtır? Olağan Kararlar ve Önemli Kararlar (TTK m.620–621)](https://capar.av.tr/makale/limited-sirkette-karar-nisaplari)
+- [Limited Şirkette Olağanüstü Genel Kurul ve Gündemle Bağlılık: Gündemi Kim Belirler? (TTK m.617, 411-413, 416)](https://capar.av.tr/makale/limited-sirkette-olaganustu-genel-kurul-ve-gundemle-baglilik)
+- [Limited Şirkette Pay Devri: Noter Şekli, Genel Kurul Onayı ve Onay Reddedilirse Ne Olur?](https://capar.av.tr/makale/limited-sirkette-pay-devri-ve-genel-kurul-onayi)
+- [Marka Hakkına Tecavüz (SMK m.29): Tecavüz Sayılan Fiiller, Savunmalar; Tespit, Men, Ref ve Tazminat Davaları](https://capar.av.tr/makale/marka-hakkina-tecavuz)
+- [Muğla, Manisa, Uşak, Afyonkarahisar ve Kütahya'da Ticari ve Tüketici Davası Hangi Mahkemede Açılır?](https://capar.av.tr/makale/ticaret-ve-tuketici-mahkemesi-olmayan-yerlerde-dava-nerede-acilir)
+- [Sanatçı Sözleşmelerinin Niteliği ve Cayma Hakkı: Menajerlik, Konser, Albüm, Reklam (TBK m.484, 512, FSEK m.58)](https://capar.av.tr/makale/sanatci-sozlesmeleri-hukuki-niteligi-ve-cayma-hakki)
+- [Sanatçıların Bağlanma (Kelepçe) Sözleşmeleri: Münhasırlık, Geçerlilik, Çıkış (TMK 23, TBK 27-28, FSEK 50)](https://capar.av.tr/makale/sanatcilarin-baglanma-sozlesmeleri)
+- [Sat-Geri Kirala (Leaseback) Gerçekte Kredi mi? Muvazaa ve İnançlı İşlem İddiası (TBK m.19)](https://capar.av.tr/makale/sat-geri-kirala-muvazaa-iddiasi)
+- [Seyahat Acentalarının Hukuki Durumu ve Alacakları: İşletme Belgesi, Kontenjan, Komisyon, Faiz ve Zamanaşımı](https://capar.av.tr/makale/seyahat-acentalarinin-hukuki-durumu-ve-alacaklari)
+- [Tahkim Şartı: Geçerlilik Koşulları, Tahkim İtirazı ve Mahkemede Dava Açılırsa Ne Olur?](https://capar.av.tr/makale/tahkim-sarti-gecerlilik-kosullari-ve-tahkim-itirazi)
+- [Tera, Pusula ve Tasfiye Edilen Fonlarda Zarar Gören Yatırımcılar İçin Hukuki Yol: YTM, Kayıt Kabul, Tam Yargı](https://capar.av.tr/makale/tera-pusula-fon-magdurlari-hukuki-yol-rehberi)
+- [Ticaret Şirketlerinde Ortaklıktan Çıkarma ve Çıkma](https://capar.av.tr/makale/ticaret-sirketlerinde-ortakliktan-cikarma)
+- [Ticari Defterlerin Delil Niteliği (HMK m.222): Lehe ve Aleyhe Delil](https://capar.av.tr/makale/ticari-defterlerin-delil-niteligi)
+- [Ticari Defterlerin Saklanma Süresi, Zayi Belgesi ve Defterlerin Kaybolması (TTK m.82)](https://capar.av.tr/makale/ticari-defterlerin-saklanma-suresi-ve-zayi-belgesi)
+- [Ticari Kefalet: Dönemler, Süreklilik ve Geçersizlik Hâlleri (TBK m.583, 584, 598, 603; TTK m.7)](https://capar.av.tr/makale/ticari-kefalet-donemleri-sureklilik-ve-gecersizlik)
+- [Ticari Kredide Temerrüt Faizi Oranı Nasıl Belirlenir? Akdi Faizin %100 Fazlası ve TCMB Oranı](https://capar.av.tr/makale/ticari-kredide-temerrut-faizi-orani)
+- [Ticari İşlerde Faturanın Hükmü: Sekiz Günlük İtiraz, Ticari Defter ve İrsaliye](https://capar.av.tr/makale/ticari-islerde-faturanin-hukmu)
+- [Ticari İşletmenin Devri: Bütünlük İlkesi, Tescil ve Borçlardan Sorumluluk (TTK m.11, TBK m.202)](https://capar.av.tr/makale/ticari-isletme-devri)
+- [Yargıtay HGK: Bono Bedeline Sonradan Onaysız Rakam Eklenmişse Senet Tahrifattan Önceki Miktar İçin Geçerlidir](https://capar.av.tr/makale/bono-bedeline-sonradan-rakam-eklenirse-tahrifattan-onceki-miktar-gecerli)
+- [Yargıtay HGK: Bonoya Dayalı Takipte Dosya Yenileme Talebi Zamanaşımını Kesmez; Üç Yıl İşlem Yoksa Süre Dolar](https://capar.av.tr/makale/bonoya-dayali-icra-takibinde-dosya-yenileme-zamanasimini-kesmez)
+- [Yargıtay HGK: Genel Kurul Kararı İptaliyle Birlikte Açılan Yönetici Sorumluluğu Davası da Arabuluculuğa Tabi](https://capar.av.tr/makale/genel-kurul-karari-iptali-ve-yonetici-sorumlulugu-davasinda-arabuluculuk)
+- [Yargıtay HGK: Komiser İzni Olmadan Mühlette Doğan Alacak Konkordatoya Tabi, Ödenmezse Kısmen Fesihte Yarar Var](https://capar.av.tr/makale/komiser-izni-olmadan-dogan-alacak-icin-konkordatonun-kismen-feshi)
+- [Yargıtay HGK: Konkordato Talebi Reddedilen Şirketin Yetkilisi Dinlenmeye Çağrılmadan İflas Kararı Verilemez](https://capar.av.tr/makale/konkordato-reddedilirse-iflas-karari-yetkili-dinlenmeden-verilemez)
+- [Yargıtay HGK: Kredi Günü Bankaya Aynı Tutarda İmzalanan Bono, Üzerinde Yazmasa da Teminat Senedidir](https://capar.av.tr/makale/kredi-gunu-bankaya-ayni-tutarda-imzalanan-bono-teminat-senedidir)
+- [Yargıtay HGK: Ortağın Payını Haczettiren Alacaklı Sermaye Artırımının İptalini ya da Butlanını İsteyemez](https://capar.av.tr/makale/payi-haczettiren-alacakli-sermaye-artirimi-kararinin-iptalini-isteyemez)
+- [Yargıtay Hukuk Genel Kurulu: Tacir, Tacir Olmayana Karşı Alacağını Kendi Ticari Defterleriyle İspatlayamaz](https://capar.av.tr/makale/tacir-olmayana-karsi-ticari-defterle-alacak-ispatlanamaz)
+- [Yargıtay: Anonim Şirkette Pay Sahipliği Tespiti Davası Tüm Paylar Başkasındaysa Yalnız Şirkete Karşı Görülmez](https://capar.av.tr/makale/pay-sahipliginin-tespiti-davasi-yalniz-sirkete-karsi-sonuclandirilamaz)
+- [Yargıtay: Bankaya Temlik Edilen Hakediş Alacağından İdarenin Kesintileri Tek Tek Hesaplanmadan Karar Verilemez](https://capar.av.tr/makale/temlik-edilen-hakedis-alacagindan-idarenin-kesintileri-tek-tek-hesaplanmali)
+- [Yargıtay: Başkan Atanmamış Limited Şirkette Yalnız Bir Müdürün Çağırdığı Genel Kurul Kararı Yok Hükmünde](https://capar.av.tr/makale/limited-sirkette-mudurlerden-birinin-cagirdigi-genel-kurul-yok-hukmunde)
+- [Yargıtay: Genel Kurul Tutanağında Yanlış Madde Yazılması Toplantıyı Çağrısız Genel Kurul Saymaya Yetmez](https://capar.av.tr/makale/genel-kurul-tutanaginda-yanlis-madde-cagrisiz-genel-kurul-saymaya-yetmez)
+- [Yargıtay: Keşidecisi ile Lehtarı Aynı Kişi Olan Senet Bono Değildir ama Adi Senet Olarak Takibe Konu Olabilir](https://capar.av.tr/makale/kesideci-ile-lehtar-ayni-kisi-olan-senet-adi-senet-olarak-takibe-konu-olabilir)
+- [Yargıtay: Kısmi Açılan Çıkma Davasında Bozmadan Önce Islah Yapılmışsa Sonraki Bedel Artırımı İkinci Islahtır](https://capar.av.tr/makale/ayrilma-akcesinde-bozmadan-sonra-bedel-artirimi-ikinci-islahtir)
+- [İki Ortaklı Şirkette Ortaklar Anlaşamazsa Ne Olur? %50–50 Kilitlenme, Çıkma ve Fesih](https://capar.av.tr/makale/iki-ortakli-sirkette-ortaklar-anlasamazsa)
+- [İltibas Yoluyla Haksız Rekabet: Ticaret Unvanı, İşletme Adı, Ambalaj ve Alan Adı (TTK m.55/1-a-4, m.52)](https://capar.av.tr/makale/iltibas-yoluyla-haksiz-rekabet-ticaret-unvani-ambalaj-alan-adi)
+- [İmzaya Yetkili Şirket Müdürünün Sorumlulukları: Özen Yükümü, Tazminat Davası ve Kamu Borçları](https://capar.av.tr/makale/sirket-mudurunun-sorumluluklari)
+- [İstanbul ve Ankara'da İstinaf: Bölge Adliye ve Bölge İdare Mahkemelerinin Yargı Çevresi](https://capar.av.tr/makale/istanbul-ve-ankara-bolge-adliye-ve-bolge-idare-mahkemeleri-yargi-cevresi)
+- [İstinaf: Genel Kurul Kararı Olmadan Şirket Müdürüne Ödenen Maaş Makullük Yönünden Denetlenmelidir](https://capar.av.tr/makale/genel-kurul-karari-olmadan-sirket-mudurune-odenen-maas)
+- [İstinaf: Ortaklıktan Çıkma ile Ayrılma Akçesi Birlikte İstenirse Zorunlu Arabuluculuk Aranmaz](https://capar.av.tr/makale/ortakliktan-cikma-ve-ayrilma-akcesinde-arabuluculuk)
+- [İzmir Bölge Adliye Mahkemesi: Yargı Çevresi (İzmir, Aydın, Manisa), İstinaf Yolu ve Süreler](https://capar.av.tr/makale/izmir-bolge-adliye-mahkemesi-yargi-cevresi-istinaf)
+- [Şarkıcı ile Prodüktör Sözleşmesi: Geçerlilik, Cezai Şartın İndirilmesi ve Reddi (FSEK m.52, 80; TBK m.179-182)](https://capar.av.tr/makale/sarkici-produktor-sozlesmeleri-ve-cezai-sart)
+- [Şirket Borçlarını Ödeyemiyorsa: Sermaye Kaybı, Borca Batıklık ve Yöneticinin Yükümlülükleri](https://capar.av.tr/makale/sermaye-kaybi-ve-borca-batiklikta-yonetici-sorumlulugu)
+- [Şirket Müdürü Şirket Parasını Kendi Hesabına Aktarırsa Ne Olur? Sorumluluk Davası, İspat ve Ceza Boyutu](https://capar.av.tr/makale/sirket-muduru-sirket-parasini-kendi-hesabina-aktarirsa)
+- [Şirket Ortağı Defterleri ve Hesapları İnceleyebilir mi? Bilgi Alma ve İnceleme Hakkı (Ltd. ve A.Ş.)](https://capar.av.tr/makale/sirket-ortaginin-bilgi-alma-ve-inceleme-hakki)
+- [Şirket Ortağına Kâr Payı Ödenmiyorsa Ne Yapılabilir? (Limited ve Anonim Şirket)](https://capar.av.tr/makale/sirket-ortagina-kar-payi-odenmiyorsa)
+
+### İş Kazası Tazminat Hukuku
+
+- [Maden ve Mermer Ocağında İş Kazası: İşveren, Taşeron ve Ruhsat Sahibinin Sorumluluğu](https://capar.av.tr/makale/maden-ve-mermer-ocaginda-is-kazasi-sorumluluk)
+- [PMF 1931’den TRH 2010’a: Bedensel Zarar ve Destekten Yoksun Kalma Tazminatı Hesabında Yaşam Tablosu](https://capar.av.tr/makale/pmf-1931-den-trh-2010-a-tazminat-hesabinda-yasam-tablosu)
+- [Ölümlü İş Kazasında Tazminat: Destekten Yoksun Kalma Tazminatının Hesabı](https://capar.av.tr/makale/olumlu-is-kazasinda-tazminat-hesabi)
+- [İş Kazası Tazminatı: Haklarınız ve Başvurabileceğiniz Hukuki Yollar](https://capar.av.tr/makale/is-kazasi-tazminati-haklar-ve-hukuki-yollar)
+- [İş Kazası Tazminatının Hesaplanması (Aktüeryal Hesap)](https://capar.av.tr/makale/is-kazasi-tazminatinin-hesaplanmasi-akturyal)
+- [İş Kazasında SGK’nın İşverene Rücu Davası: Koşullar, Kusur, Tutar ve Zamanaşımı](https://capar.av.tr/makale/is-kazasinda-sgk-nin-isverene-rucu-davasi)
+
+### Trafik Kazası Tazminat Hukuku
+
+- [Güvence Hesabına Başvuru: Sigortasız, Kaçan ya da Çalıntı Aracın Verdiği Bedensel Zarar (5684 s.K. m.14)](https://capar.av.tr/makale/guvence-hesabina-basvuru-sigortasiz-veya-kacan-aracin-verdigi-zarar)
+- [Hukuk Genel Kurulu: Zarar Görenin Kusuru Manevi Tazminattan İndirimi Zorunlu Kılmaz](https://capar.av.tr/makale/zarar-gorenin-kusuru-manevi-tazminattan-indirimi-zorunlu-kilmaz)
+- [Maddi Hasarlı Trafik Kazasında Haklar](https://capar.av.tr/makale/maddi-hasarli-trafik-kazasinda-haklar)
+- [Trafik Kazasında Araç Değer Kaybı Tazminatı Nasıl Alınır?](https://capar.av.tr/makale/trafik-kazasi-arac-deger-kaybi-tazminati)
+- [Yargıtay: Zorunlu Olmadığından Motosikletlinin Dizlik Takmaması Müterafik Kusur İndirimi Sebebi Değildir](https://capar.av.tr/makale/motosiklet-surucusunun-dizlik-takmamasi-muterafik-kusur-indirimi-sebebi-degildir)
+- [Ölümlü Trafik Kazasında Tazminat: Destekten Yoksun Kalma ve Hesap Esasları](https://capar.av.tr/makale/olumlu-trafik-kazasinda-tazminat-hesabi)
+
+### Gümrük Hukuku
+
+- [Dahilde İşleme Rejiminde (DİR) İhracat Taahhüdü Yerine Getirilmezse: Vergi, Gümrük Kanunu m.238 Cezası, İtiraz](https://capar.av.tr/makale/dahilde-isleme-rejiminde-ihracat-taahhudunun-yerine-getirilmemesi)
+- [Gümrükte Ek Tahakkuk ve Ceza (VEZA) Kararı: İtiraz ve İptal Sebepleri](https://capar.av.tr/makale/gumrukte-ek-tahakkuk-ve-ceza-karari)
+- [Kaçakçılıkta El Konulan Eşya ve Taşıt: 5607 Sayılı Kanunda El Koyma, Teminatla İade, Müsadere, Tasfiye, İtiraz](https://capar.av.tr/makale/kacakcilikta-el-konulan-esya-ve-tasit-5607-sayili-kanun)
+- [Yabancı Plakalı Araç Süre Aşımı: Yurt Dışında Yaşayanlar İçin Geçici İthalat, Vergi, Para Cezası ve İtiraz](https://capar.av.tr/makale/yabanci-plakali-arac-sure-asimi-ve-gumruk)
+
+### Ceza Hukuku
+
+- [Gazetecilikte Adil Yargılanma Hakkı ve Basın Özgürlüğü: Tutuklama, Haber Kaynağı, Erişim Engeli, AYM ve AİHM](https://capar.av.tr/makale/gazetecilikte-adil-yargilanma-hakki-ve-basin-ozgurlugu)
+- [HAGB (Hükmün Açıklanmasının Geri Bırakılması) ve Adli Sicil: Şartlar, Denetim Süresi, Kaydın Silinmesi](https://capar.av.tr/makale/hagb-ve-adli-sicil-kaydi)
+- [Hakaret Suçu ve Sosyal Medyada Hakaret: Unsurlar, Aleniyet, Şikâyet Süresi, Önödeme ve Yargıtay Ölçütleri](https://capar.av.tr/makale/hakaret-sucu-ve-sosyal-medyada-hakaret)
+- [Hırsızlıkta Etkin Pişmanlık (TCK 168): İndirim, Kısmi İade, Rıza; Mala Zarar Verme ve Güveni Kötüye Kullanma](https://capar.av.tr/makale/hirsizlik-sucunda-etkin-pismanlik-tck-168)
+- [IBAN (Hesap) Kiralama Suçu ve Soruşturma Aşamasında Etkin Pişmanlık](https://capar.av.tr/makale/iban-kiralama-ve-sorusturmada-etkin-pismanlik)
+- [Kasten Yaralama Suçu (TCK m.86): Basit ve Nitelikli Hâller, Şikâyet, Uzlaşma ve Ceza](https://capar.av.tr/makale/kasten-yaralama-sucu-tck-86)
+- [Kasten Yaralamada Haksız Tahrik ve Meşru Müdafaa (TCK 29, 25): İndirim, İlk Haksız Hareket, Kavga, Sınır Aşımı](https://capar.av.tr/makale/kasten-yaralamada-haksiz-tahrik-ve-mesru-mudafaa)
+- [Neticesi Sebebiyle Ağırlaşmış Yaralama (TCK m.87): Kemik Kırığı, Hayati Tehlike ve Ceza Artırımı](https://capar.av.tr/makale/neticesi-sebebiyle-agirlasmis-yaralama-tck-87)
+- [Nitelikli Dolandırıcılık (TCK 158/1-f): Bilişim Sistemleri ve Banka Aracılığıyla, Hırsızlıktan Farkı ve Cezası](https://capar.av.tr/makale/nitelikli-dolandiricilik-tck-158-bilisim-sistemleri-ve-banka-araciligiyla)
+- [Ticari Hayatta Şantaj Suçu (TCK m.107): Unsurları, İhbar ve İfşa Tehdidi, Tehdit ve Yağmadan Farkı](https://capar.av.tr/makale/ticari-santaj-sucu-tck-107)
+- [Trafik Cezasına İtiraz ve Alkollü Araç: 15 Günlük Süre, Sulh Ceza Hâkimliği, Ehliyetin Geri Alınması ve İadesi](https://capar.av.tr/makale/trafik-cezasina-itiraz-ve-alkollu-arac)
+- [Uyuşturucu Kullanma Suçunda Metabolit Tespiti: Kan ve İdrar Tahlilinin İspat Gücü](https://capar.av.tr/makale/uyusturucu-kullanma-sucunda-metabolit)
+- [Uyuşturucu Ticaretinde Etkin Pişmanlık (TCK m.192): Haber Alınmadan Bildirim, Yakalanınca Bilgi ve İndirim](https://capar.av.tr/makale/uyusturucu-ticaretinde-etkin-pismanlik-tck-192)
+- [Yargıtay Ceza Genel Kurulu: Yetkili Makama Yapılmayan Suç İsnadı, Başkası Polise Bildirse de İftira Değildir](https://capar.av.tr/makale/yetkili-makama-yapilmayan-suc-isnadi-iftira-degildir)
+- [Zimmet Suçunda Etkin Pişmanlık (TCK m.248): Aşamalara Göre İndirim, Tam Giderim, Faiz, Nema, Kullanma Zimmeti](https://capar.av.tr/makale/zimmet-sucunda-etkin-pismanlik-tck-248)
+
+### İdare Hukuku
+
+- [Afyonkarahisar Dosyalarında İstinaf: Konya Bölge Adliye Mahkemesi ve Konya Bölge İdare Mahkemesi](https://capar.av.tr/makale/afyonkarahisar-istinaf-konya-bolge-adliye-ve-bolge-idare-mahkemesi)
+- [Anayasa Mahkemesi: Sendikanın İptal Davası Yalnız Üyelerin Ortak Menfaatine Bakılarak Ehliyetten Reddedilemez](https://capar.av.tr/makale/sendikanin-davasi-yalniz-uyelerin-ortak-menfaatine-bakilarak-ehliyetten-reddedilemez)
+- [Cezaevinde Sağlık Hizmeti Gecikince Tazminat Davası: Görev, Süre, Hizmet Kusuru, Tazminat Kalemleri, Faiz](https://capar.av.tr/makale/cezaevinde-saglik-hizmeti-gecikmesi-tazminat-davasi)
+- [Disiplin Cezalarının Yargısal Denetimi](https://capar.av.tr/makale/disiplin-cezalarinin-yargisal-denetimi)
+- [Dövizle Askerlik ve Yurt Dışı Erteleme: Şartlar, Ödeme, İptal, İade ve Çok Vatandaşların Askerliği](https://capar.av.tr/makale/dovizle-askerlik-ve-yurt-disindaki-yukumlunun-askerligi)
+- [Gazi veya Şehit Sayılmama İşlemine Karşı Dava: Vazife ve Harp Malullüğü, 3713 ve 2330 Sayılı Kanunlar, Süreler](https://capar.av.tr/makale/gazi-veya-sehit-sayilmama-islemine-karsi-dava)
+- [Kişisel Verilerin Hukuka Aykırı İşlenmesi: Başvuru, KVKK Şikâyeti, Tazminat ve TCK 136 (6698 m.11, 13, 14, 18)](https://capar.av.tr/makale/kisisel-verilerin-hukuka-aykiri-islenmesi-kvkk-sikayet-tazminat-ve-ceza)
+- [Mavi Kart ve Çifte Vatandaşlık: Türk Vatandaşlığından İzinle Çıkanların Türkiye'deki Hakları](https://capar.av.tr/makale/mavi-kart-ve-cifte-vatandaslik-vatandasliktan-cikanlarin-haklari)
+- [Uşak, Afyonkarahisar ve Kütahya'da Vergi Davası Hangi Mahkemede Açılır? Yetkili Mahkeme, Süre ve İstinaf](https://capar.av.tr/makale/usak-afyonkarahisar-kutahya-vergi-davasi-hangi-mahkemede-acilir)
+- [Zeytinlik Sahalarda Yapı, Tesis ve Madencilik: 3573 Sayılı Kanun, Yasaklar ve Dava Yolları](https://capar.av.tr/makale/zeytinlik-sahalarda-yapi-tesis-ve-madencilik-3573-sayili-kanun)
+- [İdari Yargıda İptal Davası](https://capar.av.tr/makale/idari-yargida-iptal-davasi)
+- [İhalelere Katılmaktan Yasaklama: Yasak Fiiller, Süreler, Ortaklara Sirayet, İptal Davası (4734 m.17, 58; 4735)](https://capar.av.tr/makale/ihalelere-katilmaktan-yasaklama-karari-ve-iptal-davasi-4734-4735)
+- [İzmir Bölge İdare Mahkemesi: Yargı Çevresi (İzmir, Aydın, Denizli, Manisa, Muğla, Uşak) ve İdari İstinaf](https://capar.av.tr/makale/izmir-bolge-idare-mahkemesi-yargi-cevresi-istinaf)
+
+### Yükseköğretim Hukuku
+
+- [Akademisyenlerin Disiplin Cezaları ve İptal Davası](https://capar.av.tr/makale/akademisyen-disiplin-cezalari-iptal-davasi)
+- [Araştırma Görevlisi Olma Şartları: Başvuru, Atama, 50/d ve 33/a Kadroları, Görev Süresi](https://capar.av.tr/makale/arastirma-gorevlisi-olma-sartlari-50-d-33-a-gorev-suresi)
+- [Danıştay: Adayla Birden Çok Ortak Yayını Olan Jüri Üyesinin Raporuna Dayanan Doçent Ataması Hukuka Aykırı](https://capar.av.tr/makale/docent-atamasinda-adayla-ortak-yayini-olan-juri-uyesi)
+- [Danıştay: Anayasa Mahkemesinin m.54 İptali Öğrenci Disiplin Cezasını Kendiliğinden Kaldırmaz; Yeni Kanun Esas](https://capar.av.tr/makale/anayasa-mahkemesi-iptali-ogrenci-disiplin-cezasini-kendiliginden-kaldirmaz)
+- [Danıştay: Araştırma Görevlisi Sözleşmesinin Yenilenmemesi Somut ve Ölçülü Gerekçe İster](https://capar.av.tr/makale/arastirma-gorevlisi-sozlesmesinin-yenilenmemesi-somut-gerekce)
+- [Danıştay: Araştırma Görevlisinde 35 Yaş Sınırı Yeniden Atamada Aranmaz](https://capar.av.tr/makale/arastirma-gorevlisinde-35-yas-siniri-yeniden-atamada-aranmaz)
+- [Danıştay: Başarısız YLSY Bursiyerinin Mahkeme Kararıyla da Atanamayacağını Diyen YÖK Paragrafı Hukuka Aykırı](https://capar.av.tr/makale/ylsy-bursiyeri-mahkeme-karariyla-da-olsa-atanamaz-yok-yazisi)
+- [Danıştay: Doktor Öğretim Üyesinin Görev Süresini Uzatmama Yetkisi Rektöre Aittir](https://capar.av.tr/makale/doktor-ogretim-uyesinin-gorev-suresini-uzatmama-yetkisi-rektore-aittir)
+- [Danıştay: Doktora Kaydını İsteğiyle Sildiren 50/d Araştırma Görevlisinin İlişiği Kesilir; 33/a Talebi Ayrı](https://capar.av.tr/makale/doktora-kaydini-sildiren-50-d-arastirma-gorevlisinin-ilisigi-kesilir)
+- [Danıştay: Doçentlik Başvurusunda Yurt Dışı Yabancı Dil Sınavına 6 Ay İkamet Şartı (2022 Kılavuzu) Hukuka Uygun](https://capar.av.tr/makale/docentlik-basvurusunda-yurt-disi-dil-sinavi-alti-ay-ikamet-sarti)
+- [Danıştay: Doçentlik Başvurusunda Ön Lisans Dersinin Dışlanması Hukuka Aykırı](https://capar.av.tr/makale/docentlik-basvurusunda-on-lisans-dersinin-dislanmasi)
+- [Danıştay: Norm Kadro Yönetmeliği Yürürlüğe Girdiğinde Kadro Fazlası Öğretim Elemanı İçin Eksik Düzenleme Yok](https://capar.av.tr/makale/norm-kadro-fazlasi-ogretim-elemanlari-kadrolarinda-gorev-yapmaya-devam-eder)
+- [Danıştay: Objektif Sıralama Dışına Çıkılıp Puanı Belirgin Düşük Adayın Dr. Öğr. Üyesi Ataması Hukuka Aykırı](https://capar.av.tr/makale/objektif-puan-siralamasi-disinda-doktor-ogretim-uyesi-atamasi)
+- [Danıştay: Profesör Atama İptal Davasında Bilirkişiler Adayların Üstünlüğünde Ayrışırsa Yeni Heyet Kurulmalı](https://capar.av.tr/makale/profesor-kadrosu-atama-iptal-davasinda-bilirkisi-ayrismasi-yeni-heyet)
+- [Danıştay: Öğrenci Disiplin Cezalarının Sicilden Silinmesini Düzenlememek Hukuka Aykırı](https://capar.av.tr/makale/ogrenci-disiplin-cezalarinin-sicilden-silinmesi)
+- [Danıştay: Öğretim Görevlisinin Görev Süresinin Uzatılmaması, Üç Olgu Birlikte Değerlendirilince Hukuka Uygun](https://capar.av.tr/makale/ogretim-gorevlisi-gorev-suresi-uzatilmamasi-alana-ogretim-uyesi-atanmasi)
+- [Doçentlik Başvuru Şartları ve Doçentlik Sonucuna Karşı İptal Davası](https://capar.av.tr/makale/docentlik-basvuru-sartlari-ve-docentlik-sonucuna-karsi-iptal-davasi)
+- [YÖK ve Üniversite İşlemlerine Karşı Hangi İdare Mahkemesinde Dava Açılır? İdari Yargıda Yetki Kuralları](https://capar.av.tr/makale/yok-ve-universite-islemlerinde-yetkili-idare-mahkemesi)
+- [Öğrencinin Kopya Çekmesi Nedeniyle Verilen Disiplin Cezalarının Usulsüzlüğü ve İptali](https://capar.av.tr/makale/ogrenci-kopya-disiplin-cezasi-iptali)
+- [Öğretim Üyesi Ataması İptal Davası: Atama ve Yükseltme Kriterleri, Atanmama ve Yeniden Atanmama](https://capar.av.tr/makale/ogretim-uyesi-atamasi-iptal-davasi)
+- [Üniversitelerde Kişiye Özel (Adrese Teslim) Kadro İlanının İptali Davası](https://capar.av.tr/makale/universitelerde-kisiye-ozel-kadro-ilaninin-iptali)
+
+### Gayrimenkul Hukuku
+
+- [Anahtar Teslim Konut Satışı: Ön Ödemeli Konut Sözleşmesi, Şekil, Geç Teslim, Cayma ve Dönme, Tapu Devri](https://capar.av.tr/makale/anahtar-teslim-konut-satisi-sozlesmesi-on-odemeli-konut-ve-gec-teslim)
+- [Bağıştan Dönme ve Tapu İptali: Şartlı Bağış, Geri Alma Sebepleri ve Bir Yıllık Süre (TBK m.295–297)](https://capar.av.tr/makale/bagistan-donme-ve-tapu-iptali-sartli-bagis-ve-bir-yillik-sure)
+- [Danıştay İDDK: Maden Gelir ve Vergi Gerekçesi Acele Kamulaştırmayı Haklı Kılmaz; ÇED Kararı İptalse Yapılamaz](https://capar.av.tr/makale/maden-projesinde-gelir-ve-vergi-gerekcesi-acele-kamulastirmayi-hakli-kilmaz)
+- [Danıştay İDDK: Plaj İşgali Yıl Boyu Sürüyorsa Ecrimisil Yalnız Sezon İçin Değil Tüm Yıl İçin Hesaplanır](https://capar.av.tr/makale/plaj-isgalinde-ecrimisil-sezonluk-degil-tum-yil-icin-hesaplanir)
+- [Ecrimisil (Haksız İşgal Tazminatı): Kötüniyetli Zilyet, Paydaşlar Arasında İntifadan Men, Zamanaşımı ve Hesabı](https://capar.av.tr/makale/ecrimisil-haksiz-isgal-tazminati)
+- [Elatmanın Önlenmesi (Müdahalenin Men'i) Davası: Şartları, Paydaşlar Arası Elatma, Taşkın Yapı ve Ecrimisil](https://capar.av.tr/makale/elatmanin-onlenmesi)
+- [Gabin (Aşırı Yararlanma) Nedeniyle Tapu İptali: Unsurlar, Bir ve Beş Yıllık Süre, Değer Tespiti (TBK m.28)](https://capar.av.tr/makale/gabin-asiri-yararlanma-nedeniyle-tapu-iptali)
+- [Hile (Aldatma) Nedeniyle Tapu İptali ve Tescil: Unsurlar, Bir Yıllık Süre, İspat, İyiniyetli Üçüncü Kişi](https://capar.av.tr/makale/hile-nedeniyle-tapu-iptali-ve-tescil)
+- [Hisseli Tapu: Satış, Ayırma ve Tek Tapuya Çevirme](https://capar.av.tr/makale/hisseli-tapu-satis-ayirma-ve-tek-tapuya-cevirme)
+- [Hukuk Genel Kurulu: Sahte Vekâletnameyle Satılan Tapu Geri Alınamıyorsa Devlet Tazminat Öder](https://capar.av.tr/makale/sahte-vekaletnameyle-satilan-tapu-geri-alinamiyorsa-devlet-tazminat-oder)
+- [Hukuk Genel Kurulu: Satış Pazarlığına Katılıp Onay Veren Paydaş Önalım Hakkını Kullanamaz](https://capar.av.tr/makale/satis-pazarligina-katilip-onay-veren-paydas-onalim-hakkini-kullanamaz)
+- [Jeotermal Kaynak Sahasında Kamulaştırma ve İrtifak Hakkı: Arazi Malikinin Hakları](https://capar.av.tr/makale/jeotermal-kaynak-sahasinda-kamulastirma-ve-irtifak-hakki)
+- [Kamulaştırma Bedelinin Tespiti ve Tescil Davası: Uzlaşma, Bilirkişi, Bedel Ölçütleri, Depo, Faiz ve Harç](https://capar.av.tr/makale/kamulastirma-bedelinin-tespiti-ve-tescil-davasi)
+- [Kamulaştırma ve Malikin Hakları](https://capar.av.tr/makale/kamulastirma-ve-malikin-haklari)
+- [Kamulaştırmasız El Atma Davası: Bedel, El Atmanın Önlenmesi ve Ecrimisil](https://capar.av.tr/makale/kamulastirmasiz-el-atma-davasi)
+- [Kat Mülkiyetinde Yönetim: Kat Malikleri Kurulu, Yönetici, Yönetim Planı, Aidat ve Kurul Kararlarının İptali](https://capar.av.tr/makale/kat-mulkiyetinde-yonetim)
+- [Kira Bedelinin Tespiti Davası: Kira Artış Oranı (TÜFE Sınırı), Beş Yıl Sonunda Nesafet, Dava Süresi ve Mahkeme](https://capar.av.tr/makale/kira-bedelinin-tespiti-davasi)
+- [Kiralananın Tahliyesi: Temerrüt, Gereksinim, Tahliye Taahhüdü ve İki Haklı İhtar ile Kiranın Sona Ermesi](https://capar.av.tr/makale/kiralananin-tahliyesi)
+- [Komşu (Sınırdaş) Tarım Parselinde Önalım Hakkı: 2020'de Kaldırıldı (5403 m.8/İ)](https://capar.av.tr/makale/toprak-koruma-kanununda-komsu-parsel-onalim)
+- [Kıyı Kenar Çizgisi İçinde Kalan Taşınmaz: Tapu İptali, Tazminat ve Dava Yolları](https://capar.av.tr/makale/kiyi-kenar-cizgisi-icinde-kalan-tasinmaz-tapu-iptali-ve-tazminat)
+- [Ortaklığın Giderilmesi (İzale-i Şuyu): Aynen Taksim ve Satış](https://capar.av.tr/makale/ortakligin-giderilmesi-izale-i-suyu)
+- [Riskli Yapı Tespiti ve 6306 Sayılı Kanun: Maliklerin Hakları, Uzlaşma ve Dava Yolları](https://capar.av.tr/makale/riskli-yapi-tespiti-ve-6306-sayili-kanun-maliklerin-haklari)
+- [Tapu İptali ve Tescil Davasında İyiniyetli Üçüncü Kişi: TMK 1023, Kötüniyetin İspatı, Şerhler ve HGK Kararları](https://capar.av.tr/makale/tapu-iptali-ve-tescil-davasinda-iyiniyetli-ucuncu-kisi)
+- [Tapu İptali ve Tescil: Ehliyetsizlik, Hile, Vekâletin Kötüye Kullanılması, Yolsuz Tescil (Yargıtay 1. HD)](https://capar.av.tr/makale/tapu-iptali-ve-tescil-davasi)
+- [Taşınmaz Satış Vaadi Sözleşmesi: Tapu İptali ve Tescil Davası, Fesih, Zamanaşımı ve Harici Satış](https://capar.av.tr/makale/tasinmaz-satis-vaadi-sozlesmesi-tescil-davasi-ve-harici-satis)
+- [Turizm Amaçlı Kısa Süreli Kiralama: İzin Belgesi, Kat Maliklerinin Kararı ve İdari Para Cezaları](https://capar.av.tr/makale/turizm-amacli-kisa-sureli-kiralama-izin-belgesi-ve-idari-para-cezalari)
+- [Yargıtay 5. Hukuk Dairesi Hangi Davalara Bakar? En Çok İncelenen Dava Türleri ve Güncel İlke Kararları](https://capar.av.tr/makale/yargitay-5-hukuk-dairesi-kamulastirma-davalari)
+- [Yargıtay HGK: 1956–1983 Kamulaştırmasız El Atma Tazminatı Nitelikte El Atma, Değerde Dava Tarihiyle Hesaplanır](https://capar.av.tr/makale/kamulastirmasiz-el-atma-tazminati-el-atma-tarihindeki-nitelik)
+- [Yargıtay HGK: Acele Kamulaştırma İptali, Kamulaştırma Kararı Ayaktaysa Bedel Tespiti ve Tescil Davası Düşmez](https://capar.av.tr/makale/acele-kamulastirma-kararinin-iptali-tescil-davasini-dusurmez)
+- [Yargıtay HGK: Kamulaştırma Bedeli, Aynı Kamulaştırmada Benzer Taşınmazların Kesinleşen Bedelleriyle Denetlenir](https://capar.av.tr/makale/kamulastirma-bedeli-benzer-tasinmaz-kesinlesen-bedellerle-uyum)
+- [Yargıtay HGK: Muris Muvazaası Davasında Taşınmaz Cebren Satılırsa HMK m.125 Seçimlik Hakları Hatırlatılmalı](https://capar.av.tr/makale/muris-muvazaasi-davasi-surerken-tasinmaz-cebren-satilirsa-hmk-125)
+- [Yargıtay: 7571 Sonrası Önalım Bedeli Derdest Davada 25.12.2025, Yeni Davada Dava Tarihindeki Rayiç Değere Göre](https://capar.av.tr/makale/onalimda-rayic-bedel-hangi-tarihe-gore-belirlenir)
+- [Yargıtay: Muvafakat ve Tadilat Projesi Olmadan Apartman Çatısına Kurulan Güneş Panelinin Sökülmesi Onandı](https://capar.av.tr/makale/apartman-catisina-izinsiz-kurulan-gunes-paneli-sokulur)
+- [Yargıtay: Orman Kadastrosuna Dayalı Tapu İptalinde 7584 ile Eklenen Orman Kanunu Ek 22. Madde Gözetilir](https://capar.av.tr/makale/orman-kadastrosuna-dayali-tapu-iptalinde-orman-kanunu-ek-22-madde)
+- [Yargıtay: Ortaklığın Giderilmesi Satışıyla Paydaşlık Biterse Önalım Davası Bedele Dönüştürülse de Reddedilir](https://capar.av.tr/makale/onalim-davasi-surerken-ortakligin-giderilmesi-satisi)
+- [Yargıtay: Ortaklığın Giderilmesi ya da Kamulaştırma Gibi Süreç Yokken Muhdesatın Tespitinde Hukuki Yarar Yok](https://capar.av.tr/makale/muhdesatin-tespiti-davasinda-hukuki-yarar-ortakligin-giderilmesi)
+- [Yargıtay: Toplu Yapı Yönetimine Geçilmemiş Çok Parselli Sitede Ortak Yer Davası Asliye Hukukta Görülür](https://capar.av.tr/makale/toplu-yapi-yonetimine-gecilmemis-sitede-ortak-yer-davasi-asliye-hukukta)
+- [Yargıtay: Yeni Dönemden Önce Açılan Kira Tespit Davasında Kiracı Dönemden Önce Çıkarsa Giderler Kiraya Verende](https://capar.av.tr/makale/kira-tespit-davasi-acildiktan-sonra-kiraci-cikarsa-yargilama-giderleri)
+- [Yargıtay: Yükleniciden Tapuya Güvenerek Bağımsız Bölüm Alanın Tapusu, Kötüniyeti İspatlanmadıkça İptal Edilmez](https://capar.av.tr/makale/yukleniciden-bagimsiz-bolum-alanin-tapusu-iptal-edilemez)
+- [Yargıtay: İhtiyaç Nedeniyle Tahliyede Erken Arabuluculuk Başvurusu, Süreç Dava Süresinde Biterse Geçerlidir](https://capar.av.tr/makale/ihtiyac-nedeniyle-tahliyede-erken-arabuluculuk-basvurusu)
+- [Yurt Dışından Kesin Dönüşte İhtiyaç Nedeniyle Tahliye: Şartlar, İspat, Süreler ve Yargıtay Kararları](https://capar.av.tr/makale/yurt-disindan-kesin-donuste-ihtiyac-nedeniyle-tahliye)
+- [Önalım (Şufa) Davası ve Muvazaa: Şartlar, Süreler ve Rayiç Bedel Kuralının Anayasa Mahkemesince İptali](https://capar.av.tr/makale/onalim-sufa-davasi-ve-muvazaa)
+- [Önalım (Şufa) Davası: Paylı Mülkiyette Yasal Önalım, Fiili Taksim ve 7571 Sayılı Kanunla Değişen Süre-Bedel](https://capar.av.tr/makale/onalim-sufa-davasi)
+- [İpoteğin Fekki Davası: Kredi Kapandı Ama Banka İpoteği Kaldırmıyorsa Ne Yapılır? (TMK m.883)](https://capar.av.tr/makale/ipotegin-fekki-davasi)
+
+### İş ve Sosyal Güvenlik Hukuku
+
+- [Asıl İşveren – Alt İşveren (Taşeron): Muvazaa, Birlikte Sorumluluk, Kamuda Kıdem Tazminatı (İş K. m.2, m.112)](https://capar.av.tr/makale/asil-isveren-alt-isveren-iliskisi-muvazaa-ve-birlikte-sorumluluk)
+- [Ev Hanımlarının Emekliliği: İsteğe Bağlı Sigorta](https://capar.av.tr/makale/ev-hanimlarinin-emekliligi-istege-bagli-sigorta)
+- [Fazla Çalışma (Fazla Mesai) Alacağı: Şartları, Hesabı ve İspatı](https://capar.av.tr/makale/fazla-calisma-alacagi)
+- [Hizmet Tespiti Davası: Şartları, Süresi ve İspatı](https://capar.av.tr/makale/hizmet-tespiti-davasi)
+- [Kıdem Tazminatı: Şartlar ve Hesap](https://capar.av.tr/makale/kidem-tazminati-sartlar-ve-hesap)
+- [Malullük Aylığı: Şartları, Yüzde 60 Çalışma Gücü Kaybı ve SGK Sağlık Kurulu Kararına İtiraz (5510 Sayılı Kanun m.25–27)](https://capar.av.tr/makale/malulluk-ayligi-sartlari-ve-sgk-kararina-itiraz)
+- [Sahte Sigortalılık ve Sigortalılığın İptali](https://capar.av.tr/makale/sahte-sigortalilik-ve-sigortaliligin-iptali)
+- [Tarım Bağ-Kur (Çiftçi) Hizmet ve Sigortalılık Tespiti](https://capar.av.tr/makale/tarim-bag-kur-ciftci-hizmet-sigortalilik-tespiti)
+- [Yargıtay HGK: Borçlanmayla 900 Güne Tamamlanan Ölüm Aylığı Kesilir, Ödenen Aylıklar Kurum Hatası Hükmüyle (m.96/1-b) Geri Alınır](https://capar.av.tr/makale/olum-ayligi-900-gun-borclanma-kurum-hatasi-yersiz-odeme)
+- [Yargıtay HGK: SGK İdari Para Cezasına Süresinde İtiraz Edilip Dava Açılmazsa Ödeme Emri Davasında Ceza Tartışılamaz](https://capar.av.tr/makale/sgk-idari-para-cezasi-kesinlesirse-odeme-emri-davasinda-tartisilamaz)
+- [Yurt Dışı Borçlanması ile Emeklilik](https://capar.av.tr/makale/yurt-disi-borclanmasi-ile-emeklilik)
+- [İhbar Tazminatı: Şartları, Bildirim Süreleri ve Hesabı](https://capar.av.tr/makale/ihbar-tazminati)
+- [İstifada Kıdem Tazminatı: Haklı Nedenle Fesih](https://capar.av.tr/makale/istifada-kidem-tazminati-hakli-nedenle-fesih)
+- [İşe İade Davası (Feshin Geçersizliği): Şartlar, Geçerli Sebep, Arabuluculuk, Süreler, İşe Başlatmama Tazminatı](https://capar.av.tr/makale/ise-iade-davasi)
+- [İşyerinde Kalp Krizi İş Kazası Sayılır mı? 5510 Sayılı Kanun m.13, SGK Uygulaması ve Yargıtay Kararları](https://capar.av.tr/makale/isyerinde-kalp-krizi-is-kazasi-sayilir-mi)
+- [İşyerinde Mobbing (Psikolojik Taciz) ve Manevi Tazminat](https://capar.av.tr/makale/mobbing-ve-tazminat)
+
+### İcra ve İflas Hukuku
+
+- [Konkordato Mühletinde Banka Hesaptan Kesinti Yapabilir mi? Takas, Mahsup ve Bloke (İİK m.294)](https://capar.av.tr/makale/konkordatoda-bankanin-hesaptan-kesinti-yapmasi)
+- [Konkordatoda Finansal Kiralama Konusu Malın İadesi Ertelenebilir mi? (İİK m.307 ve m.294/7)](https://capar.av.tr/makale/konkordatoda-finansal-kiralama-malinin-iadesi)
+- [Menfi Tespit ve İstirdat Davası: Borçlu Olmadığının Tespiti ve Ödenen Paranın Geri Alınması](https://capar.av.tr/makale/menfi-tespit-ve-istirdat-davasi)
+- [Tasarrufun İptali Davası (İİK m.277-284): Şartlar, Süreler, 2025 Değişikliği ve Şirketlerde Mal Kaçırma](https://capar.av.tr/makale/tasarrufun-iptali-davasi)
+- [Tehir-i İcra (İcranın Geri Bırakılması) Nasıl Alınır? Adım Adım Süreç, Teminat ve Süreler](https://capar.av.tr/makale/tehir-i-icra-icranin-geri-birakilmasi-nasil-alinir)
+- [Yargıtay HGK: Kabul Edilen Menfi Tespitte Vekâlet Ücreti Kesinleşmeden İcraya Konulamaz, Şikâyet Süresiz](https://capar.av.tr/makale/menfi-tespit-vekalet-ucreti-kesinlesmeden-icraya-konulamaz)
+- [Yargıtay HGK: Tapu İptali ve Tescil, Olmazsa Tazminat Davasında Tazminat Kesinleşmeden İcraya Konulabilir](https://capar.av.tr/makale/tapu-iptali-davasinda-hukmedilen-tazminat-kesinlesmeden-icraya-konulabilir)
+- [Yediemin Bulunmadığında Fiili Haciz: Lisanslı Depo Yoksa ya da Malı Kabul Etmiyorsa Muhafaza (İİK m.88)](https://capar.av.tr/makale/yediemin-bulunmadiginda-fiili-haciz)
+- [Yurt Dışındaki Kişiye Tebligat: Konsolosluk, İlanen Tebligat ve Habersiz Kesinleşen Karar ve Takipler](https://capar.av.tr/makale/yurt-disindaki-kisiye-tebligat-ve-habersiz-kesinlesen-kararlar)
+- [Ödeme Emrine İtiraz ve Maaş Haczi: Süre, Gecikmiş İtiraz, Kambiyo Takibi, Haczedilemeyen Kısım, Nafaka](https://capar.av.tr/makale/odeme-emrine-itiraz-ve-maas-haczi)
+- [Önce Rehne Müracaat İlkesi (İİK m.45): İpotekli Kredide Banka Doğrudan Haciz Yoluna Gidebilir mi?](https://capar.av.tr/makale/once-rehne-muracaat-ilkesi)
+- [Üst Sınır İpoteğinde Limit Aşımı: Faiz, BSMV ve Masraflar Limite Dahil mi? (TMK m.851, m.875)](https://capar.av.tr/makale/ust-sinir-ipoteginde-limit-asimi)
+- [İcra Hukukunda Yedieminlik: Haczedilen Malın Muhafazası, Sorumluluk ve 88/A Tasfiyesi (İİK m.88, TCK m.289)](https://capar.av.tr/makale/icra-hukukunda-yedieminlik)
+- [İcra Takibinde İstihkak Davası (İİK m.96-99): Mülkiyet Karinesi, İspat Yükü, Yedi Günlük Süre, Tazminat, İflas](https://capar.av.tr/makale/icra-takibinde-istihkak-davasi)
+- [İhtiyati Haciz](https://capar.av.tr/makale/ihtiyati-haciz)
+- [İpotek Veren Üçüncü Kişinin Sorumluluğu: Muacceliyet İhtarı, Limit ve Halefiyet (TMK m.887, m.884)](https://capar.av.tr/makale/ipotek-veren-ucuncu-kisinin-sorumlulugu)
+- [İpotekli İlamlı Takipte Hesap Kat İhtarı Usulsüzse Takip İptal Edilir mi? (İİK m.150/ı)](https://capar.av.tr/makale/ipotekli-ilamli-takip-hesap-kat-ihtari)
+- [İtirazın Kaldırılması (İİK m.68, 68/a, 69)](https://capar.av.tr/makale/itirazin-kaldirilmasi)
+- [İtirazın İptali Davası (İİK m.67)](https://capar.av.tr/makale/itirazin-iptali-davasi)
+
+### Kambiyo Hukuku
+
+- [Bono (Senet) Geçerlilik Şartları: Zorunlu Unsurlar, Eksiklik Halleri ve Zamanaşımı](https://capar.av.tr/makale/bono-senedin-gecerlilik-sartlari)
+- [Kambiyo Senetlerinde Menfi Tespit Davası](https://capar.av.tr/makale/kambiyo-senetlerinde-menfi-tespit)
+- [Karşılıksız Çek ve Cezai Sorumluluk](https://capar.av.tr/makale/karsiliksiz-cek-ve-cezai-sorumluluk)
+- [Yargıtay HGK: Bono Bedelsizlik Davasında İspat Yükünü Üstlenen Davalı, Savunmasıyla Çelişen Islahla Kurtulamaz](https://capar.av.tr/makale/bono-bedelsizlik-davasinda-ispat-yukunu-ustlenen-davali-islahla-kurtulamaz)
+- [Çekin İbraz Süreleri: On Gün, Bir Ay, Üç Ay, İleri Tarihli Çek, Başvurma Hakkı ve Zamanaşımı (TTK m.795-814)](https://capar.av.tr/makale/cekin-ibraz-sureleri-ve-hukmu)
+- [İbraz Süresi Geçen Çekte Haklar: Başvurma Hakkı, Takibin İptali (İİK m.170/a), TTK m.732 Davası ve Zamanaşımı](https://capar.av.tr/makale/ibraz-suresi-gecen-cekte-haklar-ve-sebepsiz-zenginlesme)
+- [İleri Tarihli (Vadeli) Çekte İbraz ve Takip: 31/12/2028’e Kadar Erken İbraz Yasağı, Çek Kanunu m.3/8, Karekod](https://capar.av.tr/makale/ileri-tarihli-cekte-ibraz-ve-takip-sartlari)
+
+### Sigorta Hukuku
+
+- [Kasko Sigortası Uyuşmazlıkları: Teminat Dışı Hâller, Alkol, Pert, Değer Kaybı, Rücu, Zamanaşımı, Tahkim](https://capar.av.tr/makale/kasko-sigorta-uyusmazligi)
+- [Sigortada Beyan Yükümlülüğünün İhlali: Sigortacı Tazminatı Reddedebilir mi? (TTK m.1435–1440)](https://capar.av.tr/makale/sigortada-beyan-yukumlulugunun-ihlali-ve-tazminatin-reddi-ttk-1435)
+- [Trafik Sigortasında Rücu: Sigortacının Sigortalıya ve Sürücüye Başvurusu, Münhasır İlliyet ve Zamanaşımı](https://capar.av.tr/makale/trafik-sigortasinda-rucu)
+- [İşyeri Yangını ve Sigortacının Sorumluluğu](https://capar.av.tr/makale/isyeri-yangini-ve-sigortacinin-sorumlulugu)
+
+### Miras Hukuku
+
+- [Mirasçılık Belgesi (Veraset İlamı) ve Mirasın Reddi: Noter mi Sulh Hukuk mu, 3 Aylık Süre, Hükmen Ret, Borçlar](https://capar.av.tr/makale/mirascilik-belgesi-ve-mirasin-reddi)
+- [Muris Muvazaası (Mirastan Mal Kaçırma): Yargıtay 1. Hukuk Dairesi Kararlarıyla Tapu İptali ve Tescil Davası](https://capar.av.tr/makale/muris-muvazaasi-mirastan-mal-kacirma)
+- [Tenkis Davası: Saklı Pay, Hesap Yöntemi ve Yargıtay 7. Hukuk Dairesi Kararları](https://capar.av.tr/makale/tenkis-davasi)
+- [Türk Miras Hukuku Sistemi Nasıl İşler? Yasal Mirasçılar ve Zümreler, Eşin Payı, Saklı Pay, Vasiyet, Paylaşım](https://capar.av.tr/makale/turk-miras-hukuku-sistemi)
+- [Vasiyetnamenin İptali Davası: Şartları, Şekil Kuralları ve Yargıtay 7. Hukuk Dairesi Kararları](https://capar.av.tr/makale/vasiyetnamenin-iptali)
+- [Yabancı Uyruklu Mirasçı Türkiye’deki Taşınmazı Nasıl Devralır? Tapu İntikali ve Edinim Sınırlamaları](https://capar.av.tr/makale/yabanci-uyruklu-mirasci-tapu-intikali-ve-edinim-sinirlamalari)
+- [Yurt Dışındaki Mirasçının Veraset ve İntikal Vergisi: Beyan Süreleri, Ek Süre, Taksit ve Tapuda İlişik Kesme](https://capar.av.tr/makale/yurt-disindaki-mirascinin-veraset-ve-intikal-vergisi)
+- [Ölünceye Kadar Bakma Sözleşmesi (TBK m.611–618): Şekil Şartı, Bakım Borcu, Fesih, Muvazaa ve Tenkis](https://capar.av.tr/makale/olunceye-kadar-bakma-sozlesmesi-sekil-muvazaa-ve-tenkis)
+
+### Sağlık Hukuku
+
+- [Aydınlatılmış Onam Eksikliğinde Estetik Ameliyatta Hekimin Sorumluluğu: Kim İspat Eder? (1219 m.70, TBK m.147)](https://capar.av.tr/makale/aydinlatilmis-onam-eksikligi-ve-estetik-ameliyatta-hekimin-sorumlulugu)
+- [Danıştay: Tıbbi Hata Tam Yargı Davasında Beş Yıllık Süre Tedavi Bitip Kesin Rapor Alınınca Başlar](https://capar.av.tr/makale/tibbi-hata-tam-yargi-davasinda-bes-yillik-sure-kesin-rapor)
+- [Kamu Hastanesinde Tıbbi Hata: Tam Yargı Davası, İdareye Başvuru ve Süreler](https://capar.av.tr/makale/kamu-hastanesinde-tibbi-hata-tam-yargi-davasi-ve-sureler)
+- [Tam Gün Yasası: Hekim ve Öğretim Üyelerinin Serbest Çalışma Yasağı 1928’den 2026’ya ve Güncel Durum](https://capar.av.tr/makale/tam-gun-yasasi-kronolojik-gelisim-ve-guncel-durum)
+- [Tıbbi Malpraktiste Hekimin Sorumluluğu](https://capar.av.tr/makale/tibbi-malpraktiste-hekimin-sorumlulugu)
+
+### Aile ve Boşanma Hukuku
+
+- [6284 Sayılı Kanunda Uzaklaştırma ve Koruma Kararı: Kim İsteyebilir, Süre, İtiraz (m.9) ve Zorlama Hapsi (m.13)](https://capar.av.tr/makale/6284-sayili-kanun-koruma-ve-uzaklastirma-karari-itiraz-ve-zorlama-hapsi)
+- [Anlaşmalı Boşanma: Şartları, Protokol, Süreç, Görevli Mahkeme ve Protokolden Dönme](https://capar.av.tr/makale/anlasmali-bosanma-sartlari-ve-sureci)
+- [Boşanmada Mal Paylaşımı: Edinilmiş Mallara Katılma Rejimi](https://capar.av.tr/makale/bosanmada-edinilmis-mallara-katilma-rejimi)
+- [Boşanmada Nafaka Türleri: Tedbir, Yoksulluk ve İştirak Nafakası](https://capar.av.tr/makale/bosanmada-nafaka-turleri)
+- [Boşanmada Ziynet Eşyası Alacağı: Düğünde Takılan Altınlar Kime Ait, Nasıl İspat Edilir, İade ve Zamanaşımı](https://capar.av.tr/makale/bosanmada-ziynet-esyasi-alacagi)
+- [Lahey Sözleşmesi ile Çocuğun İadesi: Uluslararası Çocuk Kaçırmada Başvuru, Bir Yıllık Süre, İadeden Kaçınma](https://capar.av.tr/makale/lahey-sozlesmesi-cocuk-kacirma-ve-cocugun-iadesi)
+- [Nafaka Ödenmezse Ne Olur? İcra Takibi, Maaş Haczi, Tazyik Hapsi ve Zamanaşımı](https://capar.av.tr/makale/nafaka-odenmezse-ne-olur-icra-takibi-ve-tazyik-hapsi)
+- [Nafakanın Artırılması ve Azaltılması: Şartlar, ÜFE Oranında Artış ve Nafakanın Kaldırılması](https://capar.av.tr/makale/nafakanin-artirilmasi-ve-azaltilmasi)
+- [Nişanın Bozulması: Maddi ve Manevi Tazminat ile Hediyelerin İadesi](https://capar.av.tr/makale/nisanin-bozulmasi-tazminat-ve-hediyelerin-iadesi)
+- [Soybağının Reddi Davası: Babalık Karinesi, Annenin Dava Hakkı, Hak Düşürücü Süreler ve DNA İncelemesi](https://capar.av.tr/makale/soybaginin-reddi-davasi)
+- [Velayet ve Kişisel İlişki: Çocuğun Üstün Yararı, Velayetin Değiştirilmesi ve Kişisel İlişkinin Düzenlenmesi](https://capar.av.tr/makale/velayet-ve-kisisel-iliski)
+- [Yabancı Mahkeme Kararlarının Tanınması ve Tenfizi](https://capar.av.tr/makale/yabanci-mahkeme-kararlarinin-taninmasi-ve-tenfizi)
+- [Yurt Dışında Alınan Boşanma Kararı Türkiye'de Nasıl Geçerli Olur? Konsoloslukta İdari Tescil ve Tanıma Davası](https://capar.av.tr/makale/yurt-disinda-alinan-bosanma-kararinin-turkiyede-taninmasi)
+- [Yurt Dışında Yaşayanlar Türkiye'de Nasıl Boşanır? Yetkili Mahkeme, Uygulanacak Hukuk ve Duruşmaya Katılım](https://capar.av.tr/makale/yurt-disinda-yasayanlarin-turkiyede-bosanmasi)
+- [Yurt Dışındaki Borçludan Nafaka Tahsili: Yabancı Nafaka Kararının Tenfizi, New York ve Lahey Sözleşmeleri](https://capar.av.tr/makale/yurt-disindaki-borcludan-nafaka-tahsili)
+- [Çekişmeli Boşanma Sebepleri: Zina, Onur Kırıcı Davranış, Terk, Evlilik Birliğinin Sarsılması ve Fiili Ayrılık](https://capar.av.tr/makale/cekismeli-bosanma-ve-bosanma-sebepleri)
+
+### Tüketici Hukuku
+
+- [Mesafeli Sözleşmede Cayma Hakkı: On Dört Günlük Süre, İstisnalar, Bedel İadesi ve Pazaryerinin Sorumluluğu](https://capar.av.tr/makale/mesafeli-sozlesmede-cayma-hakki)
+- [Sıfır Km Aracın Ayıplı Çıkması (Tüketici Hakları)](https://capar.av.tr/makale/sifir-km-aracin-ayipli-cikmasi-tuketici)
+- [Turist Zararında Turizm İşletmesinin Sorumluluğu: Paket Tur, Otelde Hırsızlık, Havuz Kazası, Tatil Tazminatı](https://capar.av.tr/makale/turist-zararlari-ve-turizm-isletmelerinin-sorumlulugu)
+- [Tüketici Hakem Heyetine Başvuru](https://capar.av.tr/makale/tuketici-hakem-heyetine-basvuru)
+- [Tüketici Kredisinde Erken Ödeme: Faiz ve Masraf İndirimi, Erken Ödeme Tazminatı Sınırı ve Yapılandırma](https://capar.av.tr/makale/tuketici-kredisinde-erken-odeme)
+- [İkinci El Araç Satışında Ayıptan Sorumluluk](https://capar.av.tr/makale/ikinci-el-arac-satisinda-ayiptan-sorumluluk)
+
+### Sözleşme Hukuku
+
+- [Sözleşmenin Uyarlanması: Aşırı İfa Güçlüğü (TBK m.138), Şartları; Kira, Döviz ve Eser Sözleşmelerinde](https://capar.av.tr/makale/sozlesmenin-uyarlanmasi-asiri-ifa-guclugu)
+- [Vekâlet Sözleşmesi ve Azil](https://capar.av.tr/makale/vekalet-sozlesmesi-ve-azil)
+- [Yargıtay Hukuk Genel Kurulu: Ağır Kusurlu Satıcı Ayıplı Malda İki Yıllık Zamanaşımından Yararlanamaz](https://capar.av.tr/makale/agir-kusurlu-satici-ayipli-malda-iki-yillik-zamanasimindan-yararlanamaz)
+- [Zamanaşımı ve Hak Düşürücü Süreler: Farkları, Genel ve Beş Yıllık Zamanaşımı, Durma ve Kesilme Sebepleri](https://capar.av.tr/makale/zamanasimi-ve-hak-dusurucu-sureler)
+
+### Vatandaşlık ve Yabancılar Hukuku
+
+- [Sınır Dışı Etme (Deport) Kararına ve İkamet İzni Reddine Karşı Dava: 6458 Sayılı Kanun m.53, m.57 ve m.25](https://capar.av.tr/makale/sinir-disi-etme-karari-ve-ikamet-izni-reddine-karsi-dava-6458)
+- [Türk Vatandaşlığının Sonradan Kazanılması: Başvuru Yolları, Şartlar ve Ret Kararına Karşı Dava](https://capar.av.tr/makale/turk-vatandasliginin-sonradan-kazanilmasi-ve-ret-kararina-karsi-dava)
+- [Yabancıların Çalışma İzni: Ret Kararına İtiraz ve İzinsiz Yabancı Çalıştırma Cezası (6735 s.K. m.21, 23)](https://capar.av.tr/makale/yabancilarin-calisma-izni-reddi-ve-kacak-yabanci-calistirma-para-cezasi-6735)
+
+### Vergi Hukuku
+
+- [Vergi Ziyaı Cezası ve Uzlaşma: Uzlaşma Talebi Dava Süresini Nasıl Etkiler? (VUK m.344, 376, Ek 1–11; İYUK 7)](https://capar.av.tr/makale/vergi-ziyai-cezasi-uzlasma-ve-vergi-davasi-acma-suresi)
+- [Şirketin Vergi Borcundan Ortak ve Kanuni Temsilci Sorumlu mu? 6183 Sayılı Kanun m.35 ve Ödeme Emrine Dava](https://capar.av.tr/makale/sirket-vergi-borcundan-ortak-ve-kanuni-temsilcinin-sorumlulugu-odeme-emri)
+
+### Kamulaştırma ve İmar Hukuku
+
+- [İmar Para Cezası ve Yıkım Kararına Nasıl İtiraz Edilir? 3194 Sayılı İmar Kanunu m.32 ve m.42](https://capar.av.tr/makale/imar-para-cezasi-ve-yikim-kararina-karsi-dava-3194-m-32-42)
+- [İmar Uygulaması (3194 Sayılı Kanun m.18): Düzenleme Ortaklık Payı, Askıya İtiraz ve İptal Davası](https://capar.av.tr/makale/imar-uygulamasi-18-madde-duzenleme-ortaklik-payi-ve-parselasyona-itiraz)
+
+### Rekabet Hukuku
+
+- [Bayilikte Yeniden Satış Fiyatı, Münhasırlık, Rekabet Yasağı: Beş Yıl Sınırı, Grup Muafiyeti (4054 m.4, 5, 56)](https://capar.av.tr/makale/bayilik-sozlesmesinde-yeniden-satis-fiyati-munhasirlik-rekabet-etmeme)
+- [Rakipler Arası Fiyat Anlaşması, Bilgi Değişimi ve Uyumlu Eylem (4054 m.4): Karine, Para Cezası, Pişmanlık](https://capar.av.tr/makale/rakipler-arasi-fiyat-anlasmasi-bilgi-degisimi-uyumlu-eylem-4054)
+- [Rekabet Kurulu Kararlarına Karşı Dava: İdari Para Cezası, Görevli Mahkeme ve Süreler](https://capar.av.tr/makale/rekabet-kurulu-kararlarina-karsi-dava-ve-idari-para-cezasi)
+- [Rekabet İhlalinden Doğan Tazminat Davası: Üç Kat Tazminat, İspat, Kurul Kararı ve Zamanaşımı (4054 m.56-59)](https://capar.av.tr/makale/rekabet-ihlalinden-dogan-tazminat-davasi-uc-kat-tazminat)
+
+### Marka Hukuku
+
+- [Markanın Hükümsüzlüğü ve İptali: Nedenler, Süreler, Görevli Merci ve Kullanmama (SMK m.25-26)](https://capar.av.tr/makale/markanin-hukumsuzlugu-ve-iptali-smk-25-26)
+- [Tasarım Hakkının Korunması: Tescilli ve Tescilsiz Tasarım, Yenilik, Ayırt Edicilik, Tecavüz (SMK m.55-81)](https://capar.av.tr/makale/tasarim-hakkinin-korunmasi-tescilli-ve-tescilsiz-tasarim-smk)
+- [Telif Hakkı İhlalinde Tazminat, Üç Kat Bedel ve Ceza Şikâyeti: Ref ve Men Davası, Süreler (FSEK m.66–71, 75)](https://capar.av.tr/makale/telif-hakki-ihlali-fsek-tazminat-uc-kat-bedel-ve-ceza-sikayeti)
+
+### Kentsel Dönüşüm ve İnşaat Hukuku
+
+- [Kat Karşılığı İnşaatta Gecikme: Gecikme Tazminatı, Geriye ve İleriye Etkili Fesih, Tapu İptali (TBK m.125)](https://capar.av.tr/makale/kat-karsiligi-insaat-sozlesmesinde-gecikme-fesih-ve-arsa-sahibinin-haklari)
+- [Rezerv Yapı Alanı İlanına Karşı İptal Davası: 6306 Sayılı Kanun m.2 ve m.6/9, Süre ve Yürütmenin Durdurulması](https://capar.av.tr/makale/rezerv-yapi-alani-ilani-ve-iptal-davasi-6306)
+
+### Arabuluculuk ve Tahkim
+
+- [Yargıtay HGK: Arabuluculuk Anlaşması Ödenmez ve Belgede Öngörülmüşse Bütün Alacak Dava Edilebilir](https://capar.av.tr/makale/arabuluculuk-anlasma-belgesi-odenmezse-dava-acilabilir-mi)
+- [Yargıtay HGK: Görevsizlik Kararından Sonra Dosya Görevli Mahkemeye Gelmeden Arabuluculuk Tamamlanırsa Dava Şartı Gerçekleşir](https://capar.av.tr/makale/gorevsiz-mahkemede-acilan-davada-sonradan-arabulucuya-basvuru)
+
+### Maden ve Enerji Hukuku
+
+- [Maden Ruhsatının İptali, Teminatın İrat Kaydı ve İdari Para Cezasına Karşı Dava (3213 s.K. m.10, 13, 17, 24)](https://capar.av.tr/makale/maden-ruhsatinin-iptali-teminat-irat-kaydi-ve-idari-para-cezalarina-karsi-dava)
+
+## English
+
+Every article on this site has an English translation at its own address. The English index (each article's English title, address, summary and Turkish original) is at https://capar.av.tr/llms-en.txt; the English article list is at https://capar.av.tr/en/articles and the English home page is at https://capar.av.tr/en/. All articles explain Turkish law (the law of the Republic of Türkiye); in case of any discrepancy, the Turkish text prevails. Articles are for general information only and are not legal advice.
+
+## Optional
+
+- [Kişisel verilerin korunması ve gizlilik](https://capar.av.tr/gizlilik.html)
+- [Çerez politikası](https://capar.av.tr/cerez.html)
+- [Hüküm ve koşullar](https://capar.av.tr/hukum-kosullar.html)
+- [Site haritası](https://capar.av.tr/sitemap.xml)
+
+Son güncelleme: 2026-11-19

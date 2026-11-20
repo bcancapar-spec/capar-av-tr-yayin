@@ -1,0 +1,5 @@
+# ÇAPAR Hukuk - güvenlik açığı bildirimi (RFC 9116)
+Contact: mailto:info@capar.av.tr
+Expires: 2027-11-13T00:00:00+03:00
+Preferred-Languages: tr, en
+Canonical: https://capar.av.tr/.well-known/security.txt

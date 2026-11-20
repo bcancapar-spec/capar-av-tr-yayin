@@ -1,0 +1,14 @@
+Av. Bayram Can Çapar — capar.av.tr
+
+KİŞİ / PERSON
+  Ad / Name: Av. Bayram Can Çapar
+  Meslek / Profession: Avukat (lawyer), Denizli, Türkiye
+  Büro / Law office: Av. Bayram Can ÇAPAR - ÇAPAR HUKUK BÜROSU (ÇAPAR Hukuk), Denizli — kurucu avukat (founding attorney)
+  Yazar sayfası / Author page: https://capar.av.tr/yazar/bayram-can-capar
+  İletişim / Contact: info@capar.av.tr · +90 258 241 55 54 · https://capar.av.tr/iletisim
+
+SİTE / SITE
+  İçerik / Content: Türk hukukuna ilişkin bilgilendirici makaleler; hukuki tavsiye değildir. Informative articles on Turkish law; not legal advice.
+  Dil / Language: Türkçe (asıl / original), English (çeviri / translation)
+  Yapay zekâ dizinleri / AI indexes: https://capar.av.tr/llms.txt · https://capar.av.tr/llms-en.txt
+  Site haritası / Sitemap: https://capar.av.tr/sitemap.xml

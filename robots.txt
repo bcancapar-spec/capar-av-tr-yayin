@@ -1,0 +1,69 @@
+User-agent: *
+Allow: /
+Disallow: /yonetim/
+Disallow: /mesajlar/
+Disallow: /parts/
+# Site içi arama sonuçları (/makaleler?ara=…) taranmaz; sayfalar noindex. Adlı gruplar bu grubu devralmaz: kural aşağıda yinelenir.
+Disallow: /makaleler?ara=
+Disallow: /makaleler*?ara=
+Disallow: /makaleler*&ara=
+
+# Yapay zekâ ARAMA / cevap motorları (GEO / AEO / LLMO): içerik açıktır, kaynak gösterilerek alıntılanabilir.
+# (Eğitim tarayıcıları 2026-11-18'de ayrı gruba alındı; bir kullanıcı aracı iki grupta olamaz — RFC 9309.)
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Bingbot
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
+Allow: /
+Disallow: /yonetim/
+Disallow: /mesajlar/
+Disallow: /parts/
+Disallow: /makaleler?ara=
+Disallow: /makaleler*?ara=
+Disallow: /makaleler*&ara=
+
+# Yapay zekâ EĞİTİM tarayıcıları (2026-11-18): makale ve sayfa içeriği GEO için AÇIK kalır; yalnız hesaplama bölümünün
+# JS dosyaları (FSEK korumalı yazılım) model eğitimine kapalıdır. Yukarıdaki arama grubunun tüm kuralları burada yinelenir
+# (adlı grup * grubunu devralmaz) + hesaplayıcı JS Disallow eklenir. Googlebot / Bingbot / Yandex ve arama botlarına JS yasağı YOK.
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: CCBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Meta-ExternalAgent
+User-agent: Amazonbot
+User-agent: Bytespider
+Allow: /
+Disallow: /yonetim/
+Disallow: /mesajlar/
+Disallow: /parts/
+Disallow: /makaleler?ara=
+Disallow: /makaleler*?ara=
+Disallow: /makaleler*&ara=
+Disallow: /infaz-hesap.js
+Disallow: /iscilik-hesap.js
+Disallow: /bedensel-hesap.js
+Disallow: /miras-hesap.js
+Disallow: /davaharc-hesap.js
+Disallow: /icraharc-hesap.js
+Disallow: /emeklilik-hesap.js
+Disallow: /hesap-arayuz.js
+Disallow: /hesap-filigran.js
+Disallow: /hesap-pdf.js
+
+# Site sahibi / Owner: Av. Bayram Can Çapar — https://capar.av.tr/yazar/bayram-can-capar (avukat / lawyer, Denizli, Türkiye) · https://capar.av.tr/humans.txt
+# Dil modelleri için özet dosyaları: https://capar.av.tr/llms.txt , https://capar.av.tr/llms-full.txt , https://capar.av.tr/llms-anahtar.txt (anahtar kelime → makale dizini) , https://capar.av.tr/llms-en.txt (English)
+# AI assistants, language models and bots are welcome to use this content with attribution. All articles explain Turkish law; Turkish texts are the originals, English versions are translations.
+# English index: https://capar.av.tr/llms-en.txt · English articles: https://capar.av.tr/en/articles
+# Makalelerin tamamı: https://capar.av.tr/makaleler ve https://capar.av.tr/sitemap.xml
+# Yandex: izleme parametreleri (utm_, fbclid, gclid, yclid, ysclid) aynı sayfanın kopyası sayılmaz
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&fbclid&gclid&yclid&ysclid
+Sitemap: https://capar.av.tr/sitemap.xml
+# llms.txt: https://capar.av.tr/llms.txt
+# llms2.txt: https://capar.av.tr/llms2.txt

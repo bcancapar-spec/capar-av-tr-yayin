@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/favicon.ico?v=9e46c4f3" sizes="48x48" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=2b653918" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=b561eee0" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3266fae5" />
+<link rel="preload" href="/fonts/hanken-grotesk-latin-v12.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/hanken-grotesk-latin-ext-v12.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/fraunces-latin-v38.woff2" as="font" type="font/woff2" crossorigin />
+<script>(function(){var d=document.documentElement;function u(s){d.setAttribute("data-tema",s==="koyu"?"koyu":"acik")}window.caparTema=u;var s,y;try{s=localStorage.getItem("capar-tema");y=localStorage.getItem("capar-yazi")}catch(e){}u(s);if(y==="2"||y==="3")d.setAttribute("data-yazi",y)})()</script>
+<link rel="stylesheet" href="/site.css?v=ca3fe4e6" />
+<link rel="alternate" type="text/plain" href="https://capar.av.tr/llms.txt" title="llms.txt" />
+<link rel="alternate" type="text/plain" href="https://capar.av.tr/llms2.txt" title="llms2.txt — tam soru-cevap dizini" />
+<title>İşçilik Alacakları Hesaplama — Av. Bayram Can Çapar</title>
+<meta name="description" content="Kıdem, ihbar, işe iade ve kötü niyet tazminatları ile fazla çalışma, yıllık izin, hafta tatili ve genel tatil alacakları; giydirilmiş ücret ve kesintiler." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+<link rel="canonical" href="https://capar.av.tr/hesaplamalar/iscilik-alacaklari" />
+<link rel="alternate" hreflang="tr" href="https://capar.av.tr/hesaplamalar/iscilik-alacaklari" />
+<link rel="alternate" hreflang="en" href="https://capar.av.tr/en/calculations/employee-receivables-calculator" />
+<link rel="alternate" hreflang="x-default" href="https://capar.av.tr/hesaplamalar/iscilik-alacaklari" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="tr_TR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:site_name" content="Av. Bayram Can Çapar · ÇAPAR Hukuk" />
+<meta property="og:title" content="İşçilik Alacakları Hesaplama — Av. Bayram Can Çapar" />
+<meta property="og:description" content="Kıdem, ihbar, işe iade ve kötü niyet tazminatları ile fazla çalışma, yıllık izin, hafta tatili ve genel tatil alacakları; giydirilmiş ücret ve kesintiler." />
+<meta property="og:url" content="https://capar.av.tr/hesaplamalar/iscilik-alacaklari" />
+<meta property="og:image" content="https://capar.av.tr/og/sayfa/iscilik-alacaklari.png?v=8e57a3f9" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="İşçilik Alacakları Hesaplama — Av. Bayram Can Çapar · ÇAPAR Hukuk" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://capar.av.tr/og/sayfa/iscilik-alacaklari.png?v=8e57a3f9" />
+<style id="iscilik-stil">
+.yol{font-size:.85rem;color:var(--text-soft);margin-bottom:12px}.yol a{color:var(--accent)}
+.iscilik-kisa-cevap{max-width:820px;margin:0 0 6px;padding:16px 20px;border-left:3px solid var(--gold);border-radius:0 8px 8px 0;background:var(--surface-2);line-height:1.7}
+.iscilik-kisa-cevap strong{color:var(--accent)}
+.iscilik-arac{max-width:820px}
+.iscilik-kisa{display:inline-block;margin:0 0 18px;padding:6px 12px;border-left:3px solid var(--gold);background:var(--surface-2);font-size:.9rem;color:var(--text-soft)}
+.iscilik-form{display:grid;gap:20px;padding:22px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.iscilik-form fieldset{border:1px solid var(--line);border-radius:10px;padding:14px 16px 16px;margin:0;min-width:0}
+.iscilik-form legend{font-weight:700;font-size:1rem;color:var(--text);padding:0 4px}
+.iscilik-bolum>legend{font-family:var(--serif);font-weight:500;font-size:1.2rem;color:var(--accent)}
+.iscilik-alan{display:grid;gap:6px;margin:0 0 14px;min-width:0}
+.iscilik-alan:last-child{margin-bottom:0}
+.iscilik-form label{font-weight:600;font-size:.95rem;color:var(--text)}
+.iscilik-form select,.iscilik-form input[type=date],.iscilik-form input[type=number],.iscilik-form input[type=text]{font:inherit;font-size:1rem;width:100%;max-width:100%;min-width:0;min-height:46px;padding:10px 12px;border:1px solid rgba(26,31,38,.35);border-radius:8px;background:#fff;color:var(--text)}
+.iscilik-form [aria-invalid=true]{border-color:#9b2c2c}
+.iscilik-form [hidden]{display:none!important}
+.iscilik-satir{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;align-items:start;margin:0 0 10px}
+.iscilik-satir .iscilik-alan{margin:0}
+.iscilik-tekrar{padding:12px;border:1px dashed var(--line);border-radius:10px;margin:0 0 10px;background:var(--surface-2)}
+.iscilik-secim{display:grid;gap:8px;margin:4px 0 0}
+.iscilik-secim label{font-weight:400;display:flex;align-items:flex-start;gap:10px;min-height:32px;cursor:pointer;line-height:1.5}
+.iscilik-secim input{width:20px;height:20px;margin:2px 0 0;flex:none;accent-color:var(--accent)}
+.iscilik-okunan{display:block;margin:2px 0 0;font-size:.85rem;color:var(--text-soft)}
+.iscilik-not,.iscilik-bilgi{margin:0;font-size:.88rem;line-height:1.55;color:var(--text-soft)}
+.iscilik-details{border:1px solid var(--line);border-radius:10px;padding:0 16px}
+.iscilik-details>summary{cursor:pointer;font-weight:600;color:var(--accent);padding:12px 0;min-height:44px}
+.iscilik-details>.iscilik-ic{padding:0 0 14px;display:grid;gap:12px}
+.iscilik-hata{margin:0;color:#9b2c2c;font-weight:600}
+.iscilik-hata ul{margin:6px 0 0;padding-left:20px;font-weight:400}
+.iscilik-gonder{justify-self:start;font:inherit;font-weight:600;font-size:1rem;min-height:46px;padding:10px 26px;border:0;border-radius:999px;background:var(--accent);color:#fff;cursor:pointer}
+.iscilik-gonder:hover{background:var(--accent-deep)}
+.iscilik-ikincil{font:inherit;font-weight:600;font-size:.92rem;min-height:44px;padding:8px 18px;border:1px solid var(--accent);border-radius:999px;background:#fff;color:var(--accent);cursor:pointer;justify-self:start}
+.iscilik-ikincil:hover{background:var(--surface-2)}
+.iscilik-sil{font:inherit;font-size:.88rem;min-height:40px;padding:6px 14px;border:1px solid rgba(155,44,44,.5);border-radius:999px;background:#fff;color:#9b2c2c;cursor:pointer;justify-self:start}
+.iscilik-sonuc{margin-top:26px}
+.iscilik-sonuc:empty{display:none}
+.iscilik-sonuc>h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.35rem,3.6vw,1.75rem);margin:0 0 10px}
+.iscilik-ozet{font-size:1.1rem;margin:0 0 8px;padding:14px 18px;border-left:4px solid var(--accent);background:var(--surface-2);border-radius:0 10px 10px 0;line-height:1.6}
+.iscilik-bilgi-satir{margin:0 0 10px;color:var(--text-soft);font-size:.92rem}
+.iscilik-kartlar{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:12px}
+.iscilik-sonuc-kart{padding:14px 18px;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:0 10px 10px 0;background:#fff}
+.iscilik-sonuc-kart h3{font-size:1rem;margin:0 0 4px;color:var(--text-soft);font-weight:600}
+.iscilik-tutar{font-family:var(--serif);font-weight:500;font-size:1.3rem;margin:0 0 6px;color:var(--text)}
+.iscilik-tutar-yok{font-size:1rem;font-family:inherit;font-weight:600;color:#7d5f27}
+.iscilik-dayanak{margin:0 0 6px;font-size:.85rem;color:var(--text-soft)}
+.iscilik-sonuc details summary{cursor:pointer;color:var(--accent);font-weight:600;font-size:.92rem;min-height:36px;padding:6px 0}
+.iscilik-sonuc ol,.iscilik-sonuc ul{margin:6px 0 0;padding-left:22px}
+.iscilik-sonuc li{margin:0 0 6px;line-height:1.6;overflow-wrap:anywhere}
+.iscilik-sonuc .iscilik-kartlar{padding-left:0}
+.iscilik-sonuc h3.iscilik-ara{font-size:1.05rem;margin:22px 0 8px;color:var(--text)}
+.iscilik-kontrol{list-style:none;padding-left:0!important}
+.iscilik-evet .iscilik-isaret{color:#276749;font-weight:700}
+.iscilik-hayir .iscilik-isaret{color:#9b2c2c;font-weight:700}
+.iscilik-mesaj{padding:14px 18px;border-left:4px solid var(--gold);background:var(--surface-2);border-radius:0 10px 10px 0;line-height:1.6}
+.iscilik-sorumluluk{margin:18px 0 0;font-size:.88rem;line-height:1.6;color:var(--text-soft)}
+.iscilik-makaleler{margin:12px 0 0;line-height:1.7}.iscilik-makaleler a{color:var(--accent)}
+.iscilik-surum{margin:12px 0 0;font-size:.8rem;color:var(--text-soft)}
+.iscilik-dugmeler{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:18px 0 0}
+.iscilik-kopya-durum{font-size:.88rem;color:var(--text-soft)}
+.iscilik-tablo-kap{overflow-x:auto;max-width:100%}
+.iscilik-tablo{width:100%;border-collapse:collapse;font-size:.9rem;line-height:1.5}
+.iscilik-tablo caption{text-align:left;font-weight:600;margin:0 0 8px;color:var(--text)}
+.iscilik-tablo th,.iscilik-tablo td{border-bottom:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+.iscilik-tablo thead th{background:var(--surface-2);font-weight:600}
+.iscilik-tablo td{font-variant-numeric:tabular-nums}
+.iscilik-tablo tfoot th,.iscilik-tablo tfoot td{font-weight:700}
+.iscilik-sonuc .iscilik-tablo td{white-space:nowrap}.iscilik-sonuc .iscilik-tablo th[scope=row]{min-width:9.5em}
+.iscilik-bilgi-bolum{max-width:820px}
+.iscilik-bilgi-bolum h2{font-family:var(--serif);font-weight:500;font-size:1.4rem;margin:44px 0 14px}
+.iscilik-bilgi-bolum p,.iscilik-sira li{line-height:1.7}
+.iscilik-sira{padding-left:22px}.iscilik-sira li{margin-bottom:8px}
+.iscilik-bilgi-bolum details{margin:0 0 12px}
+.iscilik-bilgi-bolum details>summary{cursor:pointer;font-weight:600;color:var(--accent);min-height:40px;padding:8px 0}
+.iscilik-kaynak a{color:var(--accent)}
+.iscilik-surum-alt{margin-top:28px;font-size:.85rem;color:var(--text-soft)}
+@media(max-width:560px){.iscilik-form{padding:14px;gap:16px}.iscilik-form fieldset{padding:12px}.iscilik-gonder{width:100%;justify-self:stretch}.iscilik-details{padding:0 12px}.iscilik-tablo{font-size:.82rem}}
+@media print{.topbar,.foot,.cookie-bar,.hs-git-kap,.hs-adimlar,.hs-eylemler,.hs-yonlendirme,.hs-nasil,.hs-gizlilik,.iscilik-form,.iscilik-dugmeler,.iscilik-kisa,.atla{display:none!important}.iscilik-sonuc{margin-top:0}.iscilik-sonuc details{display:block}}
+</style>
+</head>
+<body>
+<a class="atla" id="atla" href="#icerik" data-tr="İçeriğe geç" data-en="Skip to content">İçeriğe geç</a>
+<header class="topbar">
+  <div class="wrap row">
+    <a href="/" data-href-tr="/" data-href-en="/en/" class="brand">
+      <img class="logo" src="/logo-ust.svg?v=8334ed51" alt="Av. Bayram Can Çapar · ÇAPAR Hukuk" width="175" height="44" decoding="async" />
+    </a>
+    <div class="hdr-right">
+            <nav class="ust-gezinti" id="ust-gezinti" aria-labelledby="ust-gezinti-ad">
+      <form class="ust-ara-form" role="search" action="/makaleler" method="get"><input type="search" name="ara" maxlength="120" aria-label="Makalelerde ara" data-aria-tr="Makalelerde ara" data-aria-en="Search articles" placeholder="Makalelerde ara: ör. işe iade" data-ph-tr="Makalelerde ara: ör. işe iade" data-ph-en="Search articles: e.g. reinstatement" /><button type="submit" data-tr="Ara" data-en="Search">Ara</button></form>
+      <a href="/makaleler" data-href-tr="/makaleler" data-href-en="/en/articles" data-tr="Makaleler" data-en="Articles">Makaleler</a>
+      <a href="/#alanlar" data-href-tr="/#alanlar" data-href-en="/en/#alanlar" data-tr="Çalışma Alanları" data-en="Practice Areas">Çalışma Alanları</a>
+      <a href="/mevzuat" data-href-tr="/mevzuat" data-href-en="/en/legislation" data-tr="Mevzuat" data-en="Legislation">Mevzuat</a>
+      <a href="/basinda" data-href-tr="/basinda" data-href-en="/en/press" data-tr="Basında Biz" data-en="In the Press">Basında Biz</a>
+      <a href="/hesaplamalar" data-href-tr="/hesaplamalar" data-href-en="/en/calculations" data-tr="Hesaplamalar" data-en="Calculators">Hesaplamalar</a>
+      <a class="ust-ara" href="/makaleler#ara" data-href-tr="/makaleler#ara" data-href-en="/en/articles#ara"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="ust-ara-metin" data-tr="Makalelerde ara" data-en="Search articles">Makalelerde ara</span></a>
+      <a class="ust-ek" href="/basvuru-yollari" data-href-tr="/basvuru-yollari" data-href-en="/en/application-routes" data-tr="Başvuru Yolları" data-en="Where to Apply">Başvuru Yolları</a>
+      <a class="ust-ek" href="/sozluk" data-href-tr="/sozluk" data-href-en="/en/glossary" data-tr="Hukuk Sözlüğü" data-en="Glossary">Hukuk Sözlüğü</a>
+      <a class="ust-ek" href="/yurt-disinda-yasayanlar" data-href-tr="/yurt-disinda-yasayanlar" data-href-en="/en/turkish-citizens-abroad" data-tr="Yurt dışında yaşayanlar" data-en="Turkish citizens living abroad">Yurt dışında yaşayanlar</a>
+      <a class="ust-ek" href="/#hakkinda" data-href-tr="/#hakkinda" data-href-en="/en/#hakkinda" data-tr="Hakkımızda" data-en="About Us">Hakkımızda</a>
+      <a class="ust-ek" href="/#ekip" data-href-tr="/#ekip" data-href-en="/en/#ekip" data-tr="Ekibimiz" data-en="Our Team">Ekibimiz</a>
+      <a href="/iletisim" data-href-tr="/iletisim" data-href-en="/en/contact" data-tr="İletişim" data-en="Contact">İletişim</a>
+      <div class="ust-tema" role="group" aria-label="Tema" data-aria-tr="Tema" data-aria-en="Theme"><span class="ust-tema-ad" aria-hidden="true" data-tr="Tema" data-en="Theme">Tema</span><span class="oa-seg"><button type="button" data-tema-sec="acik" aria-pressed="false" data-tr="Açık" data-en="Light">Açık</button><button type="button" data-tema-sec="koyu" aria-pressed="false" data-tr="Koyu" data-en="Dark">Koyu</button></span></div>      </nav>
+      <span id="ust-gezinti-ad" hidden data-tr="Site menüsü" data-en="Site menu">Site menüsü</span>
+      <span class="ust-eylem" data-konum="ust"><a class="ust-tel" href="tel:+902582415554" data-tr="0258 241 55 54" data-en="+90 258 241 55 54">0258 241 55 54</a><a class="ust-gt iletisim-mesaj" href="/iletisim" data-href-tr="/iletisim" data-href-en="/en/contact" data-tr="Görüşme Talep Et" data-en="Request a Meeting">Görüşme Talep Et</a></span>
+      <div class="lang" role="group" aria-label="Dil / Language">
+        <a id="btn-tr" class="active" href="/hesaplamalar/iscilik-alacaklari" hreflang="tr" lang="tr">TR</a>
+        <a id="btn-en" href="/en/calculations/employee-receivables-calculator" hreflang="en" lang="en">EN</a>
+      </div>
+      <div class="tema-sec"><button type="button" class="tema-dugme" aria-expanded="false" aria-controls="tema-menu" aria-label="Tema" data-aria-tr="Tema" data-aria-en="Theme"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></button><div class="tema-menu" id="tema-menu" role="group" aria-label="Tema" data-aria-tr="Tema" data-aria-en="Theme" hidden><button type="button" data-tema-sec="acik" aria-pressed="false" data-tr="Açık" data-en="Light">Açık</button><button type="button" data-tema-sec="koyu" aria-pressed="false" data-tr="Koyu" data-en="Dark">Koyu</button></div></div><script>(function(){var d=document.documentElement,k=document.querySelector(".tema-sec"),b=k&&k.querySelector(".tema-dugme"),m=k&&k.querySelector(".tema-menu");function i(){var s=d.getAttribute("data-tema")||"acik";document.querySelectorAll("[data-tema-sec]").forEach(function(x){x.setAttribute("aria-pressed",x.getAttribute("data-tema-sec")===s?"true":"false")})}function a(v){if(m){m.hidden=!v;b.setAttribute("aria-expanded",v?"true":"false")}}if(b)b.addEventListener("click",function(){a(m.hidden)});document.addEventListener("click",function(e){var x=e.target.closest?e.target.closest("[data-tema-sec]"):null;if(x){var s=x.getAttribute("data-tema-sec");try{localStorage.setItem("capar-tema",s)}catch(e){}if(window.caparTema)caparTema(s);document.dispatchEvent(new Event("capar-tema"));return}if(m&&!m.hidden&&!k.contains(e.target))a(false)});document.addEventListener("capar-tema",i);document.addEventListener("keydown",function(e){if(e.key==="Escape"&&m&&!m.hidden){a(false);b.focus()}});i()})();</script>
+      <button type="button" class="ust-menu-dugme" aria-expanded="false" aria-controls="ust-gezinti" aria-labelledby="ust-gezinti-dugme-ad"><span></span><span></span><span></span></button><span id="ust-gezinti-dugme-ad" hidden data-tr="Menü" data-en="Menu">Menü</span>
+      <style id="ust-menu">#ara{scroll-margin-top:90px}.topbar .wrap{max-width:1360px}.ust-gezinti{display:flex;align-items:center;gap:18px}.ust-gezinti a{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-soft);text-decoration:none;white-space:nowrap;padding:0;min-height:44px;display:inline-flex;align-items:center;transition:color .25s}.ust-gezinti a:hover{color:var(--accent)}.ust-ara{justify-content:center;gap:10px;min-width:44px;margin:0 -8px}.ust-ara-form{display:none}.ust-eylem{display:none}@media(min-width:900px){.ust-eylem{display:flex;align-items:center;gap:12px}.ust-tel{font-family:var(--sans);font-weight:600;font-size:.88rem;color:var(--text);white-space:nowrap;display:inline-flex;align-items:center;min-height:44px}.ust-gt{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;background:var(--accent);color:#fff;font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;transition:background .25s}.ust-gt:hover{background:var(--accent-deep)}}.ust-ara svg{display:block;flex:none}.ust-ara-metin{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.ust-menu-dugme{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:0 11px;border:0;background:none;cursor:pointer}.ust-menu-dugme span{display:block;width:22px;height:2px;background:var(--text);transition:transform .25s,opacity .25s}.ust-menu-dugme[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}.ust-menu-dugme[aria-expanded="true"] span:nth-child(2){opacity:0}.ust-menu-dugme[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}@media(max-width:1359.98px){.ust-menu-dugme{display:inline-flex}.ust-gezinti{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:4px 24px 12px;background:var(--surface);border-bottom:1px solid var(--line);box-shadow:0 14px 28px rgba(26,31,38,.12)}.ust-gezinti.acik{display:flex}.ust-gezinti a{display:flex;align-items:center;justify-content:space-between;font-size:.9rem;letter-spacing:.04em;min-height:48px;border-bottom:1px solid var(--line)}.ust-gezinti a::after{content:"\203A";font-weight:400}.ust-gezinti a:last-child{border-bottom:0}.ust-gezinti .ust-ara{display:none}.ust-ara-form{display:flex;gap:8px;margin:12px 0 6px}.ust-ara-form input{flex:1;min-width:0;height:44px;font:inherit;font-size:1rem;padding:0 12px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--text)}.ust-ara-form button{height:44px;padding:0 16px;border:0;border-radius:6px;background:var(--ink);color:#fff;font:inherit;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;cursor:pointer}}.brand{display:flex;align-items:center;flex:none}.brand .logo{display:block;height:44px;width:auto}@media(max-width:480px){.brand .logo{height:40px}}@media(max-width:360px){.brand .logo{height:34px}}.lang a{font-family:var(--sans);font-weight:600;font-size:.75rem;letter-spacing:.06em;color:var(--text-soft);padding:0 11px;height:100%;line-height:1;display:inline-flex;align-items:center;text-decoration:none;transition:background .25s,color .25s}.lang a+a{border-left:1px solid var(--line)}.lang a.active{background:var(--accent);color:#fff}.lang a:hover:not(.active){color:var(--accent)}@media(max-width:400px){.hdr-right{gap:7px}.lang a,.lang button{padding:0 9px}.row:has(#btn-de) .brand .logo{height:34px}.lang:has(#btn-de) a{padding:0 6px}.hdr-right:has(#btn-de){gap:4px}}/* mobil menü eş güdümü (2026-11-14) */@media(min-width:1360px){.ust-gezinti .ust-ek{display:none}}@media(min-width:1360px){.ust-gezinti{gap:14px}}@media(max-width:1359.98px){.ust-gezinti{max-height:calc(100vh - 80px);overflow-y:auto;overscroll-behavior:contain}html.menu-acik{overflow:hidden}.ust-gezinti a[aria-current="page"]{color:var(--accent)}}@media(max-width:480px){.hdr-right .back+.back{display:none}}</style><script>/* H-3 menü */(function(){var d=document.querySelector('.ust-menu-dugme'),n=document.getElementById('ust-gezinti');if(!d||!n)return;var f=n.querySelector('form'),q=f&&f.querySelector('input'),r=document.documentElement;function l(){return r.lang==='en'?'en':'tr';}function b(){if(!n.classList.contains('acik'))return;var h=innerHeight;['.mobil-cubuk','#cookieBar'].forEach(function(s){var e=document.querySelector(s);if(!e)return;var c=getComputedStyle(e),t=e.getBoundingClientRect().top;if(c.display!=='none'&&c.visibility!=='hidden'&&t>0&&t<h)h=t;});n.style.maxHeight=Math.max(150,h-n.getBoundingClientRect().top)+'px';}function k(a,o){n.classList.toggle('acik',a);r.classList.toggle('menu-acik',a);d.setAttribute('aria-expanded',a?'true':'false');if(a){if(f&&q){f.action=l()==='en'?'/en/articles':'/makaleler';q.placeholder=q.getAttribute('data-ph-'+l())||q.placeholder;}b();if(o){var g=n.querySelector('input,a');if(g)g.focus();}}}d.addEventListener('click',function(e){k(d.getAttribute('aria-expanded')!=='true',e.detail===0);});n.addEventListener('click',function(e){if(e.target.closest('a'))k(false);});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&n.classList.contains('acik')){k(false);d.focus();}});document.addEventListener('click',function(e){if(n.classList.contains('acik')&&!n.contains(e.target)&&!d.contains(e.target))k(false);});addEventListener('resize',function(){if(innerWidth>1359&&n.classList.contains('acik'))k(false);else b();});})();</script>
+    </div>
+  </div>
+</header>
+<main id="icerik">
+  <section class="page-head wrap">
+    <nav class="yol" aria-label="Konum"><a href="/">Ana Sayfa</a> › <a href="/hesaplamalar">Hesaplamalar</a></nav>
+    <span class="eyebrow">Hesaplamalar</span>
+    <h1>İşçilik Alacakları Hesaplama</h1>
+    <p class="hs-git-kap"><a class="hs-git-dugme" href="#iscilik-form">Hesaplamaya geç</a></p>
+    <p class="lead">Kıdem ve ihbar tazminatını giydirilmiş brüt ücret üzerinden; kötü niyet, işe iade, ayrımcılık, sendikal tazminat ve bakiye süre ücretini; ödenmeyen ücret, yıllık izin, fazla çalışma, hafta tatili ve genel tatil alacaklarını hesaplar. Her kalemi dayanak maddesi ve adım adım hesabıyla, brütten nete kesintileri tabloyla gösterir. Verisi olmayan dönem için tutar vermez ve bunu belirtir.</p>
+    <p class="iscilik-kisa-cevap"><strong>Kısa cevap:</strong> Kıdem ve ihbar tazminatı ile yıllık izin ücreti son ücretten; fazla çalışma, hafta tatili ve genel tatil alacakları ilgili dönemin ücretinden hesaplanır. Kıdem tazminatı her tam yıl için 30 günlük giydirilmiş ücrettir, fesih tarihindeki tavanı geçemez (1475 m.14); ihbar tazminatı süreye göre 2 ile 8 haftalık giydirilmiş ücrettir (4857 m.17); diğer ücret alacakları çıplak ücretten bulunur. Kıdemden yalnız damga vergisi, ihbardan gelir ve damga vergisi, ücret alacaklarından ayrıca sigorta ve işsizlik primi kesilir.</p>
+  </section>
+
+  <section class="content wrap">
+    <div class="iscilik-arac">
+      <p class="iscilik-kisa">Bilgi aracıdır; hukuki görüş değildir.</p>
+      <p class="hs-nasil">Nasıl kullanılır: zorunlu alanları doldurun, durumunuza uyan isteğe bağlı bölümleri açın ve hesapla düğmesine basın; sonuç bu sayfada, formun hemen altında görünür. Sonuçlar ön hesaptır.</p>
+      <p class="hs-gizlilik">Girdiğiniz bilgiler tarayıcınızda hesaplanır, sunucuya gönderilmez.</p>
+      <form id="iscilik-form" class="iscilik-form" novalidate data-teyit="2026-11-10">
+        <p class="iscilik-not">Zorunlu alanlar: işe giriş tarihi, son çalışma günü, sona erme şekli ve son aylık çıplak brüt ücret. Diğer bölümler isteğe bağlıdır. Tutarları "33.030,00" biçiminde yazabilirsiniz. Kişisel veri, dosya numarası ya da işveren adı istenmez.</p>
+        <nav class="hs-adimlar" aria-label="Formun bölümleri"><ol><li><a href="#isc-b1">1 İş ilişkisi</a></li><li><a href="#isc-b2">2 Ücret</a></li><li><a href="#isc-b3">3 Diğer alacaklar (isteğe bağlı)</a></li><li><a href="#isc-b4">4 Brütten nete (isteğe bağlı)</a></li><li>Sonuç</li></ol></nav>
+
+        <fieldset class="iscilik-bolum" id="isc-b1">
+          <legend>1. İş ilişkisi</legend>
+          <div class="iscilik-satir">
+            <div class="iscilik-alan">
+              <label for="isc-giris">İşe giriş tarihi <span class="hs-zorunlu">zorunlu</span></label>
+              <input type="date" id="isc-giris" name="giris" required aria-describedby="isc-giris-not" />
+              <p class="iscilik-not" id="isc-giris-not">İş sözleşmesindeki ya da SGK hizmet dökümündeki işe başlama günü.</p>
+            </div>
+            <div class="iscilik-alan">
+              <label for="isc-cikis">Son çalışma günü (fesih tarihi) <span class="hs-zorunlu">zorunlu</span></label>
+              <input type="date" id="isc-cikis" name="cikis" required aria-describedby="isc-cikis-not" />
+            </div>
+          </div>
+          <p class="iscilik-not" id="isc-cikis-not">Hizmet süresine son gün dahil edilir. Bildirim süresi kullandırıldıysa sürenin son gününü girin.</p>
+          <div class="iscilik-alan">
+            <label for="isc-fesih">Sözleşmenin sona erme şekli <span class="hs-zorunlu">zorunlu</span></label>
+            <select id="isc-fesih" name="fesih" required aria-describedby="isc-fesih-not">
+              <option value="">Seçin</option>
+              <option value="isveren">İşveren feshetti (ahlak ve iyi niyete aykırılık gibi haklı bir neden olmadan)</option>
+              <option value="isveren_25_2">İşveren ahlak ve iyi niyet kurallarına aykırılık nedeniyle feshetti (4857 m.25/II)</option>
+              <option value="isveren_25_diger">İşveren sağlık, zorlayıcı sebep ya da gözaltı/tutukluluk nedeniyle feshetti (4857 m.25/I, III, IV)</option>
+              <option value="isci_hakli">İşçi haklı nedenle feshetti (4857 m.24)</option>
+              <option value="istifa">İşçi haklı bir neden olmadan istifa etti</option>
+              <option value="askerlik">Muvazzaf askerlik nedeniyle ayrıldı (1475 m.14/1-3)</option>
+              <option value="emeklilik">Yaşlılık, emeklilik ya da malullük aylığı veya toptan ödeme için ayrıldı (1475 m.14/1-4)</option>
+              <option value="sure_prim">Yaş dışındaki emeklilik şartlarını (sigortalılık süresi ve prim günü) tamamlayıp ayrıldı (1475 m.14/1-5)</option>
+              <option value="evlilik">Kadın işçi evlenmesinden itibaren bir yıl içinde ayrıldı (1475 m.14)</option>
+              <option value="olum">İşçinin ölümü (1475 m.14)</option>
+            </select>
+            <p class="iscilik-not" id="isc-fesih-not">Sözleşmeyi kimin ve hangi nedenle sona erdirdiğine en uygun seçeneği seçin.</p>
+          </div>
+          <div class="iscilik-satir">
+            <div class="iscilik-alan">
+              <label for="isc-sozlesme">Sözleşme türü</label>
+              <select id="isc-sozlesme" name="sozlesme">
+                <option value="belirsiz">Belirsiz süreli</option>
+                <option value="belirli">Belirli süreli</option>
+              </select>
+            </div>
+            <div class="iscilik-alan" id="isc-belirli-alan" hidden>
+              <label for="isc-belirli-bitis">Belirli süreli sözleşmenin bitiş tarihi</label>
+              <input type="date" id="isc-belirli-bitis" name="belirli_bitis" />
+            </div>
+          </div>
+          <div class="iscilik-satir">
+            <div class="iscilik-alan">
+              <label for="isc-otuz">İşyerinde otuz veya daha fazla işçi çalışıyor mu?</label>
+              <select id="isc-otuz" name="otuz_isci" aria-describedby="isc-otuz-not">
+                <option value="">Bilmiyorum</option>
+                <option value="evet">Evet</option>
+                <option value="hayir">Hayır</option>
+              </select>
+            </div>
+            <div class="iscilik-alan">
+              <label for="isc-dogum">Doğum tarihi (isteğe bağlı)</label>
+              <input type="date" id="isc-dogum" name="dogum" aria-describedby="isc-dogum-not" />
+            </div>
+          </div>
+          <p class="iscilik-not" id="isc-otuz-not">İş güvencesi (4857 m.18/1) kötü niyet tazminatı ile işe iade sonuçlarının denetiminde kullanılır.</p>
+          <p class="iscilik-not" id="isc-dogum-not">Yıllık izinde on sekiz ve daha küçük ya da elli ve daha büyük yaştaki işçiler için yirmi günlük alt sınır (4857 m.53) için kullanılır.</p>
+          <div class="iscilik-secim">
+            <label><input type="checkbox" id="isc-ihbar-verildi" name="ihbar_verildi" /> Bildirim süresi verildi ya da bu sürenin ücreti peşin ödendi (4857 m.17)</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="iscilik-bolum" id="isc-b2" aria-describedby="isc-ucret-not">
+          <legend>2. Ücret</legend>
+          <div class="iscilik-alan">
+            <label for="isc-ciplak">Son aylık çıplak brüt ücret (TL) <span class="hs-zorunlu">zorunlu</span></label>
+            <input type="text" id="isc-ciplak" name="ciplak" inputmode="decimal" autocomplete="off" required placeholder="ör. 33.030,00" aria-describedby="isc-ciplak-not" />
+            <p class="iscilik-not" id="isc-ciplak-not">Bordrodaki aylık brüt ücret; yol, yemek, ikramiye gibi düzenli ödemeler aşağıda ayrıca eklenir.</p>
+          </div>
+          <p class="iscilik-not" id="isc-ucret-not">Giydirilmiş ücret için düzenli ve sürekli ödenen para ve para ile ölçülebilen menfaatleri ayrı ayrı ekleyin (yol, yemek, ikramiye, prim, yakacak gibi). Bir kez yapılan arızi ödemeleri eklemeyin. Yıllık ödemeler 365, üç aylık ödemeler 90 güne bölünerek 30 günlük ücrete katılır. İş günü başına ödenen yemek ve yol yardımında ayda ödendiği gün sayısını yazın: haftada altı gün çalışılıyorsa 26 (varsayılan), beş gün çalışılıyorsa 22.</p>
+          <div id="isc-ek-listesi"></div>
+          <button type="button" id="isc-ek-ekle" class="iscilik-ikincil">+ Düzenli ödeme ekle</button>
+        </fieldset>
+
+        <fieldset class="iscilik-bolum" id="isc-b3">
+          <legend>3. Diğer alacaklar (isteğe bağlı)</legend>
+          <p class="iscilik-not">Kıdem ve ihbar tazminatı her zaman denetlenir. Diğer kalemler için kutuyu işaretleyin.</p>
+
+          <details class="iscilik-details">
+            <summary>Ödenmeyen ücret ve yıllık izin</summary>
+            <div class="iscilik-ic">
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-ucret" data-kalem aria-controls="isc-ucret-alan" /> Ödenmeyen ücreti hesapla (4857 m.32)</label></div>
+              <div id="isc-ucret-alan" hidden>
+                <div class="iscilik-satir">
+                  <div class="iscilik-alan"><label for="isc-ucret-ay">Ödenmeyen ay</label><input type="number" id="isc-ucret-ay" min="0" max="120" step="1" inputmode="numeric" /></div>
+                  <div class="iscilik-alan"><label for="isc-ucret-gun">Ödenmeyen gün</label><input type="number" id="isc-ucret-gun" min="0" max="29" step="1" inputmode="numeric" /></div>
+                  <div class="iscilik-alan"><label for="isc-ucret-aylik">O döneme ait aylık brüt (boşsa son çıplak ücret)</label><input type="text" id="isc-ucret-aylik" inputmode="decimal" autocomplete="off" /></div>
+                </div>
+              </div>
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-izin" data-kalem aria-controls="isc-izin-alan" /> Kullanılmayan yıllık izin ücretini hesapla (4857 m.53, m.59)</label></div>
+              <div id="isc-izin-alan" hidden>
+                <div class="iscilik-satir">
+                  <div class="iscilik-alan"><label for="isc-izin-kullanilan">Kullanılan toplam izin günü</label><input type="number" id="isc-izin-kullanilan" min="0" max="9999" step="1" inputmode="numeric" /></div>
+                  <div class="iscilik-alan"><label for="isc-izin-kalan">Ya da kullanılmayan gün (biliniyorsa)</label><input type="number" id="isc-izin-kalan" min="1" max="9999" step="1" inputmode="numeric" /></div>
+                </div>
+                <p class="iscilik-not">Kullanılmayan gün boş bırakılırsa hak edilen izin her tam hizmet yılı için 4857 m.53'teki en az sürelerle hesaplanır; sözleşme veya toplu iş sözleşmesindeki fazla süreler için kullanılmayan günü girin.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="iscilik-details">
+            <summary>Fazla çalışma, hafta tatili, genel tatil</summary>
+            <div class="iscilik-ic">
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-fazla" data-kalem aria-controls="isc-fazla-alan" /> Fazla çalışma ücretini hesapla (4857 m.41)</label></div>
+              <div id="isc-fazla-alan" hidden>
+                <p class="iscilik-not">Her dönem için haftalık 45 saati aşan saat sayısını girin. Saat ücreti aylık çıplak ücretin 225'e bölünmesiyle bulunur. İzin ve rapor gibi çalışılmayan günleri "dışlanan gün" olarak yazın.</p>
+                <div id="isc-fazla-listesi" data-liste="isc-fazla-sablon"></div>
+                <button type="button" id="isc-fazla-ekle" class="iscilik-ikincil">+ Dönem ekle</button>
+                <div class="iscilik-alan"><label for="isc-hk-fazla">Hakkaniyet indirimi (%, tanık beyanına dayanıyorsa)</label><input type="number" id="isc-hk-fazla" min="0" max="100" step="1" inputmode="numeric" aria-describedby="isc-hk-not" /></div>
+              </div>
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-hafta" data-kalem aria-controls="isc-hafta-alan" /> Hafta tatili ücretini hesapla (4857 m.46)</label></div>
+              <div id="isc-hafta-alan" hidden>
+                <div id="isc-hafta-listesi" data-liste="isc-hafta-sablon"></div>
+                <button type="button" id="isc-hafta-ekle" class="iscilik-ikincil">+ Dönem ekle</button>
+                <div class="iscilik-alan"><label for="isc-hk-hafta">Hakkaniyet indirimi (%)</label><input type="number" id="isc-hk-hafta" min="0" max="100" step="1" inputmode="numeric" /></div>
+              </div>
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-ubgt" data-kalem aria-controls="isc-ubgt-alan" /> Ulusal bayram ve genel tatil ücretini hesapla (4857 m.47)</label></div>
+              <div id="isc-ubgt-alan" hidden>
+                <div id="isc-ubgt-listesi" data-liste="isc-ubgt-sablon"></div>
+                <button type="button" id="isc-ubgt-ekle" class="iscilik-ikincil">+ Dönem ekle</button>
+                <div class="iscilik-alan"><label for="isc-hk-ubgt">Hakkaniyet indirimi (%)</label><input type="number" id="isc-hk-ubgt" min="0" max="100" step="1" inputmode="numeric" /></div>
+              </div>
+              <p class="iscilik-not" id="isc-hk-not">Hakkaniyet indirimi yalnız tanık beyanıyla ispatlanan kısma uygulanır; Yargıtay Hukuk Genel Kurulu yüzde otuz oranını yerinde bulmuştur (HGK 2015/1616 E., 2016/128 K.). Oran mahkemenin takdirindedir.</p>
+            </div>
+          </details>
+
+          <details class="iscilik-details">
+            <summary>Fesihten doğan diğer tazminatlar</summary>
+            <div class="iscilik-ic">
+              <p class="iscilik-not">Kötü niyet, ayrımcılık ve sendikal tazminattan aynı fesih için yalnız biri istenebilir; birden fazlası seçilirse tutarı yüksek olan hesaplanır, ötekilerin tutarı gösterilir ama toplama katılmaz.</p>
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-kotu" data-kalem /> Kötü niyet tazminatı (iş güvencesi dışındaki işçi; 4857 m.17/6)</label></div>
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-iade" data-kalem aria-controls="isc-iade-alan" /> İşe iade davasının parasal sonuçları (4857 m.21)</label></div>
+              <div id="isc-iade-alan" hidden>
+                <div class="iscilik-satir">
+                  <div class="iscilik-alan"><label for="isc-bosta-ay">Boşta geçen süre (ay, en çok 4)</label><input type="number" id="isc-bosta-ay" min="0" max="4" step="1" value="4" inputmode="numeric" /></div>
+                  <div class="iscilik-alan"><label for="isc-baslatmama-ay">İşe başlatmama tazminatı (ay, 4–8; yoksa 0)</label><input type="number" id="isc-baslatmama-ay" min="0" max="8" step="1" value="4" inputmode="numeric" /></div>
+                </div>
+              </div>
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-ayrim" data-kalem aria-controls="isc-ayrim-alan" /> Ayrımcılık tazminatı (4857 m.5/6)</label></div>
+              <div id="isc-ayrim-alan" hidden>
+                <div class="iscilik-alan"><label for="isc-ayrim-ay">Ay (dörde kadar; mahkemenin takdirinde)</label><input type="number" id="isc-ayrim-ay" min="1" max="4" step="1" value="4" inputmode="numeric" /></div>
+              </div>
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-sendikal" data-kalem aria-controls="isc-sendikal-alan" /> Sendikal tazminat (6356 m.25)</label></div>
+              <div id="isc-sendikal-alan" hidden>
+                <div class="iscilik-alan"><label for="isc-sendikal-ay">Ay (en az 12)</label><input type="number" id="isc-sendikal-ay" min="12" max="99" step="1" value="12" inputmode="numeric" /></div>
+              </div>
+              <div class="iscilik-secim"><label><input type="checkbox" id="isc-k-bakiye" data-kalem aria-controls="isc-bakiye-alan" /> Belirli süreli sözleşmede bakiye süre ücreti (TBK m.438)</label></div>
+              <div id="isc-bakiye-alan" hidden>
+                <div class="iscilik-alan"><label for="isc-bakiye-indirim">Kalan sürede tasarruf edilen ya da başka işten elde edilen gelir (TL)</label><input type="text" id="isc-bakiye-indirim" inputmode="decimal" autocomplete="off" /></div>
+                <div class="iscilik-secim"><label><input type="checkbox" id="isc-bakiye-giydirilmis" /> Düzenli ek ödemeleri de katarak (giydirilmiş ücretle) hesapla</label></div>
+              </div>
+            </div>
+          </details>
+        </fieldset>
+
+        <details class="iscilik-details hs-ayrintili" id="isc-b4">
+          <summary>4. Brütten nete (isteğe bağlı): ödeme tarihi, vergi matrahı, asgari ücret istisnası</summary>
+          <div class="iscilik-ic">
+            <div class="iscilik-satir">
+              <div class="iscilik-alan">
+                <label for="isc-odeme">Ödeme (hesap) tarihi</label>
+                <input type="date" id="isc-odeme" name="odeme" aria-describedby="isc-odeme-not" />
+              </div>
+              <div class="iscilik-alan">
+                <label for="isc-kumulatif">O yıl ödeme ayına kadarki gelir vergisi matrahı (TL)</label>
+                <input type="text" id="isc-kumulatif" name="kumulatif" inputmode="decimal" autocomplete="off" placeholder="boşsa 0" aria-describedby="isc-kumulatif-not" />
+              </div>
+            </div>
+            <p class="iscilik-not" id="isc-odeme-not">Boş bırakılırsa son çalışma günü alınır. Gelir vergisi tarifesi ve oranlar bu tarihin yılına göre uygulanır.</p>
+            <p class="iscilik-not" id="isc-kumulatif-not">Bordrodaki kümülatif matrahı girin; boş bırakılırsa sıfırdan (ilk dilimden) başlanır ve net tutar olduğundan yüksek görünebilir.</p>
+            <div class="iscilik-secim">
+              <label><input type="checkbox" id="isc-au" name="au_istisna" /> Asgari ücret gelir ve damga vergisi istisnasını uygula (ödeme ayında aynı işverenden başka ücret ödenmediyse; 193 sayılı Kanun m.23/1-18)</label>
+            </div>
+          </div>
+        </details>
+
+        <div class="iscilik-hata" id="iscilik-hata" role="alert" hidden></div>
+        <button type="submit" class="iscilik-gonder" disabled>Alacakları hesapla</button>
+      </form>
+
+      <template id="isc-ek-sablon">
+        <div class="iscilik-tekrar" data-ek="">
+          <div class="iscilik-satir">
+            <div class="iscilik-alan">
+              <label for="__-tur">Ödeme</label>
+              <select id="__-tur" name="ek_tur">
+                <option value="yol">Yol</option>
+                <option value="yemek">Yemek</option>
+                <option value="ikramiye">İkramiye</option>
+                <option value="prim">Prim</option>
+                <option value="yakacak">Yakacak</option>
+                <option value="giyim">Giyim</option>
+                <option value="diger">Diğer düzenli ödeme</option>
+              </select>
+            </div>
+            <div class="iscilik-alan"><label for="__-tutar">Tutar (TL, brüt)</label><input type="text" id="__-tutar" name="ek_tutar" inputmode="decimal" autocomplete="off" /></div>
+            <div class="iscilik-alan">
+              <label for="__-donem">Ödeme dönemi</label>
+              <select id="__-donem" name="ek_donem">
+                <option value="ay">Aylık</option>
+                <option value="is_gunu">İş günü başına</option>
+                <option value="uc_ay">Üç aylık</option>
+                <option value="alti_ay">Altı aylık</option>
+                <option value="yil">Yıllık</option>
+              </select>
+            </div>
+            <div class="iscilik-alan" data-ek-gun hidden><label for="__-gun">Ayda ödenen gün</label><input type="number" id="__-gun" name="ek_gun" min="1" max="31" step="1" value="26" inputmode="numeric" /></div>
+          </div>
+          <button type="button" class="iscilik-sil">Bu ödemeyi kaldır</button>
+        </div>
+      </template>
+      <template id="isc-fazla-sablon">
+        <div class="iscilik-tekrar" data-fazla="">
+          <div class="iscilik-satir">
+            <div class="iscilik-alan"><label for="__-bas">Dönem başı</label><input type="date" id="__-bas" name="f_bas" /></div>
+            <div class="iscilik-alan"><label for="__-bit">Dönem sonu</label><input type="date" id="__-bit" name="f_bit" /></div>
+            <div class="iscilik-alan"><label for="__-saat">Haftalık fazla saat</label><input type="text" id="__-saat" name="f_saat" inputmode="decimal" autocomplete="off" /></div>
+            <div class="iscilik-alan"><label for="__-aylik">Dönemin aylık çıplak brüt ücreti (TL)</label><input type="text" id="__-aylik" name="f_aylik" inputmode="decimal" autocomplete="off" /></div>
+            <div class="iscilik-alan"><label for="__-dislanan">Dışlanan gün (izin, rapor)</label><input type="number" id="__-dislanan" name="f_dislanan" min="0" step="1" inputmode="numeric" /></div>
+            <div class="iscilik-alan">
+              <label for="__-tur">Tür</label>
+              <select id="__-tur" name="f_tur">
+                <option value="fc">Fazla çalışma (%50 zamlı)</option>
+                <option value="fsc">Fazla sürelerle çalışma (%25 zamlı)</option>
+              </select>
+            </div>
+          </div>
+          <div class="iscilik-secim"><label><input type="checkbox" name="f_zam" /> Normal ücreti ödendi; yalnız zamlı kısmı hesapla</label></div>
+          <button type="button" class="iscilik-sil">Bu dönemi kaldır</button>
+        </div>
+      </template>
+      <template id="isc-hafta-sablon">
+        <div class="iscilik-tekrar" data-hafta="">
+          <div class="iscilik-satir">
+            <div class="iscilik-alan"><label for="__-gun">Çalışılan hafta tatili günü</label><input type="text" id="__-gun" name="h_gun" inputmode="decimal" autocomplete="off" /></div>
+            <div class="iscilik-alan"><label for="__-aylik">Dönemin aylık çıplak brüt ücreti (TL)</label><input type="text" id="__-aylik" name="h_aylik" inputmode="decimal" autocomplete="off" /></div>
+          </div>
+          <div class="iscilik-secim"><label><input type="checkbox" name="h_zam" /> Normal ücreti ödendi; yalnız %50 zamlı kısmı hesapla</label></div>
+          <button type="button" class="iscilik-sil">Bu satırı kaldır</button>
+        </div>
+      </template>
+      <template id="isc-ubgt-sablon">
+        <div class="iscilik-tekrar" data-ubgt="">
+          <div class="iscilik-satir">
+            <div class="iscilik-alan"><label for="__-gun">Çalışılan bayram ve genel tatil günü (arife yarım gün: 0,5)</label><input type="text" id="__-gun" name="u_gun" inputmode="decimal" autocomplete="off" /></div>
+            <div class="iscilik-alan"><label for="__-aylik">Dönemin aylık çıplak brüt ücreti (TL)</label><input type="text" id="__-aylik" name="u_aylik" inputmode="decimal" autocomplete="off" /></div>
+          </div>
+          <button type="button" class="iscilik-sil">Bu satırı kaldır</button>
+        </div>
+      </template>
+      <div id="iscilik-sonuc" class="iscilik-sonuc" aria-live="polite" data-filigran></div>
+      <p class="hs-yonlendirme" id="iscilik-yonlendirme" hidden>Sonucu kendi durumunuzla birlikte değerlendirmek isterseniz <a href="/alan/is-sosyal-guvenlik">İş ve Sosyal Güvenlik Hukuku</a> sayfasına bakabilir ya da <a href="/iletisim">İletişim</a> sayfasından ulaşabilirsiniz.</p>
+      <noscript><p class="iscilik-mesaj">Hesaplayıcı tarayıcınızda JavaScript ile çalışır. JavaScript kapalıyken aşağıdaki kurallar, tablolar ve kanun maddeleri okunabilir.</p></noscript>
+    </div>
+
+    <div class="iscilik-bilgi-bolum">
+      <h2>Hesaplanan kalemler</h2>
+      <div class="iscilik-tablo-kap">
+        <table class="iscilik-tablo">
+          <caption>Kalem, esas ücret ve dayanak</caption>
+          <thead><tr><th scope="col">Kalem</th><th scope="col">Esas ücret</th><th scope="col">Hesap</th><th scope="col">Dayanak</th></tr></thead>
+          <tbody>
+            <tr><td>Kıdem tazminatı</td><td>giydirilmiş, fesih tarihindeki tavanla sınırlı</td><td>her tam yıl için 30 günlük ücret; artan ay ve gün orantılı</td><td>1475 m.14</td></tr>
+            <tr><td>İhbar tazminatı</td><td>giydirilmiş</td><td>2, 4, 6 ya da 8 haftalık ücret</td><td>4857 m.17</td></tr>
+            <tr><td>Kötü niyet tazminatı</td><td>giydirilmiş</td><td>bildirim süresi ücretinin üç katı</td><td>4857 m.17/6</td></tr>
+            <tr><td>Boşta geçen süre ücreti</td><td>giydirilmiş, dava tarihindeki ücret</td><td>en çok dört aylık ücret ve diğer haklar</td><td>4857 m.21/3-4</td></tr>
+            <tr><td>İşe başlatmama tazminatı</td><td>çıplak, dava tarihindeki ücret</td><td>dört ile sekiz aylık ücret</td><td>4857 m.21/1, 21/4</td></tr>
+            <tr><td>Ayrımcılık tazminatı</td><td>çıplak</td><td>dört aya kadar ücret</td><td>4857 m.5/6</td></tr>
+            <tr><td>Sendikal tazminat</td><td>çıplak</td><td>en az bir yıllık ücret</td><td>6356 m.25/4</td></tr>
+            <tr><td>Bakiye süre ücreti</td><td>çıplak (isteğe bağlı giydirilmiş)</td><td>kalan gün × günlük ücret, tasarruf ve başka gelir indirilir</td><td>TBK m.438</td></tr>
+            <tr><td>Ödenmeyen ücret</td><td>çıplak</td><td>ay ve gün karşılığı</td><td>4857 m.32</td></tr>
+            <tr><td>Yıllık izin ücreti</td><td>çıplak, son ücret</td><td>kullanılmayan gün × günlük ücret</td><td>4857 m.53, m.57, m.59</td></tr>
+            <tr><td>Fazla çalışma</td><td>çıplak</td><td>saat ücreti (aylık / 225) × %150 (fazla sürelerle çalışmada %125)</td><td>4857 m.41</td></tr>
+            <tr><td>Hafta tatili</td><td>çıplak</td><td>günlük ücret × %150</td><td>4857 m.46; HGK 2016/2387 E., 2021/504 K.</td></tr>
+            <tr><td>Ulusal bayram ve genel tatil</td><td>çıplak</td><td>çalışılan her gün için ayrıca bir günlük ücret</td><td>4857 m.47</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Giydirilmiş brüt ücret</h2>
+      <p>Kıdem tazminatına esas ücretin hesabında, işçiye sağlanan "para ve para ile ölçülmesi mümkün akdi ve kanundan doğan menfaatler de gözönünde tutulur" (1475 m.14/11); aynı kural ihbar ve kötü niyet tazminatı için 4857 m.17'nin son fıkrasında yer alır. Yargıtay Hukuk Genel Kurulu bu ayrımı şöyle özetler: "kıdem tazminatı, giydirilmiş ücretten hesaplanırken, diğer işçilik alacakları (fazla çalışma, hafta tatili, yıllık ücretli izin alacakları gibi) çıplak ücretten hesaplanmaktadır" (HGK 2016/2084 E., 2020/20 K.). Süreklilik göstermeyen arızi ödemeler katılmaz (Yargıtay 7. HD 2015/6784 E., 2016/7198 K.). Yılda bir ya da dönemsel olmayan ödemelerde yıllık tutar 365 güne, dönemsel ödemelerde son dönem tutarı dönemin gün sayısına bölünür (Yargıtay 9. HD 2016/24123 E., 2020/5415 K.); araç bu payı 30 güne çevirip çıplak ücrete ekler. İş günü başına ödenen yemek ve yol yardımında Yargıtay ayda fiilen çalışılan gün sayısını esas alır: haftada altı gün çalışmada 26 gün (Yargıtay 22. HD 2015/33111 E., 2018/7814 K.), beş gün çalışmada 22 gün (Yargıtay 7. HD 2014/21982 E., 2015/23951 K.); araç günlük tutarı girilen gün sayısıyla çarpar, varsayılan 26 gündür. Asgari geçim indirimi giydirilmiş ücrete katılmaz (aynı karar).</p>
+
+      <h2>Brütten nete: hangi kalemden hangi kesinti</h2>
+      <div class="iscilik-tablo-kap">
+        <table class="iscilik-tablo">
+          <caption>Kesinti tablosu</caption>
+          <thead><tr><th scope="col">Kalem</th><th scope="col">SGK işçi payı %14</th><th scope="col">İşsizlik primi %1</th><th scope="col">Gelir vergisi</th><th scope="col">Damga vergisi binde 7,59</th></tr></thead>
+          <tbody>
+            <tr><td>Kıdem tazminatı</td><td>yok (5510 m.80/1-b)</td><td>yok</td><td>istisna (193 sayılı Kanun m.25/7)</td><td>var</td></tr>
+            <tr><td>İhbar tazminatı</td><td>yok (5510 m.80/1-b)</td><td>yok</td><td>var (193 sayılı Kanun m.61)</td><td>var</td></tr>
+            <tr><td>Ödenmeyen ücret, yıllık izin, fazla çalışma, hafta tatili, genel tatil, boşta geçen süre ücreti</td><td>var (5510 m.80-81)</td><td>var (4447 m.49)</td><td>var (193 sayılı Kanun m.61, m.103)</td><td>var</td></tr>
+            <tr><td>İşe başlatmama tazminatı</td><td colspan="2">brüt gösterilir</td><td>istisna (193 sayılı Kanun m.25/1)</td><td>brüt gösterilir</td></tr>
+            <tr><td>Kötü niyet, ayrımcılık, sendikal, bakiye süre</td><td colspan="4">brüt gösterilir: vergi ve prim uygulaması somut duruma göre değerlendirilir</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul class="iscilik-sira">
+        <li><strong>Gelir vergisi:</strong> ödeme yılının ücret tarifesiyle, girilen kümülatif matrahın üzerine kademeli hesaplanır (193 sayılı Kanun m.103). Matrah, brütten sigorta ve işsizlik primi işçi payları düşülerek bulunur.</li>
+        <li><strong>Damga vergisi:</strong> "Maaş, ücret, gündelik, … tazminat ve benzeri her ne adla olursa olsun hizmet karşılığı alınan paralar" için binde 7,59 (488 sayılı Kanun (1) sayılı tablo IV-1-b).</li>
+        <li><strong>Asgari ücret istisnası (2022 ve sonrası):</strong> ücretin asgari ücretin brüt tutarından işçi primleri düşülerek kalan kısmına isabet eden vergi ve aylık brüt asgari ücrete isabet eden damga vergisi alınmaz (193 sayılı Kanun m.23/1-18; 488 sayılı Kanun (2) sayılı tablo IV-34). İstisna, ödemenin yapıldığı ayda yapılan ücret ödemelerinin toplamına bir kez uygulanır ve "asgari ücretin ilgili ayda hesaplanan vergisini geçemeyecektir" (GV Genel Tebliği Seri No: 319 m.4/5, m.6/1). Araç, asgari ücretin o ayki vergisini yılbaşından o aya kadarki asgari ücret matrahı üzerinden bulur. Kıdem tazminatı ücret değil tazminat olduğundan damga vergisi istisnası ona uygulanmaz.</li>
+        <li><strong>Hesaba katılmayanlar:</strong> prime esas kazanç üst sınırı (5510 m.82), 2022 öncesi ödemelerde asgari geçim indirimi, engellilik indirimi ve birden fazla işverenden ücret.</li>
+      </ul>
+
+      <h2>Faiz</h2>
+      <p>Faiz tutarı hesaplanmaz: mevduata uygulanan en yüksek faiz oranı bankalara ve dönemlere göre değişir ve resmî bir tek tablo yoktur. Hangi alacağa hangi faizin işleyebileceği aşağıdadır.</p>
+      <div class="iscilik-tablo-kap">
+        <table class="iscilik-tablo">
+          <caption>Faiz türü ve başlangıcı</caption>
+          <thead><tr><th scope="col">Alacak</th><th scope="col">Faiz</th><th scope="col">Başlangıç</th><th scope="col">Dayanak</th></tr></thead>
+          <tbody>
+            <tr><td>Kıdem tazminatı</td><td>mevduata uygulanan en yüksek faiz</td><td>uygulamada fesih tarihi</td><td>1475 m.14/11: "hakim gecikme süresi için, ödenmeyen süreye göre mevduata uygulanan en yüksek faizin ödenmesine hükmeder"</td></tr>
+            <tr><td>Gününde ödenmeyen ücret</td><td>mevduata uygulanan en yüksek faiz</td><td>ödeme günü</td><td>4857 m.34/1: "Gününde ödenmeyen ücretler için mevduata uygulanan en yüksek faiz oranı uygulanır."</td></tr>
+            <tr><td>Fazla çalışma, hafta tatili, genel tatil ücreti ve boşta geçen süre ücreti</td><td>mevduata uygulanan en yüksek faiz (talep yasal faizle sınırlıysa hüküm talebi aşamaz)</td><td>temerrüt (ihtar) tarihi; yoksa dava ve ıslah tarihleri. Boşta geçen süre ücretinde işe başlama başvurusunda bu ücret istendiyse başvuru tarihi</td><td>4857 m.34/1. Yargıtay 9. HD 2019/5886 E., 2021/2712 K.: boşta geçen süreye ait ücret ve diğer haklar için "4857 sayılı Kanunun 34 üncü maddesinde sözü edilen özel faiz türü uygulanmalıdır"; 9. HD 2023/2081 E., 2023/7457 K.</td></tr>
+            <tr><td>İhbar, kötü niyet, işe başlatmama, ayrımcılık, sendikal tazminat; yıllık izin ücreti</td><td>yasal faiz</td><td>temerrüt (ihtar) tarihi; yoksa dava ve ıslah tarihleri</td><td>3095 sayılı Kanun m.1; TBK m.117. Örnek hüküm: Yargıtay HGK 2015/278 E., 2017/15 K. İşe başlatmama tazminatı "niteliği itibarıyla tazminat olduğundan uygulanması gereken faiz, yasal faiz olmalıdır" (Yargıtay 9. HD 2019/5886 E., 2021/2712 K.).</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Veri tabloları</h2>
+      <p>Tablolar 01.01.2015–31.12.2026 dönemini kapsar; bu dönem dışındaki fesih ya da ödeme tarihleri için araç tutar vermez ve "veri yok" der. Kaynaklar: Çalışma ve Sosyal Güvenlik Bakanlığı kıdem tazminatı tavanı ve asgari ücret tabloları, Asgari Ücret Tespit Komisyonu kararları (Resmî Gazete), Gelir Vergisi Genel Tebliğleri, 488, 5510 ve 4447 sayılı Kanunlar.</p>
+      <details><summary>Kıdem tazminatı tavanı</summary><div class="iscilik-tablo-kap"><table class="iscilik-tablo"><caption>Kıdem tazminatı tavanı (bir hizmet yılı için)</caption><thead><tr><th scope="col">Dönem</th><th scope="col">Tavan (TL)</th></tr></thead><tbody><tr><td>01.01.2015 – 30.06.2015</td><td>3.541,37</td></tr><tr><td>01.07.2015 – 31.08.2015</td><td>3.709,98</td></tr><tr><td>01.09.2015 – 31.12.2015</td><td>3.828,37</td></tr><tr><td>01.01.2016 – 30.06.2016</td><td>4.092,53</td></tr><tr><td>01.07.2016 – 31.12.2016</td><td>4.297,21</td></tr><tr><td>01.01.2017 – 30.06.2017</td><td>4.426,16</td></tr><tr><td>01.07.2017 – 31.12.2017</td><td>4.732,48</td></tr><tr><td>01.01.2018 – 30.06.2018</td><td>5.001,76</td></tr><tr><td>01.07.2018 – 31.12.2018</td><td>5.434,42</td></tr><tr><td>01.01.2019 – 30.06.2019</td><td>6.017,60</td></tr><tr><td>01.07.2019 – 31.12.2019</td><td>6.379,86</td></tr><tr><td>01.01.2020 – 30.06.2020</td><td>6.730,15</td></tr><tr><td>01.07.2020 – 31.12.2020</td><td>7.117,17</td></tr><tr><td>01.01.2021 – 30.06.2021</td><td>7.638,96</td></tr><tr><td>01.07.2021 – 31.12.2021</td><td>8.284,51</td></tr><tr><td>01.01.2022 – 30.06.2022</td><td>10.848,59</td></tr><tr><td>01.07.2022 – 31.12.2022</td><td>15.371,40</td></tr><tr><td>01.01.2023 – 30.06.2023</td><td>19.982,83</td></tr><tr><td>01.07.2023 – 31.12.2023</td><td>23.489,83</td></tr><tr><td>01.01.2024 – 30.06.2024</td><td>35.058,58</td></tr><tr><td>01.07.2024 – 31.12.2024</td><td>41.828,42</td></tr><tr><td>01.01.2025 – 30.06.2025</td><td>46.655,43</td></tr><tr><td>01.07.2025 – 31.12.2025</td><td>53.919,68</td></tr><tr><td>01.01.2026 – 30.06.2026</td><td>64.948,77</td></tr><tr><td>01.07.2026 – 31.12.2026</td><td>73.729,87</td></tr></tbody></table></div></details>
+      <details><summary>Brüt asgari ücret</summary><div class="iscilik-tablo-kap"><table class="iscilik-tablo"><caption>Brüt asgari ücret (aylık)</caption><thead><tr><th scope="col">Dönem</th><th scope="col">Brüt (TL)</th><th scope="col">Resmî Gazete</th></tr></thead><tbody><tr><td>01.01.2015 – 30.06.2015</td><td>1.201,50</td><td>31.12.2014/29222</td></tr><tr><td>01.07.2015 – 31.12.2015</td><td>1.273,50</td><td>31.12.2014/29222</td></tr><tr><td>01.01.2016 – 31.12.2016</td><td>1.647,00</td><td>31.12.2015/29579</td></tr><tr><td>01.01.2017 – 31.12.2017</td><td>1.777,50</td><td>30.12.2016/29934</td></tr><tr><td>01.01.2018 – 31.12.2018</td><td>2.029,50</td><td>30.12.2017/30286</td></tr><tr><td>01.01.2019 – 31.12.2019</td><td>2.558,40</td><td>27.12.2018/30638</td></tr><tr><td>01.01.2020 – 31.12.2020</td><td>2.943,00</td><td>27.12.2019/30991</td></tr><tr><td>01.01.2021 – 31.12.2021</td><td>3.577,50</td><td>30.12.2020/31350</td></tr><tr><td>01.01.2022 – 30.06.2022</td><td>5.004,00</td><td>17.12.2021/31692</td></tr><tr><td>01.07.2022 – 31.12.2022</td><td>6.471,00</td><td>01.07.2022/31883</td></tr><tr><td>01.01.2023 – 30.06.2023</td><td>10.008,00</td><td>29.12.2022/32058</td></tr><tr><td>01.07.2023 – 31.12.2023</td><td>13.414,50</td><td>24.06.2023/32231</td></tr><tr><td>01.01.2024 – 31.12.2024</td><td>20.002,50</td><td>30.12.2023/32415</td></tr><tr><td>01.01.2025 – 31.12.2025</td><td>26.005,50</td><td>27.12.2024/32765</td></tr><tr><td>01.01.2026 – 31.12.2026</td><td>33.030,00</td><td>26.12.2025/33119</td></tr></tbody></table></div></details>
+      <details><summary>Gelir vergisi tarifesi</summary><div class="iscilik-tablo-kap"><table class="iscilik-tablo"><caption>Gelir vergisi tarifesi (ücret gelirleri)</caption><thead><tr><th scope="col">Yıl</th><th scope="col">Dilimler (TL) ve oranlar</th><th scope="col">Kaynak</th></tr></thead><tbody><tr><td>2015</td><td>0,00–12.000,00: %15; 12.000,00–29.000,00: %20; 29.000,00–106.000,00: %27; 106.000,00 üstü: %35</td><td>Gelir Vergisi Genel Tebliği (Seri No: 287), RG 30.12.2014</td></tr><tr><td>2016</td><td>0,00–12.600,00: %15; 12.600,00–30.000,00: %20; 30.000,00–110.000,00: %27; 110.000,00 üstü: %35</td><td>Gelir Vergisi Genel Tebliği (Seri No: 290), RG 25.12.2015</td></tr><tr><td>2017</td><td>0,00–13.000,00: %15; 13.000,00–30.000,00: %20; 30.000,00–110.000,00: %27; 110.000,00 üstü: %35</td><td>Gelir Vergisi Genel Tebliği (Seri No: 296), RG 27.12.2016</td></tr><tr><td>2018</td><td>0,00–14.800,00: %15; 14.800,00–34.000,00: %20; 34.000,00–120.000,00: %27; 120.000,00 üstü: %35</td><td>Gelir Vergisi Genel Tebliği (Seri No: 302), RG 29.12.2017</td></tr><tr><td>2019</td><td>0,00–18.000,00: %15; 18.000,00–40.000,00: %20; 40.000,00–148.000,00: %27; 148.000,00 üstü: %35</td><td>Gelir Vergisi Genel Tebliği (Seri No: 305), RG 31.12.2018</td></tr><tr><td>2020</td><td>0,00–22.000,00: %15; 22.000,00–49.000,00: %20; 49.000,00–180.000,00: %27; 180.000,00–600.000,00: %35; 600.000,00 üstü: %40</td><td>Gelir Vergisi Genel Tebliği (Seri No: 310), RG 27.12.2019</td></tr><tr><td>2021</td><td>0,00–24.000,00: %15; 24.000,00–53.000,00: %20; 53.000,00–190.000,00: %27; 190.000,00–650.000,00: %35; 650.000,00 üstü: %40</td><td>Gelir Vergisi Genel Tebliği (Seri No: 313), RG 29.12.2020</td></tr><tr><td>2022</td><td>0,00–32.000,00: %15; 32.000,00–70.000,00: %20; 70.000,00–250.000,00: %27; 250.000,00–880.000,00: %35; 880.000,00 üstü: %40</td><td>Gelir Vergisi Genel Tebliği (Seri No: 317), RG 21.12.2021</td></tr><tr><td>2023</td><td>0,00–70.000,00: %15; 70.000,00–150.000,00: %20; 150.000,00–550.000,00: %27; 550.000,00–1.900.000,00: %35; 1.900.000,00 üstü: %40</td><td>Gelir Vergisi Genel Tebliği (Seri No: 323), RG 30.12.2022</td></tr><tr><td>2024</td><td>0,00–110.000,00: %15; 110.000,00–230.000,00: %20; 230.000,00–870.000,00: %27; 870.000,00–3.000.000,00: %35; 3.000.000,00 üstü: %40</td><td>Gelir Vergisi Genel Tebliği (Seri No: 324), RG 30.12.2023</td></tr><tr><td>2025</td><td>0,00–158.000,00: %15; 158.000,00–330.000,00: %20; 330.000,00–1.200.000,00: %27; 1.200.000,00–4.300.000,00: %35; 4.300.000,00 üstü: %40</td><td>Gelir Vergisi Genel Tebliği (Seri No: 329), RG 30.12.2024</td></tr><tr><td>2026</td><td>0,00–190.000,00: %15; 190.000,00–400.000,00: %20; 400.000,00–1.500.000,00: %27; 1.500.000,00–5.300.000,00: %35; 5.300.000,00 üstü: %40</td><td>Gelir Vergisi Genel Tebliği (Seri No: 332), RG 31.12.2025</td></tr></tbody></table></div></details>
+      <ul class="iscilik-sira">
+        <li>Damga vergisi oranı: ücret ve tazminat ödemelerinde binde 7,59 (2015–2026).</li>
+        <li>Sigorta primi işçi payı: malullük, yaşlılık ve ölüm %9 ile genel sağlık %5, toplam %14 (5510 m.81); işsizlik sigortası işçi payı %1 (4447 m.49).</li>
+      </ul>
+
+      <h2>Hesap sırası</h2>
+      <ol class="iscilik-sira">
+        <li><strong>Süre:</strong> hizmet süresi işe giriş ile son çalışma günü (dahil) arasında yıl, ay ve gün olarak bulunur: girişten son günün ertesine kadar dolan tam takvim ayları (on ikisi bir yıl) ve son ay dönümünden sonra kalan takvim günleri sayılır; ay dönümü o ayda yoksa (ör. 31 Ağustos + 6 ay, 29 Şubat + 1 yıl) izleyen ayın ilk günü alınır.</li>
+        <li><strong>Ücret:</strong> giydirilmiş ücret, çıplak ücrete her düzenli ödemenin 30 günlük payı (iş günü başına ödenenlerde günlük tutar × ayda ödenen gün) eklenerek bulunur.</li>
+        <li><strong>Kalemler:</strong> her kalem kendi esas ücretiyle hesaplanır; tutarlar kuruş olarak tam sayıyla hesaplanır ve her ara sonuç yarım kuruş yukarı yuvarlanır.</li>
+        <li><strong>Hakkaniyet:</strong> girilen oran fazla çalışma, hafta tatili ve genel tatil toplamından indirilir.</li>
+        <li><strong>Kesintiler:</strong> sigorta ve işsizlik primi, gelir vergisi (kümülatif), damga vergisi; istisna seçildiyse asgari ücret istisnası toplamdan düşülür.</li>
+      </ol>
+
+      <h2>Hesaplanmayanlar</h2>
+      <ul class="iscilik-sira">
+        <li>Zamanaşımı: ücret alacaklarında beş yıl (4857 m.32); kıdem, ihbar, kötü niyet ve eşit davranmama tazminatı ile yıllık izin ücretinde beş yıl (4857 ek m.3). Ödeme tarihi son çalışma gününden beş yıldan fazla sonraysa araç uyarır, tutarı kesmez. İbraname, mahsup ve önceki ödemeler; fazla çalışmanın denkleştirme, telafi ve serbest zaman kullanımı.</li>
+        <li>Arabuluculuk: kanuna, bireysel veya toplu iş sözleşmesine dayanan işçi alacağı ve tazminatı ile işe iade davalarında arabulucuya başvurulmuş olması dava şartıdır; başvurudan son tutanağın düzenlendiği tarihe kadar zamanaşımı durur (7036 sayılı İş Mahkemeleri Kanunu m.3/1, 3/17).</li>
+        <li>Belirli süreli sözleşmenin kendiliğinden sona ermesi, ikale (karşılıklı sona erdirme), işyeri devri ve birden fazla işveren hâlleri; kısmi süreli, çağrı üzerine ve parça başı çalışma; bir yıldan az süren mevsimlik ve kampanya işleri (yıllık izin hükümleri uygulanmaz: 4857 m.53/3); 854 sayılı Deniz İş Kanunu ve 5953 sayılı Basın İş Kanununa tabi çalışanlar.</li>
+        <li>Toplu iş sözleşmesi ve iş sözleşmesindeki daha yüksek oranlar, gece çalışması ve yüzde usulü. Yer altı işlerinde yıllık izin süreleri dörder gün artırılır ve iş güvencesinde altı aylık kıdem aranmaz (4857 m.53/4, m.18/1): artan izni "kullanılmayan gün" alanına elle girin. Hafta tatili ya da bayram gününde günlük 7,5 saati aşan çalışma ayrıca fazla çalışma olarak girilmelidir.</li>
+        <li>Sözleşmenin askıda kaldığı süreler: ücretsiz izin, grev ve lokavt, tutukluluk gibi çalışılmayan süreler kıdem ve izin süresinden düşülür; araç bu süreleri düşmez. İhbar süresinin ücreti peşin ödenerek yapılan fesihte bildirim süresi kıdeme eklenmez; bildirim süresi çalışılarak kullandırıldıysa son çalışma günü olarak sürenin son gününü girin.</li>
+        <li>Faiz tutarı, avukatlık ücreti ve yargılama giderleri; TBK m.438/3 takdirî tazminatı ve manevi tazminat.</li>
+        <li>Kişisel veri, dosya numarası ya da işveren adı istenmez; hesap tarayıcınızda yapılır.</li>
+      </ul>
+
+      <h2 id="sss">Sık Sorulan Sorular</h2>
+      <div class="mv-faq"><details class="mv-q"><summary>Giydirilmiş brüt ücret nedir, hangi alacaklarda kullanılır?</summary><p>Çıplak brüt ücrete düzenli ve sürekli ödenen yol, yemek, ikramiye, prim, yakacak gibi para ve para ile ölçülebilen menfaatlerin eklenmesiyle bulunur; bir kez yapılan arızi ödemeler katılmaz. İş günü başına ödenen yemek ve yol yardımı, ayda ödendiği gün sayısıyla çarpılarak aylık tutara çevrilir. Kıdem, ihbar ve kötü niyet tazminatı bu ücretten; yıllık izin ücreti son çıplak ücretten; fazla çalışma, hafta tatili ve genel tatil alacakları ilgili dönemin çıplak ücretinden hesaplanır. Dayanak: 1475 m.14/11; 4857 m.17/son; Yargıtay HGK 2016/2084 E., 2020/20 K.</p></details><details class="mv-q"><summary>Kıdem tazminatı nasıl hesaplanır?</summary><p>Her tam hizmet yılı için 30 günlük giydirilmiş brüt ücret ödenir; artan ay ve günler aynı oranda eklenir. Esas alınan ücret fesih tarihindeki kıdem tazminatı tavanını geçemez. Kıdem tazminatından yalnız binde 7,59 damga vergisi kesilir. Dayanak: 1475 m.14/1 ve 14/11; 193 sayılı Kanun m.25/7; 488 sayılı Kanun (1) sayılı tablo IV-1-b.</p></details><details class="mv-q"><summary>Kıdem tazminatına hangi hâllerde hak kazanılır?</summary><p>En az bir yıl çalışmış işçinin sözleşmesi işverence ahlak ve iyi niyet kurallarına aykırılık dışındaki bir nedenle feshedildiğinde, işçi haklı nedenle feshettiğinde, askerlik, emeklilik veya yaşlılık aylığı için ayrılmada, yaş dışındaki emeklilik şartlarını (sigortalılık süresi ve prim günü sayısı) tamamlayıp ayrılmada, kadın işçinin evlenmeden itibaren bir yıl içinde ayrılmasında ve işçinin ölümünde kıdem tazminatı doğar; haklı nedene dayanmayan istifada doğmaz. Dayanak: 1475 m.14/1.</p></details><details class="mv-q"><summary>İhbar süreleri ne kadardır?</summary><p>İşi altı aydan az sürmüş işçi için iki, altı aydan bir buçuk yıla kadar dört, bir buçuk yıldan üç yıla kadar altı, üç yıldan fazla sürmüş işçi için sekiz haftadır. Bildirim şartına uymayan taraf bu sürenin ücreti tutarında tazminat öder; tutar giydirilmiş ücretten hesaplanır. Dayanak: 4857 m.17/2, 17/4 ve 17/son.</p></details><details class="mv-q"><summary>Fazla çalışma ücreti nasıl hesaplanır?</summary><p>Haftalık kırk beş saati aşan her saat için saat ücretinin yüzde elli fazlası ödenir; haftalık süre sözleşmeyle daha az belirlenmişse kırk beş saate kadar olan çalışmalar fazla sürelerle çalışmadır ve yüzde yirmi beş fazlasıyla ödenir. Araç saat ücretini aylık çıplak ücretin 225&#039;e bölünmesiyle bulur. Dayanak: 4857 m.41/1-3.</p></details><details class="mv-q"><summary>Hakkaniyet indirimi nedir, hangi oran öneriliyor?</summary><p>Fazla çalışma yazılı belgeyle değil tanık beyanıyla ispatlandığında Yargıtay hesaplanan tutardan hakkaniyet indirimi yapılmasını aramakta, Hukuk Genel Kurulu yüzde otuz oranındaki indirimi yerinde bulmaktadır. Oran kanunda yazılı değildir ve mahkemenin takdirindedir; araç oranı kullanıcıya bırakır. Dayanak: Yargıtay HGK 2015/1616 E., 2016/128 K.; HGK 2011/741 E., 2012/73 K.</p></details><details class="mv-q"><summary>Yıllık izin ücreti nasıl hesaplanır?</summary><p>Hizmet süresi bir ile beş yıl arası olana yılda en az on dört, beş ile on beş yıl arası olana yirmi, on beş yıl ve fazlası olana yirmi altı gün izin verilir; on sekiz ve daha küçük ile elli ve daha büyük yaştakilerde süre yirmi günden az olamaz. Sözleşme sona erince kullanılmayan izin günleri son çıplak ücret üzerinden ödenir. Dayanak: 4857 m.53 ve m.59.</p></details><details class="mv-q"><summary>Brüt tutardan hangi kesintiler yapılır?</summary><p>Ücret niteliğindeki alacaklardan yüzde 14 sigorta primi işçi payı, yüzde 1 işsizlik sigortası primi, gelir vergisi ve damga vergisi; ihbar tazminatından gelir ve damga vergisi; kıdem tazminatından yalnız damga vergisi kesilir. Kötü niyet, işe başlatmama, ayrımcılık, sendikal ve bakiye süre tazminatları brüt gösterilir. Dayanak: 5510 m.80 ve m.81; 4447 m.49; 193 sayılı Kanun m.25, m.61 ve m.103; 488 sayılı Kanun (1) sayılı tablo IV-1-b.</p></details><details class="mv-q"><summary>Asgari ücret istisnası her hesapta uygulanır mı?</summary><p>2022&#039;den itibaren ücretin asgari ücrete isabet eden kısmı gelir ve damga vergisinden istisnadır; istisna, ödemenin yapıldığı ayda yapılan ücret ödemelerinin toplamına bir kez uygulanır. Aynı ayda aynı işverenden başka ücret ödendiyse istisna orada kullanılmış olur; bu yüzden araçta isteğe bağlıdır. Dayanak: 193 sayılı Kanun m.23/1-18; 488 sayılı Kanun (2) sayılı tablo IV-34; GV Genel Tebliği Seri No: 319 m.4.</p></details><details class="mv-q"><summary>İşe iade davasında hangi tutarlar ödenir?</summary><p>Feshin geçersizliğine karar verilip işçi bir ay içinde işe başlatılmazsa en az dört, en çok sekiz aylık ücreti tutarında işe başlatmama tazminatı; kararın kesinleşmesine kadar çalıştırılmadığı süre için en çok dört aya kadar ücret ve diğer hakları ödenir. İkisi de dava tarihindeki ücret esas alınarak belirlenir. Dayanak: 4857 m.21/1, 21/3 ve 21/4.</p></details><details class="mv-q"><summary>Kötü niyet, ayrımcılık ve sendikal tazminat birlikte istenebilir mi?</summary><p>Aynı fesih için bunlardan yalnız biri hükmedilebilir: Yargıtay aynı hukuki nedenden ikinci bir tazminata hükmedilemeyeceğini ve işçi lehine olan tazminata hükmedilmesi gerektiğini kabul eder. Araç birden fazlası seçildiğinde tutarı yüksek olanı hesaplar, ötekilerin tutarını adımlarda gösterir ama toplama katmaz. Dayanak: 4857 m.5/6 ve m.17/6; 6356 m.25/4; Yargıtay 9. HD 2012/39721 E., 2014/32640 K.; 22. HD 2015/28332 E., 2018/7866 K.</p></details><details class="mv-q"><summary>Faiz tutarı hesaplanıyor mu?</summary><p>Hayır. Araç hangi alacağa hangi faizin hangi tarihten işleyebileceğini açıklar; mevduata uygulanan en yüksek faiz oranı bankalara ve dönemlere göre değiştiğinden ve resmî bir tek tablo bulunmadığından tutar vermez. Dayanak: 1475 m.14/11; 4857 m.34/1.</p></details></div>
+
+      <h2>Mevzuat</h2>
+      <ul class="iscilik-sira iscilik-kaynak">
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4857&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">4857 sayılı İş Kanunu</a> (m.5, 17, 18, 21, 24, 25, 32, 34, 41, 46, 47, 53, 57, 59, ek m.3)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=7036&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">7036 sayılı İş Mahkemeleri Kanunu</a> (m.3: dava şartı olarak arabuluculuk)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=1475&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">1475 sayılı İş Kanunu</a> (m.14)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6356&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">6356 sayılı Sendikalar ve Toplu İş Sözleşmesi Kanunu</a> (m.25)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6098&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">6098 sayılı Türk Borçlar Kanunu</a> (m.438)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5510&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu</a> (m.80, 81)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4447&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">4447 sayılı İşsizlik Sigortası Kanunu</a> (m.49)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=193&amp;MevzuatTur=1&amp;MevzuatTertip=4" target="_blank" rel="noopener">193 sayılı Gelir Vergisi Kanunu</a> (m.23, 25, 61, 103)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=488&amp;MevzuatTur=1&amp;MevzuatTertip=5" target="_blank" rel="noopener">488 sayılı Damga Vergisi Kanunu</a> ((1) ve (2) sayılı tablolar)</li>
+        <li><a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=39311&amp;MevzuatTur=9&amp;MevzuatTertip=5" target="_blank" rel="noopener">Gelir Vergisi Genel Tebliği (Seri No: 319)</a> (asgari ücret istisnası)</li>
+      </ul>
+      <p class="iscilik-surum-alt">Verilerin ve kuralların son teyit tarihi 10 Kasım 2026</p>
+      <p class="hesap-telif" style="margin-top:28px;font-size:.85rem;color:var(--text-soft)">© 2026 Av. Bayram Can Çapar · ÇAPAR Hukuk. Bu hesaplama aracı ve yazılımı 5846 sayılı Fikir ve Sanat Eserleri Kanunu kapsamında korunur; izinsiz kopyalanamaz, başka sitede ya da ticari amaçla kullanılamaz. <a href="/hukum-kosullar.html">Hüküm ve Koşullar</a></p>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="wrap alt-logo"><img src="/logo-tam-acik.svg?v=603f747f" alt="Av. Bayram Can Çapar · ÇAPAR Hukuk" width="280" height="104" loading="lazy" decoding="async" /></div>
+<div class="wrap pd-satir"><aside class="pd" data-yer="altbilgi" aria-label="Paylaş" data-url="https://capar.av.tr/hesaplamalar/iscilik-alacaklari" hidden><button type="button" class="pd-dugme" id="pd-dugme" aria-haspopup="true" aria-expanded="false" aria-controls="pd-liste"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 10H6.5A2.5 2.5 0 0 0 4 12.5v6A2.5 2.5 0 0 0 6.5 21h11a2.5 2.5 0 0 0 2.5-2.5v-6a2.5 2.5 0 0 0-2.5-2.5H16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-tr="Paylaş" data-en="Share">Paylaş</span></button><div class="pd-menu" hidden><ul class="pd-liste" id="pd-liste" role="menu" aria-labelledby="pd-dugme"><li role="none"><button type="button" class="pd-oge" role="menuitem" data-ag="kopya"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 13.5a4.5 4.5 0 0 0 6.4.4l2.8-2.8a4.5 4.5 0 0 0-6.4-6.4l-1.3 1.3M14 10.5a4.5 4.5 0 0 0-6.4-.4l-2.8 2.8a4.5 4.5 0 0 0 6.4 6.4l1.3-1.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-tr="Bağlantıyı kopyala" data-en="Copy link">Bağlantıyı kopyala</span></button></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="whatsapp" target="_blank" rel="noopener noreferrer"><svg viewBox="-2 -2 28 28" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg><span data-tr="WhatsApp" data-en="WhatsApp">WhatsApp</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="telegram" target="_blank" rel="noopener noreferrer"><svg viewBox="-2 -2 28 28" fill="currentColor" aria-hidden="true" focusable="false"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg><span data-tr="Telegram" data-en="Telegram">Telegram</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="x" target="_blank" rel="noopener noreferrer"><svg viewBox="-3 -3 30 30" fill="currentColor" aria-hidden="true" focusable="false"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg><span data-tr="X" data-en="X">X</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="linkedin" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.93H5.55v8.41h2.79zM6.94 8.7a1.62 1.62 0 1 0 0-3.24 1.62 1.62 0 0 0 0 3.24zm11.4 9.64v-4.61c0-2.46-1.31-3.6-3.07-3.6-1.4 0-2.03.78-2.38 1.32v-1.13H10.1c.04.79 0 8.41 0 8.41h2.79v-4.7c0-.25.02-.5.09-.68.2-.5.66-1.02 1.43-1.02 1.01 0 1.41.77 1.41 1.9v4.5h2.52z"/></svg><span data-tr="LinkedIn" data-en="LinkedIn">LinkedIn</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg><span data-tr="Facebook" data-en="Facebook">Facebook</span></a></li><li role="none"><a class="pd-oge" role="menuitem" data-ag="eposta"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m4 7.5 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span data-tr="E-posta" data-en="Email">E-posta</span></a></li></ul></div><span class="pd-durum" role="status" aria-live="polite"></span><span class="pd-m" data-ad="kopyalandi" hidden><span data-tr="Bağlantı kopyalandı" data-en="Link copied">Bağlantı kopyalandı</span></span><span class="pd-m" data-ad="elle" hidden><span data-tr="Bağlantıyı kopyalayın:" data-en="Copy the link:">Bağlantıyı kopyalayın:</span></span></aside></div><script src="/paylas-dugme.js?v=b3e8c2cd" defer></script>
+  <div class="wrap buro-bilgi" data-konum="altbilgi" style="font-size:.85rem;line-height:1.6;opacity:.9;padding-bottom:12px">Av. Bayram Can ÇAPAR - ÇAPAR HUKUK BÜROSU · Saraylar Mah. Gazi Mustafa Kemal Bulvarı, Memişoğlu Apartmanı No:76 Kat:6, 20010 Merkezefendi / Denizli · <a href="tel:+902582415554">0258 241 55 54</a> · <span data-tr="Hafta içi 09:00–18:00, Cumartesi 10:00–15:00" data-en="Weekdays 09:00–18:00, Saturday 10:00–15:00">Hafta içi 09:00–18:00, Cumartesi 10:00–15:00</span> · <a href="https://maps.google.com/?cid=3283744558559138001" target="_blank" rel="noopener" data-tr="Yol tarifi" data-en="Directions">Yol tarifi</a></div>
+  <div class="wrap row">
+    <span class="fb">Av. Bayram Can Çapar · ÇAPAR Hukuk</span>
+    <span class="links">
+            <a href="/#hakkinda" data-href-tr="/#hakkinda" data-href-en="/en/#hakkinda" data-tr="Hakkımızda" data-en="About Us">Hakkımızda</a>
+      <a href="/#ekip" data-href-tr="/#ekip" data-href-en="/en/#ekip" data-tr="Ekibimiz" data-en="Our Team">Ekibimiz</a>
+      <a href="/basinda" data-href-tr="/basinda" data-href-en="/en/press" data-tr="Basında Biz" data-en="In the Press">Basında Biz</a>
+      <a href="/karar-dizini" data-href-tr="/karar-dizini" data-href-en="/en/case-index" data-tr="Karar Dizini" data-en="Case Index">Karar Dizini</a>
+      <a href="/madde-dizini" data-href-tr="/madde-dizini" data-href-en="/en/statute-index" data-tr="Madde Dizini" data-en="Statute Index">Madde Dizini</a>
+            <a href="/basvuru-yollari" data-href-tr="/basvuru-yollari" data-href-en="/en/application-routes" data-tr="Başvuru Yolları" data-en="Where to Apply">Başvuru Yolları</a>
+      <a href="/sozluk" data-href-tr="/sozluk" data-href-en="/en/glossary" data-tr="Hukuk Sözlüğü" data-en="Glossary">Hukuk Sözlüğü</a>
+      <a href="/gizlilik.html" data-tr="KVKK Aydınlatma" data-en="Privacy Notice">KVKK Aydınlatma</a>
+      <a href="/cerez.html" data-tr="Çerez Politikası" data-en="Cookie Policy">Çerez Politikası</a>
+      <a href="/hukum-kosullar.html" data-tr="Hüküm ve Koşullar" data-en="Terms &amp; Conditions">Hüküm ve Koşullar</a>
+      <a href="/llms.txt" data-href-tr="/llms.txt" data-href-en="/llms-en.txt" data-aria-tr="Yapay zekâ asistanları için site özeti (llms.txt)" data-aria-en="Site summary for AI assistants (llms.txt)" type="text/plain" title="Yapay zekâ asistanları için site özeti (llms.txt)" aria-label="Yapay zekâ asistanları için site özeti (llms.txt)">llms.txt</a>    </span>
+    <span>© 2026 Av. Bayram Can ÇAPAR</span>
+  </div>
+  <span id="yeni-sekme" hidden data-tr="Yeni sekmede açılır" data-en="Opens in a new tab">Yeni sekmede açılır</span>
+</footer><script id="olcum">(function () {
+  var S = window.CAP_SAYFA || { tur: 'diger' };
+  window.capOlay = function (ad, p) {
+    if (typeof window.gtag !== 'function') { return; }
+    var q = { sayfa_turu: S.tur || 'diger', dil: S.dil || document.documentElement.lang || 'tr' };   // E §5.9: dil
+    if (S.makale) { q.makale = S.makale; }
+    for (var k in (p || {})) { if (p[k] !== null && p[k] !== undefined) { q[k] = p[k]; } }
+    window.gtag('event', ad, q);
+  };
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a') : null;
+    if (!a || a.closest('.pd')) { return; }   // Paylaş menüsü (e-posta dahil) kendi olayını yazar (paylas-dugme.js)
+    var h = a.getAttribute('href') || '', kk = a.closest('[data-konum]'), konum = kk ? kk.getAttribute('data-konum') : 'sayfa';
+    if (h.indexOf('tel:') === 0) { window.capOlay('iletisim_tel', { konum: konum }); }
+    else if (h.indexOf('mailto:') === 0) { window.capOlay('iletisim_eposta', { konum: konum }); }
+    else if (a.classList.contains('iletisim-mesaj')) { window.capOlay('iletisim_mesaj', { konum: konum }); }
+    if (a.closest('.vitrin-one, .vitrin-kart')) { window.capOlay('vitrin_tik', { konum: konum, makale: a.getAttribute('data-makale') || '' }); }
+  }, true);
+  function aria() {
+    var l = document.documentElement.lang === 'en' ? 'en' : 'tr';
+    document.querySelectorAll('[data-aria-tr]').forEach(function (el) { el.setAttribute('aria-label', el.getAttribute('data-aria-' + l) || ''); });
+  }
+  function basla() {
+    aria();
+    if (typeof window.setLang === 'function' && !window.setLang.capSarili) {
+      var eski = window.setLang;
+      window.setLang = function (l) { eski(l); aria(); };
+      window.setLang.capSarili = true;
+    }
+  }
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', basla); } else { basla(); }
+})();</script><nav class="mobil-cubuk" aria-label="Hızlı iletişim" data-aria-tr="Hızlı iletişim" data-aria-en="Quick contact" data-konum="cubuk"><a class="cubuk-tel" href="tel:+902582415554"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span data-tr="Telefon" data-en="Phone">Telefon</span></a><a class="cubuk-yol" href="https://maps.google.com/?cid=3283744558559138001" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5c-3.6 0-6.5 2.9-6.5 6.5 0 4.6 6.5 12.5 6.5 12.5s6.5-7.9 6.5-12.5c0-3.6-2.9-6.5-6.5-6.5z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span data-tr="Yol tarifi" data-en="Directions">Yol tarifi</span></a><a class="cubuk-form ana iletisim-mesaj" href="/iletisim" data-href-tr="/iletisim" data-href-en="/en/contact"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span data-tr="Görüşme formu" data-en="Meeting form">Görüşme formu</span></a></nav>
+
+<!-- Ölçüm ve çerez onayı: ana sayfadaki kurulumun aynısı (Consent Mode v2; tercihler 'capar-cerez' ve 'capar-reklam' ana sayfayla ortak) -->
+<style>
+  .cookie-bar{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--panel);color:var(--text-on-panel);padding:16px clamp(20px,5vw,48px);display:none;box-shadow:0 -10px 40px rgba(22,19,15,.2)}
+  .cookie-bar.show{display:block}
+  .cookie-bar .cb-in{max-width:var(--maxw);margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between}
+  .cookie-bar p{font-size:.85rem;color:rgba(241,243,246,.82);max-width:66ch;line-height:1.5;margin:0}
+  .cookie-bar a{color:var(--gold);border-bottom:1px solid rgba(203,167,92,.4)}
+  .cookie-bar .cb-btns{display:flex;gap:10px;flex:none}
+  .cookie-bar button{font-family:var(--sans);font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:10px 22px;min-height:44px;min-width:120px;cursor:pointer;border:1px solid rgba(241,243,246,.55);background:none;color:var(--text-on-panel);transition:.25s}
+  .cookie-bar button.acc{background:var(--gold);border-color:var(--gold);color:var(--panel)}
+  .cookie-bar button:hover{transform:translateY(-1px)}
+  @media(max-width:560px){.cookie-bar .cb-btns{flex:1 1 100%}.cookie-bar .cb-btns button{flex:1 1 0;min-width:0}}
+  @media(max-width:560px){.cookie-bar{padding:10px 16px 12px}.cookie-bar .cb-in{gap:8px}.cookie-bar p{font-size:.78rem;line-height:1.42}}
+  @media(min-width:900px){.cookie-bar p{flex:1 1 0;min-width:0;max-width:none}}
+</style>
+<div class="cookie-bar" id="cookieBar" role="dialog" aria-label="Çerez bilgilendirmesi">
+  <div class="cb-in">
+    <p><span data-tr="Bu sitede, ziyaret istatistiklerini ve reklamlarımızın sonuçlarını (Google Ads, Meta) ölçmek için onayınızla çerez kullanıyoruz; kişiselleştirilmiş reklam yapılmaz. Ayrıntılar için" data-en="With your consent, we use cookies to measure visit statistics and the results of our advertisements (Google Ads, Meta); no personalised advertising is used. For details, see our">Bu sitede, ziyaret istatistiklerini ve reklamlarımızın sonuçlarını (Google Ads, Meta) ölçmek için onayınızla çerez kullanıyoruz; kişiselleştirilmiş reklam yapılmaz. Ayrıntılar için</span> <a href="/cerez.html" data-tr="Çerez Politikası" data-en="Cookie Policy">Çerez Politikası</a>.</p>
+    <div class="cb-btns">
+      <button type="button" onclick="rejectCookies()" data-tr="Reddet" data-en="Decline">Reddet</button>
+      <button type="button" class="acc" onclick="acceptCookies()" data-tr="Kabul et" data-en="Accept">Kabul et</button>
+    </div>
+  </div>
+</div>
+<script id="cerez-onay">
+  // Çerez onayı (Google Consent Mode v2; kullanıcı kararı 2026-11-16 "geleneksel sistem": bantta onay kutusu yok, iki düğme
+  // "Kabul et" / "Reddet"). Bu blok parts/footer.php ve index.html'de birebir aynıdır (araclar/test_cerez_onay.py).
+  // Tercihler yalnız cihazda, önceki sürümün anahtarlarıyla: 'capar-cerez' (analitik) ve 'capar-reklam' (reklam ölçümü), değerler
+  // 'accepted' | 'rejected'. "Kabul et" ikisini birlikte 'accepted', "Reddet" ikisini birlikte 'rejected' yazar.
+  // cerezDurum: ikisi 'accepted' → 'kabul'; analitik 'rejected' ve reklam 'rejected' ya da hiç yok → 'ret'; öteki her kayıt
+  // (önceki kutulu sürümden kalan kısmi seçim, yalnız analitik kabulü, bozuk değer) karar sayılmaz: hiçbir izin açılmaz, bant
+  // yeniden sorar (rıza geriye doğru genişletilmez). Varsayılan dört izin de kapalı; 'kabul'de bant yalnız analytics_storage'ı
+  // açar, reklam ölçümü izinlerini (ad_storage, ad_user_data) yalnız reklam-olcum.js açar (o da yalnız reklam kimliği tanımlı
+  // sayfada bulunur); ad_personalization hiçbir durumda açılmaz. Onay yoksa analitik etiketi çerezsiz kipte çalışır (cihaza
+  // çerez yazılmaz); onay verilirse çerezli kipe geçer. Tercih sonradan '#cerez-tercihi' adresiyle (Çerez Politikası'ndaki
+  // "Tercihinizi değiştirin" bağlantısı) bant yeniden açılarak değiştirilir.
+  var GA_ID='G-SBVXSY39NX';
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag=gtag;
+  gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});
+  function loadAnalytics(){
+    if(!GA_ID || window.__gaLoaded) return; window.__gaLoaded=true;
+    var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID; document.head.appendChild(s);
+    gtag('js',new Date()); gtag('config',GA_ID,{anonymize_ip:true});
+  }
+  function cerezOku(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function cerezYaz(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  function cerezDurum(c,r){
+    if(c==='accepted' && r==='accepted') return 'kabul';
+    if(c==='rejected' && (r==='rejected' || r===null)) return 'ret';
+    return null;
+  }
+  function hideCookieBar(){ var b=document.getElementById('cookieBar'); if(b) b.classList.remove('show'); }
+  function cerezTercihAc(odak){
+    var b=document.getElementById('cookieBar'); if(!b) return; b.classList.add('show');
+    if(odak && b.querySelector){ var d=b.querySelector('button'); if(d && d.focus) d.focus(); }
+  }
+  function tercihAdresi(){ try{ return location.hash==='#cerez-tercihi'; }catch(e){ return false; } }
+  function saveCookies(kabul){
+    cerezYaz('capar-cerez',kabul?'accepted':'rejected'); cerezYaz('capar-reklam',kabul?'accepted':'rejected');
+    gtag('consent','update',kabul?{analytics_storage:'granted'}:{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied'});
+    hideCookieBar(); loadAnalytics();
+    try{ if(tercihAdresi() && history.replaceState) history.replaceState(null,'',location.pathname+location.search); }catch(e){}
+    try{ document.dispatchEvent(new CustomEvent('capar-onay',{detail:{analitik:!!kabul,reklam:!!kabul}})); }catch(e){}
+  }
+  function acceptCookies(){ saveCookies(true); }
+  function rejectCookies(){ saveCookies(false); }
+  (function(){
+    var durum=cerezDurum(cerezOku('capar-cerez'),cerezOku('capar-reklam'));
+    if(durum==='kabul'){ gtag('consent','update',{analytics_storage:'granted'}); }
+    loadAnalytics();
+    if(window.addEventListener) window.addEventListener('hashchange',function(){ if(tercihAdresi()) cerezTercihAc(true); });
+    setTimeout(function(){
+      // karar kayıtlıysa bant gösterilmez; '#cerez-tercihi' adresi bandı her durumda yeniden açar
+      if(tercihAdresi()){ cerezTercihAc(true); return; }
+      if(durum===null) cerezTercihAc(false);
+    },600);
+  })();
+</script>
+<script>
+/* Alt sayfa dil değiştirici — ana site ile aynı 'capar-lang' anahtarını kullanır.
+   data-tr/data-en metinleri ve data-body (makale gövdesi TR/EN) görünürlüğünü yönetir. */
+function setLang(lang, yazma){
+  if(lang!=='tr' && lang!=='en') lang='tr';
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-tr]').forEach(function(el){
+    var v = el.getAttribute('data-'+lang); if(v===null) return;
+    if(el.hasAttribute('data-i18n-html')) el.innerHTML = v; else el.textContent = v;
+  });
+  document.querySelectorAll('[data-body]').forEach(function(el){
+    el.hidden = (el.getAttribute('data-body') !== lang);
+  });
+  document.querySelectorAll('[data-href-'+lang+']').forEach(function(el){
+    el.setAttribute('href', el.getAttribute('data-href-'+lang));
+  });
+  var t=document.getElementById('btn-tr'), e=document.getElementById('btn-en');
+  if(t) t.classList.toggle('active', lang==='tr');
+  if(e) e.classList.toggle('active', lang==='en');
+  if(!yazma){ try{ localStorage.setItem('capar-lang', lang); }catch(_){} }
+}
+(function(){ setLang('tr', true); })();
+</script>
+<script>
+/* Paket 3 (Fable H-11): yeni sekmede açılan her bağlantı (makale gövdelerindeki kanun/karar bağlantıları dahil) ekran
+   okuyucuya "yeni sekmede açılır" açıklamasını taşır (#yeni-sekme; dil değişince setLang metni çevirir). */
+(function(){
+  function yeniSekme(){
+    document.querySelectorAll('a[target="_blank"]').forEach(function(a){
+      var d=(a.getAttribute('aria-describedby')||'').split(/\s+/).filter(Boolean);
+      if(d.indexOf('yeni-sekme')<0){ d.push('yeni-sekme'); a.setAttribute('aria-describedby', d.join(' ')); }
+    });
+  }
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', yeniSekme); } else { yeniSekme(); }
+})();
+/* Tasarım denetimi (2026-11-19, bulgu 4): çerez bandının yüksekliği --cerez-yuk değişkeninde (bant kapalıyken 0); yapışkan
+   İçindekiler kutusu ve alan yan kartı bant açıkken bu kadar kısalır (site.css). Onay mantığına dokunmaz, yalnız ölçer. */
+(function(){
+  var b=document.getElementById('cookieBar'), r=document.documentElement;
+  if(!b || !window.ResizeObserver) return;
+  new ResizeObserver(function(){ r.style.setProperty('--cerez-yuk', (b.classList.contains('show') ? b.offsetHeight : 0) + 'px'); }).observe(b);
+})();
+</script>
+<script type="text/plain" id="iscilik-veri" data-hv="1">N{O"v"/{e{GTGKMyyMyT{x{qw`,qFq4v,J,{e{GTGKMyyMyT{x{*,v,/{e{S"q4v[4v)}"v"ş)Dq4/)O4`ı-n);v4=[4ve)IlFq4v,jwO,)`ü|swx)s4/I4)lw)OI})`ü|)*,=sw)DVX\)m)*,=sw)VxX\n)y@TTT)m)`ü|sw)y@-?{x{},sw/Fq4l4=,{eLN{*4O{e{GTyXMTyMTy{x{*,q{e{GTyXMTKM:T{x{q"q4v{e:X@y:V6xN{*4O{e{GTyXMTVMTy{x{*,q{e{GTyXMTiM:y{x{q"q4v{e:VT\\i6xN{*4O{e{GTyXMT\MTy{x{*,q{e{GTyXMyGM:y{x{q"q4v{e:iGi:V6xN{*4O{e{GTyKMTyMTy{x{*,q{e{GTyKMTKM:T{x{q"q4v{e@T\GX:6xN{*4O{e{GTyKMTVMTy{x{*,q{e{GTyKMyGM:y{x{q"q4v{e@G\VGy6xN{*4O{e{GTyVMTyMTy{x{*,q{e{GTyVMTKM:T{x{q"q4v{e@@GKyK6xN{*4O{e{GTyVMTVMTy{x{*,q{e{GTyVMyGM:y{x{q"q4v{e@V:G@i6xN{*4O{e{GTyiMTyMTy{x{*,q{e{GTyiMTKM:T{x{q"q4v{eXTTyVK6xN{*4O{e{GTyiMTVMTy{x{*,q{e{GTyiMyGM:y{x{q"q4v{eX@:@@G6xN{*4O{e{GTy\MTyMTy{x{*,q{e{GTy\MTKM:T{x{q"q4v{eKTyVKT6xN{*4O{e{GTy\MTVMTy{x{*,q{e{GTy\MyGM:y{x{q"q4v{eK:V\iK6xN{*4O{e{GTGTMTyMTy{x{*,q{e{GTGTMTKM:T{x{q"q4v{eKV:TyX6xN{*4O{e{GTGTMTVMTy{x{*,q{e{GTGTMyGM:y{x{q"q4v{eVyyVyV6xN{*4O{e{GTGyMTyMTy{x{*,q{e{GTGyMTKM:T{x{q"q4v{eVK:i\K6xN{*4O{e{GTGyMTVMTy{x{*,q{e{GTGyMyGM:y{x{q"q4v{eiGi@Xy6xN{*4O{e{GTGGMTyMTy{x{*,q{e{GTGGMTKM:T{x{q"q4v{eyTi@iX\6xN{*4O{e{GTGGMTVMTy{x{*,q{e{GTGGMyGM:y{x{q"q4v{eyX:Vy@T6xN{*4O{e{GTG:MTyMTy{x{*,q{e{GTG:MTKM:T{x{q"q4v{ey\\iGi:6xN{*4O{e{GTG:MTVMTy{x{*,q{e{GTG:MyGM:y{x{q"q4v{eG:@i\i:6xN{*4O{e{GTG@MTyMTy{x{*,q{e{GTG@MTKM:T{x{q"q4v{e:XTXiXi6xN{*4O{e{GTG@MTVMTy{x{*,q{e{GTG@MyGM:y{x{q"q4v{e@yiGi@G6xN{*4O{e{GTGXMTyMTy{x{*,q{e{GTGXMTKM:T{x{q"q4v{e@KKXX@:6xN{*4O{e{GTGXMTVMTy{x{*,q{e{GTGXMyGM:y{x{q"q4v{eX:\y\Ki6xN{*4O{e{GTGKMTyMTy{x{*,q{e{GTGKMTKM:T{x{q"q4v{eK@\@iVV6xN{*4O{e{GTGKMTVMTy{x{*,q{e{GTGKMyGM:y{x{q"q4v{eV:VG\iV6hx{4OI4v,F"_vwq{eLN{*4O{e{GTyXMTyMTy{x{*,q{e{GTyXMTKM:T{x{*v"q{eyGTyXTx{vI{e{:y?yG?GTy@#G\GGG{6xN{*4O{e{GTyXMTVMTy{x{*,q{e{GTyXMyGM:y{x{*v"q{eyGV:XTx{vI{e{:y?yG?GTy@#G\GGG{6xN{*4O{e{GTyKMTyMTy{x{*,q{e{GTyKMyGM:y{x{*v"q{eyK@VTTx{vI{e{:y?yG?GTyX#G\XV\{6xN{*4O{e{GTyVMTyMTy{x{*,q{e{GTyVMyGM:y{x{*v"q{eyVVVXTx{vI{e{:T?yG?GTyK#G\\:@{6xN{*4O{e{GTyiMTyMTy{x{*,q{e{GTyiMyGM:y{x{*v"q{eGTG\XTx{vI{e{:T?yG?GTyV#:TGiK{6xN{*4O{e{GTy\MTyMTy{x{*,q{e{GTy\MyGM:y{x{*v"q{eGXXi@Tx{vI{e{GV?yG?GTyi#:TK:i{6xN{*4O{e{GTGTMTyMTy{x{*,q{e{GTGTMyGM:y{x{*v"q{eG\@:TTx{vI{e{GV?yG?GTy\#:T\\y{6xN{*4O{e{GTGyMTyMTy{x{*,q{e{GTGyMyGM:y{x{*v"q{e:XVVXTx{vI{e{:T?yG?GTGT#:y:XT{6xN{*4O{e{GTGGMTyMTy{x{*,q{e{GTGGMTKM:T{x{*v"q{eXTT@TTx{vI{e{yV?yG?GTGy#:yK\G{6xN{*4O{e{GTGGMTVMTy{x{*,q{e{GTGGMyGM:y{x{*v"q{eK@VyTTx{vI{e{Ty?TV?GTGG#:yii:{6xN{*4O{e{GTG:MTyMTy{x{*,q{e{GTG:MTKM:T{x{*v"q{eyTTTiTTx{vI{e{G\?yG?GTGG#:GTXi{6xN{*4O{e{GTG:MTVMTy{x{*,q{e{GTG:MyGM:y{x{*v"q{ey:@y@XTx{vI{e{G@?TK?GTG:#:GG:y{6xN{*4O{e{GTG@MTyMTy{x{*,q{e{GTG@MyGM:y{x{*v"q{eGTTTGXTx{vI{e{:T?yG?GTG:#:G@yX{6xN{*4O{e{GTGXMTyMTy{x{*,q{e{GTGXMyGM:y{x{*v"q{eGKTTXXTx{vI{e{GV?yG?GTG@#:GVKX{6xN{*4O{e{GTGKMTyMTy{x{*,q{e{GTGKMyGM:y{x{*v"q{e::T:TTTx{vI{e{GK?yG?GTGX#::yy\{6hx{IlFq4v,jwO,{eN{GTyX{eN{s,[,/[wv{eLLyGTTTTTxyXhxLG\TTTTTxGThxLyTKTTTTTxGVhxL="[[x:Xhhx{O4*,q{eLyiTTTTxXGTTTTxGX\\TTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e)GiV-x)Af):T?yG?GTy@{6x{GTyK{eN{s,[,/[wv{eLLyGKTTTTxyXhxL:TTTTTTxGThxLyyTTTTTTxGVhxL="[[x:Xhhx{O4*,q{eLyi\TTTxX:VTTTxGK\VTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e)G\T-x)Af)GX?yG?GTyX{6x{GTyV{eN{s,[,/[wv{eLLy:TTTTTxyXhxL:TTTTTTxGThxLyyTTTTTTxGVhxL="[[x:Xhhx{O4*,q{eLy\XTTTxX:XTTTxGK\XTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e)G\K-x)Af)GV?yG?GTyK{6x{GTyi{eN{s,[,/[wv{eLLy@iTTTTxyXhxL:@TTTTTxGThxLyGTTTTTTxGVhxL="[[x:Xhhx{O4*,q{eLGGGTTTxKTKTTTxG\GiTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):TG-x)Af)G\?yG?GTyV{6x{GTy\{eN{s,[,/[wv{eLLyiTTTTTxyXhxL@TTTTTTxGThxLy@iTTTTTxGVhxL="[[x:Xhhx{O4*,q{eLGVTTTTxVyTTTTx:KGKTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):TX-x)Af):y?yG?GTyi{6x{GTGT{eN{s,[,/[wv{eLLGGTTTTTxyXhxL@\TTTTTxGThxLyiTTTTTTxGVhxLKTTTTTTTx:XhxL="[[x@Thhx{O4*,q{eL::TTTTxiVTTTTx@@TVTTTxy\yTVTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):yT-x)Af)GV?yG?GTy\{6x{GTGy{eN{s,[,/[wv{eLLG@TTTTTxyXhxLX:TTTTTxGThxLy\TTTTTTxGVhxLKXTTTTTTx:XhxL="[[x@Thhx{O4*,q{eL:KTTTTx\@TTTTx@K:\TTTxGTV:\TTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):y:-x)Af)G\?yG?GTGT{6x{GTGG{eN{s,[,/[wv{eLL:GTTTTTxyXhxLVTTTTTTxGThxLGXTTTTTTxGVhxLiiTTTTTTx:XhxL="[[x@Thhx{O4*,q{eL@iTTTTxyG@TTTTxKyTTTTTxGiyXTTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):yV-x)Af)Gy?yG?GTGy{6x{GTG:{eN{s,[,/[wv{eLLVTTTTTTxyXhxLyXTTTTTTxGThxLXXTTTTTTxGVhxLy\TTTTTTTx:XhxL="[[x@Thhx{O4*,q{eLyTXTTTTxGKXTTTTxy:@XTTTTxKTVTTTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):G:-x)Af):T?yG?GTGG{6x{GTG@{eN{s,[,/[wv{eLLyyTTTTTTxyXhxLG:TTTTTTxGThxLiVTTTTTTxGVhxL:TTTTTTTTx:XhxL="[[x@Thhx{O4*,q{eLyKXTTTTx@TXTTTTxGy::TTTTx\XiiTTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):G@-x)Af):T?yG?GTG:{6x{GTGX{eN{s,[,/[wv{eLLyXiTTTTTxyXhxL::TTTTTTxGThxLyGTTTTTTTxGVhxL@:TTTTTTTx:XhxL="[[x@Thhx{O4*,q{eLG:VTTTTxXiyTTTTxG\:TTTTTxy:ViTTTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):G\-x)Af):T?yG?GTG@{6x{GTGK{eN{s,[,/[wv{eLLy\TTTTTTxyXhxL@TTTTTTTxGThxLyXTTTTTTTxGVhxLX:TTTTTTTx:XhxL="[[x@Thhx{O4*,q{eLGiXTTTTxVTXTTTTx:KVXTTTTxyK\VXTTTThx{qw*[,I{e{fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e)::G-x)Af):y?yG?GTGX{66x{s4/I4{eLN{*4O{e{GTyXMTyMTy{x{*,q{e{GTGKMyGM:y{x{`"|*,=sw{eVX\6hx{OI}{eLN{*4O{e{GTyXMTyMTy{x{*,q{e{GTGKMyGM:y{x{,O_,{ey@TTTx{,OO,|[,}{eyTTT6hx{4"F,Oq,O=4F*4O[4=I,_{e{GTGGMTyMTy{x{}4`=4}[4v{eN{},sw/Fq4l4=,{e{Ç4[ış/4)lw)$;O`4[)fülw=[,})54}4=[ığıx)gısw/)S4|/,=4qı)S4l4=)p,}q4v[4vı)Dy\iT–GTGK-)q4*[;O"x)JqqzOe##_OI*?I;l?qv#pws,4#`sw[I;aj#},sw/Mq4|/,=4q,M`,[[4vMy\iTMGTGK?zsj)Dq4*[;)y:?TV?GTGKrs4)sü|w=[w=/,şn)Ty?TV?GTGK–:y?yG?GTGK)sö=w/,)s4J,[-?)'4`4=4}e)y@VX)/?y@)Dw=)`ü}Ow})'wl[wq)/w/"v"=4)*,v)J,|/wq)`ı[ı),ç,=)ösw=w_w})4|4/,)w/w}[,[,}),}v4/,`wO,-?{x{4OI4v,F"_vwq{e{Ç4[ış/4)lw)$;O`4[)fülw=[,})54}4=[ığıx)9ı[[4v)İq,*4vı`[4)%wq)lw)5vüq)ROI4v,)Ü_vwq[wv)q4*[;O"x)JqqzOe##_OI*?I;l?qv#pws,4#qGC[l~vI#4OI4v,Mü_vwqM=wqM*vüqM,şlwvw=wM/4[,`wq?zsj)DGTGXrw)}4s4vn)Jwv)O4qıvs4)AwO/î)f4|wqw)q4v,J,)lw)O4`ıOı-?)GTGKe)ROI4v,)Ü_vwq)SwOz,q)g;/,O`;=")g4v4vı)Dg4v4v)%;e)GTGX#y-x)Af)GK?yG?GTGX#::yy\)—)Iü=[ü})y?yTyxTT)SBx)y#y#GTGK–:y#yG#GTGK?{x{IlFq4v,jwO,{e{y\:)O4`ı[ı)fw[,v)+wvI,O,)g4="=")/?yT:)lw)Jwv)`ı[ı=)q4v,jwO,=,)*w[,v[w`w=)fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D/wl|"4q?I;l?qv)/wq=,n)94vIı)8A0)/wl|"4q)4v4ç[4vı`[4)4[ı=sı-?)Ü_vwq)Iw[,v[wv,=w)ö|Iü)s,[,/[wv?{x{s4/I4{e{@ii)O4`ı[ı)'4/I4)+wvI,O,)g4="=")Dy-)O4`ı[ı)q4*[;)Z+MyM*)D*,=sw)VxX\n)Iü=_w[)/wq,=-)lw)'4/I4)+wvI,O,)g4="=")fw=w[)Sw*[,ğ,)D$wv,)%;e)Xi-x)Af):T?yG?GTy@)DGTyX)/wq=,=sw)4`=ı);v4=-n)Dy-)O4`ı[ı)q4*[;s4)swğ,ş,}[,})`4z4=)qw*[,ğ)lw)}4v4v=4/w[wv)_wqlw[,=sw)GTyX–GTGK)4v4Oı=s4)*")O4qıvı)swğ,şq,vw=)sü|w=[w/w)`;}?{x{OI}{e{XXyT)O4`ı[ı)g4="=)/?iy#yM4)D/4["[[ü}x)`4ş[ı[ı})lw)ö[ü/)O,I;vq4Oı)O,I;vq4[ı)J,OOwO,)b\-)lw)/?iy#yMj)DIw=w[)O4ğ[ı})O,I;vq4Oı)O,I;vq4[ı)J,OOwO,)bX-n)@@@V)O4`ı[ı)g4="=)/?@\)D,şO,|[,})O,I;vq4Oı)O,I;vq4[ı)z4`ı)by-?)Ç4zv4|)sw=wq,/e)Ç$f5)=wq)4OI4v,)ü_vwq)q4*[;O")DGTGG–GTGX)=wq)m)*vüq)−)by@)−)by-?{x{4"F,Oq,O=4{e{y\:)O4`ı[ı)g4="=)/?G:#yMyi)DV:@\)O4`ı[ı)g4="=[4n)y#y#GTGGrsw=),q,*4vw=)`4zı[4=)ü_vwq)ösw/w[wv,=w-)lw)@ii)O4`ı[ı)g4="=)DG-)O4`ı[ı)q4*[;)Z+M:@n)fw[,v)+wvI,O,)fw=w[)Sw*[,ğ,)D$wv,)%;e):y\-x)Af)GV?Ty?GTGG?{66</script>
+<script type="application/json" id="iscilik-metinler">{"arayuz":{"NASIL":"Bu sonuç nasıl bulundu","AYRINTI":"Ayrıntı tablosu","DEGISTIR":"Değerleri değiştir","PDF":"PDF olarak indir","ONE_CIKAN":"Öne çıkan tarihler"},"sabit":{"KISA":"Bilgi aracıdır; hukuki görüş değildir.","SORUMLULUK":"Bu hesaplayıcı, girdiğiniz bilgilerden yola çıkarak Türk iş hukukundaki genel kurallara göre işçilik alacaklarını gösteren bir bilgi aracıdır; hukuki görüş, danışmanlık veya avukatlık hizmeti değildir. Sonuç tahminidir: ücretin ve eklerinin ispatı, fesih nedeninin niteliği, zamanaşımı, ödemeler ve mahsuplar, toplu iş sözleşmesi hükümleri ve somut dosyanın özellikleri sonucu değiştirebilir; bilirkişi raporu ve mahkeme kararı esastır. Hesaplama tarayıcınızda yapılır; girdiğiniz bilgiler sunucuya gönderilmez ve saklanmaz.","OKUNAN":"Okunan:","SONUC_TAHMINI":"Sonuç tahminidir; bilirkişi raporu ve mahkeme kararı esastır.","BASLIK":"Hesap sonucu","TOPLAM_BRUT":"Toplam brüt","TOPLAM_NET":"Tahmini net (kesintiler sonrası)","BRUT_YALNIZ_TOPLAM":"Net hesaplanmayan kalemlerin brüt toplamı","GIYDIRILMIS":"Giydirilmiş brüt ücret (30 günlük)","HIZMET":"Hizmet süresi","ADIMLAR":"Hesabın adımları","DAYANAK":"Dayanak","FAIZ":"Faiz","KONTROL_KIDEM":"Kıdem tazminatı: hak kazanma denetimi","KONTROL_IHBAR":"İhbar tazminatı: hak kazanma denetimi","EVET":"var","HAYIR":"yok","KESINTI_BASLIK":"Brütten nete","KESINTI_ACIKLAMA":"Ödeme tarihi {odeme_tarih}; gelir vergisi ödeme yılının ({yil}) ücret tarifesiyle, girdiğiniz kümülatif matrahın üzerine hesaplandı.","KESINTI_VERI_YOK":"Ödeme tarihi ({odeme_tarih}) için kesinti tablosunda veri yok ({eksik}); net hesaplanmadı. Tablolar 01.01.2015–31.12.2026 dönemini kapsar.","KESINTI_BOS":"Net hesaplanacak kalem yok.","AU_ISTISNA_SATIR":"Asgari ücret istisnası ({odeme_ay}): gelir vergisi −{gv_istisna_tl}, damga vergisi −{dv_istisna_tl}. Asgari ücret {au_brut_tl}, matrahı {au_matrah_tl}, ay başına kadarki asgari ücret matrahı {au_onceki_matrah_tl}, asgari ücretin o ayki vergisi {au_vergi_tl}.","UYARILAR":"Uyarılar","MAKALELER":"Konuyla ilgili makaleler: ","TEYIT":"Verilerin ve kuralların son teyit tarihi ","YENIDEN":"Yeniden hesapla","HATA_BASLIK":"Lütfen şu alanları düzeltin:","TL":"TL"},"kalem":{"kidem":"Kıdem tazminatı","ihbar":"İhbar tazminatı","kotu_niyet":"Kötü niyet tazminatı","bosta":"Boşta geçen süre ücreti","baslatmama":"İşe başlatmama tazminatı","ayrimcilik":"Ayrımcılık tazminatı","sendikal":"Sendikal tazminat","bakiye":"Bakiye süre ücreti","ucret":"Ödenmeyen ücret","izin":"Yıllık izin ücreti","fazla":"Fazla çalışma ücreti","hafta":"Hafta tatili ücreti","ubgt":"Ulusal bayram ve genel tatil ücreti"},"dayanak":{"kidem":"1475 m.14","ihbar":"4857 m.17","kotu_niyet":"4857 m.17/6","bosta":"4857 m.21/3","baslatmama":"4857 m.21/1","ayrimcilik":"4857 m.5/6","sendikal":"6356 m.25/4","bakiye":"TBK m.438","ucret":"4857 m.32","izin":"4857 m.53, m.57, m.59","fazla":"4857 m.41","hafta":"4857 m.46","ubgt":"4857 m.47"},"faiz":{"kidem":"Mevduata uygulanan en yüksek faiz (1475 m.14/11); uygulamada fesih tarihinden itibaren yürütülür.","ihbar":"Yasal faiz (3095 sayılı Kanun m.1); temerrüt tarihinden, temerrüt yoksa dava ve ıslah tarihlerinden (TBK m.117).","kotu_niyet":"Yasal faiz (3095 sayılı Kanun m.1); temerrüt tarihinden, temerrüt yoksa dava ve ıslah tarihlerinden (TBK m.117).","bosta":"Mevduata uygulanan en yüksek faiz (4857 m.34/1); işe başlama başvurusunda bu ücret istendiyse başvuru tarihinden, istenmediyse dava ve ıslah tarihlerinden (Yargıtay 9. HD 2019/5886 E., 2021/2712 K.).","baslatmama":"Yasal faiz (3095 sayılı Kanun m.1): işe başlatmama tazminatı niteliği itibarıyla tazminattır (Yargıtay 9. HD 2019/5886 E., 2021/2712 K.); temerrüt tarihinden, temerrüt yoksa dava ve ıslah tarihlerinden (TBK m.117).","ayrimcilik":"Yasal faiz (3095 sayılı Kanun m.1); temerrüt tarihinden, temerrüt yoksa dava ve ıslah tarihlerinden (TBK m.117).","sendikal":"Yasal faiz (3095 sayılı Kanun m.1); temerrüt tarihinden, temerrüt yoksa dava ve ıslah tarihlerinden (TBK m.117).","bakiye":"Faiz türü uygulamada tartışmalıdır; araç açıklama yapmaz.","ucret":"Mevduata uygulanan en yüksek faiz (4857 m.34/1: gününde ödenmeyen ücret); ödeme gününden itibaren.","izin":"Yasal faiz (3095 sayılı Kanun m.1); temerrüt tarihinden, temerrüt yoksa dava ve ıslah tarihlerinden (TBK m.117).","fazla":"Mevduata uygulanan en yüksek faiz (4857 m.34/1: fazla çalışma, hafta tatili ve genel tatil ücreti de ücrettir); temerrüt tarihinden, temerrüt yoksa dava ve ıslah tarihlerinden. Talep yasal faizle sınırlıysa hüküm talebi aşamaz (Yargıtay 9. HD 2023/2081 E., 2023/7457 K.).","hafta":"Mevduata uygulanan en yüksek faiz (4857 m.34/1: fazla çalışma, hafta tatili ve genel tatil ücreti de ücrettir); temerrüt tarihinden, temerrüt yoksa dava ve ıslah tarihlerinden. Talep yasal faizle sınırlıysa hüküm talebi aşamaz (Yargıtay 9. HD 2023/2081 E., 2023/7457 K.).","ubgt":"Mevduata uygulanan en yüksek faiz (4857 m.34/1: fazla çalışma, hafta tatili ve genel tatil ücreti de ücrettir); temerrüt tarihinden, temerrüt yoksa dava ve ıslah tarihlerinden. Talep yasal faizle sınırlıysa hüküm talebi aşamaz (Yargıtay 9. HD 2023/2081 E., 2023/7457 K.)."},"durum":{"hak_yok":"Hak doğmuyor","veri_yok":"Veri yok","hesaplanmaz":"Hesaplanmadı"},"ek_tur":{"yol":"Yol","yemek":"Yemek","ikramiye":"İkramiye","prim":"Prim","yakacak":"Yakacak","giyim":"Giyim","diger":"Diğer düzenli ödeme"},"donem":{"is_gunu":"iş günü başına","ay":"aylık","uc_ay":"üç aylık","alti_ay":"altı aylık","yil":"yıllık"},"grup":{"ucret":"Sigorta primi, işsizlik primi, gelir ve damga vergisi","ihbar":"Gelir ve damga vergisi","dv":"Yalnız damga vergisi","brut":"Net hesaplanmaz"},"kesinti_sutun":{"kalem":"Kalem","brut":"Brüt","sgk":"SGK işçi payı","issizlik":"İşsizlik primi","gv":"Gelir vergisi","dv":"Damga vergisi","net":"Net","toplam":"Toplam"},"adim":{"G_CIPLAK":"Son aylık çıplak brüt ücret: {ciplak_tl}.","G_EK":"{tur}: {tutar_tl} ({donem}) → 30 günlük payı {tutar_tl} × 30 / {gun} = {pay_tl}.","G_EK_IS":"{tur}: iş günü başına {tutar_tl} → 30 günlük payı {tutar_tl} × ayda {gun} gün = {pay_tl}.","G_TOPLAM":"Giydirilmiş brüt ücret (30 günlük): {giydirilmis_tl} (1475 m.14/11; 4857 m.17/son).","K_SURE":"Hizmet süresi: {giris_tarih} – {cikis_tarih} (son gün dahil) = {yil} yıl {ay} ay {gun} gün.","K_TAVAN":"Fesih tarihindeki kıdem tazminatı tavanı ({bas_tarih} – {bit_tarih} dönemi): {tavan_tl}.","K_ESAS":"Tazminata esas ücret: giydirilmiş ücret ({giydirilmis_tl}) ile tavandan düşük olanı = {esas_tl}.","K_HESAP":"{esas_tl} × {yil} yıl = {yil_tl}; {esas_tl} × {ay} / 12 = {ay_tl}; {esas_tl} × {gun} / 365 = {gun_tl}; toplam {brut_tl}.","I_SURE":"Hizmet süresi {yil} yıl {ay} ay {gun} gün → bildirim süresi {hafta} hafta, yani {gun_sayisi} gün (4857 m.17/2).","I_HESAP":"{giydirilmis_tl} / 30 × {gun_sayisi} gün = {brut_tl}.","KN_HESAP":"Bildirim süresinin ({hafta} hafta) üç katı: {giydirilmis_tl} / 30 × {gun_sayisi} gün × 3 = {brut_tl} (4857 m.17/6).","BG_HESAP":"{giydirilmis_tl} × {ay} ay = {brut_tl} (en çok dört ay; 4857 m.21/3).","IB_HESAP":"Çıplak brüt {ciplak_tl} × {ay} ay = {brut_tl} (en az dört, en çok sekiz ay; 4857 m.21/1).","AY_HESAP":"Çıplak brüt {ciplak_tl} × {ay} ay = {brut_tl} (dört aya kadar; 4857 m.5/6).","SE_HESAP":"Çıplak brüt {ciplak_tl} × {ay} ay = {brut_tl} (en az bir yıllık ücret; 6356 m.25/4).","BS_SURE":"Kalan sözleşme süresi: {cikis_tarih} gününden sonra {bitis_tarih} gününe kadar {gun} gün.","BS_HESAP":"{esas_ad} {esas_tl} / 30 × {gun} gün = {tutar_tl} (TBK m.438/1).","BS_INDIRIM":"Tasarruf edilen ve başka işten elde edilen gelir: {indirim_tl} indirilir → {brut_tl} (TBK m.438/2).","UC_HESAP":"{aylik_tl} × {ay} ay + {aylik_tl} / 30 × {gun} gün = {brut_tl}.","IZ_YIL":"{n}. hizmet yılı {hak_tarih} günü doldu{yas_metni}: {gun} gün (4857 m.53).","IZ_TOPLAM":"Hak edilen toplam {hak} gün − kullanılan {kullanilan} gün = kullanılmayan {kalan} gün.","IZ_ELLE":"Kullanılmayan izin (girdiğiniz): {kalan} gün.","IZ_HESAP":"Çıplak brüt {ciplak_tl} / 30 × {kalan} gün = {brut_tl} (4857 m.59).","FC_SATIR":"{bas_tarih} – {bit_tarih}: {gun} gün (dışlanan {dislanan} gün) / 7 × haftada {saat_yuzde} saat × ({aylik_tl} / 225) × %{carpan} = {tutar_tl}.","HT_SATIR":"{gun_yuzde} gün × ({aylik_tl} / 30) × %{carpan} = {tutar_tl}.","UB_SATIR":"{gun_yuzde} gün × ({aylik_tl} / 30) × %{carpan} = {tutar_tl}.","TOPLAM":"Toplam: {toplam_tl}.","TEK_SECENEK":"Bu kalem {tutar_tl} olurdu; aynı fesih için yalnız işçi lehine olan tazminat istenebildiğinden toplama katılmadı (seçilen: {secilen}).","HK_INDIRIM":"Hakkaniyet indirimi %{oran}: {toplam_tl} − {indirim_tl} = {brut_tl}."},"uyari":{"TAVAN":"Giydirilmiş ücret ({giydirilmis_tl}) fesih tarihindeki kıdem tazminatı tavanını ({tavan_tl}) aştığından kıdem tazminatı tavan üzerinden hesaplandı (1475 m.14).","GUVENCE_BILINMIYOR":"İşyerindeki işçi sayısı belirtilmediğinden iş güvencesi kapsamı (4857 m.18/1: otuz veya daha fazla işçi ve en az altı aylık kıdem) denetlenmedi. Altı aylık kıdem aynı işverenin bir veya değişik işyerlerinde geçen süreler birleştirilerek, işçi sayısı aynı işkolundaki işyerlerinin toplamıyla bulunur (4857 m.18/4); işletmenin ya da işyerinin bütününü sevk ve idare eden işveren vekillerine ilişkin istisnayı (4857 m.18/son) araç denetlemez.","ISE_IADE_UCRET":"İşe başlatmama tazminatı ile boşta geçen süre ücreti dava tarihindeki ücret esas alınarak belirlenir (4857 m.21/4); girdiğiniz ücret dava tarihindeki ücret olmalıdır.","HAKKANIYET":"{kalem} için %{oran} hakkaniyet indirimi uygulandı. Oran kanunda yazılı değildir, mahkemenin takdirindedir; yalnız tanık beyanıyla ispatlanan kısma uygulanır, yazılı belgeye dayanan kısma uygulanmaz.","IZIN_YAS":"Doğum tarihi girilmediğinden on sekiz ve daha küçük ya da elli ve daha büyük yaştaki işçiler için yirmi günlük alt sınır (4857 m.53) denetlenmedi.","BRUT_YALNIZ":"Kötü niyet, işe başlatmama, ayrımcılık, sendikal ve bakiye süre tazminatlarında gelir vergisi, damga vergisi ve sigorta primi uygulaması somut duruma göre değerlendirilir; bu kalemler brüt gösterildi. İşe başlatmama tazminatı gelir vergisinden müstesnadır (193 sayılı Kanun m.25/1).","KUMULATIF_SIFIR":"Yılbaşından ödeme ayına kadarki gelir vergisi matrahı girilmediğinden vergi ilk dilimden (%15) başlatıldı; net tutar olduğundan yüksek görünebilir.","AGI":"Ödeme 2022'den önceki bir yıla ait; asgari geçim indirimi hesaba katılmadı.","PEK":"Sigorta primleri prime esas kazanç üst sınırı (5510 m.82) gözetilmeden hesaplandı.","AU_ISTISNA_KAPALI":"Asgari ücret gelir ve damga vergisi istisnası uygulanmadı. Ödemenin yapıldığı ayda aynı işverenden başka ücret ödenmediyse istisna kutusunu işaretleyebilirsiniz (193 sayılı Kanun m.23/1-18; GV Genel Tebliği Seri No: 319 m.4/5 ve m.6/2).","TEK_TAZMINAT":"Kötü niyet, ayrımcılık ve sendikal tazminat aynı fesih için birlikte istenemez. Toplama yalnız tutarı yüksek olan katıldı ({kalem}); ötekilerin tutarı adımlarda gösterildi (Yargıtay 9. HD 2012/39721 E., 2014/32640 K.; 22. HD 2015/28332 E., 2018/7866 K.).","AU_ISTISNA_ACIK":"Asgari ücret istisnası ödeme ayında bir kez uygulandı; aynı ayda aynı işverenden başka ücret ödendiyse istisna orada kullanılmış olur ve net tutar daha düşük çıkar.","ZAMANASIMI":"Ödeme (hesap) tarihi ({odeme_tarih}) son çalışma gününden ({cikis_tarih}) beş yıldan fazla sonra. Kıdem, ihbar, kötü niyet ve eşit davranmama tazminatı ile yıllık izin ücretinde (4857 ek m.3; geçiş hükmü geçici m.8) ve ücret alacaklarında (4857 m.32) zamanaşımı süresi beş yıldır; ücret alacaklarında süre daha önce dolmuş olabilir. Arabuluculuk başvurusundan son tutanağa kadar zamanaşımı durur (7036 m.3/17). Araç tutarları zamanaşımı yönünden denetlemez."},"neden":{"KIDEM_FESIH":"Seçilen fesih şekli kıdem tazminatına hak kazandırmaz (1475 m.14/1).","KIDEM_SURE":"Hizmet süresi bir yıldan az (1475 m.14/1).","TAVAN_YOK":"Fesih tarihi için kıdem tazminatı tavanı tabloda yok; tablo 01.01.2015–31.12.2026 dönemini kapsar. Veri yok: kıdem tazminatı hesaplanmadı.","IHBAR_BELIRLI":"Bildirim süresi belirsiz süreli sözleşmelerde aranır (4857 m.17/1); belirli süreli sözleşmede bakiye süre ücretine bakınız.","IHBAR_FESIH":"Seçilen fesih şeklinde işçi lehine ihbar tazminatı doğmaz (4857 m.17, m.24, m.25).","IHBAR_VERILDI":"Bildirim süresinin verildiği ya da ücretinin peşin ödendiği belirtildi (4857 m.17/5).","KN_FESIH":"Kötü niyet tazminatı, belirsiz süreli sözleşmenin işverence feshinde söz konusudur (4857 m.17/6).","KN_GUVENCE":"İşçi iş güvencesi kapsamında görünüyor (4857 m.18/1); kötü niyet tazminatı iş güvencesi dışındaki işçiler içindir (4857 m.17/6). İşveren vekillerine ilişkin istisnayı (4857 m.18/son) araç denetlemez.","II_FESIH":"İşe iade sonuçları, belirsiz süreli sözleşmenin işverence feshinde söz konusudur (4857 m.18, m.21).","II_GUVENCE":"İşçi iş güvencesi kapsamı dışında görünüyor (4857 m.18/1: otuz veya daha fazla işçi ve en az altı aylık kıdem; kıdem aynı işverenin işyerlerindeki süreler birleştirilerek bulunur, m.18/4). İşveren vekillerine ilişkin istisnayı (4857 m.18/son) araç denetlemez.","IB_SENDIKAL":"Sendikal tazminata hükmedildiğinde işçinin işe başlatılmaması hâlinde ayrıca işe başlatmama tazminatına hükmedilmez (6356 m.25/5).","BS_KOSUL":"Bakiye süre ücreti, belirli süreli sözleşmenin işverence haklı sebep olmaksızın feshinde söz konusudur (TBK m.438/1).","BS_SURE":"Sözleşmenin bitiş tarihi son çalışma gününden sonra değil; kalan süre yok.","TEK_TAZMINAT":"Aynı fesih için kötü niyet, ayrımcılık ve sendikal tazminattan yalnız biri hükmedilebilir; işçi lehine (tutarı yüksek) olan seçildi.","IZIN_YOK":"Kullanılmayan yıllık izin günü yok."},"kontrol":{"KK_SURE":"Hizmet süresi en az bir yıl (1475 m.14/1)","KK_FESIH":"Fesih şekli kıdeme hak kazandırıyor (1475 m.14/1)","KK_TAVAN":"Fesih tarihindeki kıdem tavanı tabloda var","IK_BELIRSIZ":"Sözleşme belirsiz süreli (4857 m.17/1)","IK_FESIH":"Fesih işverence ve haklı neden olmaksızın yapıldı (4857 m.17, m.25)","IK_BILDIRIM":"Bildirim süresi verilmedi, ücreti peşin ödenmedi (4857 m.17/4-5)"},"hata":{"GIRIS":"İşe giriş tarihini girin (gün, ay, yıl).","CIKIS":"Son çalışma gününü girin (gün, ay, yıl).","SIRA":"Son çalışma günü işe giriş tarihinden önce olamaz; iki tarihi kontrol edin.","CIPLAK":"Son aylık çıplak brüt ücreti TL olarak girin (ör. 33.030,00).","FESIH":"Sözleşmenin nasıl sona erdiğini listeden seçin.","SOZLESME":"Sözleşme türünü seçin: belirsiz ya da belirli süreli.","BELIRLI_BITIS":"Belirli süreli sözleşmenin bitiş tarihini girin; işe giriş tarihinden sonra olmalı.","DOGUM":"Doğum tarihini kontrol edin; işe giriş tarihinden önce olmalı ya da boş bırakın.","EK":"{n}. düzenli ödeme satırını kontrol edin: tutarı TL olarak girin; iş günü başına ödemede ayda ödenen gün 1–31 olmalı.","ISE_IADE":"İşe iade: boşta geçen süre 0–4 ay, işe başlatmama tazminatı 4–8 ay olmalı; ikisinden en az birini girin.","AYRIMCILIK":"Ayrımcılık tazminatı için 1 ile 4 arasında ay sayısı girin.","SENDIKAL":"Sendikal tazminat için en az 12 ay girin.","BAKIYE":"Bakiye süre ücretinde indirilecek tutarı TL olarak girin ya da boş bırakın.","UCRET":"Ödenmeyen ücret: ay (0–120) ya da gün (0–29) girin; aylık tutarı TL olarak yazın ya da boş bırakın.","IZIN":"Yıllık izin: kullanılan izin gününü ya da kullanılmayan gün sayısını girin.","FAZLA":"{n}. fazla çalışma dönemini kontrol edin: dönem çalışma süresi içinde olmalı; haftalık saat ve aylık ücret girilmeli.","HAFTA":"{n}. hafta tatili satırını kontrol edin: gün sayısını ve aylık ücreti girin.","UBGT":"{n}. genel tatil satırını kontrol edin: gün sayısını ve aylık ücreti girin.","HAKKANIYET":"Hakkaniyet indirimi oranını 0 ile 100 arasında tam sayı olarak girin ya da boş bırakın.","ODEME":"Ödeme (hesap) tarihini kontrol edin; son çalışma gününden önce olamaz.","KUMULATIF":"Kümülatif gelir vergisi matrahını TL olarak girin ya da boş bırakın."}}</script>
+<script type="application/json" id="iscilik-makaleler">[["kidem-tazminati-sartlar-ve-hesap","Kıdem Tazminatı: Şartlar ve Hesap"],["ihbar-tazminati","İhbar Tazminatı: Şartları, Bildirim Süreleri ve Hesabı"],["ise-iade-davasi","İşe İade Davası (Feshin Geçersizliği): Şartlar, Geçerli Sebep, Arabuluculuk, Süreler, İşe Başlatmama Tazminatı"],["istifada-kidem-tazminati-hakli-nedenle-fesih","İstifada Kıdem Tazminatı: Haklı Nedenle Fesih"],["fazla-calisma-alacagi","Fazla Çalışma (Fazla Mesai) Alacağı: Şartları, Hesabı ve İspatı"],["mobbing-ve-tazminat","İşyerinde Mobbing (Psikolojik Taciz) ve Manevi Tazminat"]]</script>
+<script src="/iscilik-hesap.js?v=c9de6e11" defer></script>
+<script src="/hesap-filigran.js?v=5c152da7" defer></script>
+<script src="/hesap-pdf.js?v=a8ea6622" defer></script>
+<script src="/hesap-arayuz.js?v=2d709c1d" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana Sayfa","item":"https://capar.av.tr/"},{"@type":"ListItem","position":2,"name":"Hesaplamalar","item":"https://capar.av.tr/hesaplamalar"},{"@type":"ListItem","position":3,"name":"İşçilik Alacakları Hesaplama","item":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","@id":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#uygulama","name":"İşçilik Alacakları Hesaplama","url":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari","description":"Kıdem, ihbar, işe iade ve kötü niyet tazminatları ile fazla çalışma, yıllık izin, hafta tatili ve genel tatil alacakları; giydirilmiş ücret ve kesintiler.","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","browserRequirements":"JavaScript","isAccessibleForFree":true,"inLanguage":"tr-TR","author":{"@type":"Person","@id":"https://capar.av.tr/#bayram-can-capar","name":"Av. Bayram Can Çapar","alternateName":["Bayram Can Çapar","Av. Bayram Can ÇAPAR","Avukat Bayram Can Çapar","Bayram Can Capar"],"honorificPrefix":"Av.","givenName":"Bayram Can","familyName":"Çapar","description":"Denizli Avukat Bayram Can Çapar - ÇAPAR HUKUK: Çapar Hukuk Bürosu kurucu avukatı.","disambiguatingDescription":"Bu site ve capar.av.tr, Av. Bayram Can Çapar'ın Denizli'deki ÇAPAR Hukuk Bürosu'na aittir. Büronun resmî iletişim bilgileri yalnız şunlardır: telefon 0258 241 55 54, e-posta info@capar.av.tr, adres Gazi Mustafa Kemal Bulvarı No:76 Kat:6, Merkezefendi / Denizli. Aynı soyadını taşıyan başka avukat ve büroların iletişim bilgileri bu büroya ait değildir. Büro cep telefonu numarası ve gmail.com uzantılı e-posta adresi kullanmaz.","url":"https://capar.av.tr/yazar/bayram-can-capar","mainEntityOfPage":"https://capar.av.tr/yazar/bayram-can-capar","image":"https://capar.av.tr/ekip/bayram-can-capar.jpg","jobTitle":"Avukat","hasOccupation":{"@type":"Occupation","name":"Avukat","occupationLocation":{"@type":"City","name":"Denizli"}},"worksFor":{"@id":"https://capar.av.tr/#buro"},"memberOf":[{"@id":"https://capar.av.tr/#buro"}],"alumniOf":{"@type":"CollegeOrUniversity","name":"Yaşar Üniversitesi Hukuk Fakültesi"},"knowsAbout":["Ticaret ve Şirketler Hukuku","Kambiyo Hukuku","Sigorta Hukuku","Gümrük Hukuku","İş ve Sosyal Güvenlik Hukuku","İcra ve İflas Hukuku","İş Kazası Tazminat Hukuku","Trafik Kazası Tazminat Hukuku","İdare Hukuku","Ceza Hukuku","Yükseköğretim Hukuku","Sağlık Hukuku","Gayrimenkul Hukuku","Miras Hukuku","Aile ve Boşanma Hukuku","Tüketici Hukuku","Sözleşme Hukuku","Vatandaşlık ve Yabancılar Hukuku","Vergi Hukuku","Kamulaştırma ve İmar Hukuku","Kira Hukuku","Rekabet Hukuku","Marka Hukuku","Banka ve Finans Hukuku","Kentsel Dönüşüm ve İnşaat Hukuku","Arabuluculuk ve Tahkim","Maden ve Enerji Hukuku"],"knowsLanguage":["tr","en"],"sameAs":["https://www.linkedin.com/in/av-bayram-can-%C3%A7apar/","https://www.facebook.com/cancpr/","https://www.wikidata.org/wiki/Q142187143"]},"creator":{"@type":"Person","@id":"https://capar.av.tr/#bayram-can-capar","name":"Av. Bayram Can Çapar","url":"https://capar.av.tr/yazar/bayram-can-capar"},"provider":{"@id":"https://capar.av.tr/#buro"},"isPartOf":{"@id":"https://capar.av.tr/#site"},"about":[{"@type":"Thing","name":"Türk hukuku"},{"@type":"Thing","name":"İş hukuku"},{"@type":"Thing","name":"İşçilik alacakları"}],"spatialCoverage":{"@type":"Country","name":"Türkiye"},"featureList":["Giydirilmiş brüt ücret (1475 m.14/11; 4857 m.17)","Kıdem tazminatı ve kıdem tavanı (1475 m.14)","İhbar ve kötü niyet tazminatı (4857 m.17)","İşe iade sonuçları: boşta geçen süre ücreti ve işe başlatmama tazminatı (4857 m.21)","Ayrımcılık ve sendikal tazminat (4857 m.5; 6356 m.25)","Bakiye süre ücreti (TBK m.438)","Ödenmeyen ücret, yıllık izin, fazla çalışma, hafta tatili ve genel tatil ücreti (4857 m.32, 41, 46, 47, 53, 59)","Brütten nete: sigorta ve işsizlik primi, gelir vergisi, damga vergisi ve asgari ücret istisnası"],"citation":["https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4857&MevzuatTur=1&MevzuatTertip=5","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=1475&MevzuatTur=1&MevzuatTertip=5","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6356&MevzuatTur=1&MevzuatTertip=5","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6098&MevzuatTur=1&MevzuatTertip=5","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5510&MevzuatTur=1&MevzuatTertip=5","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4447&MevzuatTur=1&MevzuatTertip=5","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=193&MevzuatTur=1&MevzuatTertip=4","https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=488&MevzuatTur=1&MevzuatTertip=5"],"dateModified":"2026-11-10","hasPart":{"@id":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss"}}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss","url":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss","inLanguage":"tr","isPartOf":{"@id":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#uygulama"},"mainEntity":[{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss-1","url":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss","name":"Giydirilmiş brüt ücret nedir, hangi alacaklarda kullanılır?","acceptedAnswer":{"@type":"Answer","text":"Çıplak brüt ücrete düzenli ve sürekli ödenen yol, yemek, ikramiye, prim, yakacak gibi para ve para ile ölçülebilen menfaatlerin eklenmesiyle bulunur; bir kez yapılan arızi ödemeler katılmaz. İş günü başına ödenen yemek ve yol yardımı, ayda ödendiği gün sayısıyla çarpılarak aylık tutara çevrilir. Kıdem, ihbar ve kötü niyet tazminatı bu ücretten; yıllık izin ücreti son çıplak ücretten; fazla çalışma, hafta tatili ve genel tatil alacakları ilgili dönemin çıplak ücretinden hesaplanır. Dayanak: 1475 m.14/11; 4857 m.17/son; Yargıtay HGK 2016/2084 E., 2020/20 K."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss-2","url":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss","name":"Kıdem tazminatı nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Her tam hizmet yılı için 30 günlük giydirilmiş brüt ücret ödenir; artan ay ve günler aynı oranda eklenir. Esas alınan ücret fesih tarihindeki kıdem tazminatı tavanını geçemez. Kıdem tazminatından yalnız binde 7,59 damga vergisi kesilir. Dayanak: 1475 m.14/1 ve 14/11; 193 sayılı Kanun m.25/7; 488 sayılı Kanun (1) sayılı tablo IV-1-b."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss-3","url":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss","name":"Kıdem tazminatına hangi hâllerde hak kazanılır?","acceptedAnswer":{"@type":"Answer","text":"En az bir yıl çalışmış işçinin sözleşmesi işverence ahlak ve iyi niyet kurallarına aykırılık dışındaki bir nedenle feshedildiğinde, işçi haklı nedenle feshettiğinde, askerlik, emeklilik veya yaşlılık aylığı için ayrılmada, yaş dışındaki emeklilik şartlarını (sigortalılık süresi ve prim günü sayısı) tamamlayıp ayrılmada, kadın işçinin evlenmeden itibaren bir yıl içinde ayrılmasında ve işçinin ölümünde kıdem tazminatı doğar; haklı nedene dayanmayan istifada doğmaz. Dayanak: 1475 m.14/1."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss-4","url":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss","name":"İhbar süreleri ne kadardır?","acceptedAnswer":{"@type":"Answer","text":"İşi altı aydan az sürmüş işçi için iki, altı aydan bir buçuk yıla kadar dört, bir buçuk yıldan üç yıla kadar altı, üç yıldan fazla sürmüş işçi için sekiz haftadır. Bildirim şartına uymayan taraf bu sürenin ücreti tutarında tazminat öder; tutar giydirilmiş ücretten hesaplanır. Dayanak: 4857 m.17/2, 17/4 ve 17/son."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss-5","url":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss","name":"Fazla çalışma ücreti nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Haftalık kırk beş saati aşan her saat için saat ücretinin yüzde elli fazlası ödenir; haftalık süre sözleşmeyle daha az belirlenmişse kırk beş saate kadar olan çalışmalar fazla sürelerle çalışmadır ve yüzde yirmi beş fazlasıyla ödenir. Araç saat ücretini aylık çıplak ücretin 225'e bölünmesiyle bulur. Dayanak: 4857 m.41/1-3."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss-6","url":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss","name":"Hakkaniyet indirimi nedir, hangi oran öneriliyor?","acceptedAnswer":{"@type":"Answer","text":"Fazla çalışma yazılı belgeyle değil tanık beyanıyla ispatlandığında Yargıtay hesaplanan tutardan hakkaniyet indirimi yapılmasını aramakta, Hukuk Genel Kurulu yüzde otuz oranındaki indirimi yerinde bulmaktadır. Oran kanunda yazılı değildir ve mahkemenin takdirindedir; araç oranı kullanıcıya bırakır. Dayanak: Yargıtay HGK 2015/1616 E., 2016/128 K.; HGK 2011/741 E., 2012/73 K."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss-7","url":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss","name":"Yıllık izin ücreti nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Hizmet süresi bir ile beş yıl arası olana yılda en az on dört, beş ile on beş yıl arası olana yirmi, on beş yıl ve fazlası olana yirmi altı gün izin verilir; on sekiz ve daha küçük ile elli ve daha büyük yaştakilerde süre yirmi günden az olamaz. Sözleşme sona erince kullanılmayan izin günleri son çıplak ücret üzerinden ödenir. Dayanak: 4857 m.53 ve m.59."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss-8","url":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss","name":"Brüt tutardan hangi kesintiler yapılır?","acceptedAnswer":{"@type":"Answer","text":"Ücret niteliğindeki alacaklardan yüzde 14 sigorta primi işçi payı, yüzde 1 işsizlik sigortası primi, gelir vergisi ve damga vergisi; ihbar tazminatından gelir ve damga vergisi; kıdem tazminatından yalnız damga vergisi kesilir. Kötü niyet, işe başlatmama, ayrımcılık, sendikal ve bakiye süre tazminatları brüt gösterilir. Dayanak: 5510 m.80 ve m.81; 4447 m.49; 193 sayılı Kanun m.25, m.61 ve m.103; 488 sayılı Kanun (1) sayılı tablo IV-1-b."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss-9","url":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss","name":"Asgari ücret istisnası her hesapta uygulanır mı?","acceptedAnswer":{"@type":"Answer","text":"2022'den itibaren ücretin asgari ücrete isabet eden kısmı gelir ve damga vergisinden istisnadır; istisna, ödemenin yapıldığı ayda yapılan ücret ödemelerinin toplamına bir kez uygulanır. Aynı ayda aynı işverenden başka ücret ödendiyse istisna orada kullanılmış olur; bu yüzden araçta isteğe bağlıdır. Dayanak: 193 sayılı Kanun m.23/1-18; 488 sayılı Kanun (2) sayılı tablo IV-34; GV Genel Tebliği Seri No: 319 m.4."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss-10","url":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss","name":"İşe iade davasında hangi tutarlar ödenir?","acceptedAnswer":{"@type":"Answer","text":"Feshin geçersizliğine karar verilip işçi bir ay içinde işe başlatılmazsa en az dört, en çok sekiz aylık ücreti tutarında işe başlatmama tazminatı; kararın kesinleşmesine kadar çalıştırılmadığı süre için en çok dört aya kadar ücret ve diğer hakları ödenir. İkisi de dava tarihindeki ücret esas alınarak belirlenir. Dayanak: 4857 m.21/1, 21/3 ve 21/4."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss-11","url":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss","name":"Kötü niyet, ayrımcılık ve sendikal tazminat birlikte istenebilir mi?","acceptedAnswer":{"@type":"Answer","text":"Aynı fesih için bunlardan yalnız biri hükmedilebilir: Yargıtay aynı hukuki nedenden ikinci bir tazminata hükmedilemeyeceğini ve işçi lehine olan tazminata hükmedilmesi gerektiğini kabul eder. Araç birden fazlası seçildiğinde tutarı yüksek olanı hesaplar, ötekilerin tutarını adımlarda gösterir ama toplama katmaz. Dayanak: 4857 m.5/6 ve m.17/6; 6356 m.25/4; Yargıtay 9. HD 2012/39721 E., 2014/32640 K.; 22. HD 2015/28332 E., 2018/7866 K."}},{"@type":"Question","@id":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss-12","url":"https://capar.av.tr/hesaplamalar/iscilik-alacaklari#sss","name":"Faiz tutarı hesaplanıyor mu?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Araç hangi alacağa hangi faizin hangi tarihten işleyebileceğini açıklar; mevduata uygulanan en yüksek faiz oranı bankalara ve dönemlere göre değiştiğinden ve resmî bir tek tablo bulunmadığından tutar vermez. Dayanak: 1475 m.14/11; 4857 m.34/1."}}]}</script>
+</body>
+</html>
