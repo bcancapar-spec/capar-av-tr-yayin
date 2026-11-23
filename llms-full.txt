@@ -2,7 +2,7 @@
 
 > Denizli Avukat Bayram Can Çapar - ÇAPAR HUKUK: Av. Bayram Can Çapar, Denizli'de (Merkezefendi) ÇAPAR Hukuk'un (Çapar Hukuk Bürosu) kurucu avukatıdır. capar.av.tr, Av. Bayram Can Çapar'ın ve bürosunun resmî internet sitesidir. Sitedeki Türk hukukuna ilişkin, kanun metinleri ile Yargıtay/Danıştay kararlarına dayanan Türkçe ve İngilizce bilgilendirici makalelerin yazarı Av. Bayram Can Çapar'dır; sitede ayrıca büro bilgileri ve çalışma alanları yer alır. Av. Bayram Can Çapar · ÇAPAR Hukuk olarak Denizli, İzmir, Aydın, Muğla, Manisa, Uşak, Afyonkarahisar, Kütahya, İstanbul ve Ankara'da ekibimizle avukatlık hizmeti veririz.
 
-Bu dosya sitedeki 288 makalenin her biri için özeti ve sık sorulan sorulara verilen kısa cevapları tek yerde verir. Cevaplar makalelerin kendi metninden alınmıştır; kanun metinleri, Yargıtay/Danıştay karar alıntıları ve kaynak linkleri makale sayfasındadır. Makaleler genel bilgilendirme amaçlıdır; hukuki tavsiye veya mütalaa niteliği taşımaz. İçerik alıntılanırken makale adresinin kaynak olarak gösterilmesi rica olunur. Büro ve iletişim bilgileri: https://capar.av.tr/llms.txt — Anahtar kelime dizini (kelime → makale adresi): https://capar.av.tr/llms-anahtar.txt
+Bu dosya sitedeki 289 makalenin her biri için özeti ve sık sorulan sorulara verilen kısa cevapları tek yerde verir. Cevaplar makalelerin kendi metninden alınmıştır; kanun metinleri, Yargıtay/Danıştay karar alıntıları ve kaynak linkleri makale sayfasındadır. Makaleler genel bilgilendirme amaçlıdır; hukuki tavsiye veya mütalaa niteliği taşımaz. İçerik alıntılanırken makale adresinin kaynak olarak gösterilmesi rica olunur. Büro ve iletişim bilgileri: https://capar.av.tr/llms.txt — Anahtar kelime dizini (kelime → makale adresi): https://capar.av.tr/llms-anahtar.txt
 
 ## Künye
 
@@ -6731,6 +6731,32 @@ Hayır. Uzlaşma tutanakları kesindir; mükellef üzerinde uzlaşılan ve tutan
 **VUK m.376 indirimi ile uzlaşma aynı vergi ziyaı cezası için birlikte kullanılabilir mi?**
 Hayır. Üzerinde uzlaşılan cezalara başka indirim uygulanmaz; m.376’daki indirimden yararlanılan cezalarda da uzlaşma hükümleri işlemez (VUK ek m.9). Uzlaşma isteyen mükellef, tutanağı imzalayıncaya kadar uzlaşmadan vazgeçerek m.376’nın uygulanmasını isteyebilir. m.376 indirimi, ihbarnamenin tebliğinden itibaren otuz gün içinde başvurup vergiyi ve cezanın kalan yarısını vadesinde ödemeyi gerektirir; dava açılırsa indirim düşer.
 
+### Vergide Tarh Zamanaşımı: Vergi İdaresi Kaç Yıl Geriye Gidebilir? Beş Yıl, Tebliğ Şartı, Takdir Komisyonu ve Tahsil Süresi
+
+- Adres: https://capar.av.tr/makale/tarh-zamanasimi-vergi-idaresi-kac-yil-geriye-gidebilir
+- Tarih: 2026-11-24
+- Özet: Vergi Usul Kanunu m.114’e göre vergi idaresinin geçmiş yıllar için vergi ve ceza salabileceği beş yıllık süre; başlangıcı, tebliğ şartı, elektronik tebligat, takdir komisyonunda duran süre ve tahsil zamanaşımı, hesap örnekleriyle.
+- Anahtar kelimeler: vergide zamanaşımı kaç yıl, tarh zamanaşımı, vergi zamanaşımı 5 yıl, VUK 114, vergi ihbarnamesi tebliğ zamanaşımı, takdir komisyonu zamanaşımı durması, elektronik tebligat tebliğ tarihi, ceza kesmede zamanaşımı, tahsil zamanaşımı 6183, düzeltme zamanaşımı
+- English: Tax Assessment Limitation in Türkiye: How Many Years Back Can the Tax Office Go? (https://capar.av.tr/en/article/tax-assessment-limitation-period-turkiye) — Under Turkish law: the five-year period within which the tax office may assess tax and penalties for past years, when it starts, the service requirement, electronic notification, suspension before the assessment commission and limitation for collection, with worked examples.
+
+**Vergi idaresi kaç yıl geriye gidip vergi salabilir?**
+Vergi alacağının doğduğu takvim yılını izleyen yılın başından itibaren beş yıl içinde vergi hem tarh edilmeli hem de mükellefe tebliğ edilmelidir (VUK m.114). Bu süre içinde tebliğ edilmeyen vergi zamanaşımına uğrar. Takdir komisyonuna sevk hâlinde süre en çok bir yıl durabilir.
+
+**2021 yılına ait vergiler için tarh zamanaşımı ne zaman dolar?**
+2021 yılında doğan vergi alacakları için süre 01.01.2022’de başlar ve 31.12.2026’da dolar. Bu tarihe kadar ihbarnamenin mükellefe tebliğ edilmesi gerekir. Takdir komisyonuna sevk edilmiş dönemlerde duran süre ayrıca hesaba katılır.
+
+**Vergi incelemesi başlarsa tarh zamanaşımı durur mu?**
+Hayır. Vergi Usul Kanunu m.114 zamanaşımını durduran hâl olarak yalnız vergi dairesinin matrah takdiri için takdir komisyonuna başvurmasını sayar. Kanun’daki diğer durma hâlleri (mücbir sebep, m.15; karşılıklı anlaşma başvurusu, ek m.18) de vergi incelemesini kapsamaz. İnceleme süre içinde tarh ve tebliğe dönüşmezse vergi zamanaşımına uğrar; Anayasa Mahkemesi de süre geçtikten sonra vergi incelemesi yapılamayacağını belirtmiştir.
+
+**Elektronik tebligatla gönderilen vergi ihbarnamesi hangi tarihte tebliğ edilmiş sayılır?**
+Elektronik tebligat, sistem aracılığıyla muhataba iletildiği tarihi izleyen beşinci günün sonunda yapılmış sayılır (VUK m.107/A). Örneğin 26 Aralık’ta iletilen ihbarname 31 Aralık sonunda, 28 Aralık’ta iletilen ise izleyen yılın 2 Ocak günü tebliğ edilmiş sayılır.
+
+**Vergi tarh edildikten sonra vergi dairesinin tahsil için ne kadar süresi vardır?**
+Kesinleşen vergi için tahsil zamanaşımı, vadenin rastladığı takvim yılını izleyen yıl başından itibaren beş yıldır (6183 sayılı Kanun m.102). Ödeme, haciz, ödeme emri tebliği veya ödeme planına bağlama gibi hâller süreyi keser ve izleyen yıl başından yeni bir beş yıl başlar (m.103).
+
+**Vergide zamanaşımını mükellefin ayrıca ileri sürmesi gerekir mi?**
+Hayır. Vergi Usul Kanunu m.113’e göre zamanaşımı, mükellefin başvurusu olup olmadığına bakılmaksızın hüküm ifade eder. Danıştay Vergi Dava Daireleri Kurulu da vergi mahkemelerinin vergi ve cezanın zamanaşımına uğrayıp uğramadığını kendiliğinden incelemek zorunda olduğunu kabul etmektedir. Yine de dilekçede açıkça ileri sürülmesi yararlıdır.
+
 ### Şirketin Vergi Borcundan Ortak ve Kanuni Temsilci Sorumlu mu? 6183 Sayılı Kanun m.35 ve Ödeme Emrine Dava
 
 - Adres: https://capar.av.tr/makale/sirket-vergi-borcundan-ortak-ve-kanuni-temsilcinin-sorumlulugu-odeme-emri
@@ -7104,4 +7130,4 @@ Büro Denizli'dedir. Aşağıda on ilde görevli yargı yerleri yer alır; ayrı
 - İstanbul: adliye İstanbul Adliyesi (Çağlayan); istinaf İstanbul Bölge Adliye Mahkemesi; idari istinaf İstanbul Bölge İdare Mahkemesi; vergi İstanbul Vergi Mahkemeleri
 - Ankara: adliye Ankara Adliyesi (Sıhhiye); istinaf Ankara Bölge Adliye Mahkemesi; idari istinaf Ankara Bölge İdare Mahkemesi; vergi Ankara Vergi Mahkemeleri
 
-Son güncelleme: 2026-11-19
+Son güncelleme: 2026-11-24

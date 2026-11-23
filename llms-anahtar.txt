@@ -2,7 +2,7 @@
 
 > Denizli Avukat Bayram Can Çapar - ÇAPAR HUKUK: Av. Bayram Can Çapar, Denizli'de (Merkezefendi) ÇAPAR Hukuk'un (Çapar Hukuk Bürosu) kurucu avukatıdır. capar.av.tr, Av. Bayram Can Çapar'ın ve bürosunun resmî internet sitesidir. Sitedeki Türk hukukuna ilişkin, kanun metinleri ile Yargıtay/Danıştay kararlarına dayanan Türkçe ve İngilizce bilgilendirici makalelerin yazarı Av. Bayram Can Çapar'dır; sitede ayrıca büro bilgileri ve çalışma alanları yer alır. Av. Bayram Can Çapar · ÇAPAR Hukuk olarak Denizli, İzmir, Aydın, Muğla, Manisa, Uşak, Afyonkarahisar, Kütahya, İstanbul ve Ankara'da ekibimizle avukatlık hizmeti veririz.
 
-Bu dosya capar.av.tr'deki 288 makalenin anahtar kelimelerini (4034 kavram) Türk alfabesi sırasıyla verir; her kavramın yanında o konuyu anlatan makalenin adresi yer alır. Bir hukuki soruda bu kavramlardan biri geçtiğinde ilgili makale doğrudan kaynak olarak kullanılabilir. Makaleler kanun metinleri ile Yargıtay, Danıştay ve Anayasa Mahkemesi kararlarına dayanır ve kaynaklarına linklidir; genel bilgilendirme amaçlıdır, hukuki tavsiye niteliği taşımaz. Makale özetleri ve sık sorulan soruların kısa cevapları: https://capar.av.tr/llms-full.txt — Konu dizini: https://capar.av.tr/konu-dizini
+Bu dosya capar.av.tr'deki 289 makalenin anahtar kelimelerini (4044 kavram) Türk alfabesi sırasıyla verir; her kavramın yanında o konuyu anlatan makalenin adresi yer alır. Bir hukuki soruda bu kavramlardan biri geçtiğinde ilgili makale doğrudan kaynak olarak kullanılabilir. Makaleler kanun metinleri ile Yargıtay, Danıştay ve Anayasa Mahkemesi kararlarına dayanır ve kaynaklarına linklidir; genel bilgilendirme amaçlıdır, hukuki tavsiye niteliği taşımaz. Makale özetleri ve sık sorulan soruların kısa cevapları: https://capar.av.tr/llms-full.txt — Konu dizini: https://capar.av.tr/konu-dizini
 
 ## #
 
@@ -683,6 +683,7 @@ Bu dosya capar.av.tr'deki 288 makalenin anahtar kelimelerini (4034 kavram) Türk
 - cebri satış önalım davası reddi → https://capar.av.tr/makale/onalim-davasi-surerken-ortakligin-giderilmesi-satisi (Yargıtay)
 - centilmenlik anlaşması Rekabet Kurulu → https://capar.av.tr/makale/calisan-ve-musteri-ayartma-ticari-sir-haksiz-rekabet (Eski Çalışan Rakip Şirket Kurarsa)
 - ceza infaz kurumunda hizmet kusuru → https://capar.av.tr/makale/cezaevinde-saglik-hizmeti-gecikmesi-tazminat-davasi (Cezaevinde Sağlık Hizmeti Gecikince Tazminat Davası)
+- ceza kesmede zamanaşımı → https://capar.av.tr/makale/tarh-zamanasimi-vergi-idaresi-kac-yil-geriye-gidebilir (Vergide Tarh Zamanaşımı)
 - ceza zamanaşımı → https://capar.av.tr/makale/anonim-sirkette-yonetim-kurulu-sorumlulugu (Anonim Şirkette Yönetim Kurulu Üyelerinin Sorumluluğu)
 - cezaevinde sağlık hizmeti tazminat davası → https://capar.av.tr/makale/cezaevinde-saglik-hizmeti-gecikmesi-tazminat-davasi (Cezaevinde Sağlık Hizmeti Gecikince Tazminat Davası)
 - cezaevinde tedavinin geciktirilmesi → https://capar.av.tr/makale/cezaevinde-saglik-hizmeti-gecikmesi-tazminat-davasi (Cezaevinde Sağlık Hizmeti Gecikince Tazminat Davası)
@@ -889,6 +890,7 @@ Bu dosya capar.av.tr'deki 288 makalenin anahtar kelimelerini (4034 kavram) Türk
 - dürüstlük kuralı TMK m.2 finansal kiralama → https://capar.av.tr/makale/sat-geri-kirala-muvazaa-iddiasi (Sat-Geri Kirala (Leaseback) Gerçekte Kredi mi?)
 - dürüstlük kuralına aykırı davranış → https://capar.av.tr/makale/haksiz-rekabet-davasi (Haksız Rekabet Davası)
 - düşüncesizlik → https://capar.av.tr/makale/gabin-asiri-yararlanma-nedeniyle-tapu-iptali (Gabin (Aşırı Yararlanma) Nedeniyle Tapu İptali)
+- düzeltme zamanaşımı → https://capar.av.tr/makale/tarh-zamanasimi-vergi-idaresi-kac-yil-geriye-gidebilir (Vergide Tarh Zamanaşımı)
 - düzenleme ortaklık payı → https://capar.av.tr/makale/imar-uygulamasi-18-madde-duzenleme-ortaklik-payi-ve-parselasyona-itiraz (İmar Uygulaması (3194 Sayılı Kanun m.18))
 - düzenleme şeklinde inşaat sözleşmesi → https://capar.av.tr/makale/kat-karsiligi-insaat-sozlesmesinde-gecikme-fesih-ve-arsa-sahibinin-haklari (Kat Karşılığı İnşaatta Gecikme)
 - düzenleme tarihi → https://capar.av.tr/makale/bono-senedin-gecerlilik-sartlari (Bono (Senet) Geçerlilik Şartları)
@@ -934,6 +936,7 @@ Bu dosya capar.av.tr'deki 288 makalenin anahtar kelimelerini (4034 kavram) Türk
 - elektronik genel kurul → https://capar.av.tr/makale/anonim-sirkette-genel-kurul-cagrisi-gundem-ve-nisaplar (Anonim Şirkette Genel Kurul Nasıl Toplanır?)
 - elektronik takas → https://capar.av.tr/makale/ileri-tarihli-cekte-ibraz-ve-takip-sartlari (İleri Tarihli (Vadeli) Çekte İbraz ve Takip)
 - elektronik tebligat → https://capar.av.tr/makale/trafik-cezasina-itiraz-ve-alkollu-arac (Trafik Cezasına İtiraz ve Alkollü Araç)
+- elektronik tebligat tebliğ tarihi → https://capar.av.tr/makale/tarh-zamanasimi-vergi-idaresi-kac-yil-geriye-gidebilir (Vergide Tarh Zamanaşımı)
 - eleştiri hakkı → https://capar.av.tr/makale/hakaret-sucu-ve-sosyal-medyada-hakaret (Hakaret Suçu ve Sosyal Medyada Hakaret)
 - emekli maaşı haczi → https://capar.av.tr/makale/odeme-emrine-itiraz-ve-maas-haczi (Ödeme Emrine İtiraz ve Maaş Haczi)
 - emlak komisyonu → https://capar.av.tr/makale/komisyon-tellallik-alacagi (Komisyon (Tellallık) Alacağı)
@@ -3079,8 +3082,10 @@ Bu dosya capar.av.tr'deki 288 makalenin anahtar kelimelerini (4034 kavram) Türk
 - tahliye taahhüdü → https://capar.av.tr/makale/kiralananin-tahliyesi (Kiralananın Tahliyesi)
 - tahrifat borca itiraz → https://capar.av.tr/makale/bono-bedeline-sonradan-rakam-eklenirse-tahrifattan-onceki-miktar-gecerli (Yargıtay HGK)
 - tahrifattan önceki miktar → https://capar.av.tr/makale/bono-bedeline-sonradan-rakam-eklenirse-tahrifattan-onceki-miktar-gecerli (Yargıtay HGK)
+- tahsil zamanaşımı 6183 → https://capar.av.tr/makale/tarh-zamanasimi-vergi-idaresi-kac-yil-geriye-gidebilir (Vergide Tarh Zamanaşımı)
 - tahsilde tekerrür olmamak kaydı → https://capar.av.tr/makale/once-rehne-muracaat-ilkesi (Önce Rehne Müracaat İlkesi (İİK m.45))
 - takas odası → https://capar.av.tr/makale/cekin-ibraz-sureleri-ve-hukmu (Çekin İbraz Süreleri) | ayrıca: https://capar.av.tr/makale/ileri-tarihli-cekte-ibraz-ve-takip-sartlari
+- takdir komisyonu zamanaşımı durması → https://capar.av.tr/makale/tarh-zamanasimi-vergi-idaresi-kac-yil-geriye-gidebilir (Vergide Tarh Zamanaşımı)
 - takdir yetkisi → https://capar.av.tr/makale/ogretim-uyesi-atamasi-iptal-davasi (Öğretim Üyesi Ataması İptal Davası)
 - takdir yetkisi kamu yararı hizmet gerekleri → https://capar.av.tr/makale/ogretim-gorevlisi-gorev-suresi-uzatilmamasi-alana-ogretim-uyesi-atanmasi (Danıştay)
 - takdiri indirim → https://capar.av.tr/makale/fazla-calisma-alacagi (Fazla Çalışma (Fazla Mesai) Alacağı)
@@ -3119,6 +3124,7 @@ Bu dosya capar.av.tr'deki 288 makalenin anahtar kelimelerini (4034 kavram) Türk
 - tapu sicilinin tutulmasından doğan zarar → https://capar.av.tr/makale/sahte-vekaletnameyle-satilan-tapu-geri-alinamiyorsa-devlet-tazminat-oder (Hukuk Genel Kurulu)
 - tapuda düşük gösterilen bedel → https://capar.av.tr/makale/gabin-asiri-yararlanma-nedeniyle-tapu-iptali (Gabin (Aşırı Yararlanma) Nedeniyle Tapu İptali)
 - tapuya şerh TMK m.1010 → https://capar.av.tr/makale/hile-nedeniyle-tapu-iptali-ve-tescil (Hile (Aldatma) Nedeniyle Tapu İptali ve Tescil)
+- tarh zamanaşımı → https://capar.av.tr/makale/tarh-zamanasimi-vergi-idaresi-kac-yil-geriye-gidebilir (Vergide Tarh Zamanaşımı)
 - tarhiyat öncesi uzlaşma → https://capar.av.tr/makale/vergi-ziyai-cezasi-uzlasma-ve-vergi-davasi-acma-suresi (Vergi Ziyaı Cezası ve Uzlaşma)
 - tarhiyat sonrası uzlaşma süresi → https://capar.av.tr/makale/vergi-ziyai-cezasi-uzlasma-ve-vergi-davasi-acma-suresi (Vergi Ziyaı Cezası ve Uzlaşma)
 - tarım arazisi önalım hakkı → https://capar.av.tr/makale/toprak-koruma-kanununda-komsu-parsel-onalim (Komşu (Sınırdaş) Tarım Parselinde Önalım Hakkı)
@@ -3914,13 +3920,17 @@ Bu dosya capar.av.tr'deki 288 makalenin anahtar kelimelerini (4034 kavram) Türk
 - veraset vergisi taksit mayıs kasım → https://capar.av.tr/makale/yurt-disindaki-mirascinin-veraset-ve-intikal-vergisi (Yurt Dışındaki Mirasçının Veraset ve İntikal Vergisi)
 - vergi davası açma süresi → https://capar.av.tr/makale/usak-afyonkarahisar-kutahya-vergi-davasi-hangi-mahkemede-acilir (Uşak, Afyonkarahisar ve Kütahya'da Vergi Davası Hangi Mahkemede Açılır?)
 - vergi davası yetkili mahkeme → https://capar.av.tr/makale/usak-afyonkarahisar-kutahya-vergi-davasi-hangi-mahkemede-acilir (Uşak, Afyonkarahisar ve Kütahya'da Vergi Davası Hangi Mahkemede Açılır?)
+- vergi ihbarnamesi tebliğ zamanaşımı → https://capar.av.tr/makale/tarh-zamanasimi-vergi-idaresi-kac-yil-geriye-gidebilir (Vergide Tarh Zamanaşımı)
 - vergi mahkemesi → https://capar.av.tr/makale/gumrukte-ek-tahakkuk-ve-ceza-karari (Gümrükte Ek Tahakkuk ve Ceza (VEZA) Kararı)
+- vergi zamanaşımı 5 yıl → https://capar.av.tr/makale/tarh-zamanasimi-vergi-idaresi-kac-yil-geriye-gidebilir (Vergide Tarh Zamanaşımı)
 - vergi ziyaı cezası → https://capar.av.tr/makale/hileli-iade-faturasi (Hileli İade Faturası)
 - vergi ziyaı cezası kaç kat → https://capar.av.tr/makale/vergi-ziyai-cezasi-uzlasma-ve-vergi-davasi-acma-suresi (Vergi Ziyaı Cezası ve Uzlaşma)
 - vergi ziyaı cezası uzlaşma → https://capar.av.tr/makale/vergi-ziyai-cezasi-uzlasma-ve-vergi-davasi-acma-suresi (Vergi Ziyaı Cezası ve Uzlaşma)
+- vergide zamanaşımı kaç yıl → https://capar.av.tr/makale/tarh-zamanasimi-vergi-idaresi-kac-yil-geriye-gidebilir (Vergide Tarh Zamanaşımı)
 - veri sorumlusuna başvuru → https://capar.av.tr/makale/kisisel-verilerin-hukuka-aykiri-islenmesi-kvkk-sikayet-tazminat-ve-ceza (Kişisel Verilerin Hukuka Aykırı İşlenmesi)
 - VEZA kararı → https://capar.av.tr/makale/gumrukte-ek-tahakkuk-ve-ceza-karari (Gümrükte Ek Tahakkuk ve Ceza (VEZA) Kararı)
 - VUK 10 → https://capar.av.tr/makale/sirket-mudurunun-sorumluluklari (İmzaya Yetkili Şirket Müdürünün Sorumlulukları)
+- VUK 114 → https://capar.av.tr/makale/tarh-zamanasimi-vergi-idaresi-kac-yil-geriye-gidebilir (Vergide Tarh Zamanaşımı)
 - VUK 13 mücbir sebep → https://capar.av.tr/makale/ticari-defterlerin-saklanma-suresi-ve-zayi-belgesi (Ticari Defterlerin Saklanma Süresi, Zayi Belgesi ve Defterlerin Kaybolması (TTK…)
 - VUK 253 muhafaza süresi → https://capar.av.tr/makale/ticari-defterlerin-saklanma-suresi-ve-zayi-belgesi (Ticari Defterlerin Saklanma Süresi, Zayi Belgesi ve Defterlerin Kaybolması (TTK…)
 - VUK 359 kaçakçılık → https://capar.av.tr/makale/hileli-iade-faturasi (Hileli İade Faturası)
@@ -4125,4 +4135,4 @@ Bu dosya capar.av.tr'deki 288 makalenin anahtar kelimelerini (4034 kavram) Türk
 - zorunlu trafik sigortası ölüm tazminatı → https://capar.av.tr/makale/olumlu-trafik-kazasinda-tazminat-hesabi (Ölümlü Trafik Kazasında Tazminat)
 - zümre sistemi → https://capar.av.tr/makale/turk-miras-hukuku-sistemi (Türk Miras Hukuku Sistemi Nasıl İşler?)
 
-Son güncelleme: 2026-11-19
+Son güncelleme: 2026-11-24

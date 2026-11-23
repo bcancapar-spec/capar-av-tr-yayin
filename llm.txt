@@ -31,7 +31,7 @@ Bu dosya, yapay zekâ asistanlarının ve dil modellerinin site içeriğini doğ
 ## Ana Sayfalar
 
 - [Ana sayfa](https://capar.av.tr/): Büro tanıtımı, ekip, çalışma alanları ve iletişim.
-- [Makaleler](https://capar.av.tr/makaleler): Tüm yayımlanmış makalelerin listesi (288 makale, 2026-11-19 itibarıyla).
+- [Makaleler](https://capar.av.tr/makaleler): Tüm yayımlanmış makalelerin listesi (289 makale, 2026-11-24 itibarıyla).
 - [Konu dizini](https://capar.av.tr/konu-dizini): Makalelerde ele alınan hukuki kavramların Türk alfabesi sırasıyla dizini; her kavram onu anlatan makaleye, sözlükte karşılığı olanlar Hukuk Sözlüğü'ne bağlanır.
 - [Mevzuat](https://capar.av.tr/mevzuat): Resmî mevzuat kaynakları ve çalışma alanlarına göre temel kanunlar; her kanunun altında ilgili makaleler.
 - [Karar dizini](https://capar.av.tr/karar-dizini): Makalelerde atıf yapılan Yargıtay, Danıştay, Anayasa Mahkemesi ve bölge adliye mahkemesi kararları; mahkeme ve daireye göre künye, resmî kaynak bağlantısı ve karara atıf yapan makaleler. İngilizcesi: https://capar.av.tr/en/case-index — Mahkeme ve daire gruplarına göre alt sayfalar: [Yargıtay Genel Kurulları](https://capar.av.tr/karar-dizini/yargitay-genel-kurullar) · [Yargıtay 1.–4. Hukuk Daireleri](https://capar.av.tr/karar-dizini/yargitay-hukuk-daireleri-1-4) · [Yargıtay 5.–10. Hukuk Daireleri](https://capar.av.tr/karar-dizini/yargitay-hukuk-daireleri-5-10) · [Yargıtay 11. Hukuk Dairesi](https://capar.av.tr/karar-dizini/yargitay-11-hukuk-dairesi) · [Yargıtay 12.–23. Hukuk Daireleri](https://capar.av.tr/karar-dizini/yargitay-hukuk-daireleri-12-23) · [Yargıtay Ceza Daireleri](https://capar.av.tr/karar-dizini/yargitay-ceza-daireleri) · [Danıştay](https://capar.av.tr/karar-dizini/danistay) · [Anayasa Mahkemesi](https://capar.av.tr/karar-dizini/anayasa-mahkemesi) · [Bölge Adliye Mahkemeleri](https://capar.av.tr/karar-dizini/bolge-adliye-mahkemeleri)
@@ -125,10 +125,11 @@ Türkiye dışında yaşayan Türk vatandaşlarının Türkiye'deki hukuki işle
 
 ## Makaleler (Türkçe asıl; her makalenin İngilizce çevirisi ayrı adreste)
 
-Sitede 288 makale var. Bu dosya kısa dizindir: önce en yeni 10 makale tarih ve özetiyle, ardından tüm makaleler çalışma alanlarına göre yalnız başlık ve adresiyle listelenir. Her makalenin özeti, anahtar kelimeleri ve sık sorulan sorularına verilen kısa cevaplar https://capar.av.tr/llms-full.txt dosyasında; anahtar kelimelerin A–Z dizini https://capar.av.tr/llms-anahtar.txt dosyasındadır.
+Sitede 289 makale var. Bu dosya kısa dizindir: önce en yeni 10 makale tarih ve özetiyle, ardından tüm makaleler çalışma alanlarına göre yalnız başlık ve adresiyle listelenir. Her makalenin özeti, anahtar kelimeleri ve sık sorulan sorularına verilen kısa cevaplar https://capar.av.tr/llms-full.txt dosyasında; anahtar kelimelerin A–Z dizini https://capar.av.tr/llms-anahtar.txt dosyasındadır.
 
 ### En Yeni Makaleler
 
+- [Vergide Tarh Zamanaşımı: Vergi İdaresi Kaç Yıl Geriye Gidebilir? Beş Yıl, Tebliğ Şartı, Takdir Komisyonu ve Tahsil Süresi](https://capar.av.tr/makale/tarh-zamanasimi-vergi-idaresi-kac-yil-geriye-gidebilir) (2026-11-24): Vergi Usul Kanunu m.114’e göre vergi idaresinin geçmiş yıllar için vergi ve ceza salabileceği beş yıllık süre; başlangıcı, tebliğ şartı, elektronik tebligat, takdir komisyonunda duran süre ve tahsil zamanaşımı, hesap örnekleriyle.
 - [Anahtar Teslim Konut Satışı: Ön Ödemeli Konut Sözleşmesi, Şekil, Geç Teslim, Cayma ve Dönme, Tapu Devri](https://capar.av.tr/makale/anahtar-teslim-konut-satisi-sozlesmesi-on-odemeli-konut-ve-gec-teslim) (2026-11-19): Yükleniciden ya da satıcıdan anahtar teslim konut alırken ön ödemeli konut satışının şekli, geçersizliği kimin ileri sürebileceği, kırk sekiz aylık teslim sınırı, geç teslimde cezai şart ve kira kaybı, cayma ve dönme, teminatlar…
 - [Yargıtay HGK: Arabuluculuk Anlaşması Ödenmez ve Belgede Öngörülmüşse Bütün Alacak Dava Edilebilir](https://capar.av.tr/makale/arabuluculuk-anlasma-belgesi-odenmezse-dava-acilabilir-mi) (2026-11-19): Yargıtay Hukuk Genel Kurulu'na göre arabuluculuk anlaşma belgesi tam ve eksiksiz ödeme şartına bağlanmış ve ödenmezse bütün alacakların dava edilebileceği yazılmışsa, taksit ödenmeyince ödenenler mahsup edilerek alacağın tamamı…
 - [Bağıştan Dönme ve Tapu İptali: Şartlı Bağış, Geri Alma Sebepleri ve Bir Yıllık Süre (TBK m.295–297)](https://capar.av.tr/makale/bagistan-donme-ve-tapu-iptali-sartli-bagis-ve-bir-yillik-sure) (2026-11-19): Bağışlanan taşınmaz yalnız TBK m.295'teki üç sebeple ve sebebin öğrenilmesinden itibaren bir yıl içinde geri alınabilir; Yargıtay şartlı bağışın ispatını ve şarta aykırılığı sıkı biçimde arar.
@@ -138,7 +139,6 @@ Sitede 288 makale var. Bu dosya kısa dizindir: önce en yeni 10 makale tarih ve
 - [Yargıtay HGK: Borçlanmayla 900 Güne Tamamlanan Ölüm Aylığı Kesilir, Ödenen Aylıklar Kurum Hatası Hükmüyle (m.96/1-b) Geri Alınır](https://capar.av.tr/makale/olum-ayligi-900-gun-borclanma-kurum-hatasi-yersiz-odeme) (2026-11-19): Yargıtay Hukuk Genel Kurulu 18.06.2026 tarihli kararında, ölüm aylığının 5 yıl ve 900 gün yolunda borçlanılan sürelerin sayılmadığını, bu nedenle askerlik borçlanmasıyla bağlanan aylığın kesilmesinin yerinde olduğunu; ancak hak…
 - [Yargıtay HGK: SGK İdari Para Cezasına Süresinde İtiraz Edilip Dava Açılmazsa Ödeme Emri Davasında Ceza Tartışılamaz](https://capar.av.tr/makale/sgk-idari-para-cezasi-kesinlesirse-odeme-emri-davasinda-tartisilamaz) (2026-11-19): Yargıtay Hukuk Genel Kurulu 15.12.2022 tarihli kararında, SGK idari para cezasına karşı yolun on beş gün içinde Kuruma itiraz ve ret hâlinde otuz gün içinde idare mahkemesi olduğunu; bu yol kullanılmadığı için kesinleşen ceza…
 - [Taşınmaz Satış Vaadi Sözleşmesi: Tapu İptali ve Tescil Davası, Fesih, Zamanaşımı ve Harici Satış](https://capar.av.tr/makale/tasinmaz-satis-vaadi-sozlesmesi-tescil-davasi-ve-harici-satis) (2026-11-19): Noterde yapılan satış vaadine dayanarak tapu iptali ve tescil istemenin şartları, tek taraflı feshin geçersizliği, on yıllık zamanaşımı ve harici satışta bedelin denkleştirici adalete göre iadesi, Yargıtay Hukuk Genel Kurulu…
-- [6284 Sayılı Kanunda Uzaklaştırma ve Koruma Kararı: Kim İsteyebilir, Süre, İtiraz (m.9) ve Zorlama Hapsi (m.13)](https://capar.av.tr/makale/6284-sayili-kanun-koruma-ve-uzaklastirma-karari-itiraz-ve-zorlama-hapsi) (2026-11-15): 6284 sayılı Kanun’a göre uzaklaştırma gibi önleyici tedbirler ilk defasında en çok altı ay için verilir ve gerekirse uzatılabilir; karara iki hafta içinde aile mahkemesine itiraz edilir ve itiraz kararı kesindir. Yazı; delil…
 
 ### Ticaret ve Şirketler Hukuku
 
@@ -469,6 +469,7 @@ Sitede 288 makale var. Bu dosya kısa dizindir: önce en yeni 10 makale tarih ve
 ### Vergi Hukuku
 
 - [Vergi Ziyaı Cezası ve Uzlaşma: Uzlaşma Talebi Dava Süresini Nasıl Etkiler? (VUK m.344, 376, Ek 1–11; İYUK 7)](https://capar.av.tr/makale/vergi-ziyai-cezasi-uzlasma-ve-vergi-davasi-acma-suresi)
+- [Vergide Tarh Zamanaşımı: Vergi İdaresi Kaç Yıl Geriye Gidebilir? Beş Yıl, Tebliğ Şartı, Takdir Komisyonu ve Tahsil Süresi](https://capar.av.tr/makale/tarh-zamanasimi-vergi-idaresi-kac-yil-geriye-gidebilir)
 - [Şirketin Vergi Borcundan Ortak ve Kanuni Temsilci Sorumlu mu? 6183 Sayılı Kanun m.35 ve Ödeme Emrine Dava](https://capar.av.tr/makale/sirket-vergi-borcundan-ortak-ve-kanuni-temsilcinin-sorumlulugu-odeme-emri)
 
 ### Kamulaştırma ve İmar Hukuku
@@ -514,4 +515,4 @@ Every article on this site has an English translation at its own address. The En
 - [Hüküm ve koşullar](https://capar.av.tr/hukum-kosullar.html)
 - [Site haritası](https://capar.av.tr/sitemap.xml)
 
-Son güncelleme: 2026-11-19
+Son güncelleme: 2026-11-24
