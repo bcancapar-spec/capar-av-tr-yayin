@@ -831,6 +831,20 @@ body:has(.cookie-bar.show) form[id$="-form"] button[type=submit]{bottom:12px}
 .article .body .tablo-kap:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 }
 /*@bolum-son:agirlik*/
+/* Makale çizelgesi şablonu (2026-11-24; kullanıcı: "benzeri kısımlarda şablon satır ve sütun yap"): gövdedeki her tablo
+   <caption> + <th scope="col"> + satır başlığı <th scope="row"> işaretlemesindedir (araclar/cizelge.py). Bütün genişliklerde
+   çizgi + zebra, renkler tema değişkenlerinden (açık / koyu). Telefonda kaydırma: @bolum:agirlik (.tablo-kap) ve makale-mobil.
+   Başlığın hemen altındaki çizelgede caption görsel olarak gizlidir (cz-gizli), ekran okuyucu ve sesli okuma için durur.
+   Yazdırma kuralı (satır bölünmez, sütun başlığı her sayfada) parts/yazdir.php'dedir. Testler: araclar/test_cizelge.py. */
+/*@bolum:cizelge*/
+.article .body table{width:100%;border-collapse:collapse;margin:22px 0 26px;font-size:calc(.92rem*var(--okuma-olcek,1));line-height:1.5}
+.article .body caption{caption-side:top;text-align:left;padding:0 0 8px;font-size:.85rem;font-weight:600;line-height:1.4;color:var(--text-soft)}
+.article .body caption.cz-gizli{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.article .body th,.article .body td{padding:9px 12px;vertical-align:top;text-align:left;border-bottom:1px solid var(--line)}
+.article .body thead th{font-weight:600;line-height:1.35;color:var(--accent);background:var(--surface-2);border-bottom:2px solid var(--line)}
+.article .body tbody th{font-weight:600;color:var(--text);background:none}
+.article .body tbody tr:nth-child(even){background:color-mix(in srgb,var(--surface-2) 50%,transparent)}
+/*@bolum-son:cizelge*/
 /* ---------- Tasarım denetimi (2026-11-19; capar-tasarim-denetimi/2026-11-19 bulgular 3, 4, 6, 7, 8, 10) ----------
    Görünür boyut, renk ve masaüstü görünümü değişmez; yalnız dokunma alanı, çerez bandı payı ve satır uzunluğu.
    3: dar ekranda (≤ 560 px) dokunma alanı en az 44 × 44 px — dil düğmeleri (TR / EN) sözde öğeyle dikeyde 44 px'e, dıştaki

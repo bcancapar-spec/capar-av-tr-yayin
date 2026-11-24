@@ -23,14 +23,14 @@ tr:[['vb\\.','ve benzeri'],['vs\\.','vesaire'],['[Bb]kz\\.','bakınız'],['ör\\
 en:[['e\\.g\\.','for example'],['i\\.e\\.','that is'],['et seq\\.','and following'],['cf\\.','compare'],['vs\\.','versus'],['Av\\.','Attorney'],['paras\\.(?= ?\\d)','paragraphs'],['para\\.(?= ?\\d)','paragraph'],['pp\\.(?= ?\\d)','pages'],['p\\.(?= ?\\d)','page'],['Nos\\.(?= ?\\d)','numbers'],['[Nn]o\\.(?= ?\\d)','number']]},
 ROMA={VIII:8,III:3,VII:7,XII:12,II:2,IV:4,VI:6,IX:9,XI:11},
 M={tr:{esas:'esas',karar:'karar',bolu:' bölü ',basvuru:'başvuru numarası',tarih:'tarih',madde:'madde',fikra:'fıkra',bent:'bent',ile:'ile',yuzde:'yüzde',lira:'Türk lirası',para:'paragraf',
-tablo:function(b,n){return'Tablo'+(b?': '+b:'')+'. '+n+' satır; ayrıntı için sayfadaki tabloya bakın.'},
+tablo:function(b,n){return tabloAd('Tablo',b)+' '+n+' satır; ayrıntı için sayfadaki tabloya bakın.'},tbl:'Tablo',
 // betiğin kendi arayüz iletileri (2026-11-16; sunucu iletileri data-m-* niteliklerinde)
 ui:{yavas:'Bağlantı yavaş; ses yükleniyor…',dokun:'Ses dosyası açılamadı. Dinlemek için düğmeye yeniden dokunun.',dusus:'Ses dosyası açılamadı; tarayıcınızın sesiyle sürdürülüyor.',
 sessiz:'Ses gelmiyorsa telefonun sessiz kipini kapatın.',sira:'Sıradaki makale: ',geri:function(n){return n+' sn içinde başlıyor.'},vazgec:'Vazgeç',
 simdi:'Şimdi okunan: ',ac:'Makaleyi aç',acildi:'Sıradaki makale açıldı: ',sinir:'Devam etmek için dokunun.',devam:'Dinlemeye devam et',
 ayar:'Sıradaki makaleyi kendiliğinden aç ve oku'}},
 en:{esas:'docket',karar:'decision',bolu:' slash ',basvuru:'application number',tarih:'dated',madde:'article',fikra:'paragraph',bent:'subparagraph',ile:'to',yuzde:'percent',lira:'Turkish lira',para:'section',
-tablo:function(b,n){return'Table'+(b?': '+b:'')+'. '+n+(n===1?' row':' rows')+'; see the table on the page for details.'},
+tablo:function(b,n){return tabloAd('Table',b)+' '+n+(n===1?' row':' rows')+'; see the table on the page for details.'},tbl:'Table',
 ui:{yavas:'Slow connection; loading audio…',dokun:'The audio file could not be opened. Tap the button again to listen.',dusus:'The audio file could not be opened; continuing with your browser’s voice.',
 sessiz:'If you hear nothing, turn off silent mode.',sira:'Next article: ',geri:function(n){return'Starts in '+n+' s.'},vazgec:'Cancel',
 simdi:'Now reading: ',ac:'Open article',acildi:'Next article opened: ',sinir:'Tap to continue.',devam:'Continue listening',
@@ -96,6 +96,19 @@ if(bas<t.length)o.push(t.slice(bas));
 o.forEach(function(c){c=c.trim();while(c.length>sinir){var k=c.slice(0,sinir),i=Math.max(k.lastIndexOf(', '),k.lastIndexOf('; '),k.lastIndexOf(': '));
 if(i<sinir*.3)i=k.lastIndexOf(' ');if(i<1)i=sinir;r.push(c.slice(0,i+1).trim());c=c.slice(i+1).trim()}if(c)r.push(c)});return r}
 function tabloOzet(b,n,dil){return M[dil==='en'?'en':'tr'].tablo((b||[]).filter(Boolean).join(', '),n)}
+// 2026-11-24: çizelge adı; soru / ünlem / noktayla biten adın ardına nokta konmaz ("Alınır?." hatası)
+function tabloAd(t,b){return t+(b?': '+b:'')+(/[.?!…]$/.test(b||'')?'':'.')}
+// 2026-11-24: çizelge içeriğiyle okunur — "Tablo: ‹ad›." ardından her satır tek cümle: satır başlığı + ": " + öteki hücreler "; " ile;
+// üç ve daha çok sütunda hücrenin önünde sütun başlığı ("‹sütun›: ‹hücre›"). Boş hücre atlanır; hücre sonundaki . ; , atılır, cümle
+// noktayla biter (soru / ünlemle bitmiyorsa). 15 satırdan ya da 1.800 karakterden büyük çizelgede eski kısa özet (tabloOzet).
+function tabloMetin(ad,sut,sat,dil){dil=dil==='en'?'en':'tr';sut=sut||[];sat=sat||[];
+var uz=0;sat.forEach(function(r){r.forEach(function(h){uz+=String(h||'').length})});
+if(sat.length>15||uz>1800)return[tabloOzet(ad?[ad]:sut,sat.length,dil)];
+var o=[tabloAd(M[dil].tbl,ad||sut.filter(Boolean).join(', '))];
+sat.forEach(function(r){var bas=String(r[0]||'').trim().replace(/[.;,:]+$/,''),p=[];
+for(var i=1;i<r.length;i++){var h=String(r[i]||'').trim();if(!h)continue;if(i<r.length-1||!/[?!]$/.test(h))h=h.replace(/[.;,]+$/,'');
+p.push(sut.length>2&&sut[i]?sut[i]+': '+h:h)}
+var c=(bas&&p.length?bas+': ':bas)+p.join('; ');if(!c)return;o.push(/[.?!…]$/.test(c)?c:c+'.')});return o}
 // ses: sayfa dilinde en iyisi, yoksa null
 function sesSec(v,dil){var en=null,ep=-1;(v||[]).forEach(function(s){var l=String(s.lang||'').replace('_','-').toLowerCase(),n=String(s.name||''),p=0;
 if(l.split('-')[0]!==dil)return;if(/^(tr-tr|en-us|en-gb)$/.test(l))p+=2;
@@ -131,8 +144,10 @@ function gez(k){var tp='';function bos(){if(tp.trim())ekle(k,tp);tp=''}
 if(c.nodeType!==1||c.matches(ATLA)||k===g&&c.classList.contains('kisa-cevap'))return;
 // iOS Safari'nin telefon / tarih / adres algılayıp metni sardığı bağlantı: metin olduğu gibi akar (boşluk eklenmez; özet değişmez)
 if(c.hasAttribute('x-apple-data-detectors')){tp+=c.textContent;return}
-if(c.tagName==='TABLE'){bos();var sat=c.querySelectorAll('tr'),cap=c.querySelector('caption'),hs=c.querySelector('thead tr')||sat[0];
-b.push({el:c,parcalar:[tabloOzet(cap?[metin(cap)]:hs?[].map.call(hs.children,metin):[],Math.max(0,sat.length-(hs?1:0)),dil)]})}
+if(c.tagName==='TABLE'){bos();var sat=[].slice.call(c.querySelectorAll('tr')),cap=c.querySelector('caption'),hs=c.querySelector('thead tr')||sat[0],
+tp2=tabloMetin(cap?metin(cap):'',hs?[].map.call(hs.children,metin):[],sat.filter(function(r){return r!==hs}).map(function(r){return[].map.call(r.children,metin)}),dil),
+pr=[normalle(tp2[0],dil)];tp2.slice(1).forEach(function(x){pr=pr.concat(cumleler(normalle(x,dil),180,dil).filter(function(y){return rx('[0-9'+L+']').test(y)}))});
+b.push({el:c,parcalar:pr})}
 else if(c.matches(BLOK)||/-bsl$/.test(c.className)){bos();if(c.querySelector(BLOK))gez(c);else ekle(c,metin(c))}else tp+=metin(c)+' '});bos()}
 var h1=mk.querySelector('h1'),kc=mk.querySelector('.kisa-cevap[data-body="'+dil+'"]')||g.querySelector('.kisa-cevap');if(h1)ekle(h1,metin(h1));if(kc)gez(kc);gez(g);return b}
 // blok listesinin özeti: her blok parcalar.join(' '), bloklar '\n' ile; UTF-8 baytları üzerinde FNV-1a 32 bit, 8 haneli onaltılık
@@ -249,7 +264,7 @@ function taniMetin(s){return['sesli-oku.js v='+s.surum,'kip: '+s.kip,'data-ses-s
 'Audio: '+(s.audio?'var':'yok')+'; canPlayType(audio/mpeg): "'+s.cpt+'"','son play(): '+s.oyn,
 'readyState: '+s.rs+'; networkState: '+s.ns+'; error.code: '+s.err,'medya olayları: '+(s.medya.length?s.medya.join(', '):'-'),
 'speechSynthesis: '+(s.ss?'var':'yok')+'; ses sayısı: '+s.sesN+'; seçilen: '+s.ses,'son konuşma olayı: '+s.konusma,'zincir: '+s.zincir,'UA: '+s.ua].join('\n')}
-var API={normalle:normalle,cumleler:cumleler,tabloOzet:tabloOzet,sesSec:sesSec,ekUyarla:ekUyarla,Oynatici:Oynatici,SOZ:SOZ,
+var API={normalle:normalle,cumleler:cumleler,tabloOzet:tabloOzet,tabloMetin:tabloMetin,sesSec:sesSec,ekUyarla:ekUyarla,Oynatici:Oynatici,SOZ:SOZ,
 bloklar:bloklar,ozet:ozet,disaAktar:disaAktar,blokBul:blokBul,sureYaz:sureYaz,DosyaOynatici:DosyaOynatici,
 kucuk:kucuk,adaylar:adaylar,siradaki:siradaki,dosyaBilgi:dosyaBilgi,dosyaUyar:dosyaUyar,Zincir:Zincir,gecis:gecis,taniMetin:taniMetin};
 if(typeof module!=='undefined'&&module.exports){module.exports=API;return}
