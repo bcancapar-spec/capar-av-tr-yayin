@@ -923,6 +923,8 @@ main [id$="-form"]{scroll-margin-top:84px}
 .ust-hs .hsc-liste{flex:1 1 100%}
 .ust-hs .ust-hs-tum{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0;border:0;font-family:var(--sans);font-size:.92rem;font-weight:600;letter-spacing:0;text-transform:none;color:var(--accent)}
 .ust-hs .ust-hs-tum::after{content:"\2192";position:static;width:auto;height:auto;background:none}
+/* 2026-11-24 (kullanıcı: "Hesaplamaları esas alan tek sekme değil … hesaplamalar bir alt küme, onun altındakiler de bir alt küme"): ana sayfada dar ekranda menü kapalıyken "Hesaplamalar" üst çubukta tek başına görünmez (dil ve menü düğmesini ekran dışına itiyordu); menü açılınca öteki satırlarla aynı biçimde bir satırdır, kapsüller onun altında açılır. */
+@media(max-width:1359.98px){#nav:not(.open)>.ust-hs{display:none}#nav.open>.ust-hs>summary{font-size:1rem;font-weight:400;letter-spacing:.03em;color:var(--ink-soft)}}
 @media(max-width:1359.98px){.ust-hs{border-bottom:1px solid var(--line)}.ust-hs>summary{display:flex;justify-content:space-between;min-height:48px;font-size:.9rem;letter-spacing:.04em}.ust-hs-panel{position:static;padding:4px 0 14px;background:none;border:0;box-shadow:none}.ust-hs .ust-hs-panel>.wrap{padding:0;gap:10px}}
 /* menü kapsüllerinin kısa açıklaması (2026-11-24): masaüstü panelinde görsel olarak gizli, erişilebilir adda; dar ekranda tam genişlikte satır: simge + ad + altında tek satır açıklama. Masaüstünde grup kapsülü açılınca alt kapsüller kendi sırasında. */
 .ust-hs .hsc-kisa{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
