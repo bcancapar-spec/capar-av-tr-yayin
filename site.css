@@ -429,13 +429,13 @@ h2:hover>.bolum-bag,.bolum-bag:focus{opacity:1}
 @media(prefers-reduced-motion:reduce){.mobil-cubuk{transition:none}}
 /*@bolum-son:cubuk*/
 /* Hesaplamalar filigranı (kullanıcı talimatı 2026-11-10; 2026-11-17 "çaprazlama görünür ... bilgi amaçlıdır detayı olsun"): sonuç
-   kutusunun üstünde, tıklamayı engellemeyen gerçek SVG örtü (hesap-filigran.js; arka plan resmi değil, yazdırmada da basılır), yalnız
+   kutusunun ARKASINDA (2026-11-24: z-index -1, kutu isolation:isolate; sınayıcı: örtü sonuç metninin üstüne biniyordu), tıklamayı engellemeyen gerçek SVG örtü (hesap-filigran.js; arka plan resmi değil, yazdırmada da basılır), yalnız
    yazdırmada görünen bilgi notu ve imza satırı. Sonuç metni seçilemez (user-select:none); bağlantı ve form alanları seçilebilir. */
 /*@bolum:filigran*/
 .hesap-filigranli{position:relative;isolation:isolate;-webkit-user-select:none;user-select:none}
 .hesap-filigranli :is(a,input,select,textarea){-webkit-user-select:text;user-select:text}
-.hesap-filigran-ortu{position:absolute;inset:0;z-index:2;display:block;width:100%;height:100%;overflow:hidden;pointer-events:none;color:var(--text);-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.hesap-filigran-ortu text{fill:currentColor;fill-opacity:.16;font-family:var(--sans);font-weight:600}
+.hesap-filigran-ortu{position:absolute;inset:0;z-index:-1;display:block;width:100%;height:100%;overflow:hidden;pointer-events:none;color:var(--text);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.hesap-filigran-ortu text{fill:currentColor;fill-opacity:.1;font-family:var(--sans);font-weight:600}
 .hesap-filigran-ortu .hf-1{font-size:16px}.hesap-filigran-ortu .hf-2{font-size:14px;letter-spacing:.06em}
 .hesap-filigran-not{margin:18px 0 0;padding-top:10px;border-top:1px solid var(--line);font-size:.8rem;letter-spacing:.02em;color:var(--text-soft)}
 .hesap-filigran-bilgi{margin:18px 0 0;padding:10px 12px;border:1px solid var(--line);font-size:.8rem;line-height:1.5;color:var(--text-soft)}
@@ -721,6 +721,53 @@ html[data-tema="koyu"] .mobil-cubuk{background:rgba(26,31,38,.97);box-shadow:0 -
 .hs-bilgiler{margin:0 0 10px;padding-left:20px;line-height:1.6}
 .hs-bilgiler li{margin:0 0 2px}
 .hs-kart .hs-alan-sayi{margin:0 0 14px;font-size:.88rem;color:var(--text-soft)}
+.hs-rapor{min-width:0;margin:0 0 18px}
+.hs-rapor-baslik{margin:22px 0 4px;padding-bottom:6px;border-bottom:2px solid var(--gold);font-family:var(--serif);font-weight:500;font-size:1.3rem;color:var(--text)}
+.hs-rapor-bolum{min-width:0;margin:16px 0 0}
+.hs-rapor-bolum>h4{margin:0 0 8px;font-size:1rem;font-weight:700;letter-spacing:.01em;color:var(--accent)}
+.hs-rapor-bolum .hs-rapor-alt{margin:12px 0 6px;font-family:var(--sans);font-size:.95rem;font-weight:700;color:var(--text)}
+.hs-rapor-kap{overflow-x:auto;max-width:100%;margin:8px 0 12px;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.hs-rapor-tablo{width:100%;border-collapse:collapse;font-size:.9rem;line-height:1.45}
+.hs-rapor-tablo caption{caption-side:top;padding:0 0 6px;text-align:left;font-weight:600;color:var(--text)}
+.hs-rapor-tablo th,.hs-rapor-tablo td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.hs-rapor-tablo thead th{background:var(--surface-2);font-weight:700;white-space:nowrap}
+.hs-rapor-tablo tbody th{font-weight:600;min-width:9em}
+.hs-rapor-tablo td{min-width:7em}.hs-rapor-tablo td.hs-rapor-uzun{min-width:18em}
+.hs-rapor-tablo .hs-rapor-ara th{background:var(--surface-2);font-weight:700;color:var(--accent)}
+.hs-rapor-bos{margin:0 0 6px;font-size:.9rem;color:var(--text-soft)}
+.hs-rapor-bolum>summary{display:flex;align-items:center;gap:10px;min-height:44px;cursor:pointer;list-style:none}
+.hs-rapor-bolum>summary::-webkit-details-marker{display:none}
+.hs-rapor-bolum>summary::before{content:"";flex:none;width:8px;height:8px;margin:0 2px;border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(-45deg);transition:transform .15s}
+.hs-rapor-bolum[open]>summary::before{transform:rotate(45deg)}
+.hs-rapor-bolum>summary>h4{margin:0}
+.hs-katlanir{border-bottom:1px solid var(--line)}
+.hs-katlanir>summary{display:flex;align-items:center;min-height:48px;cursor:pointer}
+.hs-katlanir>summary>h2{margin:10px 0}
+/* Hesaplayıcılar telefonda (2026-11-24, "mobilde user friendly olsun hesaplamalar kısmı"): yalnız sonuç kutusu [data-filigran]
+   olan sayfalarda. Alt sabit çubuk ve çerez bandı içeriği örtmez (kaydırma payı + alt boşluk); dokunma hedefleri en az 44 px;
+   giriş yazısı 16 px (iOS yakınlaştırmaz); "Hesapla" uzun formda ekranın altına yapışır; çizelgelerde ilk sütun sabit. */
+html:has([data-filigran]){scroll-padding-top:84px;scroll-padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}
+@media screen and (max-width:899.98px){body:has([data-filigran]) main{padding-bottom:calc(80px + env(safe-area-inset-bottom,0px))}}
+@media(max-width:560px){
+body:has([data-filigran]) .cookie-bar{padding:8px 12px 10px}
+body:has([data-filigran]) .cookie-bar p{font-size:.75rem;line-height:1.35}
+body:has([data-filigran]) .cookie-bar button{min-height:44px;padding:6px 14px;min-width:0}
+body:has([data-filigran]) .lang{height:46px}body:has([data-filigran]) .hs-adimlar a{min-width:44px;justify-content:center}body:has([data-filigran]) .lang :is(a,button){display:inline-flex;align-items:center;justify-content:center;min-width:44px}
+body:has([data-filigran]) .page-head .hs-git-kap{display:none}
+body:has([data-filigran]) .yol a,body:has([data-filigran]) .back{display:inline-flex;align-items:center;min-height:44px}
+body:has([data-filigran]) main li>a:only-child,body:has([data-filigran]) .hs-yonlendirme a{display:inline-flex;align-items:center;min-height:44px}
+form[id$="-form"] :is(input:not([type=radio]):not([type=checkbox]),select,textarea){font-size:16px;min-height:44px;box-sizing:border-box}
+form[id$="-form"] label:has(>input[type=radio]),form[id$="-form"] label:has(>input[type=checkbox]){display:flex;align-items:center;gap:10px;min-height:44px}
+form[id$="-form"] :is(input[type=radio],input[type=checkbox]){width:22px;height:22px;flex:none;margin:0}
+form[id$="-form"] :is(button,summary){min-height:48px}
+form[id$="-form"] button[type=submit]{position:sticky;bottom:calc(72px + env(safe-area-inset-bottom,0px));z-index:5;width:100%;box-shadow:0 6px 18px rgba(26,31,38,.18)}
+body:has(.cookie-bar.show) form[id$="-form"] button[type=submit]{bottom:12px}
+.hs-eylemler .hs-dugme{flex:1 1 100%;width:100%;min-height:48px}
+.hs-rapor-kap :is(thead th:first-child,tbody th:first-child,tbody td:first-child,tfoot th:first-child){position:sticky;left:0;z-index:1;background:var(--surface,#fff);box-shadow:1px 0 0 var(--line)}
+.hs-rapor-kap thead th:first-child{background:linear-gradient(var(--surface-2),var(--surface-2)),var(--surface,#fff)}
+.hs-rapor-tablo tbody th{min-width:7.5em}.hs-rapor-tablo td.hs-rapor-uzun{min-width:15em}
+}
+@media(prefers-reduced-motion:reduce){.hs-rapor-bolum>summary::before{transition:none}}
 @media(max-width:560px){.hs-sonuc-liste{grid-template-columns:1fr;gap:2px}.hs-sonuc-liste dd{margin-bottom:8px}.hs-sonuc .hs-sonuc-ust{padding:14px}.hs-git-dugme{width:100%}}
 @media(prefers-reduced-motion:reduce){.hs-git-dugme,.hs-dugme{transition:none}}
 /*@bolum-son:hesap-arayuz*/
@@ -863,8 +910,14 @@ main [id$="-form"]{scroll-margin-top:84px}
 .ust-hs .ust-hs-tum{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0;border:0;font-family:var(--sans);font-size:.92rem;font-weight:600;letter-spacing:0;text-transform:none;color:var(--accent)}
 .ust-hs .ust-hs-tum::after{content:"\2192";position:static;width:auto;height:auto;background:none}
 @media(max-width:1359.98px){.ust-hs{border-bottom:1px solid var(--line)}.ust-hs>summary{display:flex;justify-content:space-between;min-height:48px;font-size:.9rem;letter-spacing:.04em}.ust-hs-panel{position:static;padding:4px 0 14px;background:none;border:0;box-shadow:none}.ust-hs .ust-hs-panel>.wrap{padding:0;gap:10px}}
+/* menü kapsüllerinin kısa açıklaması (2026-11-24): masaüstü panelinde görsel olarak gizli, erişilebilir adda; dar ekranda tam genişlikte satır: simge + ad + altında tek satır açıklama. Masaüstünde grup kapsülü açılınca alt kapsüller kendi sırasında. */
+.ust-hs .hsc-kisa{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(min-width:1360px){.ust-hs .hsc-liste>li.hsc-grup:has(>details[open]){flex-basis:100%}.ust-hs .hsc-grup details[open]{display:block;width:100%}.ust-hs .hsc-grup details[open]>.hsc-alt{margin-top:10px;padding:0 0 4px 30px}}
+@media(max-width:1359.98px){.ust-hs .hsc-liste{flex-direction:column;align-items:stretch;gap:8px}.ust-hs .hsc-liste li{width:100%}.ust-hs .hsc-dugme{width:100%;min-height:56px;border-radius:14px;padding:8px 16px 8px 14px}.ust-hs .hsc-metin{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0}.ust-hs .hsc-kisa{position:static;width:auto;height:auto;overflow:visible;clip-path:none;white-space:normal;font-weight:400;font-size:.82rem;line-height:1.3;color:var(--text-soft)}.ust-hs .hsc-grup details{flex-direction:column;align-items:stretch;width:100%;gap:8px}.ust-hs .hsc-alt{flex-direction:column;align-items:stretch;gap:8px;padding-left:18px}.ust-hs .hsc-dugme[aria-current="page"] .hsc-kisa,.ust-hs .hsc-dugme.hsc-etkin .hsc-kisa{color:#fff}}
+html[data-tema="koyu"] .ust-hs :is(.hsc-dugme[aria-current="page"],.hsc-dugme.hsc-etkin) .hsc-kisa{color:var(--panel)}
 @media(min-width:900px){.hsc-serit .hsc-liste{flex-wrap:wrap;overflow-x:visible}}
 @media(min-width:1197px){.hsc-serit>.wrap{padding-left:0;padding-right:0}}
+@media(max-width:899px){.hsc-serit .hsc-liste>.hsc-etkin-li{order:-1}}
 @media(max-width:560px){.hsc-serit>.wrap{padding-left:0;padding-right:0}.hsc-serit .hsc-liste{padding-left:24px;padding-right:24px;scroll-padding-inline:24px}}
 @media screen{
 html[data-tema="koyu"] .hsc-dugme{background:var(--surface-2)}
