@@ -762,6 +762,9 @@ form[id$="-form"] :is(input[type=radio],input[type=checkbox]){width:22px;height:
 form[id$="-form"] :is(button,summary){min-height:48px}
 form[id$="-form"] button[type=submit]{position:sticky;bottom:calc(72px + env(safe-area-inset-bottom,0px));z-index:5;width:100%;box-shadow:0 6px 18px rgba(26,31,38,.18)}
 body:has(.cookie-bar.show) form[id$="-form"] button[type=submit]{bottom:12px}
+/* 2026-11-24 (kullanıcı, iPhone: "rakam girdikten sonra rakamların olduğu ekran … kalıyor diğer veriyi girmek veya siteyi okumak için daraltıyor"): yazı alanındayken (klavye açık) yapışık hesapla düğmesi kendi yerine döner ve alt iletişim çubuğu gizlenir; alandan çıkınca ikisi de geri gelir. Görünüm değişmez. */
+form[id$="-form"]:has(:is(input:not([type=radio],[type=checkbox],[type=submit],[type=button],[type=range],[type=file]),textarea):focus) button[type=submit]{position:static}
+body:has(form[id$="-form"] :is(input:not([type=radio],[type=checkbox],[type=submit],[type=button],[type=range],[type=file]),textarea):focus) .mobil-cubuk{opacity:0;visibility:hidden;pointer-events:none}
 .hs-eylemler .hs-dugme{flex:1 1 100%;width:100%;min-height:48px}
 .hs-rapor-kap :is(thead th:first-child,tbody th:first-child,tbody td:first-child,tfoot th:first-child){position:sticky;left:0;z-index:1;background:var(--surface,#fff);box-shadow:1px 0 0 var(--line)}
 .hs-rapor-kap thead th:first-child{background:linear-gradient(var(--surface-2),var(--surface-2)),var(--surface,#fff)}
