@@ -53,6 +53,8 @@ Disallow: /miras-hesap.js
 Disallow: /davaharc-hesap.js
 Disallow: /icraharc-hesap.js
 Disallow: /emeklilik-hesap.js
+Disallow: /kirafesih-hesap.js
+Disallow: /zamanasimi-hesap.js
 Disallow: /hesap-arayuz.js
 Disallow: /hesap-filigran.js
 Disallow: /hesap-pdf.js
