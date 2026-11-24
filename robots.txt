@@ -55,6 +55,7 @@ Disallow: /icraharc-hesap.js
 Disallow: /emeklilik-hesap.js
 Disallow: /kirafesih-hesap.js
 Disallow: /zamanasimi-hesap.js
+Disallow: /gtip-hesap.js
 Disallow: /hesap-arayuz.js
 Disallow: /hesap-filigran.js
 Disallow: /hesap-pdf.js
