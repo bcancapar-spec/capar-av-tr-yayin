@@ -49,6 +49,7 @@ Disallow: /makaleler*&ara=
 Disallow: /infaz-hesap.js
 Disallow: /iscilik-hesap.js
 Disallow: /bedensel-hesap.js
+Disallow: /destek-hesap.js
 Disallow: /miras-hesap.js
 Disallow: /davaharc-hesap.js
 Disallow: /icraharc-hesap.js
