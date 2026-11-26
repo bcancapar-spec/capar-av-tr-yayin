@@ -770,6 +770,9 @@ body:has(form[id$="-form"] :is(input:not([type=radio],[type=checkbox],[type=subm
 .hs-rapor-kap thead th:first-child{background:linear-gradient(var(--surface-2),var(--surface-2)),var(--surface,#fff)}
 .hs-rapor-tablo tbody th{min-width:7.5em}.hs-rapor-tablo td.hs-rapor-uzun{min-width:15em}
 }
+/* 25.11.2026 bedensel dönem çizelgeleri: uzun (yıl yıl) çizelge kendi kutusunda kayar, başlık satırı sabit; telefonda yatay kaydırma ortak kaptan */
+.hs-rapor-kap.bedensel-uzun,.bedensel-tablo-kap.bedensel-uzun{max-height:min(70vh,34rem);overflow:auto}
+.bedensel-uzun thead th{position:sticky;top:0;z-index:2;background:var(--surface-2)}.bedensel-uzun thead th:first-child{z-index:3}
 @media(prefers-reduced-motion:reduce){.hs-rapor-bolum>summary::before{transition:none}}
 @media(max-width:560px){.hs-sonuc-liste{grid-template-columns:1fr;gap:2px}.hs-sonuc-liste dd{margin-bottom:8px}.hs-sonuc .hs-sonuc-ust{padding:14px}.hs-git-dugme{width:100%}}
 @media(prefers-reduced-motion:reduce){.hs-git-dugme,.hs-dugme{transition:none}}
@@ -935,6 +938,8 @@ main [id$="-form"]{scroll-margin-top:84px}
 @media(max-width:1359.98px){.ust-hs .hsc-liste{flex-direction:column;align-items:stretch;gap:8px}.ust-hs .hsc-liste li{width:100%}.ust-hs .hsc-dugme{width:100%;min-height:56px;border-radius:14px;padding:8px 16px 8px 14px}.ust-hs .hsc-metin{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0}.ust-hs .hsc-kisa{position:static;width:auto;height:auto;overflow:visible;clip-path:none;white-space:normal;font-weight:400;font-size:.82rem;line-height:1.3;color:var(--text-soft)}.ust-hs .hsc-grup details{flex-direction:column;align-items:stretch;width:100%;gap:8px}.ust-hs .hsc-alt{flex-direction:column;align-items:stretch;gap:8px;padding-left:18px}.ust-hs .hsc-dugme[aria-current="page"] .hsc-kisa,.ust-hs .hsc-dugme.hsc-etkin .hsc-kisa{color:#fff}}
 html[data-tema="koyu"] .ust-hs :is(.hsc-dugme[aria-current="page"],.hsc-dugme.hsc-etkin) .hsc-kisa{color:var(--panel)}
 @media(min-width:900px){.hsc-serit .hsc-liste{flex-wrap:wrap;overflow-x:visible}}
+/* 2026-11-25: geçiş şeridinde açık grup çok üyeliyse ("Vergi hesaplama": altı modül) masaüstünde sayfayı yana taşırıyordu (1280 px'te belge 1720 px). Açık grubun alt kapsülleri sayfa genişliğinde alt satıra sarar; sığan grup ("Harç hesaplama": iki üye) eskisi gibi tek satırda kalır. */
+@media(min-width:900px){.hsc-serit .hsc-liste>li.hsc-grup{flex:0 1 auto;min-width:0;max-width:100%}.hsc-serit li.hsc-grup :is(details,.hsc-alt){flex:0 1 auto;flex-wrap:wrap;min-width:0;max-width:100%}}
 @media(min-width:1197px){.hsc-serit>.wrap{padding-left:0;padding-right:0}}
 @media(max-width:899px){.hsc-serit .hsc-liste>.hsc-etkin-li{order:-1}}
 @media(max-width:560px){.hsc-serit>.wrap{padding-left:0;padding-right:0}.hsc-serit .hsc-liste{padding-left:24px;padding-right:24px;scroll-padding-inline:24px}}
