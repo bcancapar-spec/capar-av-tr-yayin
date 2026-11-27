@@ -16,7 +16,7 @@ Bu dosya sitedeki 289 makalenin her biri için kısa cevabın ve sık sorulan so
 ## Sayfalar
 
 - [Ana sayfa](https://capar.av.tr/): Büro tanıtımı, ekip, çalışma alanları ve iletişim.
-- [Makaleler](https://capar.av.tr/makaleler): Tüm yayımlanmış makalelerin listesi (289 makale, 2026-11-24 itibarıyla).
+- [Makaleler](https://capar.av.tr/makaleler): Tüm yayımlanmış makalelerin listesi (289 makale, 2026-11-27 itibarıyla).
 - [Konu dizini](https://capar.av.tr/konu-dizini): Makalelerde ele alınan hukuki kavramların Türk alfabesi sırasıyla dizini; her kavram onu anlatan makaleye, sözlükte karşılığı olanlar Hukuk Sözlüğü'ne bağlanır.
 - [Mevzuat](https://capar.av.tr/mevzuat): Resmî mevzuat kaynakları ve çalışma alanlarına göre temel kanunlar; her kanunun altında ilgili makaleler.
 - [Karar dizini](https://capar.av.tr/karar-dizini): Makalelerde atıf yapılan Yargıtay, Danıştay, Anayasa Mahkemesi ve bölge adliye mahkemesi kararları; mahkeme ve daireye göre künye, resmî kaynak bağlantısı ve karara atıf yapan makaleler. İngilizcesi: https://capar.av.tr/en/case-index — Mahkeme ve daire gruplarına göre alt sayfalar: [Yargıtay Genel Kurulları](https://capar.av.tr/karar-dizini/yargitay-genel-kurullar) · [Yargıtay 1.–4. Hukuk Daireleri](https://capar.av.tr/karar-dizini/yargitay-hukuk-daireleri-1-4) · [Yargıtay 5.–10. Hukuk Daireleri](https://capar.av.tr/karar-dizini/yargitay-hukuk-daireleri-5-10) · [Yargıtay 11. Hukuk Dairesi](https://capar.av.tr/karar-dizini/yargitay-11-hukuk-dairesi) · [Yargıtay 12.–23. Hukuk Daireleri](https://capar.av.tr/karar-dizini/yargitay-hukuk-daireleri-12-23) · [Yargıtay Ceza Daireleri](https://capar.av.tr/karar-dizini/yargitay-ceza-daireleri) · [Danıştay](https://capar.av.tr/karar-dizini/danistay) · [Anayasa Mahkemesi](https://capar.av.tr/karar-dizini/anayasa-mahkemesi) · [Bölge Adliye Mahkemeleri](https://capar.av.tr/karar-dizini/bolge-adliye-mahkemeleri)
@@ -7372,6 +7372,7 @@ Hayır. Üzerinde uzlaşılan cezalara başka indirim uygulanmaz; m.376’daki i
 
 - Adres: https://capar.av.tr/makale/tarh-zamanasimi-vergi-idaresi-kac-yil-geriye-gidebilir
 - Tarih: 2026-11-24
+- Güncelleme: 2026-11-27
 - Özet: Vergi Usul Kanunu m.114’e göre vergi idaresinin geçmiş yıllar için vergi ve ceza salabileceği beş yıllık süre; başlangıcı, tebliğ şartı, elektronik tebligat, takdir komisyonunda duran süre ve tahsil zamanaşımı, hesap örnekleriyle.
 - Kısa cevap: Vergi idaresi bir vergiyi, vergi alacağının doğduğu takvim yılını izleyen yılın başından itibaren beş yıl içinde hem tarh etmek hem de mükellefe tebliğ etmek zorundadır; bu süre içinde tebliğ edilmeyen vergi zamanaşımına uğrar (Vergi Usul Kanunu m.114). Örneğin 2021 yılında doğan bir vergi alacağı için süre 01.01.2022’de başlar ve 31.12.2026 akşamı dolar. Süreyi durduran başlıca hâl, matrah takdiri için takdir komisyonuna başvurulmasıdır; bu durma her hâlde bir yılı aşamaz. Mücbir sebep hâlinde de tarh zamanaşımı işlemeyen süre kadar uzar (m.15); karşılıklı anlaşma usulü başvurusu da zamanaşımını durdurur (ek m.18). Elektronik tebligatta tebliğ, ihbarnamenin sistem aracılığıyla muhataba iletildiği tarihi izleyen beşinci günün sonunda yapılmış sayılır. Zamanaşımı mükellefin başvurusuna bağlı değildir; Danıştay, vergi mahkemelerinin bunu kendiliğinden incelemesi gerektiğini kabul etmektedir.
 - Anahtar kelimeler: vergide zamanaşımı kaç yıl, tarh zamanaşımı, vergi zamanaşımı 5 yıl, VUK 114, vergi ihbarnamesi tebliğ zamanaşımı, takdir komisyonu zamanaşımı durması, elektronik tebligat tebliğ tarihi, ceza kesmede zamanaşımı, tahsil zamanaşımı 6183, düzeltme zamanaşımı
@@ -7384,7 +7385,7 @@ Vergi alacağının doğduğu takvim yılını izleyen yılın başından itibar
 2021 yılında doğan vergi alacakları için süre 01.01.2022’de başlar ve 31.12.2026’da dolar. Bu tarihe kadar ihbarnamenin mükellefe tebliğ edilmesi gerekir. Takdir komisyonuna sevk edilmiş dönemlerde duran süre ayrıca hesaba katılır.
 
 **Vergi incelemesi başlarsa tarh zamanaşımı durur mu?**
-Hayır. Vergi Usul Kanunu m.114 zamanaşımını durduran hâl olarak yalnız vergi dairesinin matrah takdiri için takdir komisyonuna başvurmasını sayar. Kanun’daki diğer durma hâlleri (mücbir sebep, m.15; karşılıklı anlaşma başvurusu, ek m.18) de vergi incelemesini kapsamaz. İnceleme süre içinde tarh ve tebliğe dönüşmezse vergi zamanaşımına uğrar; Anayasa Mahkemesi de süre geçtikten sonra vergi incelemesi yapılamayacağını belirtmiştir.
+Hayır. Vergi Usul Kanunu m.114 zamanaşımını durduran hâl olarak yalnız vergi dairesinin matrah takdiri için takdir komisyonuna başvurmasını sayar. Kanun’daki diğer durma hâlleri (mücbir sebep, m.15; karşılıklı anlaşma başvurusu, ek m.18) de vergi incelemesini kapsamaz. İnceleme süre içinde tarh ve tebliğe dönüşmezse vergi zamanaşımına uğrar; Anayasa Mahkemesi de süre geçtikten sonra vergi incelemesi yapılamayacağını belirtmiştir. Danıştay 3. Dairesi, inceleme başladıktan sonra yapılan takdire sevkin de süreyi durdurmadığı görüşündedir; Vergi Dava Daireleri Kurulunun 2021 tarihli bir kararı ise bu durumda da sürenin durduğunu kabul etmiştir.
 
 **Elektronik tebligatla gönderilen vergi ihbarnamesi hangi tarihte tebliğ edilmiş sayılır?**
 Elektronik tebligat, sistem aracılığıyla muhataba iletildiği tarihi izleyen beşinci günün sonunda yapılmış sayılır (VUK m.107/A). Örneğin 26 Aralık’ta iletilen ihbarname 31 Aralık sonunda, 28 Aralık’ta iletilen ise izleyen yılın 2 Ocak günü tebliğ edilmiş sayılır.
@@ -7783,4 +7784,4 @@ Büro Denizli'dedir. Aşağıda on ilde görevli yargı yerleri yer alır; ayrı
 - İstanbul: adliye İstanbul Adliyesi (Çağlayan); istinaf İstanbul Bölge Adliye Mahkemesi; idari istinaf İstanbul Bölge İdare Mahkemesi; vergi İstanbul Vergi Mahkemeleri
 - Ankara: adliye Ankara Adliyesi (Sıhhiye); istinaf Ankara Bölge Adliye Mahkemesi; idari istinaf Ankara Bölge İdare Mahkemesi; vergi Ankara Vergi Mahkemeleri
 
-Son güncelleme: 2026-11-24
+Son güncelleme: 2026-11-27

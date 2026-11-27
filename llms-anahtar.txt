@@ -4135,4 +4135,4 @@ Bu dosya capar.av.tr'deki 289 makalenin anahtar kelimelerini (4044 kavram) Türk
 - zorunlu trafik sigortası ölüm tazminatı → https://capar.av.tr/makale/olumlu-trafik-kazasinda-tazminat-hesabi (Ölümlü Trafik Kazasında Tazminat)
 - zümre sistemi → https://capar.av.tr/makale/turk-miras-hukuku-sistemi (Türk Miras Hukuku Sistemi Nasıl İşler?)
 
-Son güncelleme: 2026-11-24
+Son güncelleme: 2026-11-27

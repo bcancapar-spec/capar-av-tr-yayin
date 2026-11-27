@@ -6735,6 +6735,7 @@ Hayır. Üzerinde uzlaşılan cezalara başka indirim uygulanmaz; m.376’daki i
 
 - Adres: https://capar.av.tr/makale/tarh-zamanasimi-vergi-idaresi-kac-yil-geriye-gidebilir
 - Tarih: 2026-11-24
+- Güncelleme: 2026-11-27
 - Özet: Vergi Usul Kanunu m.114’e göre vergi idaresinin geçmiş yıllar için vergi ve ceza salabileceği beş yıllık süre; başlangıcı, tebliğ şartı, elektronik tebligat, takdir komisyonunda duran süre ve tahsil zamanaşımı, hesap örnekleriyle.
 - Anahtar kelimeler: vergide zamanaşımı kaç yıl, tarh zamanaşımı, vergi zamanaşımı 5 yıl, VUK 114, vergi ihbarnamesi tebliğ zamanaşımı, takdir komisyonu zamanaşımı durması, elektronik tebligat tebliğ tarihi, ceza kesmede zamanaşımı, tahsil zamanaşımı 6183, düzeltme zamanaşımı
 - English: Tax Assessment Limitation in Türkiye: How Many Years Back Can the Tax Office Go? (https://capar.av.tr/en/article/tax-assessment-limitation-period-turkiye) — Under Turkish law: the five-year period within which the tax office may assess tax and penalties for past years, when it starts, the service requirement, electronic notification, suspension before the assessment commission and limitation for collection, with worked examples.
@@ -6746,7 +6747,7 @@ Vergi alacağının doğduğu takvim yılını izleyen yılın başından itibar
 2021 yılında doğan vergi alacakları için süre 01.01.2022’de başlar ve 31.12.2026’da dolar. Bu tarihe kadar ihbarnamenin mükellefe tebliğ edilmesi gerekir. Takdir komisyonuna sevk edilmiş dönemlerde duran süre ayrıca hesaba katılır.
 
 **Vergi incelemesi başlarsa tarh zamanaşımı durur mu?**
-Hayır. Vergi Usul Kanunu m.114 zamanaşımını durduran hâl olarak yalnız vergi dairesinin matrah takdiri için takdir komisyonuna başvurmasını sayar. Kanun’daki diğer durma hâlleri (mücbir sebep, m.15; karşılıklı anlaşma başvurusu, ek m.18) de vergi incelemesini kapsamaz. İnceleme süre içinde tarh ve tebliğe dönüşmezse vergi zamanaşımına uğrar; Anayasa Mahkemesi de süre geçtikten sonra vergi incelemesi yapılamayacağını belirtmiştir.
+Hayır. Vergi Usul Kanunu m.114 zamanaşımını durduran hâl olarak yalnız vergi dairesinin matrah takdiri için takdir komisyonuna başvurmasını sayar. Kanun’daki diğer durma hâlleri (mücbir sebep, m.15; karşılıklı anlaşma başvurusu, ek m.18) de vergi incelemesini kapsamaz. İnceleme süre içinde tarh ve tebliğe dönüşmezse vergi zamanaşımına uğrar; Anayasa Mahkemesi de süre geçtikten sonra vergi incelemesi yapılamayacağını belirtmiştir. Danıştay 3. Dairesi, inceleme başladıktan sonra yapılan takdire sevkin de süreyi durdurmadığı görüşündedir; Vergi Dava Daireleri Kurulunun 2021 tarihli bir kararı ise bu durumda da sürenin durduğunu kabul etmiştir.
 
 **Elektronik tebligatla gönderilen vergi ihbarnamesi hangi tarihte tebliğ edilmiş sayılır?**
 Elektronik tebligat, sistem aracılığıyla muhataba iletildiği tarihi izleyen beşinci günün sonunda yapılmış sayılır (VUK m.107/A). Örneğin 26 Aralık’ta iletilen ihbarname 31 Aralık sonunda, 28 Aralık’ta iletilen ise izleyen yılın 2 Ocak günü tebliğ edilmiş sayılır.
@@ -7130,4 +7131,4 @@ Büro Denizli'dedir. Aşağıda on ilde görevli yargı yerleri yer alır; ayrı
 - İstanbul: adliye İstanbul Adliyesi (Çağlayan); istinaf İstanbul Bölge Adliye Mahkemesi; idari istinaf İstanbul Bölge İdare Mahkemesi; vergi İstanbul Vergi Mahkemeleri
 - Ankara: adliye Ankara Adliyesi (Sıhhiye); istinaf Ankara Bölge Adliye Mahkemesi; idari istinaf Ankara Bölge İdare Mahkemesi; vergi Ankara Vergi Mahkemeleri
 
-Son güncelleme: 2026-11-24
+Son güncelleme: 2026-11-27
